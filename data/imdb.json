@@ -1,0 +1,9094 @@
+{
+ "source": "IMDb non-commercial datasets (datasets.imdbws.com)",
+ "rules": 6,
+ "titles": {
+  "m|10 cloverfield lane|2016": {
+   "id": "tt1179933",
+   "rating": 7.2,
+   "votes": 391786,
+   "checked": "2026-11-13"
+  },
+  "m|10 rillington place|": {
+   "id": "tt0066730",
+   "rating": 7.5,
+   "votes": 11136,
+   "checked": "2026-11-13"
+  },
+  "m|10 years|2012": {
+   "id": "tt1715873",
+   "rating": 6.1,
+   "votes": 28855,
+   "checked": "2026-11-13"
+  },
+  "m|12 monkeys|1995": {
+   "id": "tt0114746",
+   "rating": 8,
+   "votes": 687001,
+   "checked": "2026-11-13"
+  },
+  "m|13 hours the secret soldiers of benghazi|2016": {
+   "id": "tt4172430",
+   "rating": 7.3,
+   "votes": 183578,
+   "checked": "2026-11-13"
+  },
+  "m|1492 conquest of paradise|1992": {
+   "id": "tt0103594",
+   "rating": 6.4,
+   "votes": 35796,
+   "checked": "2026-11-13"
+  },
+  "m|17 again|2009": {
+   "id": "tt0974661",
+   "rating": 6.4,
+   "votes": 235439,
+   "checked": "2026-11-13"
+  },
+  "m|1917|2019": {
+   "id": "tt8579674",
+   "rating": 8.2,
+   "votes": 792100,
+   "checked": "2026-11-13"
+  },
+  "m|2001 a space odyssey|1968": {
+   "id": "tt0062622",
+   "rating": 8.3,
+   "votes": 797083,
+   "checked": "2026-11-13"
+  },
+  "m|2010 the year we make contact|1984": {
+   "id": "tt0086837",
+   "rating": 6.7,
+   "votes": 61896,
+   "checked": "2026-11-13"
+  },
+  "m|2016 obamas america|2012": {
+   "id": "tt2247692",
+   "rating": 4.8,
+   "votes": 11135,
+   "checked": "2026-11-13"
+  },
+  "m|300|2007": {
+   "id": "tt0416449",
+   "rating": 7.6,
+   "votes": 924683,
+   "checked": "2026-11-13"
+  },
+  "m|40 days and 40 nights|": {
+   "id": "tt0243736",
+   "rating": 5.6,
+   "votes": 79068,
+   "checked": "2026-11-13"
+  },
+  "m|40 days and 40 nights|2002": {
+   "id": "tt0243736",
+   "rating": 5.6,
+   "votes": 79068,
+   "checked": "2026-11-13"
+  },
+  "m|40 year old virgin|2005": {
+   "id": "tt0405422",
+   "rating": 7.1,
+   "votes": 510659,
+   "checked": "2026-11-13"
+  },
+  "m|42|2013": {
+   "id": "tt0453562",
+   "rating": 7.5,
+   "votes": 110405,
+   "checked": "2026-11-13"
+  },
+  "m|42nd street|1933": {
+   "id": "tt0024034",
+   "rating": 7.3,
+   "votes": 14093,
+   "checked": "2026-11-13"
+  },
+  "m|48 hrs|1982": {
+   "id": "tt0083511",
+   "rating": 6.9,
+   "votes": 94879,
+   "checked": "2026-11-13"
+  },
+  "m|54|1998": {
+   "id": "tt0120577",
+   "rating": 5.9,
+   "votes": 36328,
+   "checked": "2026-11-13"
+  },
+  "m|57 seconds|2023": {
+   "id": "tt18083578",
+   "rating": 5.4,
+   "votes": 14854,
+   "checked": "2026-11-13"
+  },
+  "m|5lbs of pressure|2024": {
+   "id": "tt1524515",
+   "rating": 5.3,
+   "votes": 2512,
+   "checked": "2026-11-13"
+  },
+  "m|6 spike lee joints|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|71|": {
+   "id": "tt2614684",
+   "rating": 7.2,
+   "votes": 65538,
+   "checked": "2026-11-13"
+  },
+  "m|8 mile|2002": {
+   "id": "tt0298203",
+   "rating": 7.2,
+   "votes": 356948,
+   "checked": "2026-11-13"
+  },
+  "m|80 for brady|": {
+   "id": "tt18079362",
+   "rating": 5.9,
+   "votes": 14281,
+   "checked": "2026-11-13"
+  },
+  "m|9|2009": {
+   "id": "tt0472033",
+   "rating": 7,
+   "votes": 159530,
+   "checked": "2026-11-13"
+  },
+  "m|a beautiful mind|2001": {
+   "id": "tt0268978",
+   "rating": 8.2,
+   "votes": 1068477,
+   "checked": "2026-11-13"
+  },
+  "m|a cinderella story once upon a song|2011": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|a cinderella story|2004": {
+   "id": "tt0356470",
+   "rating": 6,
+   "votes": 104762,
+   "checked": "2026-11-13"
+  },
+  "m|a clockwork orange|1972": {
+   "id": "tt0066921",
+   "rating": 8.2,
+   "votes": 949616,
+   "checked": "2026-11-13"
+  },
+  "m|a fantastic woman|": {
+   "id": "tt5639354",
+   "rating": 7.1,
+   "votes": 28768,
+   "checked": "2026-11-13"
+  },
+  "m|a gathering of eagles|1963": {
+   "id": "tt0057090",
+   "rating": 6.1,
+   "votes": 1280,
+   "checked": "2026-11-13"
+  },
+  "m|a history of violence|2005": {
+   "id": "tt0399146",
+   "rating": 7.4,
+   "votes": 278754,
+   "checked": "2026-11-13"
+  },
+  "m|a little princess|1995": {
+   "id": "tt0113670",
+   "rating": 7.6,
+   "votes": 39716,
+   "checked": "2026-11-13"
+  },
+  "m|a man betrayed|1941": {
+   "id": "tt0033871",
+   "rating": 5.9,
+   "votes": 726,
+   "checked": "2026-11-13"
+  },
+  "m|a million ways to die in the west|": {
+   "id": "tt2557490",
+   "rating": 6.1,
+   "votes": 212995,
+   "checked": "2026-11-13"
+  },
+  "m|a nightmare on elm street|1984": {
+   "id": "tt0087800",
+   "rating": 7.4,
+   "votes": 299125,
+   "checked": "2026-11-13"
+  },
+  "m|a nightmare on elm street|2010": {
+   "id": "tt1179056",
+   "rating": 5.2,
+   "votes": 117028,
+   "checked": "2026-11-13"
+  },
+  "m|a place in the sun|1951": {
+   "id": "tt0043924",
+   "rating": 7.7,
+   "votes": 27454,
+   "checked": "2026-11-13"
+  },
+  "m|a prophet|": {
+   "id": "tt1235166",
+   "rating": 7.8,
+   "votes": 108725,
+   "checked": "2026-11-13"
+  },
+  "m|a star is born|2018": {
+   "id": "tt1517451",
+   "rating": 7.6,
+   "votes": 454741,
+   "checked": "2026-11-13"
+  },
+  "m|a streetcar named desire|1951": {
+   "id": "tt0044081",
+   "rating": 7.9,
+   "votes": 120196,
+   "checked": "2026-11-13"
+  },
+  "m|a very brady sequel|": {
+   "id": "tt0118073",
+   "rating": 5.9,
+   "votes": 12789,
+   "checked": "2026-11-13"
+  },
+  "m|a very brady sequel|1996": {
+   "id": "tt0118073",
+   "rating": 5.9,
+   "votes": 12789,
+   "checked": "2026-11-13"
+  },
+  "m|a woman a gun and a noodle shop|": {
+   "id": "tt1428556",
+   "rating": 5.6,
+   "votes": 3643,
+   "checked": "2026-11-13"
+  },
+  "m|accidental spy|2004": {
+   "id": "tt0271946",
+   "rating": 5.8,
+   "votes": 20333,
+   "checked": "2026-11-13"
+  },
+  "m|accidental texan|2024": {
+   "id": "tt9201172",
+   "rating": 6,
+   "votes": 1045,
+   "checked": "2026-11-13"
+  },
+  "m|accountant|2016": {
+   "id": "tt2140479",
+   "rating": 7.3,
+   "votes": 406111,
+   "checked": "2026-11-13"
+  },
+  "m|aces high|": {
+   "id": "tt0075627",
+   "rating": 6.6,
+   "votes": 3606,
+   "checked": "2026-11-13"
+  },
+  "m|acod|2013": {
+   "id": "tt1311060",
+   "rating": 5.7,
+   "votes": 14331,
+   "checked": "2026-11-13"
+  },
+  "m|acts of vengeance|2017": {
+   "id": "tt6288694",
+   "rating": 5.7,
+   "votes": 14919,
+   "checked": "2026-11-13"
+  },
+  "m|adulthood|2025": {
+   "id": "tt26657977",
+   "rating": 5.5,
+   "votes": 3556,
+   "checked": "2026-11-13"
+  },
+  "m|adults|": {
+   "id": "tt26443107",
+   "rating": 5.7,
+   "votes": 3100,
+   "checked": "2026-11-13"
+  },
+  "m|adventureland|": {
+   "id": "tt1091722",
+   "rating": 6.8,
+   "votes": 175760,
+   "checked": "2026-11-13"
+  },
+  "m|adventures of robin hood|1938": {
+   "id": "tt0029843",
+   "rating": 7.9,
+   "votes": 58445,
+   "checked": "2026-11-13"
+  },
+  "m|adventures of sherlock holmes|": {
+   "id": "tt0031022",
+   "rating": 7.2,
+   "votes": 8364,
+   "checked": "2026-11-13"
+  },
+  "m|affair in trinidad|": {
+   "id": "tt0044331",
+   "rating": 6.6,
+   "votes": 3681,
+   "checked": "2026-11-13"
+  },
+  "m|after hours|1985": {
+   "id": "tt0088680",
+   "rating": 7.6,
+   "votes": 102063,
+   "checked": "2026-11-13"
+  },
+  "m|aftermath|2017": {
+   "id": "tt4581576",
+   "rating": 5.7,
+   "votes": 28995,
+   "checked": "2026-11-13"
+  },
+  "m|against all odds|": {
+   "id": "tt0086859",
+   "rating": 6,
+   "votes": 15942,
+   "checked": "2026-11-13"
+  },
+  "m|ai artificial intelligence|2001": {
+   "id": "tt0212720",
+   "rating": 7.2,
+   "votes": 344695,
+   "checked": "2026-11-13"
+  },
+  "m|air america|": {
+   "id": "tt0099005",
+   "rating": 5.8,
+   "votes": 32921,
+   "checked": "2026-11-13"
+  },
+  "m|air strike|2018": {
+   "id": "tt4743226",
+   "rating": 3.2,
+   "votes": 5067,
+   "checked": "2026-11-13"
+  },
+  "m|airplane ii the sequel|": {
+   "id": "tt0083530",
+   "rating": 6.2,
+   "votes": 61807,
+   "checked": "2026-11-13"
+  },
+  "m|airplane ii the sequel|1982": {
+   "id": "tt0083530",
+   "rating": 6.2,
+   "votes": 61807,
+   "checked": "2026-11-13"
+  },
+  "m|alice sweet alice|1976": {
+   "id": "tt0076150",
+   "rating": 6.4,
+   "votes": 15581,
+   "checked": "2026-11-13"
+  },
+  "m|all quiet on the western front|1930": {
+   "id": "tt0020629",
+   "rating": 8.1,
+   "votes": 73102,
+   "checked": "2026-11-13"
+  },
+  "m|all the presidents men|1976": {
+   "id": "tt0074119",
+   "rating": 7.9,
+   "votes": 140258,
+   "checked": "2026-11-13"
+  },
+  "m|allied|2016": {
+   "id": "tt3640424",
+   "rating": 7.1,
+   "votes": 182321,
+   "checked": "2026-11-13"
+  },
+  "m|alpha and omega|2010": {
+   "id": "tt1213012",
+   "rating": 5.1,
+   "votes": 16357,
+   "checked": "2026-11-13"
+  },
+  "m|amadeus|1984": {
+   "id": "tt0086879",
+   "rating": 8.4,
+   "votes": 475774,
+   "checked": "2026-11-13"
+  },
+  "m|ambulance|2022": {
+   "id": "tt4998632",
+   "rating": 6.1,
+   "votes": 115673,
+   "checked": "2026-11-13"
+  },
+  "m|american beauty|1999": {
+   "id": "tt0169547",
+   "rating": 8.3,
+   "votes": 1292649,
+   "checked": "2026-11-13"
+  },
+  "m|american fighter|2021": {
+   "id": "tt2093056",
+   "rating": 5.4,
+   "votes": 726,
+   "checked": "2026-11-13"
+  },
+  "m|american gangster unrated|2008": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|american graffiti|1973": {
+   "id": "tt0069704",
+   "rating": 7.4,
+   "votes": 107151,
+   "checked": "2026-11-13"
+  },
+  "m|american made|2017": {
+   "id": "tt3532216",
+   "rating": 7.2,
+   "votes": 239159,
+   "checked": "2026-11-13"
+  },
+  "m|american psycho 2|2002": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|american sicario|2021": {
+   "id": "tt13322120",
+   "rating": 4.2,
+   "votes": 11058,
+   "checked": "2026-11-13"
+  },
+  "m|american sniper|2014": {
+   "id": "tt2179136",
+   "rating": 7.3,
+   "votes": 578987,
+   "checked": "2026-11-13"
+  },
+  "m|american society of magical negroes|": {
+   "id": "tt30007864",
+   "rating": 3.9,
+   "votes": 13403,
+   "checked": "2026-11-13"
+  },
+  "m|american teen|2008": {
+   "id": "tt0486259",
+   "rating": 6.4,
+   "votes": 4267,
+   "checked": "2026-11-13"
+  },
+  "m|amistad|1997": {
+   "id": "tt0118607",
+   "rating": 7.3,
+   "votes": 89092,
+   "checked": "2026-11-13"
+  },
+  "m|amityville the awakening|2017": {
+   "id": "tt1935897",
+   "rating": 4.9,
+   "votes": 17091,
+   "checked": "2026-11-13"
+  },
+  "m|an evening with beverly luff linn|": {
+   "id": "tt6518270",
+   "rating": 5.8,
+   "votes": 7292,
+   "checked": "2026-11-13"
+  },
+  "m|angel and the badman|": {
+   "id": "tt0039152",
+   "rating": 6.8,
+   "votes": 7612,
+   "checked": "2026-11-13"
+  },
+  "m|angel eyes|": {
+   "id": "tt0225071",
+   "rating": 5.7,
+   "votes": 27537,
+   "checked": "2026-11-13"
+  },
+  "m|angel has fallen|": {
+   "id": "tt6189022",
+   "rating": 6.4,
+   "votes": 125181,
+   "checked": "2026-11-13"
+  },
+  "m|angel of mine|2019": {
+   "id": "tt7058080",
+   "rating": 6.4,
+   "votes": 13309,
+   "checked": "2026-11-13"
+  },
+  "m|anger management|": {
+   "id": "tt0305224",
+   "rating": 6.3,
+   "votes": 245289,
+   "checked": "2026-11-13"
+  },
+  "m|animal kingdom|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|anna|2019": {
+   "id": "tt7456310",
+   "rating": 6.7,
+   "votes": 110300,
+   "checked": "2026-11-13"
+  },
+  "m|annabelle|2014": {
+   "id": "tt3322940",
+   "rating": 5.5,
+   "votes": 201124,
+   "checked": "2026-11-13"
+  },
+  "m|annihilation|2018": {
+   "id": "tt2798920",
+   "rating": 6.8,
+   "votes": 400460,
+   "checked": "2026-11-13"
+  },
+  "m|anomalisa|2015": {
+   "id": "tt2401878",
+   "rating": 7.2,
+   "votes": 79377,
+   "checked": "2026-11-13"
+  },
+  "m|another 48 hrs|1990": {
+   "id": "tt0099044",
+   "rating": 5.9,
+   "votes": 48413,
+   "checked": "2026-11-13"
+  },
+  "m|another cinderella story|2008": {
+   "id": "tt1071358",
+   "rating": 5.8,
+   "votes": 33343,
+   "checked": "2026-11-13"
+  },
+  "m|any which way you can|1980": {
+   "id": "tt0080377",
+   "rating": 6.1,
+   "votes": 22908,
+   "checked": "2026-11-13"
+  },
+  "m|apocalypse now final cut|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|apocalypse now redux|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|apocalypse now|": {
+   "id": "tt0078788",
+   "rating": 8.4,
+   "votes": 781976,
+   "checked": "2026-11-13"
+  },
+  "m|appaloosa|2008": {
+   "id": "tt0800308",
+   "rating": 6.7,
+   "votes": 68656,
+   "checked": "2026-11-13"
+  },
+  "m|april fools day|1986": {
+   "id": "tt0090655",
+   "rating": 6.2,
+   "votes": 20451,
+   "checked": "2026-11-13"
+  },
+  "m|area 51|2015": {
+   "id": "tt1519461",
+   "rating": 4.3,
+   "votes": 16546,
+   "checked": "2026-11-13"
+  },
+  "m|argo|2012": {
+   "id": "tt1024648",
+   "rating": 7.7,
+   "votes": 675989,
+   "checked": "2026-11-13"
+  },
+  "m|arrival|1996": {
+   "id": "tt0115571",
+   "rating": 6.2,
+   "votes": 42680,
+   "checked": "2026-11-13"
+  },
+  "m|arthur|1981": {
+   "id": "tt0082031",
+   "rating": 6.9,
+   "votes": 34172,
+   "checked": "2026-11-13"
+  },
+  "m|ascension|2015": {
+   "id": "tt3696720",
+   "rating": 7.1,
+   "votes": 20240,
+   "checked": "2026-11-13"
+  },
+  "m|assassin club|2023": {
+   "id": "tt7720142",
+   "rating": 4.8,
+   "votes": 4212,
+   "checked": "2026-11-13"
+  },
+  "m|asteroid city|": {
+   "id": "tt14230388",
+   "rating": 6.4,
+   "votes": 147976,
+   "checked": "2026-11-13"
+  },
+  "m|astro boy|2009": {
+   "id": "tt0375568",
+   "rating": 6.3,
+   "votes": 43680,
+   "checked": "2026-11-13"
+  },
+  "m|august rush|2007": {
+   "id": "tt0426931",
+   "rating": 7.4,
+   "votes": 115541,
+   "checked": "2026-11-13"
+  },
+  "m|austin powers in goldmember|2002": {
+   "id": "tt0295178",
+   "rating": 6.3,
+   "votes": 237577,
+   "checked": "2026-11-13"
+  },
+  "m|austin powers international man of mystery|1997": {
+   "id": "tt0118655",
+   "rating": 7,
+   "votes": 277216,
+   "checked": "2026-11-13"
+  },
+  "m|babel|2006": {
+   "id": "tt0449467",
+   "rating": 7.4,
+   "votes": 332129,
+   "checked": "2026-11-13"
+  },
+  "m|bad apples|2026": {
+   "id": "tt29714073",
+   "rating": 6.7,
+   "votes": 7804,
+   "checked": "2026-11-13"
+  },
+  "m|bait|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|barnyard|2006": {
+   "id": "tt0414853",
+   "rating": 5.7,
+   "votes": 39675,
+   "checked": "2026-11-13"
+  },
+  "m|barry lyndon|1975": {
+   "id": "tt0072684",
+   "rating": 8.1,
+   "votes": 210204,
+   "checked": "2026-11-13"
+  },
+  "m|baseketball|": {
+   "id": "tt0131857",
+   "rating": 6.5,
+   "votes": 69652,
+   "checked": "2026-11-13"
+  },
+  "m|battle hymn|1957": {
+   "id": "tt0050171",
+   "rating": 6.3,
+   "votes": 1502,
+   "checked": "2026-11-13"
+  },
+  "m|battleship|2012": {
+   "id": "tt1440129",
+   "rating": 5.8,
+   "votes": 272701,
+   "checked": "2026-11-13"
+  },
+  "m|bay|2012": {
+   "id": "tt1713476",
+   "rating": 5.7,
+   "votes": 33935,
+   "checked": "2026-11-13"
+  },
+  "m|beast|2022": {
+   "id": "tt13223398",
+   "rating": 5.6,
+   "votes": 49603,
+   "checked": "2026-11-13"
+  },
+  "m|beau geste|1939": {
+   "id": "tt0031088",
+   "rating": 7.5,
+   "votes": 7188,
+   "checked": "2026-11-13"
+  },
+  "m|beautiful girls|1996": {
+   "id": "tt0115639",
+   "rating": 7.1,
+   "votes": 36647,
+   "checked": "2026-11-13"
+  },
+  "m|beavis and butthead do america|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|becoming led zeppelin|": {
+   "id": "tt10365912",
+   "rating": 7.4,
+   "votes": 10012,
+   "checked": "2026-11-13"
+  },
+  "m|beetlejuice beetlejuice|2024": {
+   "id": "tt2049403",
+   "rating": 6.6,
+   "votes": 183026,
+   "checked": "2026-11-13"
+  },
+  "m|beetlejuice|1988": {
+   "id": "tt0094721",
+   "rating": 7.4,
+   "votes": 426514,
+   "checked": "2026-11-13"
+  },
+  "m|being frank|2019": {
+   "id": "tt6547044",
+   "rating": 6.2,
+   "votes": 2041,
+   "checked": "2026-11-13"
+  },
+  "m|being john malkovich|1999": {
+   "id": "tt0120601",
+   "rating": 7.7,
+   "votes": 372520,
+   "checked": "2026-11-13"
+  },
+  "m|ben hur|1959": {
+   "id": "tt0052618",
+   "rating": 8.1,
+   "votes": 274681,
+   "checked": "2026-11-13"
+  },
+  "m|bengal brigade|1954": {
+   "id": "tt0046767",
+   "rating": 5.6,
+   "votes": 596,
+   "checked": "2026-11-13"
+  },
+  "m|bent|2018": {
+   "id": "tt2237324",
+   "rating": 5.2,
+   "votes": 7074,
+   "checked": "2026-11-13"
+  },
+  "m|best defense|": {
+   "id": "tt0086955",
+   "rating": 3.9,
+   "votes": 6799,
+   "checked": "2026-11-13"
+  },
+  "m|best in show|2000": {
+   "id": "tt0218839",
+   "rating": 7.5,
+   "votes": 76893,
+   "checked": "2026-11-13"
+  },
+  "m|best man|1999": {
+   "id": "tt0168501",
+   "rating": 6.8,
+   "votes": 12989,
+   "checked": "2026-11-13"
+  },
+  "m|best of the best 3 no turning back|1995": {
+   "id": "tt0112483",
+   "rating": 4.9,
+   "votes": 2809,
+   "checked": "2026-11-13"
+  },
+  "m|best of the best 4 without warning|1998": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|better living through chemistry|2014": {
+   "id": "tt1609479",
+   "rating": 6.2,
+   "votes": 16193,
+   "checked": "2026-11-13"
+  },
+  "m|better luck tomorrow|2003": {
+   "id": "tt0280477",
+   "rating": 7,
+   "votes": 11116,
+   "checked": "2026-11-13"
+  },
+  "m|beverly hills cop iii|1994": {
+   "id": "tt0109254",
+   "rating": 5.5,
+   "votes": 101721,
+   "checked": "2026-11-13"
+  },
+  "m|beyond re animator|2003": {
+   "id": "tt0222812",
+   "rating": 5.7,
+   "votes": 14242,
+   "checked": "2026-11-13"
+  },
+  "m|beyond the law|1994": {
+   "id": "tt0103805",
+   "rating": 6.4,
+   "votes": 9107,
+   "checked": "2026-11-13"
+  },
+  "m|beyond the reach|2015": {
+   "id": "tt2911668",
+   "rating": 5.6,
+   "votes": 11871,
+   "checked": "2026-11-13"
+  },
+  "m|big boss|1971": {
+   "id": "tt0067824",
+   "rating": 6.9,
+   "votes": 32242,
+   "checked": "2026-11-13"
+  },
+  "m|big heat|": {
+   "id": "tt0045555",
+   "rating": 7.9,
+   "votes": 33484,
+   "checked": "2026-11-13"
+  },
+  "m|big jake|": {
+   "id": "tt0066831",
+   "rating": 7.1,
+   "votes": 16220,
+   "checked": "2026-11-13"
+  },
+  "m|billboard dad|1998": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|billy madison|": {
+   "id": "tt0112508",
+   "rating": 6.4,
+   "votes": 170022,
+   "checked": "2026-11-13"
+  },
+  "m|biloxi blues|": {
+   "id": "tt0094746",
+   "rating": 6.7,
+   "votes": 17747,
+   "checked": "2026-11-13"
+  },
+  "m|biloxi blues|1988": {
+   "id": "tt0094746",
+   "rating": 6.7,
+   "votes": 17747,
+   "checked": "2026-11-13"
+  },
+  "m|birdie|1971": {
+   "id": "tt0299541",
+   "rating": 6.4,
+   "votes": 16,
+   "checked": "2026-11-13"
+  },
+  "m|black rain|1990": {
+   "id": "tt0096933",
+   "rating": 6.6,
+   "votes": 66027,
+   "checked": "2026-11-13"
+  },
+  "m|black sheep|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|blade runner 2049|2017": {
+   "id": "tt1856101",
+   "rating": 8,
+   "votes": 776062,
+   "checked": "2026-11-13"
+  },
+  "m|blade runner|1982": {
+   "id": "tt0083658",
+   "rating": 8.1,
+   "votes": 896816,
+   "checked": "2026-11-13"
+  },
+  "m|blade|1998": {
+   "id": "tt0120611",
+   "rating": 7.1,
+   "votes": 338546,
+   "checked": "2026-11-13"
+  },
+  "m|blades of glory|": {
+   "id": "tt0445934",
+   "rating": 6.3,
+   "votes": 188164,
+   "checked": "2026-11-13"
+  },
+  "m|blast from the past|1999": {
+   "id": "tt0124298",
+   "rating": 6.7,
+   "votes": 78859,
+   "checked": "2026-11-13"
+  },
+  "m|blazing saddles|1974": {
+   "id": "tt0071230",
+   "rating": 7.7,
+   "votes": 167403,
+   "checked": "2026-11-13"
+  },
+  "m|bleeding steel|2018": {
+   "id": "tt5813366",
+   "rating": 5.2,
+   "votes": 12281,
+   "checked": "2026-11-13"
+  },
+  "m|blended|2014": {
+   "id": "tt1086772",
+   "rating": 6.5,
+   "votes": 161210,
+   "checked": "2026-11-13"
+  },
+  "m|blind side|2009": {
+   "id": "tt0878804",
+   "rating": 7.6,
+   "votes": 394723,
+   "checked": "2026-11-13"
+  },
+  "m|blind swordsman zatoichi|2004": {
+   "id": "tt0363226",
+   "rating": 7.4,
+   "votes": 53656,
+   "checked": "2026-11-13"
+  },
+  "m|blockers|2018": {
+   "id": "tt2531344",
+   "rating": 6.2,
+   "votes": 93144,
+   "checked": "2026-11-13"
+  },
+  "m|blood brother|2018": {
+   "id": "tt5246902",
+   "rating": 4.5,
+   "votes": 1247,
+   "checked": "2026-11-13"
+  },
+  "m|blow dry|2001": {
+   "id": "tt0212380",
+   "rating": 6.2,
+   "votes": 9709,
+   "checked": "2026-11-13"
+  },
+  "m|blue hawaii|1961": {
+   "id": "tt0054692",
+   "rating": 6.1,
+   "votes": 8590,
+   "checked": "2026-11-13"
+  },
+  "m|blue hill avenue|2003": {
+   "id": "tt0283952",
+   "rating": 6.3,
+   "votes": 1744,
+   "checked": "2026-11-13"
+  },
+  "m|blue iguana|1988": {
+   "id": "tt0094768",
+   "rating": 5.3,
+   "votes": 669,
+   "checked": "2026-11-13"
+  },
+  "m|blue moon|2025": {
+   "id": "tt32536315",
+   "rating": 6.8,
+   "votes": 26935,
+   "checked": "2026-11-13"
+  },
+  "m|blues brothers|": {
+   "id": "tt0080455",
+   "rating": 7.9,
+   "votes": 232949,
+   "checked": "2026-11-13"
+  },
+  "m|blues brothers|1980": {
+   "id": "tt0080455",
+   "rating": 7.9,
+   "votes": 232949,
+   "checked": "2026-11-13"
+  },
+  "m|bob marley one love|2024": {
+   "id": "tt8521778",
+   "rating": 6.2,
+   "votes": 40293,
+   "checked": "2026-11-13"
+  },
+  "m|bob trevino likes it|2025": {
+   "id": "tt28613536",
+   "rating": 7.4,
+   "votes": 8812,
+   "checked": "2026-11-13"
+  },
+  "m|body double|": {
+   "id": "tt0086984",
+   "rating": 6.8,
+   "votes": 46541,
+   "checked": "2026-11-13"
+  },
+  "m|bodyguard|1992": {
+   "id": "tt0103855",
+   "rating": 6.4,
+   "votes": 161192,
+   "checked": "2026-11-13"
+  },
+  "m|bon voyage charlie brown|1980": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|bonnie and clyde|1967": {
+   "id": "tt0061418",
+   "rating": 7.7,
+   "votes": 128256,
+   "checked": "2026-11-13"
+  },
+  "m|boogie nights|1997": {
+   "id": "tt0118749",
+   "rating": 7.9,
+   "votes": 311473,
+   "checked": "2026-11-13"
+  },
+  "m|book of eli|2010": {
+   "id": "tt1037705",
+   "rating": 6.8,
+   "votes": 365745,
+   "checked": "2026-11-13"
+  },
+  "m|borderlands|2024": {
+   "id": "tt4978420",
+   "rating": 4.7,
+   "votes": 61307,
+   "checked": "2026-11-13"
+  },
+  "m|born in east la|1987": {
+   "id": "tt0092690",
+   "rating": 6.1,
+   "votes": 7361,
+   "checked": "2026-11-13"
+  },
+  "m|born on the fourth of july|1989": {
+   "id": "tt0096969",
+   "rating": 7.2,
+   "votes": 126770,
+   "checked": "2026-11-13"
+  },
+  "m|bound|1996": {
+   "id": "tt0115736",
+   "rating": 7.3,
+   "votes": 68793,
+   "checked": "2026-11-13"
+  },
+  "m|bourne identity|2002": {
+   "id": "tt0258463",
+   "rating": 7.8,
+   "votes": 624328,
+   "checked": "2026-11-13"
+  },
+  "m|bourne supremacy|2004": {
+   "id": "tt0372183",
+   "rating": 7.7,
+   "votes": 520662,
+   "checked": "2026-11-13"
+  },
+  "m|boy|2015": {
+   "id": "tt3882082",
+   "rating": 6,
+   "votes": 109713,
+   "checked": "2026-11-13"
+  },
+  "m|bravo two zero|1999": {
+   "id": "tt0120617",
+   "rating": 6.7,
+   "votes": 4618,
+   "checked": "2026-11-13"
+  },
+  "m|brewsters millions|": {
+   "id": "tt0088850",
+   "rating": 6.5,
+   "votes": 48173,
+   "checked": "2026-11-13"
+  },
+  "m|bridesmaids|2011": {
+   "id": "tt1478338",
+   "rating": 6.8,
+   "votes": 329563,
+   "checked": "2026-11-13"
+  },
+  "m|bridges at toko ri|1955": {
+   "id": "tt0046806",
+   "rating": 6.7,
+   "votes": 7082,
+   "checked": "2026-11-13"
+  },
+  "m|brigsby bear|": {
+   "id": "tt5805752",
+   "rating": 7.3,
+   "votes": 19039,
+   "checked": "2026-11-13"
+  },
+  "m|bringing out the dead|1999": {
+   "id": "tt0163988",
+   "rating": 6.9,
+   "votes": 82380,
+   "checked": "2026-11-13"
+  },
+  "m|brokeback mountain|2005": {
+   "id": "tt0388795",
+   "rating": 7.7,
+   "votes": 423922,
+   "checked": "2026-11-13"
+  },
+  "m|broken bridges|2006": {
+   "id": "tt0477392",
+   "rating": 6,
+   "votes": 1994,
+   "checked": "2026-11-13"
+  },
+  "m|broken flowers|2005": {
+   "id": "tt0412019",
+   "rating": 7.1,
+   "votes": 110961,
+   "checked": "2026-11-13"
+  },
+  "m|brothers grimm|2005": {
+   "id": "tt0355295",
+   "rating": 5.9,
+   "votes": 133702,
+   "checked": "2026-11-13"
+  },
+  "m|bruce almighty|2003": {
+   "id": "tt0315327",
+   "rating": 6.8,
+   "votes": 478055,
+   "checked": "2026-11-13"
+  },
+  "m|bruce lee the legend|1999": {
+   "id": "tt0075788",
+   "rating": 7,
+   "votes": 1336,
+   "checked": "2026-11-13"
+  },
+  "m|buck privates|1941": {
+   "id": "tt0033436",
+   "rating": 7,
+   "votes": 5086,
+   "checked": "2026-11-13"
+  },
+  "m|bulletproof|1996": {
+   "id": "tt0115783",
+   "rating": 5.8,
+   "votes": 41854,
+   "checked": "2026-11-13"
+  },
+  "m|bullitt|1968": {
+   "id": "tt0062765",
+   "rating": 7.4,
+   "votes": 82327,
+   "checked": "2026-11-13"
+  },
+  "m|burbs|": {
+   "id": "tt0096734",
+   "rating": 6.8,
+   "votes": 94302,
+   "checked": "2026-11-13"
+  },
+  "m|burglar|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|butterfly effect|2004": {
+   "id": "tt0289879",
+   "rating": 7.6,
+   "votes": 564518,
+   "checked": "2026-11-13"
+  },
+  "m|caddyshack|1980": {
+   "id": "tt0080487",
+   "rating": 7.2,
+   "votes": 134963,
+   "checked": "2026-11-13"
+  },
+  "m|call jane|2022": {
+   "id": "tt7461272",
+   "rating": 6.5,
+   "votes": 7594,
+   "checked": "2026-11-13"
+  },
+  "m|call me by your name|": {
+   "id": "tt5726616",
+   "rating": 7.8,
+   "votes": 366634,
+   "checked": "2026-11-13"
+  },
+  "m|captain carey usa|1950": {
+   "id": "tt0042310",
+   "rating": 6.4,
+   "votes": 778,
+   "checked": "2026-11-13"
+  },
+  "m|captain newman md|1963": {
+   "id": "tt0056903",
+   "rating": 6.9,
+   "votes": 3342,
+   "checked": "2026-11-13"
+  },
+  "m|car wash|1976": {
+   "id": "tt0074281",
+   "rating": 6.2,
+   "votes": 9236,
+   "checked": "2026-11-13"
+  },
+  "m|careful what you wish for|2016": {
+   "id": "tt1629242",
+   "rating": 5.6,
+   "votes": 9489,
+   "checked": "2026-11-13"
+  },
+  "m|carlitos way|1993": {
+   "id": "tt0106519",
+   "rating": 7.9,
+   "votes": 252404,
+   "checked": "2026-11-13"
+  },
+  "m|carlos|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|carmen|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|carriers|2009": {
+   "id": "tt0806203",
+   "rating": 5.9,
+   "votes": 53930,
+   "checked": "2026-11-13"
+  },
+  "m|casablanca|1942": {
+   "id": "tt0034583",
+   "rating": 8.5,
+   "votes": 664153,
+   "checked": "2026-11-13"
+  },
+  "m|casino|1995": {
+   "id": "tt0112641",
+   "rating": 8.2,
+   "votes": 631674,
+   "checked": "2026-11-13"
+  },
+  "m|catch 22|1970": {
+   "id": "tt0065528",
+   "rating": 7.1,
+   "votes": 27439,
+   "checked": "2026-11-13"
+  },
+  "m|cats and dogs the revenge of kitty galore|2010": {
+   "id": "tt1287468",
+   "rating": 4.4,
+   "votes": 17583,
+   "checked": "2026-11-13"
+  },
+  "m|cats and dogs|2001": {
+   "id": "tt0239395",
+   "rating": 5.2,
+   "votes": 66543,
+   "checked": "2026-11-13"
+  },
+  "m|caught in the draft|1941": {
+   "id": "tt0033455",
+   "rating": 6.5,
+   "votes": 994,
+   "checked": "2026-11-13"
+  },
+  "m|cell|2000": {
+   "id": "tt0209958",
+   "rating": 6.4,
+   "votes": 116685,
+   "checked": "2026-11-13"
+  },
+  "m|central intelligence|2016": {
+   "id": "tt1489889",
+   "rating": 6.3,
+   "votes": 243951,
+   "checked": "2026-11-13"
+  },
+  "m|change up|2011": {
+   "id": "tt1488555",
+   "rating": 6.3,
+   "votes": 208185,
+   "checked": "2026-11-13"
+  },
+  "m|chaos walking|2021": {
+   "id": "tt2076822",
+   "rating": 5.7,
+   "votes": 65568,
+   "checked": "2026-11-13"
+  },
+  "m|charlie wilsons war|2007": {
+   "id": "tt0472062",
+   "rating": 7,
+   "votes": 133626,
+   "checked": "2026-11-13"
+  },
+  "m|chicago|2001": {
+   "id": "tt0299658",
+   "rating": 7.2,
+   "votes": 259496,
+   "checked": "2026-11-13"
+  },
+  "m|chicago|2003": {
+   "id": "tt0299658",
+   "rating": 7.2,
+   "votes": 259496,
+   "checked": "2026-11-13"
+  },
+  "m|china strike force|2000": {
+   "id": "tt0266408",
+   "rating": 5.3,
+   "votes": 1996,
+   "checked": "2026-11-13"
+  },
+  "m|china|1943": {
+   "id": "tt0035735",
+   "rating": 6.6,
+   "votes": 772,
+   "checked": "2026-11-13"
+  },
+  "m|chocolat|2001": {
+   "id": "tt0241303",
+   "rating": 7.2,
+   "votes": 212257,
+   "checked": "2026-11-13"
+  },
+  "m|christmas on the square|2020": {
+   "id": "tt10627548",
+   "rating": 5.2,
+   "votes": 3422,
+   "checked": "2026-11-13"
+  },
+  "m|citizen kane|1941": {
+   "id": "tt0033467",
+   "rating": 8.2,
+   "votes": 498533,
+   "checked": "2026-11-13"
+  },
+  "m|city of god|2002": {
+   "id": "tt0317248",
+   "rating": 8.6,
+   "votes": 887198,
+   "checked": "2026-11-13"
+  },
+  "m|clash of the titans|1981": {
+   "id": "tt0082186",
+   "rating": 6.9,
+   "votes": 52368,
+   "checked": "2026-11-13"
+  },
+  "m|clueless|1995": {
+   "id": "tt0112697",
+   "rating": 6.9,
+   "votes": 284269,
+   "checked": "2026-11-13"
+  },
+  "m|coat of many colors|2015": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|cobra|1986": {
+   "id": "tt0090859",
+   "rating": 5.8,
+   "votes": 87427,
+   "checked": "2026-11-13"
+  },
+  "m|cocaine bear|": {
+   "id": "tt14209916",
+   "rating": 5.9,
+   "votes": 129624,
+   "checked": "2026-11-13"
+  },
+  "m|cold pursuit|2019": {
+   "id": "tt5719748",
+   "rating": 6.2,
+   "votes": 85577,
+   "checked": "2026-11-13"
+  },
+  "m|collateral|2004": {
+   "id": "tt0369339",
+   "rating": 7.5,
+   "votes": 477203,
+   "checked": "2026-11-13"
+  },
+  "m|color purple|1985": {
+   "id": "tt0088939",
+   "rating": 7.7,
+   "votes": 105823,
+   "checked": "2026-11-13"
+  },
+  "m|column south|1953": {
+   "id": "tt0045637",
+   "rating": 6.3,
+   "votes": 861,
+   "checked": "2026-11-13"
+  },
+  "m|command|2019": {
+   "id": "tt4951982",
+   "rating": 6.6,
+   "votes": 24190,
+   "checked": "2026-11-13"
+  },
+  "m|commuter|2018": {
+   "id": "tt1590193",
+   "rating": 6.3,
+   "votes": 135761,
+   "checked": "2026-11-13"
+  },
+  "m|companion|2025": {
+   "id": "tt26584495",
+   "rating": 6.9,
+   "votes": 196597,
+   "checked": "2026-11-13"
+  },
+  "m|condemned|2007": {
+   "id": "tt0443473",
+   "rating": 6,
+   "votes": 56408,
+   "checked": "2026-11-13"
+  },
+  "m|confess fletch|": {
+   "id": "tt12718300",
+   "rating": 6.4,
+   "votes": 27743,
+   "checked": "2026-11-13"
+  },
+  "m|confessions of a dangerous mind|2002": {
+   "id": "tt0270288",
+   "rating": 7,
+   "votes": 96526,
+   "checked": "2026-11-13"
+  },
+  "m|confinement|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|confinement|2026": {
+   "id": "tt38907741",
+   "rating": 4.4,
+   "votes": 451,
+   "checked": "2026-11-13"
+  },
+  "m|conjuring|2013": {
+   "id": "tt1457767",
+   "rating": 7.5,
+   "votes": 638512,
+   "checked": "2026-11-13"
+  },
+  "m|cool hand luke|1967": {
+   "id": "tt0061512",
+   "rating": 8,
+   "votes": 197899,
+   "checked": "2026-11-13"
+  },
+  "m|cool world|1992": {
+   "id": "tt0104009",
+   "rating": 4.9,
+   "votes": 27406,
+   "checked": "2026-11-13"
+  },
+  "m|copshop|2021": {
+   "id": "tt5748448",
+   "rating": 6.2,
+   "votes": 47162,
+   "checked": "2026-11-13"
+  },
+  "m|core|2003": {
+   "id": "tt0298814",
+   "rating": 5.6,
+   "votes": 117909,
+   "checked": "2026-11-13"
+  },
+  "m|coriolanus|": {
+   "id": "tt1372686",
+   "rating": 6.1,
+   "votes": 35143,
+   "checked": "2026-11-13"
+  },
+  "m|crazy rich asians|2018": {
+   "id": "tt3104988",
+   "rating": 6.9,
+   "votes": 213423,
+   "checked": "2026-11-13"
+  },
+  "m|creepshow|1982": {
+   "id": "tt0083767",
+   "rating": 6.8,
+   "votes": 58985,
+   "checked": "2026-11-13"
+  },
+  "m|crescent city|2024": {
+   "id": "tt18884172",
+   "rating": 3.9,
+   "votes": 1764,
+   "checked": "2026-11-13"
+  },
+  "m|crimson kimono|": {
+   "id": "tt0052713",
+   "rating": 6.8,
+   "votes": 3700,
+   "checked": "2026-11-13"
+  },
+  "m|crocodile dundee ii|": {
+   "id": "tt0092493",
+   "rating": 5.7,
+   "votes": 65195,
+   "checked": "2026-11-13"
+  },
+  "m|crocodile dundee ii|1988": {
+   "id": "tt0092493",
+   "rating": 5.7,
+   "votes": 65195,
+   "checked": "2026-11-13"
+  },
+  "m|crocodile dundee in los angeles|": {
+   "id": "tt0231402",
+   "rating": 4.9,
+   "votes": 27803,
+   "checked": "2026-11-13"
+  },
+  "m|crocodile dundee in los angeles|2001": {
+   "id": "tt0231402",
+   "rating": 4.9,
+   "votes": 27803,
+   "checked": "2026-11-13"
+  },
+  "m|crow|1994": {
+   "id": "tt0109506",
+   "rating": 7.5,
+   "votes": 235229,
+   "checked": "2026-11-13"
+  },
+  "m|crying game|1992": {
+   "id": "tt0104036",
+   "rating": 7.2,
+   "votes": 64171,
+   "checked": "2026-11-13"
+  },
+  "m|crypto|2019": {
+   "id": "tt8563452",
+   "rating": 5.3,
+   "votes": 5241,
+   "checked": "2026-11-13"
+  },
+  "m|cube|1998": {
+   "id": "tt0123755",
+   "rating": 7.1,
+   "votes": 264933,
+   "checked": "2026-11-13"
+  },
+  "m|curious case of benjamin button|2008": {
+   "id": "tt0421715",
+   "rating": 7.8,
+   "votes": 758096,
+   "checked": "2026-11-13"
+  },
+  "m|curse of la llorona|2019": {
+   "id": "tt4913966",
+   "rating": 5.3,
+   "votes": 68019,
+   "checked": "2026-11-13"
+  },
+  "m|cyborg 2|1993": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|daddio|": {
+   "id": "tt7461686",
+   "rating": 6.7,
+   "votes": 17190,
+   "checked": "2026-11-13"
+  },
+  "m|daddys home|2015": {
+   "id": "tt1528854",
+   "rating": 6.2,
+   "votes": 141378,
+   "checked": "2026-11-13"
+  },
+  "m|dads army|2016": {
+   "id": "tt4104054",
+   "rating": 5.2,
+   "votes": 8962,
+   "checked": "2026-11-13"
+  },
+  "m|dakota|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|dark command|": {
+   "id": "tt0032383",
+   "rating": 6.7,
+   "votes": 3377,
+   "checked": "2026-11-13"
+  },
+  "m|dark crimes|2018": {
+   "id": "tt1901024",
+   "rating": 4.6,
+   "votes": 20204,
+   "checked": "2026-11-13"
+  },
+  "m|dark shadows|2012": {
+   "id": "tt1077368",
+   "rating": 6.2,
+   "votes": 298336,
+   "checked": "2026-11-13"
+  },
+  "m|darkest hour|2011": {
+   "id": "tt1093357",
+   "rating": 4.9,
+   "votes": 66749,
+   "checked": "2026-11-13"
+  },
+  "m|darkest hour|2017": {
+   "id": "tt4555426",
+   "rating": 7.4,
+   "votes": 247087,
+   "checked": "2026-11-13"
+  },
+  "m|david crosby remember my name|": {
+   "id": "tt5884004",
+   "rating": 7.5,
+   "votes": 1507,
+   "checked": "2026-11-13"
+  },
+  "m|days of thunder|1990": {
+   "id": "tt0099371",
+   "rating": 6.2,
+   "votes": 107553,
+   "checked": "2026-11-13"
+  },
+  "m|dazed and confused|": {
+   "id": "tt0106677",
+   "rating": 7.6,
+   "votes": 220030,
+   "checked": "2026-11-13"
+  },
+  "m|dc league of super pets|2022": {
+   "id": "tt8912936",
+   "rating": 6.8,
+   "votes": 81209,
+   "checked": "2026-11-13"
+  },
+  "m|dead 2|2014": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|dead man on campus|": {
+   "id": "tt0118301",
+   "rating": 6,
+   "votes": 15895,
+   "checked": "2026-11-13"
+  },
+  "m|dead reckoning|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|dear david|2023": {
+   "id": "tt9288740",
+   "rating": 3.9,
+   "votes": 2035,
+   "checked": "2026-11-13"
+  },
+  "m|death of me|2020": {
+   "id": "tt1830643",
+   "rating": 4.5,
+   "votes": 8184,
+   "checked": "2026-11-13"
+  },
+  "m|death of stalin|2018": {
+   "id": "tt4686844",
+   "rating": 7.3,
+   "votes": 129299,
+   "checked": "2026-11-13"
+  },
+  "m|death race|2008": {
+   "id": "tt0452608",
+   "rating": 6.4,
+   "votes": 230597,
+   "checked": "2026-11-13"
+  },
+  "m|deep impact|1998": {
+   "id": "tt0120647",
+   "rating": 6.3,
+   "votes": 208773,
+   "checked": "2026-11-13"
+  },
+  "m|deer hunter|1978": {
+   "id": "tt0077416",
+   "rating": 8.1,
+   "votes": 391575,
+   "checked": "2026-11-13"
+  },
+  "m|defiance|2009": {
+   "id": "tt1034303",
+   "rating": 7.1,
+   "votes": 162169,
+   "checked": "2026-11-13"
+  },
+  "m|deliver us from eva|2003": {
+   "id": "tt0301181",
+   "rating": 6.1,
+   "votes": 8277,
+   "checked": "2026-11-13"
+  },
+  "m|demolition man|1993": {
+   "id": "tt0106697",
+   "rating": 6.7,
+   "votes": 212291,
+   "checked": "2026-11-13"
+  },
+  "m|dennis the menace|1993": {
+   "id": "tt0106701",
+   "rating": 5.7,
+   "votes": 70233,
+   "checked": "2026-11-13"
+  },
+  "m|departed|2006": {
+   "id": "tt0407887",
+   "rating": 8.5,
+   "votes": 1589975,
+   "checked": "2026-11-13"
+  },
+  "m|devil in a blue dress|": {
+   "id": "tt0112857",
+   "rating": 6.8,
+   "votes": 28222,
+   "checked": "2026-11-13"
+  },
+  "m|devils own|": {
+   "id": "tt0118972",
+   "rating": 6.2,
+   "votes": 79368,
+   "checked": "2026-11-13"
+  },
+  "m|devotion|2022": {
+   "id": "tt7693316",
+   "rating": 6.6,
+   "votes": 33536,
+   "checked": "2026-11-13"
+  },
+  "m|dickie roberts former child star|": {
+   "id": "tt0325258",
+   "rating": 5.6,
+   "votes": 16529,
+   "checked": "2026-11-13"
+  },
+  "m|dickie roberts former child star|2003": {
+   "id": "tt0325258",
+   "rating": 5.6,
+   "votes": 16529,
+   "checked": "2026-11-13"
+  },
+  "m|dictator|": {
+   "id": "tt1645170",
+   "rating": 6.5,
+   "votes": 375299,
+   "checked": "2026-11-13"
+  },
+  "m|dinner for schmucks|2010": {
+   "id": "tt0427152",
+   "rating": 5.9,
+   "votes": 117656,
+   "checked": "2026-11-13"
+  },
+  "m|dirty 30|2016": {
+   "id": "tt5521550",
+   "rating": 5.5,
+   "votes": 3276,
+   "checked": "2026-11-13"
+  },
+  "m|distant thunder|1988": {
+   "id": "tt0095036",
+   "rating": 5.8,
+   "votes": 975,
+   "checked": "2026-11-13"
+  },
+  "m|divergent series allegiant|2016": {
+   "id": "tt3410834",
+   "rating": 5.7,
+   "votes": 149895,
+   "checked": "2026-11-13"
+  },
+  "m|divergent series divergent|2014": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|divergent series insurgent|2015": {
+   "id": "tt2908446",
+   "rating": 6.2,
+   "votes": 275496,
+   "checked": "2026-11-13"
+  },
+  "m|do the right thing|": {
+   "id": "tt0097216",
+   "rating": 7.9,
+   "votes": 127038,
+   "checked": "2026-11-13"
+  },
+  "m|doctor zhivago|1965": {
+   "id": "tt0059113",
+   "rating": 7.9,
+   "votes": 88409,
+   "checked": "2026-11-13"
+  },
+  "m|dolly partons christmas of many colors circle of love|2016": {
+   "id": "tt5713426",
+   "rating": 7.6,
+   "votes": 1182,
+   "checked": "2026-11-13"
+  },
+  "m|dolly partons mountain magic christmas|2022": {
+   "id": "tt21933082",
+   "rating": 5.8,
+   "votes": 637,
+   "checked": "2026-11-13"
+  },
+  "m|domestic disturbance|2001": {
+   "id": "tt0249478",
+   "rating": 5.6,
+   "votes": 30077,
+   "checked": "2026-11-13"
+  },
+  "m|donovans reef|": {
+   "id": "tt0057007",
+   "rating": 6.7,
+   "votes": 10945,
+   "checked": "2026-11-13"
+  },
+  "m|dont be a menace to south central while drinking your juice in the hood|1996": {
+   "id": "tt0116126",
+   "rating": 6.6,
+   "votes": 68639,
+   "checked": "2026-11-13"
+  },
+  "m|dont lets go to the dogs tonight|": {
+   "id": "tt32944883",
+   "rating": 6.9,
+   "votes": 1697,
+   "checked": "2026-11-13"
+  },
+  "m|double jeopardy|1999": {
+   "id": "tt0150377",
+   "rating": 6.6,
+   "votes": 107637,
+   "checked": "2026-11-13"
+  },
+  "m|down to earth|": {
+   "id": "tt0231775",
+   "rating": 5.4,
+   "votes": 24745,
+   "checked": "2026-11-13"
+  },
+  "m|downsizing|": {
+   "id": "tt1389072",
+   "rating": 5.8,
+   "votes": 139726,
+   "checked": "2026-11-13"
+  },
+  "m|dr wai in the scripture with no words|1996": {
+   "id": "tt0110463",
+   "rating": 5.7,
+   "votes": 2273,
+   "checked": "2026-11-13"
+  },
+  "m|dracula dead and loving it|1995": {
+   "id": "tt0112896",
+   "rating": 5.9,
+   "votes": 49803,
+   "checked": "2026-11-13"
+  },
+  "m|dragged across concrete|2019": {
+   "id": "tt6491178",
+   "rating": 6.9,
+   "votes": 63567,
+   "checked": "2026-11-13"
+  },
+  "m|dragnet|1987": {
+   "id": "tt0092925",
+   "rating": 6,
+   "votes": 40680,
+   "checked": "2026-11-13"
+  },
+  "m|dragon lord|1982": {
+   "id": "tt0084266",
+   "rating": 6.3,
+   "votes": 5107,
+   "checked": "2026-11-13"
+  },
+  "m|dragons forever|1988": {
+   "id": "tt0093015",
+   "rating": 7.1,
+   "votes": 10816,
+   "checked": "2026-11-13"
+  },
+  "m|dragonslayer|1981": {
+   "id": "tt0082288",
+   "rating": 6.6,
+   "votes": 21093,
+   "checked": "2026-11-13"
+  },
+  "m|dreamer inspired by a true story|2005": {
+   "id": "tt0418647",
+   "rating": 6.9,
+   "votes": 14957,
+   "checked": "2026-11-13"
+  },
+  "m|dreamin wild|2023": {
+   "id": "tt10245106",
+   "rating": 6.3,
+   "votes": 1808,
+   "checked": "2026-11-13"
+  },
+  "m|dreamkatcher|2020": {
+   "id": "tt10553210",
+   "rating": 3.8,
+   "votes": 2864,
+   "checked": "2026-11-13"
+  },
+  "m|dreamland|2020": {
+   "id": "tt5294522",
+   "rating": 5.9,
+   "votes": 9583,
+   "checked": "2026-11-13"
+  },
+  "m|dredd|2012": {
+   "id": "tt1343727",
+   "rating": 7.1,
+   "votes": 315950,
+   "checked": "2026-11-13"
+  },
+  "m|drive a crooked road|": {
+   "id": "tt0046935",
+   "rating": 6.9,
+   "votes": 2329,
+   "checked": "2026-11-13"
+  },
+  "m|drive away dolls|": {
+   "id": "tt19356262",
+   "rating": 5.4,
+   "votes": 29733,
+   "checked": "2026-11-13"
+  },
+  "m|drive|": {
+   "id": "tt0780504",
+   "rating": 7.8,
+   "votes": 778550,
+   "checked": "2026-11-13"
+  },
+  "m|drop dead fred|1991": {
+   "id": "tt0101775",
+   "rating": 6,
+   "votes": 34304,
+   "checked": "2026-11-13"
+  },
+  "m|drop zone|1994": {
+   "id": "tt0109676",
+   "rating": 5.6,
+   "votes": 23346,
+   "checked": "2026-11-13"
+  },
+  "m|drunken tai chi|1984": {
+   "id": "tt0088423",
+   "rating": 6.3,
+   "votes": 904,
+   "checked": "2026-11-13"
+  },
+  "m|duel|1971": {
+   "id": "tt0067023",
+   "rating": 7.6,
+   "votes": 87590,
+   "checked": "2026-11-13"
+  },
+  "m|duel|2016": {
+   "id": "tt2436682",
+   "rating": 5.8,
+   "votes": 12929,
+   "checked": "2026-11-13"
+  },
+  "m|duellists|1977": {
+   "id": "tt0075968",
+   "rating": 7.4,
+   "votes": 29232,
+   "checked": "2026-11-13"
+  },
+  "m|dumb and dumber|1994": {
+   "id": "tt0109686",
+   "rating": 7.3,
+   "votes": 449959,
+   "checked": "2026-11-13"
+  },
+  "m|dune|2021": {
+   "id": "tt1160419",
+   "rating": 8,
+   "votes": 1101780,
+   "checked": "2026-11-13"
+  },
+  "m|dungeons and dragons honor among thieves|2023": {
+   "id": "tt2906216",
+   "rating": 7.2,
+   "votes": 280415,
+   "checked": "2026-11-13"
+  },
+  "m|dunkirk|2017": {
+   "id": "tt5013056",
+   "rating": 7.8,
+   "votes": 832604,
+   "checked": "2026-11-13"
+  },
+  "m|duplex|2003": {
+   "id": "tt0266489",
+   "rating": 5.9,
+   "votes": 66408,
+   "checked": "2026-11-13"
+  },
+  "m|eagle eye|2008": {
+   "id": "tt1059786",
+   "rating": 6.6,
+   "votes": 203552,
+   "checked": "2026-11-13"
+  },
+  "m|eagle vs shark|2007": {
+   "id": "tt0494222",
+   "rating": 6.7,
+   "votes": 27868,
+   "checked": "2026-11-13"
+  },
+  "m|earthquake|1974": {
+   "id": "tt0071455",
+   "rating": 6,
+   "votes": 18699,
+   "checked": "2026-11-13"
+  },
+  "m|eight millimeter|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|el dorado|": {
+   "id": "tt0061619",
+   "rating": 7.5,
+   "votes": 34106,
+   "checked": "2026-11-13"
+  },
+  "m|election|1999": {
+   "id": "tt0126886",
+   "rating": 7.2,
+   "votes": 112651,
+   "checked": "2026-11-13"
+  },
+  "m|elf|2003": {
+   "id": "tt0319343",
+   "rating": 7.1,
+   "votes": 350872,
+   "checked": "2026-11-13"
+  },
+  "m|emperor|2013": {
+   "id": "tt2103264",
+   "rating": 6.5,
+   "votes": 15799,
+   "checked": "2026-11-13"
+  },
+  "m|empire of the sun|1987": {
+   "id": "tt0092965",
+   "rating": 7.7,
+   "votes": 145612,
+   "checked": "2026-11-13"
+  },
+  "m|enchanted april|1992": {
+   "id": "tt0101811",
+   "rating": 7.3,
+   "votes": 7891,
+   "checked": "2026-11-13"
+  },
+  "m|endangered species|2021": {
+   "id": "tt13863334",
+   "rating": 4.7,
+   "votes": 3219,
+   "checked": "2026-11-13"
+  },
+  "m|enders game|2013": {
+   "id": "tt1731141",
+   "rating": 6.6,
+   "votes": 267299,
+   "checked": "2026-11-13"
+  },
+  "m|enemy at the gates|2001": {
+   "id": "tt0215750",
+   "rating": 7.5,
+   "votes": 296956,
+   "checked": "2026-11-13"
+  },
+  "m|envy|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|eraser|1996": {
+   "id": "tt0116213",
+   "rating": 6.2,
+   "votes": 125766,
+   "checked": "2026-11-13"
+  },
+  "m|erin brockovich|2000": {
+   "id": "tt0195685",
+   "rating": 7.5,
+   "votes": 251209,
+   "checked": "2026-11-13"
+  },
+  "m|escape room|2017": {
+   "id": "tt5159414",
+   "rating": 4.2,
+   "votes": 15731,
+   "checked": "2026-11-13"
+  },
+  "m|evan almighty|2007": {
+   "id": "tt0413099",
+   "rating": 5.5,
+   "votes": 164989,
+   "checked": "2026-11-13"
+  },
+  "m|everest|2015": {
+   "id": "tt2719848",
+   "rating": 7.1,
+   "votes": 250603,
+   "checked": "2026-11-13"
+  },
+  "m|every which way but loose|1978": {
+   "id": "tt0077523",
+   "rating": 6.3,
+   "votes": 31745,
+   "checked": "2026-11-13"
+  },
+  "m|everybody wants some|2016": {
+   "id": "tt2937696",
+   "rating": 6.9,
+   "votes": 65156,
+   "checked": "2026-11-13"
+  },
+  "m|eves bayou|1997": {
+   "id": "tt0119080",
+   "rating": 7.2,
+   "votes": 13334,
+   "checked": "2026-11-13"
+  },
+  "m|evil under the sun|1982": {
+   "id": "tt0083908",
+   "rating": 7.1,
+   "votes": 24666,
+   "checked": "2026-11-13"
+  },
+  "m|evolver|1995": {
+   "id": "tt0112993",
+   "rating": 5.5,
+   "votes": 1596,
+   "checked": "2026-11-13"
+  },
+  "m|excalibur|1981": {
+   "id": "tt0082348",
+   "rating": 7.3,
+   "votes": 75498,
+   "checked": "2026-11-13"
+  },
+  "m|exorcist|1973": {
+   "id": "tt0070047",
+   "rating": 8.1,
+   "votes": 509785,
+   "checked": "2026-11-13"
+  },
+  "m|experiment in terror|": {
+   "id": "tt0055972",
+   "rating": 7.3,
+   "votes": 7672,
+   "checked": "2026-11-13"
+  },
+  "m|exposed|2016": {
+   "id": "tt4019560",
+   "rating": 4.4,
+   "votes": 18225,
+   "checked": "2026-11-13"
+  },
+  "m|extract|": {
+   "id": "tt1225822",
+   "rating": 6.1,
+   "votes": 53581,
+   "checked": "2026-11-13"
+  },
+  "m|eyes of laura mars|": {
+   "id": "tt0077530",
+   "rating": 6.2,
+   "votes": 13876,
+   "checked": "2026-11-13"
+  },
+  "m|fabelmans|2022": {
+   "id": "tt14208870",
+   "rating": 7.5,
+   "votes": 137982,
+   "checked": "2026-11-13"
+  },
+  "m|fairytale a true story|1997": {
+   "id": "tt0119095",
+   "rating": 6.5,
+   "votes": 6725,
+   "checked": "2026-11-13"
+  },
+  "m|faith of our fathers|2015": {
+   "id": "tt1322393",
+   "rating": 4,
+   "votes": 813,
+   "checked": "2026-11-13"
+  },
+  "m|fallen|1998": {
+   "id": "tt0119099",
+   "rating": 7,
+   "votes": 106748,
+   "checked": "2026-11-13"
+  },
+  "m|fast times at ridgemont high|": {
+   "id": "tt0083929",
+   "rating": 7.1,
+   "votes": 126850,
+   "checked": "2026-11-13"
+  },
+  "m|fat camp|2017": {
+   "id": "tt5643724",
+   "rating": 4.7,
+   "votes": 297,
+   "checked": "2026-11-13"
+  },
+  "m|fat man and little boy|1989": {
+   "id": "tt0097336",
+   "rating": 6.5,
+   "votes": 9989,
+   "checked": "2026-11-13"
+  },
+  "m|father goose|1964": {
+   "id": "tt0058092",
+   "rating": 7.3,
+   "votes": 13836,
+   "checked": "2026-11-13"
+  },
+  "m|fear and loathing in las vegas|1998": {
+   "id": "tt0120669",
+   "rating": 7.4,
+   "votes": 322871,
+   "checked": "2026-11-13"
+  },
+  "m|festival in cannes|2002": {
+   "id": "tt0273607",
+   "rating": 6,
+   "votes": 654,
+   "checked": "2026-11-13"
+  },
+  "m|fifty shades of grey|2015": {
+   "id": "tt2322441",
+   "rating": 4.2,
+   "votes": 361007,
+   "checked": "2026-11-13"
+  },
+  "m|fighting kentuckian|": {
+   "id": "tt0041361",
+   "rating": 6.4,
+   "votes": 3965,
+   "checked": "2026-11-13"
+  },
+  "m|fighting seabees|": {
+   "id": "tt0036824",
+   "rating": 6.4,
+   "votes": 4286,
+   "checked": "2026-11-13"
+  },
+  "m|fighting seabees|1944": {
+   "id": "tt0036824",
+   "rating": 6.4,
+   "votes": 4286,
+   "checked": "2026-11-13"
+  },
+  "m|final cut|2004": {
+   "id": "tt0364343",
+   "rating": 6.1,
+   "votes": 36323,
+   "checked": "2026-11-13"
+  },
+  "m|final destination|2000": {
+   "id": "tt0195714",
+   "rating": 6.7,
+   "votes": 343983,
+   "checked": "2026-11-13"
+  },
+  "m|final score|2018": {
+   "id": "tt5254610",
+   "rating": 5.8,
+   "votes": 15627,
+   "checked": "2026-11-13"
+  },
+  "m|finding neverland|2004": {
+   "id": "tt0308644",
+   "rating": 7.6,
+   "votes": 218595,
+   "checked": "2026-11-13"
+  },
+  "m|finnegans foursome|2025": {
+   "id": "tt23039114",
+   "rating": 4.5,
+   "votes": 190,
+   "checked": "2026-11-13"
+  },
+  "m|firefox|1982": {
+   "id": "tt0083943",
+   "rating": 5.9,
+   "votes": 31899,
+   "checked": "2026-11-13"
+  },
+  "m|fist of fury|1972": {
+   "id": "tt0068767",
+   "rating": 7.2,
+   "votes": 37997,
+   "checked": "2026-11-13"
+  },
+  "m|flags of our fathers|2006": {
+   "id": "tt0418689",
+   "rating": 7.1,
+   "votes": 135532,
+   "checked": "2026-11-13"
+  },
+  "m|flame of barbary coast|": {
+   "id": "tt0037702",
+   "rating": 6.2,
+   "votes": 1793,
+   "checked": "2026-11-13"
+  },
+  "m|flaming brothers|1987": {
+   "id": "tt0093305",
+   "rating": 6.3,
+   "votes": 811,
+   "checked": "2026-11-13"
+  },
+  "m|flashback|2021": {
+   "id": "tt8372094",
+   "rating": 5.4,
+   "votes": 8021,
+   "checked": "2026-11-13"
+  },
+  "m|fletch|": {
+   "id": "tt0089155",
+   "rating": 6.9,
+   "votes": 62348,
+   "checked": "2026-11-13"
+  },
+  "m|flirting with disaster|1996": {
+   "id": "tt0116324",
+   "rating": 6.7,
+   "votes": 21274,
+   "checked": "2026-11-13"
+  },
+  "m|flood|2023": {
+   "id": "tt15670222",
+   "rating": 3.3,
+   "votes": 2728,
+   "checked": "2026-11-13"
+  },
+  "m|florence foster jenkins|2016": {
+   "id": "tt4136084",
+   "rating": 6.8,
+   "votes": 62852,
+   "checked": "2026-11-13"
+  },
+  "m|flying tigers|": {
+   "id": "tt0034742",
+   "rating": 6.7,
+   "votes": 4621,
+   "checked": "2026-11-13"
+  },
+  "m|flying tigers|1942": {
+   "id": "tt0034742",
+   "rating": 6.7,
+   "votes": 4621,
+   "checked": "2026-11-13"
+  },
+  "m|foot fist way|2008": {
+   "id": "tt0492619",
+   "rating": 6.2,
+   "votes": 14517,
+   "checked": "2026-11-13"
+  },
+  "m|footloose|2011": {
+   "id": "tt1068242",
+   "rating": 5.9,
+   "votes": 56205,
+   "checked": "2026-11-13"
+  },
+  "m|for a good time call|": {
+   "id": "tt1996264",
+   "rating": 6,
+   "votes": 17774,
+   "checked": "2026-11-13"
+  },
+  "m|for love or money|1993": {
+   "id": "tt0106941",
+   "rating": 6.2,
+   "votes": 17010,
+   "checked": "2026-11-13"
+  },
+  "m|forbidden city cop|1996": {
+   "id": "tt0116014",
+   "rating": 6.9,
+   "votes": 5280,
+   "checked": "2026-11-13"
+  },
+  "m|forger|2015": {
+   "id": "tt2376218",
+   "rating": 5.8,
+   "votes": 14218,
+   "checked": "2026-11-13"
+  },
+  "m|forrest gump|1994": {
+   "id": "tt0109830",
+   "rating": 8.8,
+   "votes": 2552648,
+   "checked": "2026-11-13"
+  },
+  "m|foul play|": {
+   "id": "tt0077578",
+   "rating": 6.8,
+   "votes": 19948,
+   "checked": "2026-11-13"
+  },
+  "m|four brothers|2005": {
+   "id": "tt0430105",
+   "rating": 6.8,
+   "votes": 171679,
+   "checked": "2026-11-13"
+  },
+  "m|four christmases|2008": {
+   "id": "tt0369436",
+   "rating": 5.8,
+   "votes": 89486,
+   "checked": "2026-11-13"
+  },
+  "m|four feathers|2002": {
+   "id": "tt0240510",
+   "rating": 6.5,
+   "votes": 36845,
+   "checked": "2026-11-13"
+  },
+  "m|foxfire|1996": {
+   "id": "tt0116353",
+   "rating": 6.2,
+   "votes": 10478,
+   "checked": "2026-11-13"
+  },
+  "m|francis the talking mule|1950": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|frankie and johnny|1991": {
+   "id": "tt0101912",
+   "rating": 6.8,
+   "votes": 39898,
+   "checked": "2026-11-13"
+  },
+  "m|frankie|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|freddy vs jason|2003": {
+   "id": "tt0329101",
+   "rating": 5.8,
+   "votes": 139143,
+   "checked": "2026-11-13"
+  },
+  "m|free willy|1993": {
+   "id": "tt0106965",
+   "rating": 6.1,
+   "votes": 90773,
+   "checked": "2026-11-13"
+  },
+  "m|freedom writers|2007": {
+   "id": "tt0463998",
+   "rating": 7.6,
+   "votes": 94356,
+   "checked": "2026-11-13"
+  },
+  "m|french girl|2024": {
+   "id": "tt23319892",
+   "rating": 5.5,
+   "votes": 3764,
+   "checked": "2026-11-13"
+  },
+  "m|fresh|1994": {
+   "id": "tt0109842",
+   "rating": 7.5,
+   "votes": 16587,
+   "checked": "2026-11-13"
+  },
+  "m|freuds last session|": {
+   "id": "tt20420628",
+   "rating": 6.1,
+   "votes": 8435,
+   "checked": "2026-11-13"
+  },
+  "m|frida|2004": {
+   "id": "tt0120679",
+   "rating": 7.3,
+   "votes": 102398,
+   "checked": "2026-11-13"
+  },
+  "m|friday the 13th part 4 the final chapter|1984": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|friday the 13th|1980": {
+   "id": "tt0080761",
+   "rating": 6.3,
+   "votes": 183158,
+   "checked": "2026-11-13"
+  },
+  "m|friday|1995": {
+   "id": "tt0113118",
+   "rating": 7.2,
+   "votes": 139755,
+   "checked": "2026-11-13"
+  },
+  "m|friend request|2017": {
+   "id": "tt3352390",
+   "rating": 5.2,
+   "votes": 29411,
+   "checked": "2026-11-13"
+  },
+  "m|fugitive|1993": {
+   "id": "tt0106977",
+   "rating": 7.8,
+   "votes": 352223,
+   "checked": "2026-11-13"
+  },
+  "m|full metal jacket|1987": {
+   "id": "tt0093058",
+   "rating": 8.2,
+   "votes": 864281,
+   "checked": "2026-11-13"
+  },
+  "m|fun size|": {
+   "id": "tt1663143",
+   "rating": 5.4,
+   "votes": 16024,
+   "checked": "2026-11-13"
+  },
+  "m|funny face|1957": {
+   "id": "tt0050419",
+   "rating": 7,
+   "votes": 36122,
+   "checked": "2026-11-13"
+  },
+  "m|funny farm|1988": {
+   "id": "tt0095188",
+   "rating": 6.2,
+   "votes": 25898,
+   "checked": "2026-11-13"
+  },
+  "m|furiosa|2024": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|gallipoli|1981": {
+   "id": "tt0082432",
+   "rating": 7.4,
+   "votes": 45259,
+   "checked": "2026-11-13"
+  },
+  "m|game night|2018": {
+   "id": "tt2704998",
+   "rating": 6.9,
+   "votes": 287228,
+   "checked": "2026-11-13"
+  },
+  "m|game of death|1978": {
+   "id": "tt0077594",
+   "rating": 5.9,
+   "votes": 23147,
+   "checked": "2026-11-13"
+  },
+  "m|generals daughter|1999": {
+   "id": "tt0144214",
+   "rating": 6.4,
+   "votes": 69476,
+   "checked": "2026-11-13"
+  },
+  "m|gettysburg|1993": {
+   "id": "tt0107007",
+   "rating": 7.6,
+   "votes": 32759,
+   "checked": "2026-11-13"
+  },
+  "m|ghost in the shell|2017": {
+   "id": "tt1219827",
+   "rating": 6.3,
+   "votes": 242768,
+   "checked": "2026-11-13"
+  },
+  "m|ghost ship|2002": {
+   "id": "tt0288477",
+   "rating": 5.6,
+   "votes": 121122,
+   "checked": "2026-11-13"
+  },
+  "m|ghostmaker|2012": {
+   "id": "tt1462757",
+   "rating": 4.9,
+   "votes": 2507,
+   "checked": "2026-11-13"
+  },
+  "m|gi joe retaliation|2013": {
+   "id": "tt1583421",
+   "rating": 5.7,
+   "votes": 194599,
+   "checked": "2026-11-13"
+  },
+  "m|gi joe the rise of cobra|2009": {
+   "id": "tt1046173",
+   "rating": 5.7,
+   "votes": 223176,
+   "checked": "2026-11-13"
+  },
+  "m|giant|1956": {
+   "id": "tt0049261",
+   "rating": 7.6,
+   "votes": 44686,
+   "checked": "2026-11-13"
+  },
+  "m|gift|2001": {
+   "id": "tt0219699",
+   "rating": 6.7,
+   "votes": 82977,
+   "checked": "2026-11-13"
+  },
+  "m|gilda|": {
+   "id": "tt0038559",
+   "rating": 7.6,
+   "votes": 38025,
+   "checked": "2026-11-13"
+  },
+  "m|ginger snaps 2|2004": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|ginger snaps 3 the beginning|2003": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|ginger snaps|2001": {
+   "id": "tt0210070",
+   "rating": 6.8,
+   "votes": 59314,
+   "checked": "2026-11-13"
+  },
+  "m|girl in the spiders web|": {
+   "id": "tt5177088",
+   "rating": 6.1,
+   "votes": 56250,
+   "checked": "2026-11-13"
+  },
+  "m|girl with the dragon tattoo|2011": {
+   "id": "tt1568346",
+   "rating": 7.8,
+   "votes": 536447,
+   "checked": "2026-11-13"
+  },
+  "m|gladiator ii|2024": {
+   "id": "tt9218128",
+   "rating": 6.4,
+   "votes": 317454,
+   "checked": "2026-11-13"
+  },
+  "m|gladiator|2000": {
+   "id": "tt0172495",
+   "rating": 8.5,
+   "votes": 1894433,
+   "checked": "2026-11-13"
+  },
+  "m|glass house|": {
+   "id": "tt0221218",
+   "rating": 5.8,
+   "votes": 43875,
+   "checked": "2026-11-13"
+  },
+  "m|gods of egypt|2016": {
+   "id": "tt2404233",
+   "rating": 5.4,
+   "votes": 137797,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla 2000|2000": {
+   "id": "tt0188640",
+   "rating": 6,
+   "votes": 10616,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla against mechagodzilla|2004": {
+   "id": "tt0314111",
+   "rating": 6.6,
+   "votes": 6488,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla final wars|2005": {
+   "id": "tt0399102",
+   "rating": 6.3,
+   "votes": 11148,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla mothra and king ghidorah giant monsters all out attack|2003": {
+   "id": "tt0279112",
+   "rating": 7,
+   "votes": 8483,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla tokyo sos|2004": {
+   "id": "tt0366526",
+   "rating": 6.4,
+   "votes": 6037,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla vs destoroyah|1995": {
+   "id": "tt0113187",
+   "rating": 6.9,
+   "votes": 8980,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla vs mechagodzilla ii|2000": {
+   "id": "tt0107027",
+   "rating": 6.5,
+   "votes": 6974,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla vs space godzilla|1994": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla|1998": {
+   "id": "tt0120685",
+   "rating": 5.5,
+   "votes": 215800,
+   "checked": "2026-11-13"
+  },
+  "m|godzilla|2014": {
+   "id": "tt0831387",
+   "rating": 6.4,
+   "votes": 470382,
+   "checked": "2026-11-13"
+  },
+  "m|going berserk|1993": {
+   "id": "tt0085603",
+   "rating": 5.2,
+   "votes": 2309,
+   "checked": "2026-11-13"
+  },
+  "m|gone baby gone|2007": {
+   "id": "tt0452623",
+   "rating": 7.6,
+   "votes": 314757,
+   "checked": "2026-11-13"
+  },
+  "m|good burger|1997": {
+   "id": "tt0119215",
+   "rating": 5.8,
+   "votes": 36834,
+   "checked": "2026-11-13"
+  },
+  "m|goodfellas|1990": {
+   "id": "tt0099685",
+   "rating": 8.7,
+   "votes": 1423456,
+   "checked": "2026-11-13"
+  },
+  "m|goonies|1985": {
+   "id": "tt0089218",
+   "rating": 7.7,
+   "votes": 332373,
+   "checked": "2026-11-13"
+  },
+  "m|gotcha|1985": {
+   "id": "tt0089222",
+   "rating": 6.2,
+   "votes": 8996,
+   "checked": "2026-11-13"
+  },
+  "m|grand hotel|1932": {
+   "id": "tt0022958",
+   "rating": 7.3,
+   "votes": 23070,
+   "checked": "2026-11-13"
+  },
+  "m|grandmaster|2013": {
+   "id": "tt1462900",
+   "rating": 6.6,
+   "votes": 39178,
+   "checked": "2026-11-13"
+  },
+  "m|grant|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|gravity|2013": {
+   "id": "tt1454468",
+   "rating": 7.6,
+   "votes": 909404,
+   "checked": "2026-11-13"
+  },
+  "m|grease|1978": {
+   "id": "tt0077631",
+   "rating": 7.2,
+   "votes": 331804,
+   "checked": "2026-11-13"
+  },
+  "m|great debaters|2007": {
+   "id": "tt0427309",
+   "rating": 7.5,
+   "votes": 67087,
+   "checked": "2026-11-13"
+  },
+  "m|great gilly hopkins|2016": {
+   "id": "tt1226766",
+   "rating": 6.5,
+   "votes": 5828,
+   "checked": "2026-11-13"
+  },
+  "m|great outdoors|1988": {
+   "id": "tt0095253",
+   "rating": 6.6,
+   "votes": 57332,
+   "checked": "2026-11-13"
+  },
+  "m|great raid|2005": {
+   "id": "tt0326905",
+   "rating": 6.6,
+   "votes": 25438,
+   "checked": "2026-11-13"
+  },
+  "m|great wall|2017": {
+   "id": "tt2034800",
+   "rating": 5.9,
+   "votes": 162205,
+   "checked": "2026-11-13"
+  },
+  "m|great war|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|green book|2018": {
+   "id": "tt6966692",
+   "rating": 8.2,
+   "votes": 711524,
+   "checked": "2026-11-13"
+  },
+  "m|green mile|1999": {
+   "id": "tt0120689",
+   "rating": 8.6,
+   "votes": 1597112,
+   "checked": "2026-11-13"
+  },
+  "m|greenland|2020": {
+   "id": "tt7737786",
+   "rating": 6.4,
+   "votes": 178046,
+   "checked": "2026-11-13"
+  },
+  "m|gremlins|1984": {
+   "id": "tt0087363",
+   "rating": 7.3,
+   "votes": 279764,
+   "checked": "2026-11-13"
+  },
+  "m|grifters|1990": {
+   "id": "tt0099703",
+   "rating": 6.8,
+   "votes": 33882,
+   "checked": "2026-11-13"
+  },
+  "m|grumpy old men|1993": {
+   "id": "tt0107050",
+   "rating": 7,
+   "votes": 58285,
+   "checked": "2026-11-13"
+  },
+  "m|guest|2014": {
+   "id": "tt2980592",
+   "rating": 6.7,
+   "votes": 116654,
+   "checked": "2026-11-13"
+  },
+  "m|guinevere|1999": {
+   "id": "tt0160338",
+   "rating": 5.9,
+   "votes": 2846,
+   "checked": "2026-11-13"
+  },
+  "m|gumshoe|": {
+   "id": "tt0068669",
+   "rating": 6.4,
+   "votes": 2065,
+   "checked": "2026-11-13"
+  },
+  "m|gung ho|1986": {
+   "id": "tt0091159",
+   "rating": 6.3,
+   "votes": 15267,
+   "checked": "2026-11-13"
+  },
+  "m|hacksaw ridge|": {
+   "id": "tt2119532",
+   "rating": 8.1,
+   "votes": 702826,
+   "checked": "2026-11-13"
+  },
+  "m|hail caesar|2016": {
+   "id": "tt0475290",
+   "rating": 6.3,
+   "votes": 151438,
+   "checked": "2026-11-13"
+  },
+  "m|hairspray|2007": {
+   "id": "tt0427327",
+   "rating": 6.7,
+   "votes": 147358,
+   "checked": "2026-11-13"
+  },
+  "m|halloween resurrection|2002": {
+   "id": "tt0220506",
+   "rating": 3.9,
+   "votes": 55456,
+   "checked": "2026-11-13"
+  },
+  "m|hangover|2009": {
+   "id": "tt1119646",
+   "rating": 7.7,
+   "votes": 950488,
+   "checked": "2026-11-13"
+  },
+  "m|hanna|2011": {
+   "id": "tt0993842",
+   "rating": 6.7,
+   "votes": 216375,
+   "checked": "2026-11-13"
+  },
+  "m|hansel and gretel witch hunters|2013": {
+   "id": "tt1428538",
+   "rating": 6.1,
+   "votes": 229229,
+   "checked": "2026-11-13"
+  },
+  "m|happy feet two|2011": {
+   "id": "tt1402488",
+   "rating": 5.8,
+   "votes": 51741,
+   "checked": "2026-11-13"
+  },
+  "m|happy feet|2006": {
+   "id": "tt0366548",
+   "rating": 6.4,
+   "votes": 216770,
+   "checked": "2026-11-13"
+  },
+  "m|happy go lucky|2008": {
+   "id": "tt1045670",
+   "rating": 7,
+   "votes": 42952,
+   "checked": "2026-11-13"
+  },
+  "m|happy halloween scooby doo|2020": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|happy texas|1999": {
+   "id": "tt0162360",
+   "rating": 6.3,
+   "votes": 10732,
+   "checked": "2026-11-13"
+  },
+  "m|hard rain|1998": {
+   "id": "tt0120696",
+   "rating": 5.9,
+   "votes": 39030,
+   "checked": "2026-11-13"
+  },
+  "m|hardball|2001": {
+   "id": "tt0180734",
+   "rating": 6.4,
+   "votes": 36714,
+   "checked": "2026-11-13"
+  },
+  "m|hardcore henry|2016": {
+   "id": "tt3072482",
+   "rating": 6.7,
+   "votes": 110320,
+   "checked": "2026-11-13"
+  },
+  "m|harder they fall|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|harold and kumar go to white castle|2004": {
+   "id": "tt0366551",
+   "rating": 7,
+   "votes": 217252,
+   "checked": "2026-11-13"
+  },
+  "m|harriet the spy|1996": {
+   "id": "tt0116493",
+   "rating": 6,
+   "votes": 12397,
+   "checked": "2026-11-13"
+  },
+  "m|hatari|": {
+   "id": "tt0056059",
+   "rating": 7.1,
+   "votes": 16078,
+   "checked": "2026-11-13"
+  },
+  "m|hatari|1962": {
+   "id": "tt0056059",
+   "rating": 7.1,
+   "votes": 16078,
+   "checked": "2026-11-13"
+  },
+  "m|haunting|1963": {
+   "id": "tt0057129",
+   "rating": 7.4,
+   "votes": 45467,
+   "checked": "2026-11-13"
+  },
+  "m|head of state|2003": {
+   "id": "tt0325537",
+   "rating": 5.5,
+   "votes": 21271,
+   "checked": "2026-11-13"
+  },
+  "m|heart and souls|": {
+   "id": "tt0107091",
+   "rating": 7,
+   "votes": 20589,
+   "checked": "2026-11-13"
+  },
+  "m|heartbreak ridge|1986": {
+   "id": "tt0091187",
+   "rating": 6.8,
+   "votes": 53242,
+   "checked": "2026-11-13"
+  },
+  "m|hearts of darkness|1991": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|hell is for heroes|1962": {
+   "id": "tt0056062",
+   "rating": 6.9,
+   "votes": 8227,
+   "checked": "2026-11-13"
+  },
+  "m|hellraiser 4 bloodline|1996": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|hellraiser judgement|2018": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|her|2013": {
+   "id": "tt1798709",
+   "rating": 7.9,
+   "votes": 737510,
+   "checked": "2026-11-13"
+  },
+  "m|hero dog the journey home|2021": {
+   "id": "tt11045566",
+   "rating": 4.7,
+   "votes": 657,
+   "checked": "2026-11-13"
+  },
+  "m|heroes|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|hes just not that into you|2009": {
+   "id": "tt1001508",
+   "rating": 6.4,
+   "votes": 198934,
+   "checked": "2026-11-13"
+  },
+  "m|hidden|2015": {
+   "id": "tt2131532",
+   "rating": 6.3,
+   "votes": 30288,
+   "checked": "2026-11-13"
+  },
+  "m|high and the mighty|": {
+   "id": "tt0047086",
+   "rating": 6.6,
+   "votes": 7306,
+   "checked": "2026-11-13"
+  },
+  "m|high and the mighty|1954": {
+   "id": "tt0047086",
+   "rating": 6.6,
+   "votes": 7306,
+   "checked": "2026-11-13"
+  },
+  "m|high noon|1952": {
+   "id": "tt0044706",
+   "rating": 7.9,
+   "votes": 117751,
+   "checked": "2026-11-13"
+  },
+  "m|highlander endgame|2000": {
+   "id": "tt0144964",
+   "rating": 4.6,
+   "votes": 22672,
+   "checked": "2026-11-13"
+  },
+  "m|highlander the source|2008": {
+   "id": "tt0299981",
+   "rating": 3,
+   "votes": 10469,
+   "checked": "2026-11-13"
+  },
+  "m|hitmans bodyguard|2017": {
+   "id": "tt1959563",
+   "rating": 6.9,
+   "votes": 266060,
+   "checked": "2026-11-13"
+  },
+  "m|hitmans wifes bodyguard|2021": {
+   "id": "tt8385148",
+   "rating": 6.1,
+   "votes": 122049,
+   "checked": "2026-11-13"
+  },
+  "m|hondo|": {
+   "id": "tt0045883",
+   "rating": 7,
+   "votes": 14404,
+   "checked": "2026-11-13"
+  },
+  "m|honk for jesus save your soul|2022": {
+   "id": "tt12655436",
+   "rating": 5.3,
+   "votes": 4712,
+   "checked": "2026-11-13"
+  },
+  "m|hoot|2006": {
+   "id": "tt0453494",
+   "rating": 5.6,
+   "votes": 9236,
+   "checked": "2026-11-13"
+  },
+  "m|horrible bosses|2011": {
+   "id": "tt1499658",
+   "rating": 6.9,
+   "votes": 493509,
+   "checked": "2026-11-13"
+  },
+  "m|hostage|2005": {
+   "id": "tt0340163",
+   "rating": 6.5,
+   "votes": 117165,
+   "checked": "2026-11-13"
+  },
+  "m|hot fuzz|2007": {
+   "id": "tt0425112",
+   "rating": 7.8,
+   "votes": 575433,
+   "checked": "2026-11-13"
+  },
+  "m|hot rod|2007": {
+   "id": "tt0787475",
+   "rating": 6.7,
+   "votes": 100724,
+   "checked": "2026-11-13"
+  },
+  "m|house arrest|1996": {
+   "id": "tt0116571",
+   "rating": 5.8,
+   "votes": 9952,
+   "checked": "2026-11-13"
+  },
+  "m|house of wax|2005": {
+   "id": "tt0397065",
+   "rating": 5.5,
+   "votes": 149243,
+   "checked": "2026-11-13"
+  },
+  "m|house of yes|1997": {
+   "id": "tt0119324",
+   "rating": 6.6,
+   "votes": 9442,
+   "checked": "2026-11-13"
+  },
+  "m|house on haunted hill|1999": {
+   "id": "tt0185371",
+   "rating": 5.6,
+   "votes": 64884,
+   "checked": "2026-11-13"
+  },
+  "m|how to lose a guy in 10 days|2003": {
+   "id": "tt0251127",
+   "rating": 6.6,
+   "votes": 335648,
+   "checked": "2026-11-13"
+  },
+  "m|hud|1963": {
+   "id": "tt0057163",
+   "rating": 7.8,
+   "votes": 26542,
+   "checked": "2026-11-13"
+  },
+  "m|hulk|2003": {
+   "id": "tt0286716",
+   "rating": 5.7,
+   "votes": 297093,
+   "checked": "2026-11-13"
+  },
+  "m|hunger games catching fire|2013": {
+   "id": "tt1951264",
+   "rating": 7.5,
+   "votes": 788135,
+   "checked": "2026-11-13"
+  },
+  "m|hunger games mockingjay part 1|2014": {
+   "id": "tt1951265",
+   "rating": 6.6,
+   "votes": 558040,
+   "checked": "2026-11-13"
+  },
+  "m|hunger games mockingjay part 2|2015": {
+   "id": "tt1951266",
+   "rating": 6.6,
+   "votes": 425392,
+   "checked": "2026-11-13"
+  },
+  "m|hunger games the ballad of songbirds and snakes|2023": {
+   "id": "tt10545296",
+   "rating": 6.6,
+   "votes": 193912,
+   "checked": "2026-11-13"
+  },
+  "m|hunger games|2012": {
+   "id": "tt1392170",
+   "rating": 7.2,
+   "votes": 1102296,
+   "checked": "2026-11-13"
+  },
+  "m|hunter killer|": {
+   "id": "tt1846589",
+   "rating": 6.6,
+   "votes": 82213,
+   "checked": "2026-11-13"
+  },
+  "m|huntsman winters war|2016": {
+   "id": "tt2381991",
+   "rating": 6.1,
+   "votes": 128564,
+   "checked": "2026-11-13"
+  },
+  "m|hurt locker|": {
+   "id": "tt0887912",
+   "rating": 7.5,
+   "votes": 501408,
+   "checked": "2026-11-13"
+  },
+  "m|hustlers|2019": {
+   "id": "tt5503686",
+   "rating": 6.3,
+   "votes": 114313,
+   "checked": "2026-11-13"
+  },
+  "m|i am legend|2007": {
+   "id": "tt0480249",
+   "rating": 7.2,
+   "votes": 893118,
+   "checked": "2026-11-13"
+  },
+  "m|i feel pretty|2018": {
+   "id": "tt6791096",
+   "rating": 5.7,
+   "votes": 61451,
+   "checked": "2026-11-13"
+  },
+  "m|i saw the light|": {
+   "id": "tt1490785",
+   "rating": 5.8,
+   "votes": 9180,
+   "checked": "2026-11-13"
+  },
+  "m|i spit on your grave 2|2013": {
+   "id": "tt2537176",
+   "rating": 5.7,
+   "votes": 37205,
+   "checked": "2026-11-13"
+  },
+  "m|i spit on your grave 3 vengeance is mine|2015": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|i still see you|2018": {
+   "id": "tt2160105",
+   "rating": 5.8,
+   "votes": 13127,
+   "checked": "2026-11-13"
+  },
+  "m|imitation game|": {
+   "id": "tt2084970",
+   "rating": 8,
+   "votes": 888731,
+   "checked": "2026-11-13"
+  },
+  "m|impostor|2001": {
+   "id": "tt0160399",
+   "rating": 6.2,
+   "votes": 25638,
+   "checked": "2026-11-13"
+  },
+  "m|in a lonely place|": {
+   "id": "tt0042593",
+   "rating": 7.9,
+   "votes": 40122,
+   "checked": "2026-11-13"
+  },
+  "m|in and out|1997": {
+   "id": "tt0119360",
+   "rating": 6.4,
+   "votes": 47108,
+   "checked": "2026-11-13"
+  },
+  "m|in bruges|": {
+   "id": "tt0780536",
+   "rating": 7.9,
+   "votes": 500613,
+   "checked": "2026-11-13"
+  },
+  "m|in good company|2004": {
+   "id": "tt0385267",
+   "rating": 6.4,
+   "votes": 58259,
+   "checked": "2026-11-13"
+  },
+  "m|in harms way|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|in harms way|1965": {
+   "id": "tt0059309",
+   "rating": 7.3,
+   "votes": 11672,
+   "checked": "2026-11-13"
+  },
+  "m|in old california|": {
+   "id": "tt0034889",
+   "rating": 6.3,
+   "votes": 1759,
+   "checked": "2026-11-13"
+  },
+  "m|in the heart of the sea|2015": {
+   "id": "tt1390411",
+   "rating": 6.9,
+   "votes": 161559,
+   "checked": "2026-11-13"
+  },
+  "m|in the mouth of madness|1994": {
+   "id": "tt0113409",
+   "rating": 7.1,
+   "votes": 93046,
+   "checked": "2026-11-13"
+  },
+  "m|inception|2010": {
+   "id": "tt1375666",
+   "rating": 8.8,
+   "votes": 2888709,
+   "checked": "2026-11-13"
+  },
+  "m|indiscreet|1958": {
+   "id": "tt0051773",
+   "rating": 6.8,
+   "votes": 11433,
+   "checked": "2026-11-13"
+  },
+  "m|infinite|2021": {
+   "id": "tt6654210",
+   "rating": 5.5,
+   "votes": 72416,
+   "checked": "2026-11-13"
+  },
+  "m|inglourious basterds|2009": {
+   "id": "tt0361748",
+   "rating": 8.4,
+   "votes": 1829862,
+   "checked": "2026-11-13"
+  },
+  "m|inkheart|2009": {
+   "id": "tt0494238",
+   "rating": 6.1,
+   "votes": 86213,
+   "checked": "2026-11-13"
+  },
+  "m|inside llewyn davis|2014": {
+   "id": "tt2042568",
+   "rating": 7.4,
+   "votes": 173851,
+   "checked": "2026-11-13"
+  },
+  "m|intern|2015": {
+   "id": "tt2361509",
+   "rating": 7.1,
+   "votes": 317054,
+   "checked": "2026-11-13"
+  },
+  "m|internal affairs|1990": {
+   "id": "tt0099850",
+   "rating": 6.5,
+   "votes": 25203,
+   "checked": "2026-11-13"
+  },
+  "m|interstellar|2014": {
+   "id": "tt0816692",
+   "rating": 8.7,
+   "votes": 2633099,
+   "checked": "2026-11-13"
+  },
+  "m|interview with the vampire the vampire chronicles|1994": {
+   "id": "tt0110148",
+   "rating": 7.5,
+   "votes": 383691,
+   "checked": "2026-11-13"
+  },
+  "m|into the wild|2007": {
+   "id": "tt0758758",
+   "rating": 8,
+   "votes": 701580,
+   "checked": "2026-11-13"
+  },
+  "m|invasion|2007": {
+   "id": "tt0427392",
+   "rating": 5.9,
+   "votes": 90083,
+   "checked": "2026-11-13"
+  },
+  "m|invictus|2009": {
+   "id": "tt1057500",
+   "rating": 7.3,
+   "votes": 176126,
+   "checked": "2026-11-13"
+  },
+  "m|iq|1994": {
+   "id": "tt0110099",
+   "rating": 6.2,
+   "votes": 28089,
+   "checked": "2026-11-13"
+  },
+  "m|iris|2001": {
+   "id": "tt0280778",
+   "rating": 7,
+   "votes": 20032,
+   "checked": "2026-11-13"
+  },
+  "m|iron giant|1999": {
+   "id": "tt0129167",
+   "rating": 8.1,
+   "votes": 267638,
+   "checked": "2026-11-13"
+  },
+  "m|iron monkey|1993": {
+   "id": "tt0108148",
+   "rating": 7.5,
+   "votes": 18357,
+   "checked": "2026-11-13"
+  },
+  "m|island in the sky|": {
+   "id": "tt0045919",
+   "rating": 6.8,
+   "votes": 4212,
+   "checked": "2026-11-13"
+  },
+  "m|island in the sky|1953": {
+   "id": "tt0045919",
+   "rating": 6.8,
+   "votes": 4212,
+   "checked": "2026-11-13"
+  },
+  "m|it aint over|": {
+   "id": "tt13840536",
+   "rating": 8.2,
+   "votes": 1670,
+   "checked": "2026-11-13"
+  },
+  "m|it chapter two|2019": {
+   "id": "tt7349950",
+   "rating": 6.5,
+   "votes": 366989,
+   "checked": "2026-11-13"
+  },
+  "m|it takes two|1995": {
+   "id": "tt0113442",
+   "rating": 6.1,
+   "votes": 29437,
+   "checked": "2026-11-13"
+  },
+  "m|it|2017": {
+   "id": "tt1396484",
+   "rating": 7.3,
+   "votes": 716700,
+   "checked": "2026-11-13"
+  },
+  "m|its alive|1974": {
+   "id": "tt0071675",
+   "rating": 5.8,
+   "votes": 9962,
+   "checked": "2026-11-13"
+  },
+  "m|jack reacher never go back|2016": {
+   "id": "tt3393786",
+   "rating": 6.2,
+   "votes": 196882,
+   "checked": "2026-11-13"
+  },
+  "m|jack reacher|2012": {
+   "id": "tt0790724",
+   "rating": 7,
+   "votes": 397380,
+   "checked": "2026-11-13"
+  },
+  "m|jackass best and last|": {
+   "id": "tt39316472",
+   "rating": 6.2,
+   "votes": 15246,
+   "checked": "2026-11-13"
+  },
+  "m|jackass forever|": {
+   "id": "tt11466222",
+   "rating": 6.8,
+   "votes": 56571,
+   "checked": "2026-11-13"
+  },
+  "m|jackass the movie|": {
+   "id": "tt0322802",
+   "rating": 6.6,
+   "votes": 108006,
+   "checked": "2026-11-13"
+  },
+  "m|jackie chans project a|1983": {
+   "id": "tt0085127",
+   "rating": 7.2,
+   "votes": 20915,
+   "checked": "2026-11-13"
+  },
+  "m|jackie chans project a2|1987": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|jacknife|": {
+   "id": "tt0097607",
+   "rating": 6.4,
+   "votes": 7241,
+   "checked": "2026-11-13"
+  },
+  "m|jade|1995": {
+   "id": "tt0113451",
+   "rating": 5.4,
+   "votes": 15851,
+   "checked": "2026-11-13"
+  },
+  "m|jane austen wrecked my life|": {
+   "id": "tt31112509",
+   "rating": 6.2,
+   "votes": 3602,
+   "checked": "2026-11-13"
+  },
+  "m|jane eyre|1996": {
+   "id": "tt0116684",
+   "rating": 6.8,
+   "votes": 10908,
+   "checked": "2026-11-13"
+  },
+  "m|jarhead 2 field of fire|2014": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|jarhead 3 the siege|2016": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|jarhead law of return|2019": {
+   "id": "tt10767720",
+   "rating": 5.3,
+   "votes": 4123,
+   "checked": "2026-11-13"
+  },
+  "m|jarhead|2005": {
+   "id": "tt0418763",
+   "rating": 7,
+   "votes": 228522,
+   "checked": "2026-11-13"
+  },
+  "m|jason goes to hell the final friday|1993": {
+   "id": "tt0107254",
+   "rating": 4.1,
+   "votes": 42459,
+   "checked": "2026-11-13"
+  },
+  "m|jerk|": {
+   "id": "tt0079367",
+   "rating": 7.1,
+   "votes": 69687,
+   "checked": "2026-11-13"
+  },
+  "m|jerry and marge go large|": {
+   "id": "tt8323668",
+   "rating": 6.9,
+   "votes": 37441,
+   "checked": "2026-11-13"
+  },
+  "m|jersey girl|": {
+   "id": "tt0300051",
+   "rating": 6.2,
+   "votes": 75327,
+   "checked": "2026-11-13"
+  },
+  "m|jersey girl|2004": {
+   "id": "tt0300051",
+   "rating": 6.2,
+   "votes": 75327,
+   "checked": "2026-11-13"
+  },
+  "m|jessabelle|2014": {
+   "id": "tt2300975",
+   "rating": 5.4,
+   "votes": 27586,
+   "checked": "2026-11-13"
+  },
+  "m|jesus music|2021": {
+   "id": "tt14857602",
+   "rating": 7.5,
+   "votes": 722,
+   "checked": "2026-11-13"
+  },
+  "m|jiu jitsu|2020": {
+   "id": "tt9624766",
+   "rating": 2.9,
+   "votes": 11565,
+   "checked": "2026-11-13"
+  },
+  "m|john carpenters escape from la|1996": {
+   "id": "tt0116225",
+   "rating": 5.7,
+   "votes": 87370,
+   "checked": "2026-11-13"
+  },
+  "m|john grishams the rainmaker|1997": {
+   "id": "tt0119978",
+   "rating": 7.2,
+   "votes": 94349,
+   "checked": "2026-11-13"
+  },
+  "m|john q|2001": {
+   "id": "tt0251160",
+   "rating": 7.1,
+   "votes": 157602,
+   "checked": "2026-11-13"
+  },
+  "m|johnny english reborn|": {
+   "id": "tt1634122",
+   "rating": 6.3,
+   "votes": 151207,
+   "checked": "2026-11-13"
+  },
+  "m|johnny english strikes again|": {
+   "id": "tt6921996",
+   "rating": 6.2,
+   "votes": 92402,
+   "checked": "2026-11-13"
+  },
+  "m|johnny english|": {
+   "id": "tt0274166",
+   "rating": 6.3,
+   "votes": 187908,
+   "checked": "2026-11-13"
+  },
+  "m|jonathan livingston seagull|1973": {
+   "id": "tt0070248",
+   "rating": 5.7,
+   "votes": 2548,
+   "checked": "2026-11-13"
+  },
+  "m|journey to the center of the earth|2008": {
+   "id": "tt0373051",
+   "rating": 5.8,
+   "votes": 143876,
+   "checked": "2026-11-13"
+  },
+  "m|joyful noise|2012": {
+   "id": "tt1710396",
+   "rating": 5.8,
+   "votes": 9466,
+   "checked": "2026-11-13"
+  },
+  "m|judas and the black messiah|2021": {
+   "id": "tt9784798",
+   "rating": 7.4,
+   "votes": 116639,
+   "checked": "2026-11-13"
+  },
+  "m|juice|1992": {
+   "id": "tt0104573",
+   "rating": 7,
+   "votes": 34123,
+   "checked": "2026-11-13"
+  },
+  "m|jungle fever|1991": {
+   "id": "tt0102175",
+   "rating": 6.6,
+   "votes": 21333,
+   "checked": "2026-11-13"
+  },
+  "m|juror 2|2024": {
+   "id": "tt27403986",
+   "rating": 7,
+   "votes": 133498,
+   "checked": "2026-11-13"
+  },
+  "m|just another girl on the irt|1993": {
+   "id": "tt0104575",
+   "rating": 6.4,
+   "votes": 1592,
+   "checked": "2026-11-13"
+  },
+  "m|just friends|2005": {
+   "id": "tt0433400",
+   "rating": 6.2,
+   "votes": 137261,
+   "checked": "2026-11-13"
+  },
+  "m|just like heaven|2005": {
+   "id": "tt0425123",
+   "rating": 6.7,
+   "votes": 129172,
+   "checked": "2026-11-13"
+  },
+  "m|just mercy|2019": {
+   "id": "tt4916630",
+   "rating": 7.6,
+   "votes": 86423,
+   "checked": "2026-11-13"
+  },
+  "m|kajillionaire|2020": {
+   "id": "tt8143990",
+   "rating": 6.4,
+   "votes": 24377,
+   "checked": "2026-11-13"
+  },
+  "m|kangaroo jack|2003": {
+   "id": "tt0257568",
+   "rating": 4.5,
+   "votes": 36524,
+   "checked": "2026-11-13"
+  },
+  "m|keeping up with the steins|2006": {
+   "id": "tt0415949",
+   "rating": 5.4,
+   "votes": 3323,
+   "checked": "2026-11-13"
+  },
+  "m|key largo|1948": {
+   "id": "tt0040506",
+   "rating": 7.7,
+   "votes": 47890,
+   "checked": "2026-11-13"
+  },
+  "m|kick ass 2|2013": {
+   "id": "tt1650554",
+   "rating": 6.5,
+   "votes": 302983,
+   "checked": "2026-11-13"
+  },
+  "m|kids in the hall brain candy|": {
+   "id": "tt0116768",
+   "rating": 6.9,
+   "votes": 9840,
+   "checked": "2026-11-13"
+  },
+  "m|kill bill vol 1|2003": {
+   "id": "tt0266697",
+   "rating": 8.2,
+   "votes": 1332414,
+   "checked": "2026-11-13"
+  },
+  "m|kill bill vol 2|2004": {
+   "id": "tt0378194",
+   "rating": 8,
+   "votes": 884754,
+   "checked": "2026-11-13"
+  },
+  "m|killer|2024": {
+   "id": "tt1136617",
+   "rating": 6.7,
+   "votes": 229509,
+   "checked": "2026-11-13"
+  },
+  "m|killing gunther|2017": {
+   "id": "tt5689068",
+   "rating": 4.8,
+   "votes": 16703,
+   "checked": "2026-11-13"
+  },
+  "m|kin|2018": {
+   "id": "tt6017942",
+   "rating": 5.8,
+   "votes": 20643,
+   "checked": "2026-11-13"
+  },
+  "m|king kong|1933": {
+   "id": "tt0024216",
+   "rating": 7.9,
+   "votes": 97014,
+   "checked": "2026-11-13"
+  },
+  "m|king of thieves|2019": {
+   "id": "tt5789976",
+   "rating": 5.6,
+   "votes": 18079,
+   "checked": "2026-11-13"
+  },
+  "m|king richard|2021": {
+   "id": "tt9620288",
+   "rating": 7.5,
+   "votes": 194623,
+   "checked": "2026-11-13"
+  },
+  "m|kings of summer|2013": {
+   "id": "tt2179116",
+   "rating": 7.1,
+   "votes": 88311,
+   "checked": "2026-11-13"
+  },
+  "m|kinky boots|2005": {
+   "id": "tt0434124",
+   "rating": 7.1,
+   "votes": 23105,
+   "checked": "2026-11-13"
+  },
+  "m|kit kittredge an american girl|2008": {
+   "id": "tt0846308",
+   "rating": 6.5,
+   "votes": 6702,
+   "checked": "2026-11-13"
+  },
+  "m|knocked up|": {
+   "id": "tt0478311",
+   "rating": 6.9,
+   "votes": 404203,
+   "checked": "2026-11-13"
+  },
+  "m|knowing|2009": {
+   "id": "tt0448011",
+   "rating": 6.2,
+   "votes": 265064,
+   "checked": "2026-11-13"
+  },
+  "m|kung fu games|2023": {
+   "id": "tt31381457",
+   "rating": 3.4,
+   "votes": 447,
+   "checked": "2026-11-13"
+  },
+  "m|lady from shanghai|": {
+   "id": "tt0040525",
+   "rating": 7.5,
+   "votes": 37245,
+   "checked": "2026-11-13"
+  },
+  "m|lady macbeth|2017": {
+   "id": "tt4291600",
+   "rating": 6.8,
+   "votes": 30523,
+   "checked": "2026-11-13"
+  },
+  "m|lady scorpions|2024": {
+   "id": "tt10080110",
+   "rating": 3.6,
+   "votes": 426,
+   "checked": "2026-11-13"
+  },
+  "m|lara croft tomb raider cradle of life|2003": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|lara croft tomb raider|2001": {
+   "id": "tt0146316",
+   "rating": 5.8,
+   "votes": 232944,
+   "checked": "2026-11-13"
+  },
+  "m|las pildoras de mi novio|2020": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|last airbender|2010": {
+   "id": "tt0938283",
+   "rating": 3.9,
+   "votes": 183328,
+   "checked": "2026-11-13"
+  },
+  "m|last boy scout|1991": {
+   "id": "tt0102266",
+   "rating": 7,
+   "votes": 122974,
+   "checked": "2026-11-13"
+  },
+  "m|last castle|2001": {
+   "id": "tt0272020",
+   "rating": 7,
+   "votes": 93103,
+   "checked": "2026-11-13"
+  },
+  "m|last five years|2015": {
+   "id": "tt2474024",
+   "rating": 5.9,
+   "votes": 11407,
+   "checked": "2026-11-13"
+  },
+  "m|last full measure|": {
+   "id": "tt0783640",
+   "rating": 6.8,
+   "votes": 15687,
+   "checked": "2026-11-13"
+  },
+  "m|last moment of clarity|2020": {
+   "id": "tt1929297",
+   "rating": 5.2,
+   "votes": 4093,
+   "checked": "2026-11-13"
+  },
+  "m|last night in soho|2021": {
+   "id": "tt9639470",
+   "rating": 7,
+   "votes": 203836,
+   "checked": "2026-11-13"
+  },
+  "m|last night|2010": {
+   "id": "tt1294688",
+   "rating": 6.5,
+   "votes": 53073,
+   "checked": "2026-11-13"
+  },
+  "m|last outpost|1935": {
+   "id": "tt0026607",
+   "rating": 6,
+   "votes": 657,
+   "checked": "2026-11-13"
+  },
+  "m|last samurai|2003": {
+   "id": "tt0325710",
+   "rating": 7.8,
+   "votes": 514181,
+   "checked": "2026-11-13"
+  },
+  "m|last starfighter|1984": {
+   "id": "tt0087597",
+   "rating": 6.7,
+   "votes": 50608,
+   "checked": "2026-11-13"
+  },
+  "m|last train from madrid|1937": {
+   "id": "tt0029119",
+   "rating": 6.3,
+   "votes": 351,
+   "checked": "2026-11-13"
+  },
+  "m|last vegas|2013": {
+   "id": "tt1204975",
+   "rating": 6.6,
+   "votes": 141261,
+   "checked": "2026-11-13"
+  },
+  "m|leap of faith|1992": {
+   "id": "tt0104695",
+   "rating": 6.2,
+   "votes": 15962,
+   "checked": "2026-11-13"
+  },
+  "m|leapfrog phonics farm|2011": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|leapfrog the amazing alphabet amusement park|2011": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|legacy of lies|2020": {
+   "id": "tt6834916",
+   "rating": 5.1,
+   "votes": 4980,
+   "checked": "2026-11-13"
+  },
+  "m|legend of bagger vance|2000": {
+   "id": "tt0146984",
+   "rating": 6.7,
+   "votes": 62974,
+   "checked": "2026-11-13"
+  },
+  "m|lego batman movie|2017": {
+   "id": "tt4116284",
+   "rating": 7.3,
+   "votes": 199169,
+   "checked": "2026-11-13"
+  },
+  "m|lego movie|2014": {
+   "id": "tt1490017",
+   "rating": 7.7,
+   "votes": 423317,
+   "checked": "2026-11-13"
+  },
+  "m|les miserables|2012": {
+   "id": "tt1707386",
+   "rating": 7.5,
+   "votes": 366138,
+   "checked": "2026-11-13"
+  },
+  "m|let me in|2010": {
+   "id": "tt1228987",
+   "rating": 7.1,
+   "votes": 134675,
+   "checked": "2026-11-13"
+  },
+  "m|let us live|": {
+   "id": "tt0031566",
+   "rating": 6.7,
+   "votes": 794,
+   "checked": "2026-11-13"
+  },
+  "m|lethal weapon|1987": {
+   "id": "tt0093409",
+   "rating": 7.6,
+   "votes": 300191,
+   "checked": "2026-11-13"
+  },
+  "m|liar liar|": {
+   "id": "tt0119528",
+   "rating": 6.9,
+   "votes": 368771,
+   "checked": "2026-11-13"
+  },
+  "m|life of the party|2018": {
+   "id": "tt5619332",
+   "rating": 5.6,
+   "votes": 43473,
+   "checked": "2026-11-13"
+  },
+  "m|lifehack|2026": {
+   "id": "tt32135632",
+   "rating": 6.2,
+   "votes": 1555,
+   "checked": "2026-11-13"
+  },
+  "m|lights out|2016": {
+   "id": "tt4786282",
+   "rating": 6.3,
+   "votes": 156184,
+   "checked": "2026-11-13"
+  },
+  "m|like a boss|": {
+   "id": "tt7545266",
+   "rating": 4.7,
+   "votes": 16411,
+   "checked": "2026-11-13"
+  },
+  "m|little city|1997": {
+   "id": "tt0119548",
+   "rating": 5.8,
+   "votes": 1152,
+   "checked": "2026-11-13"
+  },
+  "m|little fockers|2010": {
+   "id": "tt0970866",
+   "rating": 5.5,
+   "votes": 128266,
+   "checked": "2026-11-13"
+  },
+  "m|little giants|1994": {
+   "id": "tt0110364",
+   "rating": 6.5,
+   "votes": 33628,
+   "checked": "2026-11-13"
+  },
+  "m|little miss marker|1980": {
+   "id": "tt0081063",
+   "rating": 6.4,
+   "votes": 2014,
+   "checked": "2026-11-13"
+  },
+  "m|little shop of horrors|1986": {
+   "id": "tt0091419",
+   "rating": 7.1,
+   "votes": 97291,
+   "checked": "2026-11-13"
+  },
+  "m|little wing|2024": {
+   "id": "tt27550567",
+   "rating": 6.2,
+   "votes": 1052,
+   "checked": "2026-11-13"
+  },
+  "m|live die repeat edge of tomorrow|2014": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|lone survivor|2013": {
+   "id": "tt1091191",
+   "rating": 7.5,
+   "votes": 327732,
+   "checked": "2026-11-13"
+  },
+  "m|lonely trail|": {
+   "id": "tt0027905",
+   "rating": 5.6,
+   "votes": 488,
+   "checked": "2026-11-13"
+  },
+  "m|long time dead|2002": {
+   "id": "tt0251806",
+   "rating": 4.8,
+   "votes": 6415,
+   "checked": "2026-11-13"
+  },
+  "m|looney tunes back in action|2003": {
+   "id": "tt0318155",
+   "rating": 5.8,
+   "votes": 44324,
+   "checked": "2026-11-13"
+  },
+  "m|looper|": {
+   "id": "tt1276104",
+   "rating": 7.4,
+   "votes": 634994,
+   "checked": "2026-11-13"
+  },
+  "m|lord of the rings the return of the king|2003": {
+   "id": "tt0167260",
+   "rating": 9,
+   "votes": 2207396,
+   "checked": "2026-11-13"
+  },
+  "m|lord of war|": {
+   "id": "tt0399295",
+   "rating": 7.6,
+   "votes": 364489,
+   "checked": "2026-11-13"
+  },
+  "m|lords of salem|2013": {
+   "id": "tt1731697",
+   "rating": 5.2,
+   "votes": 34763,
+   "checked": "2026-11-13"
+  },
+  "m|lost boys|1987": {
+   "id": "tt0093437",
+   "rating": 7.2,
+   "votes": 182270,
+   "checked": "2026-11-13"
+  },
+  "m|lost in translation|2003": {
+   "id": "tt0335266",
+   "rating": 7.7,
+   "votes": 536954,
+   "checked": "2026-11-13"
+  },
+  "m|love hurts|2025": {
+   "id": "tt30788842",
+   "rating": 5.3,
+   "votes": 19568,
+   "checked": "2026-11-13"
+  },
+  "m|love with the proper stranger|1963": {
+   "id": "tt0057263",
+   "rating": 7.2,
+   "votes": 6241,
+   "checked": "2026-11-13"
+  },
+  "m|lovebirds|": {
+   "id": "tt8851668",
+   "rating": 6.1,
+   "votes": 29562,
+   "checked": "2026-11-13"
+  },
+  "m|lucy|2014": {
+   "id": "tt2872732",
+   "rating": 6.4,
+   "votes": 588149,
+   "checked": "2026-11-13"
+  },
+  "m|luzhin defence|": {
+   "id": "tt0211492",
+   "rating": 6.8,
+   "votes": 5096,
+   "checked": "2026-11-13"
+  },
+  "m|mac and devin go to high school|2012": {
+   "id": "tt1870425",
+   "rating": 4.5,
+   "votes": 10191,
+   "checked": "2026-11-13"
+  },
+  "m|macarthur|1977": {
+   "id": "tt0076342",
+   "rating": 6.5,
+   "votes": 5744,
+   "checked": "2026-11-13"
+  },
+  "m|magnolia|1999": {
+   "id": "tt0175880",
+   "rating": 8,
+   "votes": 355747,
+   "checked": "2026-11-13"
+  },
+  "m|major payne|1995": {
+   "id": "tt0110443",
+   "rating": 6.3,
+   "votes": 44475,
+   "checked": "2026-11-13"
+  },
+  "m|malena|2000": {
+   "id": "tt0213847",
+   "rating": 7.4,
+   "votes": 126917,
+   "checked": "2026-11-13"
+  },
+  "m|mallrats|": {
+   "id": "tt0113749",
+   "rating": 7,
+   "votes": 135569,
+   "checked": "2026-11-13"
+  },
+  "m|maltese falcon|1941": {
+   "id": "tt0033870",
+   "rating": 7.9,
+   "votes": 176278,
+   "checked": "2026-11-13"
+  },
+  "m|mamma mia here we go again|2018": {
+   "id": "tt6911608",
+   "rating": 6.6,
+   "votes": 123725,
+   "checked": "2026-11-13"
+  },
+  "m|man who fell to earth|1976": {
+   "id": "tt0074851",
+   "rating": 6.5,
+   "votes": 31791,
+   "checked": "2026-11-13"
+  },
+  "m|man who shot liberty valance|": {
+   "id": "tt0056217",
+   "rating": 8.1,
+   "votes": 90245,
+   "checked": "2026-11-13"
+  },
+  "m|man with the iron heart|2017": {
+   "id": "tt3296908",
+   "rating": 6.4,
+   "votes": 20208,
+   "checked": "2026-11-13"
+  },
+  "m|mandingo|1975": {
+   "id": "tt0073349",
+   "rating": 6.5,
+   "votes": 4764,
+   "checked": "2026-11-13"
+  },
+  "m|mansfield park|1999": {
+   "id": "tt0178737",
+   "rating": 7,
+   "votes": 28348,
+   "checked": "2026-11-13"
+  },
+  "m|matrix|1999": {
+   "id": "tt0133093",
+   "rating": 8.7,
+   "votes": 2293531,
+   "checked": "2026-11-13"
+  },
+  "m|maverick|1994": {
+   "id": "tt0110478",
+   "rating": 7,
+   "votes": 126631,
+   "checked": "2026-11-13"
+  },
+  "m|mchales navy joins the air force|1965": {
+   "id": "tt0059437",
+   "rating": 5.8,
+   "votes": 462,
+   "checked": "2026-11-13"
+  },
+  "m|mchales navy|1964": {
+   "id": "tt0058336",
+   "rating": 6.4,
+   "votes": 1310,
+   "checked": "2026-11-13"
+  },
+  "m|mchales navy|1997": {
+   "id": "tt0119640",
+   "rating": 4.6,
+   "votes": 7497,
+   "checked": "2026-11-13"
+  },
+  "m|mclintock|": {
+   "id": "tt0057298",
+   "rating": 7.1,
+   "votes": 18666,
+   "checked": "2026-11-13"
+  },
+  "m|me before you|2016": {
+   "id": "tt2674426",
+   "rating": 7.4,
+   "votes": 346872,
+   "checked": "2026-11-13"
+  },
+  "m|mean girls 2|2011": {
+   "id": "tt1679235",
+   "rating": 4.1,
+   "votes": 27697,
+   "checked": "2026-11-13"
+  },
+  "m|mean girls|2024": {
+   "id": "tt11762114",
+   "rating": 5.5,
+   "votes": 42409,
+   "checked": "2026-11-13"
+  },
+  "m|meet the fockers|2004": {
+   "id": "tt0290002",
+   "rating": 6.4,
+   "votes": 305076,
+   "checked": "2026-11-13"
+  },
+  "m|meet the parents|2000": {
+   "id": "tt0212338",
+   "rating": 7,
+   "votes": 383754,
+   "checked": "2026-11-13"
+  },
+  "m|meg|2018": {
+   "id": "tt4779682",
+   "rating": 5.7,
+   "votes": 233815,
+   "checked": "2026-11-13"
+  },
+  "m|men of respect|": {
+   "id": "tt0102432",
+   "rating": 5.6,
+   "votes": 1067,
+   "checked": "2026-11-13"
+  },
+  "m|men who stare at goats|2009": {
+   "id": "tt1234548",
+   "rating": 6.2,
+   "votes": 142929,
+   "checked": "2026-11-13"
+  },
+  "m|mercy|2014": {
+   "id": "tt2481496",
+   "rating": 4.9,
+   "votes": 6277,
+   "checked": "2026-11-13"
+  },
+  "m|mexican|2001": {
+   "id": "tt0236493",
+   "rating": 6.2,
+   "votes": 122689,
+   "checked": "2026-11-13"
+  },
+  "m|michael clayton|2007": {
+   "id": "tt0465538",
+   "rating": 7.2,
+   "votes": 185900,
+   "checked": "2026-11-13"
+  },
+  "m|mickey 17|2025": {
+   "id": "tt12299608",
+   "rating": 6.7,
+   "votes": 271268,
+   "checked": "2026-11-13"
+  },
+  "m|midnight run|": {
+   "id": "tt0095631",
+   "rating": 7.5,
+   "votes": 105945,
+   "checked": "2026-11-13"
+  },
+  "m|midway|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|midway|1976": {
+   "id": "tt0074899",
+   "rating": 6.8,
+   "votes": 23780,
+   "checked": "2026-11-13"
+  },
+  "m|mildred pierce|1945": {
+   "id": "tt0037913",
+   "rating": 7.9,
+   "votes": 31975,
+   "checked": "2026-11-13"
+  },
+  "m|milk money|1994": {
+   "id": "tt0110516",
+   "rating": 5.7,
+   "votes": 14182,
+   "checked": "2026-11-13"
+  },
+  "m|million dollar baby|2004": {
+   "id": "tt0405159",
+   "rating": 8.1,
+   "votes": 776978,
+   "checked": "2026-11-13"
+  },
+  "m|mindhunters|2005": {
+   "id": "tt0297284",
+   "rating": 6.3,
+   "votes": 69753,
+   "checked": "2026-11-13"
+  },
+  "m|ministry of ungentlemanly warfare|": {
+   "id": "tt5177120",
+   "rating": 6.8,
+   "votes": 177318,
+   "checked": "2026-11-13"
+  },
+  "m|mission impossible 5 rogue nation|2015": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|mission impossible fallout|2018": {
+   "id": "tt4912910",
+   "rating": 7.7,
+   "votes": 427028,
+   "checked": "2026-11-13"
+  },
+  "m|mob cops|2025": {
+   "id": "tt31186851",
+   "rating": 3.9,
+   "votes": 586,
+   "checked": "2026-11-13"
+  },
+  "m|mom and dad|2018": {
+   "id": "tt5462326",
+   "rating": 5.6,
+   "votes": 30142,
+   "checked": "2026-11-13"
+  },
+  "m|money pit|": {
+   "id": "tt0091541",
+   "rating": 6.4,
+   "votes": 68080,
+   "checked": "2026-11-13"
+  },
+  "m|monkey trouble|1994": {
+   "id": "tt0110557",
+   "rating": 5.4,
+   "votes": 7867,
+   "checked": "2026-11-13"
+  },
+  "m|monster trucks|2017": {
+   "id": "tt3095734",
+   "rating": 5.7,
+   "votes": 20895,
+   "checked": "2026-11-13"
+  },
+  "m|monty pythons the meaning of life|1983": {
+   "id": "tt0085959",
+   "rating": 7.5,
+   "votes": 131275,
+   "checked": "2026-11-13"
+  },
+  "m|moonfall|2022": {
+   "id": "tt5834426",
+   "rating": 5.2,
+   "votes": 116638,
+   "checked": "2026-11-13"
+  },
+  "m|moonrise kingdom|2012": {
+   "id": "tt1748122",
+   "rating": 7.7,
+   "votes": 386036,
+   "checked": "2026-11-13"
+  },
+  "m|mortal|2020": {
+   "id": "tt5715066",
+   "rating": 5.9,
+   "votes": 12105,
+   "checked": "2026-11-13"
+  },
+  "m|mother|1996": {
+   "id": "tt0117091",
+   "rating": 6.9,
+   "votes": 7456,
+   "checked": "2026-11-13"
+  },
+  "m|mr deeds|": {
+   "id": "tt0280590",
+   "rating": 5.8,
+   "votes": 166208,
+   "checked": "2026-11-13"
+  },
+  "m|mr right|2016": {
+   "id": "tt2091935",
+   "rating": 6.3,
+   "votes": 66617,
+   "checked": "2026-11-13"
+  },
+  "m|mr troop mom|2009": {
+   "id": "tt1389781",
+   "rating": 4.4,
+   "votes": 984,
+   "checked": "2026-11-13"
+  },
+  "m|mrs harris goes to paris|": {
+   "id": "tt5151570",
+   "rating": 7.1,
+   "votes": 38460,
+   "checked": "2026-11-13"
+  },
+  "m|munich|2005": {
+   "id": "tt0408306",
+   "rating": 7.5,
+   "votes": 257077,
+   "checked": "2026-11-13"
+  },
+  "m|muriels wedding|1994": {
+   "id": "tt0110598",
+   "rating": 7.3,
+   "votes": 46331,
+   "checked": "2026-11-13"
+  },
+  "m|murph the protector|2013": {
+   "id": "tt1790825",
+   "rating": 6.4,
+   "votes": 1490,
+   "checked": "2026-11-13"
+  },
+  "m|mutiny on the bounty|1935": {
+   "id": "tt0026752",
+   "rating": 7.6,
+   "votes": 27105,
+   "checked": "2026-11-13"
+  },
+  "m|my best friends a vampire|1988": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|my big fat greek wedding 3|2023": {
+   "id": "tt21103300",
+   "rating": 5.2,
+   "votes": 13671,
+   "checked": "2026-11-13"
+  },
+  "m|my bloody valentine|2009": {
+   "id": "tt1179891",
+   "rating": 5.5,
+   "votes": 66106,
+   "checked": "2026-11-13"
+  },
+  "m|my days of mercy|2019": {
+   "id": "tt5978724",
+   "rating": 6.5,
+   "votes": 6935,
+   "checked": "2026-11-13"
+  },
+  "m|my left foot|1989": {
+   "id": "tt0097937",
+   "rating": 7.8,
+   "votes": 86388,
+   "checked": "2026-11-13"
+  },
+  "m|my penguin friend|2024": {
+   "id": "tt8609660",
+   "rating": 6.8,
+   "votes": 8082,
+   "checked": "2026-11-13"
+  },
+  "m|my side of the mountain|1969": {
+   "id": "tt0064708",
+   "rating": 6.6,
+   "votes": 1286,
+   "checked": "2026-11-13"
+  },
+  "m|my sisters keeper|2009": {
+   "id": "tt1078588",
+   "rating": 7.3,
+   "votes": 103790,
+   "checked": "2026-11-13"
+  },
+  "m|mystery men|1999": {
+   "id": "tt0132347",
+   "rating": 6.1,
+   "votes": 74822,
+   "checked": "2026-11-13"
+  },
+  "m|mystic river|2003": {
+   "id": "tt0327056",
+   "rating": 7.9,
+   "votes": 535919,
+   "checked": "2026-11-13"
+  },
+  "m|nacho libre|2006": {
+   "id": "tt0457510",
+   "rating": 6,
+   "votes": 104422,
+   "checked": "2026-11-13"
+  },
+  "m|naked gun 2 1 2 the smell of fear|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|nancy drew|2007": {
+   "id": "tt0479500",
+   "rating": 5.9,
+   "votes": 22698,
+   "checked": "2026-11-13"
+  },
+  "m|nanny|2018": {
+   "id": "tt6159268",
+   "rating": 4.1,
+   "votes": 1275,
+   "checked": "2026-11-13"
+  },
+  "m|nashville|": {
+   "id": "tt0073440",
+   "rating": 7.6,
+   "votes": 32077,
+   "checked": "2026-11-13"
+  },
+  "m|nashville|1975": {
+   "id": "tt0073440",
+   "rating": 7.6,
+   "votes": 32077,
+   "checked": "2026-11-13"
+  },
+  "m|national lampoons animal house|1978": {
+   "id": "tt0077975",
+   "rating": 7.4,
+   "votes": 137272,
+   "checked": "2026-11-13"
+  },
+  "m|national lampoons european vacation|1985": {
+   "id": "tt0089670",
+   "rating": 6.2,
+   "votes": 75942,
+   "checked": "2026-11-13"
+  },
+  "m|national lampoons vacation|1983": {
+   "id": "tt0085995",
+   "rating": 7.3,
+   "votes": 130259,
+   "checked": "2026-11-13"
+  },
+  "m|natural born killers|2008": {
+   "id": "tt0110632",
+   "rating": 7.2,
+   "votes": 271114,
+   "checked": "2026-11-13"
+  },
+  "m|neath the arizona skies|": {
+   "id": "tt0024805",
+   "rating": 5.1,
+   "votes": 1281,
+   "checked": "2026-11-13"
+  },
+  "m|nebraska|2013": {
+   "id": "tt1821549",
+   "rating": 7.7,
+   "votes": 129889,
+   "checked": "2026-11-13"
+  },
+  "m|necessary roughness|": {
+   "id": "tt0102517",
+   "rating": 6.2,
+   "votes": 14148,
+   "checked": "2026-11-13"
+  },
+  "m|needle in a timestack|2021": {
+   "id": "tt7099280",
+   "rating": 5.4,
+   "votes": 2494,
+   "checked": "2026-11-13"
+  },
+  "m|network|1976": {
+   "id": "tt0074958",
+   "rating": 8,
+   "votes": 188836,
+   "checked": "2026-11-13"
+  },
+  "m|nevada smith|1966": {
+   "id": "tt0060748",
+   "rating": 6.9,
+   "votes": 10069,
+   "checked": "2026-11-13"
+  },
+  "m|neverending story|1984": {
+   "id": "tt0088323",
+   "rating": 7.3,
+   "votes": 173579,
+   "checked": "2026-11-13"
+  },
+  "m|new daughter|2009": {
+   "id": "tt0951335",
+   "rating": 5.3,
+   "votes": 17436,
+   "checked": "2026-11-13"
+  },
+  "m|new york minute|2004": {
+   "id": "tt0363282",
+   "rating": 5,
+   "votes": 26912,
+   "checked": "2026-11-13"
+  },
+  "m|nice guys|2016": {
+   "id": "tt3799694",
+   "rating": 7.4,
+   "votes": 428405,
+   "checked": "2026-11-13"
+  },
+  "m|night school|2018": {
+   "id": "tt6781982",
+   "rating": 5.6,
+   "votes": 49972,
+   "checked": "2026-11-13"
+  },
+  "m|nightmare on elm street|1984": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|ninja assassin|2009": {
+   "id": "tt1186367",
+   "rating": 6.3,
+   "votes": 80637,
+   "checked": "2026-11-13"
+  },
+  "m|no mercy|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|north dallas forty|": {
+   "id": "tt0079640",
+   "rating": 6.9,
+   "votes": 6563,
+   "checked": "2026-11-13"
+  },
+  "m|northman|2022": {
+   "id": "tt11138512",
+   "rating": 7,
+   "votes": 309087,
+   "checked": "2026-11-13"
+  },
+  "m|northmen a viking saga|2015": {
+   "id": "tt2290553",
+   "rating": 5.4,
+   "votes": 11367,
+   "checked": "2026-11-13"
+  },
+  "m|not fade away|2012": {
+   "id": "tt1230215",
+   "rating": 6,
+   "votes": 5203,
+   "checked": "2026-11-13"
+  },
+  "m|notebook|2004": {
+   "id": "tt0332280",
+   "rating": 7.8,
+   "votes": 706981,
+   "checked": "2026-11-13"
+  },
+  "m|nothing but trouble|1991": {
+   "id": "tt0102558",
+   "rating": 5.2,
+   "votes": 30919,
+   "checked": "2026-11-13"
+  },
+  "m|novocaine|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|nun|2018": {
+   "id": "tt5814060",
+   "rating": 5.4,
+   "votes": 202110,
+   "checked": "2026-11-13"
+  },
+  "m|occupation rainfall|2021": {
+   "id": "tt8615822",
+   "rating": 4.7,
+   "votes": 16086,
+   "checked": "2026-11-13"
+  },
+  "m|occupation|2018": {
+   "id": "tt6774786",
+   "rating": 4.5,
+   "votes": 15964,
+   "checked": "2026-11-13"
+  },
+  "m|odd couple ii|1998": {
+   "id": "tt0120773",
+   "rating": 6.5,
+   "votes": 11586,
+   "checked": "2026-11-13"
+  },
+  "m|official secrets|2019": {
+   "id": "tt5431890",
+   "rating": 7.3,
+   "votes": 61957,
+   "checked": "2026-11-13"
+  },
+  "m|oldboy|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|one battle after another|2025": {
+   "id": "tt30144839",
+   "rating": 7.6,
+   "votes": 457351,
+   "checked": "2026-11-13"
+  },
+  "m|one false move|": {
+   "id": "tt0102592",
+   "rating": 7.1,
+   "votes": 17222,
+   "checked": "2026-11-13"
+  },
+  "m|one flew over the cuckoos nest|1975": {
+   "id": "tt0073486",
+   "rating": 8.6,
+   "votes": 1173689,
+   "checked": "2026-11-13"
+  },
+  "m|one of our aircraft is missing|1942": {
+   "id": "tt0035153",
+   "rating": 7,
+   "votes": 3067,
+   "checked": "2026-11-13"
+  },
+  "m|open water 3 cage dive|2017": {
+   "id": "tt4126568",
+   "rating": 4.2,
+   "votes": 5762,
+   "checked": "2026-11-13"
+  },
+  "m|operation condor|1991": {
+   "id": "tt0099558",
+   "rating": 7.2,
+   "votes": 25272,
+   "checked": "2026-11-13"
+  },
+  "m|orange county|2002": {
+   "id": "tt0273923",
+   "rating": 6.2,
+   "votes": 54478,
+   "checked": "2026-11-13"
+  },
+  "m|orphan|2009": {
+   "id": "tt1148204",
+   "rating": 7,
+   "votes": 282699,
+   "checked": "2026-11-13"
+  },
+  "m|oss|1946": {
+   "id": "tt0038794",
+   "rating": 6.6,
+   "votes": 632,
+   "checked": "2026-11-13"
+  },
+  "m|out of towners|1999": {
+   "id": "tt0129280",
+   "rating": 5.5,
+   "votes": 16154,
+   "checked": "2026-11-13"
+  },
+  "m|outfit|2022": {
+   "id": "tt14114802",
+   "rating": 7.2,
+   "votes": 88961,
+   "checked": "2026-11-13"
+  },
+  "m|outsiders|1983": {
+   "id": "tt0086066",
+   "rating": 7,
+   "votes": 112352,
+   "checked": "2026-11-13"
+  },
+  "m|overland stage raiders|": {
+   "id": "tt0030545",
+   "rating": 5.6,
+   "votes": 611,
+   "checked": "2026-11-13"
+  },
+  "m|pacific rim uprising|2018": {
+   "id": "tt2557478",
+   "rating": 5.6,
+   "votes": 140042,
+   "checked": "2026-11-13"
+  },
+  "m|pacific rim|2013": {
+   "id": "tt1663662",
+   "rating": 6.9,
+   "votes": 566733,
+   "checked": "2026-11-13"
+  },
+  "m|paddington 2|2018": {
+   "id": "tt4468740",
+   "rating": 7.8,
+   "votes": 117399,
+   "checked": "2026-11-13"
+  },
+  "m|paint your wagon|1970": {
+   "id": "tt0064782",
+   "rating": 6.6,
+   "votes": 16468,
+   "checked": "2026-11-13"
+  },
+  "m|passenger|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|paul|": {
+   "id": "tt1092026",
+   "rating": 6.9,
+   "votes": 286405,
+   "checked": "2026-11-13"
+  },
+  "m|paycheck|2003": {
+   "id": "tt0338337",
+   "rating": 6.3,
+   "votes": 119667,
+   "checked": "2026-11-13"
+  },
+  "m|pee wees big adventure|1985": {
+   "id": "tt0089791",
+   "rating": 7.1,
+   "votes": 64437,
+   "checked": "2026-11-13"
+  },
+  "m|penelope|2008": {
+   "id": "tt0472160",
+   "rating": 6.7,
+   "votes": 69998,
+   "checked": "2026-11-13"
+  },
+  "m|people under the stairs|1991": {
+   "id": "tt0105121",
+   "rating": 6.4,
+   "votes": 44704,
+   "checked": "2026-11-13"
+  },
+  "m|perfect stranger|": {
+   "id": "tt0457433",
+   "rating": 5.7,
+   "votes": 54521,
+   "checked": "2026-11-13"
+  },
+  "m|perfect weapon|1991": {
+   "id": "tt0102655",
+   "rating": 6,
+   "votes": 5493,
+   "checked": "2026-11-13"
+  },
+  "m|persian version|": {
+   "id": "tt24076146",
+   "rating": 6.2,
+   "votes": 4731,
+   "checked": "2026-11-13"
+  },
+  "m|phantom thread|2018": {
+   "id": "tt5776858",
+   "rating": 7.4,
+   "votes": 165224,
+   "checked": "2026-11-13"
+  },
+  "m|phantoms|1998": {
+   "id": "tt0119891",
+   "rating": 5.5,
+   "votes": 25024,
+   "checked": "2026-11-13"
+  },
+  "m|piranha 3dd|2012": {
+   "id": "tt1714203",
+   "rating": 3.8,
+   "votes": 48766,
+   "checked": "2026-11-13"
+  },
+  "m|place of bones|2024": {
+   "id": "tt14226748",
+   "rating": 4.9,
+   "votes": 996,
+   "checked": "2026-11-13"
+  },
+  "m|playing by heart|1998": {
+   "id": "tt0145734",
+   "rating": 6.9,
+   "votes": 21196,
+   "checked": "2026-11-13"
+  },
+  "m|please dont destroy the treasure of foggy mountain|": {
+   "id": "tt21335356",
+   "rating": 6,
+   "votes": 12612,
+   "checked": "2026-11-13"
+  },
+  "m|please dont destroy the treasure of foggy mountain|2023": {
+   "id": "tt21335356",
+   "rating": 6,
+   "votes": 12612,
+   "checked": "2026-11-13"
+  },
+  "m|point break|2015": {
+   "id": "tt2058673",
+   "rating": 5.3,
+   "votes": 69983,
+   "checked": "2026-11-13"
+  },
+  "m|pokemon detective pikachu|2019": {
+   "id": "tt5884052",
+   "rating": 6.5,
+   "votes": 200937,
+   "checked": "2026-11-13"
+  },
+  "m|police academy|1984": {
+   "id": "tt0087928",
+   "rating": 6.8,
+   "votes": 151313,
+   "checked": "2026-11-13"
+  },
+  "m|polite society|2023": {
+   "id": "tt18257464",
+   "rating": 6.6,
+   "votes": 13294,
+   "checked": "2026-11-13"
+  },
+  "m|pollock|": {
+   "id": "tt0183659",
+   "rating": 7,
+   "votes": 31274,
+   "checked": "2026-11-13"
+  },
+  "m|poltergeist|1982": {
+   "id": "tt0084516",
+   "rating": 7.3,
+   "votes": 199146,
+   "checked": "2026-11-13"
+  },
+  "m|pontiac moon|1994": {
+   "id": "tt0110867",
+   "rating": 5.6,
+   "votes": 844,
+   "checked": "2026-11-13"
+  },
+  "m|pootie tang|": {
+   "id": "tt0258038",
+   "rating": 5.3,
+   "votes": 15970,
+   "checked": "2026-11-13"
+  },
+  "m|poseidon|2006": {
+   "id": "tt0409182",
+   "rating": 5.7,
+   "votes": 118308,
+   "checked": "2026-11-13"
+  },
+  "m|practical magic|1998": {
+   "id": "tt0120791",
+   "rating": 6.4,
+   "votes": 130486,
+   "checked": "2026-11-13"
+  },
+  "m|precious cargo|2016": {
+   "id": "tt4651410",
+   "rating": 4.6,
+   "votes": 10367,
+   "checked": "2026-11-13"
+  },
+  "m|presidio|1988": {
+   "id": "tt0095897",
+   "rating": 6,
+   "votes": 21632,
+   "checked": "2026-11-13"
+  },
+  "m|pretty baby|1978": {
+   "id": "tt0078111",
+   "rating": 6.5,
+   "votes": 14535,
+   "checked": "2026-11-13"
+  },
+  "m|pretty bird|2010": {
+   "id": "tt1058743",
+   "rating": 5,
+   "votes": 1234,
+   "checked": "2026-11-13"
+  },
+  "m|price we pay|2023": {
+   "id": "tt15441472",
+   "rating": 4.9,
+   "votes": 5013,
+   "checked": "2026-11-13"
+  },
+  "m|primary colors|1998": {
+   "id": "tt0119942",
+   "rating": 6.7,
+   "votes": 31849,
+   "checked": "2026-11-13"
+  },
+  "m|prince and me|2004": {
+   "id": "tt0337697",
+   "rating": 5.9,
+   "votes": 44112,
+   "checked": "2026-11-13"
+  },
+  "m|prisoner of honor|": {
+   "id": "tt0102715",
+   "rating": 6.6,
+   "votes": 1268,
+   "checked": "2026-11-13"
+  },
+  "m|private war of major benson|1955": {
+   "id": "tt0048513",
+   "rating": 6.4,
+   "votes": 1156,
+   "checked": "2026-11-13"
+  },
+  "m|problem child 2|": {
+   "id": "tt0102719",
+   "rating": 5,
+   "votes": 25553,
+   "checked": "2026-11-13"
+  },
+  "m|problem child|1990": {
+   "id": "tt0100419",
+   "rating": 5.5,
+   "votes": 36141,
+   "checked": "2026-11-13"
+  },
+  "m|project x|2012": {
+   "id": "tt1636826",
+   "rating": 6.7,
+   "votes": 264067,
+   "checked": "2026-11-13"
+  },
+  "m|promising young woman|2020": {
+   "id": "tt9620292",
+   "rating": 7.5,
+   "votes": 261735,
+   "checked": "2026-11-13"
+  },
+  "m|prophecy v forsaken|2005": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|protege|2021": {
+   "id": "tt6079772",
+   "rating": 6.1,
+   "votes": 43541,
+   "checked": "2026-11-13"
+  },
+  "m|ps i love you|2007": {
+   "id": "tt0431308",
+   "rating": 7,
+   "votes": 227513,
+   "checked": "2026-11-13"
+  },
+  "m|psych 2 lassie come home|": {
+   "id": "tt9792884",
+   "rating": 7.3,
+   "votes": 8353,
+   "checked": "2026-11-13"
+  },
+  "m|psych 3 this is gus|": {
+   "id": "tt14641648",
+   "rating": 7.5,
+   "votes": 6146,
+   "checked": "2026-11-13"
+  },
+  "m|pulp fiction|1994": {
+   "id": "tt0110912",
+   "rating": 8.8,
+   "votes": 2482948,
+   "checked": "2026-11-13"
+  },
+  "m|pumping iron|1993": {
+   "id": "tt0076578",
+   "rating": 7.3,
+   "votes": 27015,
+   "checked": "2026-11-13"
+  },
+  "m|pure luck|": {
+   "id": "tt0102729",
+   "rating": 5.8,
+   "votes": 8361,
+   "checked": "2026-11-13"
+  },
+  "m|purple rain|1984": {
+   "id": "tt0087957",
+   "rating": 6.5,
+   "votes": 26983,
+   "checked": "2026-11-13"
+  },
+  "m|push|2009": {
+   "id": "tt0465580",
+   "rating": 6.1,
+   "votes": 120474,
+   "checked": "2026-11-13"
+  },
+  "m|queen of the damned|2002": {
+   "id": "tt0238546",
+   "rating": 5.3,
+   "votes": 65492,
+   "checked": "2026-11-13"
+  },
+  "m|quiet man|": {
+   "id": "tt0045061",
+   "rating": 7.7,
+   "votes": 46602,
+   "checked": "2026-11-13"
+  },
+  "m|race for glory audi vs lancia|2024": {
+   "id": "tt20112600",
+   "rating": 5.8,
+   "votes": 6411,
+   "checked": "2026-11-13"
+  },
+  "m|race for your life charlie brown|1977": {
+   "id": "tt0076591",
+   "rating": 7.2,
+   "votes": 4359,
+   "checked": "2026-11-13"
+  },
+  "m|raise your voice|2004": {
+   "id": "tt0361696",
+   "rating": 5.8,
+   "votes": 30173,
+   "checked": "2026-11-13"
+  },
+  "m|rambo 3|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|rambo first blood part 2|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|rambo first blood|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|rambo last blood|": {
+   "id": "tt1206885",
+   "rating": 6.1,
+   "votes": 122001,
+   "checked": "2026-11-13"
+  },
+  "m|rambo|2008": {
+   "id": "tt0462499",
+   "rating": 7,
+   "votes": 259475,
+   "checked": "2026-11-13"
+  },
+  "m|rampage|2018": {
+   "id": "tt2231461",
+   "rating": 6.1,
+   "votes": 205863,
+   "checked": "2026-11-13"
+  },
+  "m|rat race|": {
+   "id": "tt0250687",
+   "rating": 6.5,
+   "votes": 132301,
+   "checked": "2026-11-13"
+  },
+  "m|ray donovan the movie|2022": {
+   "id": "tt14124268",
+   "rating": 6.8,
+   "votes": 10775,
+   "checked": "2026-11-13"
+  },
+  "m|razors edge|1984": {
+   "id": "tt0087980",
+   "rating": 6.4,
+   "votes": 6402,
+   "checked": "2026-11-13"
+  },
+  "m|ready player one|2018": {
+   "id": "tt1677720",
+   "rating": 7.4,
+   "votes": 555126,
+   "checked": "2026-11-13"
+  },
+  "m|rebel without a cause|1955": {
+   "id": "tt0048545",
+   "rating": 7.6,
+   "votes": 104689,
+   "checked": "2026-11-13"
+  },
+  "m|red dragon|2002": {
+   "id": "tt0289765",
+   "rating": 7.2,
+   "votes": 315806,
+   "checked": "2026-11-13"
+  },
+  "m|red eye|2005": {
+   "id": "tt0421239",
+   "rating": 6.4,
+   "votes": 168305,
+   "checked": "2026-11-13"
+  },
+  "m|red river range|": {
+   "id": "tt0030663",
+   "rating": 5.6,
+   "votes": 529,
+   "checked": "2026-11-13"
+  },
+  "m|red violin|1999": {
+   "id": "tt0120802",
+   "rating": 7.6,
+   "votes": 36044,
+   "checked": "2026-11-13"
+  },
+  "m|reindeer games|2000": {
+   "id": "tt0184858",
+   "rating": 5.8,
+   "votes": 45173,
+   "checked": "2026-11-13"
+  },
+  "m|replacements|2000": {
+   "id": "tt0191397",
+   "rating": 6.7,
+   "votes": 75541,
+   "checked": "2026-11-13"
+  },
+  "m|replicas|2019": {
+   "id": "tt4154916",
+   "rating": 5.5,
+   "votes": 46037,
+   "checked": "2026-11-13"
+  },
+  "m|reprisal|2018": {
+   "id": "tt6547170",
+   "rating": 4.3,
+   "votes": 8670,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil afterlife|": {
+   "id": "tt1220634",
+   "rating": 5.8,
+   "votes": 191682,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil apocalypse|": {
+   "id": "tt0318627",
+   "rating": 6.1,
+   "votes": 226587,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil damnation|": {
+   "id": "tt1753496",
+   "rating": 6.4,
+   "votes": 24879,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil death island|": {
+   "id": "tt26674627",
+   "rating": 5.7,
+   "votes": 12338,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil degeneration|": {
+   "id": "tt1174954",
+   "rating": 6.4,
+   "votes": 35790,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil extinction|": {
+   "id": "tt0432021",
+   "rating": 6.2,
+   "votes": 220399,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil retribution|": {
+   "id": "tt1855325",
+   "rating": 5.3,
+   "votes": 162507,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil the final chapter|2017": {
+   "id": "tt2592614",
+   "rating": 5.5,
+   "votes": 112107,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil vendetta|": {
+   "id": "tt5776208",
+   "rating": 6.2,
+   "votes": 18161,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil welcome to raccoon city|": {
+   "id": "tt6920084",
+   "rating": 5.2,
+   "votes": 75522,
+   "checked": "2026-11-13"
+  },
+  "m|resident evil|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|retribution|2023": {
+   "id": "tt6906292",
+   "rating": 5.4,
+   "votes": 29541,
+   "checked": "2026-11-13"
+  },
+  "m|return of the living dead 3|2001": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|return to seoul|": {
+   "id": "tt19719836",
+   "rating": 6.9,
+   "votes": 10933,
+   "checked": "2026-11-13"
+  },
+  "m|reunion|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|revolutionary road|2008": {
+   "id": "tt0959337",
+   "rating": 7.3,
+   "votes": 239424,
+   "checked": "2026-11-13"
+  },
+  "m|richie rich|1994": {
+   "id": "tt0110989",
+   "rating": 5.5,
+   "votes": 80542,
+   "checked": "2026-11-13"
+  },
+  "m|ride with the devil|1999": {
+   "id": "tt0134154",
+   "rating": 6.7,
+   "votes": 15405,
+   "checked": "2026-11-13"
+  },
+  "m|ride|1998": {
+   "id": "tt0120707",
+   "rating": 4.5,
+   "votes": 903,
+   "checked": "2026-11-13"
+  },
+  "m|right stuff|1983": {
+   "id": "tt0086197",
+   "rating": 7.8,
+   "votes": 68775,
+   "checked": "2026-11-13"
+  },
+  "m|righteous thieves|2023": {
+   "id": "tt14740118",
+   "rating": 4.2,
+   "votes": 857,
+   "checked": "2026-11-13"
+  },
+  "m|rio grande|": {
+   "id": "tt0042895",
+   "rating": 7,
+   "votes": 19742,
+   "checked": "2026-11-13"
+  },
+  "m|rio lobo|": {
+   "id": "tt0066301",
+   "rating": 6.7,
+   "votes": 15543,
+   "checked": "2026-11-13"
+  },
+  "m|risky business|1983": {
+   "id": "tt0086200",
+   "rating": 6.8,
+   "votes": 110650,
+   "checked": "2026-11-13"
+  },
+  "m|road to perdition|2002": {
+   "id": "tt0257044",
+   "rating": 7.6,
+   "votes": 304003,
+   "checked": "2026-11-13"
+  },
+  "m|road trip|2000": {
+   "id": "tt0215129",
+   "rating": 6.5,
+   "votes": 191047,
+   "checked": "2026-11-13"
+  },
+  "m|robin hood prince of thieves|1991": {
+   "id": "tt0102798",
+   "rating": 6.9,
+   "votes": 225253,
+   "checked": "2026-11-13"
+  },
+  "m|robin hood|2010": {
+   "id": "tt0955308",
+   "rating": 6.6,
+   "votes": 300031,
+   "checked": "2026-11-13"
+  },
+  "m|robinson crusoe on mars|1964": {
+   "id": "tt0058530",
+   "rating": 6.4,
+   "votes": 7742,
+   "checked": "2026-11-13"
+  },
+  "m|rock dog 3 battle the beat|2023": {
+   "id": "tt11207270",
+   "rating": 4.9,
+   "votes": 367,
+   "checked": "2026-11-13"
+  },
+  "m|rocketman|2019": {
+   "id": "tt2066051",
+   "rating": 7.3,
+   "votes": 213139,
+   "checked": "2026-11-13"
+  },
+  "m|role models|2008": {
+   "id": "tt0430922",
+   "rating": 6.8,
+   "votes": 254029,
+   "checked": "2026-11-13"
+  },
+  "m|romeo must die|2000": {
+   "id": "tt0165929",
+   "rating": 6.1,
+   "votes": 77953,
+   "checked": "2026-11-13"
+  },
+  "m|roofman|": {
+   "id": "tt4627382",
+   "rating": 6.9,
+   "votes": 91473,
+   "checked": "2026-11-13"
+  },
+  "m|roommate|": {
+   "id": "tt1265990",
+   "rating": 4.8,
+   "votes": 44647,
+   "checked": "2026-11-13"
+  },
+  "m|rounders|1998": {
+   "id": "tt0128442",
+   "rating": 7.3,
+   "votes": 174519,
+   "checked": "2026-11-13"
+  },
+  "m|rules of engagement|2000": {
+   "id": "tt0160797",
+   "rating": 6.4,
+   "votes": 53308,
+   "checked": "2026-11-13"
+  },
+  "m|rumble through the dark|2023": {
+   "id": "tt10950320",
+   "rating": 5.5,
+   "votes": 10044,
+   "checked": "2026-11-13"
+  },
+  "m|rush hour|1998": {
+   "id": "tt0120812",
+   "rating": 7.1,
+   "votes": 337839,
+   "checked": "2026-11-13"
+  },
+  "m|same kind of different as me|2017": {
+   "id": "tt1230168",
+   "rating": 6.6,
+   "votes": 9447,
+   "checked": "2026-11-13"
+  },
+  "m|sanctum|2011": {
+   "id": "tt0881320",
+   "rating": 5.9,
+   "votes": 59069,
+   "checked": "2026-11-13"
+  },
+  "m|sands of iwo jima|": {
+   "id": "tt0041841",
+   "rating": 7,
+   "votes": 12604,
+   "checked": "2026-11-13"
+  },
+  "m|sands of iwo jima|1950": {
+   "id": "tt0041841",
+   "rating": 7,
+   "votes": 12604,
+   "checked": "2026-11-13"
+  },
+  "m|santa fe stampede|": {
+   "id": "tt0030714",
+   "rating": 5.9,
+   "votes": 549,
+   "checked": "2026-11-13"
+  },
+  "m|savages|2012": {
+   "id": "tt1615065",
+   "rating": 6.4,
+   "votes": 139682,
+   "checked": "2026-11-13"
+  },
+  "m|save the last dance|2001": {
+   "id": "tt0206275",
+   "rating": 6.2,
+   "votes": 70074,
+   "checked": "2026-11-13"
+  },
+  "m|saving private ryan|1998": {
+   "id": "tt0120815",
+   "rating": 8.6,
+   "votes": 1672650,
+   "checked": "2026-11-13"
+  },
+  "m|savior|": {
+   "id": "tt0120070",
+   "rating": 7.2,
+   "votes": 12299,
+   "checked": "2026-11-13"
+  },
+  "m|scarface|1983": {
+   "id": "tt0086250",
+   "rating": 8.3,
+   "votes": 1042242,
+   "checked": "2026-11-13"
+  },
+  "m|scary movie|2026": {
+   "id": "tt32093575",
+   "rating": 4.8,
+   "votes": 64854,
+   "checked": "2026-11-13"
+  },
+  "m|school ties|1992": {
+   "id": "tt0105327",
+   "rating": 6.9,
+   "votes": 29991,
+   "checked": "2026-11-13"
+  },
+  "m|scoob|2020": {
+   "id": "tt3152592",
+   "rating": 5.6,
+   "votes": 33980,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo 2 monsters unleashed|2004": {
+   "id": "tt0331632",
+   "rating": 5.4,
+   "votes": 75650,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo and the alien invaders|2000": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo and the cyber chase|2001": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo and the ghoul school|1988": {
+   "id": "tt0189071",
+   "rating": 6.8,
+   "votes": 7276,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo and the loch ness monster|2004": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo and the reluctant werewolf|1989": {
+   "id": "tt0189072",
+   "rating": 6.6,
+   "votes": 6116,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo and the witchs ghost|1999": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo frankencreepy|2013": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo meets the boo brothers|1986": {
+   "id": "tt0189070",
+   "rating": 6.9,
+   "votes": 6107,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo on zombie island|1998": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo return to zombie island|2019": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scooby doo the movie|2002": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|scott pilgrim vs the world|": {
+   "id": "tt0446029",
+   "rating": 7.5,
+   "votes": 502925,
+   "checked": "2026-11-13"
+  },
+  "m|scott pilgrim vs the world|2010": {
+   "id": "tt0446029",
+   "rating": 7.5,
+   "votes": 502925,
+   "checked": "2026-11-13"
+  },
+  "m|scouts guide to the zombie apocalypse|2015": {
+   "id": "tt1727776",
+   "rating": 6.3,
+   "votes": 62965,
+   "checked": "2026-11-13"
+  },
+  "m|seagull|": {
+   "id": "tt4682136",
+   "rating": 5.8,
+   "votes": 4302,
+   "checked": "2026-11-13"
+  },
+  "m|search party|2016": {
+   "id": "tt2758904",
+   "rating": 5.6,
+   "votes": 8594,
+   "checked": "2026-11-13"
+  },
+  "m|secret garden|1993": {
+   "id": "tt0108071",
+   "rating": 7.3,
+   "votes": 48065,
+   "checked": "2026-11-13"
+  },
+  "m|secret of my success|": {
+   "id": "tt0093936",
+   "rating": 6.5,
+   "votes": 40032,
+   "checked": "2026-11-13"
+  },
+  "m|secret window|": {
+   "id": "tt0363988",
+   "rating": 6.5,
+   "votes": 224783,
+   "checked": "2026-11-13"
+  },
+  "m|selena|1997": {
+   "id": "tt0120094",
+   "rating": 6.9,
+   "votes": 34389,
+   "checked": "2026-11-13"
+  },
+  "m|semper fi|2019": {
+   "id": "tt7042838",
+   "rating": 6.2,
+   "votes": 4523,
+   "checked": "2026-11-13"
+  },
+  "m|senseless|1998": {
+   "id": "tt0120820",
+   "rating": 6,
+   "votes": 18124,
+   "checked": "2026-11-13"
+  },
+  "m|september issue|2009": {
+   "id": "tt1331025",
+   "rating": 7,
+   "votes": 8279,
+   "checked": "2026-11-13"
+  },
+  "m|serendipity|": {
+   "id": "tt0240890",
+   "rating": 6.9,
+   "votes": 133610,
+   "checked": "2026-11-13"
+  },
+  "m|serenity|2005": {
+   "id": "tt0379786",
+   "rating": 7.8,
+   "votes": 317922,
+   "checked": "2026-11-13"
+  },
+  "m|serpent and the rainbow|1988": {
+   "id": "tt0096071",
+   "rating": 6.4,
+   "votes": 29064,
+   "checked": "2026-11-13"
+  },
+  "m|serpico|1973": {
+   "id": "tt0070666",
+   "rating": 7.7,
+   "votes": 150070,
+   "checked": "2026-11-13"
+  },
+  "m|seven psychopaths|2012": {
+   "id": "tt1931533",
+   "rating": 7.1,
+   "votes": 292120,
+   "checked": "2026-11-13"
+  },
+  "m|seven|1995": {
+   "id": "tt0114369",
+   "rating": 8.6,
+   "votes": 2076746,
+   "checked": "2026-11-13"
+  },
+  "m|sex and the city the movie|2008": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|shawshank redemption|1994": {
+   "id": "tt0111161",
+   "rating": 9.3,
+   "votes": 3263940,
+   "checked": "2026-11-13"
+  },
+  "m|shenandoah|1965": {
+   "id": "tt0059711",
+   "rating": 7.3,
+   "votes": 10707,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the hound of the baskervilles|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the pearl of death|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the scarlet claw|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the secret weapon|": {
+   "id": "tt0035317",
+   "rating": 6.5,
+   "votes": 7496,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the spider woman|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the voice of terror|": {
+   "id": "tt0035318",
+   "rating": 6.4,
+   "votes": 5887,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes and the woman in green|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes faces death|": {
+   "id": "tt0036348",
+   "rating": 6.9,
+   "votes": 5860,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes in dressed to kill|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes in terror by night|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes in the house of fear|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes in washington|": {
+   "id": "tt0036349",
+   "rating": 6.6,
+   "votes": 5388,
+   "checked": "2026-11-13"
+  },
+  "m|sherlock holmes|2009": {
+   "id": "tt0988045",
+   "rating": 7.5,
+   "votes": 713836,
+   "checked": "2026-11-13"
+  },
+  "m|shes all that|1999": {
+   "id": "tt0160862",
+   "rating": 6,
+   "votes": 115721,
+   "checked": "2026-11-13"
+  },
+  "m|shes having a baby|1988": {
+   "id": "tt0096094",
+   "rating": 6,
+   "votes": 14719,
+   "checked": "2026-11-13"
+  },
+  "m|shining|1980": {
+   "id": "tt0081505",
+   "rating": 8.4,
+   "votes": 1253790,
+   "checked": "2026-11-13"
+  },
+  "m|shootist|": {
+   "id": "tt0075213",
+   "rating": 7.6,
+   "votes": 29869,
+   "checked": "2026-11-13"
+  },
+  "m|shortcomings|": {
+   "id": "tt14483774",
+   "rating": 6.4,
+   "votes": 4587,
+   "checked": "2026-11-13"
+  },
+  "m|sicario|": {
+   "id": "tt3397884",
+   "rating": 7.7,
+   "votes": 554679,
+   "checked": "2026-11-13"
+  },
+  "m|silver bullet|1985": {
+   "id": "tt0090021",
+   "rating": 6.4,
+   "votes": 36564,
+   "checked": "2026-11-13"
+  },
+  "m|singin in the rain|1952": {
+   "id": "tt0045152",
+   "rating": 8.3,
+   "votes": 287260,
+   "checked": "2026-11-13"
+  },
+  "m|sisterhood of the traveling pants|2005": {
+   "id": "tt0403508",
+   "rating": 6.5,
+   "votes": 67923,
+   "checked": "2026-11-13"
+  },
+  "m|sisu|": {
+   "id": "tt14846026",
+   "rating": 6.9,
+   "votes": 127506,
+   "checked": "2026-11-13"
+  },
+  "m|sixteen candles|": {
+   "id": "tt0088128",
+   "rating": 7,
+   "votes": 137155,
+   "checked": "2026-11-13"
+  },
+  "m|sixty million dollar man|1995": {
+   "id": "tt0112446",
+   "rating": 6.2,
+   "votes": 3348,
+   "checked": "2026-11-13"
+  },
+  "m|sky captain and the world of tomorrow|2004": {
+   "id": "tt0346156",
+   "rating": 6.1,
+   "votes": 90903,
+   "checked": "2026-11-13"
+  },
+  "m|slammin salmon|2009": {
+   "id": "tt1135525",
+   "rating": 6.4,
+   "votes": 16936,
+   "checked": "2026-11-13"
+  },
+  "m|slap shot|": {
+   "id": "tt0076723",
+   "rating": 7.2,
+   "votes": 45923,
+   "checked": "2026-11-13"
+  },
+  "m|slaughterhouse five|1972": {
+   "id": "tt0069280",
+   "rating": 6.8,
+   "votes": 15243,
+   "checked": "2026-11-13"
+  },
+  "m|sleeping with other people|": {
+   "id": "tt3165612",
+   "rating": 6.5,
+   "votes": 52422,
+   "checked": "2026-11-13"
+  },
+  "m|small soldiers|": {
+   "id": "tt0122718",
+   "rating": 6.3,
+   "votes": 111894,
+   "checked": "2026-11-13"
+  },
+  "m|small soldiers|1998": {
+   "id": "tt0122718",
+   "rating": 6.3,
+   "votes": 111894,
+   "checked": "2026-11-13"
+  },
+  "m|small town crime|2018": {
+   "id": "tt5751998",
+   "rating": 6.6,
+   "votes": 13489,
+   "checked": "2026-11-13"
+  },
+  "m|smoke signals|1998": {
+   "id": "tt0120321",
+   "rating": 7.2,
+   "votes": 12349,
+   "checked": "2026-11-13"
+  },
+  "m|smokey and the bandit|": {
+   "id": "tt0076729",
+   "rating": 7,
+   "votes": 64100,
+   "checked": "2026-11-13"
+  },
+  "m|smokey and the bandit|1977": {
+   "id": "tt0076729",
+   "rating": 7,
+   "votes": 64100,
+   "checked": "2026-11-13"
+  },
+  "m|smokin aces|2007": {
+   "id": "tt0475394",
+   "rating": 6.6,
+   "votes": 159151,
+   "checked": "2026-11-13"
+  },
+  "m|snack shack|": {
+   "id": "tt22004344",
+   "rating": 7,
+   "votes": 19064,
+   "checked": "2026-11-13"
+  },
+  "m|snake eyes gi joe origins|2021": {
+   "id": "tt8404256",
+   "rating": 5.4,
+   "votes": 49443,
+   "checked": "2026-11-13"
+  },
+  "m|sniper the last stand|": {
+   "id": "tt34910018",
+   "rating": 4.8,
+   "votes": 2360,
+   "checked": "2026-11-13"
+  },
+  "m|snow white and the huntsman|2012": {
+   "id": "tt1735898",
+   "rating": 6.1,
+   "votes": 317815,
+   "checked": "2026-11-13"
+  },
+  "m|snowpiercer|2014": {
+   "id": "tt1706620",
+   "rating": 7.1,
+   "votes": 427477,
+   "checked": "2026-11-13"
+  },
+  "m|soapdish|1991": {
+   "id": "tt0102951",
+   "rating": 6.6,
+   "votes": 19139,
+   "checked": "2026-11-13"
+  },
+  "m|soldier|1998": {
+   "id": "tt0120157",
+   "rating": 6.1,
+   "votes": 62590,
+   "checked": "2026-11-13"
+  },
+  "m|something borrowed|2011": {
+   "id": "tt0491152",
+   "rating": 5.8,
+   "votes": 68131,
+   "checked": "2026-11-13"
+  },
+  "m|son of rambow|2008": {
+   "id": "tt0845046",
+   "rating": 7,
+   "votes": 33903,
+   "checked": "2026-11-13"
+  },
+  "m|son|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|sons of katie elder|": {
+   "id": "tt0059740",
+   "rating": 7.1,
+   "votes": 19996,
+   "checked": "2026-11-13"
+  },
+  "m|source code|2011": {
+   "id": "tt0945513",
+   "rating": 7.5,
+   "votes": 590750,
+   "checked": "2026-11-13"
+  },
+  "m|space jam a new legacy|2021": {
+   "id": "tt3554046",
+   "rating": 4.5,
+   "votes": 89090,
+   "checked": "2026-11-13"
+  },
+  "m|space jam|1996": {
+   "id": "tt0117705",
+   "rating": 6.5,
+   "votes": 233258,
+   "checked": "2026-11-13"
+  },
+  "m|spartacus|1960": {
+   "id": "tt0054331",
+   "rating": 7.9,
+   "votes": 153027,
+   "checked": "2026-11-13"
+  },
+  "m|spawn|1997": {
+   "id": "tt0120177",
+   "rating": 5.2,
+   "votes": 77730,
+   "checked": "2026-11-13"
+  },
+  "m|speed kills|2018": {
+   "id": "tt6749318",
+   "rating": 4.4,
+   "votes": 4452,
+   "checked": "2026-11-13"
+  },
+  "m|speed racer|2008": {
+   "id": "tt0811080",
+   "rating": 6.1,
+   "votes": 85496,
+   "checked": "2026-11-13"
+  },
+  "m|spies like us|1985": {
+   "id": "tt0090056",
+   "rating": 6.4,
+   "votes": 55599,
+   "checked": "2026-11-13"
+  },
+  "m|spring break|": {
+   "id": "tt0086352",
+   "rating": 4.9,
+   "votes": 3905,
+   "checked": "2026-11-13"
+  },
+  "m|squealer|2023": {
+   "id": "tt14768616",
+   "rating": 3.4,
+   "votes": 941,
+   "checked": "2026-11-13"
+  },
+  "m|stalag 17|1953": {
+   "id": "tt0046359",
+   "rating": 7.9,
+   "votes": 60768,
+   "checked": "2026-11-13"
+  },
+  "m|stan and ollie|": {
+   "id": "tt3385524",
+   "rating": 7.2,
+   "votes": 42094,
+   "checked": "2026-11-13"
+  },
+  "m|station agent|": {
+   "id": "tt0340377",
+   "rating": 7.6,
+   "votes": 82492,
+   "checked": "2026-11-13"
+  },
+  "m|stepford wives|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|stephen kings cats eye|1985": {
+   "id": "tt0088889",
+   "rating": 6.3,
+   "votes": 31219,
+   "checked": "2026-11-13"
+  },
+  "m|stephen kings it|1990": {
+   "id": "tt0099864",
+   "rating": 6.8,
+   "votes": 156644,
+   "checked": "2026-11-13"
+  },
+  "m|sting|1973": {
+   "id": "tt0070735",
+   "rating": 8.2,
+   "votes": 308159,
+   "checked": "2026-11-13"
+  },
+  "m|stop or my mom will shoot|": {
+   "id": "tt0105477",
+   "rating": 4.4,
+   "votes": 46839,
+   "checked": "2026-11-13"
+  },
+  "m|strays|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|strictly ballroom|": {
+   "id": "tt0105488",
+   "rating": 7.2,
+   "votes": 31438,
+   "checked": "2026-11-13"
+  },
+  "m|stuntwoman|1996": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|suburbicon|": {
+   "id": "tt0491175",
+   "rating": 5.8,
+   "votes": 50592,
+   "checked": "2026-11-13"
+  },
+  "m|sully|2016": {
+   "id": "tt3263904",
+   "rating": 7.4,
+   "votes": 328413,
+   "checked": "2026-11-13"
+  },
+  "m|sumotherhood|": {
+   "id": "tt14963742",
+   "rating": 4.6,
+   "votes": 1400,
+   "checked": "2026-11-13"
+  },
+  "m|super 8|2011": {
+   "id": "tt1650062",
+   "rating": 7,
+   "votes": 385008,
+   "checked": "2026-11-13"
+  },
+  "m|supercop|1996": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|surviving christmas|2004": {
+   "id": "tt0252028",
+   "rating": 5.5,
+   "votes": 31006,
+   "checked": "2026-11-13"
+  },
+  "m|swarm|1978": {
+   "id": "tt0078350",
+   "rating": 4.5,
+   "votes": 9562,
+   "checked": "2026-11-13"
+  },
+  "m|sweet dreams|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|swing of things|2020": {
+   "id": "tt6833470",
+   "rating": 3,
+   "votes": 2140,
+   "checked": "2026-11-13"
+  },
+  "m|swingers|": {
+   "id": "tt0117802",
+   "rating": 7.2,
+   "votes": 92145,
+   "checked": "2026-11-13"
+  },
+  "m|swingers|1996": {
+   "id": "tt0117802",
+   "rating": 7.2,
+   "votes": 92145,
+   "checked": "2026-11-13"
+  },
+  "m|switch|": {
+   "id": "tt0889573",
+   "rating": 6.1,
+   "votes": 118638,
+   "checked": "2026-11-13"
+  },
+  "m|tag|2018": {
+   "id": "tt2854926",
+   "rating": 6.5,
+   "votes": 165847,
+   "checked": "2026-11-13"
+  },
+  "m|taking of pelham 1 2 3|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|talented mr ripley|1999": {
+   "id": "tt0134119",
+   "rating": 7.4,
+   "votes": 277467,
+   "checked": "2026-11-13"
+  },
+  "m|tales from the darkside the movie|1990": {
+   "id": "tt0100740",
+   "rating": 6.2,
+   "votes": 21449,
+   "checked": "2026-11-13"
+  },
+  "m|tales from the hood|1995": {
+   "id": "tt0114609",
+   "rating": 6.6,
+   "votes": 11606,
+   "checked": "2026-11-13"
+  },
+  "m|tango and cash|1989": {
+   "id": "tt0098439",
+   "rating": 6.4,
+   "votes": 121489,
+   "checked": "2026-11-13"
+  },
+  "m|tar|2022": {
+   "id": "tt14444726",
+   "rating": 7.4,
+   "votes": 111686,
+   "checked": "2026-11-13"
+  },
+  "m|taxi driver|": {
+   "id": "tt0075314",
+   "rating": 8.2,
+   "votes": 1048464,
+   "checked": "2026-11-13"
+  },
+  "m|teaching mrs tingle|1999": {
+   "id": "tt0133046",
+   "rating": 5.4,
+   "votes": 22843,
+   "checked": "2026-11-13"
+  },
+  "m|team america world police|": {
+   "id": "tt0372588",
+   "rating": 7.2,
+   "votes": 186624,
+   "checked": "2026-11-13"
+  },
+  "m|team america world police|2004": {
+   "id": "tt0372588",
+   "rating": 7.2,
+   "votes": 186624,
+   "checked": "2026-11-13"
+  },
+  "m|ted|": {
+   "id": "tt1637725",
+   "rating": 6.9,
+   "votes": 723306,
+   "checked": "2026-11-13"
+  },
+  "m|ted|2012": {
+   "id": "tt1637725",
+   "rating": 6.9,
+   "votes": 723306,
+   "checked": "2026-11-13"
+  },
+  "m|teen titans go to the movies|2018": {
+   "id": "tt7424200",
+   "rating": 6.7,
+   "votes": 24458,
+   "checked": "2026-11-13"
+  },
+  "m|teenage mutant ninja turtles|1990": {
+   "id": "tt0100758",
+   "rating": 6.8,
+   "votes": 114158,
+   "checked": "2026-11-13"
+  },
+  "m|terminator genisys|2015": {
+   "id": "tt1340138",
+   "rating": 6.3,
+   "votes": 311190,
+   "checked": "2026-11-13"
+  },
+  "m|thank god its friday|": {
+   "id": "tt0078382",
+   "rating": 5.5,
+   "votes": 3600,
+   "checked": "2026-11-13"
+  },
+  "m|thank you for your service|2017": {
+   "id": "tt2776878",
+   "rating": 6.6,
+   "votes": 17563,
+   "checked": "2026-11-13"
+  },
+  "m|things to do in denver when youre dead|1996": {
+   "id": "tt0114660",
+   "rating": 6.7,
+   "votes": 32427,
+   "checked": "2026-11-13"
+  },
+  "m|this is where i leave you|2014": {
+   "id": "tt1371150",
+   "rating": 6.7,
+   "votes": 97089,
+   "checked": "2026-11-13"
+  },
+  "m|three faces west|": {
+   "id": "tt0033159",
+   "rating": 6.2,
+   "votes": 1092,
+   "checked": "2026-11-13"
+  },
+  "m|three oclock high|": {
+   "id": "tt0094138",
+   "rating": 7.1,
+   "votes": 14679,
+   "checked": "2026-11-13"
+  },
+  "m|three texas steers|": {
+   "id": "tt0032032",
+   "rating": 5.4,
+   "votes": 483,
+   "checked": "2026-11-13"
+  },
+  "m|ticket to paradise|": {
+   "id": "tt14109724",
+   "rating": 6.1,
+   "votes": 83029,
+   "checked": "2026-11-13"
+  },
+  "m|tiger cage 2|1990": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|tiger cage|1988": {
+   "id": "tt0096236",
+   "rating": 6.8,
+   "votes": 1486,
+   "checked": "2026-11-13"
+  },
+  "m|tigers apprentice|2024": {
+   "id": "tt5834410",
+   "rating": 5.8,
+   "votes": 2555,
+   "checked": "2026-11-13"
+  },
+  "m|tim burtons corpse bride|2005": {
+   "id": "tt0121164",
+   "rating": 7.4,
+   "votes": 336219,
+   "checked": "2026-11-13"
+  },
+  "m|tin cup|1996": {
+   "id": "tt0117918",
+   "rating": 6.4,
+   "votes": 56859,
+   "checked": "2026-11-13"
+  },
+  "m|to kill a mockingbird|1962": {
+   "id": "tt0056592",
+   "rating": 8.2,
+   "votes": 354476,
+   "checked": "2026-11-13"
+  },
+  "m|to wong foo thanks for everything julie newmar|1995": {
+   "id": "tt0114682",
+   "rating": 6.9,
+   "votes": 43030,
+   "checked": "2026-11-13"
+  },
+  "m|tobruk|1967": {
+   "id": "tt0062377",
+   "rating": 6.4,
+   "votes": 4051,
+   "checked": "2026-11-13"
+  },
+  "m|tom and jerry blast off to mars|2005": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|tom and jerry|2021": {
+   "id": "tt1361336",
+   "rating": 5.3,
+   "votes": 44153,
+   "checked": "2026-11-13"
+  },
+  "m|top gun maverick|2022": {
+   "id": "tt1745960",
+   "rating": 8.2,
+   "votes": 913122,
+   "checked": "2026-11-13"
+  },
+  "m|top gun|1986": {
+   "id": "tt0092099",
+   "rating": 7,
+   "votes": 564364,
+   "checked": "2026-11-13"
+  },
+  "m|total recall|1990": {
+   "id": "tt0100802",
+   "rating": 7.5,
+   "votes": 386629,
+   "checked": "2026-11-13"
+  },
+  "m|touch|2002": {
+   "id": "tt0293660",
+   "rating": 4.6,
+   "votes": 1866,
+   "checked": "2026-11-13"
+  },
+  "m|tracers|2015": {
+   "id": "tt2401097",
+   "rating": 5.6,
+   "votes": 20929,
+   "checked": "2026-11-13"
+  },
+  "m|trial by fire|2019": {
+   "id": "tt3263946",
+   "rating": 7.1,
+   "votes": 16489,
+   "checked": "2026-11-13"
+  },
+  "m|trick r treat|2009": {
+   "id": "tt0862856",
+   "rating": 6.7,
+   "votes": 117859,
+   "checked": "2026-11-13"
+  },
+  "m|triumph of love|": {
+   "id": "tt0253840",
+   "rating": 5.8,
+   "votes": 1684,
+   "checked": "2026-11-13"
+  },
+  "m|true grit|1969": {
+   "id": "tt0065126",
+   "rating": 7.4,
+   "votes": 54829,
+   "checked": "2026-11-13"
+  },
+  "m|true romance|": {
+   "id": "tt0108399",
+   "rating": 7.9,
+   "votes": 265991,
+   "checked": "2026-11-13"
+  },
+  "m|tulip fever|2017": {
+   "id": "tt0491203",
+   "rating": 6.2,
+   "votes": 24847,
+   "checked": "2026-11-13"
+  },
+  "m|tully|2018": {
+   "id": "tt5610554",
+   "rating": 6.9,
+   "votes": 67238,
+   "checked": "2026-11-13"
+  },
+  "m|tuxedo|2002": {
+   "id": "tt0290095",
+   "rating": 5.4,
+   "votes": 94908,
+   "checked": "2026-11-13"
+  },
+  "m|twinkle twinkle lucky stars|1985": {
+   "id": "tt0090342",
+   "rating": 6.2,
+   "votes": 5096,
+   "checked": "2026-11-13"
+  },
+  "m|twisted|2004": {
+   "id": "tt0315297",
+   "rating": 5.3,
+   "votes": 26290,
+   "checked": "2026-11-13"
+  },
+  "m|twister|1996": {
+   "id": "tt0117998",
+   "rating": 6.6,
+   "votes": 254917,
+   "checked": "2026-11-13"
+  },
+  "m|tyler perrys for colored girls|2010": {
+   "id": "tt1405500",
+   "rating": 6.3,
+   "votes": 8655,
+   "checked": "2026-11-13"
+  },
+  "m|tyler perrys i can do bad all by myself the play|2005": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|tyler perrys madeas tough love|2015": {
+   "id": "tt4185364",
+   "rating": 5.2,
+   "votes": 654,
+   "checked": "2026-11-13"
+  },
+  "m|tyler perrys meet the browns|2008": {
+   "id": "tt1047494",
+   "rating": 4.6,
+   "votes": 7701,
+   "checked": "2026-11-13"
+  },
+  "m|u 571|2000": {
+   "id": "tt0141926",
+   "rating": 6.6,
+   "votes": 93273,
+   "checked": "2026-11-13"
+  },
+  "m|u turn|": {
+   "id": "tt0120399",
+   "rating": 6.7,
+   "votes": 58247,
+   "checked": "2026-11-13"
+  },
+  "m|unborn|2009": {
+   "id": "tt1139668",
+   "rating": 4.7,
+   "votes": 55220,
+   "checked": "2026-11-13"
+  },
+  "m|unbroken|2014": {
+   "id": "tt1809398",
+   "rating": 7.2,
+   "votes": 201187,
+   "checked": "2026-11-13"
+  },
+  "m|uncle buck|": {
+   "id": "tt0098554",
+   "rating": 7.1,
+   "votes": 123853,
+   "checked": "2026-11-13"
+  },
+  "m|under siege|1992": {
+   "id": "tt0105690",
+   "rating": 6.5,
+   "votes": 104570,
+   "checked": "2026-11-13"
+  },
+  "m|undertaking betty|2005": {
+   "id": "tt0298504",
+   "rating": 6.5,
+   "votes": 5864,
+   "checked": "2026-11-13"
+  },
+  "m|undisputed|2002": {
+   "id": "tt0281322",
+   "rating": 6.1,
+   "votes": 36238,
+   "checked": "2026-11-13"
+  },
+  "m|unforgiven|1992": {
+   "id": "tt0105695",
+   "rating": 8.2,
+   "votes": 474959,
+   "checked": "2026-11-13"
+  },
+  "m|union|": {
+   "id": "tt12610390",
+   "rating": 5.5,
+   "votes": 59788,
+   "checked": "2026-11-13"
+  },
+  "m|up in the air|": {
+   "id": "tt1193138",
+   "rating": 7.4,
+   "votes": 363799,
+   "checked": "2026-11-13"
+  },
+  "m|us marshals|1998": {
+   "id": "tt0120873",
+   "rating": 6.6,
+   "votes": 121793,
+   "checked": "2026-11-13"
+  },
+  "m|uss indianapolis men of courage|": {
+   "id": "tt2032572",
+   "rating": 5.3,
+   "votes": 15818,
+   "checked": "2026-11-13"
+  },
+  "m|vacation|2015": {
+   "id": "tt1524930",
+   "rating": 6.2,
+   "votes": 137243,
+   "checked": "2026-11-13"
+  },
+  "m|valerian and the city of a thousand planets|2017": {
+   "id": "tt2239822",
+   "rating": 6.4,
+   "votes": 212378,
+   "checked": "2026-11-13"
+  },
+  "m|vatican tapes|2015": {
+   "id": "tt1524575",
+   "rating": 4.7,
+   "votes": 19567,
+   "checked": "2026-11-13"
+  },
+  "m|vengeance|2022": {
+   "id": "tt11976532",
+   "rating": 6.8,
+   "votes": 42359,
+   "checked": "2026-11-13"
+  },
+  "m|very bad things|1998": {
+   "id": "tt0124198",
+   "rating": 6.3,
+   "votes": 51440,
+   "checked": "2026-11-13"
+  },
+  "m|vicky cristina barcelona|2008": {
+   "id": "tt0497465",
+   "rating": 7.1,
+   "votes": 283445,
+   "checked": "2026-11-13"
+  },
+  "m|view from the top|2003": {
+   "id": "tt0264150",
+   "rating": 5.3,
+   "votes": 30668,
+   "checked": "2026-11-13"
+  },
+  "m|virgin suicides|2000": {
+   "id": "tt0159097",
+   "rating": 7.2,
+   "votes": 189470,
+   "checked": "2026-11-13"
+  },
+  "m|virtuosity|1995": {
+   "id": "tt0114857",
+   "rating": 5.5,
+   "votes": 35316,
+   "checked": "2026-11-13"
+  },
+  "m|vivarium|2020": {
+   "id": "tt8368406",
+   "rating": 5.8,
+   "votes": 97793,
+   "checked": "2026-11-13"
+  },
+  "m|wake of the red witch|": {
+   "id": "tt0040946",
+   "rating": 6.5,
+   "votes": 3253,
+   "checked": "2026-11-13"
+  },
+  "m|waking up in reno|2002": {
+   "id": "tt0219400",
+   "rating": 5.5,
+   "votes": 6654,
+   "checked": "2026-11-13"
+  },
+  "m|walking dead|1995": {
+   "id": "tt0114888",
+   "rating": 5,
+   "votes": 962,
+   "checked": "2026-11-13"
+  },
+  "m|wanted|2008": {
+   "id": "tt0493464",
+   "rating": 6.7,
+   "votes": 432472,
+   "checked": "2026-11-13"
+  },
+  "m|war dogs|2016": {
+   "id": "tt2005151",
+   "rating": 7.1,
+   "votes": 312173,
+   "checked": "2026-11-13"
+  },
+  "m|war of the worlds|2005": {
+   "id": "tt0407304",
+   "rating": 6.6,
+   "votes": 517066,
+   "checked": "2026-11-13"
+  },
+  "m|war|2007": {
+   "id": "tt0499556",
+   "rating": 6.2,
+   "votes": 102526,
+   "checked": "2026-11-13"
+  },
+  "m|warcraft|2016": {
+   "id": "tt0803096",
+   "rating": 6.7,
+   "votes": 299423,
+   "checked": "2026-11-13"
+  },
+  "m|warning|2021": {
+   "id": "tt8956324",
+   "rating": 4.6,
+   "votes": 6590,
+   "checked": "2026-11-13"
+  },
+  "m|warriors of virtue 2 the return to tao|2005": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|wash|2001": {
+   "id": "tt0290332",
+   "rating": 4.8,
+   "votes": 8330,
+   "checked": "2026-11-13"
+  },
+  "m|way of the dragon|1974": {
+   "id": "tt0068935",
+   "rating": 7.1,
+   "votes": 44771,
+   "checked": "2026-11-13"
+  },
+  "m|we are marshall|2006": {
+   "id": "tt0758794",
+   "rating": 7.1,
+   "votes": 68551,
+   "checked": "2026-11-13"
+  },
+  "m|we die young|2019": {
+   "id": "tt7903530",
+   "rating": 5.2,
+   "votes": 5603,
+   "checked": "2026-11-13"
+  },
+  "m|we were soldiers|2002": {
+   "id": "tt0277434",
+   "rating": 7.2,
+   "votes": 161862,
+   "checked": "2026-11-13"
+  },
+  "m|weather man|2005": {
+   "id": "tt0384680",
+   "rating": 6.5,
+   "votes": 86887,
+   "checked": "2026-11-13"
+  },
+  "m|wedding crashers|2005": {
+   "id": "tt0396269",
+   "rating": 7,
+   "votes": 404199,
+   "checked": "2026-11-13"
+  },
+  "m|wedding singer|1998": {
+   "id": "tt0120888",
+   "rating": 6.9,
+   "votes": 175796,
+   "checked": "2026-11-13"
+  },
+  "m|weird science|": {
+   "id": "tt0090305",
+   "rating": 6.6,
+   "votes": 107268,
+   "checked": "2026-11-13"
+  },
+  "m|welcome to the jungle|2014": {
+   "id": "tt2193265",
+   "rating": 4.9,
+   "votes": 14723,
+   "checked": "2026-11-13"
+  },
+  "m|were the millers|2013": {
+   "id": "tt1723121",
+   "rating": 7,
+   "votes": 533367,
+   "checked": "2026-11-13"
+  },
+  "m|westward ho|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|wet hot american summer|2001": {
+   "id": "tt0243655",
+   "rating": 6.5,
+   "votes": 65148,
+   "checked": "2026-11-13"
+  },
+  "m|what a girl wants|2003": {
+   "id": "tt0286788",
+   "rating": 5.8,
+   "votes": 72338,
+   "checked": "2026-11-13"
+  },
+  "m|what dreams may come|1998": {
+   "id": "tt0120889",
+   "rating": 7,
+   "votes": 122344,
+   "checked": "2026-11-13"
+  },
+  "m|what ever happened to baby jane|1962": {
+   "id": "tt0056687",
+   "rating": 8,
+   "votes": 68861,
+   "checked": "2026-11-13"
+  },
+  "m|what we did on our holiday|2015": {
+   "id": "tt2725962",
+   "rating": 6.9,
+   "votes": 26459,
+   "checked": "2026-11-13"
+  },
+  "m|whats new scooby doo season 1|2002": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|wheels on meals|1984": {
+   "id": "tt0087578",
+   "rating": 7,
+   "votes": 17698,
+   "checked": "2026-11-13"
+  },
+  "m|where the buffalo roam|": {
+   "id": "tt0081748",
+   "rating": 6.5,
+   "votes": 13409,
+   "checked": "2026-11-13"
+  },
+  "m|where the wild things are|2009": {
+   "id": "tt0386117",
+   "rating": 6.7,
+   "votes": 112911,
+   "checked": "2026-11-13"
+  },
+  "m|whos afraid of virginia woolf|1966": {
+   "id": "tt0061184",
+   "rating": 8,
+   "votes": 84118,
+   "checked": "2026-11-13"
+  },
+  "m|wicked little letters|": {
+   "id": "tt20234774",
+   "rating": 7,
+   "votes": 46927,
+   "checked": "2026-11-13"
+  },
+  "m|wild at heart|1990": {
+   "id": "tt0100935",
+   "rating": 7.2,
+   "votes": 114135,
+   "checked": "2026-11-13"
+  },
+  "m|wild wild west|1999": {
+   "id": "tt0120891",
+   "rating": 5,
+   "votes": 175243,
+   "checked": "2026-11-13"
+  },
+  "m|willy wonka and the chocolate factory|1971": {
+   "id": "tt0067992",
+   "rating": 7.8,
+   "votes": 248331,
+   "checked": "2026-11-13"
+  },
+  "m|wings|1927": {
+   "id": "tt0018578",
+   "rating": 7.5,
+   "votes": 16674,
+   "checked": "2026-11-13"
+  },
+  "m|winter spring summer or fall|2025": {
+   "id": "tt24515124",
+   "rating": 6.1,
+   "votes": 6555,
+   "checked": "2026-11-13"
+  },
+  "m|witches of eastwick|1987": {
+   "id": "tt0094332",
+   "rating": 6.6,
+   "votes": 86394,
+   "checked": "2026-11-13"
+  },
+  "m|witches|1990": {
+   "id": "tt0100944",
+   "rating": 6.8,
+   "votes": 60772,
+   "checked": "2026-11-13"
+  },
+  "m|witches|2020": {
+   "id": "tt0805647",
+   "rating": 5.4,
+   "votes": 53613,
+   "checked": "2026-11-13"
+  },
+  "m|with six you get eggroll|1968": {
+   "id": "tt0063821",
+   "rating": 6.4,
+   "votes": 3332,
+   "checked": "2026-11-13"
+  },
+  "m|within the darkness|2018": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "m|wiz|1978": {
+   "id": "tt0078504",
+   "rating": 5.7,
+   "votes": 20204,
+   "checked": "2026-11-13"
+  },
+  "m|wizard of oz|1939": {
+   "id": "tt0032138",
+   "rating": 8.1,
+   "votes": 474935,
+   "checked": "2026-11-13"
+  },
+  "m|wonderland|2003": {
+   "id": "tt0335563",
+   "rating": 6.5,
+   "votes": 25047,
+   "checked": "2026-11-13"
+  },
+  "m|wonka|2023": {
+   "id": "tt6166392",
+   "rating": 6.9,
+   "votes": 198991,
+   "checked": "2026-11-13"
+  },
+  "m|wood|1999": {
+   "id": "tt0161100",
+   "rating": 7,
+   "votes": 11390,
+   "checked": "2026-11-13"
+  },
+  "m|worlds end|": {
+   "id": "tt1213663",
+   "rating": 6.9,
+   "votes": 316345,
+   "checked": "2026-11-13"
+  },
+  "m|wraith|1986": {
+   "id": "tt0092240",
+   "rating": 5.9,
+   "votes": 22335,
+   "checked": "2026-11-13"
+  },
+  "m|wrath of the titans|2012": {
+   "id": "tt1646987",
+   "rating": 5.7,
+   "votes": 205640,
+   "checked": "2026-11-13"
+  },
+  "m|xxx return of xander cage|2017": {
+   "id": "tt1293847",
+   "rating": 5.2,
+   "votes": 102981,
+   "checked": "2026-11-13"
+  },
+  "m|yellow birds|2018": {
+   "id": "tt3739110",
+   "rating": 5.8,
+   "votes": 5295,
+   "checked": "2026-11-13"
+  },
+  "m|you cant take it with you|": {
+   "id": "tt0030993",
+   "rating": 7.8,
+   "votes": 30903,
+   "checked": "2026-11-13"
+  },
+  "m|young adult|2011": {
+   "id": "tt1625346",
+   "rating": 6.3,
+   "votes": 90697,
+   "checked": "2026-11-13"
+  },
+  "m|yours mine and ours|2005": {
+   "id": "tt0443295",
+   "rating": 5.5,
+   "votes": 33009,
+   "checked": "2026-11-13"
+  },
+  "m|zookeepers wife|2017": {
+   "id": "tt1730768",
+   "rating": 7,
+   "votes": 49715,
+   "checked": "2026-11-13"
+  },
+  "tv|13 ghosts of scooby doo|": {
+   "id": "tt0088628",
+   "rating": 7.2,
+   "votes": 3945,
+   "checked": "2026-11-13"
+  },
+  "tv|a pup named scooby doo|": {
+   "id": "tt0094531",
+   "rating": 6.8,
+   "votes": 6806,
+   "checked": "2026-11-13"
+  },
+  "tv|andromeda|": {
+   "id": "tt0213327",
+   "rating": 6.6,
+   "votes": 16192,
+   "checked": "2026-11-13"
+  },
+  "tv|andy griffith show|": {
+   "id": "tt0053479",
+   "rating": 8.4,
+   "votes": 19351,
+   "checked": "2026-11-13"
+  },
+  "tv|another period|": {
+   "id": "tt3593432",
+   "rating": 7.4,
+   "votes": 6021,
+   "checked": "2026-11-13"
+  },
+  "tv|avatar the last airbender|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|awkwafina is nora from queens|": {
+   "id": "tt8494614",
+   "rating": 7.5,
+   "votes": 7579,
+   "checked": "2026-11-13"
+  },
+  "tv|be cool scooby doo|": {
+   "id": "tt4215734",
+   "rating": 6.7,
+   "votes": 3578,
+   "checked": "2026-11-13"
+  },
+  "tv|beastmaster|": {
+   "id": "tt0215392",
+   "rating": 6.2,
+   "votes": 2716,
+   "checked": "2026-11-13"
+  },
+  "tv|beverly hills 90210|": {
+   "id": "tt0098749",
+   "rating": 6.6,
+   "votes": 41729,
+   "checked": "2026-11-13"
+  },
+  "tv|black sails|": {
+   "id": "tt2375692",
+   "rating": 8.2,
+   "votes": 127961,
+   "checked": "2026-11-13"
+  },
+  "tv|chappelles show|": {
+   "id": "tt0353049",
+   "rating": 8.8,
+   "votes": 79913,
+   "checked": "2026-11-13"
+  },
+  "tv|cheers|": {
+   "id": "tt0083399",
+   "rating": 8,
+   "votes": 69357,
+   "checked": "2026-11-13"
+  },
+  "tv|chosen|": {
+   "id": "tt5622316",
+   "rating": 9.1,
+   "votes": 72747,
+   "checked": "2026-11-13"
+  },
+  "tv|colin from accounts|": {
+   "id": "tt18228732",
+   "rating": 8.1,
+   "votes": 18525,
+   "checked": "2026-11-13"
+  },
+  "tv|corporate|": {
+   "id": "tt5648202",
+   "rating": 7.8,
+   "votes": 4720,
+   "checked": "2026-11-13"
+  },
+  "tv|crazy ex girlfriend|": {
+   "id": "tt4094300",
+   "rating": 7.9,
+   "votes": 24455,
+   "checked": "2026-11-13"
+  },
+  "tv|criminal minds|": {
+   "id": "tt0452046",
+   "rating": 8.1,
+   "votes": 244560,
+   "checked": "2026-11-13"
+  },
+  "tv|csi|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|curse|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|detroiters|": {
+   "id": "tt4779762",
+   "rating": 8.2,
+   "votes": 9538,
+   "checked": "2026-11-13"
+  },
+  "tv|dexter|": {
+   "id": "tt0773262",
+   "rating": 8.6,
+   "votes": 963964,
+   "checked": "2026-11-13"
+  },
+  "tv|dolly partons heartstrings|": {
+   "id": "tt8509922",
+   "rating": 7.6,
+   "votes": 2761,
+   "checked": "2026-11-13"
+  },
+  "tv|dresden files|": {
+   "id": "tt0486657",
+   "rating": 7.6,
+   "votes": 12639,
+   "checked": "2026-11-13"
+  },
+  "tv|episodes|": {
+   "id": "tt1582350",
+   "rating": 7.8,
+   "votes": 38039,
+   "checked": "2026-11-13"
+  },
+  "tv|family ties|": {
+   "id": "tt0083413",
+   "rating": 7.3,
+   "votes": 22675,
+   "checked": "2026-11-13"
+  },
+  "tv|frasier|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|freaks and geeks|": {
+   "id": "tt0193676",
+   "rating": 8.7,
+   "votes": 166406,
+   "checked": "2026-11-13"
+  },
+  "tv|ghost in the shell stand alone complex|": {
+   "id": "tt0346314",
+   "rating": 8.5,
+   "votes": 22844,
+   "checked": "2026-11-13"
+  },
+  "tv|happily divorced|": {
+   "id": "tt1830622",
+   "rating": 6.8,
+   "votes": 3620,
+   "checked": "2026-11-13"
+  },
+  "tv|heartland|": {
+   "id": "tt1094229",
+   "rating": 8.4,
+   "votes": 22973,
+   "checked": "2026-11-13"
+  },
+  "tv|jackass|": {
+   "id": "tt0264263",
+   "rating": 7.4,
+   "votes": 30065,
+   "checked": "2026-11-13"
+  },
+  "tv|jane the virgin|": {
+   "id": "tt3566726",
+   "rating": 7.8,
+   "votes": 65424,
+   "checked": "2026-11-13"
+  },
+  "tv|kroll show|": {
+   "id": "tt1981538",
+   "rating": 7,
+   "votes": 5666,
+   "checked": "2026-11-13"
+  },
+  "tv|madam secretary|": {
+   "id": "tt3501074",
+   "rating": 7.8,
+   "votes": 30041,
+   "checked": "2026-11-13"
+  },
+  "tv|maverick|": {
+   "id": "tt0050037",
+   "rating": 8,
+   "votes": 4244,
+   "checked": "2026-11-13"
+  },
+  "tv|mutant x|": {
+   "id": "tt0283203",
+   "rating": 5.8,
+   "votes": 5661,
+   "checked": "2026-11-13"
+  },
+  "tv|ncis los angeles|": {
+   "id": "tt1378167",
+   "rating": 6.8,
+   "votes": 61057,
+   "checked": "2026-11-13"
+  },
+  "tv|ncis sydney|": {
+   "id": "tt18258908",
+   "rating": 6.3,
+   "votes": 5174,
+   "checked": "2026-11-13"
+  },
+  "tv|ncis|": {
+   "id": "tt0364845",
+   "rating": 7.8,
+   "votes": 179373,
+   "checked": "2026-11-13"
+  },
+  "tv|offer|": {
+   "id": "tt13111040",
+   "rating": 8.6,
+   "votes": 52726,
+   "checked": "2026-11-13"
+  },
+  "tv|reacher|": {
+   "id": "tt9288030",
+   "rating": 8,
+   "votes": 329143,
+   "checked": "2026-11-13"
+  },
+  "tv|relic hunter|": {
+   "id": "tt0207919",
+   "rating": 6.5,
+   "votes": 8758,
+   "checked": "2026-11-13"
+  },
+  "tv|sanctuary|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|schitts creek|": {
+   "id": "tt3526078",
+   "rating": 8.5,
+   "votes": 178767,
+   "checked": "2026-11-13"
+  },
+  "tv|scooby and scrappy doo show|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|scooby doo and guess who|": {
+   "id": "tt8456094",
+   "rating": 7.3,
+   "votes": 2929,
+   "checked": "2026-11-13"
+  },
+  "tv|scooby doo mystery incorporated|": {
+   "id": "tt1660055",
+   "rating": 8.2,
+   "votes": 23845,
+   "checked": "2026-11-13"
+  },
+  "tv|scooby doo show|": {
+   "id": "tt0074053",
+   "rating": 7.7,
+   "votes": 4889,
+   "checked": "2026-11-13"
+  },
+  "tv|scooby doo where are you|": {
+   "id": "tt0063950",
+   "rating": 7.9,
+   "votes": 48814,
+   "checked": "2026-11-13"
+  },
+  "tv|shaggy and scooby doo get a clue|": {
+   "id": "tt0850642",
+   "rating": 4.6,
+   "votes": 1377,
+   "checked": "2026-11-13"
+  },
+  "tv|so help me todd|": {
+   "id": "tt18573724",
+   "rating": 7.6,
+   "votes": 9558,
+   "checked": "2026-11-13"
+  },
+  "tv|star trek lower decks|": {
+   "id": "tt9184820",
+   "rating": 7.8,
+   "votes": 31208,
+   "checked": "2026-11-13"
+  },
+  "tv|star trek prodigy|": {
+   "id": "tt9795876",
+   "rating": 7.6,
+   "votes": 8327,
+   "checked": "2026-11-13"
+  },
+  "tv|star trek strange new worlds|": {
+   "id": "tt12327578",
+   "rating": 8.1,
+   "votes": 81802,
+   "checked": "2026-11-13"
+  },
+  "tv|star trek the original series|": {
+   "none": true,
+   "checked": "2026-11-13"
+  },
+  "tv|tulsa king|": {
+   "id": "tt16358384",
+   "rating": 7.9,
+   "votes": 124401,
+   "checked": "2026-11-13"
+  },
+  "tv|waltons|": {
+   "id": "tt0068149",
+   "rating": 7.6,
+   "votes": 10596,
+   "checked": "2026-11-13"
+  },
+  "tv|watson|": {
+   "id": "tt22475008",
+   "rating": 5.7,
+   "votes": 7306,
+   "checked": "2026-11-13"
+  },
+  "tv|yellowjackets|": {
+   "id": "tt11041332",
+   "rating": 7.7,
+   "votes": 118759,
+   "checked": "2026-11-13"
+  },
+  "tv|yellowstone|": {
+   "id": "tt4236770",
+   "rating": 8.6,
+   "votes": 325578,
+   "checked": "2026-11-13"
+  }
+ },
+ "manual": {
+  "tt0041387": {
+   "rating": 6.5,
+   "votes": 1712,
+   "checked": "2026-11-13"
+  },
+  "tt0060028": {
+   "rating": 8.4,
+   "votes": 102792,
+   "checked": "2026-11-13"
+  },
+  "tt0080461": {
+   "rating": 7.1,
+   "votes": 3940,
+   "checked": "2026-11-13"
+  },
+  "tt0083475": {
+   "rating": 6.3,
+   "votes": 5169,
+   "checked": "2026-11-13"
+  },
+  "tt0087800": {
+   "rating": 7.4,
+   "votes": 299125,
+   "checked": "2026-11-13"
+  },
+  "tt0092501": {
+   "rating": 7,
+   "votes": 12851,
+   "checked": "2026-11-13"
+  },
+  "tt0095684": {
+   "rating": 6.1,
+   "votes": 4950,
+   "checked": "2026-11-13"
+  },
+  "tt0100967": {
+   "rating": 6.9,
+   "votes": 1613,
+   "checked": "2026-11-13"
+  },
+  "tt0102015": {
+   "rating": 8.1,
+   "votes": 26275,
+   "checked": "2026-11-13"
+  },
+  "tt0106004": {
+   "rating": 8.2,
+   "votes": 104651,
+   "checked": "2026-11-13"
+  },
+  "tt0106544": {
+   "rating": 6.1,
+   "votes": 4929,
+   "checked": "2026-11-13"
+  },
+  "tt0106639": {
+   "rating": 4,
+   "votes": 5567,
+   "checked": "2026-11-13"
+  },
+  "tt0107953": {
+   "rating": 5.9,
+   "votes": 18978,
+   "checked": "2026-11-13"
+  },
+  "tt0109916": {
+   "rating": 5.8,
+   "votes": 6731,
+   "checked": "2026-11-13"
+  },
+  "tt0115485": {
+   "rating": 6.1,
+   "votes": 554,
+   "checked": "2026-11-13"
+  },
+  "tt0116514": {
+   "rating": 5.1,
+   "votes": 27782,
+   "checked": "2026-11-13"
+  },
+  "tt0130370": {
+   "rating": 4.8,
+   "votes": 1725,
+   "checked": "2026-11-13"
+  },
+  "tt0166792": {
+   "rating": 7.7,
+   "votes": 22830,
+   "checked": "2026-11-13"
+  },
+  "tt0167049": {
+   "rating": 5.3,
+   "votes": 5413,
+   "checked": "2026-11-13"
+  },
+  "tt0196931": {
+   "rating": 7.3,
+   "votes": 12010,
+   "checked": "2026-11-13"
+  },
+  "tt0247082": {
+   "rating": 7.7,
+   "votes": 95169,
+   "checked": "2026-11-13"
+  },
+  "tt0253658": {
+   "rating": 6.9,
+   "votes": 9551,
+   "checked": "2026-11-13"
+  },
+  "tt0267913": {
+   "rating": 5.4,
+   "votes": 146098,
+   "checked": "2026-11-13"
+  },
+  "tt0283877": {
+   "rating": 3.7,
+   "votes": 19957,
+   "checked": "2026-11-13"
+  },
+  "tt0290057": {
+   "rating": 7.1,
+   "votes": 11954,
+   "checked": "2026-11-13"
+  },
+  "tt0306274": {
+   "rating": 7.4,
+   "votes": 13669,
+   "checked": "2026-11-13"
+  },
+  "tt0316882": {
+   "rating": 3.6,
+   "votes": 321,
+   "checked": "2026-11-13"
+  },
+  "tt0325703": {
+   "rating": 5.5,
+   "votes": 152561,
+   "checked": "2026-11-13"
+  },
+  "tt0353489": {
+   "rating": 6.3,
+   "votes": 17044,
+   "checked": "2026-11-13"
+  },
+  "tt0365265": {
+   "rating": 5.8,
+   "votes": 12815,
+   "checked": "2026-11-13"
+  },
+  "tt0417299": {
+   "rating": 9.3,
+   "votes": 461164,
+   "checked": "2026-11-13"
+  },
+  "tt0418141": {
+   "rating": 6.6,
+   "votes": 7356,
+   "checked": "2026-11-13"
+  },
+  "tt0433696": {
+   "rating": 6,
+   "votes": 2907,
+   "checked": "2026-11-13"
+  },
+  "tt0439771": {
+   "rating": 4.4,
+   "votes": 2173,
+   "checked": "2026-11-13"
+  },
+  "tt0483268": {
+   "rating": 4.5,
+   "votes": 1303,
+   "checked": "2026-11-13"
+  },
+  "tt0765429": {
+   "rating": 7.8,
+   "votes": 496610,
+   "checked": "2026-11-13"
+  },
+  "tt0965394": {
+   "rating": 7.3,
+   "votes": 24396,
+   "checked": "2026-11-13"
+  },
+  "tt1000774": {
+   "rating": 5.7,
+   "votes": 134548,
+   "checked": "2026-11-13"
+  },
+  "tt10622136": {
+   "rating": 5.5,
+   "votes": 3220,
+   "checked": "2026-11-13"
+  },
+  "tt12037194": {
+   "rating": 7.4,
+   "votes": 330685,
+   "checked": "2026-11-13"
+  },
+  "tt12838958": {
+   "rating": 6.2,
+   "votes": 2690,
+   "checked": "2026-11-13"
+  },
+  "tt1814614": {
+   "rating": 5.9,
+   "votes": 14747,
+   "checked": "2026-11-13"
+  },
+  "tt1840309": {
+   "rating": 6.6,
+   "votes": 525110,
+   "checked": "2026-11-13"
+  },
+  "tt2105055": {
+   "rating": 5.1,
+   "votes": 54,
+   "checked": "2026-11-13"
+  },
+  "tt2248893": {
+   "rating": 7.3,
+   "votes": 55,
+   "checked": "2026-11-13"
+  },
+  "tt2381249": {
+   "rating": 7.4,
+   "votes": 451874,
+   "checked": "2026-11-13"
+  },
+  "tt2917336": {
+   "rating": 5.1,
+   "votes": 2310,
+   "checked": "2026-11-13"
+  },
+  "tt3699508": {
+   "rating": 5.4,
+   "votes": 7202,
+   "checked": "2026-11-13"
+  },
+  "tt3725800": {
+   "rating": 8,
+   "votes": 37,
+   "checked": "2026-11-13"
+  },
+  "tt3919322": {
+   "rating": 6.6,
+   "votes": 3232,
+   "checked": "2026-11-13"
+  },
+  "tt4530884": {
+   "rating": 5.1,
+   "votes": 18212,
+   "checked": "2026-11-13"
+  },
+  "tt4616014": {
+   "rating": 5.1,
+   "votes": 4541,
+   "checked": "2026-11-13"
+  },
+  "tt4767274": {
+   "rating": 7.7,
+   "votes": 2570,
+   "checked": "2026-11-13"
+  },
+  "tt5476182": {
+   "rating": 4.3,
+   "votes": 9778,
+   "checked": "2026-11-13"
+  },
+  "tt8976664": {
+   "rating": 4.6,
+   "votes": 549,
+   "checked": "2026-11-13"
+  }
+ },
+ "seasons": {
+  "tt0053479": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.038,
+     "votes": 17642,
+     "episodes": 32
+    },
+    "2": {
+     "rating": 8.166,
+     "votes": 14347,
+     "episodes": 31
+    },
+    "3": {
+     "rating": 8.319,
+     "votes": 15565,
+     "episodes": 32
+    },
+    "4": {
+     "rating": 8.227,
+     "votes": 13743,
+     "episodes": 32
+    },
+    "5": {
+     "rating": 7.895,
+     "votes": 11834,
+     "episodes": 32
+    },
+    "6": {
+     "rating": 6.74,
+     "votes": 7592,
+     "episodes": 30
+    },
+    "7": {
+     "rating": 6.969,
+     "votes": 7023,
+     "episodes": 30
+    },
+    "8": {
+     "rating": 6.728,
+     "votes": 7109,
+     "episodes": 30
+    }
+   }
+  },
+  "tt0060028": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.685,
+     "votes": 169623,
+     "episodes": 30
+    },
+    "2": {
+     "rating": 7.533,
+     "votes": 113863,
+     "episodes": 26
+    },
+    "3": {
+     "rating": 6.882,
+     "votes": 91062,
+     "episodes": 24
+    }
+   }
+  },
+  "tt0063950": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.885,
+     "votes": 15874,
+     "episodes": 17
+    },
+    "2": {
+     "rating": 7.851,
+     "votes": 5760,
+     "episodes": 8
+    }
+   }
+  },
+  "tt0074053": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.344,
+     "votes": 4295,
+     "episodes": 16
+    },
+    "2": {
+     "rating": 7.571,
+     "votes": 1823,
+     "episodes": 8
+    },
+    "3": {
+     "rating": 7.159,
+     "votes": 5185,
+     "episodes": 16
+    }
+   }
+  },
+  "tt0083475": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.087,
+     "votes": 2242,
+     "episodes": 16
+    },
+    "2": {
+     "rating": 6.146,
+     "votes": 1242,
+     "episodes": 14
+    },
+    "3": {
+     "rating": 6.194,
+     "votes": 463,
+     "episodes": 6
+    },
+    "4": {
+     "rating": 6.317,
+     "votes": 889,
+     "episodes": 13
+    },
+    "5": {
+     "rating": 6.947,
+     "votes": 550,
+     "episodes": 13
+    }
+   }
+  },
+  "tt0088628": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.15,
+     "votes": 2487,
+     "episodes": 13
+    }
+   }
+  },
+  "tt0094531": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.4,
+     "votes": 1590,
+     "episodes": 13
+    },
+    "2": {
+     "rating": 7.452,
+     "votes": 760,
+     "episodes": 8
+    },
+    "3": {
+     "rating": 7.232,
+     "votes": 264,
+     "episodes": 3
+    },
+    "4": {
+     "rating": 7.142,
+     "votes": 267,
+     "episodes": 3
+    }
+   }
+  },
+  "tt0098749": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.025,
+     "votes": 9701,
+     "episodes": 22
+    },
+    "2": {
+     "rating": 6.996,
+     "votes": 8524,
+     "episodes": 28
+    },
+    "3": {
+     "rating": 6.959,
+     "votes": 7570,
+     "episodes": 30
+    },
+    "4": {
+     "rating": 6.903,
+     "votes": 6906,
+     "episodes": 31
+    },
+    "5": {
+     "rating": 6.929,
+     "votes": 6416,
+     "episodes": 32
+    },
+    "6": {
+     "rating": 6.908,
+     "votes": 5649,
+     "episodes": 32
+    },
+    "7": {
+     "rating": 6.695,
+     "votes": 4845,
+     "episodes": 32
+    },
+    "8": {
+     "rating": 6.643,
+     "votes": 4598,
+     "episodes": 32
+    },
+    "9": {
+     "rating": 6.451,
+     "votes": 3542,
+     "episodes": 26
+    },
+    "10": {
+     "rating": 6.473,
+     "votes": 3572,
+     "episodes": 27
+    }
+   }
+  },
+  "tt0106004": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.036,
+     "votes": 36199,
+     "episodes": 24
+    },
+    "2": {
+     "rating": 8.134,
+     "votes": 31804,
+     "episodes": 24
+    },
+    "3": {
+     "rating": 7.962,
+     "votes": 28620,
+     "episodes": 24
+    },
+    "4": {
+     "rating": 8.189,
+     "votes": 28634,
+     "episodes": 23
+    },
+    "5": {
+     "rating": 8.147,
+     "votes": 29264,
+     "episodes": 24
+    },
+    "6": {
+     "rating": 8.031,
+     "votes": 26881,
+     "episodes": 24
+    },
+    "7": {
+     "rating": 8.083,
+     "votes": 26314,
+     "episodes": 24
+    },
+    "8": {
+     "rating": 7.699,
+     "votes": 23924,
+     "episodes": 24
+    },
+    "9": {
+     "rating": 7.643,
+     "votes": 22906,
+     "episodes": 24
+    },
+    "10": {
+     "rating": 7.748,
+     "votes": 23406,
+     "episodes": 24
+    },
+    "11": {
+     "rating": 8.024,
+     "votes": 25297,
+     "episodes": 24
+    }
+   }
+  },
+  "tt0193676": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.67,
+     "votes": 43048,
+     "episodes": 18
+    }
+   }
+  },
+  "tt0247082": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.865,
+     "votes": 27137,
+     "episodes": 23
+    },
+    "2": {
+     "rating": 7.863,
+     "votes": 23506,
+     "episodes": 23
+    },
+    "3": {
+     "rating": 7.78,
+     "votes": 21480,
+     "episodes": 23
+    },
+    "4": {
+     "rating": 7.826,
+     "votes": 20515,
+     "episodes": 23
+    },
+    "5": {
+     "rating": 7.969,
+     "votes": 26222,
+     "episodes": 25
+    },
+    "6": {
+     "rating": 7.868,
+     "votes": 21368,
+     "episodes": 24
+    },
+    "7": {
+     "rating": 8.091,
+     "votes": 22559,
+     "episodes": 24
+    },
+    "8": {
+     "rating": 7.704,
+     "votes": 15020,
+     "episodes": 17
+    },
+    "9": {
+     "rating": 7.777,
+     "votes": 20042,
+     "episodes": 24
+    },
+    "10": {
+     "rating": 7.6,
+     "votes": 17330,
+     "episodes": 23
+    },
+    "11": {
+     "rating": 7.457,
+     "votes": 16912,
+     "episodes": 22
+    },
+    "12": {
+     "rating": 7.744,
+     "votes": 16715,
+     "episodes": 22
+    },
+    "13": {
+     "rating": 7.532,
+     "votes": 11958,
+     "episodes": 22
+    },
+    "14": {
+     "rating": 7.451,
+     "votes": 10928,
+     "episodes": 22
+    },
+    "15": {
+     "rating": 7.358,
+     "votes": 8188,
+     "episodes": 18
+    }
+   }
+  },
+  "tt0353049": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.877,
+     "votes": 8574,
+     "episodes": 14
+    },
+    "2": {
+     "rating": 8.367,
+     "votes": 8275,
+     "episodes": 16
+    },
+    "3": {
+     "rating": 7.448,
+     "votes": 1011,
+     "episodes": 3
+    }
+   }
+  },
+  "tt0364845": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.771,
+     "votes": 28983,
+     "episodes": 23
+    },
+    "2": {
+     "rating": 8.005,
+     "votes": 25630,
+     "episodes": 23
+    },
+    "3": {
+     "rating": 7.994,
+     "votes": 24764,
+     "episodes": 24
+    },
+    "4": {
+     "rating": 7.86,
+     "votes": 22516,
+     "episodes": 24
+    },
+    "5": {
+     "rating": 7.981,
+     "votes": 17652,
+     "episodes": 19
+    },
+    "6": {
+     "rating": 7.944,
+     "votes": 23097,
+     "episodes": 25
+    },
+    "7": {
+     "rating": 8.02,
+     "votes": 21714,
+     "episodes": 24
+    },
+    "8": {
+     "rating": 7.97,
+     "votes": 20562,
+     "episodes": 24
+    },
+    "9": {
+     "rating": 7.919,
+     "votes": 20776,
+     "episodes": 24
+    },
+    "10": {
+     "rating": 8.069,
+     "votes": 20481,
+     "episodes": 24
+    },
+    "11": {
+     "rating": 7.94,
+     "votes": 19306,
+     "episodes": 24
+    },
+    "12": {
+     "rating": 8.109,
+     "votes": 19003,
+     "episodes": 24
+    },
+    "13": {
+     "rating": 8.195,
+     "votes": 18465,
+     "episodes": 24
+    },
+    "14": {
+     "rating": 7.825,
+     "votes": 16703,
+     "episodes": 24
+    },
+    "15": {
+     "rating": 7.903,
+     "votes": 15427,
+     "episodes": 24
+    },
+    "16": {
+     "rating": 8.075,
+     "votes": 14643,
+     "episodes": 24
+    },
+    "17": {
+     "rating": 8.126,
+     "votes": 12724,
+     "episodes": 20
+    },
+    "18": {
+     "rating": 7.832,
+     "votes": 9636,
+     "episodes": 16
+    },
+    "19": {
+     "rating": 7.829,
+     "votes": 11565,
+     "episodes": 21
+    },
+    "20": {
+     "rating": 7.632,
+     "votes": 9979,
+     "episodes": 22
+    },
+    "21": {
+     "rating": 8.384,
+     "votes": 5653,
+     "episodes": 10
+    },
+    "22": {
+     "rating": 7.707,
+     "votes": 8015,
+     "episodes": 20
+    },
+    "23": {
+     "rating": 7.914,
+     "votes": 7370,
+     "episodes": 20
+    },
+    "24": {
+     "rating": 8.433,
+     "votes": 1311,
+     "episodes": 5
+    }
+   }
+  },
+  "tt0417299": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.237,
+     "votes": 183123,
+     "episodes": 20
+    },
+    "2": {
+     "rating": 8.742,
+     "votes": 175362,
+     "episodes": 20
+    },
+    "3": {
+     "rating": 9.056,
+     "votes": 215065,
+     "episodes": 21
+    }
+   }
+  },
+  "tt0452046": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.771,
+     "votes": 74538,
+     "episodes": 22
+    },
+    "2": {
+     "rating": 8.029,
+     "votes": 68650,
+     "episodes": 23
+    },
+    "3": {
+     "rating": 7.924,
+     "votes": 56345,
+     "episodes": 20
+    },
+    "4": {
+     "rating": 7.993,
+     "votes": 72219,
+     "episodes": 26
+    },
+    "5": {
+     "rating": 7.831,
+     "votes": 61611,
+     "episodes": 23
+    },
+    "6": {
+     "rating": 7.67,
+     "votes": 58618,
+     "episodes": 24
+    },
+    "7": {
+     "rating": 7.732,
+     "votes": 56468,
+     "episodes": 24
+    },
+    "8": {
+     "rating": 7.646,
+     "votes": 55778,
+     "episodes": 24
+    },
+    "9": {
+     "rating": 7.724,
+     "votes": 53089,
+     "episodes": 24
+    },
+    "10": {
+     "rating": 7.527,
+     "votes": 53026,
+     "episodes": 23
+    },
+    "11": {
+     "rating": 7.582,
+     "votes": 48280,
+     "episodes": 22
+    },
+    "12": {
+     "rating": 7.416,
+     "votes": 46722,
+     "episodes": 22
+    },
+    "13": {
+     "rating": 7.502,
+     "votes": 35263,
+     "episodes": 22
+    },
+    "14": {
+     "rating": 7.602,
+     "votes": 17831,
+     "episodes": 15
+    },
+    "15": {
+     "rating": 7.735,
+     "votes": 10283,
+     "episodes": 10
+    },
+    "16": {
+     "rating": 7.935,
+     "votes": 8867,
+     "episodes": 10
+    },
+    "17": {
+     "rating": 7.613,
+     "votes": 5997,
+     "episodes": 10
+    },
+    "18": {
+     "rating": 7.327,
+     "votes": 5320,
+     "episodes": 10
+    },
+    "19": {
+     "rating": 7.709,
+     "votes": 3099,
+     "episodes": 10
+    }
+   }
+  },
+  "tt0486657": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.494,
+     "votes": 4787,
+     "episodes": 13
+    }
+   }
+  },
+  "tt0773262": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.8,
+     "votes": 230552,
+     "episodes": 12
+    },
+    "2": {
+     "rating": 8.804,
+     "votes": 173571,
+     "episodes": 12
+    },
+    "3": {
+     "rating": 8.425,
+     "votes": 142729,
+     "episodes": 12
+    },
+    "4": {
+     "rating": 9.133,
+     "votes": 199405,
+     "episodes": 12
+    },
+    "5": {
+     "rating": 8.543,
+     "votes": 132232,
+     "episodes": 12
+    },
+    "6": {
+     "rating": 8.184,
+     "votes": 130075,
+     "episodes": 12
+    },
+    "7": {
+     "rating": 8.775,
+     "votes": 141394,
+     "episodes": 12
+    },
+    "8": {
+     "rating": 6.977,
+     "votes": 154712,
+     "episodes": 12
+    }
+   }
+  },
+  "tt0850642": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 6.247,
+     "votes": 691,
+     "episodes": 13
+    },
+    "2": {
+     "rating": 5.873,
+     "votes": 516,
+     "episodes": 13
+    }
+   }
+  },
+  "tt1094229": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.198,
+     "votes": 4861,
+     "episodes": 13
+    },
+    "2": {
+     "rating": 8.361,
+     "votes": 5884,
+     "episodes": 18
+    },
+    "3": {
+     "rating": 8.466,
+     "votes": 4756,
+     "episodes": 20
+    },
+    "4": {
+     "rating": 8.347,
+     "votes": 4143,
+     "episodes": 18
+    },
+    "5": {
+     "rating": 8.437,
+     "votes": 3745,
+     "episodes": 18
+    },
+    "6": {
+     "rating": 8.454,
+     "votes": 3615,
+     "episodes": 18
+    },
+    "7": {
+     "rating": 8.372,
+     "votes": 3556,
+     "episodes": 18
+    },
+    "8": {
+     "rating": 8.626,
+     "votes": 4505,
+     "episodes": 18
+    },
+    "9": {
+     "rating": 8.455,
+     "votes": 3704,
+     "episodes": 18
+    },
+    "10": {
+     "rating": 8.351,
+     "votes": 3804,
+     "episodes": 18
+    },
+    "11": {
+     "rating": 8.372,
+     "votes": 3640,
+     "episodes": 18
+    },
+    "12": {
+     "rating": 8.608,
+     "votes": 2034,
+     "episodes": 11
+    },
+    "13": {
+     "rating": 8.805,
+     "votes": 1908,
+     "episodes": 10
+    },
+    "14": {
+     "rating": 8.42,
+     "votes": 10925,
+     "episodes": 10
+    },
+    "15": {
+     "rating": 8.465,
+     "votes": 8350,
+     "episodes": 10
+    },
+    "16": {
+     "rating": 8.285,
+     "votes": 6645,
+     "episodes": 15
+    },
+    "17": {
+     "rating": 8.354,
+     "votes": 1824,
+     "episodes": 10
+    },
+    "18": {
+     "rating": 8.744,
+     "votes": 1131,
+     "episodes": 10
+    },
+    "19": {
+     "rating": 8.618,
+     "votes": 843,
+     "episodes": 10
+    },
+    "20": {
+     "rating": 8.314,
+     "votes": 118,
+     "episodes": 6
+    }
+   }
+  },
+  "tt11041332": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.778,
+     "votes": 35197,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 7.555,
+     "votes": 21826,
+     "episodes": 9
+    },
+    "3": {
+     "rating": 7.385,
+     "votes": 16132,
+     "episodes": 10
+    }
+   }
+  },
+  "tt12327578": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.808,
+     "votes": 65498,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 7.894,
+     "votes": 72473,
+     "episodes": 10
+    },
+    "3": {
+     "rating": 7.038,
+     "votes": 38597,
+     "episodes": 10
+    },
+    "4": {
+     "rating": 6.072,
+     "votes": 45336,
+     "episodes": 10
+    }
+   }
+  },
+  "tt13111040": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.459,
+     "votes": 17299,
+     "episodes": 10
+    }
+   }
+  },
+  "tt1378167": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.727,
+     "votes": 11351,
+     "episodes": 24
+    },
+    "2": {
+     "rating": 7.901,
+     "votes": 9616,
+     "episodes": 24
+    },
+    "3": {
+     "rating": 8.026,
+     "votes": 9689,
+     "episodes": 24
+    },
+    "4": {
+     "rating": 7.768,
+     "votes": 9049,
+     "episodes": 24
+    },
+    "5": {
+     "rating": 7.954,
+     "votes": 9099,
+     "episodes": 24
+    },
+    "6": {
+     "rating": 8.058,
+     "votes": 9153,
+     "episodes": 24
+    },
+    "7": {
+     "rating": 8.15,
+     "votes": 8562,
+     "episodes": 24
+    },
+    "8": {
+     "rating": 8.093,
+     "votes": 8190,
+     "episodes": 24
+    },
+    "9": {
+     "rating": 7.761,
+     "votes": 7756,
+     "episodes": 24
+    },
+    "10": {
+     "rating": 8.133,
+     "votes": 8137,
+     "episodes": 24
+    },
+    "11": {
+     "rating": 7.7,
+     "votes": 6734,
+     "episodes": 22
+    },
+    "12": {
+     "rating": 7.486,
+     "votes": 5018,
+     "episodes": 18
+    },
+    "13": {
+     "rating": 7.228,
+     "votes": 6471,
+     "episodes": 22
+    },
+    "14": {
+     "rating": 7.629,
+     "votes": 5099,
+     "episodes": 21
+    }
+   }
+  },
+  "tt16358384": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.043,
+     "votes": 38196,
+     "episodes": 9
+    },
+    "2": {
+     "rating": 7.722,
+     "votes": 23810,
+     "episodes": 10
+    },
+    "3": {
+     "rating": 7.523,
+     "votes": 16453,
+     "episodes": 10
+    },
+    "4": {
+     "rating": 7.596,
+     "votes": 2256,
+     "episodes": 4
+    }
+   }
+  },
+  "tt1660055": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.941,
+     "votes": 22144,
+     "episodes": 26
+    },
+    "2": {
+     "rating": 8.231,
+     "votes": 17278,
+     "episodes": 26
+    }
+   }
+  },
+  "tt18228732": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.43,
+     "votes": 4363,
+     "episodes": 8
+    },
+    "2": {
+     "rating": 7.623,
+     "votes": 2584,
+     "episodes": 8
+    },
+    "3": {
+     "rating": 7.773,
+     "votes": 1457,
+     "episodes": 8
+    }
+   }
+  },
+  "tt18258908": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.297,
+     "votes": 3520,
+     "episodes": 8
+    },
+    "2": {
+     "rating": 7.554,
+     "votes": 2546,
+     "episodes": 10
+    },
+    "3": {
+     "rating": 7.936,
+     "votes": 3978,
+     "episodes": 20
+    }
+   }
+  },
+  "tt22475008": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.287,
+     "votes": 4379,
+     "episodes": 13
+    },
+    "2": {
+     "rating": 7.944,
+     "votes": 3631,
+     "episodes": 20
+    }
+   }
+  },
+  "tt3501074": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.6,
+     "votes": 12641,
+     "episodes": 22
+    },
+    "2": {
+     "rating": 7.742,
+     "votes": 9959,
+     "episodes": 23
+    },
+    "3": {
+     "rating": 7.457,
+     "votes": 7329,
+     "episodes": 23
+    },
+    "4": {
+     "rating": 7.486,
+     "votes": 6918,
+     "episodes": 22
+    },
+    "5": {
+     "rating": 7.614,
+     "votes": 6400,
+     "episodes": 20
+    },
+    "6": {
+     "rating": 8.05,
+     "votes": 2994,
+     "episodes": 10
+    }
+   }
+  },
+  "tt3566726": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.038,
+     "votes": 11366,
+     "episodes": 22
+    },
+    "2": {
+     "rating": 7.914,
+     "votes": 7915,
+     "episodes": 22
+    },
+    "3": {
+     "rating": 7.863,
+     "votes": 5963,
+     "episodes": 20
+    },
+    "4": {
+     "rating": 8.027,
+     "votes": 5074,
+     "episodes": 17
+    },
+    "5": {
+     "rating": 7.856,
+     "votes": 6073,
+     "episodes": 19
+    }
+   }
+  },
+  "tt3593432": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.538,
+     "votes": 1352,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 7.826,
+     "votes": 927,
+     "episodes": 11
+    },
+    "3": {
+     "rating": 7.788,
+     "votes": 784,
+     "episodes": 11
+    }
+   }
+  },
+  "tt4215734": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.459,
+     "votes": 4242,
+     "episodes": 26
+    },
+    "2": {
+     "rating": 7.575,
+     "votes": 3041,
+     "episodes": 26
+    }
+   }
+  },
+  "tt4236770": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.053,
+     "votes": 45150,
+     "episodes": 9
+    },
+    "2": {
+     "rating": 8.433,
+     "votes": 41945,
+     "episodes": 10
+    },
+    "3": {
+     "rating": 8.305,
+     "votes": 37381,
+     "episodes": 10
+    },
+    "4": {
+     "rating": 8.178,
+     "votes": 39066,
+     "episodes": 10
+    },
+    "5": {
+     "rating": 7.692,
+     "votes": 46758,
+     "episodes": 14
+    }
+   }
+  },
+  "tt4779762": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.947,
+     "votes": 3397,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 8.092,
+     "votes": 2354,
+     "episodes": 10
+    }
+   }
+  },
+  "tt5622316": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.893,
+     "votes": 24096,
+     "episodes": 9
+    },
+    "2": {
+     "rating": 8.959,
+     "votes": 13795,
+     "episodes": 9
+    },
+    "3": {
+     "rating": 9.101,
+     "votes": 11031,
+     "episodes": 8
+    },
+    "4": {
+     "rating": 9.035,
+     "votes": 8333,
+     "episodes": 8
+    },
+    "5": {
+     "rating": 8.796,
+     "votes": 6618,
+     "episodes": 8
+    }
+   }
+  },
+  "tt5648202": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.709,
+     "votes": 1764,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 8.305,
+     "votes": 1318,
+     "episodes": 10
+    },
+    "3": {
+     "rating": 8.232,
+     "votes": 602,
+     "episodes": 6
+    }
+   }
+  },
+  "tt8456094": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.104,
+     "votes": 4443,
+     "episodes": 26
+    },
+    "2": {
+     "rating": 6.818,
+     "votes": 2556,
+     "episodes": 26
+    }
+   }
+  },
+  "tt8509922": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.78,
+     "votes": 3164,
+     "episodes": 8
+    }
+   }
+  },
+  "tt9184820": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.468,
+     "votes": 19054,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 7.834,
+     "votes": 13908,
+     "episodes": 10
+    },
+    "3": {
+     "rating": 7.825,
+     "votes": 12201,
+     "episodes": 10
+    },
+    "4": {
+     "rating": 7.86,
+     "votes": 9823,
+     "episodes": 10
+    },
+    "5": {
+     "rating": 7.882,
+     "votes": 8321,
+     "episodes": 10
+    }
+   }
+  },
+  "tt9288030": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 8.24,
+     "votes": 74644,
+     "episodes": 8
+    },
+    "2": {
+     "rating": 7.935,
+     "votes": 59519,
+     "episodes": 8
+    },
+    "3": {
+     "rating": 8.019,
+     "votes": 48205,
+     "episodes": 8
+    },
+    "4": {
+     "rating": 7.897,
+     "votes": 43289,
+     "episodes": 8
+    }
+   }
+  },
+  "tt9795876": {
+   "checked": "2026-11-13",
+   "s": {
+    "1": {
+     "rating": 7.739,
+     "votes": 13444,
+     "episodes": 20
+    },
+    "2": {
+     "rating": 8.082,
+     "votes": 8374,
+     "episodes": 20
+    }
+   }
+  }
+ }
+}
