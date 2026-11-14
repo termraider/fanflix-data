@@ -410,6 +410,13 @@
       "action" : "refreshall",
       "id" : "2026-11-14T22:47:15Z-6",
       "sub" : "fanflixco"
+    },
+    {
+      "action" : "boost",
+      "deal" : "/c/1mhx8wi2nyqua-bundle-blowout-10-for-15-thriller",
+      "id" : "2026-11-14T23:36:11Z-2",
+      "sub" : "fanflixco",
+      "tag" : "ENDS MONDAY"
     }
   ]
 }
