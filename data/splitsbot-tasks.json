@@ -385,6 +385,11 @@
       "deal" : "/c/1mibvcqm7fms0-weekend-sale-schitt-s-creek-complete-series",
       "id" : "2026-11-14T19:28:15Z-1",
       "sub" : "splitsmod_dev"
+    },
+    {
+      "action" : "refreshall",
+      "id" : "2026-11-14T19:35:33Z-2",
+      "sub" : "fanflixco"
     }
   ]
 }
