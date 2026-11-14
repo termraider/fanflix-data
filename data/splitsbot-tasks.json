@@ -373,6 +373,12 @@
       "deal" : "/c/1mf2wowhwhor8-scoobtober-2026-5-for-15",
       "id" : "2026-11-14T18:58:26Z-1",
       "sub" : "fanflixco"
+    },
+    {
+      "action" : "boost",
+      "deal" : "/c/1mf2wowhwhor8-scoobtober-2026-5-for-15",
+      "id" : "2026-11-14T19:21:32Z-2",
+      "sub" : "splitsmod_dev"
     }
   ]
 }
