@@ -27,7 +27,13 @@
           "resolution": "SD",
           "image": "https://img.fanflix.co/PARAMOUNT/0ab03b0f6aa34115554b838a26916e3f2627a4fbc0ce9a0fb3910fcd28cc9861",
           "priceFromCheckout": true,
-          "year": 1985
+          "year": 1985,
+          "imdb": {
+            "id": "tt0088559",
+            "rating": 7.6,
+            "votes": 45782,
+            "manual": true
+          }
         }
       ]
     },
@@ -206,7 +212,13 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/6c327a12623954a63c195cc348f85303f8ff7b603d1c45a991705cae88ba5ea4",
           "priceFromBundle": true,
-          "year": 2005
+          "year": 2005,
+          "imdb": {
+            "id": "tt0402022",
+            "rating": 5.4,
+            "votes": 138253,
+            "manual": true
+          }
         },
         {
           "title": "Air Force One Down",
@@ -873,7 +885,13 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/3559a55226a0fac3b804e3458cd7ea294243a71a5f34ef6736c82cd602785e8c",
           "priceFromBundle": true,
-          "year": 1981
+          "year": 1981,
+          "imdb": {
+            "id": "tt0082971",
+            "rating": 8.4,
+            "votes": 1125844,
+            "manual": true
+          }
         },
         {
           "title": "The Infernal Machine",
@@ -1174,7 +1192,13 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/f0cc84f0f7951da9707a8a6d36c7d1231325a6609b1130e48883ddcef291f3d5",
           "priceFromBundle": true,
-          "year": 2000
+          "year": 2000,
+          "imdb": {
+            "id": "tt0120755",
+            "rating": 6.1,
+            "votes": 420378,
+            "manual": true
+          }
         },
         {
           "title": "Mission: Impossible - Dead Reckoning Part One",
@@ -1472,7 +1496,13 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/5fc9dafc0f157a7c1cadbeb76618cbb0919fc396314fc6ebf3ebdc1040f833fd",
           "priceFromBundle": true,
-          "year": 1979
+          "year": 1979,
+          "imdb": {
+            "id": "tt0079945",
+            "rating": 6.4,
+            "votes": 102798,
+            "manual": true
+          }
         },
         {
           "title": "Star Trek II: The Wrath of Khan (Theatrical)",
@@ -1506,7 +1536,13 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/40e97e41add2da8f9369c8c39a49188819b0c09c88a38b7513a38aac65dbea91",
           "priceFromBundle": true,
-          "year": 1998
+          "year": 1998,
+          "imdb": {
+            "id": "tt0120844",
+            "rating": 6.4,
+            "votes": 84216,
+            "manual": true
+          }
         },
         {
           "title": "Star Trek 2009",
@@ -1514,7 +1550,13 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/68a6be8c7a81ec42916a07fa17f408749c011a02a824a27cccb6ecdec710d018",
           "priceFromBundle": true,
-          "year": 2009
+          "year": 2009,
+          "imdb": {
+            "id": "tt0796366",
+            "rating": 7.9,
+            "votes": 643015,
+            "manual": true
+          }
         },
         {
           "title": "Star Trek: Section 31",
@@ -1831,7 +1873,13 @@
           "price": "$19.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/db254c33f20053c98477a6e26c0a28c444ea03504339e38bafa2d059c0e3072b",
-          "year": 1966
+          "year": 1966,
+          "imdb": {
+            "id": "tt0060028",
+            "rating": 8.4,
+            "votes": 102792,
+            "manual": true
+          }
         },
         {
           "title": "Star Trek: The Animated Series: The Complete Series",
@@ -1912,7 +1960,13 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/b89920f5f1b80d10498fcc4d7379f2ae9a1e0832ed9b56ab426050a572b00192",
           "seasons": 7,
-          "year": 1966
+          "year": 1966,
+          "imdb": {
+            "id": "tt0060009",
+            "rating": 7.9,
+            "votes": 13203,
+            "manual": true
+          }
         },
         {
           "title": "Poker Face: The Complete Series",
@@ -1931,7 +1985,13 @@
           "price": "$24.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/b9f6294c1a62b2b0f4ac6c45e909620e67c3cd93ff1ffd3b610d1c0a7cd37b2f",
-          "year": 2020
+          "year": 2020,
+          "imdb": {
+            "id": "tt1399045",
+            "rating": 5.5,
+            "votes": 25066,
+            "manual": true
+          }
         },
         {
           "title": "Hawaii Five-O (1968): The Complete Series",
@@ -1964,7 +2024,13 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/1c9b3f70efec55b21fbdd043a80a569ad4898bc5372eb7de881ea4f2cf26911b",
           "year": 2018,
-          "runtime": 4128
+          "runtime": 4128,
+          "imdb": {
+            "id": "tt7942796",
+            "rating": 6.4,
+            "votes": 19720,
+            "manual": true
+          }
         },
         {
           "title": "Walker: Texas Ranger: The Complete Series (S1-9)",
@@ -1996,7 +2062,13 @@
           "price": "$19.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/ea7cddc0735b83f23e7e27a7851e4784e373079e51556c9126d0c5e847677788",
-          "year": 2018
+          "year": 2018,
+          "imdb": {
+            "id": "tt5057054",
+            "rating": 8,
+            "votes": 198374,
+            "manual": true
+          }
         },
         {
           "title": "Seal Team: The Complete Series",
@@ -2028,7 +2100,13 @@
           "price": "$24.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/a03a4e052e6a0e01bd69ae9ad1359124d26935e22d02a2274ec52e5c46f36bcb",
-          "year": 2000
+          "year": 2000,
+          "imdb": {
+            "id": "tt0247082",
+            "rating": 7.7,
+            "votes": 95169,
+            "manual": true
+          }
         },
         {
           "title": "CSI: Miami: The Complete Series",
@@ -2203,7 +2281,13 @@
           "price": "$29.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/PARAMOUNT/af87221f9d751748ba025124fb8b09cd53efaa568952c5bc537700cce868b294",
-          "year": 1992
+          "year": 1992,
+          "imdb": {
+            "id": "tt0103491",
+            "rating": 6,
+            "votes": 14589,
+            "manual": true
+          }
         },
         {
           "title": "The Neighborhood: The Complete Series",
@@ -2235,7 +2319,13 @@
           "resolution": "SD",
           "image": "https://img.fanflix.co/PARAMOUNT/5bcad6cfe941557e628f3ed5267e4e93d24079cc4eb968b72046e15153b83fe0",
           "year": 1981,
-          "runtime": 10402
+          "runtime": 10402,
+          "imdb": {
+            "id": "tt0081856",
+            "rating": 6.4,
+            "votes": 9553,
+            "manual": true
+          }
         },
         {
           "title": "Dynasty (2017): The Complete Series",
@@ -2243,14 +2333,26 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/e1fce96b5f3ad3c161bb7febde16a20d5fd5a126d76c83c0135eb544ab0fba51",
           "year": 2017,
-          "runtime": 4602
+          "runtime": 4602,
+          "imdb": {
+            "id": "tt6128300",
+            "rating": 7.2,
+            "votes": 27606,
+            "manual": true
+          }
         },
         {
           "title": "Laguna Beach: The Complete Series",
           "price": "$9.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/f32117ed6bb12b11528e38038a555af2b375202c1aa677b5bab438c4b58a6acb",
-          "year": 2004
+          "year": 2004,
+          "imdb": {
+            "id": "tt0426738",
+            "rating": 5.1,
+            "votes": 4283,
+            "manual": true
+          }
         },
         {
           "title": "7th Heaven: Season 1",
@@ -2313,7 +2415,13 @@
           "price": "$24.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/1c71ecba424ea2ae5473c3118a411824348bc18f570b5ad0dfe2991764cfac92",
-          "year": 2018
+          "year": 2018,
+          "imdb": {
+            "id": "tt6394324",
+            "rating": 4.8,
+            "votes": 19224,
+            "manual": true
+          }
         },
         {
           "title": "Scream: The Complete Series",
@@ -2369,7 +2477,13 @@
           "price": "$29.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/bdad2264b9668c279ca0880a310a32e707a2b882c1bab6101c8c1e722e9fed30",
-          "year": 1993
+          "year": 1993,
+          "imdb": {
+            "id": "tt0106004",
+            "rating": 8.2,
+            "votes": 104651,
+            "manual": true
+          }
         },
         {
           "title": "The Andy Griffith Show: The Complete Series",
@@ -2464,14 +2578,26 @@
           "price": "$29.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/17549e46081b7d27a5a75390a5c17a0fb5a74ca9f71172db545c2383621a5e53",
-          "year": 1959
+          "year": 1959,
+          "imdb": {
+            "id": "tt0052520",
+            "rating": 9,
+            "votes": 111586,
+            "manual": true
+          }
         },
         {
           "title": "The Twilight Zone (2019): The Complete Series",
           "price": "$14.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/660014354230c5c83a5ce71f146b35471f7a4f0253b32498003538592f083539",
-          "year": 2020
+          "year": 2020,
+          "imdb": {
+            "id": "tt2583620",
+            "rating": 6.1,
+            "votes": 20956,
+            "manual": true
+          }
         },
         {
           "title": "Yellowstone: Season 1-5 Bundle",
@@ -2503,7 +2629,13 @@
           "price": "$14.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/PARAMOUNT/6dd8f40bd3b5bfadc24c5d774d764f001bb7b610d784e4fe42ecf33c43b2bf1f",
-          "year": 2022
+          "year": 2022,
+          "imdb": {
+            "id": "tt18335752",
+            "rating": 8.3,
+            "votes": 108810,
+            "manual": true
+          }
         },
         {
           "title": "Joe Pickett: The Complete Series",
@@ -2762,14 +2894,26 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/c9c66735b9f247e3cdb8e3d8adb3ea52b33e561284606799077f123743ae166b",
           "year": 2003,
-          "runtime": 3423
+          "runtime": 3423,
+          "imdb": {
+            "id": "tt0318913",
+            "rating": 7.9,
+            "votes": 15435,
+            "manual": true
+          }
         },
         {
           "title": "Teenage Mutant Ninja Turtles (2012): The Complete Series",
           "price": "$19.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/69b19df58a0aff8e27478901580dc481a4748fd0d20e8b393f7223f8ff8c9c5c",
-          "year": 2012
+          "year": 2012,
+          "imdb": {
+            "id": "tt1877889",
+            "rating": 7.9,
+            "votes": 18997,
+            "manual": true
+          }
         },
         {
           "title": "Rise of the Teenage Mutant Ninja Turtles: The Complete Series",
