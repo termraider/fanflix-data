@@ -19691,7 +19691,13 @@
         "price": "$14.99",
         "resolution": "HD",
         "year": 1990,
-        "image": "https://img.fanflix.co/PARAMOUNT/ca837772a3fd18f523fa9cef035a55e061cfcb00fbbc8ce28053e1296815253a"
+        "image": "https://img.fanflix.co/PARAMOUNT/ca837772a3fd18f523fa9cef035a55e061cfcb00fbbc8ce28053e1296815253a",
+        "imdb": {
+          "id": "tt0098936",
+          "rating": 8.7,
+          "votes": 252988,
+          "manual": true
+        }
       },
       {
         "title": "The Twilight Zone (1959): The Complete Series",
@@ -19893,7 +19899,13 @@
         "resolution": "HD",
         "year": 2016,
         "runtime": 2328,
-        "image": "https://img.fanflix.co/PARAMOUNT/a64b8f4170bf46c70506b304b57cc6fda07b9e5b994265b12fcdea107476daa5"
+        "image": "https://img.fanflix.co/PARAMOUNT/a64b8f4170bf46c70506b304b57cc6fda07b9e5b994265b12fcdea107476daa5",
+        "imdb": {
+          "id": "tt0972534",
+          "rating": 6.8,
+          "votes": 51294,
+          "manual": true
+        }
       },
       {
         "title": "Victorious: The Complete Series",
