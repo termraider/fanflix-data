@@ -1,12 +1,5 @@
 {
   "coupons" : [
-    {
-      "added" : "2026-11-16T16:01:35Z",
-      "code" : "GOBBLE10",
-      "headline" : "Get some gobble-worthy deals!",
-      "note" : "COUPON CODE · GOBBLE10 · 10% off your next FanFlix order · through Nov 30",
-      "pct" : 10,
-      "until" : "2027-11-30"
-    }
+
   ]
 }
