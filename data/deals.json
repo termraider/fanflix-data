@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T08:03:57.373Z",
+  "updatedAt": "2026-11-16T16:11:41.361Z",
   "deals": [
     {
       "id": "/c/1mj0qm81n787t-flash-sale-macgyver-classic-the-complete-series",
@@ -11207,16 +11207,715 @@
       "screenshot": "images/1mhx9cij17949-bundle-blowout-5-for-5.png",
       "locationScreenshots": {},
       "bannerAlt": "Bundle Blowout - 5 for $5",
-      "bundle": null,
-      "resolutions": {},
-      "title": "THIS CAMPAIGN IS NO LONGER AVAILABLE",
-      "canSplit": false,
+      "bundle": {
+        "count": 5,
+        "price": 5,
+        "perItem": 1
+      },
+      "resolutions": {
+        "UHD": 2,
+        "HD": 10
+      },
+      "title": "Bundle Blowout - 5 for $5",
+      "canSplit": true,
       "checkoutPrice": "",
       "platforms": [
         "Movies Anywhere"
       ],
-      "itemCount": 0,
-      "items": []
+      "itemCount": 12,
+      "items": [
+        {
+          "title": "WB 100 Action & Adventure Five-Film Collection",
+          "price": "$5.00",
+          "resolution": "UHD",
+          "image": "https://img.fanflix.co/WB/46538cf28f8f5c5d310c282fd57c71ead30aa9240a6e7c64f4900bbdb8881d5a",
+          "pack": [
+            {
+              "title": "The Matrix",
+              "resolution": "UHD",
+              "year": 1999,
+              "imdb": {
+                "id": "tt0133093",
+                "rating": 8.7,
+                "votes": 2293531
+              }
+            },
+            {
+              "title": "Pacific Rim",
+              "resolution": "UHD",
+              "year": 2013,
+              "imdb": {
+                "id": "tt1663662",
+                "rating": 6.9,
+                "votes": 566852
+              }
+            },
+            {
+              "title": "Blade Runner (Final Cut)",
+              "resolution": "UHD",
+              "year": 1982,
+              "imdb": {
+                "id": "tt0083658",
+                "rating": 8.1,
+                "votes": 896816
+              }
+            },
+            {
+              "title": "The Meg",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt4779682",
+                "rating": 5.7,
+                "votes": 233815
+              }
+            },
+            {
+              "title": "Godzilla (2014)",
+              "resolution": "UHD",
+              "year": 2014,
+              "imdb": {
+                "id": "tt0831387",
+                "rating": 6.4,
+                "votes": 470585
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Comedies Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/335f89f3839cceb941ccab49a7f7d6b1bd7e90a236ce9be0f088af0c13095cfb",
+          "pack": [
+            {
+              "title": "We're the Millers",
+              "resolution": "HD",
+              "year": 2013,
+              "imdb": {
+                "id": "tt1723121",
+                "rating": 7,
+                "votes": 533503
+              }
+            },
+            {
+              "title": "Tag",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt2854926",
+                "rating": 6.5,
+                "votes": 165923
+              }
+            },
+            {
+              "title": "Game Night",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt2704998",
+                "rating": 6.9,
+                "votes": 287228
+              }
+            },
+            {
+              "title": "Life Of The Party",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt5619332",
+                "rating": 5.6,
+                "votes": 43492
+              }
+            },
+            {
+              "title": "Vacation",
+              "resolution": "UHD",
+              "year": 2015,
+              "imdb": {
+                "id": "tt1524930",
+                "rating": 6.2,
+                "votes": 137243
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Family Fun Five-Film Collection",
+          "price": "$5.00",
+          "resolution": "UHD",
+          "image": "https://img.fanflix.co/WB/be32017c4cf43a8c4b006c6389ee150e9030f1d298c554947730d1daf927667d",
+          "pack": [
+            {
+              "title": "Space Jam: A New Legacy",
+              "resolution": "UHD",
+              "year": 2021,
+              "imdb": {
+                "id": "tt3554046",
+                "rating": 4.5,
+                "votes": 89090
+              }
+            },
+            {
+              "title": "Tom & Jerry (2021)",
+              "resolution": "UHD",
+              "year": 2021,
+              "imdb": {
+                "id": "tt1361336",
+                "rating": 5.3,
+                "votes": 44153
+              }
+            },
+            {
+              "title": "Pokémon Detective Pikachu",
+              "resolution": "UHD",
+              "year": 2019,
+              "imdb": {
+                "id": "tt5884052",
+                "rating": 6.5,
+                "votes": 200937
+              }
+            },
+            {
+              "title": "Paddington 2",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt4468740",
+                "rating": 7.8,
+                "votes": 117450
+              }
+            },
+            {
+              "title": "The Lego Movie",
+              "resolution": "UHD",
+              "year": 2014,
+              "imdb": {
+                "id": "tt1490017",
+                "rating": 7.7,
+                "votes": 423317
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Family Heroes Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/a1e839335617a82cd0b5cef44947004ace7a89c115fa237c81ccdddbdfe68b7e",
+          "pack": [
+            {
+              "title": "DC League of Super-Pets",
+              "resolution": "UHD",
+              "year": 2022,
+              "imdb": {
+                "id": "tt8912936",
+                "rating": 6.8,
+                "votes": 81230
+              }
+            },
+            {
+              "title": "The Lego Batman Movie",
+              "resolution": "UHD",
+              "year": 2017,
+              "imdb": {
+                "id": "tt4116284",
+                "rating": 7.3,
+                "votes": 199246
+              }
+            },
+            {
+              "title": "The Iron Giant",
+              "resolution": "HD",
+              "year": 1999,
+              "imdb": {
+                "id": "tt0129167",
+                "rating": 8.1,
+                "votes": 267638
+              }
+            },
+            {
+              "title": "Teen Titans Go! To The Movies",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt7424200",
+                "rating": 6.7,
+                "votes": 24473
+              }
+            },
+            {
+              "title": "Teenage Mutant Ninja Turtles (1990)",
+              "resolution": "HD",
+              "year": 1990,
+              "imdb": {
+                "id": "tt0100758",
+                "rating": 6.8,
+                "votes": 114158
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Frights Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/faf881248d58faf128e074b956eda543d461b19152582adf986a647dd077054d",
+          "pack": [
+            {
+              "title": "The Conjuring",
+              "resolution": "UHD",
+              "year": 2013,
+              "imdb": {
+                "id": "tt1457767",
+                "rating": 7.5,
+                "votes": 638512
+              }
+            },
+            {
+              "title": "Annabelle",
+              "resolution": "UHD",
+              "year": 2014,
+              "imdb": {
+                "id": "tt3322940",
+                "rating": 5.5,
+                "votes": 201124
+              }
+            },
+            {
+              "title": "A Nightmare on Elm Street (1984)",
+              "resolution": "UHD",
+              "year": 1984,
+              "imdb": {
+                "id": "tt0087800",
+                "rating": 7.4,
+                "votes": 299125
+              }
+            },
+            {
+              "title": "Final Destination",
+              "resolution": "HD",
+              "year": 2000,
+              "imdb": {
+                "id": "tt0195714",
+                "rating": 6.7,
+                "votes": 344130
+              }
+            },
+            {
+              "title": "Stephen King's IT",
+              "resolution": "HD",
+              "year": 1990,
+              "imdb": {
+                "id": "tt0099864",
+                "rating": 6.8,
+                "votes": 156644
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Futuristic Thrillers Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/553f18aaba8fc07fcba14b3a3f9474a5439065c27d56fe0039777d3a160c28b4",
+          "pack": [
+            {
+              "title": "Ready Player One",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt1677720",
+                "rating": 7.4,
+                "votes": 555339
+              }
+            },
+            {
+              "title": "Live Die Repeat: Edge of Tomorrow",
+              "resolution": "UHD",
+              "year": 2014
+            },
+            {
+              "title": "Pacific Rim",
+              "resolution": "UHD",
+              "year": 2013,
+              "imdb": {
+                "id": "tt1663662",
+                "rating": 6.9,
+                "votes": 566852
+              }
+            },
+            {
+              "title": "Demolition Man",
+              "resolution": "HD",
+              "year": 1993,
+              "imdb": {
+                "id": "tt0106697",
+                "rating": 6.7,
+                "votes": 212291
+              }
+            },
+            {
+              "title": "A.I. Artificial Intelligence",
+              "resolution": "HD",
+              "year": 2001,
+              "imdb": {
+                "id": "tt0212720",
+                "rating": 7.2,
+                "votes": 344771
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Heroes Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/e4d2aa991d32ebf03265838f9b28b7d390cdce2c00fa6162054fc4571e40e8d9",
+          "pack": [
+            {
+              "title": "Invictus",
+              "resolution": "HD",
+              "year": 2009,
+              "imdb": {
+                "id": "tt1057500",
+                "rating": 7.3,
+                "votes": 176126
+              }
+            },
+            {
+              "title": "Sully",
+              "resolution": "UHD",
+              "year": 2016,
+              "imdb": {
+                "id": "tt3263904",
+                "rating": 7.4,
+                "votes": 328527
+              }
+            },
+            {
+              "title": "We Are Marshall",
+              "resolution": "HD",
+              "year": 2006,
+              "imdb": {
+                "id": "tt0758794",
+                "rating": 7.1,
+                "votes": 68551
+              }
+            },
+            {
+              "title": "American Sniper",
+              "resolution": "UHD",
+              "year": 2014,
+              "imdb": {
+                "id": "tt2179136",
+                "rating": 7.3,
+                "votes": 579144
+              }
+            },
+            {
+              "title": "Argo",
+              "resolution": "UHD",
+              "year": 2012,
+              "imdb": {
+                "id": "tt1024648",
+                "rating": 7.7,
+                "votes": 675989
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Inspiring Stories Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/9d96ccf5d2bc892bdafccb20fbd69d24e7adbf8c9170a7cff5f5a41ea21db8bd",
+          "pack": [
+            {
+              "title": "King Richard",
+              "resolution": "UHD",
+              "year": 2021,
+              "imdb": {
+                "id": "tt9620288",
+                "rating": 7.5,
+                "votes": 194673
+              }
+            },
+            {
+              "title": "Just Mercy",
+              "resolution": "UHD",
+              "year": 2019,
+              "imdb": {
+                "id": "tt4916630",
+                "rating": 7.6,
+                "votes": 86444
+              }
+            },
+            {
+              "title": "Judas and the Black Messiah",
+              "resolution": "UHD",
+              "year": 2021,
+              "imdb": {
+                "id": "tt9784798",
+                "rating": 7.4,
+                "votes": 116639
+              }
+            },
+            {
+              "title": "The Blind Side",
+              "resolution": "HD",
+              "year": 2009,
+              "imdb": {
+                "id": "tt0878804",
+                "rating": 7.6,
+                "votes": 394821
+              }
+            },
+            {
+              "title": "42",
+              "resolution": "HD",
+              "year": 2013,
+              "imdb": {
+                "id": "tt0453562",
+                "rating": 7.5,
+                "votes": 110427
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Laughter Five-Film Collection (HD, UHD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/78bdb72af88bd4a5a3a575bda90da60872396d09cbcea540739b502d191b74ca",
+          "pack": [
+            {
+              "title": "The Hangover",
+              "resolution": "UHD",
+              "year": 2009,
+              "imdb": {
+                "id": "tt1119646",
+                "rating": 7.7,
+                "votes": 950488
+              }
+            },
+            {
+              "title": "Friday",
+              "resolution": "HD",
+              "year": 1995,
+              "imdb": {
+                "id": "tt0113118",
+                "rating": 7.2,
+                "votes": 139755
+              }
+            },
+            {
+              "title": "Dumb and Dumber",
+              "resolution": "HD",
+              "year": 1994,
+              "imdb": {
+                "id": "tt0109686",
+                "rating": 7.3,
+                "votes": 449959
+              }
+            },
+            {
+              "title": "Horrible Bosses",
+              "resolution": "HD",
+              "year": 2011,
+              "imdb": {
+                "id": "tt1499658",
+                "rating": 6.9,
+                "votes": 493601
+              }
+            },
+            {
+              "title": "Harold & Kumar Go to White Castle",
+              "resolution": "HD",
+              "year": 2004,
+              "imdb": {
+                "id": "tt0366551",
+                "rating": 7,
+                "votes": 217296
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Movies For Mom Five-Film Collection (HD, UHD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/850b95f59d8d68bff5a4cc7bf68aaf900d4f5045bef6ac6f7dea6aa9edb6af06",
+          "pack": [
+            {
+              "title": "A Star Is Born",
+              "resolution": "UHD",
+              "year": 2018,
+              "imdb": {
+                "id": "tt1517451",
+                "rating": 7.6,
+                "votes": 454741
+              }
+            },
+            {
+              "title": "P.S. I Love You",
+              "resolution": "HD",
+              "year": 2007,
+              "imdb": {
+                "id": "tt0431308",
+                "rating": 7,
+                "votes": 227547
+              }
+            },
+            {
+              "title": "Me Before You",
+              "resolution": "UHD",
+              "year": 2016,
+              "imdb": {
+                "id": "tt2674426",
+                "rating": 7.4,
+                "votes": 347086
+              }
+            },
+            {
+              "title": "The Notebook",
+              "resolution": "HD",
+              "year": 2004,
+              "imdb": {
+                "id": "tt0332280",
+                "rating": 7.8,
+                "votes": 707212
+              }
+            },
+            {
+              "title": "My Sister's Keeper",
+              "resolution": "HD",
+              "year": 2009,
+              "imdb": {
+                "id": "tt1078588",
+                "rating": 7.3,
+                "votes": 103790
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Science Fiction Five-Film Collection (UHD, HD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/2f42b13993aa95ebfc5b1b466d1fdd53381c7143617af888da9afa866382076c",
+          "pack": [
+            {
+              "title": "Dune (2021)",
+              "resolution": "UHD",
+              "year": 2021,
+              "imdb": {
+                "id": "tt1160419",
+                "rating": 8,
+                "votes": 1102593
+              }
+            },
+            {
+              "title": "Gravity",
+              "resolution": "HD",
+              "year": 2013,
+              "imdb": {
+                "id": "tt1454468",
+                "rating": 7.6,
+                "votes": 909404
+              }
+            },
+            {
+              "title": "Blade Runner 2049",
+              "resolution": "UHD",
+              "year": 2017,
+              "imdb": {
+                "id": "tt1856101",
+                "rating": 8,
+                "votes": 776482
+              }
+            },
+            {
+              "title": "2001: A Space Odyssey",
+              "resolution": "UHD",
+              "year": 1968,
+              "imdb": {
+                "id": "tt0062622",
+                "rating": 8.3,
+                "votes": 797083
+              }
+            },
+            {
+              "title": "2010: The Year We Make Contact",
+              "resolution": "HD",
+              "year": 1984,
+              "imdb": {
+                "id": "tt0086837",
+                "rating": 6.7,
+                "votes": 61913
+              }
+            }
+          ]
+        },
+        {
+          "title": "WB 100 Screwball Comedies Five-Film Collection (HD, UHD)",
+          "price": "$5.00",
+          "resolution": "HD",
+          "image": "https://img.fanflix.co/WB/2f6eae80e4c99e5f49b99694f291355072a9df51e476e4db7081fdb02bba0585",
+          "pack": [
+            {
+              "title": "Caddyshack",
+              "resolution": "HD",
+              "year": 1980,
+              "imdb": {
+                "id": "tt0080487",
+                "rating": 7.2,
+                "votes": 134963
+              }
+            },
+            {
+              "title": "Blazing Saddles",
+              "resolution": "UHD",
+              "year": 1974,
+              "imdb": {
+                "id": "tt0071230",
+                "rating": 7.7,
+                "votes": 167403
+              }
+            },
+            {
+              "title": "National Lampoon's Vacation",
+              "resolution": "UHD",
+              "year": 1983,
+              "imdb": {
+                "id": "tt0085995",
+                "rating": 7.3,
+                "votes": 130296
+              }
+            },
+            {
+              "title": "Police Academy",
+              "resolution": "HD",
+              "year": 1984,
+              "imdb": {
+                "id": "tt0087928",
+                "rating": 6.8,
+                "votes": 151313
+              }
+            },
+            {
+              "title": "Funny Farm",
+              "resolution": "HD",
+              "year": 1988,
+              "imdb": {
+                "id": "tt0095188",
+                "rating": 6.2,
+                "votes": 25898
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "/c/1mib22dybtu7p-find-your-next-favorite-2-or-more-starting-at-4-99",

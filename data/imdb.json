@@ -60,6 +60,12 @@
    "votes": 797083,
    "checked": "2026-11-13"
   },
+  "m|2010 the year we make contact|1984": {
+   "id": "tt0086837",
+   "rating": 6.7,
+   "votes": 61913,
+   "checked": "2026-11-16"
+  },
   "m|2016 obamas america|2012": {
    "id": "tt2247692",
    "rating": 4.8,
@@ -89,6 +95,12 @@
    "rating": 7.1,
    "votes": 510659,
    "checked": "2026-11-13"
+  },
+  "m|42|2013": {
+   "id": "tt0453562",
+   "rating": 7.5,
+   "votes": 110427,
+   "checked": "2026-11-16"
   },
   "m|42nd street|1933": {
    "id": "tt0024034",
@@ -378,6 +390,12 @@
    "votes": 15942,
    "checked": "2026-11-13"
   },
+  "m|ai artificial intelligence|2001": {
+   "id": "tt0212720",
+   "rating": 7.2,
+   "votes": 344771,
+   "checked": "2026-11-16"
+  },
   "m|air america|": {
    "id": "tt0099005",
    "rating": 5.8,
@@ -493,6 +511,12 @@
    "rating": 4.2,
    "votes": 11058,
    "checked": "2026-11-13"
+  },
+  "m|american sniper|2014": {
+   "id": "tt2179136",
+   "rating": 7.3,
+   "votes": 579144,
+   "checked": "2026-11-16"
   },
   "m|american society of magical negroes|": {
    "id": "tt30007864",
@@ -952,6 +976,12 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|blade runner 2049|2017": {
+   "id": "tt1856101",
+   "rating": 8,
+   "votes": 776482,
+   "checked": "2026-11-16"
+  },
   "m|blade runner|1982": {
    "id": "tt0083658",
    "rating": 8.1,
@@ -993,6 +1023,12 @@
    "rating": 6.5,
    "votes": 161210,
    "checked": "2026-11-13"
+  },
+  "m|blind side|2009": {
+   "id": "tt0878804",
+   "rating": 7.6,
+   "votes": 394821,
+   "checked": "2026-11-16"
   },
   "m|blind swordsman zatoichi|2004": {
    "id": "tt0363226",
@@ -1782,6 +1818,12 @@
    "votes": 220030,
    "checked": "2026-11-13"
   },
+  "m|dc league of super pets|2022": {
+   "id": "tt8912936",
+   "rating": 6.8,
+   "votes": 81230,
+   "checked": "2026-11-16"
+  },
   "m|dead 2|2014": {
    "none": true,
    "checked": "2026-11-13"
@@ -2136,6 +2178,12 @@
    "votes": 449959,
    "checked": "2026-11-13"
   },
+  "m|dune|2021": {
+   "id": "tt1160419",
+   "rating": 8,
+   "votes": 1102593,
+   "checked": "2026-11-16"
+  },
   "m|dungeons and dragons honor among thieves|2023": {
    "id": "tt2906216",
    "rating": 7.2,
@@ -2437,6 +2485,12 @@
    "rating": 6.1,
    "votes": 36323,
    "checked": "2026-11-13"
+  },
+  "m|final destination|2000": {
+   "id": "tt0195714",
+   "rating": 6.7,
+   "votes": 344130,
+   "checked": "2026-11-16"
   },
   "m|final score|2018": {
    "id": "tt5254610",
@@ -2904,6 +2958,12 @@
    "votes": 215800,
    "checked": "2026-11-13"
   },
+  "m|godzilla|2014": {
+   "id": "tt0831387",
+   "rating": 6.4,
+   "votes": 470585,
+   "checked": "2026-11-16"
+  },
   "m|going berserk|1993": {
    "id": "tt0085603",
    "rating": 5.2,
@@ -3166,6 +3226,12 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|harold and kumar go to white castle|2004": {
+   "id": "tt0366551",
+   "rating": 7,
+   "votes": 217296,
+   "checked": "2026-11-16"
+  },
   "m|harriet the spy|1996": {
    "id": "tt0116493",
    "rating": 6,
@@ -3319,6 +3385,12 @@
    "rating": 5.6,
    "votes": 9236,
    "checked": "2026-11-13"
+  },
+  "m|horrible bosses|2011": {
+   "id": "tt1499658",
+   "rating": 6.9,
+   "votes": 493601,
+   "checked": "2026-11-16"
   },
   "m|hostage|2005": {
    "id": "tt0340163",
@@ -3956,6 +4028,12 @@
    "votes": 129172,
    "checked": "2026-11-13"
   },
+  "m|just mercy|2019": {
+   "id": "tt4916630",
+   "rating": 7.6,
+   "votes": 86444,
+   "checked": "2026-11-16"
+  },
   "m|kajillionaire|2020": {
    "id": "tt8143990",
    "rating": 6.4,
@@ -4039,6 +4117,12 @@
    "rating": 5.6,
    "votes": 18079,
    "checked": "2026-11-13"
+  },
+  "m|king richard|2021": {
+   "id": "tt9620288",
+   "rating": 7.5,
+   "votes": 194673,
+   "checked": "2026-11-16"
   },
   "m|kings of summer|2013": {
    "id": "tt2179116",
@@ -4224,6 +4308,12 @@
    "votes": 62974,
    "checked": "2026-11-13"
   },
+  "m|lego batman movie|2017": {
+   "id": "tt4116284",
+   "rating": 7.3,
+   "votes": 199246,
+   "checked": "2026-11-16"
+  },
   "m|lego movie|2014": {
    "id": "tt1490017",
    "rating": 7.7,
@@ -4259,6 +4349,12 @@
    "rating": 6.9,
    "votes": 368771,
    "checked": "2026-11-13"
+  },
+  "m|life of the party|2018": {
+   "id": "tt5619332",
+   "rating": 5.6,
+   "votes": 43492,
+   "checked": "2026-11-16"
   },
   "m|lifehack|2026": {
    "id": "tt32135632",
@@ -4319,6 +4415,10 @@
    "rating": 6.2,
    "votes": 1052,
    "checked": "2026-11-13"
+  },
+  "m|live die repeat edge of tomorrow|2014": {
+   "none": true,
+   "checked": "2026-11-16"
   },
   "m|lone survivor|2013": {
    "id": "tt1091191",
@@ -4529,6 +4629,12 @@
    "rating": 7.1,
    "votes": 18666,
    "checked": "2026-11-13"
+  },
+  "m|me before you|2016": {
+   "id": "tt2674426",
+   "rating": 7.4,
+   "votes": 347086,
+   "checked": "2026-11-16"
   },
   "m|mean girls 2|2011": {
    "id": "tt1679235",
@@ -4898,6 +5004,12 @@
    "votes": 75942,
    "checked": "2026-11-13"
   },
+  "m|national lampoons vacation|1983": {
+   "id": "tt0085995",
+   "rating": 7.3,
+   "votes": 130296,
+   "checked": "2026-11-16"
+  },
   "m|natural born killers|2008": {
    "id": "tt0110632",
    "rating": 7.2,
@@ -5007,6 +5119,12 @@
    "rating": 6,
    "votes": 5203,
    "checked": "2026-11-13"
+  },
+  "m|notebook|2004": {
+   "id": "tt0332280",
+   "rating": 7.8,
+   "votes": 707212,
+   "checked": "2026-11-16"
   },
   "m|nothing but trouble|1991": {
    "id": "tt0102558",
@@ -5147,6 +5265,18 @@
    "rating": 5.6,
    "votes": 140042,
    "checked": "2026-11-13"
+  },
+  "m|pacific rim|2013": {
+   "id": "tt1663662",
+   "rating": 6.9,
+   "votes": 566852,
+   "checked": "2026-11-16"
+  },
+  "m|paddington 2|2018": {
+   "id": "tt4468740",
+   "rating": 7.8,
+   "votes": 117450,
+   "checked": "2026-11-16"
   },
   "m|paint your wagon|1970": {
    "id": "tt0064782",
@@ -5414,6 +5544,12 @@
    "votes": 43541,
    "checked": "2026-11-13"
   },
+  "m|ps i love you|2007": {
+   "id": "tt0431308",
+   "rating": 7,
+   "votes": 227547,
+   "checked": "2026-11-16"
+  },
   "m|psych 2 lassie come home|": {
    "id": "tt9792884",
    "rating": 7.3,
@@ -5533,6 +5669,12 @@
    "rating": 6.4,
    "votes": 6402,
    "checked": "2026-11-13"
+  },
+  "m|ready player one|2018": {
+   "id": "tt1677720",
+   "rating": 7.4,
+   "votes": 555339,
+   "checked": "2026-11-16"
   },
   "m|rebel without a cause|1955": {
    "id": "tt0048545",
@@ -6566,6 +6708,12 @@
    "votes": 50592,
    "checked": "2026-11-13"
   },
+  "m|sully|2016": {
+   "id": "tt3263904",
+   "rating": 7.4,
+   "votes": 328527,
+   "checked": "2026-11-16"
+  },
   "m|sum of all fears|2002": {
    "id": "tt0164184",
    "rating": 6.5,
@@ -6627,6 +6775,12 @@
    "rating": 6.1,
    "votes": 118638,
    "checked": "2026-11-13"
+  },
+  "m|tag|2018": {
+   "id": "tt2854926",
+   "rating": 6.5,
+   "votes": 165923,
+   "checked": "2026-11-16"
   },
   "m|taking of pelham 1 2 3|": {
    "none": true,
@@ -6697,6 +6851,12 @@
    "rating": 6.9,
    "votes": 723306,
    "checked": "2026-11-13"
+  },
+  "m|teen titans go to the movies|2018": {
+   "id": "tt7424200",
+   "rating": 6.7,
+   "votes": 24473,
+   "checked": "2026-11-16"
   },
   "m|teenage mutant ninja turtles mutant mayhem|2023": {
    "id": "tt8589698",
@@ -7259,6 +7419,12 @@
    "rating": 4.9,
    "votes": 14723,
    "checked": "2026-11-13"
+  },
+  "m|were the millers|2013": {
+   "id": "tt1723121",
+   "rating": 7,
+   "votes": 533503,
+   "checked": "2026-11-16"
   },
   "m|westward ho|": {
    "none": true,
