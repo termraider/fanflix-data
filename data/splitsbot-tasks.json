@@ -1,0 +1,10 @@
+{
+  "tasks" : [
+    {
+      "action" : "coupon",
+      "code" : "GOBBLE10",
+      "id" : "2026-11-16T16:12:36Z-1",
+      "sub" : "splitsmod_dev"
+    }
+  ]
+}
