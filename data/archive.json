@@ -59198,5 +59198,547 @@
         "image": "https://img.fanflix.co/PARAMOUNT/f288b888782ef196a3fdfc46492faae31f3c17b4a37dbdc6b0bb979c0cc14a81"
       }
     ]
+  },
+  "/c/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15": {
+    "title": "Space Jam 30th - Looney Tunes 5 for $15",
+    "url": "https://fanflix.co/c/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15",
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17",
+    "canSplit": true,
+    "checkoutPrice": "",
+    "platforms": [
+      "Movies Anywhere",
+      "Fandango at Home"
+    ],
+    "bannerFile": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--banner.png",
+    "hidden": true,
+    "screenshot": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15.png",
+    "locationScreenshots": {
+      "Movies Anywhere": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png",
+      "Fandango at Home": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png"
+    },
+    "bundle": {
+      "count": 5,
+      "price": 15,
+      "perItem": 3
+    },
+    "resolutions": {
+      "UHD": 2,
+      "HD": 29
+    },
+    "items": [
+      {
+        "title": "Space Jam",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1996,
+        "image": "https://img.fanflix.co/WB/cdae9dcc8d520e9ee8205d5a9b5b0345ac36ddc628f9c8cf72a7b1a5c9b0e528",
+        "imdb": {
+          "id": "tt0117705",
+          "rating": 6.5,
+          "votes": 233258,
+          "cast": [
+            "Michael Jordan",
+            "Wayne Knight",
+            "Theresa Randle",
+            "Manner Washington III",
+            "Eric Gordon"
+          ]
+        }
+      },
+      {
+        "title": "Space Jam: A New Legacy",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 2021,
+        "image": "https://img.fanflix.co/WB/8f1e2d1f2b7b64aee36f1566c82e590e5757da514b8a3ed8f294ad5e45367bf6",
+        "imdb": {
+          "id": "tt3554046",
+          "rating": 4.5,
+          "votes": 89090,
+          "cast": [
+            "LeBron James",
+            "Don Cheadle",
+            "Cedric Joe",
+            "Khris Davis",
+            "Sonequa Martin-Green"
+          ]
+        }
+      },
+      {
+        "title": "Stars of Space Jam: Looney Tunes Collection",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2021,
+        "image": "https://img.fanflix.co/WB/191bb996a38ed72d21ea967079f046b332072dbb4a5c3c3429074f029dddf81d"
+      },
+      {
+        "title": "Teen Titans Go! See Space Jam",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2021,
+        "image": "https://img.fanflix.co/martwork/77923b844f941d9f705565da11990460b7b1d593e249b8e272bac506848eb6f3",
+        "imdb": {
+          "id": "tt14851194",
+          "rating": 4.5,
+          "votes": 1603,
+          "cast": [
+            "Greg Cipes",
+            "Scott Menville",
+            "Khary Payton",
+            "Tara Strong",
+            "Hynden Walch"
+          ]
+        }
+      },
+      {
+        "title": "The Looney Tunes Show: Season 1",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2011,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/ee90c75fc14eefa1e066b87b307ed01146c251de65fb7c494007f97d74bde97f",
+        "imdb": {
+          "id": "tt1726839",
+          "rating": 7.8,
+          "votes": 17940,
+          "season": {
+            "n": 1,
+            "rating": 7.6,
+            "votes": 7746,
+            "episodes": 26
+          },
+          "cast": [
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Armisen",
+            "Kristen Wiig",
+            "Maurice LaMarche"
+          ]
+        }
+      },
+      {
+        "title": "The Looney Tunes Show: Season 2",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2012,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/1882659376ee8c3746eeb2ef8cf593ff3bc70818882f4d996f47c39b8298acef",
+        "imdb": {
+          "id": "tt1726839",
+          "rating": 7.8,
+          "votes": 17940,
+          "season": {
+            "n": 2,
+            "rating": 7.8,
+            "votes": 5451,
+            "episodes": 26
+          },
+          "cast": [
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Armisen",
+            "Kristen Wiig",
+            "Maurice LaMarche"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes Back In Action",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2003,
+        "image": "https://img.fanflix.co/martwork/wb/5ac77fc3-6fa9-495a-a7d9-fd5a74e9ddab-2x3.png",
+        "imdb": {
+          "id": "tt0318155",
+          "rating": 5.8,
+          "votes": 44324,
+          "cast": [
+            "Brendan Fraser",
+            "Jenna Elfman",
+            "Steve Martin",
+            "Heather Locklear",
+            "Timothy Dalton"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes: Bah Humduck!",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2006,
+        "image": "https://img.fanflix.co/martwork/wb/9f73d5e1-1bb2-43f8-9b7a-1dad2093ca61-2x3.png"
+      },
+      {
+        "title": "Looney Tunes: Rabbits Run",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2015,
+        "image": "https://img.fanflix.co/martwork/wb/92b3ffb7-6a12-4127-9a7b-bae8fe1612f5-2x3.png"
+      },
+      {
+        "title": "The New Looney Tunes: Season 1, Part 2",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2015,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
+        "imdb": {
+          "id": "tt4558858",
+          "rating": 5.8,
+          "votes": 1480,
+          "season": {
+            "n": 1,
+            "rating": 7.2,
+            "votes": 1274,
+            "episodes": 52
+          },
+          "cast": [
+            "Jeff Bergman",
+            "Dee Bradley Baker",
+            "Bob Bergen",
+            "Matthew Craig",
+            "Carlos Alazraqui"
+          ]
+        }
+      },
+      {
+        "title": "The New Looney Tunes: Season 1, Part 1",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2015,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
+        "imdb": {
+          "id": "tt4558858",
+          "rating": 5.8,
+          "votes": 1480,
+          "season": {
+            "n": 1,
+            "rating": 7.2,
+            "votes": 1274,
+            "episodes": 52
+          },
+          "cast": [
+            "Jeff Bergman",
+            "Dee Bradley Baker",
+            "Bob Bergen",
+            "Matthew Craig",
+            "Carlos Alazraqui"
+          ]
+        }
+      },
+      {
+        "title": "The New Looney Tunes: Season 2",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2018,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/b54704cccbed74361a0b670f8474aa5e247b43199a938bf433eb72b2384f464c",
+        "imdb": {
+          "id": "tt4558858",
+          "rating": 5.8,
+          "votes": 1480,
+          "season": {
+            "n": 2,
+            "rating": 7.4,
+            "votes": 790,
+            "episodes": 52
+          },
+          "cast": [
+            "Jeff Bergman",
+            "Dee Bradley Baker",
+            "Bob Bergen",
+            "Matthew Craig",
+            "Carlos Alazraqui"
+          ]
+        }
+      },
+      {
+        "title": "Bugs Bunny Superstar",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1975,
+        "image": "https://img.fanflix.co/martwork/wb/b5a7851c-a9d9-441d-803b-5be057d1dfed-2x3.png",
+        "imdb": {
+          "id": "tt0072751",
+          "rating": 7,
+          "votes": 560,
+          "cast": [
+            "Orson Welles",
+            "Mel Blanc",
+            "Robert Clampett",
+            "Tex Avery",
+            "Friz Freleng"
+          ]
+        }
+      },
+      {
+        "title": "Bugs Bunny 80th Anniversary Collection: Season 1",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1940,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/1f23b86883755dd452d6ea69ff64e9ebfc87f937cd66e47a7de3bee5ee906994"
+      },
+      {
+        "title": "Bugs Bunny's 1001 Rabbit Tales",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1982,
+        "image": "https://img.fanflix.co/martwork/wb/d700eee3-9600-4135-b953-48f2be67cd08-2x3.png"
+      },
+      {
+        "title": "The Looney, Looney, Looney Bugs Bunny Movie",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1981,
+        "image": "https://img.fanflix.co/martwork/wb/421fda6c-43df-4907-b12e-adedfd7e7540-2x3.png",
+        "imdb": {
+          "id": "tt0082679",
+          "rating": 7.1,
+          "votes": 2930,
+          "cast": [
+            "Mel Blanc",
+            "Stan Freberg",
+            "June Foray",
+            "Frank Nelson",
+            "Frank Welker"
+          ]
+        }
+      },
+      {
+        "title": "The Bugs Bunny/Roadrunner Movie",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1979,
+        "image": "https://img.fanflix.co/martwork/wb/7d4fdedf-0966-4270-8748-674631571004-2x3.png"
+      },
+      {
+        "title": "Looney Tunes Cartoons: Season 1",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2020,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/d57af84dbae3c2abdf43a7465657cd4e18441a727e588595dabfc4ffeff5da53",
+        "imdb": {
+          "id": "tt8543208",
+          "rating": 8,
+          "votes": 2580,
+          "season": {
+            "n": 1,
+            "rating": 7.8,
+            "votes": 3025,
+            "episodes": 31
+          },
+          "cast": [
+            "Eric Bauza",
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Tatasciore",
+            "Candi Milo"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes Cartoons: Season 2",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2021,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/9b911f571a3948dd70324866fc5c2886d916f20b9ef42a04aaee082622f7771f",
+        "imdb": {
+          "id": "tt8543208",
+          "rating": 8,
+          "votes": 2580,
+          "season": {
+            "n": 2,
+            "rating": 7.8,
+            "votes": 651,
+            "episodes": 11
+          },
+          "cast": [
+            "Eric Bauza",
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Tatasciore",
+            "Candi Milo"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes Cartoons: Season 3",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2021,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/788c40b5240073671389eea511214331b50d2b083b4cb374932fe1593edc85ff",
+        "imdb": {
+          "id": "tt8543208",
+          "rating": 8,
+          "votes": 2580,
+          "cast": [
+            "Eric Bauza",
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Tatasciore",
+            "Candi Milo"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes Cartoons: Season 4",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2022,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/88047ccc3f6ce7b8bddfd13ce69d05c4d94d6ebb766b330493df164c3dc94a2c",
+        "imdb": {
+          "id": "tt8543208",
+          "rating": 8,
+          "votes": 2580,
+          "cast": [
+            "Eric Bauza",
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Tatasciore",
+            "Candi Milo"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes Cartoons: Season 5",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2022,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/758a3b2f5e736dd94317b0315bab1d705c4cb18f2cd0362274583f7152bb85a9",
+        "imdb": {
+          "id": "tt8543208",
+          "rating": 8,
+          "votes": 2580,
+          "cast": [
+            "Eric Bauza",
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Tatasciore",
+            "Candi Milo"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes Cartoons: Season 6",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2023,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/9de88ea6f858f11d2fbb4a5acdccee5b7c61e690b0c8c66e8e34cac98933de66",
+        "imdb": {
+          "id": "tt8543208",
+          "rating": 8,
+          "votes": 2580,
+          "cast": [
+            "Eric Bauza",
+            "Jeff Bergman",
+            "Bob Bergen",
+            "Fred Tatasciore",
+            "Candi Milo"
+          ]
+        }
+      },
+      {
+        "title": "Daffy Duck's Movie: Fantastic Island",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1983,
+        "image": "https://img.fanflix.co/martwork/wb/59bbf0c9-3d56-4a04-99e9-b1839720a13f-2x3.png",
+        "imdb": {
+          "id": "tt0085390",
+          "rating": 6.9,
+          "votes": 2387,
+          "cast": [
+            "Mel Blanc",
+            "June Foray",
+            "Les Tremayne"
+          ]
+        }
+      },
+      {
+        "title": "Daffy Duck's Quackbusters",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2009,
+        "runtime": 72,
+        "image": "https://img.fanflix.co/martwork/wb/d3e2f186-f9bd-473e-a2cb-2159b31dc420-2x3.png",
+        "imdb": {
+          "id": "tt0094939",
+          "rating": 7,
+          "votes": 3021,
+          "cast": [
+            "Mel Blanc",
+            "Mel Tormé",
+            "Roy Firestone",
+            "B.J. Ward",
+            "Ben Frommer"
+          ]
+        }
+      },
+      {
+        "title": "King Tweety",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2022,
+        "image": "https://img.fanflix.co/martwork/6765cec7fda82d577ca439c8d2db6880b9af6a6d26d4755c441d10e2e6056831"
+      },
+      {
+        "title": "Tweety's High Flying Adventure",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2000,
+        "image": "https://img.fanflix.co/martwork/wb/054483da-0f01-48ab-a9ed-3e947d274f93-2x3.png"
+      },
+      {
+        "title": "The Sylvester and Tweety Mysteries: The Complete Series",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1995,
+        "image": "https://img.fanflix.co/WB/ef1f456ca3121853b3a555430d8f9728b795c43aada50ceb8357f747e00811cb",
+        "imdb": {
+          "id": "tt0112186",
+          "rating": 7,
+          "votes": 5884,
+          "cast": [
+            "Joe Alaskey",
+            "June Foray",
+            "Frank Welker",
+            "Jeff Bennett",
+            "Jim Cummings"
+          ]
+        }
+      },
+      {
+        "title": "Looney Tunes The Chuck Jones Collection Mouse Chronicles: Season 1",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1939,
+        "runtime": 144,
+        "seasons": 1,
+        "image": "https://img.fanflix.co/WB/81c13c029ee188000fb14cb080c20389a733b9196cc71488b65b98b18f4e4399"
+      },
+      {
+        "title": "Baby Looney Tunes: Volume 1",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2002,
+        "image": "https://img.fanflix.co/WB/4d64c616a564efa6f7d830a844faf844035fca7e9bc3d5139e7426b931ab7290"
+      },
+      {
+        "title": "Baby Looney Tunes: Volume 2",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2002,
+        "image": "https://img.fanflix.co/WB/2a94786d4a4b80b85b813d732deb8bbae9a53242e22acd1215b298bc25744c4c"
+      }
+    ]
   }
 }

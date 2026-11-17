@@ -968,6 +968,14 @@
    "votes": 332129,
    "checked": "2026-11-13"
   },
+  "m|baby looney tunes volume 1|2002": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|baby looney tunes volume 2|2002": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|babylon|2022": {
    "id": "tt10640346",
    "rating": 7.1,
@@ -1762,6 +1770,20 @@
    "votes": 5086,
    "checked": "2026-11-13"
   },
+  "m|bugs bunny roadrunner movie|1979": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|bugs bunny superstar|1975": {
+   "id": "tt0072751",
+   "rating": 7,
+   "votes": 560,
+   "checked": "2026-11-17"
+  },
+  "m|bugs bunnys 1001 rabbit tales|1982": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|bugsy malone|1976": {
    "id": "tt0074256",
    "rating": 6.8,
@@ -2491,6 +2513,18 @@
    "rating": 5.2,
    "votes": 8962,
    "checked": "2026-11-13"
+  },
+  "m|daffy ducks movie fantastic island|1983": {
+   "id": "tt0085390",
+   "rating": 6.9,
+   "votes": 2387,
+   "checked": "2026-11-17"
+  },
+  "m|daffy ducks quackbusters|2009": {
+   "id": "tt0094939",
+   "rating": 7,
+   "votes": 3021,
+   "checked": "2026-11-17"
   },
   "m|dakota|": {
    "none": true,
@@ -5750,6 +5784,10 @@
    "votes": 194673,
    "checked": "2026-11-16"
   },
+  "m|king tweety|2022": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|kings of summer|2013": {
    "id": "tt2179116",
    "rating": 7.1,
@@ -6160,11 +6198,25 @@
    "votes": 23677,
    "checked": "2026-11-17"
   },
+  "m|looney looney looney bugs bunny movie|1981": {
+   "id": "tt0082679",
+   "rating": 7.1,
+   "votes": 2930,
+   "checked": "2026-11-17"
+  },
   "m|looney tunes back in action|2003": {
    "id": "tt0318155",
    "rating": 5.8,
    "votes": 44324,
    "checked": "2026-11-13"
+  },
+  "m|looney tunes bah humduck|2006": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|looney tunes rabbits run|2015": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|looper|": {
    "id": "tt1276104",
@@ -10010,6 +10062,12 @@
    "votes": 723306,
    "checked": "2026-11-13"
   },
+  "m|teen titans go see space jam|2021": {
+   "id": "tt14851194",
+   "rating": 4.5,
+   "votes": 1603,
+   "checked": "2026-11-17"
+  },
   "m|teen titans go to the movies|2018": {
    "id": "tt7424200",
    "rating": 6.7,
@@ -10405,6 +10463,10 @@
    "rating": 5.4,
    "votes": 94908,
    "checked": "2026-11-13"
+  },
+  "m|tweetys high flying adventure|2000": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|twilight|1998": {
    "id": "tt0119594",
@@ -11606,6 +11668,18 @@
    "votes": 156891,
    "checked": "2026-11-16"
   },
+  "tv|looney tunes cartoons|": {
+   "id": "tt8543208",
+   "rating": 8,
+   "votes": 2580,
+   "checked": "2026-11-17"
+  },
+  "tv|looney tunes show|": {
+   "id": "tt1726839",
+   "rating": 7.8,
+   "votes": 17940,
+   "checked": "2026-11-17"
+  },
   "tv|macgyver|": {
    "none": true,
    "checked": "2026-11-16"
@@ -11681,6 +11755,12 @@
    "rating": 6.8,
    "votes": 13748,
    "checked": "2026-11-16"
+  },
+  "tv|new looney tunes|": {
+   "id": "tt4558858",
+   "rating": 5.8,
+   "votes": 1480,
+   "checked": "2026-11-17"
   },
   "tv|offer|": {
    "id": "tt13111040",
@@ -11861,6 +11941,12 @@
    "rating": 7.9,
    "votes": 85872,
    "checked": "2026-11-16"
+  },
+  "tv|sylvester and tweety mysteries|": {
+   "id": "tt0112186",
+   "rating": 7,
+   "votes": 5884,
+   "checked": "2026-11-17"
   },
   "tv|teenage mutant ninja turtles|": {
    "none": true,
@@ -13462,6 +13548,21 @@
     }
    }
   },
+  "tt1726839": {
+   "checked": "2026-11-17",
+   "s": {
+    "1": {
+     "rating": 7.638,
+     "votes": 7746,
+     "episodes": 26
+    },
+    "2": {
+     "rating": 7.794,
+     "votes": 5451,
+     "episodes": 26
+    }
+   }
+  },
   "tt18228732": {
    "checked": "2026-11-13",
    "s": {
@@ -13647,6 +13748,26 @@
     }
    }
   },
+  "tt4558858": {
+   "checked": "2026-11-17",
+   "s": {
+    "1": {
+     "rating": 7.24,
+     "votes": 1274,
+     "episodes": 52
+    },
+    "2": {
+     "rating": 7.354,
+     "votes": 790,
+     "episodes": 52
+    },
+    "3": {
+     "rating": 7.233,
+     "votes": 627,
+     "episodes": 52
+    }
+   }
+  },
   "tt4779762": {
    "checked": "2026-11-13",
    "s": {
@@ -13734,6 +13855,41 @@
      "rating": 7.78,
      "votes": 3164,
      "episodes": 8
+    }
+   }
+  },
+  "tt8543208": {
+   "checked": "2026-11-17",
+   "s": {
+    "1": {
+     "rating": 7.778,
+     "votes": 3025,
+     "episodes": 31
+    },
+    "2": {
+     "rating": 7.812,
+     "votes": 651,
+     "episodes": 11
+    },
+    "3": {
+     "rating": 7.692,
+     "votes": 423,
+     "episodes": 9
+    },
+    "4": {
+     "rating": 7.583,
+     "votes": 436,
+     "episodes": 10
+    },
+    "5": {
+     "rating": 7.851,
+     "votes": 419,
+     "episodes": 11
+    },
+    "6": {
+     "rating": 7.792,
+     "votes": 418,
+     "episodes": 10
     }
    }
   },
@@ -16428,6 +16584,16 @@
     "Steven Berkoff"
    ]
   },
+  "tt0072751": {
+   "checked": "2026-11-17",
+   "names": [
+    "Orson Welles",
+    "Mel Blanc",
+    "Robert Clampett",
+    "Tex Avery",
+    "Friz Freleng"
+   ]
+  },
   "tt0073015": {
    "checked": "2026-11-17",
    "names": [
@@ -17208,6 +17374,16 @@
     "Charles Lathalu Yunipingu"
    ]
   },
+  "tt0082679": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mel Blanc",
+    "Stan Freberg",
+    "June Foray",
+    "Frank Nelson",
+    "Frank Welker"
+   ]
+  },
   "tt0082766": {
    "checked": "2026-11-17",
    "names": [
@@ -17436,6 +17612,14 @@
     "Danny Pintauro",
     "Christopher Stone",
     "Ed Lauter"
+   ]
+  },
+  "tt0085390": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mel Blanc",
+    "June Foray",
+    "Les Tremayne"
    ]
   },
   "tt0085407": {
@@ -18496,6 +18680,16 @@
     "Garcelle Beauvais",
     "Feather",
     "Stephanie Simon"
+   ]
+  },
+  "tt0094939": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mel Blanc",
+    "Mel Tormé",
+    "Roy Firestone",
+    "B.J. Ward",
+    "Ben Frommer"
    ]
   },
   "tt0095036": {
@@ -20046,6 +20240,16 @@
     "Roxann Dawson",
     "Robert Duncan McNeill",
     "Ethan Phillips"
+   ]
+  },
+  "tt0112186": {
+   "checked": "2026-11-17",
+   "names": [
+    "Joe Alaskey",
+    "June Foray",
+    "Frank Welker",
+    "Jeff Bennett",
+    "Jim Cummings"
    ]
   },
   "tt0112389": {
@@ -27675,6 +27879,16 @@
     "Onni Tommila"
    ]
   },
+  "tt14851194": {
+   "checked": "2026-11-17",
+   "names": [
+    "Greg Cipes",
+    "Scott Menville",
+    "Khary Payton",
+    "Tara Strong",
+    "Hynden Walch"
+   ]
+  },
   "tt14857602": {
    "checked": "2026-11-17",
    "names": [
@@ -28283,6 +28497,16 @@
     "Emma Roberts",
     "Ed Helms",
     "Will Poulter"
+   ]
+  },
+  "tt1726839": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jeff Bergman",
+    "Bob Bergen",
+    "Fred Armisen",
+    "Kristen Wiig",
+    "Maurice LaMarche"
    ]
   },
   "tt1727776": {
@@ -30793,6 +31017,16 @@
     "Ronald Pickup"
    ]
   },
+  "tt4558858": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jeff Bergman",
+    "Dee Bradley Baker",
+    "Bob Bergen",
+    "Matthew Craig",
+    "Carlos Alazraqui"
+   ]
+  },
   "tt4581576": {
    "checked": "2026-11-17",
    "names": [
@@ -32131,6 +32365,16 @@
     "Marton Csokas",
     "Tommy Flanagan",
     "Thomas M. Wright"
+   ]
+  },
+  "tt8543208": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eric Bauza",
+    "Jeff Bergman",
+    "Bob Bergen",
+    "Fred Tatasciore",
+    "Candi Milo"
    ]
   },
   "tt8563452": {
