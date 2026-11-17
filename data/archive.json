@@ -59207,15 +59207,15 @@
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
-      "Movies Anywhere",
-      "Fandango at Home"
+      "Fandango at Home",
+      "Movies Anywhere"
     ],
     "bannerFile": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--banner.png",
     "hidden": true,
     "screenshot": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15.png",
     "locationScreenshots": {
-      "Movies Anywhere": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png",
-      "Fandango at Home": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png"
+      "Fandango at Home": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png",
+      "Movies Anywhere": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png"
     },
     "bundle": {
       "count": 5,

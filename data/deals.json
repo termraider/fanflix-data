@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T19:37:29.578Z",
+  "updatedAt": "2026-11-17T19:42:33.154Z",
   "deals": [
     {
       "id": "/c/1mj84p9mfsuno-thanksgiving-blowout-5-for-20",
@@ -46452,8 +46452,8 @@
       "bannerFile": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--banner.png",
       "screenshot": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15.png",
       "locationScreenshots": {
-        "Movies Anywhere": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png",
-        "Fandango at Home": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png"
+        "Fandango at Home": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png",
+        "Movies Anywhere": "images/1lr5j6x5hknvh-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png"
       },
       "bannerAlt": "",
       "bundle": {
@@ -46469,8 +46469,8 @@
       "canSplit": true,
       "checkoutPrice": "",
       "platforms": [
-        "Movies Anywhere",
-        "Fandango at Home"
+        "Fandango at Home",
+        "Movies Anywhere"
       ],
       "itemCount": 31,
       "items": [
