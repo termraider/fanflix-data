@@ -33191,7 +33191,20 @@
         "resolution": "HD",
         "year": 2006,
         "runtime": 92,
-        "image": "https://img.fanflix.co/PARAMOUNT/04fb8de104962a1b7575b51d69866d6a3a9d88979088daaf216e1c9476856bb8"
+        "image": "https://img.fanflix.co/PARAMOUNT/04fb8de104962a1b7575b51d69866d6a3a9d88979088daaf216e1c9476856bb8",
+        "imdb": {
+          "id": "tt0486656",
+          "rating": 5.2,
+          "votes": 5589,
+          "manual": true,
+          "cast": [
+            "Izabella Miko",
+            "Columbus Short",
+            "Jacqueline Bisset",
+            "Maria Brooks",
+            "Aubrey Dollar"
+          ]
+        }
       },
       {
         "title": "She's the Man",
@@ -40504,7 +40517,20 @@
         "resolution": "HD",
         "year": 2006,
         "runtime": 92,
-        "image": "https://img.fanflix.co/PARAMOUNT/04fb8de104962a1b7575b51d69866d6a3a9d88979088daaf216e1c9476856bb8"
+        "image": "https://img.fanflix.co/PARAMOUNT/04fb8de104962a1b7575b51d69866d6a3a9d88979088daaf216e1c9476856bb8",
+        "imdb": {
+          "id": "tt0486656",
+          "rating": 5.2,
+          "votes": 5589,
+          "manual": true,
+          "cast": [
+            "Izabella Miko",
+            "Columbus Short",
+            "Jacqueline Bisset",
+            "Maria Brooks",
+            "Aubrey Dollar"
+          ]
+        }
       },
       {
         "title": "She's the Man",
@@ -45736,7 +45762,7 @@
     "url": "https://fanflix.co/c/1mj8h2regigpa-bundle-feast",
     "firstSeen": "2026-11-17",
     "lastSeen": "2026-11-17",
-    "canSplit": false,
+    "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
       "Fandango at Home"
@@ -45745,7 +45771,663 @@
     "screenshot": "images/1mj8h2regigpa-bundle-feast.png",
     "locationScreenshots": {},
     "bundle": null,
-    "resolutions": {},
-    "items": []
+    "resolutions": {
+      "HD": 66,
+      "UHD": 41
+    },
+    "items": [
+      {
+        "title": "Paramount Pictures 50-Movie Collection",
+        "price": "$49.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/da8a5d73c3d1173a40f46ea8de7070cfbcd97552ab52fabd3f72dfcc81ff19b5"
+      },
+      {
+        "title": "Paramount Pictures 50-Movie Collection Vol. 2",
+        "price": "$49.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/559ea0e35579d75b8fedd5a47bdc737946b854b42ba14f6da43a8b7771d063b9"
+      },
+      {
+        "title": "Iconic Films of the 1950s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/0ceabc1bcd6dcd5300555aaccb5c3882d75b7a176b9632bf581cdeb045a44761"
+      },
+      {
+        "title": "Iconic Films of the 1960s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/7301c3b53d4237b03acb9b1dc7b80d21da04dd46016d8472c2fa48fdd3b42f5b"
+      },
+      {
+        "title": "Iconic Films of the 1970s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/be564355e82858b16d04b86a96c568b1e4837b97de67be1dc1e21633a313aec4"
+      },
+      {
+        "title": "Iconic Films of the 1980s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/5e4753ce919b03b264d150f0a73ff393d1f13df9581af51066ceeeefde6a79f2"
+      },
+      {
+        "title": "Iconic Films of the 1990s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/e103d71168018d9e6cb6728a5513963c4258b056d5928659a0b94480c756c02c"
+      },
+      {
+        "title": "Iconic Films of the 2000s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/c95e8750a5ebff91cd6606f3bf4bd82402f66274a786ddb672d553014c82dad4"
+      },
+      {
+        "title": "Iconic Films of the 2010s",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/ee8efa804da0727fdbabb8fc0259a19f7d54e3601ad8ae30a5c56aa70787fd4c"
+      },
+      {
+        "title": "Paramount Scares: Deep Cuts 25-Movie Collection",
+        "price": "$24.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/17500c8f6ba45bc269c10f48bf9645a2657fcd961add161092a074ea6ffa2fae"
+      },
+      {
+        "title": "Paramount Scares: Slashers & Stalkers 25-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/9d223d0f7f273173a8d4f937ceed0e7a4f0206709def65b4f248221e63ed53f5"
+      },
+      {
+        "title": "Paramount Scares, Vol. 1",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/946e6f8fe48124a28d6ef83161afb9a8251b95fe1826fb4e2e6915b3506eb7f5"
+      },
+      {
+        "title": "Paramount Scares, Vol. 2",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/411e7f3764ae61e72abea5f18b4cb255b707bf0cf2c50c38f4e3bf4b7d2ba629"
+      },
+      {
+        "title": "Monster Mania 5-Movie Collection",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/251bd1b098540af0e3cca77c7d5ae1a5c7d4c980b36c3bbbd11075b0ebfd6996"
+      },
+      {
+        "title": "Twisted Love: 5-Movie Bundle",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/adf4e6ddb26e0b36a7c926a6adad37ad37ada76731a020e5c84d09236091db89"
+      },
+      {
+        "title": "Stephen King 8-Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/e4bbf2765c6576767c71cf81b3762033ddbf4e441dc20ecd83eaf6ce7e8e3a4a"
+      },
+      {
+        "title": "Pet Sematary Double Feature",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/f8e3e3f4f86e91d9837412bfd7c97344402480b8587cc413707e7484bed7fea2"
+      },
+      {
+        "title": "Scream Trilogy",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/1329a92a5109bc3441c1f204c1265b85ce54bf665bebbf28b2e54a3351a502ac"
+      },
+      {
+        "title": "Paranormal Activity 8-Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/616b41549eebd3fcc62fb60d5717115d80a72dbd17170671af5fdb5a13c8aa5f"
+      },
+      {
+        "title": "A Quiet Place 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "year": 2024,
+        "image": "https://img.fanflix.co/PARAMOUNT/3c5927ba1b0ba22235c16ff54d03dac4f91d6f165b3da79a28e203a5e9f2e4b1"
+      },
+      {
+        "title": "Hellraiser 6-Movie Collection",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/0249eec7fbf2dd4aa901be3c0d737f6a249211b2774bb978d4655339eb9470cd"
+      },
+      {
+        "title": "Halloween 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/a824552ed4058d56a652df62cf541d8a93dc8da2ae3a53f32a2e24282f13dc4f"
+      },
+      {
+        "title": "Children of the Corn 6-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/9e759dc04abc2b3b7f7269f55e790bba2780e7e08d28de34a2a6d8cf3d5570b9"
+      },
+      {
+        "title": "Mimic 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/02091c9223294689be7230385d406d7f6e898f6a41454f8c4e9b584304e28402"
+      },
+      {
+        "title": "The Ring 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/07e02aefc9bb58786e68aada4df6244579c529d36e4c0cae70c6ed74d4426e55"
+      },
+      {
+        "title": "The Prophecy 5-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/e10eac18c16b02eaa66dc3b26f80867bb3372ae452dcb9fa288185f69787458a"
+      },
+      {
+        "title": "Dracula 3-Movie Collection",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/f9bd473a885f9bcc02764641177dccf9851b1e2225a57c388fb0dc5f4d14fbf8"
+      },
+      {
+        "title": "25 Kick A$$ Action Movies",
+        "price": "$24.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/9a71b13252d923906958687bb1e5c50e7cb0a154a3b9a1b9ef6a441ed11e4dc9"
+      },
+      {
+        "title": "Epic Odysseys - 10 Movies (Bundle)",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/ac639c9cce33911a7009c2b12ca959db897c533226d646833a8ae636ed89f5c1"
+      },
+      {
+        "title": "Indiana Jones 4-Movie Collection",
+        "price": "$19.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/bde5cfc9aac14b5bac93a1430a6f6a74fa3ac66660b7dc357fa3935999669d3a"
+      },
+      {
+        "title": "Bruce Lee: 5 Movie Collection",
+        "price": "$9.99",
+        "resolution": "HD",
+        "year": 2020,
+        "image": "https://img.fanflix.co/PARAMOUNT/983189c86613bfbc512c1b1a82ee9dc9c0adb539e28f787f8426f9ee2005805d"
+      },
+      {
+        "title": "Jackie Chan - 10 Movies (Bundle)",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/ba060479c2e6dea173522cead690464e8a0d67dea056642017f7484bb534bea6"
+      },
+      {
+        "title": "Tiger Style 4-Movie Collection",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "year": 2024,
+        "runtime": 417,
+        "image": "https://img.fanflix.co/PARAMOUNT/a7831008f977c23778d3b661c7f5f060f8eacf84fe4110c85aa9c498d0393d8b"
+      },
+      {
+        "title": "The Crow 3-Movie Collection",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/537f39127f6b2beef1f00754345e886028c7bbd069250d13564233798faadce5"
+      },
+      {
+        "title": "Gladiator II / Gladiator (Bundle)",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "year": 2024,
+        "image": "https://img.fanflix.co/PARAMOUNT/ea050a39f1f4a18e10562c3d252955504bf4a74d359e5129c4dd79a567a764d4"
+      },
+      {
+        "title": "Fierce Heroines 5-Movie Collection",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/f91a3998523a3346097b016db7d60cd1f6a13c31b874e8aedbf3140685cf0ccc"
+      },
+      {
+        "title": "Aeon Flux + Ghost in the Shell 2-Pack",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/854f8668068bac3cc4ddcbdc77c95222f805ec0f29b2ef71e321a54f7387b963"
+      },
+      {
+        "title": "Lara Croft: Tomb Raider Double Feature",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/85b9239e4c8ddb4dead46017aad3c368b20c274e388b8645208fcbf8ba3d0a90"
+      },
+      {
+        "title": "One Mile 2-Movie Collection",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/762e26b4e3cd25f6096a6484e9fc10476057f52ad8c28db86a267a8ba35b7440"
+      },
+      {
+        "title": "Hansel and Gretel + Scouts Guide Double Feature",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/4a5591c5916432a4320da64a107bfe35fb1f567316d31749b5e4807c08524b22"
+      },
+      {
+        "title": "Basketball Double Dribble",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/5910abc55fabfc0d72f3c24a1344ef9256cb82ddd4519d7267d9e587dde6913e"
+      },
+      {
+        "title": "An Inconvenient Truth Double Feature",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/cb7e9d731e211bb650957a5cc615003e7388957dd735862b88bf56543a29ab51"
+      },
+      {
+        "title": "Classic Noir - 15 Movie Bundle",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/f961e8d521752c2443a05e08b046a532f7a91b510fb3b8350db2659e9e24318a"
+      },
+      {
+        "title": "Modern Noir 10 Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/ec008900266d3e926e3ebc0861dd578129b5b1f3397220c0d9dc3c1007a17243"
+      },
+      {
+        "title": "Sherlock Holmes 13-Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/c57717fca295797778264f3f6a0c7cbc357eccf7dea2a6117d93eb38dc034784"
+      },
+      {
+        "title": "The Godfather Trilogy",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/0f78a83be1a2657155469c2526af572e66549262130b1f6c57f5daae5f198e85"
+      },
+      {
+        "title": "John Wayne 35-Movie Collection",
+        "price": "$34.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/9f11cedaf02ec7fc8231d116ced574b61083a9ce8fd1efbaca7fd6db4e6446be"
+      },
+      {
+        "title": "John Wayne Essential Westerns 5-Pack",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/7a32269d4335d17aac01476f74396fa745c16243b9356f2daeccc5397f7b1b2a"
+      },
+      {
+        "title": "John Wayne - Essential War Movies 5-Pack",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/d790187c23201d2173416fbd29534f4f854bf6a831cb52f570329ae7fc64d62e"
+      },
+      {
+        "title": "Steve McQueen 5-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/bd2a1ecc421a7d344444dd8db8d8f85a3e8757e5275286abcc75c94c2fb5b1e2"
+      },
+      {
+        "title": "Robert Redford 10 Movie Collection",
+        "price": "$12.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/1a61bb81774b2c6bbac960a4b9a2ae1bab911d36c7bcd73c6a04993770a15d14"
+      },
+      {
+        "title": "William Holden 15-Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/74dcb09d3ee6516ba4f22635f37ef52aa09cc397d9da1ec69474b9b5de0d402e"
+      },
+      {
+        "title": "Johnny Depp 6 Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/4d4513048f584fc78abcc04d9314ccc3252940037f0afbfc8b743f2e9a0da75c"
+      },
+      {
+        "title": "Morgan Freeman 3-Movie Collection",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/4283048a44d2dbc56c681c6dc320d65d3ac30981094cc56786bb71786fe7061b"
+      },
+      {
+        "title": "Alex Cross Double Feature",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/ec463b83a71d7f71f3dfbc66c30ebf576e6b52c8d57ca3cde77a1585a110e274"
+      },
+      {
+        "title": "Coen Brothers 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/d358455daa95d60ba9f582b0894167c1488ce035e9780668944d4271481ae06f"
+      },
+      {
+        "title": "Star Trek: 1-10 Collection (Bundle)",
+        "price": "$19.99",
+        "resolution": "UHD",
+        "year": 1979,
+        "image": "https://img.fanflix.co/PARAMOUNT/db64df19de636df636fcf6980ca9c9693cdc83d43e8e4736d57daee967d32967"
+      },
+      {
+        "title": "Star Trek: The Original Motion Picture 6-Pack",
+        "price": "$17.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/92005b9d447141dd34dd0ee696eb6726188cd366973492146dac6530deaa1ea0"
+      },
+      {
+        "title": "Star Trek: The Next Generation 4-Pack",
+        "price": "$14.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/5b1f9a3860b3553a544d69fb4126b6d9e03df3cd5b07dae6abe39b9f52ad4dee"
+      },
+      {
+        "title": "Star Trek Trilogy",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/845e8671999727cb255c6584ce16b3900ef894e7c7ffd05cff3051514c3b4e0b"
+      },
+      {
+        "title": "Mission: Impossible 6-Movie Collection",
+        "price": "$24.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/c17bfd6a571324305f9040b53e34ae002f61413d960d68a7ea1c4c7510812cd5"
+      },
+      {
+        "title": "Mission: Impossible 1-3 Movie Bundle",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/0197c64c8844c0e0b67f66fd5bbe817ecd0860980455da0fa64052a90503e838"
+      },
+      {
+        "title": "Mission: Impossible 4-6 Movie Bundle",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/21cbba3ac11e3386ff6d469a37fd4dddf2a278c9ebaaed408169820d79296c13"
+      },
+      {
+        "title": "M:I - Dead Reckoning + Final Reckoning 2-Pack",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/9b8be33c50c2eab74d307e34e1b2420fec9c64b6d87a6436c790e99fbe732275"
+      },
+      {
+        "title": "Top Gun Double Feature",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/cdf3e1f1015969e6da255c60aa4671239ccd7565912a1ec14a47359b5e949e55"
+      },
+      {
+        "title": "Tom Cruise 4-Movie Collection (Bundle)",
+        "price": "$14.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/5c2d8c3889fc7c917b64161b82fce140ce737dccf812f527fdfcb8e129955421"
+      },
+      {
+        "title": "Transformers 7-Movie Collection",
+        "price": "$24.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/b60b7443cdf9da6aa2fe522acf985dcdaba96c1b04149d26ad0f5a2d189f2687"
+      },
+      {
+        "title": "Bumblebee + Transformers 6-Pack",
+        "price": "$19.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/2be0b62b126521c8da0ff153ac4476d6c1ee7621fa9f52caa2af36b5afd3b401"
+      },
+      {
+        "title": "Transformers 5-Movie Collection (Bundle)",
+        "price": "$17.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/09444a4b2b7f4efe84350b54f0556e61205e9e3c8e14ca35e1f7008b23f669f1"
+      },
+      {
+        "title": "G.I. JOE 3-MOVIE COLLECTION",
+        "price": "$14.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/cb4cb8d372e950285e047ba741f34a20dfc9e460aa243b4b2156ef52f7474e84"
+      },
+      {
+        "title": "Jack Ryan 5 Movie Collection",
+        "price": "$17.99",
+        "resolution": "UHD",
+        "year": 2017,
+        "image": "https://img.fanflix.co/PARAMOUNT/f419a8c040f600999957884b03e319084049bf3b87b7b2d71fd7d1b685b8a852"
+      },
+      {
+        "title": "The Naked Gun (2025 + 1988) - 2-Pack",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/a9155695bc2e004e2ca0d3b605c649a3eb17715726ea195eb9b4f41a62ed71c4"
+      },
+      {
+        "title": "The Naked Gun Trilogy (Bundle)",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/5a43e28c1a67b364f638f021c8a5ca054fa6b661015f13289e8434ca780c3b82"
+      },
+      {
+        "title": "The Jackass Cinematic Universe - 14 Movies",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/e118e24d9c187a6dfcf338a98507acebe6b96931c00fceb71b9f3fb7a7a32cea"
+      },
+      {
+        "title": "Jackass 4-Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/723730bb7d7bd13b6a25ee78d69090f1fcf662b724973cc1c61f15ba33d10415"
+      },
+      {
+        "title": "Jack Black 5-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/f0825be40e541ec18ef25b8c1858f59e5caaed9077500eac0f5ea05d70771074"
+      },
+      {
+        "title": "Will Ferrell 4-Movie Collection",
+        "price": "$17.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/6f93c2a101fba9fee14bf039400095ee0feee7602041f8675a1fbe774e290c09"
+      },
+      {
+        "title": "Ben Stiller Double Feature",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/c5e3090a149d28dfc16f4ca098d4d3e93409a880de40631640e14f72fb0decbf"
+      },
+      {
+        "title": "John Hughes 5-Film Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/13e0e4bdb6d6d7957a8fb798cddba7d785930cb1d1cc52177b8bdf7f9cbe1c97"
+      },
+      {
+        "title": "4 Spoofs (Bundle)",
+        "price": "$17.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/c80d36ef3f5732eab7cd69e154e1a0bd05939aa916663aab166f5bd34807ab27"
+      },
+      {
+        "title": "College Crack-Ups 4-Movie Collection",
+        "price": "$12.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/6552765424d2611ae139cba65d8165493b987a399d0fe6a08c26d261ad5e25a9"
+      },
+      {
+        "title": "Scary Movie Trilogy",
+        "price": "$12.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/992390c471f34b8f4dcbdecfd72c40277eec10bfb5b9abb37553288c5bc0122f"
+      },
+      {
+        "title": "Beverly Hills Cop Trilogy",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/d94f1f5e1e426c88d0c924416ef7d0d2628ee9a3ed754c901812b1b03587c460"
+      },
+      {
+        "title": "Nobody's Fool + What Men Want 2-Pack",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/d548d5872f59e6aa2cd4aeb37b69e68d98b695a0c8061eb09a2bdf18d5eee9e5"
+      },
+      {
+        "title": "Down to Earth + Heaven Can Wait 2-Pack",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/443e1b7cd8fa1299804beecc3c770a6bef1f3ce104d1e3a6c2b6af1e61674bee"
+      },
+      {
+        "title": "Tom Hanks 4-Movie Collection (Bundle)",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/2501d18d5587d790eab6eb2634871ae0042a8bce46c56b263e4a86f2f0932fa5"
+      },
+      {
+        "title": "Rom Com 5-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/ed40a4fe86276d83c9871bf450c45476e6aabcd53e1bb0231e21c2b4704b79c0"
+      },
+      {
+        "title": "Audrey Hepburn 7-Movie Collection",
+        "price": "$24.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/7fa078a34a61c736c50d6afe9fcf16594c3e53cd399a4dec066bde61b7c54c17"
+      },
+      {
+        "title": "Elvis 8-Movie Collection",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/4ab9cd1f6483eb3c060df7fa2b2a98a1985845f51be74a431e8a1e4887527554"
+      },
+      {
+        "title": "Neil Simon 10 Movie Collection",
+        "price": "$12.99",
+        "resolution": "HD",
+        "year": 2020,
+        "image": "https://img.fanflix.co/PARAMOUNT/4ec2159d0b97705de87c4d2dbca408b1d3e59757d85c71048ce58fcf18df881c"
+      },
+      {
+        "title": "Broadway Bundle Vol. 1",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/e9fa3fe6f7beb625c223d36a3a0d0b662d11e56e502ade8af6912807f33eb50b"
+      },
+      {
+        "title": "Broadway Bundle Vol. 2",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/c5aae58ae2fd36bd7e91b11250deb319f955d273f61ae519126c9fcfcd49c0e1"
+      },
+      {
+        "title": "Mean Girls (2024 + 2004) Double Feature",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/2edc292f0b79e780501ee651a3e5a5b0c2bdba81a7f20f0fcc5a994f51061ba5"
+      },
+      {
+        "title": "Flashdance + Footloose 2-Pack",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/6b53b8367e3dd07ac4d5375b1b86a6e030b7f6f6c4e08e68ff5f83fdcd0ea21d"
+      },
+      {
+        "title": "Saturday Night Fever + Staying Alive 2-Pack",
+        "price": "$9.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/e9e081f54ec8f9e2a309bdadab87bba313fcba1c22d1b03f1a9b208d44f67b00"
+      },
+      {
+        "title": "80 for Brady + Book Club Double Feature",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/146b2b0c7be6d486afdaa2b59611ed9698b6cafcce75fc9debbb1c49216c47c6"
+      },
+      {
+        "title": "Sonic the Hedgehog 3-Movie Collection",
+        "price": "$14.99",
+        "resolution": "UHD",
+        "year": 2025,
+        "runtime": 331,
+        "image": "https://img.fanflix.co/PARAMOUNT/3fdc10987115b6c5ee5f38387721445aee82a2266e4e2593bc0ad8851efab19e"
+      },
+      {
+        "title": "Animal Adventures 10-Movie Collection",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/6abe38a0d22d9290da9f0ebd5fb192ebe813c568fd6d674d051417955f343022"
+      },
+      {
+        "title": "Dean Martin + Jerry Lewis 8-Pack",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/8330aef6f3acbf89283913869ea1b3d00be63dacc98af8e801aad2f124114325"
+      },
+      {
+        "title": "JERRY LEWIS 10-MOVIE COLLECTION",
+        "price": "$19.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/d0058981025f9fab093d80207f00fd46db9e649c8c9d7c4972ca10b6c0538991"
+      },
+      {
+        "title": "Bad News Bears 4-Movie Collection",
+        "price": "$17.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/fb77c5a0364a9e36f066d67fa57b9b042f5fc6168d85f7119de1113d8b4d9aab"
+      },
+      {
+        "title": "Spy Kids 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/1066af495b1202091155231fd934791fdef80e40ae4c293c23f03bb52eda6120"
+      },
+      {
+        "title": "Masters of Myth & Magic - 6 Movies",
+        "price": "$9.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/be71aa5f20c3b6357ef25e0fbe3fe2a354cf548124179f8ae1bcd7a9c2d079af"
+      },
+      {
+        "title": "The Little Prince (2016 + 1974) Double Feature",
+        "price": "$7.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/a9f28619613f11e379cba8892c7d10a6b1832bb3d4ea5b15c325a857d7d0a85d"
+      },
+      {
+        "title": "Rugrats 3-Movie Collection",
+        "price": "$12.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/7be710e75f58cbd83984cabe7e04f1d81da08942dc43c698fe93332058d6d23a"
+      },
+      {
+        "title": "Snoopy 4-Movie Collection",
+        "price": "$14.99",
+        "resolution": "HD",
+        "image": "https://img.fanflix.co/PARAMOUNT/9a9085a808708064a51feacab2c940346758fb4abbb23ce6b3162d81cfcdc593"
+      },
+      {
+        "title": "Clifford the Big Red Dog + Paw Patrol: The Movie Double Feature",
+        "price": "$7.99",
+        "resolution": "UHD",
+        "image": "https://img.fanflix.co/PARAMOUNT/f288b888782ef196a3fdfc46492faae31f3c17b4a37dbdc6b0bb979c0cc14a81"
+      }
+    ]
   }
 }

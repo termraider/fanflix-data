@@ -72,11 +72,19 @@
    "votes": 11135,
    "checked": "2026-11-13"
   },
+  "m|25 kick a action movies|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|300|2007": {
    "id": "tt0416449",
    "rating": 7.6,
    "votes": 924683,
    "checked": "2026-11-13"
+  },
+  "m|4 spoofs|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|40 days and 40 nights|": {
    "id": "tt0243736",
@@ -407,6 +415,10 @@
    "rating": 7.2,
    "votes": 8364,
    "checked": "2026-11-13"
+  },
+  "m|aeon flux ghost in the shell 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|aeon flux|2005": {
    "none": true,
@@ -937,6 +949,10 @@
    "rating": 6.5,
    "votes": 69652,
    "checked": "2026-11-13"
+  },
+  "m|basketball double dribble|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|battle hymn|1957": {
    "id": "tt0050171",
@@ -1575,6 +1591,10 @@
    "rating": 7.4,
    "votes": 82327,
    "checked": "2026-11-13"
+  },
+  "m|bumblebee transformers 6 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|bumblebee|2018": {
    "id": "tt4701182",
@@ -2286,6 +2306,10 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|dean martin jerry lewis 8 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|dear david|2023": {
    "id": "tt9288740",
    "rating": 3.9,
@@ -2510,6 +2534,10 @@
    "id": "tt0918927",
    "rating": 7.5,
    "votes": 149270,
+   "checked": "2026-11-17"
+  },
+  "m|down to earth heaven can wait 2 pack|": {
+   "none": true,
    "checked": "2026-11-17"
   },
   "m|down to earth|": {
@@ -2818,6 +2846,10 @@
    "id": "tt0326856",
    "rating": 4.8,
    "votes": 33789,
+   "checked": "2026-11-17"
+  },
+  "m|epic odysseys 10 movies|": {
+   "none": true,
    "checked": "2026-11-17"
   },
   "m|equilibrium|2002": {
@@ -3143,6 +3175,10 @@
    "rating": 5.4,
    "votes": 8021,
    "checked": "2026-11-13"
+  },
+  "m|flashdance footloose 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|fletch|": {
    "id": "tt0089155",
@@ -3531,6 +3567,10 @@
    "rating": 7.8,
    "votes": 536447,
    "checked": "2026-11-13"
+  },
+  "m|gladiator ii gladiator|2024": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|gladiator ii|2024": {
    "id": "tt9218128",
@@ -4308,6 +4348,34 @@
    "votes": 13127,
    "checked": "2026-11-13"
   },
+  "m|iconic films of the 1950s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1960s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1970s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1980s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1990s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 2000s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 2010s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|if|2024": {
    "id": "tt11152168",
    "rating": 6.4,
@@ -4650,6 +4718,10 @@
    "votes": 15246,
    "checked": "2026-11-13"
   },
+  "m|jackass cinematic universe 14 movies|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|jackass forever|": {
    "id": "tt11466222",
    "rating": 6.8,
@@ -4684,6 +4756,10 @@
    "id": "tt0322802",
    "rating": 6.6,
    "votes": 108032,
+   "checked": "2026-11-17"
+  },
+  "m|jackie chan 10 movies|": {
+   "none": true,
    "checked": "2026-11-17"
   },
   "m|jackie chans project a|1983": {
@@ -4811,6 +4887,14 @@
    "rating": 7.1,
    "votes": 157602,
    "checked": "2026-11-13"
+  },
+  "m|john wayne essential war movies 5 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|john wayne essential westerns 5 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|johnny english reborn|": {
    "id": "tt1634122",
@@ -5462,6 +5546,10 @@
    "votes": 5096,
    "checked": "2026-11-13"
   },
+  "m|m i dead reckoning final reckoning 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|mac and devin go to high school|2012": {
    "id": "tt1870425",
    "rating": 4.5,
@@ -5574,6 +5662,10 @@
    "id": "tt0074860",
    "rating": 7.4,
    "votes": 76999,
+   "checked": "2026-11-17"
+  },
+  "m|masters of myth and magic 6 movies|": {
+   "none": true,
    "checked": "2026-11-17"
   },
   "m|matrix|1999": {
@@ -6004,6 +6096,10 @@
    "none": true,
    "checked": "2026-11-17"
   },
+  "m|naked gun 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|naked gun 33 1 3 the final insult|1994": {
    "id": "tt0110622",
    "rating": 6.5,
@@ -6178,6 +6274,10 @@
    "id": "tt1411238",
    "rating": 6.2,
    "votes": 257756,
+   "checked": "2026-11-17"
+  },
+  "m|nobodys fool what men want 2 pack|": {
+   "none": true,
    "checked": "2026-11-17"
   },
   "m|north dallas forty|": {
@@ -6449,6 +6549,14 @@
    "rating": 6.6,
    "votes": 16468,
    "checked": "2026-11-13"
+  },
+  "m|paramount scares vol 1|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|paramount scares vol 2|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|paranormal activity 2|2010": {
    "id": "tt1536044",
@@ -7442,6 +7550,10 @@
    "votes": 549,
    "checked": "2026-11-17"
   },
+  "m|saturday night fever staying alive 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|saturday night fever|1977": {
    "id": "tt0076666",
    "rating": 6.8,
@@ -8287,6 +8399,14 @@
    "rating": 3.8,
    "votes": 19543,
    "checked": "2026-11-16"
+  },
+  "m|star trek the next generation 4 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|star trek the original motion picture 6 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|stardust|2007": {
    "id": "tt0486655",
@@ -10503,6 +10623,11 @@
    "rating": 4.5,
    "votes": 1303,
    "checked": "2026-11-13"
+  },
+  "tt0486656": {
+   "rating": 5.2,
+   "votes": 5589,
+   "checked": "2026-11-17"
   },
   "tt0765429": {
    "rating": 7.8,
@@ -21769,6 +21894,16 @@
     "Sienna Miller",
     "Ian McKellen",
     "Bimbo Hart"
+   ]
+  },
+  "tt0486656": {
+   "checked": "2026-11-17",
+   "names": [
+    "Izabella Miko",
+    "Columbus Short",
+    "Jacqueline Bisset",
+    "Maria Brooks",
+    "Aubrey Dollar"
    ]
   },
   "tt0486657": {
