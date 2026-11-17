@@ -72,11 +72,19 @@
    "votes": 11135,
    "checked": "2026-11-13"
   },
+  "m|25 kick a action movies|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|300|2007": {
    "id": "tt0416449",
    "rating": 7.6,
    "votes": 924683,
    "checked": "2026-11-13"
+  },
+  "m|4 spoofs|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|40 days and 40 nights|": {
    "id": "tt0243736",
@@ -154,6 +162,12 @@
    "votes": 14281,
    "checked": "2026-11-13"
   },
+  "m|80 for brady|2023": {
+   "id": "tt18079362",
+   "rating": 5.9,
+   "votes": 14282,
+   "checked": "2026-11-17"
+  },
   "m|9|2009": {
    "id": "tt0472033",
    "rating": 7,
@@ -165,6 +179,12 @@
    "rating": 8.2,
    "votes": 1068477,
    "checked": "2026-11-13"
+  },
+  "m|a boy named charlie brown|1969": {
+   "id": "tt0064107",
+   "rating": 7.3,
+   "votes": 6307,
+   "checked": "2026-11-17"
   },
   "m|a cinderella story once upon a song|2011": {
    "none": true,
@@ -200,6 +220,12 @@
    "votes": 278754,
    "checked": "2026-11-13"
   },
+  "m|a house on the bayou|2021": {
+   "id": "tt14405338",
+   "rating": 5.6,
+   "votes": 8357,
+   "checked": "2026-11-17"
+  },
   "m|a little princess|1995": {
    "id": "tt0113670",
    "rating": 7.6,
@@ -217,6 +243,12 @@
    "rating": 6.1,
    "votes": 212995,
    "checked": "2026-11-13"
+  },
+  "m|a new leaf|1971": {
+   "id": "tt0067482",
+   "rating": 7.3,
+   "votes": 9138,
+   "checked": "2026-11-17"
   },
   "m|a nightmare on elm street|1984": {
    "id": "tt0087800",
@@ -284,6 +316,12 @@
    "votes": 12789,
    "checked": "2026-11-13"
   },
+  "m|a walk on the moon|1999": {
+   "id": "tt0120613",
+   "rating": 6.6,
+   "votes": 9942,
+   "checked": "2026-11-17"
+  },
   "m|a woman a gun and a noodle shop|": {
    "id": "tt1428556",
    "rating": 5.6,
@@ -307,6 +345,12 @@
    "rating": 7.3,
    "votes": 406111,
    "checked": "2026-11-13"
+  },
+  "m|accused|1988": {
+   "id": "tt0094608",
+   "rating": 7.1,
+   "votes": 43811,
+   "checked": "2026-11-17"
   },
   "m|aces high|": {
    "id": "tt0075627",
@@ -350,17 +394,31 @@
    "votes": 175760,
    "checked": "2026-11-13"
   },
+  "m|adventureland|2009": {
+   "id": "tt1091722",
+   "rating": 6.8,
+   "votes": 175777,
+   "checked": "2026-11-17"
+  },
   "m|adventures of robin hood|1938": {
    "id": "tt0029843",
    "rating": 7.9,
    "votes": 58445,
    "checked": "2026-11-13"
   },
+  "m|adventures of sharkboy and lavagirl|2005": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|adventures of sherlock holmes|": {
    "id": "tt0031022",
    "rating": 7.2,
    "votes": 8364,
    "checked": "2026-11-13"
+  },
+  "m|aeon flux ghost in the shell 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|aeon flux|2005": {
    "none": true,
@@ -426,17 +484,35 @@
    "votes": 61807,
    "checked": "2026-11-13"
   },
+  "m|airplane|1980": {
+   "id": "tt0080339",
+   "rating": 7.7,
+   "votes": 294430,
+   "checked": "2026-11-17"
+  },
   "m|alice sweet alice|1976": {
    "id": "tt0076150",
    "rating": 6.4,
    "votes": 15581,
    "checked": "2026-11-13"
   },
+  "m|all i want for christmas|1991": {
+   "id": "tt0101301",
+   "rating": 5.9,
+   "votes": 6194,
+   "checked": "2026-11-17"
+  },
   "m|all quiet on the western front|1930": {
    "id": "tt0020629",
    "rating": 8.1,
    "votes": 73102,
    "checked": "2026-11-13"
+  },
+  "m|all the devils are here|2025": {
+   "id": "tt26896414",
+   "rating": 5.4,
+   "votes": 2720,
+   "checked": "2026-11-17"
   },
   "m|all the presidents men|1976": {
    "id": "tt0074119",
@@ -449,6 +525,12 @@
    "rating": 7.1,
    "votes": 182321,
    "checked": "2026-11-13"
+  },
+  "m|alma and the wolf|2025": {
+   "id": "tt31849867",
+   "rating": 4.7,
+   "votes": 1159,
+   "checked": "2026-11-17"
   },
   "m|alpha and omega|2010": {
    "id": "tt1213012",
@@ -483,6 +565,12 @@
   "m|american gangster unrated|2008": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|american gigolo|1980": {
+   "id": "tt0080365",
+   "rating": 6.3,
+   "votes": 31605,
+   "checked": "2026-11-17"
   },
   "m|american graffiti|1973": {
    "id": "tt0069704",
@@ -548,6 +636,36 @@
    "votes": 7292,
    "checked": "2026-11-13"
   },
+  "m|an inconvenient truth|2006": {
+   "id": "tt0497116",
+   "rating": 7.4,
+   "votes": 87406,
+   "checked": "2026-11-17"
+  },
+  "m|an officer and a gentleman|1982": {
+   "id": "tt0084434",
+   "rating": 7.1,
+   "votes": 67419,
+   "checked": "2026-11-17"
+  },
+  "m|an unfinished life|2005": {
+   "id": "tt0350261",
+   "rating": 7,
+   "votes": 36782,
+   "checked": "2026-11-17"
+  },
+  "m|anchorman 2 the legend continues|2013": {
+   "id": "tt1229340",
+   "rating": 6.3,
+   "votes": 204269,
+   "checked": "2026-11-17"
+  },
+  "m|anchorman the legend of ron burgundy|2004": {
+   "id": "tt0357413",
+   "rating": 7.1,
+   "votes": 406553,
+   "checked": "2026-11-17"
+  },
   "m|angel and the badman|": {
    "id": "tt0039152",
    "rating": 6.8,
@@ -571,6 +689,12 @@
    "rating": 6.4,
    "votes": 13309,
    "checked": "2026-11-13"
+  },
+  "m|angelas ashes|2000": {
+   "id": "tt0145653",
+   "rating": 7.3,
+   "votes": 24739,
+   "checked": "2026-11-17"
   },
   "m|anger management|": {
    "id": "tt0305224",
@@ -624,6 +748,12 @@
    "votes": 22908,
    "checked": "2026-11-13"
   },
+  "m|apartment 7a|2024": {
+   "id": "tt14371860",
+   "rating": 5.9,
+   "votes": 21614,
+   "checked": "2026-11-17"
+  },
   "m|apocalypse now final cut|": {
    "none": true,
    "checked": "2026-11-13"
@@ -650,6 +780,10 @@
    "votes": 20451,
    "checked": "2026-11-13"
   },
+  "m|arabian knight|1995": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|area 51|2015": {
    "id": "tt1519461",
    "rating": 4.3,
@@ -661,6 +795,12 @@
    "rating": 7.7,
    "votes": 675989,
    "checked": "2026-11-13"
+  },
+  "m|arnold|1973": {
+   "id": "tt0069732",
+   "rating": 5.9,
+   "votes": 869,
+   "checked": "2026-11-17"
   },
   "m|arrival|1996": {
    "id": "tt0115571",
@@ -685,6 +825,12 @@
    "rating": 7.1,
    "votes": 20240,
    "checked": "2026-11-13"
+  },
+  "m|ask the dust|2006": {
+   "id": "tt0384814",
+   "rating": 5.7,
+   "votes": 10567,
+   "checked": "2026-11-17"
   },
   "m|assassin club|2023": {
    "id": "tt7720142",
@@ -722,11 +868,29 @@
    "votes": 277216,
    "checked": "2026-11-13"
   },
+  "m|avatar aang the last airbender|2026": {
+   "id": "tt18259538",
+   "rating": 7.7,
+   "votes": 33556,
+   "checked": "2026-11-17"
+  },
   "m|babel|2006": {
    "id": "tt0449467",
    "rating": 7.4,
    "votes": 332129,
    "checked": "2026-11-13"
+  },
+  "m|babylon|2022": {
+   "id": "tt10640346",
+   "rating": 7.1,
+   "votes": 211809,
+   "checked": "2026-11-17"
+  },
+  "m|back to the beach|1987": {
+   "id": "tt0092608",
+   "rating": 6,
+   "votes": 3809,
+   "checked": "2026-11-17"
   },
   "m|bad apples|2026": {
    "id": "tt29714073",
@@ -734,9 +898,39 @@
    "votes": 7804,
    "checked": "2026-11-13"
   },
+  "m|bad news bears|2005": {
+   "id": "tt0408524",
+   "rating": 5.8,
+   "votes": 24876,
+   "checked": "2026-11-17"
+  },
+  "m|bad santa 2|2016": {
+   "id": "tt1798603",
+   "rating": 5.6,
+   "votes": 32197,
+   "checked": "2026-11-17"
+  },
+  "m|bad santa|2003": {
+   "id": "tt0307987",
+   "rating": 7,
+   "votes": 169239,
+   "checked": "2026-11-17"
+  },
   "m|bait|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|barbarella|1968": {
+   "id": "tt0062711",
+   "rating": 5.9,
+   "votes": 41487,
+   "checked": "2026-11-17"
+  },
+  "m|barefoot in the park|1967": {
+   "id": "tt0061385",
+   "rating": 7,
+   "votes": 23286,
+   "checked": "2026-11-17"
   },
   "m|barnyard|2006": {
    "id": "tt0414853",
@@ -756,6 +950,10 @@
    "votes": 69652,
    "checked": "2026-11-13"
   },
+  "m|basketball double dribble|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|battle hymn|1957": {
    "id": "tt0050171",
    "rating": 6.3,
@@ -768,6 +966,12 @@
    "votes": 272701,
    "checked": "2026-11-13"
   },
+  "m|bau artist at war|2024": {
+   "id": "tt8839576",
+   "rating": 5.5,
+   "votes": 519,
+   "checked": "2026-11-17"
+  },
   "m|bay|2012": {
    "id": "tt1713476",
    "rating": 5.7,
@@ -779,6 +983,12 @@
    "rating": 5.6,
    "votes": 49603,
    "checked": "2026-11-13"
+  },
+  "m|beastly|2011": {
+   "id": "tt1152398",
+   "rating": 5.5,
+   "votes": 82505,
+   "checked": "2026-11-17"
   },
   "m|beau geste|1939": {
    "id": "tt0031088",
@@ -795,6 +1005,12 @@
   "m|beavis and butthead do america|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|bebes kids|1992": {
+   "id": "tt0103783",
+   "rating": 5.9,
+   "votes": 5946,
+   "checked": "2026-11-17"
   },
   "m|becoming led zeppelin|": {
    "id": "tt10365912",
@@ -825,6 +1041,12 @@
    "rating": 7.7,
    "votes": 372520,
    "checked": "2026-11-13"
+  },
+  "m|bells of st marys|1945": {
+   "id": "tt0037536",
+   "rating": 7.2,
+   "votes": 10725,
+   "checked": "2026-11-17"
   },
   "m|ben hur|1959": {
    "id": "tt0052618",
@@ -884,6 +1106,18 @@
    "votes": 11116,
    "checked": "2026-11-13"
   },
+  "m|better man|2025": {
+   "id": "tt14260836",
+   "rating": 7.5,
+   "votes": 48305,
+   "checked": "2026-11-17"
+  },
+  "m|better off dead|1986": {
+   "id": "tt0088794",
+   "rating": 7.1,
+   "votes": 54516,
+   "checked": "2026-11-17"
+  },
   "m|beverly hills cop ii|1987": {
    "id": "tt0092644",
    "rating": 6.6,
@@ -938,6 +1172,18 @@
    "votes": 16220,
    "checked": "2026-11-13"
   },
+  "m|big short|2015": {
+   "id": "tt1596363",
+   "rating": 7.8,
+   "votes": 551620,
+   "checked": "2026-11-17"
+  },
+  "m|big top pee wee|1988": {
+   "id": "tt0094744",
+   "rating": 5.2,
+   "votes": 10963,
+   "checked": "2026-11-17"
+  },
   "m|billboard dad|1998": {
    "none": true,
    "checked": "2026-11-13"
@@ -975,6 +1221,12 @@
   "m|black sheep|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|black sheep|1996": {
+   "id": "tt0115697",
+   "rating": 6.2,
+   "votes": 46639,
+   "checked": "2026-11-17"
   },
   "m|blade runner 2049|2017": {
    "id": "tt1856101",
@@ -1102,6 +1354,12 @@
    "votes": 8812,
    "checked": "2026-11-13"
   },
+  "m|body cam|2020": {
+   "id": "tt8179024",
+   "rating": 5.3,
+   "votes": 8774,
+   "checked": "2026-11-17"
+  },
   "m|body double|": {
    "id": "tt0086984",
    "rating": 6.8,
@@ -1130,6 +1388,12 @@
    "votes": 311473,
    "checked": "2026-11-13"
   },
+  "m|book club|2018": {
+   "id": "tt6857166",
+   "rating": 6.1,
+   "votes": 35369,
+   "checked": "2026-11-17"
+  },
   "m|book of eli|2010": {
    "id": "tt1037705",
    "rating": 6.8,
@@ -1153,6 +1417,12 @@
    "rating": 7.2,
    "votes": 126770,
    "checked": "2026-11-13"
+  },
+  "m|bounce|2000": {
+   "id": "tt0186894",
+   "rating": 5.8,
+   "votes": 22929,
+   "checked": "2026-11-17"
   },
   "m|bound|1996": {
    "id": "tt0115736",
@@ -1178,6 +1448,18 @@
    "votes": 109713,
    "checked": "2026-11-13"
   },
+  "m|brady bunch movie|1995": {
+   "id": "tt0112572",
+   "rating": 6.3,
+   "votes": 26669,
+   "checked": "2026-11-17"
+  },
+  "m|brain donors|1992": {
+   "id": "tt0103872",
+   "rating": 6.9,
+   "votes": 5034,
+   "checked": "2026-11-17"
+  },
   "m|braveheart|1995": {
    "id": "tt0112573",
    "rating": 8.3,
@@ -1202,6 +1484,12 @@
    "votes": 48173,
    "checked": "2026-11-13"
   },
+  "m|bride and prejudice|2005": {
+   "id": "tt0361411",
+   "rating": 6.2,
+   "votes": 22899,
+   "checked": "2026-11-17"
+  },
   "m|bridesmaids|2011": {
    "id": "tt1478338",
    "rating": 6.8,
@@ -1213,6 +1501,18 @@
    "rating": 6.7,
    "votes": 7082,
    "checked": "2026-11-13"
+  },
+  "m|bridget joness baby|2016": {
+   "id": "tt1473832",
+   "rating": 6.4,
+   "votes": 92619,
+   "checked": "2026-11-17"
+  },
+  "m|bridget joness diary|2001": {
+   "id": "tt0243155",
+   "rating": 6.8,
+   "votes": 290828,
+   "checked": "2026-11-17"
   },
   "m|brigsby bear|": {
    "id": "tt5805752",
@@ -1244,6 +1544,12 @@
    "votes": 110961,
    "checked": "2026-11-13"
   },
+  "m|brother sun sister moon|1973": {
+   "id": "tt0069824",
+   "rating": 7.2,
+   "votes": 5430,
+   "checked": "2026-11-17"
+  },
   "m|brothers grimm|2005": {
    "id": "tt0355295",
    "rating": 5.9,
@@ -1268,6 +1574,12 @@
    "votes": 5086,
    "checked": "2026-11-13"
   },
+  "m|bugsy malone|1976": {
+   "id": "tt0074256",
+   "rating": 6.8,
+   "votes": 21238,
+   "checked": "2026-11-17"
+  },
   "m|bulletproof|1996": {
    "id": "tt0115783",
    "rating": 5.8,
@@ -1279,6 +1591,16 @@
    "rating": 7.4,
    "votes": 82327,
    "checked": "2026-11-13"
+  },
+  "m|bumblebee transformers 6 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|bumblebee|2018": {
+   "id": "tt4701182",
+   "rating": 6.7,
+   "votes": 213619,
+   "checked": "2026-11-17"
   },
   "m|burbs|": {
    "id": "tt0096734",
@@ -1364,6 +1686,12 @@
    "votes": 664153,
    "checked": "2026-11-13"
   },
+  "m|case 39|2010": {
+   "id": "tt0795351",
+   "rating": 6.2,
+   "votes": 100905,
+   "checked": "2026-11-17"
+  },
   "m|casino|1995": {
    "id": "tt0112641",
    "rating": 8.2,
@@ -1376,11 +1704,23 @@
    "votes": 332,
    "checked": "2026-11-16"
   },
+  "m|castle of evil|1966": {
+   "id": "tt0060219",
+   "rating": 4.6,
+   "votes": 395,
+   "checked": "2026-11-17"
+  },
   "m|catch 22|1970": {
    "id": "tt0065528",
    "rating": 7.1,
    "votes": 27439,
    "checked": "2026-11-13"
+  },
+  "m|catch me if you can|2002": {
+   "id": "tt0264464",
+   "rating": 8.1,
+   "votes": 1274709,
+   "checked": "2026-11-17"
   },
   "m|cats and dogs the revenge of kitty galore|2010": {
    "id": "tt1287468",
@@ -1436,6 +1776,28 @@
    "votes": 133626,
    "checked": "2026-11-13"
   },
+  "m|charlottes web|1973": {
+   "id": "tt0070016",
+   "rating": 6.9,
+   "votes": 23187,
+   "checked": "2026-11-17"
+  },
+  "m|charlottes web|2006": {
+   "id": "tt0413895",
+   "rating": 6.3,
+   "votes": 50805,
+   "checked": "2026-11-17"
+  },
+  "m|chasing amy|2000": {
+   "id": "tt0118842",
+   "rating": 7.2,
+   "votes": 149518,
+   "checked": "2026-11-17"
+  },
+  "m|cheech and chong up in smoke|1978": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|chicago|2001": {
    "id": "tt0299658",
    "rating": 7.2,
@@ -1447,6 +1809,12 @@
    "rating": 7.2,
    "votes": 259496,
    "checked": "2026-11-13"
+  },
+  "m|children of a lesser god|1986": {
+   "id": "tt0090830",
+   "rating": 7.2,
+   "votes": 20317,
+   "checked": "2026-11-17"
   },
   "m|china strike force|2000": {
    "id": "tt0266408",
@@ -1460,17 +1828,33 @@
    "votes": 772,
    "checked": "2026-11-13"
   },
+  "m|chinatown|1974": {
+   "id": "tt0071315",
+   "rating": 8.1,
+   "votes": 382250,
+   "checked": "2026-11-17"
+  },
   "m|chocolat|2001": {
    "id": "tt0241303",
    "rating": 7.2,
    "votes": 212257,
    "checked": "2026-11-13"
   },
+  "m|christmas eve 1947|1947": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|christmas on the square|2020": {
    "id": "tt10627548",
    "rating": 5.2,
    "votes": 3422,
    "checked": "2026-11-13"
+  },
+  "m|cinema paradiso|1988": {
+   "id": "tt0095765",
+   "rating": 8.5,
+   "votes": 322956,
+   "checked": "2026-11-17"
   },
   "m|citizen kane|1941": {
    "id": "tt0033467",
@@ -1502,6 +1886,12 @@
    "votes": 449745,
    "checked": "2026-11-16"
   },
+  "m|clue|1985": {
+   "id": "tt0088930",
+   "rating": 7.3,
+   "votes": 129367,
+   "checked": "2026-11-17"
+  },
   "m|clueless|1995": {
    "id": "tt0112697",
    "rating": 6.9,
@@ -1523,6 +1913,12 @@
    "rating": 5.9,
    "votes": 129624,
    "checked": "2026-11-13"
+  },
+  "m|cold mountain|2003": {
+   "id": "tt0159365",
+   "rating": 7.2,
+   "votes": 165937,
+   "checked": "2026-11-17"
   },
   "m|cold pursuit|2019": {
    "id": "tt5719748",
@@ -1548,6 +1944,12 @@
    "votes": 861,
    "checked": "2026-11-13"
   },
+  "m|coming to america|1988": {
+   "id": "tt0094898",
+   "rating": 7.1,
+   "votes": 243664,
+   "checked": "2026-11-17"
+  },
   "m|command|2019": {
    "id": "tt4951982",
    "rating": 6.6,
@@ -1572,11 +1974,23 @@
    "votes": 56408,
    "checked": "2026-11-13"
   },
+  "m|coneheads|1993": {
+   "id": "tt0106598",
+   "rating": 5.5,
+   "votes": 63161,
+   "checked": "2026-11-17"
+  },
   "m|confess fletch|": {
    "id": "tt12718300",
    "rating": 6.4,
    "votes": 27743,
    "checked": "2026-11-13"
+  },
+  "m|confess fletch|2022": {
+   "id": "tt12718300",
+   "rating": 6.4,
+   "votes": 27776,
+   "checked": "2026-11-17"
   },
   "m|confessions of a dangerous mind|2002": {
    "id": "tt0270288",
@@ -1588,11 +2002,11 @@
    "none": true,
    "checked": "2026-11-13"
   },
-  "m|confinement|2026": {
-   "id": "tt38907741",
-   "rating": 4.4,
-   "votes": 451,
-   "checked": "2026-11-13"
+  "m|congo|1995": {
+   "id": "tt0112715",
+   "rating": 5.4,
+   "votes": 53878,
+   "checked": "2026-11-17"
   },
   "m|conjuring|2013": {
    "id": "tt1457767",
@@ -1690,6 +2104,24 @@
    "votes": 27803,
    "checked": "2026-11-13"
   },
+  "m|crocodile dundee|1986": {
+   "id": "tt0090555",
+   "rating": 6.7,
+   "votes": 126042,
+   "checked": "2026-11-17"
+  },
+  "m|crossing guard|1995": {
+   "id": "tt0112744",
+   "rating": 6.3,
+   "votes": 15736,
+   "checked": "2026-11-17"
+  },
+  "m|crow city of angels|1996": {
+   "id": "tt0115986",
+   "rating": 4.6,
+   "votes": 23724,
+   "checked": "2026-11-17"
+  },
   "m|crow|1994": {
    "id": "tt0109506",
    "rating": 7.5,
@@ -1726,6 +2158,18 @@
    "votes": 68019,
    "checked": "2026-11-13"
   },
+  "m|cursed|2005": {
+   "id": "tt0257516",
+   "rating": 5.1,
+   "votes": 38022,
+   "checked": "2026-11-17"
+  },
+  "m|cut|2025": {
+   "id": "tt26697087",
+   "rating": 5.5,
+   "votes": 2373,
+   "checked": "2026-11-17"
+  },
   "m|cyborg 2|1993": {
    "none": true,
    "checked": "2026-11-13"
@@ -1735,6 +2179,12 @@
    "rating": 6.7,
    "votes": 17190,
    "checked": "2026-11-13"
+  },
+  "m|daddys home 2|2017": {
+   "id": "tt5657846",
+   "rating": 6.1,
+   "votes": 94565,
+   "checked": "2026-11-17"
   },
   "m|daddys home|2015": {
    "id": "tt1528854",
@@ -1806,6 +2256,12 @@
    "votes": 1507,
    "checked": "2026-11-13"
   },
+  "m|days of heaven|1977": {
+   "id": "tt0077405",
+   "rating": 7.7,
+   "votes": 70456,
+   "checked": "2026-11-17"
+  },
   "m|days of thunder|1990": {
    "id": "tt0099371",
    "rating": 6.2,
@@ -1828,21 +2284,43 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|dead again|1991": {
+   "id": "tt0101669",
+   "rating": 6.8,
+   "votes": 33393,
+   "checked": "2026-11-17"
+  },
   "m|dead man on campus|": {
    "id": "tt0118301",
    "rating": 6,
    "votes": 15895,
    "checked": "2026-11-13"
   },
+  "m|dead man on campus|1998": {
+   "id": "tt0118301",
+   "rating": 6,
+   "votes": 15898,
+   "checked": "2026-11-17"
+  },
   "m|dead reckoning|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|dean martin jerry lewis 8 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|dear david|2023": {
    "id": "tt9288740",
    "rating": 3.9,
    "votes": 2035,
    "checked": "2026-11-13"
+  },
+  "m|dear santa|2024": {
+   "id": "tt2396431",
+   "rating": 5.4,
+   "votes": 22758,
+   "checked": "2026-11-17"
   },
   "m|death of me|2020": {
    "id": "tt1830643",
@@ -1910,6 +2388,12 @@
    "votes": 1589975,
    "checked": "2026-11-13"
   },
+  "m|detective story|1951": {
+   "id": "tt0043465",
+   "rating": 7.5,
+   "votes": 10754,
+   "checked": "2026-11-17"
+  },
   "m|devil in a blue dress|": {
    "id": "tt0112857",
    "rating": 6.8,
@@ -1963,6 +2447,12 @@
    "rating": 5.8,
    "votes": 975,
    "checked": "2026-11-13"
+  },
+  "m|disturbia|2007": {
+   "id": "tt0486822",
+   "rating": 6.8,
+   "votes": 277793,
+   "checked": "2026-11-17"
   },
   "m|divergent series allegiant|2016": {
    "id": "tt3410834",
@@ -2028,11 +2518,27 @@
    "votes": 1697,
    "checked": "2026-11-13"
   },
+  "m|dora and the lost city of gold|2019": {
+   "id": "tt7547410",
+   "rating": 6.1,
+   "votes": 40089,
+   "checked": "2026-11-17"
+  },
   "m|double jeopardy|1999": {
    "id": "tt0150377",
    "rating": 6.6,
    "votes": 107637,
    "checked": "2026-11-13"
+  },
+  "m|doubt|2008": {
+   "id": "tt0918927",
+   "rating": 7.5,
+   "votes": 149270,
+   "checked": "2026-11-17"
+  },
+  "m|down to earth heaven can wait 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|down to earth|": {
    "id": "tt0231775",
@@ -2040,11 +2546,29 @@
    "votes": 24745,
    "checked": "2026-11-13"
   },
+  "m|down to earth|2001": {
+   "id": "tt0231775",
+   "rating": 5.4,
+   "votes": 24752,
+   "checked": "2026-11-17"
+  },
+  "m|downhill racer|1969": {
+   "id": "tt0064253",
+   "rating": 6.3,
+   "votes": 6675,
+   "checked": "2026-11-17"
+  },
   "m|downsizing|": {
    "id": "tt1389072",
    "rating": 5.8,
    "votes": 139726,
    "checked": "2026-11-13"
+  },
+  "m|downsizing|2017": {
+   "id": "tt1389072",
+   "rating": 5.8,
+   "votes": 139776,
+   "checked": "2026-11-17"
   },
   "m|dr wai in the scripture with no words|1996": {
    "id": "tt0110463",
@@ -2220,6 +2744,12 @@
    "votes": 18699,
    "checked": "2026-11-13"
   },
+  "m|eddie murphy raw|1987": {
+   "id": "tt0092948",
+   "rating": 7.6,
+   "votes": 22058,
+   "checked": "2026-11-17"
+  },
   "m|eight millimeter|": {
    "none": true,
    "checked": "2026-11-13"
@@ -2229,6 +2759,12 @@
    "rating": 7.5,
    "votes": 34106,
    "checked": "2026-11-13"
+  },
+  "m|el dorado|1967": {
+   "id": "tt0061619",
+   "rating": 7.5,
+   "votes": 34120,
+   "checked": "2026-11-17"
   },
   "m|election|1999": {
    "id": "tt0126886",
@@ -2241,6 +2777,24 @@
    "rating": 7.1,
    "votes": 350872,
    "checked": "2026-11-13"
+  },
+  "m|elizabethtown|2005": {
+   "id": "tt0368709",
+   "rating": 6.3,
+   "votes": 75882,
+   "checked": "2026-11-17"
+  },
+  "m|ella enchanted|2004": {
+   "id": "tt0327679",
+   "rating": 6.3,
+   "votes": 82470,
+   "checked": "2026-11-17"
+  },
+  "m|emily brontes wuthering heights|1992": {
+   "id": "tt0104181",
+   "rating": 6.6,
+   "votes": 16808,
+   "checked": "2026-11-17"
   },
   "m|emperor|2013": {
    "id": "tt2103264",
@@ -2278,9 +2832,31 @@
    "votes": 296956,
    "checked": "2026-11-13"
   },
+  "m|english patient|1996": {
+   "id": "tt0116209",
+   "rating": 7.4,
+   "votes": 216164,
+   "checked": "2026-11-17"
+  },
   "m|envy|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|envy|2004": {
+   "id": "tt0326856",
+   "rating": 4.8,
+   "votes": 33789,
+   "checked": "2026-11-17"
+  },
+  "m|epic odysseys 10 movies|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|equilibrium|2002": {
+   "id": "tt0238380",
+   "rating": 7.3,
+   "votes": 366705,
+   "checked": "2026-11-17"
   },
   "m|eraser|1996": {
    "id": "tt0116213",
@@ -2305,6 +2881,12 @@
    "rating": 4.2,
    "votes": 15731,
    "checked": "2026-11-13"
+  },
+  "m|eurotrip|2004": {
+   "id": "tt0356150",
+   "rating": 6.6,
+   "votes": 249182,
+   "checked": "2026-11-17"
   },
   "m|evan almighty|2007": {
    "id": "tt0413099",
@@ -2347,6 +2929,12 @@
    "rating": 7.1,
    "votes": 24666,
    "checked": "2026-11-13"
+  },
+  "m|evolution|2001": {
+   "id": "tt0251075",
+   "rating": 6.1,
+   "votes": 143655,
+   "checked": "2026-11-17"
   },
   "m|evolver|1995": {
    "id": "tt0112993",
@@ -2420,11 +3008,23 @@
    "votes": 106748,
    "checked": "2026-11-13"
   },
+  "m|falling in love|1984": {
+   "id": "tt0087233",
+   "rating": 6.5,
+   "votes": 17117,
+   "checked": "2026-11-17"
+  },
   "m|fast times at ridgemont high|": {
    "id": "tt0083929",
    "rating": 7.1,
    "votes": 126850,
    "checked": "2026-11-13"
+  },
+  "m|faster|2010": {
+   "id": "tt1433108",
+   "rating": 6.4,
+   "votes": 118180,
+   "checked": "2026-11-17"
   },
   "m|fat camp|2017": {
    "id": "tt5643724",
@@ -2449,6 +3049,18 @@
    "rating": 7.4,
    "votes": 322871,
    "checked": "2026-11-13"
+  },
+  "m|fences|2016": {
+   "id": "tt2671706",
+   "rating": 7.2,
+   "votes": 127006,
+   "checked": "2026-11-17"
+  },
+  "m|ferris buellers day off|1986": {
+   "id": "tt0091042",
+   "rating": 7.8,
+   "votes": 422557,
+   "checked": "2026-11-17"
   },
   "m|festival in cannes|2002": {
    "id": "tt0273607",
@@ -2480,6 +3092,12 @@
    "votes": 4286,
    "checked": "2026-11-13"
   },
+  "m|fighting temptations|2003": {
+   "id": "tt0191133",
+   "rating": 5.6,
+   "votes": 8086,
+   "checked": "2026-11-17"
+  },
   "m|final cut|2004": {
    "id": "tt0364343",
    "rating": 6.1,
@@ -2504,11 +3122,11 @@
    "votes": 218595,
    "checked": "2026-11-13"
   },
-  "m|finnegans foursome|2025": {
-   "id": "tt23039114",
-   "rating": 4.5,
-   "votes": 190,
-   "checked": "2026-11-13"
+  "m|fire in the sky|1993": {
+   "id": "tt0106912",
+   "rating": 6.5,
+   "votes": 32578,
+   "checked": "2026-11-17"
   },
   "m|firefox|1982": {
    "id": "tt0083943",
@@ -2516,11 +3134,23 @@
    "votes": 31899,
    "checked": "2026-11-13"
   },
+  "m|firm|1993": {
+   "id": "tt0106918",
+   "rating": 6.9,
+   "votes": 166137,
+   "checked": "2026-11-17"
+  },
   "m|fist of fury|1972": {
    "id": "tt0068767",
    "rating": 7.2,
    "votes": 37997,
    "checked": "2026-11-13"
+  },
+  "m|fitzgerald family christmas|2012": {
+   "id": "tt2331880",
+   "rating": 6.3,
+   "votes": 1759,
+   "checked": "2026-11-17"
   },
   "m|flags of our fathers|2006": {
    "id": "tt0418689",
@@ -2546,11 +3176,21 @@
    "votes": 8021,
    "checked": "2026-11-13"
   },
+  "m|flashdance footloose 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|fletch|": {
    "id": "tt0089155",
    "rating": 6.9,
    "votes": 62348,
    "checked": "2026-11-13"
+  },
+  "m|flight of the intruder|1991": {
+   "id": "tt0099587",
+   "rating": 5.8,
+   "votes": 8577,
+   "checked": "2026-11-17"
   },
   "m|flight|2012": {
    "id": "tt1907668",
@@ -2594,6 +3234,12 @@
    "votes": 14517,
    "checked": "2026-11-13"
   },
+  "m|footloose|1984": {
+   "id": "tt0087277",
+   "rating": 6.6,
+   "votes": 103880,
+   "checked": "2026-11-17"
+  },
   "m|footloose|2011": {
    "id": "tt1068242",
    "rating": 5.9,
@@ -2617,6 +3263,12 @@
    "rating": 6.9,
    "votes": 5280,
    "checked": "2026-11-13"
+  },
+  "m|forces of nature|1999": {
+   "id": "tt0141098",
+   "rating": 5.5,
+   "votes": 37966,
+   "checked": "2026-11-17"
   },
   "m|forger|2015": {
    "id": "tt2376218",
@@ -2654,6 +3306,12 @@
    "votes": 36845,
    "checked": "2026-11-13"
   },
+  "m|four rooms|1995": {
+   "id": "tt0113101",
+   "rating": 6.7,
+   "votes": 118089,
+   "checked": "2026-11-17"
+  },
   "m|foxfire|1996": {
    "id": "tt0116353",
    "rating": 6.2,
@@ -2663,6 +3321,12 @@
   "m|francis the talking mule|1950": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|frank millers sin city|2005": {
+   "id": "tt0401792",
+   "rating": 8,
+   "votes": 825801,
+   "checked": "2026-11-17"
   },
   "m|frankie and johnny|1991": {
    "id": "tt0101912",
@@ -2738,6 +3402,10 @@
    "votes": 29411,
    "checked": "2026-11-13"
   },
+  "m|from dusk till dawn 3 the hangmans daughter|2000": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|fugitive|1993": {
    "id": "tt0106977",
    "rating": 7.8,
@@ -2772,6 +3440,12 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|galaxy quest|1999": {
+   "id": "tt0177789",
+   "rating": 7.4,
+   "votes": 194255,
+   "checked": "2026-11-17"
+  },
   "m|gallipoli|1981": {
    "id": "tt0082432",
    "rating": 7.4,
@@ -2802,11 +3476,23 @@
    "votes": 69476,
    "checked": "2026-11-13"
   },
+  "m|georgetown|2021": {
+   "id": "tt4669252",
+   "rating": 6.2,
+   "votes": 6951,
+   "checked": "2026-11-17"
+  },
   "m|gettysburg|1993": {
    "id": "tt0107007",
    "rating": 7.6,
    "votes": 32759,
    "checked": "2026-11-13"
+  },
+  "m|ghost and the darkness|1996": {
+   "id": "tt0116409",
+   "rating": 6.8,
+   "votes": 71818,
+   "checked": "2026-11-17"
   },
   "m|ghost in the shell|2017": {
    "id": "tt1219827",
@@ -2882,6 +3568,10 @@
    "votes": 536447,
    "checked": "2026-11-13"
   },
+  "m|gladiator ii gladiator|2024": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|gladiator ii|2024": {
    "id": "tt9218128",
    "rating": 6.4,
@@ -2899,6 +3589,22 @@
    "rating": 5.8,
    "votes": 43875,
    "checked": "2026-11-13"
+  },
+  "m|godfather coda the death of michael corleone|2020": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|godfather part ii|1974": {
+   "id": "tt0071562",
+   "rating": 9,
+   "votes": 1524202,
+   "checked": "2026-11-17"
+  },
+  "m|godfather|1972": {
+   "id": "tt0068646",
+   "rating": 9.2,
+   "votes": 2272738,
+   "checked": "2026-11-17"
   },
   "m|gods of egypt|2016": {
    "id": "tt2404233",
@@ -2964,6 +3670,12 @@
    "votes": 470585,
    "checked": "2026-11-16"
   },
+  "m|goin south|1978": {
+   "id": "tt0077621",
+   "rating": 6.2,
+   "votes": 9029,
+   "checked": "2026-11-17"
+  },
   "m|going berserk|1993": {
    "id": "tt0085603",
    "rating": 5.2,
@@ -2987,6 +3699,12 @@
    "rating": 5.8,
    "votes": 36834,
    "checked": "2026-11-13"
+  },
+  "m|good will hunting|1997": {
+   "id": "tt0119217",
+   "rating": 8.4,
+   "votes": 1253995,
+   "checked": "2026-11-17"
   },
   "m|goodfellas|1990": {
    "id": "tt0099685",
@@ -3122,6 +3840,12 @@
    "votes": 2065,
    "checked": "2026-11-13"
   },
+  "m|gunfight at the ok corral|1957": {
+   "id": "tt0050468",
+   "rating": 7.1,
+   "votes": 19253,
+   "checked": "2026-11-17"
+  },
   "m|gung ho|1986": {
    "id": "tt0091159",
    "rating": 6.3,
@@ -3197,6 +3921,12 @@
    "rating": 6.3,
    "votes": 10732,
    "checked": "2026-11-13"
+  },
+  "m|hard eight|1997": {
+   "id": "tt0119256",
+   "rating": 7.1,
+   "votes": 60891,
+   "checked": "2026-11-17"
   },
   "m|hard home|2024": {
    "id": "tt31974111",
@@ -3274,9 +4004,27 @@
    "votes": 53242,
    "checked": "2026-11-13"
   },
+  "m|heartburn|1986": {
+   "id": "tt0091188",
+   "rating": 6.1,
+   "votes": 14390,
+   "checked": "2026-11-17"
+  },
+  "m|heartlands|2004": {
+   "id": "tt0295303",
+   "rating": 6.9,
+   "votes": 1417,
+   "checked": "2026-11-17"
+  },
   "m|hearts of darkness|1991": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|heaven can wait|1978": {
+   "id": "tt0077663",
+   "rating": 6.9,
+   "votes": 26135,
+   "checked": "2026-11-17"
   },
   "m|hell is for heroes|1962": {
    "id": "tt0056062",
@@ -3344,6 +4092,12 @@
    "votes": 117751,
    "checked": "2026-11-13"
   },
+  "m|highest stakes|2026": {
+   "id": "tt36052167",
+   "rating": 4.4,
+   "votes": 437,
+   "checked": "2026-11-17"
+  },
   "m|highlander endgame|2000": {
    "id": "tt0144964",
    "rating": 4.6,
@@ -3368,11 +4122,23 @@
    "votes": 122049,
    "checked": "2026-11-13"
   },
+  "m|home for the holidays|1995": {
+   "id": "tt0113321",
+   "rating": 6.6,
+   "votes": 16432,
+   "checked": "2026-11-17"
+  },
   "m|hondo|": {
    "id": "tt0045883",
    "rating": 7,
    "votes": 14404,
    "checked": "2026-11-13"
+  },
+  "m|hondo|1953": {
+   "id": "tt0045883",
+   "rating": 7,
+   "votes": 14412,
+   "checked": "2026-11-17"
   },
   "m|honk for jesus save your soul|2022": {
    "id": "tt12655436",
@@ -3404,11 +4170,23 @@
    "votes": 575433,
    "checked": "2026-11-13"
   },
+  "m|hot pursuit|1987": {
+   "id": "tt0093215",
+   "rating": 5.8,
+   "votes": 4559,
+   "checked": "2026-11-17"
+  },
   "m|hot rod|2007": {
    "id": "tt0787475",
    "rating": 6.7,
    "votes": 100724,
    "checked": "2026-11-13"
+  },
+  "m|hours|2002": {
+   "id": "tt0274558",
+   "rating": 7.5,
+   "votes": 148534,
+   "checked": "2026-11-17"
   },
   "m|house arrest|1996": {
    "id": "tt0116571",
@@ -3446,11 +4224,23 @@
    "votes": 26542,
    "checked": "2026-11-13"
   },
+  "m|hugo|2011": {
+   "id": "tt0970179",
+   "rating": 7.5,
+   "votes": 352419,
+   "checked": "2026-11-17"
+  },
   "m|hulk|2003": {
    "id": "tt0286716",
    "rating": 5.7,
    "votes": 297093,
    "checked": "2026-11-13"
+  },
+  "m|human stain|2003": {
+   "id": "tt0308383",
+   "rating": 6.2,
+   "votes": 34082,
+   "checked": "2026-11-17"
   },
   "m|hunger games catching fire|2013": {
    "id": "tt1951264",
@@ -3512,6 +4302,12 @@
    "votes": 501408,
    "checked": "2026-11-13"
   },
+  "m|hustle and flow|2005": {
+   "id": "tt0410097",
+   "rating": 7.3,
+   "votes": 46121,
+   "checked": "2026-11-17"
+  },
   "m|hustlers|2019": {
    "id": "tt5503686",
    "rating": 6.3,
@@ -3552,11 +4348,57 @@
    "votes": 13127,
    "checked": "2026-11-13"
   },
+  "m|iconic films of the 1950s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1960s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1970s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1980s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 1990s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 2000s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|iconic films of the 2010s|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|if|2024": {
+   "id": "tt11152168",
+   "rating": 6.4,
+   "votes": 69608,
+   "checked": "2026-11-17"
+  },
+  "m|imagine that|2009": {
+   "id": "tt0780567",
+   "rating": 5.6,
+   "votes": 16753,
+   "checked": "2026-11-17"
+  },
   "m|imitation game|": {
    "id": "tt2084970",
    "rating": 8,
    "votes": 888731,
    "checked": "2026-11-13"
+  },
+  "m|importance of being earnest|2002": {
+   "id": "tt0278500",
+   "rating": 6.8,
+   "votes": 26258,
+   "checked": "2026-11-17"
   },
   "m|impostor|2001": {
    "id": "tt0160399",
@@ -3575,6 +4417,12 @@
    "rating": 6.4,
    "votes": 47108,
    "checked": "2026-11-13"
+  },
+  "m|in between|2022": {
+   "id": "tt8851148",
+   "rating": 6,
+   "votes": 12650,
+   "checked": "2026-11-17"
   },
   "m|in bruges|": {
    "id": "tt0780536",
@@ -3621,6 +4469,18 @@
    "rating": 8.8,
    "votes": 2888709,
    "checked": "2026-11-13"
+  },
+  "m|indiana jones and the kingdom of the crystal skull|2008": {
+   "id": "tt0367882",
+   "rating": 6.2,
+   "votes": 519792,
+   "checked": "2026-11-17"
+  },
+  "m|indiana jones and the last crusade|1989": {
+   "id": "tt0097576",
+   "rating": 8.2,
+   "votes": 875462,
+   "checked": "2026-11-17"
   },
   "m|indiana jones and the raiders of the lost ark|1981": {
    "none": true,
@@ -3686,6 +4546,18 @@
    "votes": 25203,
    "checked": "2026-11-13"
   },
+  "m|internship|2025": {
+   "id": "tt38238651",
+   "rating": 4.2,
+   "votes": 1451,
+   "checked": "2026-11-17"
+  },
+  "m|intersection|1994": {
+   "id": "tt0110146",
+   "rating": 5.4,
+   "votes": 9726,
+   "checked": "2026-11-17"
+  },
   "m|interstellar|2014": {
    "id": "tt0816692",
    "rating": 8.7,
@@ -3740,6 +4612,12 @@
    "votes": 18357,
    "checked": "2026-11-13"
   },
+  "m|irreconcilable differences|1984": {
+   "id": "tt0087482",
+   "rating": 5.8,
+   "votes": 3680,
+   "checked": "2026-11-17"
+  },
   "m|island in the sky|": {
    "id": "tt0045919",
    "rating": 6.8,
@@ -3788,6 +4666,12 @@
    "votes": 412014,
    "checked": "2026-11-16"
   },
+  "m|its a wonderful life|1947": {
+   "id": "tt0038650",
+   "rating": 8.6,
+   "votes": 563486,
+   "checked": "2026-11-17"
+  },
   "m|its alive|1974": {
    "id": "tt0071675",
    "rating": 5.8,
@@ -3812,11 +4696,31 @@
    "votes": 144865,
    "checked": "2026-11-16"
   },
+  "m|jackass 25|2008": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|jackass 3|2010": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|jackass 35|2011": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|jackass 45|2022": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|jackass best and last|": {
    "id": "tt39316472",
    "rating": 6.2,
    "votes": 15246,
    "checked": "2026-11-13"
+  },
+  "m|jackass cinematic universe 14 movies|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|jackass forever|": {
    "id": "tt11466222",
@@ -3824,11 +4728,39 @@
    "votes": 56571,
    "checked": "2026-11-13"
   },
+  "m|jackass forever|2022": {
+   "id": "tt11466222",
+   "rating": 6.8,
+   "votes": 56589,
+   "checked": "2026-11-17"
+  },
+  "m|jackass number two|2006": {
+   "id": "tt0493430",
+   "rating": 7,
+   "votes": 84868,
+   "checked": "2026-11-17"
+  },
+  "m|jackass presents bad grandpa|2013": {
+   "id": "tt3063516",
+   "rating": 6.5,
+   "votes": 101700,
+   "checked": "2026-11-17"
+  },
   "m|jackass the movie|": {
    "id": "tt0322802",
    "rating": 6.6,
    "votes": 108006,
    "checked": "2026-11-13"
+  },
+  "m|jackass the movie|2002": {
+   "id": "tt0322802",
+   "rating": 6.6,
+   "votes": 108032,
+   "checked": "2026-11-17"
+  },
+  "m|jackie chan 10 movies|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|jackie chans project a|1983": {
    "id": "tt0085127",
@@ -3926,6 +4858,12 @@
    "votes": 722,
    "checked": "2026-11-13"
   },
+  "m|jimmy neutron boy genius|2001": {
+   "id": "tt0268397",
+   "rating": 6.1,
+   "votes": 41168,
+   "checked": "2026-11-17"
+  },
   "m|jiu jitsu|2020": {
    "id": "tt9624766",
    "rating": 2.9,
@@ -3949,6 +4887,14 @@
    "rating": 7.1,
    "votes": 157602,
    "checked": "2026-11-13"
+  },
+  "m|john wayne essential war movies 5 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|john wayne essential westerns 5 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|johnny english reborn|": {
    "id": "tt1634122",
@@ -4070,6 +5016,12 @@
    "votes": 9840,
    "checked": "2026-11-13"
   },
+  "m|kids in the hall brain candy|1996": {
+   "id": "tt0116768",
+   "rating": 6.9,
+   "votes": 9840,
+   "checked": "2026-11-17"
+  },
   "m|kill bill vol 1|2003": {
    "id": "tt0266697",
    "rating": 8.2,
@@ -4099,6 +5051,12 @@
    "rating": 5.8,
    "votes": 20643,
    "checked": "2026-11-13"
+  },
+  "m|king david|1985": {
+   "id": "tt0089420",
+   "rating": 5.3,
+   "votes": 2812,
+   "checked": "2026-11-17"
   },
   "m|king kong|1933": {
    "id": "tt0024216",
@@ -4136,11 +5094,23 @@
    "votes": 23105,
    "checked": "2026-11-13"
   },
+  "m|kiss the girls|1997": {
+   "id": "tt0119468",
+   "rating": 6.6,
+   "votes": 102138,
+   "checked": "2026-11-17"
+  },
   "m|kit kittredge an american girl|2008": {
    "id": "tt0846308",
    "rating": 6.5,
    "votes": 6702,
    "checked": "2026-11-13"
+  },
+  "m|kite runner|2007": {
+   "id": "tt0419887",
+   "rating": 7.5,
+   "votes": 85770,
+   "checked": "2026-11-17"
   },
   "m|knocked up|": {
    "id": "tt0478311",
@@ -4234,6 +5204,12 @@
    "votes": 742,
    "checked": "2026-11-16"
   },
+  "m|last holiday|2006": {
+   "id": "tt0408985",
+   "rating": 6.6,
+   "votes": 43662,
+   "checked": "2026-11-17"
+  },
   "m|last moment of clarity|2020": {
    "id": "tt1929297",
    "rating": 5.2,
@@ -4276,11 +5252,23 @@
    "votes": 351,
    "checked": "2026-11-13"
   },
+  "m|last tycoon|1976": {
+   "id": "tt0074777",
+   "rating": 6.2,
+   "votes": 10447,
+   "checked": "2026-11-17"
+  },
   "m|last vegas|2013": {
    "id": "tt1204975",
    "rating": 6.6,
    "votes": 141261,
    "checked": "2026-11-13"
+  },
+  "m|le mans|1971": {
+   "id": "tt0067334",
+   "rating": 6.7,
+   "votes": 13591,
+   "checked": "2026-11-17"
   },
   "m|leap of faith|1992": {
    "id": "tt0104695",
@@ -4356,12 +5344,6 @@
    "votes": 43492,
    "checked": "2026-11-16"
   },
-  "m|lifehack|2026": {
-   "id": "tt32135632",
-   "rating": 6.2,
-   "votes": 1555,
-   "checked": "2026-11-13"
-  },
   "m|lights out|2016": {
    "id": "tt4786282",
    "rating": 6.3,
@@ -4374,11 +5356,23 @@
    "votes": 16411,
    "checked": "2026-11-13"
   },
+  "m|little big man|1970": {
+   "id": "tt0065988",
+   "rating": 7.5,
+   "votes": 41044,
+   "checked": "2026-11-17"
+  },
   "m|little city|1997": {
    "id": "tt0119548",
    "rating": 5.8,
    "votes": 1152,
    "checked": "2026-11-13"
+  },
+  "m|little darlings|1980": {
+   "id": "tt0081060",
+   "rating": 6.5,
+   "votes": 7495,
+   "checked": "2026-11-17"
   },
   "m|little dixie|2023": {
    "id": "tt13614388",
@@ -4404,6 +5398,12 @@
    "votes": 2014,
    "checked": "2026-11-13"
   },
+  "m|little prince|2015": {
+   "id": "tt1754656",
+   "rating": 7.6,
+   "votes": 72791,
+   "checked": "2026-11-17"
+  },
   "m|little shop of horrors|1986": {
    "id": "tt0091419",
    "rating": 7.1,
@@ -4419,6 +5419,18 @@
   "m|live die repeat edge of tomorrow|2014": {
    "none": true,
    "checked": "2026-11-16"
+  },
+  "m|lockdown|2024": {
+   "id": "tt10080130",
+   "rating": 4.4,
+   "votes": 718,
+   "checked": "2026-11-17"
+  },
+  "m|locked|2025": {
+   "id": "tt26671996",
+   "rating": 5.7,
+   "votes": 27964,
+   "checked": "2026-11-17"
   },
   "m|lone survivor|2013": {
    "id": "tt1091191",
@@ -4468,6 +5480,12 @@
    "votes": 34763,
    "checked": "2026-11-13"
   },
+  "m|losing isaiah|1995": {
+   "id": "tt0113691",
+   "rating": 6.4,
+   "votes": 6884,
+   "checked": "2026-11-17"
+  },
   "m|lost boys|1987": {
    "id": "tt0093437",
    "rating": 7.2,
@@ -4479,6 +5497,12 @@
    "rating": 7.7,
    "votes": 536954,
    "checked": "2026-11-13"
+  },
+  "m|lost ones|2026": {
+   "id": "tt37028623",
+   "rating": 4.5,
+   "votes": 149,
+   "checked": "2026-11-17"
   },
   "m|love and monsters|2020": {
    "id": "tt2222042",
@@ -4504,6 +5528,12 @@
    "votes": 29562,
    "checked": "2026-11-13"
   },
+  "m|lovely bones|2010": {
+   "id": "tt0380510",
+   "rating": 6.6,
+   "votes": 194857,
+   "checked": "2026-11-17"
+  },
   "m|lucy|2014": {
    "id": "tt2872732",
    "rating": 6.4,
@@ -4515,6 +5545,10 @@
    "rating": 6.8,
    "votes": 5096,
    "checked": "2026-11-13"
+  },
+  "m|m i dead reckoning final reckoning 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|mac and devin go to high school|2012": {
    "id": "tt1870425",
@@ -4528,11 +5562,29 @@
    "votes": 5744,
    "checked": "2026-11-13"
   },
+  "m|magdalene sisters|2003": {
+   "id": "tt0318411",
+   "rating": 7.7,
+   "votes": 30358,
+   "checked": "2026-11-17"
+  },
   "m|magnolia|1999": {
    "id": "tt0175880",
    "rating": 8,
    "votes": 355747,
    "checked": "2026-11-13"
+  },
+  "m|mahogany|1975": {
+   "id": "tt0073335",
+   "rating": 6.2,
+   "votes": 2638,
+   "checked": "2026-11-17"
+  },
+  "m|major league|1989": {
+   "id": "tt0097815",
+   "rating": 7.3,
+   "votes": 84607,
+   "checked": "2026-11-17"
   },
   "m|major payne|1995": {
    "id": "tt0110443",
@@ -4576,11 +5628,23 @@
    "votes": 90245,
    "checked": "2026-11-13"
   },
+  "m|man with no past|2024": {
+   "id": "tt31974129",
+   "rating": 4.3,
+   "votes": 1137,
+   "checked": "2026-11-17"
+  },
   "m|man with the iron heart|2017": {
    "id": "tt3296908",
    "rating": 6.4,
    "votes": 20208,
    "checked": "2026-11-13"
+  },
+  "m|manchurian candidate|2004": {
+   "id": "tt0368008",
+   "rating": 6.6,
+   "votes": 124261,
+   "checked": "2026-11-17"
   },
   "m|mandingo|1975": {
    "id": "tt0073349",
@@ -4594,6 +5658,16 @@
    "votes": 28348,
    "checked": "2026-11-13"
   },
+  "m|marathon man|1976": {
+   "id": "tt0074860",
+   "rating": 7.4,
+   "votes": 76999,
+   "checked": "2026-11-17"
+  },
+  "m|masters of myth and magic 6 movies|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|matrix|1999": {
    "id": "tt0133093",
    "rating": 8.7,
@@ -4605,6 +5679,12 @@
    "rating": 7,
    "votes": 126631,
    "checked": "2026-11-13"
+  },
+  "m|maze|1953": {
+   "id": "tt0046057",
+   "rating": 5.8,
+   "votes": 1549,
+   "checked": "2026-11-17"
   },
   "m|mchales navy joins the air force|1965": {
    "id": "tt0059437",
@@ -4636,11 +5716,23 @@
    "votes": 347086,
    "checked": "2026-11-16"
   },
+  "m|mean creek|2004": {
+   "id": "tt0377091",
+   "rating": 7.1,
+   "votes": 35133,
+   "checked": "2026-11-17"
+  },
   "m|mean girls 2|2011": {
    "id": "tt1679235",
    "rating": 4.1,
    "votes": 27697,
    "checked": "2026-11-13"
+  },
+  "m|mean girls|2004": {
+   "id": "tt0377092",
+   "rating": 7.1,
+   "votes": 497063,
+   "checked": "2026-11-17"
   },
   "m|mean girls|2024": {
    "id": "tt11762114",
@@ -4764,6 +5856,14 @@
    "none": true,
    "checked": "2026-11-16"
   },
+  "m|mission impossible 3|2006": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|mission impossible 4 ghost protocol|2011": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|mission impossible 5 rogue nation|2015": {
    "none": true,
    "checked": "2026-11-13"
@@ -4779,6 +5879,12 @@
    "rating": 7.7,
    "votes": 427028,
    "checked": "2026-11-13"
+  },
+  "m|mission impossible the final reckoning|2025": {
+   "id": "tt9603208",
+   "rating": 7.1,
+   "votes": 244494,
+   "checked": "2026-11-17"
   },
   "m|mission impossible|1996": {
    "id": "tt0117060",
@@ -4809,6 +5915,12 @@
    "rating": 5.4,
    "votes": 7867,
    "checked": "2026-11-13"
+  },
+  "m|monster of piedras blancas|1959": {
+   "id": "tt0051947",
+   "rating": 5.3,
+   "votes": 1360,
+   "checked": "2026-11-17"
   },
   "m|monster trucks|2017": {
    "id": "tt3095734",
@@ -4845,6 +5957,18 @@
    "rating": 6.9,
    "votes": 7456,
    "checked": "2026-11-13"
+  },
+  "m|motorcycle gang|1994": {
+   "id": "tt0110573",
+   "rating": 5,
+   "votes": 438,
+   "checked": "2026-11-17"
+  },
+  "m|mousehunt|1997": {
+   "id": "tt0119715",
+   "rating": 6.5,
+   "votes": 64706,
+   "checked": "2026-11-17"
   },
   "m|mr deeds|": {
    "id": "tt0280590",
@@ -4887,6 +6011,12 @@
    "rating": 6.4,
    "votes": 1490,
    "checked": "2026-11-13"
+  },
+  "m|music of the heart|1999": {
+   "id": "tt0166943",
+   "rating": 6.7,
+   "votes": 14050,
+   "checked": "2026-11-17"
   },
   "m|mutiny on the bounty|1935": {
    "id": "tt0026752",
@@ -4962,6 +6092,32 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|naked gun 2 1 2 the smell of fear|1991": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|naked gun 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|naked gun 33 1 3 the final insult|1994": {
+   "id": "tt0110622",
+   "rating": 6.5,
+   "votes": 130484,
+   "checked": "2026-11-17"
+  },
+  "m|naked gun from the files of police squad|1988": {
+   "id": "tt0095705",
+   "rating": 7.6,
+   "votes": 227171,
+   "checked": "2026-11-17"
+  },
+  "m|naked gun|2025": {
+   "id": "tt3402138",
+   "rating": 6.3,
+   "votes": 137650,
+   "checked": "2026-11-17"
+  },
   "m|nancy drew|2007": {
    "id": "tt0479500",
    "rating": 5.9,
@@ -4992,6 +6148,12 @@
    "votes": 32077,
    "checked": "2026-11-13"
   },
+  "m|nasty girl|1990": {
+   "id": "tt0100557",
+   "rating": 7.3,
+   "votes": 3002,
+   "checked": "2026-11-17"
+  },
   "m|national lampoons animal house|1978": {
    "id": "tt0077975",
    "rating": 7.4,
@@ -5021,6 +6183,12 @@
    "rating": 5.1,
    "votes": 1281,
    "checked": "2026-11-13"
+  },
+  "m|neath the arizona skies|1934": {
+   "id": "tt0024805",
+   "rating": 5.1,
+   "votes": 1281,
+   "checked": "2026-11-17"
   },
   "m|nebraska|2013": {
    "id": "tt1821549",
@@ -5092,9 +6260,25 @@
    "votes": 80637,
    "checked": "2026-11-13"
   },
+  "m|no country for old men|2007": {
+   "id": "tt0477348",
+   "rating": 8.2,
+   "votes": 1222822,
+   "checked": "2026-11-17"
+  },
   "m|no mercy|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|no strings attached|2011": {
+   "id": "tt1411238",
+   "rating": 6.2,
+   "votes": 257756,
+   "checked": "2026-11-17"
+  },
+  "m|nobodys fool what men want 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|north dallas forty|": {
    "id": "tt0079640",
@@ -5148,6 +6332,18 @@
    "votes": 202110,
    "checked": "2026-11-13"
   },
+  "m|nutty professor|1963": {
+   "id": "tt0057372",
+   "rating": 6.6,
+   "votes": 19770,
+   "checked": "2026-11-17"
+  },
+  "m|o|2001": {
+   "id": "tt0184791",
+   "rating": 6.1,
+   "votes": 21574,
+   "checked": "2026-11-17"
+  },
   "m|occupation rainfall|2021": {
    "id": "tt8615822",
    "rating": 4.7,
@@ -5166,15 +6362,43 @@
    "votes": 11586,
    "checked": "2026-11-13"
   },
+  "m|office christmas party|2016": {
+   "id": "tt1711525",
+   "rating": 5.9,
+   "votes": 95242,
+   "checked": "2026-11-17"
+  },
   "m|official secrets|2019": {
    "id": "tt5431890",
    "rating": 7.3,
    "votes": 61957,
    "checked": "2026-11-13"
   },
+  "m|old guy|2025": {
+   "id": "tt26442053",
+   "rating": 5.3,
+   "votes": 7040,
+   "checked": "2026-11-17"
+  },
+  "m|old school unrated and out of control|2003": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|old school|2003": {
+   "id": "tt0302886",
+   "rating": 7,
+   "votes": 259221,
+   "checked": "2026-11-17"
+  },
   "m|oldboy|": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|once upon a time in the west|1968": {
+   "id": "tt0064116",
+   "rating": 8.5,
+   "votes": 389501,
+   "checked": "2026-11-17"
   },
   "m|one battle after another|2025": {
    "id": "tt30144839",
@@ -5194,6 +6418,18 @@
    "votes": 1173689,
    "checked": "2026-11-13"
   },
+  "m|one mile chapter one|2025": {
+   "id": "tt24326458",
+   "rating": 5.7,
+   "votes": 5549,
+   "checked": "2026-11-17"
+  },
+  "m|one mile chapter two|2025": {
+   "id": "tt24326462",
+   "rating": 5.1,
+   "votes": 3779,
+   "checked": "2026-11-17"
+  },
   "m|one of our aircraft is missing|1942": {
    "id": "tt0035153",
    "rating": 7,
@@ -5212,11 +6448,23 @@
    "votes": 25272,
    "checked": "2026-11-13"
   },
+  "m|operation petticoat|1959": {
+   "id": "tt0053143",
+   "rating": 7.2,
+   "votes": 17947,
+   "checked": "2026-11-17"
+  },
   "m|orange county|2002": {
    "id": "tt0273923",
    "rating": 6.2,
    "votes": 54478,
    "checked": "2026-11-13"
+  },
+  "m|original kings of comedy|2000": {
+   "id": "tt0236388",
+   "rating": 6.9,
+   "votes": 6439,
+   "checked": "2026-11-17"
   },
   "m|orphan|2009": {
    "id": "tt1148204",
@@ -5230,6 +6478,12 @@
    "votes": 632,
    "checked": "2026-11-13"
   },
+  "m|out of towners|1970": {
+   "id": "tt0066193",
+   "rating": 7.1,
+   "votes": 10258,
+   "checked": "2026-11-17"
+  },
   "m|out of towners|1999": {
    "id": "tt0129280",
    "rating": 5.5,
@@ -5241,6 +6495,12 @@
    "rating": 7.2,
    "votes": 88961,
    "checked": "2026-11-13"
+  },
+  "m|outside providence|1999": {
+   "id": "tt0125971",
+   "rating": 6.4,
+   "votes": 9926,
+   "checked": "2026-11-17"
   },
   "m|outsiders|1983": {
    "id": "tt0086066",
@@ -5278,11 +6538,49 @@
    "votes": 117450,
    "checked": "2026-11-16"
   },
+  "m|pain and gain|2013": {
+   "id": "tt1980209",
+   "rating": 6.4,
+   "votes": 243998,
+   "checked": "2026-11-17"
+  },
   "m|paint your wagon|1970": {
    "id": "tt0064782",
    "rating": 6.6,
    "votes": 16468,
    "checked": "2026-11-13"
+  },
+  "m|paramount scares vol 1|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|paramount scares vol 2|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|paranormal activity 2|2010": {
+   "id": "tt1536044",
+   "rating": 5.7,
+   "votes": 117368,
+   "checked": "2026-11-17"
+  },
+  "m|paranormal activity next of kin|2021": {
+   "id": "tt10515988",
+   "rating": 5.3,
+   "votes": 21271,
+   "checked": "2026-11-17"
+  },
+  "m|paranormal activity the ghost dimension|2015": {
+   "id": "tt2473510",
+   "rating": 4.6,
+   "votes": 34214,
+   "checked": "2026-11-17"
+  },
+  "m|paranormal activity|2009": {
+   "id": "tt1179904",
+   "rating": 6.3,
+   "votes": 276236,
+   "checked": "2026-11-17"
   },
   "m|passenger|": {
    "none": true,
@@ -5305,6 +6603,24 @@
    "rating": 6.9,
    "votes": 286405,
    "checked": "2026-11-13"
+  },
+  "m|paw patrol the mighty movie|2023": {
+   "id": "tt15837338",
+   "rating": 5.9,
+   "votes": 6978,
+   "checked": "2026-11-17"
+  },
+  "m|paw patrol the movie|2021": {
+   "id": "tt11832046",
+   "rating": 6.1,
+   "votes": 10143,
+   "checked": "2026-11-17"
+  },
+  "m|paws of fury the legend of hank|2022": {
+   "id": "tt4428398",
+   "rating": 5.8,
+   "votes": 7754,
+   "checked": "2026-11-17"
   },
   "m|paycheck|2003": {
    "id": "tt0338337",
@@ -5354,11 +6670,23 @@
    "votes": 4731,
    "checked": "2026-11-13"
   },
+  "m|pet sematary bloodlines|2023": {
+   "id": "tt14145436",
+   "rating": 4.6,
+   "votes": 14559,
+   "checked": "2026-11-17"
+  },
   "m|phantom thread|2018": {
    "id": "tt5776858",
    "rating": 7.4,
    "votes": 165224,
    "checked": "2026-11-13"
+  },
+  "m|phantom|1996": {
+   "id": "tt0117331",
+   "rating": 5.1,
+   "votes": 38131,
+   "checked": "2026-11-17"
   },
   "m|phantoms|1998": {
    "id": "tt0119891",
@@ -5377,6 +6705,12 @@
    "rating": 4.9,
    "votes": 996,
    "checked": "2026-11-13"
+  },
+  "m|planes trains and automobiles|1987": {
+   "id": "tt0093748",
+   "rating": 7.6,
+   "votes": 183377,
+   "checked": "2026-11-17"
   },
   "m|playing by heart|1998": {
    "id": "tt0145734",
@@ -5462,6 +6796,12 @@
    "votes": 10367,
    "checked": "2026-11-13"
   },
+  "m|preschool|2026": {
+   "id": "tt34890320",
+   "rating": 5,
+   "votes": 654,
+   "checked": "2026-11-17"
+  },
   "m|presidio|1988": {
    "id": "tt0095897",
    "rating": 6,
@@ -5480,17 +6820,41 @@
    "votes": 1234,
    "checked": "2026-11-13"
   },
+  "m|pretty in pink|1986": {
+   "id": "tt0091790",
+   "rating": 6.7,
+   "votes": 96901,
+   "checked": "2026-11-17"
+  },
   "m|price we pay|2023": {
    "id": "tt15441472",
    "rating": 4.9,
    "votes": 5013,
    "checked": "2026-11-13"
   },
+  "m|pride|2014": {
+   "id": "tt3169706",
+   "rating": 7.8,
+   "votes": 66079,
+   "checked": "2026-11-17"
+  },
+  "m|primal fear|1996": {
+   "id": "tt0117381",
+   "rating": 7.7,
+   "votes": 301830,
+   "checked": "2026-11-17"
+  },
   "m|primary colors|1998": {
    "id": "tt0119942",
    "rating": 6.7,
    "votes": 31849,
    "checked": "2026-11-13"
+  },
+  "m|primate|2026": {
+   "id": "tt33028778",
+   "rating": 5.8,
+   "votes": 39459,
+   "checked": "2026-11-17"
   },
   "m|prince and me|2004": {
    "id": "tt0337697",
@@ -5503,6 +6867,12 @@
    "rating": 6.6,
    "votes": 1268,
    "checked": "2026-11-13"
+  },
+  "m|private parts|1997": {
+   "id": "tt0119951",
+   "rating": 6.9,
+   "votes": 40865,
+   "checked": "2026-11-17"
   },
   "m|private war of major benson|1955": {
    "id": "tt0048513",
@@ -5598,11 +6968,23 @@
    "votes": 65492,
    "checked": "2026-11-13"
   },
+  "m|quiet american|2003": {
+   "id": "tt0258068",
+   "rating": 7,
+   "votes": 31438,
+   "checked": "2026-11-17"
+  },
   "m|quiet man|": {
    "id": "tt0045061",
    "rating": 7.7,
    "votes": 46602,
    "checked": "2026-11-13"
+  },
+  "m|quiet man|1952": {
+   "id": "tt0045061",
+   "rating": 7.7,
+   "votes": 46618,
+   "checked": "2026-11-17"
   },
   "m|race for glory audi vs lancia|2024": {
    "id": "tt20112600",
@@ -5652,11 +7034,23 @@
    "votes": 205863,
    "checked": "2026-11-13"
   },
+  "m|rango|2011": {
+   "id": "tt1192628",
+   "rating": 7.3,
+   "votes": 326318,
+   "checked": "2026-11-17"
+  },
   "m|rat race|": {
    "id": "tt0250687",
    "rating": 6.5,
    "votes": 132301,
    "checked": "2026-11-13"
+  },
+  "m|rat race|2001": {
+   "id": "tt0250687",
+   "rating": 6.5,
+   "votes": 132348,
+   "checked": "2026-11-17"
   },
   "m|ray donovan the movie|2022": {
    "id": "tt14124268",
@@ -5705,6 +7099,24 @@
    "rating": 7.6,
    "votes": 36044,
    "checked": "2026-11-13"
+  },
+  "m|reds|1981": {
+   "id": "tt0082979",
+   "rating": 7.3,
+   "votes": 27206,
+   "checked": "2026-11-17"
+  },
+  "m|regarding henry|1991": {
+   "id": "tt0102768",
+   "rating": 6.7,
+   "votes": 36805,
+   "checked": "2026-11-17"
+  },
+  "m|regretting you|2025": {
+   "id": "tt33088452",
+   "rating": 6,
+   "votes": 27134,
+   "checked": "2026-11-17"
   },
   "m|reindeer games|2000": {
    "id": "tt0184858",
@@ -5810,6 +7222,12 @@
    "votes": 10933,
    "checked": "2026-11-13"
   },
+  "m|reuben reuben|1983": {
+   "id": "tt0084591",
+   "rating": 6.8,
+   "votes": 1487,
+   "checked": "2026-11-17"
+  },
   "m|reunion|": {
    "none": true,
    "checked": "2026-11-13"
@@ -5856,11 +7274,29 @@
    "votes": 857,
    "checked": "2026-11-13"
   },
+  "m|ring|2002": {
+   "id": "tt0298130",
+   "rating": 7.1,
+   "votes": 409736,
+   "checked": "2026-11-17"
+  },
+  "m|rings|2017": {
+   "id": "tt0498381",
+   "rating": 4.5,
+   "votes": 46621,
+   "checked": "2026-11-17"
+  },
   "m|rio grande|": {
    "id": "tt0042895",
    "rating": 7,
    "votes": 19742,
    "checked": "2026-11-13"
+  },
+  "m|rio grande|1950": {
+   "id": "tt0042895",
+   "rating": 7,
+   "votes": 19748,
+   "checked": "2026-11-17"
   },
   "m|rio lobo|": {
    "id": "tt0066301",
@@ -5868,11 +7304,23 @@
    "votes": 15543,
    "checked": "2026-11-13"
   },
+  "m|rio lobo|1970": {
+   "id": "tt0066301",
+   "rating": 6.7,
+   "votes": 15550,
+   "checked": "2026-11-17"
+  },
   "m|risky business|1983": {
    "id": "tt0086200",
    "rating": 6.8,
    "votes": 110650,
    "checked": "2026-11-13"
+  },
+  "m|risque|2025": {
+   "id": "tt37268550",
+   "rating": 4.9,
+   "votes": 559,
+   "checked": "2026-11-17"
   },
   "m|road to perdition|2002": {
    "id": "tt0257044",
@@ -5885,6 +7333,12 @@
    "rating": 6.5,
    "votes": 191047,
    "checked": "2026-11-13"
+  },
+  "m|rob peace|2024": {
+   "id": "tt10740926",
+   "rating": 6.5,
+   "votes": 3477,
+   "checked": "2026-11-17"
   },
   "m|robin hood prince of thieves|1991": {
    "id": "tt0102798",
@@ -5922,6 +7376,12 @@
    "votes": 254029,
    "checked": "2026-11-13"
   },
+  "m|roman holiday|1953": {
+   "id": "tt0046250",
+   "rating": 8,
+   "votes": 159633,
+   "checked": "2026-11-17"
+  },
   "m|romeo must die|2000": {
    "id": "tt0165929",
    "rating": 6.1,
@@ -5934,17 +7394,53 @@
    "votes": 91473,
    "checked": "2026-11-13"
   },
+  "m|roofman|2025": {
+   "id": "tt4627382",
+   "rating": 6.9,
+   "votes": 91675,
+   "checked": "2026-11-17"
+  },
   "m|roommate|": {
    "id": "tt1265990",
    "rating": 4.8,
    "votes": 44647,
    "checked": "2026-11-13"
   },
+  "m|rosemarys baby|1968": {
+   "id": "tt0063522",
+   "rating": 8,
+   "votes": 263312,
+   "checked": "2026-11-17"
+  },
   "m|rounders|1998": {
    "id": "tt0128442",
    "rating": 7.3,
    "votes": 174519,
    "checked": "2026-11-13"
+  },
+  "m|rudderless|2014": {
+   "id": "tt1798243",
+   "rating": 7.4,
+   "votes": 20315,
+   "checked": "2026-11-17"
+  },
+  "m|rugrats go wild|2003": {
+   "id": "tt0337711",
+   "rating": 5.6,
+   "votes": 9777,
+   "checked": "2026-11-17"
+  },
+  "m|rugrats in paris|2000": {
+   "id": "tt0213203",
+   "rating": 6.2,
+   "votes": 14809,
+   "checked": "2026-11-17"
+  },
+  "m|ruins|2008": {
+   "id": "tt0963794",
+   "rating": 5.9,
+   "votes": 92902,
+   "checked": "2026-11-17"
   },
   "m|rules of engagement|2000": {
    "id": "tt0160797",
@@ -5964,17 +7460,47 @@
    "votes": 10333,
    "checked": "2026-11-16"
   },
+  "m|runaway bride|1999": {
+   "id": "tt0163187",
+   "rating": 5.6,
+   "votes": 112362,
+   "checked": "2026-11-17"
+  },
   "m|running man|1987": {
    "id": "tt0093894",
    "rating": 6.6,
    "votes": 194368,
    "checked": "2026-11-16"
   },
+  "m|running man|2025": {
+   "id": "tt14107334",
+   "rating": 6.3,
+   "votes": 128128,
+   "checked": "2026-11-17"
+  },
   "m|rush hour|1998": {
    "id": "tt0120812",
    "rating": 7.1,
    "votes": 337839,
    "checked": "2026-11-13"
+  },
+  "m|sabrina|1954": {
+   "id": "tt0047437",
+   "rating": 7.6,
+   "votes": 77098,
+   "checked": "2026-11-17"
+  },
+  "m|sabrina|1995": {
+   "id": "tt0114319",
+   "rating": 6.4,
+   "votes": 48226,
+   "checked": "2026-11-17"
+  },
+  "m|sahara|2005": {
+   "id": "tt0318649",
+   "rating": 6.1,
+   "votes": 110871,
+   "checked": "2026-11-17"
   },
   "m|saint|1997": {
    "id": "tt0120053",
@@ -5987,6 +7513,12 @@
    "rating": 6.6,
    "votes": 9447,
    "checked": "2026-11-13"
+  },
+  "m|samson and delilah|1949": {
+   "id": "tt0041838",
+   "rating": 6.8,
+   "votes": 10200,
+   "checked": "2026-11-17"
   },
   "m|sanctum|2011": {
    "id": "tt0881320",
@@ -6012,11 +7544,31 @@
    "votes": 549,
    "checked": "2026-11-13"
   },
+  "m|santa fe stampede|1938": {
+   "id": "tt0030714",
+   "rating": 5.9,
+   "votes": 549,
+   "checked": "2026-11-17"
+  },
+  "m|saturday night fever staying alive 2 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|saturday night fever|1977": {
+   "id": "tt0076666",
+   "rating": 6.8,
+   "votes": 96470,
+   "checked": "2026-11-17"
+  },
   "m|savages|2012": {
    "id": "tt1615065",
    "rating": 6.4,
    "votes": 139682,
    "checked": "2026-11-13"
+  },
+  "m|save the last dance 2|2006": {
+   "none": true,
+   "checked": "2026-11-17"
   },
   "m|save the last dance|2001": {
    "id": "tt0206275",
@@ -6042,11 +7594,39 @@
    "votes": 1042242,
    "checked": "2026-11-13"
   },
+  "m|scary movie 2|2001": {
+   "id": "tt0257106",
+   "rating": 5.4,
+   "votes": 202240,
+   "checked": "2026-11-17"
+  },
+  "m|scary movie 3|2003": {
+   "id": "tt0306047",
+   "rating": 5.6,
+   "votes": 178745,
+   "checked": "2026-11-17"
+  },
+  "m|scary movie 35|2005": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|scary movie|2000": {
+   "id": "tt0175142",
+   "rating": 6.3,
+   "votes": 338117,
+   "checked": "2026-11-17"
+  },
   "m|scary movie|2026": {
    "id": "tt32093575",
    "rating": 4.8,
    "votes": 64854,
    "checked": "2026-11-13"
+  },
+  "m|school of rock|2003": {
+   "id": "tt0332379",
+   "rating": 7.2,
+   "votes": 364064,
+   "checked": "2026-11-17"
   },
   "m|school ties|1992": {
    "id": "tt0105327",
@@ -6140,6 +7720,40 @@
    "votes": 62965,
    "checked": "2026-11-13"
   },
+  "m|scream 2|1997": {
+   "id": "tt0120082",
+   "rating": 6.4,
+   "votes": 243122,
+   "checked": "2026-11-17"
+  },
+  "m|scream 3|2000": {
+   "id": "tt0134084",
+   "rating": 5.7,
+   "votes": 190492,
+   "checked": "2026-11-17"
+  },
+  "m|scream 6|2023": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|scream|2022": {
+   "id": "tt11245972",
+   "rating": 6.3,
+   "votes": 193303,
+   "checked": "2026-11-17"
+  },
+  "m|scrooge|1970": {
+   "id": "tt0066344",
+   "rating": 7.5,
+   "votes": 14155,
+   "checked": "2026-11-17"
+  },
+  "m|scrooged|1988": {
+   "id": "tt0096061",
+   "rating": 6.9,
+   "votes": 130289,
+   "checked": "2026-11-17"
+  },
   "m|seagull|": {
    "id": "tt4682136",
    "rating": 5.8,
@@ -6200,6 +7814,12 @@
    "votes": 133610,
    "checked": "2026-11-13"
   },
+  "m|serendipity|2001": {
+   "id": "tt0240890",
+   "rating": 6.9,
+   "votes": 133680,
+   "checked": "2026-11-17"
+  },
   "m|serenity|2005": {
    "id": "tt0379786",
    "rating": 7.8,
@@ -6234,11 +7854,29 @@
    "none": true,
    "checked": "2026-11-13"
   },
+  "m|sgt stubby an american hero|2018": {
+   "id": "tt5314190",
+   "rating": 6.9,
+   "votes": 2982,
+   "checked": "2026-11-17"
+  },
   "m|shadow land|2024": {
    "id": "tt31956123",
    "rating": 3.9,
    "votes": 672,
    "checked": "2026-11-16"
+  },
+  "m|shakespeare in love|1999": {
+   "id": "tt0138097",
+   "rating": 7.1,
+   "votes": 245035,
+   "checked": "2026-11-17"
+  },
+  "m|shall we dance|2004": {
+   "id": "tt0358135",
+   "rating": 6.2,
+   "votes": 53418,
+   "checked": "2026-11-17"
   },
   "m|shawshank redemption|1994": {
    "id": "tt0111161",
@@ -6246,11 +7884,23 @@
    "votes": 3263940,
    "checked": "2026-11-13"
   },
+  "m|shell|2025": {
+   "id": "tt12706836",
+   "rating": 5,
+   "votes": 5311,
+   "checked": "2026-11-17"
+  },
   "m|shenandoah|1965": {
    "id": "tt0059711",
    "rating": 7.3,
    "votes": 10707,
    "checked": "2026-11-13"
+  },
+  "m|sherlock gnomes|2018": {
+   "id": "tt2296777",
+   "rating": 5.3,
+   "votes": 16111,
+   "checked": "2026-11-17"
   },
   "m|sherlock holmes and the hound of the baskervilles|": {
    "none": true,
@@ -6326,11 +7976,35 @@
    "votes": 14719,
    "checked": "2026-11-13"
   },
+  "m|shes out of my league|2010": {
+   "id": "tt0815236",
+   "rating": 6.4,
+   "votes": 155555,
+   "checked": "2026-11-17"
+  },
+  "m|shes the man|2006": {
+   "id": "tt0454945",
+   "rating": 6.4,
+   "votes": 197864,
+   "checked": "2026-11-17"
+  },
   "m|shining|1980": {
    "id": "tt0081505",
    "rating": 8.4,
    "votes": 1253790,
    "checked": "2026-11-13"
+  },
+  "m|shipping news|2002": {
+   "id": "tt0120824",
+   "rating": 6.7,
+   "votes": 35069,
+   "checked": "2026-11-17"
+  },
+  "m|shirley valentine|1989": {
+   "id": "tt0098319",
+   "rating": 7.3,
+   "votes": 10055,
+   "checked": "2026-11-17"
   },
   "m|shooter|2007": {
    "id": "tt0822854",
@@ -6343,6 +8017,12 @@
    "rating": 7.6,
    "votes": 29869,
    "checked": "2026-11-13"
+  },
+  "m|short cut to hell|1957": {
+   "id": "tt0050964",
+   "rating": 6.1,
+   "votes": 566,
+   "checked": "2026-11-17"
   },
   "m|shortcomings|": {
    "id": "tt14483774",
@@ -6452,6 +8132,12 @@
    "votes": 13489,
    "checked": "2026-11-13"
   },
+  "m|smile 2|2024": {
+   "id": "tt29268110",
+   "rating": 6.7,
+   "votes": 158646,
+   "checked": "2026-11-17"
+  },
   "m|smoke signals|1998": {
    "id": "tt0120321",
    "rating": 7.2,
@@ -6476,6 +8162,12 @@
    "votes": 159151,
    "checked": "2026-11-13"
   },
+  "m|smurfs|2025": {
+   "id": "tt18069420",
+   "rating": 4.3,
+   "votes": 7856,
+   "checked": "2026-11-17"
+  },
   "m|snack shack|": {
    "id": "tt22004344",
    "rating": 7,
@@ -6493,6 +8185,18 @@
    "rating": 4.8,
    "votes": 2360,
    "checked": "2026-11-13"
+  },
+  "m|snoopy come home|1972": {
+   "id": "tt0069289",
+   "rating": 7.3,
+   "votes": 5746,
+   "checked": "2026-11-17"
+  },
+  "m|snow day|2000": {
+   "id": "tt0184907",
+   "rating": 5.3,
+   "votes": 14845,
+   "checked": "2026-11-17"
   },
   "m|snow white and the huntsman|2012": {
    "id": "tt1735898",
@@ -6540,6 +8244,12 @@
    "votes": 86271,
    "checked": "2026-11-16"
   },
+  "m|sonic the hedgehog|2020": {
+   "id": "tt3794354",
+   "rating": 6.5,
+   "votes": 198185,
+   "checked": "2026-11-17"
+  },
   "m|sons of katie elder|": {
    "id": "tt0059740",
    "rating": 7.1,
@@ -6576,6 +8286,12 @@
    "votes": 77730,
    "checked": "2026-11-13"
   },
+  "m|special delivery|1976": {
+   "id": "tt0075250",
+   "rating": 6.2,
+   "votes": 723,
+   "checked": "2026-11-17"
+  },
   "m|speed kills|2018": {
    "id": "tt6749318",
    "rating": 4.4,
@@ -6588,11 +8304,35 @@
    "votes": 85496,
    "checked": "2026-11-13"
   },
+  "m|spiderwick chronicles|2008": {
+   "id": "tt0416236",
+   "rating": 6.5,
+   "votes": 110762,
+   "checked": "2026-11-17"
+  },
   "m|spies like us|1985": {
    "id": "tt0090056",
    "rating": 6.4,
    "votes": 55599,
    "checked": "2026-11-13"
+  },
+  "m|spongebob movie search for squarepants|2025": {
+   "id": "tt23572848",
+   "rating": 5.7,
+   "votes": 9970,
+   "checked": "2026-11-17"
+  },
+  "m|spongebob movie sponge on the run|2021": {
+   "id": "tt4823776",
+   "rating": 5.9,
+   "votes": 26541,
+   "checked": "2026-11-17"
+  },
+  "m|spongebob squarepants movie|2004": {
+   "id": "tt0345950",
+   "rating": 7.2,
+   "votes": 113796,
+   "checked": "2026-11-17"
   },
   "m|spring break|": {
    "id": "tt0086352",
@@ -6605,6 +8345,12 @@
    "rating": 3.4,
    "votes": 941,
    "checked": "2026-11-13"
+  },
+  "m|st louis blues|1958": {
+   "id": "tt0052234",
+   "rating": 7.1,
+   "votes": 856,
+   "checked": "2026-11-17"
   },
   "m|stalag 17|1953": {
    "id": "tt0046359",
@@ -6654,11 +8400,31 @@
    "votes": 19543,
    "checked": "2026-11-16"
   },
+  "m|star trek the next generation 4 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|star trek the original motion picture 6 pack|": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
+  "m|stardust|2007": {
+   "id": "tt0486655",
+   "rating": 7.6,
+   "votes": 301952,
+   "checked": "2026-11-17"
+  },
   "m|station agent|": {
    "id": "tt0340377",
    "rating": 7.6,
    "votes": 82492,
    "checked": "2026-11-13"
+  },
+  "m|staying alive|1983": {
+   "id": "tt0086361",
+   "rating": 4.8,
+   "votes": 19106,
+   "checked": "2026-11-17"
   },
   "m|stepford wives|": {
    "none": true,
@@ -6676,17 +8442,47 @@
    "votes": 156644,
    "checked": "2026-11-13"
   },
+  "m|stephen kings thinner|1996": {
+   "id": "tt0117894",
+   "rating": 5.8,
+   "votes": 37935,
+   "checked": "2026-11-17"
+  },
+  "m|still smokin|1983": {
+   "id": "tt0086366",
+   "rating": 5.4,
+   "votes": 8490,
+   "checked": "2026-11-17"
+  },
   "m|sting|1973": {
    "id": "tt0070735",
    "rating": 8.2,
    "votes": 308159,
    "checked": "2026-11-13"
   },
+  "m|stop loss|2008": {
+   "id": "tt0489281",
+   "rating": 6.4,
+   "votes": 21732,
+   "checked": "2026-11-17"
+  },
   "m|stop or my mom will shoot|": {
    "id": "tt0105477",
    "rating": 4.4,
    "votes": 46839,
    "checked": "2026-11-13"
+  },
+  "m|strange wilderness|2008": {
+   "id": "tt0489282",
+   "rating": 5.2,
+   "votes": 24041,
+   "checked": "2026-11-17"
+  },
+  "m|stranger in my home|2025": {
+   "id": "tt32147653",
+   "rating": 4.4,
+   "votes": 1739,
+   "checked": "2026-11-17"
   },
   "m|strays|": {
    "none": true,
@@ -6707,6 +8503,12 @@
    "rating": 5.8,
    "votes": 50592,
    "checked": "2026-11-13"
+  },
+  "m|suburbicon|2017": {
+   "id": "tt0491175",
+   "rating": 5.8,
+   "votes": 50622,
+   "checked": "2026-11-17"
   },
   "m|sully|2016": {
    "id": "tt3263904",
@@ -6735,6 +8537,12 @@
   "m|supercop|1996": {
    "none": true,
    "checked": "2026-11-13"
+  },
+  "m|superstar|1999": {
+   "id": "tt0167427",
+   "rating": 5.3,
+   "votes": 21810,
+   "checked": "2026-11-17"
   },
   "m|surviving christmas|2004": {
    "id": "tt0252028",
@@ -6804,6 +8612,12 @@
    "votes": 11606,
    "checked": "2026-11-13"
   },
+  "m|talhotblond|2009": {
+   "id": "tt1370889",
+   "rating": 6.8,
+   "votes": 2980,
+   "checked": "2026-11-17"
+  },
   "m|tango and cash|1989": {
    "id": "tt0098439",
    "rating": 6.4,
@@ -6815,6 +8629,12 @@
    "rating": 7.4,
    "votes": 111686,
    "checked": "2026-11-13"
+  },
+  "m|target|1985": {
+   "id": "tt0090130",
+   "rating": 5.9,
+   "votes": 5663,
+   "checked": "2026-11-17"
   },
   "m|taxi driver|": {
    "id": "tt0075314",
@@ -6882,6 +8702,12 @@
    "votes": 232876,
    "checked": "2026-11-16"
   },
+  "m|ten commandments|1956": {
+   "id": "tt0049833",
+   "rating": 7.9,
+   "votes": 86114,
+   "checked": "2026-11-17"
+  },
   "m|terminator dark fate|2019": {
    "id": "tt6450804",
    "rating": 6.2,
@@ -6906,6 +8732,12 @@
    "votes": 17563,
    "checked": "2026-11-13"
   },
+  "m|there will be blood|2008": {
+   "id": "tt0469494",
+   "rating": 8.2,
+   "votes": 724151,
+   "checked": "2026-11-17"
+  },
   "m|things to do in denver when youre dead|1996": {
    "id": "tt0114660",
    "rating": 6.7,
@@ -6917,6 +8749,12 @@
    "rating": 6.7,
    "votes": 97089,
    "checked": "2026-11-13"
+  },
+  "m|this property is condemned|1966": {
+   "id": "tt0061089",
+   "rating": 7,
+   "votes": 7290,
+   "checked": "2026-11-17"
   },
   "m|three days of the condor|1975": {
    "id": "tt0073802",
@@ -6942,6 +8780,12 @@
    "votes": 483,
    "checked": "2026-11-13"
   },
+  "m|three texas steers|1939": {
+   "id": "tt0032032",
+   "rating": 5.4,
+   "votes": 484,
+   "checked": "2026-11-17"
+  },
   "m|ticket to paradise|": {
    "id": "tt14109724",
    "rating": 6.1,
@@ -6957,6 +8801,12 @@
    "rating": 6.8,
    "votes": 1486,
    "checked": "2026-11-13"
+  },
+  "m|tiger rising|2022": {
+   "id": "tt1596557",
+   "rating": 4.8,
+   "votes": 1252,
+   "checked": "2026-11-17"
   },
   "m|tigers apprentice|2024": {
    "id": "tt5834410",
@@ -6975,6 +8825,12 @@
    "rating": 6.4,
    "votes": 56859,
    "checked": "2026-11-13"
+  },
+  "m|titanic|1997": {
+   "id": "tt0120338",
+   "rating": 8,
+   "votes": 1420566,
+   "checked": "2026-11-17"
   },
   "m|to kill a mockingbird|1962": {
    "id": "tt0056592",
@@ -7034,6 +8890,16 @@
    "votes": 20929,
    "checked": "2026-11-13"
   },
+  "m|trading places|1983": {
+   "id": "tt0086465",
+   "rating": 7.5,
+   "votes": 185558,
+   "checked": "2026-11-17"
+  },
+  "m|transformers 2 revenge of the fallen|2009": {
+   "none": true,
+   "checked": "2026-11-17"
+  },
   "m|transformers one|2024": {
    "id": "tt8864596",
    "rating": 7.6,
@@ -7070,17 +8936,41 @@
    "votes": 1684,
    "checked": "2026-11-13"
   },
+  "m|tropic thunder|2008": {
+   "id": "tt0942385",
+   "rating": 7.1,
+   "votes": 500869,
+   "checked": "2026-11-17"
+  },
   "m|true grit|1969": {
    "id": "tt0065126",
    "rating": 7.4,
    "votes": 54829,
    "checked": "2026-11-13"
   },
+  "m|true grit|2010": {
+   "id": "tt1403865",
+   "rating": 7.6,
+   "votes": 380679,
+   "checked": "2026-11-17"
+  },
   "m|true romance|": {
    "id": "tt0108399",
    "rating": 7.9,
    "votes": 265991,
    "checked": "2026-11-13"
+  },
+  "m|truman show|1998": {
+   "id": "tt0120382",
+   "rating": 8.2,
+   "votes": 1419526,
+   "checked": "2026-11-17"
+  },
+  "m|trust|2025": {
+   "id": "tt31314745",
+   "rating": 3.9,
+   "votes": 3485,
+   "checked": "2026-11-17"
   },
   "m|tulip fever|2017": {
    "id": "tt0491203",
@@ -7117,6 +9007,12 @@
    "rating": 5.3,
    "votes": 26290,
    "checked": "2026-11-13"
+  },
+  "m|twisted|2026": {
+   "id": "tt14201728",
+   "rating": 4.5,
+   "votes": 1710,
+   "checked": "2026-11-17"
   },
   "m|twister|1996": {
    "id": "tt0117998",
@@ -7182,6 +9078,12 @@
    "votes": 104570,
    "checked": "2026-11-13"
   },
+  "m|under the boardwalk|2023": {
+   "id": "tt10551654",
+   "rating": 5.9,
+   "votes": 1971,
+   "checked": "2026-11-17"
+  },
   "m|undertaking betty|2005": {
    "id": "tt0298504",
    "rating": 6.5,
@@ -7206,6 +9108,12 @@
    "votes": 59788,
    "checked": "2026-11-13"
   },
+  "m|untitled home invasion romance|2026": {
+   "id": "tt33204691",
+   "rating": 5.6,
+   "votes": 1415,
+   "checked": "2026-11-17"
+  },
   "m|untouchables|1987": {
    "id": "tt0094226",
    "rating": 7.8,
@@ -7217,6 +9125,12 @@
    "rating": 7.4,
    "votes": 363799,
    "checked": "2026-11-13"
+  },
+  "m|urban cowboy|1980": {
+   "id": "tt0081696",
+   "rating": 6.5,
+   "votes": 18919,
+   "checked": "2026-11-17"
   },
   "m|us marshals|1998": {
    "id": "tt0120873",
@@ -7242,6 +9156,12 @@
    "votes": 212378,
    "checked": "2026-11-13"
   },
+  "m|varsity blues|1999": {
+   "id": "tt0139699",
+   "rating": 6.6,
+   "votes": 54244,
+   "checked": "2026-11-17"
+  },
   "m|vatican tapes|2015": {
    "id": "tt1524575",
    "rating": 4.7,
@@ -7259,6 +9179,12 @@
    "rating": 6.3,
    "votes": 51440,
    "checked": "2026-11-13"
+  },
+  "m|vicious|2025": {
+   "id": "tt31511689",
+   "rating": 4.9,
+   "votes": 12136,
+   "checked": "2026-11-17"
   },
   "m|vicky cristina barcelona|2008": {
    "id": "tt0497465",
@@ -7308,6 +9234,12 @@
    "votes": 962,
    "checked": "2026-11-13"
   },
+  "m|walking tall|1973": {
+   "id": "tt0070895",
+   "rating": 6.9,
+   "votes": 7720,
+   "checked": "2026-11-17"
+  },
   "m|wanted|2008": {
    "id": "tt0493464",
    "rating": 6.7,
@@ -7344,6 +9276,12 @@
    "votes": 299423,
    "checked": "2026-11-13"
   },
+  "m|wardriver|2026": {
+   "id": "tt5095076",
+   "rating": 5.6,
+   "votes": 2871,
+   "checked": "2026-11-17"
+  },
   "m|warning|2021": {
    "id": "tt8956324",
    "rating": 4.6,
@@ -7371,6 +9309,18 @@
    "rating": 7.1,
    "votes": 44771,
    "checked": "2026-11-13"
+  },
+  "m|waynes world 2|1993": {
+   "id": "tt0108525",
+   "rating": 6.2,
+   "votes": 93110,
+   "checked": "2026-11-17"
+  },
+  "m|waynes world|1992": {
+   "id": "tt0105793",
+   "rating": 7,
+   "votes": 184514,
+   "checked": "2026-11-17"
   },
   "m|we are marshall|2006": {
    "id": "tt0758794",
@@ -7420,6 +9370,18 @@
    "votes": 14723,
    "checked": "2026-11-13"
   },
+  "m|were no angels|1955": {
+   "id": "tt0048801",
+   "rating": 7.3,
+   "votes": 12374,
+   "checked": "2026-11-17"
+  },
+  "m|were no angels|1989": {
+   "id": "tt0098625",
+   "rating": 6.1,
+   "votes": 26627,
+   "checked": "2026-11-17"
+  },
   "m|were the millers|2013": {
    "id": "tt1723121",
    "rating": 7,
@@ -7454,11 +9416,29 @@
    "votes": 68861,
    "checked": "2026-11-13"
   },
+  "m|what lies beneath|2000": {
+   "id": "tt0161081",
+   "rating": 6.6,
+   "votes": 147920,
+   "checked": "2026-11-17"
+  },
   "m|what we did on our holiday|2015": {
    "id": "tt2725962",
    "rating": 6.9,
    "votes": 26459,
    "checked": "2026-11-13"
+  },
+  "m|what women want|2000": {
+   "id": "tt0207201",
+   "rating": 6.5,
+   "votes": 242232,
+   "checked": "2026-11-17"
+  },
+  "m|whats eating gilbert grape|1993": {
+   "id": "tt0108550",
+   "rating": 7.7,
+   "votes": 272587,
+   "checked": "2026-11-17"
   },
   "m|whats new scooby doo season 1|2002": {
    "none": true,
@@ -7469,6 +9449,12 @@
    "rating": 7,
    "votes": 17698,
    "checked": "2026-11-13"
+  },
+  "m|when worlds collide|1951": {
+   "id": "tt0044207",
+   "rating": 6.6,
+   "votes": 10653,
+   "checked": "2026-11-17"
   },
   "m|where the buffalo roam|": {
    "id": "tt0081748",
@@ -7482,6 +9468,12 @@
    "votes": 112911,
    "checked": "2026-11-13"
   },
+  "m|white christmas|1954": {
+   "id": "tt0047673",
+   "rating": 7.6,
+   "votes": 57522,
+   "checked": "2026-11-17"
+  },
   "m|whos afraid of virginia woolf|1966": {
    "id": "tt0061184",
    "rating": 8,
@@ -7494,11 +9486,23 @@
    "votes": 46927,
    "checked": "2026-11-13"
   },
+  "m|wifelike|2022": {
+   "id": "tt15978956",
+   "rating": 4.9,
+   "votes": 6981,
+   "checked": "2026-11-17"
+  },
   "m|wild at heart|1990": {
    "id": "tt0100935",
    "rating": 7.2,
    "votes": 114135,
    "checked": "2026-11-13"
+  },
+  "m|wild thornberrys movie|2002": {
+   "id": "tt0282120",
+   "rating": 5.7,
+   "votes": 16015,
+   "checked": "2026-11-17"
   },
   "m|wild wild west|1999": {
    "id": "tt0120891",
@@ -7523,6 +9527,12 @@
    "rating": 6.1,
    "votes": 6555,
    "checked": "2026-11-13"
+  },
+  "m|witchboard|2025": {
+   "id": "tt2256055",
+   "rating": 5.1,
+   "votes": 4165,
+   "checked": "2026-11-17"
   },
   "m|witches of eastwick|1987": {
    "id": "tt0094332",
@@ -7563,6 +9573,12 @@
    "rating": 8.1,
    "votes": 474935,
    "checked": "2026-11-13"
+  },
+  "m|wonder boys|2000": {
+   "id": "tt0185014",
+   "rating": 7.2,
+   "votes": 69625,
+   "checked": "2026-11-17"
   },
   "m|wonderland|2003": {
    "id": "tt0335563",
@@ -7618,6 +9634,12 @@
    "votes": 5295,
    "checked": "2026-11-13"
   },
+  "m|you can count on me|2000": {
+   "id": "tt0203230",
+   "rating": 7.5,
+   "votes": 33971,
+   "checked": "2026-11-17"
+  },
   "m|you cant take it with you|": {
    "id": "tt0030993",
    "rating": 7.8,
@@ -7630,6 +9652,12 @@
    "votes": 90697,
    "checked": "2026-11-13"
   },
+  "m|young sherlock holmes|1985": {
+   "id": "tt0090357",
+   "rating": 6.8,
+   "votes": 25706,
+   "checked": "2026-11-17"
+  },
   "m|yours mine and ours|2005": {
    "id": "tt0443295",
    "rating": 5.5,
@@ -7641,6 +9669,18 @@
    "rating": 7,
    "votes": 49715,
    "checked": "2026-11-13"
+  },
+  "m|zoolander 2|2016": {
+   "id": "tt1608290",
+   "rating": 4.7,
+   "votes": 83051,
+   "checked": "2026-11-17"
+  },
+  "m|zoolander|2001": {
+   "id": "tt0196229",
+   "rating": 6.5,
+   "votes": 322275,
+   "checked": "2026-11-17"
   },
   "tv|13 ghosts of scooby doo|": {
    "id": "tt0088628",
@@ -10493,6 +12533,16 @@
     "Leonid Kinskey"
    ]
   },
+  "tt0037536": {
+   "checked": "2026-11-17",
+   "names": [
+    "Bing Crosby",
+    "Ingrid Bergman",
+    "Henry Travers",
+    "William Gargan",
+    "Ruth Donnelly"
+   ]
+  },
   "tt0037702": {
    "checked": "2026-11-17",
    "names": [
@@ -10521,6 +12571,16 @@
     "George Macready",
     "Joseph Calleia",
     "Steven Geray"
+   ]
+  },
+  "tt0038650": {
+   "checked": "2026-11-17",
+   "names": [
+    "James Stewart",
+    "Donna Reed",
+    "Lionel Barrymore",
+    "Thomas Mitchell",
+    "Henry Travers"
    ]
   },
   "tt0038794": {
@@ -10593,6 +12653,16 @@
     "John McIntire"
    ]
   },
+  "tt0041838": {
+   "checked": "2026-11-17",
+   "names": [
+    "Hedy Lamarr",
+    "Victor Mature",
+    "George Sanders",
+    "Angela Lansbury",
+    "Henry Wilcoxon"
+   ]
+  },
   "tt0041841": {
    "checked": "2026-11-17",
    "names": [
@@ -10643,6 +12713,16 @@
     "Bennett Green"
    ]
   },
+  "tt0043465": {
+   "checked": "2026-11-17",
+   "names": [
+    "Kirk Douglas",
+    "Eleanor Parker",
+    "William Bendix",
+    "Cathy O'Donnell",
+    "George Macready"
+   ]
+  },
   "tt0043924": {
    "checked": "2026-11-17",
    "names": [
@@ -10661,6 +12741,16 @@
     "Kim Hunter",
     "Karl Malden",
     "Rudy Bond"
+   ]
+  },
+  "tt0044207": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Derr",
+    "Barbara Rush",
+    "Peter Hansen",
+    "John Hoyt",
+    "Larry Keating"
    ]
   },
   "tt0044331": {
@@ -10743,6 +12833,26 @@
     "Andy Devine"
    ]
   },
+  "tt0046057": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Carlson",
+    "Veronica Hurst",
+    "Katherine Emery",
+    "Michael Pate",
+    "John Dodsworth"
+   ]
+  },
+  "tt0046250": {
+   "checked": "2026-11-17",
+   "names": [
+    "Gregory Peck",
+    "Audrey Hepburn",
+    "Eddie Albert",
+    "Hartley Power",
+    "Harcourt Williams"
+   ]
+  },
   "tt0046359": {
    "checked": "2026-11-17",
    "names": [
@@ -10803,6 +12913,26 @@
     "Jan Sterling"
    ]
   },
+  "tt0047437": {
+   "checked": "2026-11-17",
+   "names": [
+    "Humphrey Bogart",
+    "Audrey Hepburn",
+    "William Holden",
+    "Walter Hampden",
+    "John Williams"
+   ]
+  },
+  "tt0047673": {
+   "checked": "2026-11-17",
+   "names": [
+    "Bing Crosby",
+    "Danny Kaye",
+    "Rosemary Clooney",
+    "Vera-Ellen",
+    "Dean Jagger"
+   ]
+  },
   "tt0048513": {
    "checked": "2026-11-17",
    "names": [
@@ -10823,6 +12953,16 @@
     "Ann Doran"
    ]
   },
+  "tt0048801": {
+   "checked": "2026-11-17",
+   "names": [
+    "Humphrey Bogart",
+    "Peter Ustinov",
+    "Aldo Ray",
+    "Joan Bennett",
+    "Basil Rathbone"
+   ]
+  },
   "tt0049261": {
    "checked": "2026-11-17",
    "names": [
@@ -10831,6 +12971,16 @@
     "James Dean",
     "Carroll Baker",
     "Jane Withers"
+   ]
+  },
+  "tt0049833": {
+   "checked": "2026-11-17",
+   "names": [
+    "Charlton Heston",
+    "Yul Brynner",
+    "Anne Baxter",
+    "Edward G. Robinson",
+    "Yvonne De Carlo"
    ]
   },
   "tt0050037": {
@@ -10863,6 +13013,26 @@
     "Robert Flemyng"
    ]
   },
+  "tt0050468": {
+   "checked": "2026-11-17",
+   "names": [
+    "Burt Lancaster",
+    "Kirk Douglas",
+    "Rhonda Fleming",
+    "Jo Van Fleet",
+    "John Ireland"
+   ]
+  },
+  "tt0050964": {
+   "checked": "2026-11-17",
+   "names": [
+    "William Bishop",
+    "Robert Ivers",
+    "Georgann Johnson",
+    "Yvette Vickers",
+    "Murvyn Vye"
+   ]
+  },
   "tt0051773": {
    "checked": "2026-11-17",
    "names": [
@@ -10871,6 +13041,26 @@
     "Cecil Parker",
     "Phyllis Calvert",
     "David Kossoff"
+   ]
+  },
+  "tt0051947": {
+   "checked": "2026-11-17",
+   "names": [
+    "Les Tremayne",
+    "Forrest Lewis",
+    "John Harmon",
+    "Frank Arvidson",
+    "Jeanne Carmen"
+   ]
+  },
+  "tt0052234": {
+   "checked": "2026-11-17",
+   "names": [
+    "Nat 'King' Cole",
+    "Eartha Kitt",
+    "Cab Calloway",
+    "Ella Fitzgerald",
+    "Mahalia Jackson"
    ]
   },
   "tt0052520": {
@@ -10901,6 +13091,16 @@
     "James Shigeta",
     "Anna Lee",
     "Paul Dubov"
+   ]
+  },
+  "tt0053143": {
+   "checked": "2026-11-17",
+   "names": [
+    "Cary Grant",
+    "Tony Curtis",
+    "Joan O'Brien",
+    "Dina Merrill",
+    "Gene Evans"
    ]
   },
   "tt0053479": {
@@ -11063,6 +13263,16 @@
     "Jack Kruschen"
    ]
   },
+  "tt0057372": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jerry Lewis",
+    "Stella Stevens",
+    "Del Moore",
+    "Kathleen Freeman",
+    "Med Flory"
+   ]
+  },
   "tt0058092": {
    "checked": "2026-11-17",
    "names": [
@@ -11162,6 +13372,16 @@
     "James Doohan"
    ]
   },
+  "tt0060219": {
+   "checked": "2026-11-17",
+   "names": [
+    "Scott Brady",
+    "Virginia Mayo",
+    "David Brian",
+    "Lisa Gaye",
+    "Hugh Marlowe"
+   ]
+  },
   "tt0060748": {
    "checked": "2026-11-17",
    "names": [
@@ -11172,6 +13392,16 @@
     "Suzanne Pleshette"
    ]
   },
+  "tt0061089": {
+   "checked": "2026-11-17",
+   "names": [
+    "Natalie Wood",
+    "Robert Redford",
+    "Charles Bronson",
+    "Kate Reid",
+    "Mary Badham"
+   ]
+  },
   "tt0061184": {
    "checked": "2026-11-17",
    "names": [
@@ -11180,6 +13410,16 @@
     "George Segal",
     "Sandy Dennis",
     "Agnes Flanagan"
+   ]
+  },
+  "tt0061385": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert Redford",
+    "Jane Fonda",
+    "Charles Boyer",
+    "Mildred Natwick",
+    "Herb Edelman"
    ]
   },
   "tt0061418": {
@@ -11242,6 +13482,16 @@
     "Leonard Rossiter"
    ]
   },
+  "tt0062711": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jane Fonda",
+    "John Phillip Law",
+    "Anita Pallenberg",
+    "Milo O'Shea",
+    "Marcel Marceau"
+   ]
+  },
   "tt0062765": {
    "checked": "2026-11-17",
    "names": [
@@ -11262,6 +13512,16 @@
     "Claudio Gora"
    ]
   },
+  "tt0063522": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mia Farrow",
+    "John Cassavetes",
+    "Ruth Gordon",
+    "Sidney Blackmer",
+    "Maurice Evans"
+   ]
+  },
   "tt0063821": {
    "checked": "2026-11-17",
    "names": [
@@ -11280,6 +13540,36 @@
     "Nicole Jaffe",
     "Vic Perrin",
     "Hal Smith"
+   ]
+  },
+  "tt0064107": {
+   "checked": "2026-11-17",
+   "names": [
+    "Peter Robbins",
+    "Pamelyn Ferdin",
+    "Glenn Gilger",
+    "Andy Pforsich",
+    "Sally Dryer"
+   ]
+  },
+  "tt0064116": {
+   "checked": "2026-11-17",
+   "names": [
+    "Henry Fonda",
+    "Charles Bronson",
+    "Claudia Cardinale",
+    "Jason Robards",
+    "Gabriele Ferzetti"
+   ]
+  },
+  "tt0064253": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert Redford",
+    "Gene Hackman",
+    "Camilla Sparv",
+    "Karl Michael Vogler",
+    "Jim McMullan"
    ]
   },
   "tt0064505": {
@@ -11332,6 +13622,26 @@
     "Jack Gilford"
    ]
   },
+  "tt0065988": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dustin Hoffman",
+    "Faye Dunaway",
+    "Chief Dan George",
+    "Martin Balsam",
+    "Richard Mulligan"
+   ]
+  },
+  "tt0066193": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jack Lemmon",
+    "Sandy Dennis",
+    "Sandy Baron",
+    "Anne Meara",
+    "Robert Nichols"
+   ]
+  },
   "tt0066301": {
    "checked": "2026-11-17",
    "names": [
@@ -11340,6 +13650,16 @@
     "Jennifer O'Neill",
     "Jack Elam",
     "Christopher Mitchum"
+   ]
+  },
+  "tt0066344": {
+   "checked": "2026-11-17",
+   "names": [
+    "Albert Finney",
+    "Alec Guinness",
+    "Edith Evans",
+    "Kenneth More",
+    "Laurence Naismith"
    ]
   },
   "tt0066730": {
@@ -11382,6 +13702,26 @@
     "Gene Dynarski"
    ]
   },
+  "tt0067334": {
+   "checked": "2026-11-17",
+   "names": [
+    "Steve McQueen",
+    "Siegfried Rauch",
+    "Elga Andersen",
+    "Ronald Leigh-Hunt",
+    "Fred Haltiner"
+   ]
+  },
+  "tt0067482": {
+   "checked": "2026-11-17",
+   "names": [
+    "Walter Matthau",
+    "Elaine May",
+    "Jack Weston",
+    "George Rose",
+    "James Coco"
+   ]
+  },
   "tt0067824": {
    "checked": "2026-11-17",
    "names": [
@@ -11410,6 +13750,16 @@
     "Eric Scott",
     "Kami Cotler",
     "Judy Norton"
+   ]
+  },
+  "tt0068646": {
+   "checked": "2026-11-17",
+   "names": [
+    "Marlon Brando",
+    "Al Pacino",
+    "James Caan",
+    "Diane Keaton",
+    "Richard S. Castellano"
    ]
   },
   "tt0068669": {
@@ -11452,6 +13802,16 @@
     "Valerie Perrine"
    ]
   },
+  "tt0069289": {
+   "checked": "2026-11-17",
+   "names": [
+    "Chad Webber",
+    "Robin Kohn",
+    "Stephen Shea",
+    "David Carey",
+    "Johanna Baer"
+   ]
+  },
   "tt0069637": {
    "checked": "2026-11-17",
    "names": [
@@ -11470,6 +13830,36 @@
     "Paul Le Mat",
     "Charles Martin Smith",
     "Cindy Williams"
+   ]
+  },
+  "tt0069732": {
+   "checked": "2026-11-17",
+   "names": [
+    "Stella Stevens",
+    "Roddy McDowall",
+    "Elsa Lanchester",
+    "Shani Wallis",
+    "Farley Granger"
+   ]
+  },
+  "tt0069824": {
+   "checked": "2026-11-17",
+   "names": [
+    "Graham Faulkner",
+    "Judi Bowker",
+    "Leigh Lawson",
+    "Kenneth Cranham",
+    "Lee Montague"
+   ]
+  },
+  "tt0070016": {
+   "checked": "2026-11-17",
+   "names": [
+    "Debbie Reynolds",
+    "Henry Gibson",
+    "Paul Lynde",
+    "Rex Allen",
+    "Martha Scott"
    ]
   },
   "tt0070047": {
@@ -11512,6 +13902,16 @@
     "Ray Walston"
    ]
   },
+  "tt0070895": {
+   "checked": "2026-11-17",
+   "names": [
+    "Joe Don Baker",
+    "Elizabeth Hartman",
+    "Leif Garrett",
+    "Dawn Lyn",
+    "Noah Beery Jr."
+   ]
+  },
   "tt0071230": {
    "checked": "2026-11-17",
    "names": [
@@ -11520,6 +13920,16 @@
     "Slim Pickens",
     "Harvey Korman",
     "Madeline Kahn"
+   ]
+  },
+  "tt0071315": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jack Nicholson",
+    "Faye Dunaway",
+    "John Huston",
+    "Perry Lopez",
+    "John Hillerman"
    ]
   },
   "tt0071402": {
@@ -11542,6 +13952,16 @@
     "Geneviève Bujold"
    ]
   },
+  "tt0071562": {
+   "checked": "2026-11-17",
+   "names": [
+    "Al Pacino",
+    "Robert De Niro",
+    "Robert Duvall",
+    "Diane Keaton",
+    "John Cazale"
+   ]
+  },
   "tt0071675": {
    "checked": "2026-11-17",
    "names": [
@@ -11560,6 +13980,16 @@
     "Patrick Magee",
     "Hardy Krüger",
     "Steven Berkoff"
+   ]
+  },
+  "tt0073335": {
+   "checked": "2026-11-17",
+   "names": [
+    "Diana Ross",
+    "Billy Dee Williams",
+    "Anthony Perkins",
+    "Jean-Pierre Aumont",
+    "Beah Richards"
    ]
   },
   "tt0073349": {
@@ -11622,6 +14052,16 @@
     "Hal Holbrook"
    ]
   },
+  "tt0074256": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jodie Foster",
+    "Scott Baio",
+    "Florence Garland",
+    "John Cassisi",
+    "Martin Lev"
+   ]
+  },
   "tt0074281": {
    "checked": "2026-11-17",
    "names": [
@@ -11642,6 +14082,16 @@
     "René Auberjonois"
    ]
   },
+  "tt0074777": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert De Niro",
+    "Tony Curtis",
+    "Robert Mitchum",
+    "Jeanne Moreau",
+    "Jack Nicholson"
+   ]
+  },
   "tt0074851": {
    "checked": "2026-11-17",
    "names": [
@@ -11650,6 +14100,16 @@
     "Candy Clark",
     "Buck Henry",
     "Bernie Casey"
+   ]
+  },
+  "tt0074860": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dustin Hoffman",
+    "Laurence Olivier",
+    "Roy Scheider",
+    "William Devane",
+    "Marthe Keller"
    ]
   },
   "tt0074899": {
@@ -11680,6 +14140,16 @@
     "Ron Howard",
     "James Stewart",
     "Richard Boone"
+   ]
+  },
+  "tt0075250": {
+   "checked": "2026-11-17",
+   "names": [
+    "Bo Svenson",
+    "Cybill Shepherd",
+    "Mel Scott",
+    "Phillip R. Allen",
+    "Alex Colon"
    ]
   },
   "tt0075314": {
@@ -11762,6 +14232,16 @@
     "Liam Martin"
    ]
   },
+  "tt0076666": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Travolta",
+    "Karen Lynn Gorney",
+    "Barry Miller",
+    "Joseph Cali",
+    "Paul Pape"
+   ]
+  },
   "tt0076723": {
    "checked": "2026-11-17",
    "names": [
@@ -11780,6 +14260,16 @@
     "Jerry Reed",
     "Mike Henry",
     "Paul Williams"
+   ]
+  },
+  "tt0077405": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Brooke Adams",
+    "Sam Shepard",
+    "Linda Manz",
+    "Robert J. Wilke"
    ]
   },
   "tt0077416": {
@@ -11832,6 +14322,16 @@
     "Colleen Camp"
    ]
   },
+  "tt0077621": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jack Nicholson",
+    "Mary Steenburgen",
+    "Christopher Lloyd",
+    "John Belushi",
+    "Veronica Cartwright"
+   ]
+  },
   "tt0077631": {
    "checked": "2026-11-17",
    "names": [
@@ -11840,6 +14340,16 @@
     "Stockard Channing",
     "Jeff Conaway",
     "Barry Pearl"
+   ]
+  },
+  "tt0077663": {
+   "checked": "2026-11-17",
+   "names": [
+    "Warren Beatty",
+    "James Mason",
+    "Julie Christie",
+    "Jack Warden",
+    "Charles Grodin"
    ]
   },
   "tt0077975": {
@@ -11952,6 +14462,26 @@
     "David Harris"
    ]
   },
+  "tt0080339": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert Hays",
+    "Julie Hagerty",
+    "Leslie Nielsen",
+    "Kareem Abdul-Jabbar",
+    "Lloyd Bridges"
+   ]
+  },
+  "tt0080365": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Lauren Hutton",
+    "Hector Elizondo",
+    "Nina van Pallandt",
+    "Bill Duke"
+   ]
+  },
   "tt0080377": {
    "checked": "2026-11-17",
    "names": [
@@ -12002,6 +14532,16 @@
     "Kevin Bacon"
    ]
   },
+  "tt0081060": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tatum O'Neal",
+    "Kristy McNichol",
+    "Armand Assante",
+    "Matt Dillon",
+    "Margaret Blye"
+   ]
+  },
   "tt0081063": {
    "checked": "2026-11-17",
    "names": [
@@ -12020,6 +14560,16 @@
     "Danny Lloyd",
     "Scatman Crothers",
     "Barry Nelson"
+   ]
+  },
+  "tt0081696": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Travolta",
+    "Debra Winger",
+    "Scott Glenn",
+    "Madolyn Smith Osborne",
+    "Barry Corbin"
    ]
   },
   "tt0081748": {
@@ -12100,6 +14650,16 @@
     "Paul Freeman",
     "John Rhys-Davies",
     "Ronald Lacey"
+   ]
+  },
+  "tt0082979": {
+   "checked": "2026-11-17",
+   "names": [
+    "Warren Beatty",
+    "Diane Keaton",
+    "Edward Herrmann",
+    "Jerzy Kosinski",
+    "Jack Nicholson"
    ]
   },
   "tt0083399": {
@@ -12212,6 +14772,16 @@
     "In-shik Hwang"
    ]
   },
+  "tt0084434": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Debra Winger",
+    "David Keith",
+    "Robert Loggia",
+    "Lisa Blount"
+   ]
+  },
   "tt0084516": {
    "checked": "2026-11-17",
    "names": [
@@ -12220,6 +14790,16 @@
     "Craig T. Nelson",
     "Beatrice Straight",
     "Dominique Dunne"
+   ]
+  },
+  "tt0084591": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tom Conti",
+    "Kelly McGillis",
+    "Roberts Blossom",
+    "Joel Fabiani",
+    "Cynthia Harris"
    ]
   },
   "tt0084726": {
@@ -12322,6 +14902,36 @@
     "Jayne Modean"
    ]
   },
+  "tt0086361": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Travolta",
+    "Cynthia Rhodes",
+    "Finola Hughes",
+    "Steve Inwood",
+    "Julie Bovasso"
+   ]
+  },
+  "tt0086366": {
+   "checked": "2026-11-17",
+   "names": [
+    "Cheech Marin",
+    "Tommy Chong",
+    "Hans Man in 't Veld",
+    "Carol van Herwijnen",
+    "Shireen Strooker"
+   ]
+  },
+  "tt0086465": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eddie Murphy",
+    "Dan Aykroyd",
+    "Ralph Bellamy",
+    "Don Ameche",
+    "Denholm Elliott"
+   ]
+  },
   "tt0086837": {
    "checked": "2026-11-17",
    "names": [
@@ -12382,6 +14992,26 @@
     "Guy Boyd"
    ]
   },
+  "tt0087233": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert De Niro",
+    "Meryl Streep",
+    "Harvey Keitel",
+    "Jane Kaczmarek",
+    "George Martin"
+   ]
+  },
+  "tt0087277": {
+   "checked": "2026-11-17",
+   "names": [
+    "Kevin Bacon",
+    "Lori Singer",
+    "John Lithgow",
+    "Dianne Wiest",
+    "Chris Penn"
+   ]
+  },
   "tt0087363": {
    "checked": "2026-11-17",
    "names": [
@@ -12400,6 +15030,16 @@
     "Ke Huy Quan",
     "Amrish Puri",
     "Roshan Seth"
+   ]
+  },
+  "tt0087482": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ryan O'Neal",
+    "Shelley Long",
+    "Drew Barrymore",
+    "Sam Wanamaker",
+    "Allen Garfield"
    ]
   },
   "tt0087578": {
@@ -12522,6 +15162,16 @@
     "Linda Fiorentino"
    ]
   },
+  "tt0088794": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Cusack",
+    "David Ogden Stiers",
+    "Kim Darby",
+    "Demian Slade",
+    "Scooter Stevens"
+   ]
+  },
   "tt0088850": {
    "checked": "2026-11-17",
    "names": [
@@ -12540,6 +15190,16 @@
     "Alan King",
     "Kenneth McMillan",
     "Robert Hays"
+   ]
+  },
+  "tt0088930": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eileen Brennan",
+    "Tim Curry",
+    "Madeline Kahn",
+    "Christopher Lloyd",
+    "Michael McKean"
    ]
   },
   "tt0088939": {
@@ -12592,6 +15252,16 @@
     "Marla Adams"
    ]
   },
+  "tt0089420": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Edward Woodward",
+    "Alice Krige",
+    "Denis Quilley",
+    "Niall Buggy"
+   ]
+  },
   "tt0089670": {
    "checked": "2026-11-17",
    "names": [
@@ -12632,6 +15302,16 @@
     "Bruce Davison"
    ]
   },
+  "tt0090130": {
+   "checked": "2026-11-17",
+   "names": [
+    "Gene Hackman",
+    "Matt Dillon",
+    "Brad Williams",
+    "Gayle Hunnicutt",
+    "Randy Moore"
+   ]
+  },
   "tt0090305": {
    "checked": "2026-11-17",
    "names": [
@@ -12652,6 +15332,26 @@
     "Stanley Sui-Fan Fung"
    ]
   },
+  "tt0090357": {
+   "checked": "2026-11-17",
+   "names": [
+    "Nicholas Rowe",
+    "Alan Cox",
+    "Sophie Ward",
+    "Anthony Higgins",
+    "Susan Fleetwood"
+   ]
+  },
+  "tt0090555": {
+   "checked": "2026-11-17",
+   "names": [
+    "Paul Hogan",
+    "Linda Kozlowski",
+    "John Meillon",
+    "David Gulpilil",
+    "Ritchie Singer"
+   ]
+  },
   "tt0090655": {
    "checked": "2026-11-17",
    "names": [
@@ -12662,6 +15362,16 @@
     "Pat Barlow"
    ]
   },
+  "tt0090830": {
+   "checked": "2026-11-17",
+   "names": [
+    "William Hurt",
+    "Marlee Matlin",
+    "Piper Laurie",
+    "Philip Bosco",
+    "Allison Gompf"
+   ]
+  },
   "tt0090859": {
    "checked": "2026-11-17",
    "names": [
@@ -12670,6 +15380,16 @@
     "Reni Santoni",
     "Andrew Robinson",
     "Brian Thompson"
+   ]
+  },
+  "tt0091042": {
+   "checked": "2026-11-17",
+   "names": [
+    "Matthew Broderick",
+    "Alan Ruck",
+    "Mia Sara",
+    "Jeffrey Jones",
+    "Jennifer Grey"
    ]
   },
   "tt0091129": {
@@ -12702,6 +15422,16 @@
     "Eileen Heckart"
    ]
   },
+  "tt0091188": {
+   "checked": "2026-11-17",
+   "names": [
+    "Meryl Streep",
+    "Jack Nicholson",
+    "Jeff Daniels",
+    "Maureen Stapleton",
+    "Stockard Channing"
+   ]
+  },
   "tt0091419": {
    "checked": "2026-11-17",
    "names": [
@@ -12720,6 +15450,16 @@
     "Alexander Godunov",
     "Maureen Stapleton",
     "Joe Mantegna"
+   ]
+  },
+  "tt0091790": {
+   "checked": "2026-11-17",
+   "names": [
+    "Molly Ringwald",
+    "Jon Cryer",
+    "Harry Dean Stanton",
+    "Annie Potts",
+    "James Spader"
    ]
   },
   "tt0092007": {
@@ -12782,6 +15522,16 @@
     "Wai Lam"
    ]
   },
+  "tt0092608": {
+   "checked": "2026-11-17",
+   "names": [
+    "Frankie Avalon",
+    "Annette Funicello",
+    "Lori Loughlin",
+    "Tommy Hinkley",
+    "Demian Slade"
+   ]
+  },
   "tt0092644": {
    "checked": "2026-11-17",
    "names": [
@@ -12810,6 +15560,16 @@
     "Christopher Plummer",
     "Harry Morgan",
     "Alexandra Paul"
+   ]
+  },
+  "tt0092948": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eddie Murphy",
+    "Tatyana Ali",
+    "Billie Allen",
+    "Clebert Ford",
+    "Geri Gibson"
    ]
   },
   "tt0092965": {
@@ -12842,6 +15602,16 @@
     "Dorian Harewood"
    ]
   },
+  "tt0093215": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Cusack",
+    "Robert Loggia",
+    "Jerry Stiller",
+    "Wendy Gazelle",
+    "Monte Markham"
+   ]
+  },
   "tt0093305": {
    "checked": "2026-11-17",
    "names": [
@@ -12870,6 +15640,16 @@
     "Dianne Wiest",
     "Barnard Hughes",
     "Edward Herrmann"
+   ]
+  },
+  "tt0093748": {
+   "checked": "2026-11-17",
+   "names": [
+    "Steve Martin",
+    "John Candy",
+    "Laila Robins",
+    "Michael McKean",
+    "Kevin Bacon"
    ]
   },
   "tt0093894": {
@@ -12932,6 +15712,16 @@
     "Carl Steven"
    ]
   },
+  "tt0094608": {
+   "checked": "2026-11-17",
+   "names": [
+    "Kelly McGillis",
+    "Jodie Foster",
+    "Bernie Coulson",
+    "Leo Rossi",
+    "Ann Hearn"
+   ]
+  },
   "tt0094721": {
    "checked": "2026-11-17",
    "names": [
@@ -12940,6 +15730,16 @@
     "Michael Keaton",
     "Annie McEnroe",
     "Maurice Page"
+   ]
+  },
+  "tt0094744": {
+   "checked": "2026-11-17",
+   "names": [
+    "Paul Reubens",
+    "Penelope Ann Miller",
+    "Kris Kristofferson",
+    "Valeria Golino",
+    "Wayne White"
    ]
   },
   "tt0094746": {
@@ -12960,6 +15760,16 @@
     "James Russo",
     "Pamela Gidley",
     "Yano Anaya"
+   ]
+  },
+  "tt0094898": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eddie Murphy",
+    "Paul Bates",
+    "Garcelle Beauvais",
+    "Feather",
+    "Stephanie Simon"
    ]
   },
   "tt0095036": {
@@ -13012,6 +15822,26 @@
     "Cecilia Peck"
    ]
   },
+  "tt0095705": {
+   "checked": "2026-11-17",
+   "names": [
+    "Leslie Nielsen",
+    "Priscilla Presley",
+    "O.J. Simpson",
+    "Ricardo Montalban",
+    "George Kennedy"
+   ]
+  },
+  "tt0095765": {
+   "checked": "2026-11-17",
+   "names": [
+    "Philippe Noiret",
+    "Enzo Cannavale",
+    "Antonella Attili",
+    "Isa Danieli",
+    "Leo Gullotta"
+   ]
+  },
   "tt0095897": {
    "checked": "2026-11-17",
    "names": [
@@ -13020,6 +15850,16 @@
     "Meg Ryan",
     "Jack Warden",
     "Mark Blum"
+   ]
+  },
+  "tt0096061": {
+   "checked": "2026-11-17",
+   "names": [
+    "Bill Murray",
+    "Karen Allen",
+    "John Forsythe",
+    "John Glover",
+    "Bobcat Goldthwait"
    ]
   },
   "tt0096071": {
@@ -13102,6 +15942,16 @@
     "Laura Dern"
    ]
   },
+  "tt0097576": {
+   "checked": "2026-11-17",
+   "names": [
+    "Harrison Ford",
+    "Sean Connery",
+    "Alison Doody",
+    "Denholm Elliott",
+    "John Rhys-Davies"
+   ]
+  },
   "tt0097607": {
    "checked": "2026-11-17",
    "names": [
@@ -13112,6 +15962,16 @@
     "Ivar Brogger"
    ]
   },
+  "tt0097815": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tom Berenger",
+    "Charlie Sheen",
+    "Corbin Bernsen",
+    "Margaret Whitton",
+    "James Gammon"
+   ]
+  },
   "tt0097937": {
    "checked": "2026-11-17",
    "names": [
@@ -13120,6 +15980,16 @@
     "Alison Whelan",
     "Kirsten Sheridan",
     "Declan Croghan"
+   ]
+  },
+  "tt0098319": {
+   "checked": "2026-11-17",
+   "names": [
+    "Pauline Collins",
+    "Tom Conti",
+    "Julia McKenzie",
+    "Alison Steadman",
+    "Joanna Lumley"
    ]
   },
   "tt0098439": {
@@ -13140,6 +16010,16 @@
     "Jean Louisa Kelly",
     "Gaby Hoffmann",
     "Amy Madigan"
+   ]
+  },
+  "tt0098625": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert De Niro",
+    "Sean Penn",
+    "Demi Moore",
+    "Hoyt Axton",
+    "Bruno Kirby"
    ]
   },
   "tt0098749": {
@@ -13202,6 +16082,16 @@
     "Aldo Sambrell"
    ]
   },
+  "tt0099587": {
+   "checked": "2026-11-17",
+   "names": [
+    "Danny Glover",
+    "Willem Dafoe",
+    "Brad Johnson",
+    "Rosanna Arquette",
+    "Tom Sizemore"
+   ]
+  },
   "tt0099685": {
    "checked": "2026-11-17",
    "names": [
@@ -13262,6 +16152,16 @@
     "Amy Yasbeck"
    ]
   },
+  "tt0100557": {
+   "checked": "2026-11-17",
+   "names": [
+    "Lena Stolze",
+    "Hans-Reinhard Müller",
+    "Monika Baumgartner",
+    "Elisabeth Bertram",
+    "Michael Gahr"
+   ]
+  },
   "tt0100740": {
    "checked": "2026-11-17",
    "names": [
@@ -13320,6 +16220,26 @@
     "David Wu",
     "Robin Shou",
     "Gary Chow"
+   ]
+  },
+  "tt0101301": {
+   "checked": "2026-11-17",
+   "names": [
+    "Harley Jane Kozak",
+    "Jamey Sheridan",
+    "Ethan Embry",
+    "Kevin Nealon",
+    "Thora Birch"
+   ]
+  },
+  "tt0101669": {
+   "checked": "2026-11-17",
+   "names": [
+    "Kenneth Branagh",
+    "Emma Thompson",
+    "Andy Garcia",
+    "Lois Hall",
+    "Richard Easton"
    ]
   },
   "tt0101775": {
@@ -13462,6 +16382,16 @@
     "Scott Wilson"
    ]
   },
+  "tt0102768": {
+   "checked": "2026-11-17",
+   "names": [
+    "Harrison Ford",
+    "Annette Bening",
+    "Michael Haley",
+    "Stanley Swerdlow",
+    "Julie Follansbee"
+   ]
+  },
   "tt0102798": {
    "checked": "2026-11-17",
    "names": [
@@ -13502,6 +16432,16 @@
     "Ángela Molina"
    ]
   },
+  "tt0103783": {
+   "checked": "2026-11-17",
+   "names": [
+    "Faizon Love",
+    "Vanessa Bell Calloway",
+    "Robin Harris",
+    "Wayne Collins",
+    "Jonell Green"
+   ]
+  },
   "tt0103805": {
    "checked": "2026-11-17",
    "names": [
@@ -13522,6 +16462,16 @@
     "Ralph Waite"
    ]
   },
+  "tt0103872": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Turturro",
+    "Bob Nelson",
+    "Mel Smith",
+    "Nancy Marchand",
+    "George De La Pena"
+   ]
+  },
   "tt0104009": {
    "checked": "2026-11-17",
    "names": [
@@ -13540,6 +16490,16 @@
     "Forest Whitaker",
     "Miranda Richardson",
     "Adrian Dunbar"
+   ]
+  },
+  "tt0104181": {
+   "checked": "2026-11-17",
+   "names": [
+    "Juliette Binoche",
+    "Ralph Fiennes",
+    "Janet McTeer",
+    "Sophie Ward",
+    "Simon Shepherd"
    ]
   },
   "tt0104573": {
@@ -13642,6 +16602,16 @@
     "Jaimz Woolvett"
    ]
   },
+  "tt0105793": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mike Myers",
+    "Dana Carvey",
+    "Rob Lowe",
+    "Tia Carrere",
+    "Brian Doyle-Murray"
+   ]
+  },
   "tt0106004": {
    "checked": "2026-11-17",
    "names": [
@@ -13692,6 +16662,16 @@
     "Louis Fan"
    ]
   },
+  "tt0106598": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dan Aykroyd",
+    "Jane Curtin",
+    "Robert Knott",
+    "Jonathan Penner",
+    "Whip Hubley"
+   ]
+  },
   "tt0106639": {
    "checked": "2026-11-17",
    "names": [
@@ -13730,6 +16710,26 @@
     "Joan Plowright",
     "Christopher Lloyd",
     "Lea Thompson"
+   ]
+  },
+  "tt0106912": {
+   "checked": "2026-11-17",
+   "names": [
+    "D.B. Sweeney",
+    "Robert Patrick",
+    "Craig Sheffer",
+    "Peter Berg",
+    "Henry Thomas"
+   ]
+  },
+  "tt0106918": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tom Cruise",
+    "Jeanne Tripplehorn",
+    "Gene Hackman",
+    "Hal Holbrook",
+    "Terry Kinney"
    ]
   },
   "tt0106941": {
@@ -13852,6 +16852,26 @@
     "Gary Oldman"
    ]
   },
+  "tt0108525": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mike Myers",
+    "Dana Carvey",
+    "Christopher Walken",
+    "Tia Carrere",
+    "Chris Farley"
+   ]
+  },
+  "tt0108550": {
+   "checked": "2026-11-17",
+   "names": [
+    "Johnny Depp",
+    "Leonardo DiCaprio",
+    "Juliette Lewis",
+    "Mary Steenburgen",
+    "Darlene Cates"
+   ]
+  },
   "tt0109254": {
    "checked": "2026-11-17",
    "names": [
@@ -13942,6 +16962,16 @@
     "Gene Saks"
    ]
   },
+  "tt0110146": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Sharon Stone",
+    "Lolita Davidovich",
+    "Martin Landau",
+    "David Selby"
+   ]
+  },
   "tt0110148": {
    "checked": "2026-11-17",
    "names": [
@@ -14012,6 +17042,16 @@
     "Christopher McDonald"
    ]
   },
+  "tt0110573": {
+   "checked": "2026-11-17",
+   "names": [
+    "Gerald McRaney",
+    "Jake Busey",
+    "John Cassini",
+    "Richard Edson",
+    "Carla Gugino"
+   ]
+  },
   "tt0110598": {
    "checked": "2026-11-17",
    "names": [
@@ -14020,6 +17060,16 @@
     "Bill Hunter",
     "Sophie Lee",
     "Roz Hammond"
+   ]
+  },
+  "tt0110622": {
+   "checked": "2026-11-17",
+   "names": [
+    "Leslie Nielsen",
+    "Priscilla Presley",
+    "George Kennedy",
+    "O.J. Simpson",
+    "Fred Ward"
    ]
   },
   "tt0110632": {
@@ -14112,6 +17162,16 @@
     "Josh Mostel"
    ]
   },
+  "tt0112572": {
+   "checked": "2026-11-17",
+   "names": [
+    "Shelley Long",
+    "Gary Cole",
+    "Christine Taylor",
+    "Christopher Daniel Barnes",
+    "Jennifer Elise Cox"
+   ]
+  },
   "tt0112573": {
    "checked": "2026-11-17",
    "names": [
@@ -14140,6 +17200,26 @@
     "Brittany Murphy",
     "Paul Rudd",
     "Donald Faison"
+   ]
+  },
+  "tt0112715": {
+   "checked": "2026-11-17",
+   "names": [
+    "Laura Linney",
+    "Tim Curry",
+    "Dylan Walsh",
+    "Ernie Hudson",
+    "Grant Heslov"
+   ]
+  },
+  "tt0112744": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jack Nicholson",
+    "David Morse",
+    "Anjelica Huston",
+    "Robin Wright",
+    "Piper Laurie"
    ]
   },
   "tt0112857": {
@@ -14172,6 +17252,16 @@
     "Cindy Pickett"
    ]
   },
+  "tt0113101": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tim Roth",
+    "Antonio Banderas",
+    "Sammi Davis",
+    "Amanda De Cadenet",
+    "Valeria Golino"
+   ]
+  },
   "tt0113118": {
    "checked": "2026-11-17",
    "names": [
@@ -14190,6 +17280,16 @@
     "Yasufumi Hayashi",
     "Megumi Odaka",
     "Sayaka Osawa"
+   ]
+  },
+  "tt0113321": {
+   "checked": "2026-11-17",
+   "names": [
+    "Holly Hunter",
+    "Anne Bancroft",
+    "Robert Downey Jr.",
+    "Charles Durning",
+    "Dylan McDermott"
    ]
   },
   "tt0113409": {
@@ -14232,6 +17332,16 @@
     "Arthur Malet"
    ]
   },
+  "tt0113691": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jessica Lange",
+    "Halle Berry",
+    "David Strathairn",
+    "Cuba Gooding Jr.",
+    "Daisy Eagan"
+   ]
+  },
   "tt0113749": {
    "checked": "2026-11-17",
    "names": [
@@ -14240,6 +17350,16 @@
     "Jason Lee",
     "Claire Forlani",
     "Ben Affleck"
+   ]
+  },
+  "tt0114319": {
+   "checked": "2026-11-17",
+   "names": [
+    "Harrison Ford",
+    "Julia Ormond",
+    "Greg Kinnear",
+    "Nancy Marchand",
+    "John Wood"
    ]
   },
   "tt0114369": {
@@ -14372,6 +17492,16 @@
     "Lauren Holly"
    ]
   },
+  "tt0115697": {
+   "checked": "2026-11-17",
+   "names": [
+    "Chris Farley",
+    "David Spade",
+    "Tim Matheson",
+    "Christine Ebersole",
+    "Gary Busey"
+   ]
+  },
   "tt0115736": {
    "checked": "2026-11-17",
    "names": [
@@ -14392,6 +17522,16 @@
     "James Farentino"
    ]
   },
+  "tt0115986": {
+   "checked": "2026-11-17",
+   "names": [
+    "Vincent Perez",
+    "Mia Kirshner",
+    "Richard Brooks",
+    "Iggy Pop",
+    "Thomas Jane"
+   ]
+  },
   "tt0116014": {
    "checked": "2026-11-17",
    "names": [
@@ -14410,6 +17550,16 @@
     "Keenen Ivory Wayans",
     "Tracey Cherelle Jones",
     "Chris Spencer"
+   ]
+  },
+  "tt0116209": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ralph Fiennes",
+    "Juliette Binoche",
+    "Willem Dafoe",
+    "Kristin Scott Thomas",
+    "Naveen Andrews"
    ]
   },
   "tt0116213": {
@@ -14450,6 +17600,16 @@
     "Jenny Lewis",
     "Jenny Shimizu",
     "Sarah Rosenberg"
+   ]
+  },
+  "tt0116409": {
+   "checked": "2026-11-17",
+   "names": [
+    "Michael Douglas",
+    "Val Kilmer",
+    "Tom Wilkinson",
+    "John Kani",
+    "Bernard Hill"
    ]
   },
   "tt0116493": {
@@ -14522,6 +17682,26 @@
     "John C. McGinley"
    ]
   },
+  "tt0117331": {
+   "checked": "2026-11-17",
+   "names": [
+    "Billy Zane",
+    "Kristy Swanson",
+    "Treat Williams",
+    "Catherine Zeta-Jones",
+    "James Remar"
+   ]
+  },
+  "tt0117381": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Laura Linney",
+    "Edward Norton",
+    "John Mahoney",
+    "Alfre Woodard"
+   ]
+  },
   "tt0117705": {
    "checked": "2026-11-17",
    "names": [
@@ -14540,6 +17720,16 @@
     "Jon Favreau",
     "Ron Livingston",
     "Patrick Van Horn"
+   ]
+  },
+  "tt0117894": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robert John Burke",
+    "Joe Mantegna",
+    "Lucinda Jenney",
+    "Bethany Joy Lenz",
+    "Time Winters"
    ]
   },
   "tt0117918": {
@@ -14622,6 +17812,16 @@
     "Jack Noseworthy"
    ]
   },
+  "tt0118842": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Affleck",
+    "Joey Lauren Adams",
+    "Ethan Suplee",
+    "Scott Mosier",
+    "Jason Lee"
+   ]
+  },
   "tt0118972": {
    "checked": "2026-11-17",
    "names": [
@@ -14692,6 +17892,26 @@
     "Shar Jackson"
    ]
   },
+  "tt0119217": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robin Williams",
+    "Matt Damon",
+    "Ben Affleck",
+    "Stellan Skarsgård",
+    "John Mighton"
+   ]
+  },
+  "tt0119256": {
+   "checked": "2026-11-17",
+   "names": [
+    "Philip Baker Hall",
+    "John C. Reilly",
+    "Gwyneth Paltrow",
+    "Samuel L. Jackson",
+    "F. William Parker"
+   ]
+  },
   "tt0119324": {
    "checked": "2026-11-17",
    "names": [
@@ -14710,6 +17930,16 @@
     "Tom Selleck",
     "Matt Dillon",
     "Debbie Reynolds"
+   ]
+  },
+  "tt0119468": {
+   "checked": "2026-11-17",
+   "names": [
+    "Morgan Freeman",
+    "Ashley Judd",
+    "Cary Elwes",
+    "Alex McArthur",
+    "Tony Goldwyn"
    ]
   },
   "tt0119528": {
@@ -14742,6 +17972,16 @@
     "David Alan Grier"
    ]
   },
+  "tt0119715": {
+   "checked": "2026-11-17",
+   "names": [
+    "Nathan Lane",
+    "Lee Evans",
+    "Vicki Lewis",
+    "Maury Chaykin",
+    "Eric Christmas"
+   ]
+  },
   "tt0119874": {
    "checked": "2026-11-17",
    "names": [
@@ -14772,6 +18012,16 @@
     "Billy Bob Thornton"
    ]
   },
+  "tt0119951": {
+   "checked": "2026-11-17",
+   "names": [
+    "Howard Stern",
+    "Mary McCormack",
+    "Robin Quivers",
+    "Fred Norris",
+    "Paul Giamatti"
+   ]
+  },
   "tt0119978": {
    "checked": "2026-11-17",
    "names": [
@@ -14800,6 +18050,16 @@
     "Pascal Rollin",
     "Catlin Foster",
     "Stellan Skarsgård"
+   ]
+  },
+  "tt0120082": {
+   "checked": "2026-11-17",
+   "names": [
+    "Neve Campbell",
+    "Courteney Cox",
+    "David Arquette",
+    "Jada Pinkett Smith",
+    "Omar Epps"
    ]
   },
   "tt0120094": {
@@ -14840,6 +18100,26 @@
     "Irene Bedard",
     "Gary Farmer",
     "Tantoo Cardinal"
+   ]
+  },
+  "tt0120338": {
+   "checked": "2026-11-17",
+   "names": [
+    "Leonardo DiCaprio",
+    "Kate Winslet",
+    "Billy Zane",
+    "Kathy Bates",
+    "Frances Fisher"
+   ]
+  },
+  "tt0120382": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jim Carrey",
+    "Ed Harris",
+    "Laura Linney",
+    "Noah Emmerich",
+    "Natascha McElhone"
    ]
   },
   "tt0120390": {
@@ -14890,6 +18170,16 @@
     "Kris Kristofferson",
     "N'Bushe Wright",
     "Donal Logue"
+   ]
+  },
+  "tt0120613": {
+   "checked": "2026-11-17",
+   "names": [
+    "Diane Lane",
+    "Viggo Mortensen",
+    "Bobby Boriello",
+    "Anna Paquin",
+    "Tovah Feldshuh"
    ]
   },
   "tt0120617": {
@@ -15042,6 +18332,16 @@
     "Debra Jo Rupp"
    ]
   },
+  "tt0120824": {
+   "checked": "2026-11-17",
+   "names": [
+    "Kevin Spacey",
+    "Julianne Moore",
+    "Judi Dench",
+    "Cate Blanchett",
+    "Pete Postlethwaite"
+   ]
+  },
   "tt0120844": {
    "checked": "2026-11-17",
    "names": [
@@ -15142,6 +18442,16 @@
     "Dave Foley"
    ]
   },
+  "tt0125971": {
+   "checked": "2026-11-17",
+   "names": [
+    "Shawn Hatosy",
+    "Amy Smart",
+    "Alec Baldwin",
+    "Tommy Bone",
+    "Samantha Lavigne"
+   ]
+  },
   "tt0126886": {
    "checked": "2026-11-17",
    "names": [
@@ -15232,6 +18542,16 @@
     "Gloria Foster"
    ]
   },
+  "tt0134084": {
+   "checked": "2026-11-17",
+   "names": [
+    "David Arquette",
+    "Neve Campbell",
+    "Courteney Cox",
+    "Liev Schreiber",
+    "Beth Toussaint"
+   ]
+  },
   "tt0134119": {
    "checked": "2026-11-17",
    "names": [
@@ -15250,6 +18570,36 @@
     "Jewel",
     "Jeremy W. Auman",
     "Scott Sener"
+   ]
+  },
+  "tt0138097": {
+   "checked": "2026-11-17",
+   "names": [
+    "Gwyneth Paltrow",
+    "Joseph Fiennes",
+    "Geoffrey Rush",
+    "Tom Wilkinson",
+    "Steven O'Donnell"
+   ]
+  },
+  "tt0139699": {
+   "checked": "2026-11-17",
+   "names": [
+    "James Van Der Beek",
+    "Jon Voight",
+    "Paul Walker",
+    "Ron Lester",
+    "Scott Caan"
+   ]
+  },
+  "tt0141098": {
+   "checked": "2026-11-17",
+   "names": [
+    "Sandra Bullock",
+    "Ben Affleck",
+    "Maura Tierney",
+    "Steve Zahn",
+    "Blythe Danner"
    ]
   },
   "tt0141926": {
@@ -15280,6 +18630,16 @@
     "Bruce Payne",
     "Lisa Barbuscia",
     "Donnie Yen"
+   ]
+  },
+  "tt0145653": {
+   "checked": "2026-11-17",
+   "names": [
+    "Emily Watson",
+    "Robert Carlyle",
+    "Joe Breen",
+    "Ciaran Owens",
+    "Michael Legge"
    ]
   },
   "tt0145734": {
@@ -15332,6 +18692,16 @@
     "Michael Paré"
    ]
   },
+  "tt0159365": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jude Law",
+    "Nicole Kidman",
+    "Renée Zellweger",
+    "Eileen Atkins",
+    "Brendan Gleeson"
+   ]
+  },
   "tt0160338": {
    "checked": "2026-11-17",
    "names": [
@@ -15372,6 +18742,16 @@
     "Jodi Lyn O'Keefe"
    ]
   },
+  "tt0161081": {
+   "checked": "2026-11-17",
+   "names": [
+    "Harrison Ford",
+    "Michelle Pfeiffer",
+    "Katharine Towne",
+    "Miranda Otto",
+    "James Remar"
+   ]
+  },
   "tt0161100": {
    "checked": "2026-11-17",
    "names": [
@@ -15390,6 +18770,16 @@
     "William H. Macy",
     "Ally Walker",
     "Illeana Douglas"
+   ]
+  },
+  "tt0163187": {
+   "checked": "2026-11-17",
+   "names": [
+    "Julia Roberts",
+    "Richard Gere",
+    "Joan Cusack",
+    "Hector Elizondo",
+    "Rita Wilson"
    ]
   },
   "tt0163988": {
@@ -15432,6 +18822,16 @@
     "B.J. Ward"
    ]
   },
+  "tt0166943": {
+   "checked": "2026-11-17",
+   "names": [
+    "Meryl Streep",
+    "Cloris Leachman",
+    "Henry Dinhofer",
+    "Michael Angarano",
+    "Robert Ari"
+   ]
+  },
   "tt0167049": {
    "checked": "2026-11-17",
    "names": [
@@ -15450,6 +18850,16 @@
     "Ian McKellen",
     "Orlando Bloom",
     "Noel Appleby"
+   ]
+  },
+  "tt0167427": {
+   "checked": "2026-11-17",
+   "names": [
+    "Molly Shannon",
+    "Will Ferrell",
+    "Elaine Hendrix",
+    "Harland Williams",
+    "Mark McKinney"
    ]
   },
   "tt0168501": {
@@ -15482,6 +18892,16 @@
     "Richard Harris"
    ]
   },
+  "tt0175142": {
+   "checked": "2026-11-17",
+   "names": [
+    "Anna Faris",
+    "Jon Abrahams",
+    "Marlon Wayans",
+    "Carmen Electra",
+    "Dave Sheridan"
+   ]
+  },
   "tt0175880": {
    "checked": "2026-11-17",
    "names": [
@@ -15490,6 +18910,16 @@
     "Julianne Moore",
     "Philip Seymour Hoffman",
     "Pat Healy"
+   ]
+  },
+  "tt0177789": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tim Allen",
+    "Sigourney Weaver",
+    "Alan Rickman",
+    "Tony Shalhoub",
+    "Sam Rockwell"
    ]
   },
   "tt0178737": {
@@ -15532,6 +18962,16 @@
     "Sada Thompson"
    ]
   },
+  "tt0184791": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mekhi Phifer",
+    "Julia Stiles",
+    "Martin Sheen",
+    "Josh Hartnett",
+    "Andrew Keegan"
+   ]
+  },
   "tt0184858": {
    "checked": "2026-11-17",
    "names": [
@@ -15542,6 +18982,26 @@
     "Dana Stubblefield"
    ]
   },
+  "tt0184907": {
+   "checked": "2026-11-17",
+   "names": [
+    "Chevy Chase",
+    "Mark Webber",
+    "Schuyler Fisk",
+    "Chris Elliott",
+    "Jean Smart"
+   ]
+  },
+  "tt0185014": {
+   "checked": "2026-11-17",
+   "names": [
+    "Michael Douglas",
+    "Tobey Maguire",
+    "Frances McDormand",
+    "Robert Downey Jr.",
+    "Katie Holmes"
+   ]
+  },
   "tt0185371": {
    "checked": "2026-11-17",
    "names": [
@@ -15550,6 +19010,16 @@
     "Taye Diggs",
     "Peter Gallagher",
     "Chris Kattan"
+   ]
+  },
+  "tt0186894": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Affleck",
+    "Gwyneth Paltrow",
+    "Edward Edwards",
+    "Jennifer Grey",
+    "Tony Goldwyn"
    ]
   },
   "tt0188640": {
@@ -15592,6 +19062,16 @@
     "Joan Gerber"
    ]
   },
+  "tt0191133": {
+   "checked": "2026-11-17",
+   "names": [
+    "Cuba Gooding Jr.",
+    "Beyoncé",
+    "Mike Epps",
+    "Nigel Washington",
+    "Chloe Bailey"
+   ]
+  },
   "tt0191397": {
    "checked": "2026-11-17",
    "names": [
@@ -15632,6 +19112,16 @@
     "Daniel Roebuck"
    ]
   },
+  "tt0196229": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Stiller",
+    "Owen Wilson",
+    "Christine Taylor",
+    "Will Ferrell",
+    "Milla Jovovich"
+   ]
+  },
   "tt0196931": {
    "checked": "2026-11-17",
    "names": [
@@ -15642,6 +19132,16 @@
     "Tim Curry"
    ]
   },
+  "tt0203230": {
+   "checked": "2026-11-17",
+   "names": [
+    "Laura Linney",
+    "Matthew Broderick",
+    "Amy Ryan",
+    "Michael Countryman",
+    "Adam LeFevre"
+   ]
+  },
   "tt0206275": {
    "checked": "2026-11-17",
    "names": [
@@ -15650,6 +19150,16 @@
     "Kerry Washington",
     "Fredro Starr",
     "Terry Kinney"
+   ]
+  },
+  "tt0207201": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mel Gibson",
+    "Helen Hunt",
+    "Marisa Tomei",
+    "Alan Alda",
+    "Ashley Johnson"
    ]
   },
   "tt0207919": {
@@ -15720,6 +19230,16 @@
     "Frances O'Connor",
     "Sam Robards",
     "Jake Thomas"
+   ]
+  },
+  "tt0213203": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christine Cavanaugh",
+    "Elizabeth Daily",
+    "Cheryl Chase",
+    "Tara Strong",
+    "Cree Summer"
    ]
   },
   "tt0213327": {
@@ -15892,6 +19412,15 @@
     "Jhonen Vasquez"
    ]
   },
+  "tt0236388": {
+   "checked": "2026-11-17",
+   "names": [
+    "Steve Harvey",
+    "D.L. Hughley",
+    "Cedric The Entertainer",
+    "Bernie Mac"
+   ]
+  },
   "tt0236493": {
    "checked": "2026-11-17",
    "names": [
@@ -15900,6 +19429,16 @@
     "James Gandolfini",
     "J.K. Simmons",
     "Bob Balaban"
+   ]
+  },
+  "tt0238380": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christian Bale",
+    "Sean Bean",
+    "Emily Watson",
+    "Taye Diggs",
+    "Dominic Purcell"
    ]
   },
   "tt0238546": {
@@ -15950,6 +19489,16 @@
     "Judi Dench",
     "Alfred Molina",
     "Carrie-Anne Moss"
+   ]
+  },
+  "tt0243155": {
+   "checked": "2026-11-17",
+   "names": [
+    "Renée Zellweger",
+    "Colin Firth",
+    "Hugh Grant",
+    "Gemma Jones",
+    "Celia Imrie"
    ]
   },
   "tt0243655": {
@@ -16010,6 +19559,16 @@
     "Whoopi Goldberg",
     "Vince Vieluf",
     "Jenica Bergere"
+   ]
+  },
+  "tt0251075": {
+   "checked": "2026-11-17",
+   "names": [
+    "David Duchovny",
+    "Orlando Jones",
+    "Julianne Moore",
+    "Seann William Scott",
+    "Ted Levine"
    ]
   },
   "tt0251127": {
@@ -16082,6 +19641,26 @@
     "Liam Aiken"
    ]
   },
+  "tt0257106": {
+   "checked": "2026-11-17",
+   "names": [
+    "Anna Faris",
+    "Marlon Wayans",
+    "Antony Acker",
+    "Mark Barrett",
+    "Richard Bellos"
+   ]
+  },
+  "tt0257516": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christina Ricci",
+    "Jesse Eisenberg",
+    "Portia de Rossi",
+    "Mya",
+    "Shannon Elizabeth"
+   ]
+  },
   "tt0257568": {
    "checked": "2026-11-17",
    "names": [
@@ -16100,6 +19679,16 @@
     "J.B. Smoove",
     "Jennifer Coolidge",
     "Reg E. Cathey"
+   ]
+  },
+  "tt0258068": {
+   "checked": "2026-11-17",
+   "names": [
+    "Michael Caine",
+    "Brendan Fraser",
+    "Do Thi Hai Yen",
+    "Rade Šerbedžija",
+    "Tzi Ma"
    ]
   },
   "tt0258463": {
@@ -16130,6 +19719,16 @@
     "Chris Pontius",
     "Dave England",
     "Ehren McGhehey"
+   ]
+  },
+  "tt0264464": {
+   "checked": "2026-11-17",
+   "names": [
+    "Leonardo DiCaprio",
+    "Tom Hanks",
+    "Christopher Walken",
+    "Martin Sheen",
+    "Nathalie Baye"
    ]
   },
   "tt0264472": {
@@ -16180,6 +19779,16 @@
     "Sarah Michelle Gellar",
     "Linda Cardellini",
     "Rowan Atkinson"
+   ]
+  },
+  "tt0268397": {
+   "checked": "2026-11-17",
+   "names": [
+    "Debi Derryberry",
+    "Rob Paulsen",
+    "Megan Cavanagh",
+    "Mark DeCarlo",
+    "Jeff Garcia"
    ]
   },
   "tt0268978": {
@@ -16272,6 +19881,16 @@
     "Ben Miller"
    ]
   },
+  "tt0274558": {
+   "checked": "2026-11-17",
+   "names": [
+    "Meryl Streep",
+    "Nicole Kidman",
+    "Julianne Moore",
+    "Stephen Dillane",
+    "Miranda Richardson"
+   ]
+  },
   "tt0277434": {
    "checked": "2026-11-17",
    "names": [
@@ -16280,6 +19899,16 @@
     "Greg Kinnear",
     "Sam Elliott",
     "Chris Klein"
+   ]
+  },
+  "tt0278500": {
+   "checked": "2026-11-17",
+   "names": [
+    "Rupert Everett",
+    "Colin Firth",
+    "Frances O'Connor",
+    "Reese Witherspoon",
+    "Judi Dench"
    ]
   },
   "tt0279112": {
@@ -16330,6 +19959,16 @@
     "Peter Falk",
     "Michael Rooker",
     "Jon Seda"
+   ]
+  },
+  "tt0282120": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tim Curry",
+    "Rupert Everett",
+    "Flea",
+    "Lacey Chabert",
+    "Tom Kane"
    ]
   },
   "tt0283203": {
@@ -16472,6 +20111,16 @@
     "Robert Wagner"
    ]
   },
+  "tt0295303": {
+   "checked": "2026-11-17",
+   "names": [
+    "Michael Sheen",
+    "Mark Addy",
+    "Jim Carter",
+    "Celia Imrie",
+    "Ruth Jones"
+   ]
+  },
   "tt0297284": {
    "checked": "2026-11-17",
    "names": [
@@ -16480,6 +20129,16 @@
     "Christian Slater",
     "Eion Bailey",
     "Clifton Collins Jr."
+   ]
+  },
+  "tt0298130": {
+   "checked": "2026-11-17",
+   "names": [
+    "Naomi Watts",
+    "Martin Henderson",
+    "Brian Cox",
+    "David Dorfman",
+    "Jane Alexander"
    ]
   },
   "tt0298203": {
@@ -16562,6 +20221,16 @@
     "Robinne Lee"
    ]
   },
+  "tt0302886": {
+   "checked": "2026-11-17",
+   "names": [
+    "Luke Wilson",
+    "Vince Vaughn",
+    "Will Ferrell",
+    "Jeremy Piven",
+    "Ellen Pompeo"
+   ]
+  },
   "tt0305224": {
    "checked": "2026-11-17",
    "names": [
@@ -16572,6 +20241,16 @@
     "Allen Covert"
    ]
   },
+  "tt0306047": {
+   "checked": "2026-11-17",
+   "names": [
+    "Anna Faris",
+    "Charlie Sheen",
+    "Regina Hall",
+    "Pamela Anderson",
+    "Jenny McCarthy-Wahlberg"
+   ]
+  },
   "tt0306274": {
    "checked": "2026-11-17",
    "names": [
@@ -16580,6 +20259,26 @@
     "Mindy Cohn",
     "Grey DeLisle",
     "Jeff Bennett"
+   ]
+  },
+  "tt0307987": {
+   "checked": "2026-11-17",
+   "names": [
+    "Billy Bob Thornton",
+    "Bernie Mac",
+    "Lauren Graham",
+    "John Ritter",
+    "Tony Cox"
+   ]
+  },
+  "tt0308383": {
+   "checked": "2026-11-17",
+   "names": [
+    "Anthony Hopkins",
+    "Nicole Kidman",
+    "Ed Harris",
+    "Gary Sinise",
+    "Wentworth Miller"
    ]
   },
   "tt0308644": {
@@ -16672,6 +20371,16 @@
     "Timothy Dalton"
    ]
   },
+  "tt0318411": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eileen Walsh",
+    "Dorothy Duffy",
+    "Nora-Jane Noone",
+    "Anne-Marie Duff",
+    "Geraldine McEwan"
+   ]
+  },
   "tt0318627": {
    "checked": "2026-11-17",
    "names": [
@@ -16680,6 +20389,16 @@
     "Oded Fehr",
     "Thomas Kretschmann",
     "Sophie Vavasseur"
+   ]
+  },
+  "tt0318649": {
+   "checked": "2026-11-17",
+   "names": [
+    "Matthew McConaughey",
+    "Penélope Cruz",
+    "Steve Zahn",
+    "Mark Aspinall",
+    "Rakie Ayola"
    ]
   },
   "tt0318913": {
@@ -16752,6 +20471,16 @@
     "Chad Lindberg"
    ]
   },
+  "tt0326856": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Stiller",
+    "Jack Black",
+    "Rachel Weisz",
+    "Amy Poehler",
+    "Christopher Walken"
+   ]
+  },
   "tt0326905": {
    "checked": "2026-11-17",
    "names": [
@@ -16770,6 +20499,16 @@
     "Kevin Bacon",
     "Emmy Rossum",
     "Laurence Fishburne"
+   ]
+  },
+  "tt0327679": {
+   "checked": "2026-11-17",
+   "names": [
+    "Anne Hathaway",
+    "Hugh Dancy",
+    "Cary Elwes",
+    "Joanna Lumley",
+    "Aidan McArdle"
    ]
   },
   "tt0329101": {
@@ -16802,6 +20541,16 @@
     "Joan Allen"
    ]
   },
+  "tt0332379": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jack Black",
+    "Mike White",
+    "Joan Cusack",
+    "Adam Pascal",
+    "Lucas Papaelias"
+   ]
+  },
   "tt0335266": {
    "checked": "2026-11-17",
    "names": [
@@ -16830,6 +20579,16 @@
     "Miranda Richardson",
     "Ben Miller",
     "James Fox"
+   ]
+  },
+  "tt0337711": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jodi Carlisle",
+    "Lacey Chabert",
+    "Tim Curry",
+    "Elizabeth Daily",
+    "Nancy Cartwright"
    ]
   },
   "tt0338337": {
@@ -16862,6 +20621,16 @@
     "Jase Blankfort"
    ]
   },
+  "tt0345950": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tom Kenny",
+    "Jeffrey Tambor",
+    "Rodger Bumpass",
+    "Carolyn Lawrence",
+    "Clancy Brown"
+   ]
+  },
   "tt0346156": {
    "checked": "2026-11-17",
    "names": [
@@ -16880,6 +20649,16 @@
     "Atsuko Tanaka",
     "Akio Otsuka",
     "Koichi Yamadera"
+   ]
+  },
+  "tt0350261": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jennifer Lopez",
+    "Robert Redford",
+    "Morgan Freeman",
+    "Josh Lucas",
+    "Damian Lewis"
    ]
   },
   "tt0353049": {
@@ -16912,6 +20691,16 @@
     "Barbora Lukesová"
    ]
   },
+  "tt0356150": {
+   "checked": "2026-11-17",
+   "names": [
+    "Scott Mechlowicz",
+    "Jacob Pitts",
+    "Michelle Trachtenberg",
+    "Travis Wester",
+    "Kristin Kreuk"
+   ]
+  },
   "tt0356470": {
    "checked": "2026-11-17",
    "names": [
@@ -16920,6 +20709,36 @@
     "Jennifer Coolidge",
     "Dan Byrd",
     "Regina King"
+   ]
+  },
+  "tt0357413": {
+   "checked": "2026-11-17",
+   "names": [
+    "Will Ferrell",
+    "Christina Applegate",
+    "Steve Carell",
+    "Paul Rudd",
+    "David Koechner"
+   ]
+  },
+  "tt0358135": {
+   "checked": "2026-11-17",
+   "names": [
+    "Richard Gere",
+    "Jennifer Lopez",
+    "Susan Sarandon",
+    "Stanley Tucci",
+    "Lisa Ann Walter"
+   ]
+  },
+  "tt0361411": {
+   "checked": "2026-11-17",
+   "names": [
+    "Martin Henderson",
+    "Aishwarya Rai Bachchan",
+    "Nadira Babbar",
+    "Anupam Kher",
+    "Naveen Andrews"
    ]
   },
   "tt0361696": {
@@ -17042,6 +20861,36 @@
     "Fred Willard"
    ]
   },
+  "tt0367882": {
+   "checked": "2026-11-17",
+   "names": [
+    "Harrison Ford",
+    "Cate Blanchett",
+    "Shia LaBeouf",
+    "Karen Allen",
+    "Ray Winstone"
+   ]
+  },
+  "tt0368008": {
+   "checked": "2026-11-17",
+   "names": [
+    "Denzel Washington",
+    "Liev Schreiber",
+    "Meryl Streep",
+    "Kimberly Elise",
+    "Jeffrey Wright"
+   ]
+  },
+  "tt0368709": {
+   "checked": "2026-11-17",
+   "names": [
+    "Orlando Bloom",
+    "Kirsten Dunst",
+    "Susan Sarandon",
+    "Alec Baldwin",
+    "Bruce McGill"
+   ]
+  },
   "tt0369339": {
    "checked": "2026-11-17",
    "names": [
@@ -17102,6 +20951,26 @@
     "Ryan Stiles"
    ]
   },
+  "tt0377091": {
+   "checked": "2026-11-17",
+   "names": [
+    "Rory Culkin",
+    "Ryan Kelley",
+    "Scott Mechlowicz",
+    "Trevor Morgan",
+    "Josh Peck"
+   ]
+  },
+  "tt0377092": {
+   "checked": "2026-11-17",
+   "names": [
+    "Lindsay Lohan",
+    "Jonathan Bennett",
+    "Rachel McAdams",
+    "Tina Fey",
+    "Tim Meadows"
+   ]
+  },
   "tt0378194": {
    "checked": "2026-11-17",
    "names": [
@@ -17122,6 +20991,16 @@
     "Morena Baccarin"
    ]
   },
+  "tt0380510": {
+   "checked": "2026-11-17",
+   "names": [
+    "Rachel Weisz",
+    "Mark Wahlberg",
+    "Saoirse Ronan",
+    "Susan Sarandon",
+    "Stanley Tucci"
+   ]
+  },
   "tt0384680": {
    "checked": "2026-11-17",
    "names": [
@@ -17130,6 +21009,16 @@
     "Nicholas Hoult",
     "Michael Caine",
     "Gemmenne de la Peña"
+   ]
+  },
+  "tt0384814": {
+   "checked": "2026-11-17",
+   "names": [
+    "Colin Farrell",
+    "Salma Hayek",
+    "Donald Sutherland",
+    "Eileen Atkins",
+    "Idina Menzel"
    ]
   },
   "tt0385267": {
@@ -17212,6 +21101,16 @@
     "Shake Tukhmanyan"
    ]
   },
+  "tt0401792": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mickey Rourke",
+    "Clive Owen",
+    "Bruce Willis",
+    "Jessica Alba",
+    "Devon Aoki"
+   ]
+  },
   "tt0402022": {
    "checked": "2026-11-17",
    "names": [
@@ -17282,6 +21181,26 @@
     "Mathieu Kassovitz"
    ]
   },
+  "tt0408524": {
+   "checked": "2026-11-17",
+   "names": [
+    "Billy Bob Thornton",
+    "Greg Kinnear",
+    "Marcia Gay Harden",
+    "Sammi Kane Kraft",
+    "Ridge Canipe"
+   ]
+  },
+  "tt0408985": {
+   "checked": "2026-11-17",
+   "names": [
+    "Queen Latifah",
+    "LL Cool J",
+    "Timothy Hutton",
+    "Giancarlo Esposito",
+    "Alicia Witt"
+   ]
+  },
   "tt0409182": {
    "checked": "2026-11-17",
    "names": [
@@ -17290,6 +21209,16 @@
     "Emmy Rossum",
     "Josh Lucas",
     "Jacinda Barrett"
+   ]
+  },
+  "tt0410097": {
+   "checked": "2026-11-17",
+   "names": [
+    "Terrence Howard",
+    "Ludacris",
+    "Anthony Anderson",
+    "Taryn Manning",
+    "Taraji P. Henson"
    ]
   },
   "tt0412019": {
@@ -17322,6 +21251,16 @@
     "Graham Phillips"
    ]
   },
+  "tt0413895": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dakota Fanning",
+    "Julia Roberts",
+    "Oprah Winfrey",
+    "Steve Buscemi",
+    "John Cleese"
+   ]
+  },
   "tt0414853": {
    "checked": "2026-11-17",
    "names": [
@@ -17340,6 +21279,16 @@
     "Daryl Sabara",
     "Jami Gertz",
     "Cheryl Hines"
+   ]
+  },
+  "tt0416236": {
+   "checked": "2026-11-17",
+   "names": [
+    "Freddie Highmore",
+    "Sarah Bolger",
+    "David Strathairn",
+    "Mary-Louise Parker",
+    "Nick Nolte"
    ]
   },
   "tt0416449": {
@@ -17410,6 +21359,16 @@
     "Lucas Black",
     "Scott MacDonald",
     "Peter Sarsgaard"
+   ]
+  },
+  "tt0419887": {
+   "checked": "2026-11-17",
+   "names": [
+    "Khalid Abdalla",
+    "Ahmad Khan Mahmoodzada",
+    "Atossa Leoni",
+    "Shaun Toub",
+    "Sayed Jafar Masihullah Gharibzada"
    ]
   },
   "tt0421239": {
@@ -17702,6 +21661,16 @@
     "Christopher Meloni"
    ]
   },
+  "tt0454945": {
+   "checked": "2026-11-17",
+   "names": [
+    "Amanda Bynes",
+    "Laura Ramsey",
+    "Channing Tatum",
+    "Vinnie Jones",
+    "David Cross"
+   ]
+  },
   "tt0457433": {
    "checked": "2026-11-17",
    "names": [
@@ -17782,6 +21751,16 @@
     "Joel Gretsch"
    ]
   },
+  "tt0469494": {
+   "checked": "2026-11-17",
+   "names": [
+    "Daniel Day-Lewis",
+    "Paul Dano",
+    "Ciarán Hinds",
+    "Martin Stringer",
+    "Matthew Braden Stringer"
+   ]
+  },
   "tt0472033": {
    "checked": "2026-11-17",
    "names": [
@@ -17830,6 +21809,16 @@
     "Ray Liotta",
     "Joseph Ruskin",
     "Alex Rocco"
+   ]
+  },
+  "tt0477348": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tommy Lee Jones",
+    "Javier Bardem",
+    "Josh Brolin",
+    "Woody Harrelson",
+    "Kelly Macdonald"
    ]
   },
   "tt0477392": {
@@ -17892,6 +21881,16 @@
     "Mitch Reinholt"
    ]
   },
+  "tt0486655": {
+   "checked": "2026-11-17",
+   "names": [
+    "Charlie Cox",
+    "Claire Danes",
+    "Sienna Miller",
+    "Ian McKellen",
+    "Bimbo Hart"
+   ]
+  },
   "tt0486657": {
    "checked": "2026-11-17",
    "names": [
@@ -17900,6 +21899,36 @@
     "Terrence Mann",
     "Raoul Bhaneja",
     "Conrad Coates"
+   ]
+  },
+  "tt0486822": {
+   "checked": "2026-11-17",
+   "names": [
+    "Shia LaBeouf",
+    "David Morse",
+    "Carrie-Anne Moss",
+    "Sarah Roemer",
+    "Aaron Yoo"
+   ]
+  },
+  "tt0489281": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ryan Phillippe",
+    "Abbie Cornish",
+    "Joseph Gordon-Levitt",
+    "Rob Brown",
+    "Channing Tatum"
+   ]
+  },
+  "tt0489282": {
+   "checked": "2026-11-17",
+   "names": [
+    "Steve Zahn",
+    "Allen Covert",
+    "Justin Long",
+    "Jonah Hill",
+    "Kevin Heffernan"
    ]
   },
   "tt0491152": {
@@ -17942,6 +21971,16 @@
     "Carlos Lopez"
    ]
   },
+  "tt0493430": {
+   "checked": "2026-11-17",
+   "names": [
+    "Johnny Knoxville",
+    "Steve-O",
+    "Chris Pontius",
+    "Bam Margera",
+    "Ryan Dunn"
+   ]
+  },
   "tt0493464": {
    "checked": "2026-11-17",
    "names": [
@@ -17972,6 +22011,16 @@
     "Richard Strange"
    ]
   },
+  "tt0497116": {
+   "checked": "2026-11-17",
+   "names": [
+    "Al Gore",
+    "Billy West",
+    "George H.W. Bush",
+    "George W. Bush",
+    "Ronald Reagan"
+   ]
+  },
   "tt0497465": {
    "checked": "2026-11-17",
    "names": [
@@ -17980,6 +22029,16 @@
     "Javier Bardem",
     "Christopher Evan Welch",
     "Chris Messina"
+   ]
+  },
+  "tt0498381": {
+   "checked": "2026-11-17",
+   "names": [
+    "Matilda Lutz",
+    "Alex Roe",
+    "Johnny Galecki",
+    "Vincent D'Onofrio",
+    "Aimee Teegarden"
    ]
   },
   "tt0499556": {
@@ -18052,6 +22111,16 @@
     "Rudy Blomme"
    ]
   },
+  "tt0780567": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eddie Murphy",
+    "Thomas Haden Church",
+    "Yara Shahidi",
+    "Ronny Cox",
+    "Stephen Rannazzisi"
+   ]
+  },
   "tt0783640": {
    "checked": "2026-11-17",
    "names": [
@@ -18080,6 +22149,16 @@
     "Richard Jenkins",
     "Werner Herzog",
     "David Oyelowo"
+   ]
+  },
+  "tt0795351": {
+   "checked": "2026-11-17",
+   "names": [
+    "Renée Zellweger",
+    "Ian McShane",
+    "Jodelle Ferland",
+    "Bradley Cooper",
+    "Callum Keith Rennie"
    ]
   },
   "tt0796366": {
@@ -18140,6 +22219,16 @@
     "Christina Ricci",
     "Nicholas Elia",
     "Susan Sarandon"
+   ]
+  },
+  "tt0815236": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jay Baruchel",
+    "Alice Eve",
+    "T.J. Miller",
+    "Mike Vogel",
+    "Nate Torrence"
    ]
   },
   "tt0816692": {
@@ -18262,6 +22351,16 @@
     "Victor Pagan"
    ]
   },
+  "tt0918927": {
+   "checked": "2026-11-17",
+   "names": [
+    "Meryl Streep",
+    "Philip Seymour Hoffman",
+    "Amy Adams",
+    "Viola Davis",
+    "Alice Drummond"
+   ]
+  },
   "tt0938283": {
    "checked": "2026-11-17",
    "names": [
@@ -18270,6 +22369,16 @@
     "Jackson Rathbone",
     "Dev Patel",
     "Shaun Toub"
+   ]
+  },
+  "tt0942385": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Stiller",
+    "Jack Black",
+    "Robert Downey Jr.",
+    "Jeff Kahn",
+    "Anthony Ruivivar"
    ]
   },
   "tt0945513": {
@@ -18312,6 +22421,16 @@
     "Neal Bledsoe"
    ]
   },
+  "tt0963794": {
+   "checked": "2026-11-17",
+   "names": [
+    "Shawn Ashmore",
+    "Jena Malone",
+    "Jonathan Tucker",
+    "Laura Ramsey",
+    "Joe Anderson"
+   ]
+  },
   "tt0965394": {
    "checked": "2026-11-17",
    "names": [
@@ -18320,6 +22439,16 @@
     "Christopher Heyerdahl",
     "Ryan Robbins",
     "Agam Darshi"
+   ]
+  },
+  "tt0970179": {
+   "checked": "2026-11-17",
+   "names": [
+    "Asa Butterfield",
+    "Chloë Grace Moretz",
+    "Christopher Lee",
+    "Ben Kingsley",
+    "Sacha Baron Cohen"
    ]
   },
   "tt0970866": {
@@ -18410,6 +22539,16 @@
     "Jeff Fahey",
     "Jose Manuel",
     "David W Rice"
+   ]
+  },
+  "tt10080130": {
+   "checked": "2026-11-17",
+   "names": [
+    "Caity Lotz",
+    "Leo Howard",
+    "Michael Biehn",
+    "Hon Ping Tang",
+    "Ron Weaver"
    ]
   },
   "tt10245106": {
@@ -18510,6 +22649,16 @@
     "Lance Gross"
    ]
   },
+  "tt10515988": {
+   "checked": "2026-11-17",
+   "names": [
+    "Emily Bader",
+    "Roland Buck III",
+    "Dan Lippert",
+    "Jaye Ayres-Brown",
+    "Tom Nowicki"
+   ]
+  },
   "tt10545296": {
    "checked": "2026-11-17",
    "names": [
@@ -18518,6 +22667,16 @@
     "Viola Davis",
     "Dexter Sol Ansell",
     "Rosa Gotzler"
+   ]
+  },
+  "tt10551654": {
+   "checked": "2026-11-17",
+   "names": [
+    "Keke Palmer",
+    "Michael Cera",
+    "Bobby Cannavale",
+    "Russell Brand",
+    "John Magaro"
    ]
   },
   "tt10553210": {
@@ -18590,6 +22749,16 @@
     "Mary Lane Haskell"
    ]
   },
+  "tt10640346": {
+   "checked": "2026-11-17",
+   "names": [
+    "Brad Pitt",
+    "Margot Robbie",
+    "Jean Smart",
+    "Olivia Wilde",
+    "J.C. Currais"
+   ]
+  },
   "tt1068242": {
    "checked": "2026-11-17",
    "names": [
@@ -18608,6 +22777,16 @@
     "Jane Lynch",
     "Katharine Isabelle",
     "Emily Perkins"
+   ]
+  },
+  "tt10740926": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jay Will",
+    "Mary J. Blige",
+    "Chiwetel Ejiofor",
+    "Camila Cabello",
+    "Curt Morlaye"
    ]
   },
   "tt10767720": {
@@ -18750,6 +22929,16 @@
     "Anya Taylor-Joy"
    ]
   },
+  "tt11152168": {
+   "checked": "2026-11-17",
+   "names": [
+    "Cailey Fleming",
+    "Ryan Reynolds",
+    "John Krasinski",
+    "Phoebe Waller-Bridge",
+    "Fiona Shaw"
+   ]
+  },
   "tt1119646": {
    "checked": "2026-11-17",
    "names": [
@@ -18768,6 +22957,16 @@
     "Andrew Francis",
     "Eddie Izzard",
     "Bethany Brown"
+   ]
+  },
+  "tt11245972": {
+   "checked": "2026-11-17",
+   "names": [
+    "Neve Campbell",
+    "Courteney Cox",
+    "David Arquette",
+    "Melissa Barrera",
+    "Jack Quaid"
    ]
   },
   "tt1135525": {
@@ -18820,6 +23019,16 @@
     "Jimmy Bennett"
    ]
   },
+  "tt1152398": {
+   "checked": "2026-11-17",
+   "names": [
+    "Alex Pettyfer",
+    "Vanessa Hudgens",
+    "Mary-Kate Olsen",
+    "Justin Bradley",
+    "Dakota Johnson"
+   ]
+  },
   "tt1160419": {
    "checked": "2026-11-17",
    "names": [
@@ -18870,6 +23079,16 @@
     "Edi Gathegi"
    ]
   },
+  "tt1179904": {
+   "checked": "2026-11-17",
+   "names": [
+    "Katie Featherston",
+    "Micah Sloat",
+    "Mark Fredrichs",
+    "Amber Armstrong",
+    "Ashley Palmer"
+   ]
+  },
   "tt1179933": {
    "checked": "2026-11-17",
    "names": [
@@ -18880,6 +23099,16 @@
     "Suzanne Cryer"
    ]
   },
+  "tt11832046": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tyler Perry",
+    "Ron Pardo",
+    "Will Brisbin",
+    "Kingsley Marshall",
+    "Keegan Hedley"
+   ]
+  },
   "tt1186367": {
    "checked": "2026-11-17",
    "names": [
@@ -18888,6 +23117,16 @@
     "Naomie Harris",
     "Jonathan Chan-Pensley",
     "Ill-Young Kim"
+   ]
+  },
+  "tt1192628": {
+   "checked": "2026-11-17",
+   "names": [
+    "Johnny Depp",
+    "Isla Fisher",
+    "Timothy Olyphant",
+    "Abigail Breslin",
+    "Ned Beatty"
    ]
   },
   "tt1193138": {
@@ -19020,6 +23259,16 @@
     "Elias Koteas"
    ]
   },
+  "tt1229340": {
+   "checked": "2026-11-17",
+   "names": [
+    "Will Ferrell",
+    "Christina Applegate",
+    "Paul Rudd",
+    "Steve Carell",
+    "David Koechner"
+   ]
+  },
   "tt12299608": {
    "checked": "2026-11-17",
    "names": [
@@ -19108,6 +23357,16 @@
     "Cam Gigandet",
     "Aly Michalka",
     "Danneel Ackles"
+   ]
+  },
+  "tt12706836": {
+   "checked": "2026-11-17",
+   "names": [
+    "Elisabeth Moss",
+    "Kate Hudson",
+    "Kaia Gerber",
+    "Elizabeth Berkley",
+    "Leanne Suter"
    ]
   },
   "tt12718300": {
@@ -19300,6 +23559,16 @@
     "Peter Greene"
    ]
   },
+  "tt1370889": {
+   "checked": "2026-11-17",
+   "names": [
+    "Steve Clement",
+    "Thomas Montgomery",
+    "Ken Case",
+    "Rex Julian Beaber",
+    "Tim Shieler"
+   ]
+  },
   "tt1371150": {
    "checked": "2026-11-17",
    "names": [
@@ -19430,6 +23699,16 @@
     "Lombardo Boyar"
    ]
   },
+  "tt1403865": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jeff Bridges",
+    "Matt Damon",
+    "Hailee Steinfeld",
+    "Josh Brolin",
+    "Barry Pepper"
+   ]
+  },
   "tt1405500": {
    "checked": "2026-11-17",
    "names": [
@@ -19440,6 +23719,16 @@
     "Loretta Devine"
    ]
   },
+  "tt14107334": {
+   "checked": "2026-11-17",
+   "names": [
+    "Glen Powell",
+    "Alyssa Benn",
+    "Sienna Benn",
+    "David Zayas",
+    "Greg Townley"
+   ]
+  },
   "tt14109724": {
    "checked": "2026-11-17",
    "names": [
@@ -19448,6 +23737,16 @@
     "Julia Roberts",
     "Arielle Carver-O'Neill",
     "Ling Cooper Tang"
+   ]
+  },
+  "tt1411238": {
+   "checked": "2026-11-17",
+   "names": [
+    "Natalie Portman",
+    "Ashton Kutcher",
+    "Kevin Kline",
+    "Cary Elwes",
+    "Greta Gerwig"
    ]
   },
   "tt14114802": {
@@ -19468,6 +23767,26 @@
     "Dash Mihok",
     "Pooch Hall",
     "Kerris Dorsey"
+   ]
+  },
+  "tt14145436": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jackson White",
+    "Natalie Alyn Lind",
+    "Forrest Goodluck",
+    "Isabella LaBlanc",
+    "Henry Thomas"
+   ]
+  },
+  "tt14201728": {
+   "checked": "2026-11-17",
+   "names": [
+    "Djimon Hounsou",
+    "Lauren LaVera",
+    "Mia Healey",
+    "Gina Philips",
+    "Neal McDonough"
    ]
   },
   "tt14208870": {
@@ -19520,6 +23839,16 @@
     "Bryan Cranston"
    ]
   },
+  "tt14260836": {
+   "checked": "2026-11-17",
+   "names": [
+    "Robbie Williams",
+    "Jonno Davies",
+    "Steve Pemberton",
+    "Alison Steadman",
+    "Kate Mulvany"
+   ]
+  },
   "tt14269590": {
    "checked": "2026-11-17",
    "names": [
@@ -19560,6 +23889,26 @@
     "Ye Cheng"
    ]
   },
+  "tt1433108": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dwayne Johnson",
+    "Billy Bob Thornton",
+    "Maggie Grace",
+    "Mauricio Lopez",
+    "Jim Gaines"
+   ]
+  },
+  "tt14371860": {
+   "checked": "2026-11-17",
+   "names": [
+    "Julia Garner",
+    "Dianne Wiest",
+    "Kevin McNally",
+    "Jim Sturgess",
+    "Marli Siu"
+   ]
+  },
   "tt1440129": {
    "checked": "2026-11-17",
    "names": [
@@ -19568,6 +23917,16 @@
     "Liam Neeson",
     "Rihanna",
     "Taylor Kitsch"
+   ]
+  },
+  "tt14405338": {
+   "checked": "2026-11-17",
+   "names": [
+    "Angela Sarafyan",
+    "Paul Schneider",
+    "Lia McHugh",
+    "Jacob Lofland",
+    "Doug Van Liew"
    ]
   },
   "tt1442462": {
@@ -19658,6 +24017,16 @@
     "Timothy Omundson",
     "Maggie Lawson",
     "Kirsten Nelson"
+   ]
+  },
+  "tt1473832": {
+   "checked": "2026-11-17",
+   "names": [
+    "Renée Zellweger",
+    "Gemma Jones",
+    "Jim Broadbent",
+    "Sally Phillips",
+    "Julian Rhind-Tutt"
    ]
   },
   "tt14740118": {
@@ -19840,6 +24209,16 @@
     "Scarlett Estevez"
    ]
   },
+  "tt1536044": {
+   "checked": "2026-11-17",
+   "names": [
+    "Katie Featherston",
+    "Micah Sloat",
+    "Molly Ephraim",
+    "David Bierend",
+    "Brian Boland"
+   ]
+  },
   "tt15441472": {
    "checked": "2026-11-17",
    "names": [
@@ -19900,6 +24279,16 @@
     "Jonathan Pryce"
    ]
   },
+  "tt15837338": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dan Duran",
+    "Kristen Bell",
+    "James Marsden",
+    "Finn Lee-Epp",
+    "Luxton Handspiker"
+   ]
+  },
   "tt1590193": {
    "checked": "2026-11-17",
    "names": [
@@ -19920,6 +24309,36 @@
     "Tom Selleck"
    ]
   },
+  "tt1596363": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christian Bale",
+    "Steve Carell",
+    "Ryan Gosling",
+    "Brad Pitt",
+    "Rudy Eisenzopf"
+   ]
+  },
+  "tt1596557": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christian Convery",
+    "Sam Trammell",
+    "Nicholas Ryan Hernandez",
+    "Jayden Fontaine",
+    "Madalen Mills"
+   ]
+  },
+  "tt15978956": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jonathan Rhys Meyers",
+    "Elena Kampouris",
+    "Doron Bell",
+    "Agam Darshi",
+    "Alix Villaret"
+   ]
+  },
   "tt1600194": {
    "checked": "2026-11-17",
    "names": [
@@ -19938,6 +24357,16 @@
     "Matt Bennett",
     "Elizabeth Gillies",
     "Ariana Grande"
+   ]
+  },
+  "tt1608290": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Stiller",
+    "Owen Wilson",
+    "Penélope Cruz",
+    "Will Ferrell",
+    "Justin Bieber"
    ]
   },
   "tt1609479": {
@@ -20160,6 +24589,16 @@
     "Dexter Darden"
    ]
   },
+  "tt1711525": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jason Bateman",
+    "Olivia Munn",
+    "T.J. Miller",
+    "Jennifer Aniston",
+    "Kate McKinnon"
+   ]
+  },
   "tt1713476": {
    "checked": "2026-11-17",
    "names": [
@@ -20280,6 +24719,16 @@
     "Robin Sachs"
    ]
   },
+  "tt1754656": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jeff Bridges",
+    "Mackenzie Foy",
+    "Rachel McAdams",
+    "Marion Cotillard",
+    "Riley Osborne"
+   ]
+  },
   "tt1790825": {
    "checked": "2026-11-17",
    "names": [
@@ -20300,6 +24749,26 @@
     "Donis Leonard Jr."
    ]
   },
+  "tt1798243": {
+   "checked": "2026-11-17",
+   "names": [
+    "Billy Crudup",
+    "Anton Yelchin",
+    "Felicity Huffman",
+    "Selena Gomez",
+    "Miles Heizer"
+   ]
+  },
+  "tt1798603": {
+   "checked": "2026-11-17",
+   "names": [
+    "Billy Bob Thornton",
+    "Kathy Bates",
+    "Tony Cox",
+    "Christina Hendricks",
+    "Brett Kelly"
+   ]
+  },
   "tt1798709": {
    "checked": "2026-11-17",
    "names": [
@@ -20308,6 +24777,16 @@
     "Scarlett Johansson",
     "Rooney Mara",
     "Lynn Adrianna Freedman"
+   ]
+  },
+  "tt18069420": {
+   "checked": "2026-11-17",
+   "names": [
+    "Rihanna",
+    "James Corden",
+    "Nick Offerman",
+    "JP Karliak",
+    "Dan Levy"
    ]
   },
   "tt18079362": {
@@ -20398,6 +24877,16 @@
     "Keanu Reeves",
     "Idris Elba",
     "Colleen O'Shaughnessey"
+   ]
+  },
+  "tt18259538": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eric Nam",
+    "Dave Bautista",
+    "Jessica Matten",
+    "Román Zaragoza",
+    "Steven Yeun"
    ]
   },
   "tt1830622": {
@@ -20618,6 +25107,16 @@
     "Guka Han",
     "Kim Sun-young",
     "Yoann Zimmer"
+   ]
+  },
+  "tt1980209": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mark Wahlberg",
+    "Dwayne Johnson",
+    "Anthony Mackie",
+    "Tony Shalhoub",
+    "Ed Harris"
    ]
   },
   "tt1981538": {
@@ -21020,6 +25519,16 @@
     "Kerris Dorsey"
    ]
   },
+  "tt2256055": {
+   "checked": "2026-11-17",
+   "names": [
+    "Madison Iseman",
+    "Aaron Dominguez",
+    "Mel Jarnson",
+    "Charlie Tahan",
+    "Antonia Desplat"
+   ]
+  },
   "tt22874848": {
    "checked": "2026-11-17",
    "names": [
@@ -21040,6 +25549,16 @@
     "Ed Skrein"
    ]
   },
+  "tt2296777": {
+   "checked": "2026-11-17",
+   "names": [
+    "Johnny Depp",
+    "James McAvoy",
+    "Emily Blunt",
+    "Kelly Asbury",
+    "Mary J. Blige"
+   ]
+  },
   "tt2300975": {
    "checked": "2026-11-17",
    "names": [
@@ -21050,16 +25569,6 @@
     "Ana de la Reguera"
    ]
   },
-  "tt23039114": {
-   "checked": "2026-11-17",
-   "names": [
-    "Edward Burns",
-    "Brian d'Arcy James",
-    "Erica Hernandez",
-    "Brian Muller",
-    "Ian McElhinney"
-   ]
-  },
   "tt2322441": {
    "checked": "2026-11-17",
    "names": [
@@ -21068,6 +25577,16 @@
     "Jennifer Ehle",
     "Eloise Mumford",
     "Victor Rasuk"
+   ]
+  },
+  "tt2331880": {
+   "checked": "2026-11-17",
+   "names": [
+    "Kerry Bishé",
+    "Edward Burns",
+    "Heather Burns",
+    "Marsha Dietlein",
+    "Caitlin FitzGerald"
    ]
   },
   "tt23319892": {
@@ -21088,6 +25607,16 @@
     "Raven Goodwin",
     "Margaret Avery",
     "Richard Brooks"
+   ]
+  },
+  "tt23572848": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tom Kenny",
+    "Clancy Brown",
+    "Rodger Bumpass",
+    "Bill Fagerbakke",
+    "Carolyn Lawrence"
    ]
   },
   "tt2361509": {
@@ -21140,6 +25669,16 @@
     "Nick Frost"
    ]
   },
+  "tt2396431": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jack Black",
+    "Robert Timothy Smith",
+    "Keegan-Michael Key",
+    "Brianne Howey",
+    "Hayes MacArthur"
+   ]
+  },
   "tt2401097": {
    "checked": "2026-11-17",
    "names": [
@@ -21178,6 +25717,26 @@
     "Bella Warda"
    ]
   },
+  "tt24326458": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ryan Phillippe",
+    "Amélie Hoeferle",
+    "Sara Canning",
+    "Sage Linder",
+    "Beverley Elliott"
+   ]
+  },
+  "tt24326462": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ryan Phillippe",
+    "Amélie Hoeferle",
+    "Sara Canning",
+    "Sage Linder",
+    "Beverley Elliott"
+   ]
+  },
   "tt2436682": {
    "checked": "2026-11-17",
    "names": [
@@ -21196,6 +25755,16 @@
     "Adam Rodriguez",
     "Marisol Nichols",
     "Elias Kacavas"
+   ]
+  },
+  "tt2473510": {
+   "checked": "2026-11-17",
+   "names": [
+    "Chris J. Murray",
+    "Brit Shaw",
+    "Ivy George",
+    "Dan Gill",
+    "Olivia Taylor Dudley"
    ]
   },
   "tt2474024": {
@@ -21298,6 +25867,16 @@
     "Sebastien Roberts"
    ]
   },
+  "tt26442053": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christoph Waltz",
+    "Lucy Liu",
+    "Cooper Hoffman",
+    "Karishma Navekar",
+    "Desmond Edwards"
+   ]
+  },
   "tt26443107": {
    "checked": "2026-11-17",
    "names": [
@@ -21338,6 +25917,16 @@
     "Ingunn Omholt"
    ]
   },
+  "tt26671996": {
+   "checked": "2026-11-17",
+   "names": [
+    "Bill Skarsgård",
+    "Anthony Hopkins",
+    "Ashley Cartwright",
+    "Michael Eklund",
+    "Navid Charkhi"
+   ]
+  },
   "tt26674627": {
    "checked": "2026-11-17",
    "names": [
@@ -21348,6 +25937,26 @@
     "Erin Cahill"
    ]
   },
+  "tt26697087": {
+   "checked": "2026-11-17",
+   "names": [
+    "John Turturro",
+    "Caitríona Balfe",
+    "Orlando Bloom",
+    "Clare Dunne",
+    "Gary Beadle"
+   ]
+  },
+  "tt2671706": {
+   "checked": "2026-11-17",
+   "names": [
+    "Denzel Washington",
+    "Viola Davis",
+    "Stephen McKinley Henderson",
+    "Jovan Adepo",
+    "Russell Hornsby"
+   ]
+  },
   "tt2674426": {
    "checked": "2026-11-17",
    "names": [
@@ -21356,6 +25965,16 @@
     "Janet McTeer",
     "Charles Dance",
     "Vanessa Kirby"
+   ]
+  },
+  "tt26896414": {
+   "checked": "2026-11-17",
+   "names": [
+    "Eddie Marsan",
+    "Sam Claflin",
+    "Burn Gorman",
+    "Suki Waterhouse",
+    "Tienne Simon"
    ]
   },
   "tt2699110": {
@@ -21548,6 +26167,16 @@
     "Poonam Mathur"
    ]
   },
+  "tt29268110": {
+   "checked": "2026-11-17",
+   "names": [
+    "Naomi Scott",
+    "Rosemarie DeWitt",
+    "Lukas Gage",
+    "Miles Gutierrez-Riley",
+    "Peter Jacobson"
+   ]
+  },
   "tt2937696": {
    "checked": "2026-11-17",
    "names": [
@@ -21606,6 +26235,16 @@
     "Benicio Del Toro",
     "Regina Hall",
     "Teyana Taylor"
+   ]
+  },
+  "tt3063516": {
+   "checked": "2026-11-17",
+   "names": [
+    "Johnny Knoxville",
+    "Jackson Nicoll",
+    "Gregorio",
+    "Georgina Cates",
+    "Kamber Hejlik"
    ]
   },
   "tt3072482": {
@@ -21668,6 +26307,16 @@
     "Nathaniel Buzolic"
    ]
   },
+  "tt31314745": {
+   "checked": "2026-11-17",
+   "names": [
+    "Sophie Turner",
+    "Rhys Coiro",
+    "Billy Campbell",
+    "Peter Mensah",
+    "Forrest Goodluck"
+   ]
+  },
   "tt31381457": {
    "checked": "2026-11-17",
    "names": [
@@ -21676,6 +26325,16 @@
     "Jade Xu",
     "Jose Manuel",
     "Lathrop Walker"
+   ]
+  },
+  "tt31511689": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dakota Fanning",
+    "Kathryn Hunter",
+    "Mary McCormack",
+    "Rachel Blanchard",
+    "Devyn Nekoda"
    ]
   },
   "tt3152592": {
@@ -21698,6 +26357,26 @@
     "Charles Cain"
    ]
   },
+  "tt3169706": {
+   "checked": "2026-11-17",
+   "names": [
+    "Bill Nighy",
+    "Imelda Staunton",
+    "Dominic West",
+    "Paddy Considine",
+    "Ben Schnetzer"
+   ]
+  },
+  "tt31849867": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ethan Embry",
+    "Li Jun Li",
+    "Jeremie Harris",
+    "Lukas Jann",
+    "Kevin Allison"
+   ]
+  },
   "tt31956123": {
    "checked": "2026-11-17",
    "names": [
@@ -21718,6 +26397,16 @@
     "Daphne Cheung"
    ]
   },
+  "tt31974129": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jon Voight",
+    "Adam Woodward",
+    "Marton Csokas",
+    "Charlotte Vega",
+    "Philip Winchester"
+   ]
+  },
   "tt32093575": {
    "checked": "2026-11-17",
    "names": [
@@ -21728,14 +26417,14 @@
     "Teyana Taylor"
    ]
   },
-  "tt32135632": {
+  "tt32147653": {
    "checked": "2026-11-17",
    "names": [
-    "Georgie Farmer",
-    "Yasmin Finney",
-    "Roman Hayeck-Green",
-    "James Scholz",
-    "Jessica Reynolds"
+    "Sophia Bush",
+    "Chris Carmack",
+    "Amiah Miller",
+    "Chris Johnson",
+    "Grace Aiello Antczak"
    ]
   },
   "tt32536315": {
@@ -21788,6 +26477,36 @@
     "Mia Wasikowska"
    ]
   },
+  "tt33028778": {
+   "checked": "2026-11-17",
+   "names": [
+    "Johnny Sequoyah",
+    "Jess Alexander",
+    "Troy Kotsur",
+    "Victoria Wyant",
+    "Gia Hunter"
+   ]
+  },
+  "tt33088452": {
+   "checked": "2026-11-17",
+   "names": [
+    "Allison Williams",
+    "Mckenna Grace",
+    "Dave Franco",
+    "Mason Thames",
+    "Scott Eastwood"
+   ]
+  },
+  "tt33204691": {
+   "checked": "2026-11-17",
+   "names": [
+    "Jason Biggs",
+    "Meaghan Rath",
+    "Anna Konkle",
+    "Justin H. Min",
+    "Arturo Castro"
+   ]
+  },
   "tt3322940": {
    "checked": "2026-11-17",
    "names": [
@@ -21838,6 +26557,16 @@
     "Victor Garber"
    ]
   },
+  "tt3402138": {
+   "checked": "2026-11-17",
+   "names": [
+    "Liam Neeson",
+    "Pamela Anderson",
+    "Paul Walter Hauser",
+    "Danny Huston",
+    "CCH Pounder"
+   ]
+  },
   "tt3410834": {
    "checked": "2026-11-17",
    "names": [
@@ -21846,6 +26575,16 @@
     "Jeff Daniels",
     "Naomi Watts",
     "Octavia Spencer"
+   ]
+  },
+  "tt34890320": {
+   "checked": "2026-11-17",
+   "names": [
+    "Josh Duhamel",
+    "Michael Socha",
+    "Antonia Thomas",
+    "Charity Wakefield",
+    "Fenella Woolgar"
    ]
   },
   "tt34910018": {
@@ -21958,6 +26697,16 @@
     "Ella Anderson"
    ]
   },
+  "tt36052167": {
+   "checked": "2026-11-17",
+   "names": [
+    "Seth Green",
+    "Kevin Dillon",
+    "Charlie Weber",
+    "Dylan Walsh",
+    "Eloise Lovell Anderson"
+   ]
+  },
   "tt3640424": {
    "checked": "2026-11-17",
    "names": [
@@ -21998,6 +26747,16 @@
     "Ronny Jhutti"
    ]
   },
+  "tt37028623": {
+   "checked": "2026-11-17",
+   "names": [
+    "Henry Golding",
+    "Alex Pettyfer",
+    "Laura Haddock",
+    "Saise Quinn",
+    "Maddie Evans"
+   ]
+  },
   "tt3725800": {
    "checked": "2026-11-17",
    "names": [
@@ -22006,6 +26765,16 @@
     "Cindy Robinson",
     "Richard Rosenblatt",
     "Jessica Straus"
+   ]
+  },
+  "tt37268550": {
+   "checked": "2026-11-17",
+   "names": [
+    "Leah Gibson",
+    "Eloise Lovell Anderson",
+    "Silvia Orduna",
+    "Rex Adams",
+    "Julia Strowski"
    ]
   },
   "tt3739110": {
@@ -22018,6 +26787,16 @@
     "Carrie Alexander"
    ]
   },
+  "tt3794354": {
+   "checked": "2026-11-17",
+   "names": [
+    "Ben Schwartz",
+    "James Marsden",
+    "Jim Carrey",
+    "Tika Sumpter",
+    "Natasha Rothwell"
+   ]
+  },
   "tt3799694": {
    "checked": "2026-11-17",
    "names": [
@@ -22028,6 +26807,16 @@
     "Margaret Qualley"
    ]
   },
+  "tt38238651": {
+   "checked": "2026-11-17",
+   "names": [
+    "Lizzy Greene",
+    "Megan Boone",
+    "Sky Katz",
+    "Philip Winchester",
+    "Alix Villaret"
+   ]
+  },
   "tt3882082": {
    "checked": "2026-11-17",
    "names": [
@@ -22036,16 +26825,6 @@
     "James Russell",
     "Jim Norton",
     "Diana Hardcastle"
-   ]
-  },
-  "tt38907741": {
-   "checked": "2026-11-17",
-   "names": [
-    "Nathalie Emmanuel",
-    "Claire Forlani",
-    "Eloise Lovell Anderson",
-    "Ben Cura",
-    "Charlie Hiscock"
    ]
   },
   "tt3919322": {
@@ -22218,6 +26997,16 @@
     "Christopher Fairbank"
    ]
   },
+  "tt4428398": {
+   "checked": "2026-11-17",
+   "names": [
+    "Michael Cera",
+    "Samuel L. Jackson",
+    "Ricky Gervais",
+    "Kylie Kuioka",
+    "Mel Brooks"
+   ]
+  },
   "tt4468740": {
    "checked": "2026-11-17",
    "names": [
@@ -22298,6 +27087,16 @@
     "Nick Loeb"
    ]
   },
+  "tt4669252": {
+   "checked": "2026-11-17",
+   "names": [
+    "Christoph Waltz",
+    "Vanessa Redgrave",
+    "Annette Bening",
+    "Corey Hawkins",
+    "Laura de Carteret"
+   ]
+  },
   "tt4682136": {
    "checked": "2026-11-17",
    "names": [
@@ -22316,6 +27115,16 @@
     "Jeffrey Tambor",
     "Andrea Riseborough",
     "Olga Kurylenko"
+   ]
+  },
+  "tt4701182": {
+   "checked": "2026-11-17",
+   "names": [
+    "Hailee Steinfeld",
+    "Jorge Lendeborg Jr.",
+    "John Cena",
+    "Jason Drucker",
+    "Pamela Adlon"
    ]
   },
   "tt4743226": {
@@ -22366,6 +27175,16 @@
     "Maria Bello",
     "Billy Burke",
     "Alexander DiPersia"
+   ]
+  },
+  "tt4823776": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tim Hill",
+    "Clancy Brown",
+    "Bill Fagerbakke",
+    "Rodger Bumpass",
+    "Mr. Lawrence"
    ]
   },
   "tt4912910": {
@@ -22458,6 +27277,16 @@
     "Tobe Nwigwe"
    ]
   },
+  "tt5095076": {
+   "checked": "2026-11-17",
+   "names": [
+    "Dane DeHaan",
+    "Sasha Calle",
+    "Mamoudou Athie",
+    "Jeffrey Donovan",
+    "William Belleau"
+   ]
+  },
   "tt5151570": {
    "checked": "2026-11-17",
    "names": [
@@ -22536,6 +27365,16 @@
     "Travis Fimmel",
     "Kerry Condon",
     "Darby Camp"
+   ]
+  },
+  "tt5314190": {
+   "checked": "2026-11-17",
+   "names": [
+    "Logan Lerman",
+    "Helena Bonham Carter",
+    "Gérard Depardieu",
+    "Jordan Beck",
+    "Jim Pharr"
    ]
   },
   "tt5431890": {
@@ -22646,6 +27485,16 @@
     "Adam Lustick",
     "Anne Dudek",
     "Aparna Nancherla"
+   ]
+  },
+  "tt5657846": {
+   "checked": "2026-11-17",
+   "names": [
+    "Will Ferrell",
+    "Mark Wahlberg",
+    "Mel Gibson",
+    "John Lithgow",
+    "Linda Cardellini"
    ]
   },
   "tt5689068": {
@@ -23078,6 +27927,16 @@
     "Martin McDougall"
    ]
   },
+  "tt6857166": {
+   "checked": "2026-11-17",
+   "names": [
+    "Diane Keaton",
+    "Jane Fonda",
+    "Candice Bergen",
+    "Mary Steenburgen",
+    "Andy Garcia"
+   ]
+  },
   "tt6906292": {
    "checked": "2026-11-17",
    "names": [
@@ -23248,6 +28107,16 @@
     "Jacob Latimore"
    ]
   },
+  "tt7547410": {
+   "checked": "2026-11-17",
+   "names": [
+    "Isabela Merced",
+    "Eugenio Derbez",
+    "Michael Peña",
+    "Eva Longoria",
+    "Benicio Del Toro"
+   ]
+  },
   "tt7693316": {
    "checked": "2026-11-17",
    "names": [
@@ -23316,6 +28185,16 @@
     "Evan Rachel Wood",
     "Patricia Belcher",
     "Kim Estes"
+   ]
+  },
+  "tt8179024": {
+   "checked": "2026-11-17",
+   "names": [
+    "Mary J. Blige",
+    "Nat Wolff",
+    "David Zayas",
+    "Anika Noni Rose",
+    "David Warshofsky"
    ]
   },
   "tt8323668": {
@@ -23508,6 +28387,26 @@
     "Santiago Cabrera"
    ]
   },
+  "tt8839576": {
+   "checked": "2026-11-17",
+   "names": [
+    "Emile Hirsch",
+    "Inbar Lavi",
+    "Yan Tual",
+    "Adam Tsekhman",
+    "Edward Foy"
+   ]
+  },
+  "tt8851148": {
+   "checked": "2026-11-17",
+   "names": [
+    "Joey King",
+    "Kyle Allen",
+    "Kim Dickens",
+    "John Ortiz",
+    "Celeste O'Connor"
+   ]
+  },
   "tt8851668": {
    "checked": "2026-11-17",
    "names": [
@@ -23646,6 +28545,16 @@
     "Sam Richardson",
     "Robert Kazinsky",
     "Kacey Rohl"
+   ]
+  },
+  "tt9603208": {
+   "checked": "2026-11-17",
+   "names": [
+    "Tom Cruise",
+    "Hayley Atwell",
+    "Ving Rhames",
+    "Simon Pegg",
+    "Esai Morales"
    ]
   },
   "tt9603212": {
