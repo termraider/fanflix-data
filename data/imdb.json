@@ -12582,6 +12582,11 @@
    "votes": 5480,
    "checked": "2026-11-17"
   },
+  "tt0113253": {
+   "rating": 4.6,
+   "votes": 48259,
+   "checked": "2026-11-18"
+  },
   "tt0115485": {
    "rating": 6.1,
    "votes": 554,
@@ -12622,6 +12627,11 @@
    "votes": 84216,
    "checked": "2026-11-16"
   },
+  "tt0120860": {
+   "rating": 4.2,
+   "votes": 19024,
+   "checked": "2026-11-18"
+  },
   "tt0130370": {
    "rating": 4.8,
    "votes": 1725,
@@ -12630,6 +12640,11 @@
   "tt0131613": {
    "rating": 7.9,
    "votes": 41397,
+   "checked": "2026-11-18"
+  },
+  "tt0134273": {
+   "rating": 6.6,
+   "votes": 153480,
    "checked": "2026-11-18"
   },
   "tt0166792": {
@@ -12650,6 +12665,11 @@
   "tt0219653": {
    "rating": 4.9,
    "votes": 39473,
+   "checked": "2026-11-18"
+  },
+  "tt0239641": {
+   "rating": 4.6,
+   "votes": 6688,
    "checked": "2026-11-18"
   },
   "tt0247082": {
@@ -12676,6 +12696,11 @@
    "rating": 3.7,
    "votes": 19957,
    "checked": "2026-11-13"
+  },
+  "tt0287717": {
+   "rating": 5.3,
+   "votes": 79029,
+   "checked": "2026-11-18"
   },
   "tt0290057": {
    "rating": 7.1,
@@ -12730,6 +12755,11 @@
   "tt0327162": {
    "rating": 5.4,
    "votes": 73437,
+   "checked": "2026-11-18"
+  },
+  "tt0330634": {
+   "rating": 4.2,
+   "votes": 4548,
    "checked": "2026-11-18"
   },
   "tt0336325": {
@@ -12812,6 +12842,11 @@
    "votes": 496610,
    "checked": "2026-11-13"
   },
+  "tt0780504": {
+   "rating": 7.8,
+   "votes": 779025,
+   "checked": "2026-11-18"
+  },
   "tt0796366": {
    "rating": 7.9,
    "votes": 643015,
@@ -12871,6 +12906,16 @@
    "rating": 6.2,
    "votes": 2690,
    "checked": "2026-11-13"
+  },
+  "tt1313092": {
+   "rating": 7.2,
+   "votes": 64081,
+   "checked": "2026-11-18"
+  },
+  "tt1319733": {
+   "rating": 4.8,
+   "votes": 12924,
+   "checked": "2026-11-18"
   },
   "tt13623608": {
    "rating": 7.1,
@@ -23538,6 +23583,19 @@
     "Ishirō Honda"
    ]
   },
+  "tt0113253": {
+   "checked": "2026-11-18",
+   "names": [
+    "Donald Pleasence",
+    "Paul Rudd",
+    "Marianne Hagan",
+    "Mitchell Ryan",
+    "Kim Darby"
+   ],
+   "dir": [
+    "Joe Chappelle"
+   ]
+  },
   "tt0113321": {
    "checked": "2026-11-18",
    "names": [
@@ -25209,6 +25267,19 @@
     "Jonathan Frakes"
    ]
   },
+  "tt0120860": {
+   "checked": "2026-11-18",
+   "names": [
+    "Robert Patrick",
+    "Bo Hopkins",
+    "Duane Whitaker",
+    "Muse Watson",
+    "Brett Harrelson"
+   ],
+   "dir": [
+    "Scott Spiegel"
+   ]
+  },
   "tt0120873": {
    "checked": "2026-11-18",
    "names": [
@@ -25536,6 +25607,19 @@
    ],
    "dir": [
     "Ang Lee"
+   ]
+  },
+  "tt0134273": {
+   "checked": "2026-11-18",
+   "names": [
+    "Nicolas Cage",
+    "Joaquin Phoenix",
+    "James Gandolfini",
+    "Peter Stormare",
+    "Anthony Heald"
+   ],
+   "dir": [
+    "Joel Schumacher"
    ]
   },
   "tt0138097": {
@@ -26823,6 +26907,19 @@
     "Lawrence Guterman"
    ]
   },
+  "tt0239641": {
+   "checked": "2026-11-18",
+   "names": [
+    "Alix Koromzay",
+    "Bruno Campos",
+    "Will Estes",
+    "Gaven E. Lucas",
+    "Edward Albert"
+   ],
+   "dir": [
+    "Jean de Segonzac"
+   ]
+  },
   "tt0240510": {
    "checked": "2026-11-18",
    "names": [
@@ -27621,6 +27718,19 @@
     "Dennie Gordon"
    ]
   },
+  "tt0287717": {
+   "checked": "2026-11-18",
+   "names": [
+    "Alexa PenaVega",
+    "Daryl Sabara",
+    "Antonio Banderas",
+    "Carla Gugino",
+    "Steve Buscemi"
+   ],
+   "dir": [
+    "Robert Rodriguez"
+   ]
+  },
   "tt0288477": {
    "checked": "2026-11-18",
    "names": [
@@ -28353,6 +28463,19 @@
    ],
    "dir": [
     "Ronny Yu"
+   ]
+  },
+  "tt0330634": {
+   "checked": "2026-11-18",
+   "names": [
+    "Lance Henriksen",
+    "Alex Cioalca",
+    "Karl Geary",
+    "Alexis Dziena",
+    "Keith D. Robinson"
+   ],
+   "dir": [
+    "J.T. Petty"
    ]
   },
   "tt0331632": {
@@ -32847,6 +32970,19 @@
     "Colin Bucksey"
    ]
   },
+  "tt1313092": {
+   "checked": "2026-11-18",
+   "names": [
+    "James Frecheville",
+    "Guy Pearce",
+    "Joel Edgerton",
+    "Bryce Lindemann",
+    "Paul Smits"
+   ],
+   "dir": [
+    "David Michôd"
+   ]
+  },
   "tt1316536": {
    "checked": "2026-11-18",
    "names": [
@@ -32858,6 +32994,19 @@
    ],
    "dir": [
     "Sean Byrne"
+   ]
+  },
+  "tt1319733": {
+   "checked": "2026-11-18",
+   "names": [
+    "DJ Qualls",
+    "Mary Cobb",
+    "Rhoda Griffis",
+    "Preston Jones",
+    "Michael Trotter"
+   ],
+   "dir": [
+    "Steve Rash"
    ]
   },
   "tt13223398": {
@@ -46947,6 +47096,15 @@
    "y": 1995,
    "rt": 103
   },
+  "tt0113253": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror",
+    "Thriller"
+   ],
+   "y": 1995,
+   "rt": 87
+  },
   "tt0113321": {
    "checked": "2026-11-18",
    "g": [
@@ -48165,6 +48323,16 @@
    "y": 1998,
    "rt": 103
   },
+  "tt0120860": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Horror",
+    "Thriller"
+   ],
+   "y": 1999,
+   "rt": 88
+  },
   "tt0120873": {
    "checked": "2026-11-18",
    "g": [
@@ -48406,6 +48574,16 @@
    ],
    "y": 1999,
    "rt": 138
+  },
+  "tt0134273": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Mystery"
+   ],
+   "y": 1999,
+   "rt": 123
   },
   "tt0138097": {
    "checked": "2026-11-18",
@@ -49347,6 +49525,16 @@
    "y": 2001,
    "rt": 87
   },
+  "tt0239641": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "y": 2001,
+   "rt": 82
+  },
   "tt0240510": {
    "checked": "2026-11-18",
    "g": [
@@ -49933,6 +50121,16 @@
    "y": 2003,
    "rt": 105
   },
+  "tt0287717": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Comedy"
+   ],
+   "y": 2002,
+   "rt": 100
+  },
   "tt0288477": {
    "checked": "2026-11-18",
    "g": [
@@ -50461,6 +50659,16 @@
    ],
    "y": 2003,
    "rt": 97
+  },
+  "tt0330634": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "y": 2003,
+   "rt": 77
   },
   "tt0331632": {
    "checked": "2026-11-18",
@@ -53759,6 +53967,16 @@
    "y": 2022,
    "rt": 60
   },
+  "tt1313092": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Thriller"
+   ],
+   "y": 2010,
+   "rt": 113
+  },
   "tt1316536": {
    "checked": "2026-11-18",
    "g": [
@@ -53767,6 +53985,14 @@
    ],
    "y": 2009,
    "rt": 84
+  },
+  "tt1319733": {
+   "checked": "2026-11-18",
+   "g": [
+    "Comedy"
+   ],
+   "y": 2009,
+   "rt": 95
   },
   "tt13223398": {
    "checked": "2026-11-18",

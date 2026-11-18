@@ -21966,7 +21966,8 @@
         "imdb": {
           "id": "tt0780504",
           "rating": 7.8,
-          "votes": 778550,
+          "votes": 779025,
+          "manual": true,
           "cast": [
             "Ryan Gosling",
             "Carey Mulligan",
@@ -22020,7 +22021,30 @@
       {
         "title": "Eight Millimeter",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt0134273",
+          "rating": 6.6,
+          "votes": 153480,
+          "manual": true,
+          "cast": [
+            "Nicolas Cage",
+            "Joaquin Phoenix",
+            "James Gandolfini",
+            "Peter Stormare",
+            "Anthony Heald"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Mystery"
+          ],
+          "year": 1999,
+          "runtime": 123,
+          "directors": [
+            "Joel Schumacher"
+          ]
+        }
       },
       {
         "title": "Body Double",
@@ -22211,7 +22235,30 @@
       {
         "title": "Animal Kingdom",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt1313092",
+          "rating": 7.2,
+          "votes": 64081,
+          "manual": true,
+          "cast": [
+            "James Frecheville",
+            "Guy Pearce",
+            "Joel Edgerton",
+            "Bryce Lindemann",
+            "Paul Smits"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+          ],
+          "year": 2010,
+          "runtime": 113,
+          "directors": [
+            "David Michôd"
+          ]
+        }
       },
       {
         "title": "A Prophet (Un prophète)",
@@ -77585,7 +77632,29 @@
           {
             "title": "Halloween VI: The Curse of Michael Myers",
             "resolution": "UHD",
-            "year": 1995
+            "year": 1995,
+            "imdb": {
+              "id": "tt0113253",
+              "rating": 4.6,
+              "votes": 48259,
+              "manual": true,
+              "cast": [
+                "Donald Pleasence",
+                "Paul Rudd",
+                "Marianne Hagan",
+                "Mitchell Ryan",
+                "Kim Darby"
+              ],
+              "genres": [
+                "Horror",
+                "Thriller"
+              ],
+              "year": 1995,
+              "runtime": 87,
+              "directors": [
+                "Joe Chappelle"
+              ]
+            }
           },
           {
             "title": "Halloween: Resurrection",
@@ -77731,13 +77800,59 @@
             "title": "Mimic 2",
             "resolution": "HD",
             "year": 2001,
-            "runtime": 82
+            "runtime": 82,
+            "imdb": {
+              "id": "tt0239641",
+              "rating": 4.6,
+              "votes": 6688,
+              "manual": true,
+              "cast": [
+                "Alix Koromzay",
+                "Bruno Campos",
+                "Will Estes",
+                "Gaven E. Lucas",
+                "Edward Albert"
+              ],
+              "genres": [
+                "Horror",
+                "Sci-Fi",
+                "Thriller"
+              ],
+              "year": 2001,
+              "runtime": 82,
+              "directors": [
+                "Jean de Segonzac"
+              ]
+            }
           },
           {
             "title": "Mimic 3: Sentinel",
             "resolution": "HD",
             "year": 2003,
-            "runtime": 77
+            "runtime": 77,
+            "imdb": {
+              "id": "tt0330634",
+              "rating": 4.2,
+              "votes": 4548,
+              "manual": true,
+              "cast": [
+                "Lance Henriksen",
+                "Alex Cioalca",
+                "Karl Geary",
+                "Alexis Dziena",
+                "Keith D. Robinson"
+              ],
+              "genres": [
+                "Horror",
+                "Sci-Fi",
+                "Thriller"
+              ],
+              "year": 2003,
+              "runtime": 77,
+              "directors": [
+                "J.T. Petty"
+              ]
+            }
           }
         ],
         "image": "https://img.fanflix.co/PARAMOUNT/02091c9223294689be7230385d406d7f6e898f6a41454f8c4e9b584304e28402"
@@ -88848,7 +88963,30 @@
           {
             "title": "Spy Kids 2: The Island Of Lost Dreams",
             "resolution": "HD",
-            "year": 2002
+            "year": 2002,
+            "imdb": {
+              "id": "tt0287717",
+              "rating": 5.3,
+              "votes": 79029,
+              "manual": true,
+              "cast": [
+                "Alexa PenaVega",
+                "Daryl Sabara",
+                "Antonio Banderas",
+                "Carla Gugino",
+                "Steve Buscemi"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Comedy"
+              ],
+              "year": 2002,
+              "runtime": 100,
+              "directors": [
+                "Robert Rodriguez"
+              ]
+            }
           },
           {
             "title": "Spy Kids 3: Game Over",
@@ -92796,7 +92934,28 @@
             "title": "Road Trip: Beer Pong",
             "resolution": "HD",
             "year": 2009,
-            "runtime": 95
+            "runtime": 95,
+            "imdb": {
+              "id": "tt1319733",
+              "rating": 4.8,
+              "votes": 12924,
+              "manual": true,
+              "cast": [
+                "DJ Qualls",
+                "Mary Cobb",
+                "Rhoda Griffis",
+                "Preston Jones",
+                "Michael Trotter"
+              ],
+              "genres": [
+                "Comedy"
+              ],
+              "year": 2009,
+              "runtime": 95,
+              "directors": [
+                "Steve Rash"
+              ]
+            }
           },
           {
             "title": "Eurotrip",
@@ -93485,7 +93644,30 @@
             "title": "From Dusk Till Dawn 2: Texas Blood Money",
             "resolution": "HD",
             "year": 1999,
-            "runtime": 88
+            "runtime": 88,
+            "imdb": {
+              "id": "tt0120860",
+              "rating": 4.2,
+              "votes": 19024,
+              "manual": true,
+              "cast": [
+                "Robert Patrick",
+                "Bo Hopkins",
+                "Duane Whitaker",
+                "Muse Watson",
+                "Brett Harrelson"
+              ],
+              "genres": [
+                "Crime",
+                "Horror",
+                "Thriller"
+              ],
+              "year": 1999,
+              "runtime": 88,
+              "directors": [
+                "Scott Spiegel"
+              ]
+            }
           },
           {
             "title": "From Dusk Till Dawn 3: The Hangman's Daughter",
@@ -93560,7 +93742,29 @@
           {
             "title": "Halloween VI: The Curse of Michael Myers",
             "resolution": "UHD",
-            "year": 1995
+            "year": 1995,
+            "imdb": {
+              "id": "tt0113253",
+              "rating": 4.6,
+              "votes": 48259,
+              "manual": true,
+              "cast": [
+                "Donald Pleasence",
+                "Paul Rudd",
+                "Marianne Hagan",
+                "Mitchell Ryan",
+                "Kim Darby"
+              ],
+              "genres": [
+                "Horror",
+                "Thriller"
+              ],
+              "year": 1995,
+              "runtime": 87,
+              "directors": [
+                "Joe Chappelle"
+              ]
+            }
           },
           {
             "title": "Halloween: Resurrection",
@@ -93803,13 +94007,59 @@
             "title": "Mimic 2",
             "resolution": "HD",
             "year": 2001,
-            "runtime": 82
+            "runtime": 82,
+            "imdb": {
+              "id": "tt0239641",
+              "rating": 4.6,
+              "votes": 6688,
+              "manual": true,
+              "cast": [
+                "Alix Koromzay",
+                "Bruno Campos",
+                "Will Estes",
+                "Gaven E. Lucas",
+                "Edward Albert"
+              ],
+              "genres": [
+                "Horror",
+                "Sci-Fi",
+                "Thriller"
+              ],
+              "year": 2001,
+              "runtime": 82,
+              "directors": [
+                "Jean de Segonzac"
+              ]
+            }
           },
           {
             "title": "Mimic 3: Sentinel",
             "resolution": "HD",
             "year": 2003,
-            "runtime": 77
+            "runtime": 77,
+            "imdb": {
+              "id": "tt0330634",
+              "rating": 4.2,
+              "votes": 4548,
+              "manual": true,
+              "cast": [
+                "Lance Henriksen",
+                "Alex Cioalca",
+                "Karl Geary",
+                "Alexis Dziena",
+                "Keith D. Robinson"
+              ],
+              "genres": [
+                "Horror",
+                "Sci-Fi",
+                "Thriller"
+              ],
+              "year": 2003,
+              "runtime": 77,
+              "directors": [
+                "J.T. Petty"
+              ]
+            }
           }
         ],
         "image": "https://img.fanflix.co/PARAMOUNT/02091c9223294689be7230385d406d7f6e898f6a41454f8c4e9b584304e28402"
@@ -94237,7 +94487,30 @@
           {
             "title": "Spy Kids 2: The Island Of Lost Dreams",
             "resolution": "HD",
-            "year": 2002
+            "year": 2002,
+            "imdb": {
+              "id": "tt0287717",
+              "rating": 5.3,
+              "votes": 79029,
+              "manual": true,
+              "cast": [
+                "Alexa PenaVega",
+                "Daryl Sabara",
+                "Antonio Banderas",
+                "Carla Gugino",
+                "Steve Buscemi"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Comedy"
+              ],
+              "year": 2002,
+              "runtime": 100,
+              "directors": [
+                "Robert Rodriguez"
+              ]
+            }
           },
           {
             "title": "Spy Kids 3: Game Over",
