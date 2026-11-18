@@ -1789,7 +1789,8 @@
               "imdb": {
                 "id": "tt0796366",
                 "rating": 7.9,
-                "votes": 643042,
+                "votes": 643015,
+                "manual": true,
                 "cast": [
                   "Chris Pine",
                   "Zachary Quinto",
@@ -1811,7 +1812,8 @@
               "imdb": {
                 "id": "tt1408101",
                 "rating": 7.7,
-                "votes": 513923,
+                "votes": 513969,
+                "manual": true,
                 "cast": [
                   "Chris Pine",
                   "Zachary Quinto",
@@ -1833,7 +1835,8 @@
               "imdb": {
                 "id": "tt2660888",
                 "rating": 7,
-                "votes": 273069,
+                "votes": 273133,
+                "manual": true,
                 "cast": [
                   "Chris Pine",
                   "Zachary Quinto",
@@ -2784,18 +2787,68 @@
             {
               "title": "Wes Craven Presents: Dracula 2000",
               "resolution": "HD",
-              "year": 2000
+              "year": 2000,
+              "imdb": {
+                "id": "tt0219653",
+                "rating": 4.9,
+                "votes": 39473,
+                "manual": true,
+                "cast": [
+                  "Gerard Butler",
+                  "Justine Waddell",
+                  "Jonny Lee Miller",
+                  "Christopher Plummer",
+                  "Vitamin C"
+                ],
+                "genres": [
+                  "Action",
+                  "Fantasy",
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Dracula II: Ascension",
               "resolution": "HD",
-              "year": 2003
+              "year": 2003,
+              "imdb": {
+                "id": "tt0336325",
+                "rating": 4.6,
+                "votes": 5436,
+                "manual": true,
+                "cast": [
+                  "Jennifer Kroll",
+                  "Jason Scott Lee",
+                  "Craig Sheffer",
+                  "Diane Neal",
+                  "Khary Payton"
+                ],
+                "genres": [
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Dracula III: Legacy",
               "resolution": "HD",
               "year": 2004,
-              "runtime": 91
+              "runtime": 91,
+              "imdb": {
+                "id": "tt0303929",
+                "rating": 4.6,
+                "votes": 3743,
+                "manual": true,
+                "cast": [
+                  "Jason Scott Lee",
+                  "Stephen Billington",
+                  "Diane Neal",
+                  "Jason London",
+                  "Rutger Hauer"
+                ],
+                "genres": [
+                  "Horror"
+                ]
+              }
             }
           ]
         },
@@ -2926,43 +2979,169 @@
               "title": "Sherlock Holmes In Terror by Night",
               "resolution": "HD",
               "year": 1946,
-              "runtime": 60
+              "runtime": 60,
+              "imdb": {
+                "id": "tt0039017",
+                "rating": 6.7,
+                "votes": 7877,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Alan Mowbray",
+                  "Dennis Hoey",
+                  "Renee Godfrey"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Film-Noir"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes in Dressed to Kill",
               "resolution": "HD",
               "year": 1946,
-              "runtime": 72
+              "runtime": 72,
+              "imdb": {
+                "id": "tt0038494",
+                "rating": 6.7,
+                "votes": 7830,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Patricia Morison",
+                  "Edmund Breon",
+                  "Frederick Worlock"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Mystery"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and The Woman in Green",
               "resolution": "HD",
               "year": 1945,
-              "runtime": 68
+              "runtime": 68,
+              "imdb": {
+                "id": "tt0038259",
+                "rating": 6.6,
+                "votes": 7919,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Hillary Brooke",
+                  "Henry Daniell",
+                  "Paul Cavanagh"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes in The House of Fear",
               "resolution": "HD",
               "year": 1945,
-              "runtime": 69
+              "runtime": 69,
+              "imdb": {
+                "id": "tt0037794",
+                "rating": 7.1,
+                "votes": 6314,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Aubrey Mather",
+                  "Dennis Hoey",
+                  "Paul Cavanagh"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Film-Noir"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Pearl of Death",
               "resolution": "HD",
               "year": 1944,
-              "runtime": 69
+              "runtime": 69,
+              "imdb": {
+                "id": "tt0037168",
+                "rating": 7.1,
+                "votes": 5546,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Dennis Hoey",
+                  "Evelyn Ankers",
+                  "Miles Mander"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Spider Woman",
               "resolution": "HD",
               "year": 1944,
-              "runtime": 63
+              "runtime": 63,
+              "imdb": {
+                "id": "tt0037303",
+                "rating": 7,
+                "votes": 5861,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Gale Sondergaard",
+                  "Dennis Hoey",
+                  "Vernon Downing"
+                ],
+                "genres": [
+                  "Horror",
+                  "Mystery",
+                  "Thriller"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Scarlet Claw",
               "resolution": "HD",
               "year": 1944,
-              "runtime": 74
+              "runtime": 74,
+              "imdb": {
+                "id": "tt0037248",
+                "rating": 7.1,
+                "votes": 6714,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Gerald Hamer",
+                  "Paul Cavanagh",
+                  "Arthur Hohl"
+                ],
+                "genres": [
+                  "Crime",
+                  "Horror",
+                  "Mystery"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Secret Weapon",
@@ -3060,7 +3239,25 @@
               "title": "Sherlock Holmes and The Hound of The Baskervilles",
               "resolution": "HD",
               "year": 1939,
-              "runtime": 100
+              "runtime": 100,
+              "imdb": {
+                "id": "tt0031448",
+                "rating": 7.4,
+                "votes": 13270,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Richard Greene",
+                  "Wendy Barrie",
+                  "Lionel Atwill"
+                ],
+                "genres": [
+                  "Crime",
+                  "Mystery",
+                  "Thriller"
+                ]
+              }
             },
             {
               "title": "The Adventures of Sherlock Holmes",
@@ -5344,7 +5541,8 @@
           "imdb": {
             "id": "tt2660888",
             "rating": 7,
-            "votes": 273069,
+            "votes": 273133,
+            "manual": true,
             "cast": [
               "Chris Pine",
               "Zachary Quinto",
@@ -6393,7 +6591,8 @@
           "imdb": {
             "id": "tt0326856",
             "rating": 4.8,
-            "votes": 33789,
+            "votes": 33793,
+            "manual": true,
             "cast": [
               "Ben Stiller",
               "Jack Black",
@@ -8646,7 +8845,8 @@
           "imdb": {
             "id": "tt0115697",
             "rating": 6.2,
-            "votes": 46639,
+            "votes": 46643,
+            "manual": true,
             "cast": [
               "Chris Farley",
               "David Spade",
@@ -11491,7 +11691,8 @@
           "imdb": {
             "id": "tt0059309",
             "rating": 7.3,
-            "votes": 11672,
+            "votes": 11750,
+            "manual": true,
             "cast": [
               "John Wayne",
               "Kirk Douglas",
@@ -14967,7 +15168,8 @@
           "imdb": {
             "id": "tt2660888",
             "rating": 7,
-            "votes": 273069,
+            "votes": 273133,
+            "manual": true,
             "cast": [
               "Chris Pine",
               "Zachary Quinto",
@@ -15926,7 +16128,8 @@
           "imdb": {
             "id": "tt0326856",
             "rating": 4.8,
-            "votes": 33789,
+            "votes": 33793,
+            "manual": true,
             "cast": [
               "Ben Stiller",
               "Jack Black",
@@ -18064,7 +18267,8 @@
           "imdb": {
             "id": "tt0115697",
             "rating": 6.2,
-            "votes": 46639,
+            "votes": 46643,
+            "manual": true,
             "cast": [
               "Chris Farley",
               "David Spade",
@@ -20770,7 +20974,8 @@
           "imdb": {
             "id": "tt0059309",
             "rating": 7.3,
-            "votes": 11672,
+            "votes": 11750,
+            "manual": true,
             "cast": [
               "John Wayne",
               "Kirk Douglas",
@@ -28542,18 +28747,68 @@
             {
               "title": "Wes Craven Presents: Dracula 2000",
               "resolution": "HD",
-              "year": 2000
+              "year": 2000,
+              "imdb": {
+                "id": "tt0219653",
+                "rating": 4.9,
+                "votes": 39473,
+                "manual": true,
+                "cast": [
+                  "Gerard Butler",
+                  "Justine Waddell",
+                  "Jonny Lee Miller",
+                  "Christopher Plummer",
+                  "Vitamin C"
+                ],
+                "genres": [
+                  "Action",
+                  "Fantasy",
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Dracula II: Ascension",
               "resolution": "HD",
-              "year": 2003
+              "year": 2003,
+              "imdb": {
+                "id": "tt0336325",
+                "rating": 4.6,
+                "votes": 5436,
+                "manual": true,
+                "cast": [
+                  "Jennifer Kroll",
+                  "Jason Scott Lee",
+                  "Craig Sheffer",
+                  "Diane Neal",
+                  "Khary Payton"
+                ],
+                "genres": [
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Dracula III: Legacy",
               "resolution": "HD",
               "year": 2004,
-              "runtime": 91
+              "runtime": 91,
+              "imdb": {
+                "id": "tt0303929",
+                "rating": 4.6,
+                "votes": 3743,
+                "manual": true,
+                "cast": [
+                  "Jason Scott Lee",
+                  "Stephen Billington",
+                  "Diane Neal",
+                  "Jason London",
+                  "Rutger Hauer"
+                ],
+                "genres": [
+                  "Horror"
+                ]
+              }
             }
           ]
         },
@@ -30749,43 +31004,169 @@
               "title": "Sherlock Holmes In Terror by Night",
               "resolution": "HD",
               "year": 1946,
-              "runtime": 60
+              "runtime": 60,
+              "imdb": {
+                "id": "tt0039017",
+                "rating": 6.7,
+                "votes": 7877,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Alan Mowbray",
+                  "Dennis Hoey",
+                  "Renee Godfrey"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Film-Noir"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes in Dressed to Kill",
               "resolution": "HD",
               "year": 1946,
-              "runtime": 72
+              "runtime": 72,
+              "imdb": {
+                "id": "tt0038494",
+                "rating": 6.7,
+                "votes": 7830,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Patricia Morison",
+                  "Edmund Breon",
+                  "Frederick Worlock"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Mystery"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and The Woman in Green",
               "resolution": "HD",
               "year": 1945,
-              "runtime": 68
+              "runtime": 68,
+              "imdb": {
+                "id": "tt0038259",
+                "rating": 6.6,
+                "votes": 7919,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Hillary Brooke",
+                  "Henry Daniell",
+                  "Paul Cavanagh"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes in The House of Fear",
               "resolution": "HD",
               "year": 1945,
-              "runtime": 69
+              "runtime": 69,
+              "imdb": {
+                "id": "tt0037794",
+                "rating": 7.1,
+                "votes": 6314,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Aubrey Mather",
+                  "Dennis Hoey",
+                  "Paul Cavanagh"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Film-Noir"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Pearl of Death",
               "resolution": "HD",
               "year": 1944,
-              "runtime": 69
+              "runtime": 69,
+              "imdb": {
+                "id": "tt0037168",
+                "rating": 7.1,
+                "votes": 5546,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Dennis Hoey",
+                  "Evelyn Ankers",
+                  "Miles Mander"
+                ],
+                "genres": [
+                  "Crime",
+                  "Drama",
+                  "Horror"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Spider Woman",
               "resolution": "HD",
               "year": 1944,
-              "runtime": 63
+              "runtime": 63,
+              "imdb": {
+                "id": "tt0037303",
+                "rating": 7,
+                "votes": 5861,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Gale Sondergaard",
+                  "Dennis Hoey",
+                  "Vernon Downing"
+                ],
+                "genres": [
+                  "Horror",
+                  "Mystery",
+                  "Thriller"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Scarlet Claw",
               "resolution": "HD",
               "year": 1944,
-              "runtime": 74
+              "runtime": 74,
+              "imdb": {
+                "id": "tt0037248",
+                "rating": 7.1,
+                "votes": 6714,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Gerald Hamer",
+                  "Paul Cavanagh",
+                  "Arthur Hohl"
+                ],
+                "genres": [
+                  "Crime",
+                  "Horror",
+                  "Mystery"
+                ]
+              }
             },
             {
               "title": "Sherlock Holmes and the Secret Weapon",
@@ -30883,7 +31264,25 @@
               "title": "Sherlock Holmes and The Hound of The Baskervilles",
               "resolution": "HD",
               "year": 1939,
-              "runtime": 100
+              "runtime": 100,
+              "imdb": {
+                "id": "tt0031448",
+                "rating": 7.4,
+                "votes": 13270,
+                "manual": true,
+                "cast": [
+                  "Basil Rathbone",
+                  "Nigel Bruce",
+                  "Richard Greene",
+                  "Wendy Barrie",
+                  "Lionel Atwill"
+                ],
+                "genres": [
+                  "Crime",
+                  "Mystery",
+                  "Thriller"
+                ]
+              }
             },
             {
               "title": "The Adventures of Sherlock Holmes",
@@ -31065,6 +31464,7 @@
                 "id": "tt0037627",
                 "rating": 5.9,
                 "votes": 1917,
+                "manual": true,
                 "cast": [
                   "John Wayne",
                   "Vera Ralston",
@@ -31241,7 +31641,8 @@
               "imdb": {
                 "id": "tt0059309",
                 "rating": 7.3,
-                "votes": 11672,
+                "votes": 11750,
+                "manual": true,
                 "cast": [
                   "John Wayne",
                   "Kirk Douglas",
@@ -31751,6 +32152,7 @@
                 "id": "tt0027200",
                 "rating": 5.7,
                 "votes": 727,
+                "manual": true,
                 "cast": [
                   "John Wayne",
                   "Sheila Bromley",
@@ -31896,7 +32298,8 @@
               "imdb": {
                 "id": "tt0059309",
                 "rating": 7.3,
-                "votes": 11672,
+                "votes": 11750,
+                "manual": true,
                 "cast": [
                   "John Wayne",
                   "Kirk Douglas",
@@ -33222,7 +33625,8 @@
               "imdb": {
                 "id": "tt0796366",
                 "rating": 7.9,
-                "votes": 643042,
+                "votes": 643015,
+                "manual": true,
                 "cast": [
                   "Chris Pine",
                   "Zachary Quinto",
@@ -33244,7 +33648,8 @@
               "imdb": {
                 "id": "tt1408101",
                 "rating": 7.7,
-                "votes": 513923,
+                "votes": 513969,
+                "manual": true,
                 "cast": [
                   "Chris Pine",
                   "Zachary Quinto",
@@ -33266,7 +33671,8 @@
               "imdb": {
                 "id": "tt2660888",
                 "rating": 7,
-                "votes": 273069,
+                "votes": 273133,
+                "manual": true,
                 "cast": [
                   "Chris Pine",
                   "Zachary Quinto",
@@ -34533,7 +34939,8 @@
               "imdb": {
                 "id": "tt0326856",
                 "rating": 4.8,
-                "votes": 33789,
+                "votes": 33793,
+                "manual": true,
                 "cast": [
                   "Ben Stiller",
                   "Jack Black",
@@ -37568,7 +37975,8 @@
           "imdb": {
             "id": "tt2660888",
             "rating": 7,
-            "votes": 273069,
+            "votes": 273133,
+            "manual": true,
             "cast": [
               "Chris Pine",
               "Zachary Quinto",
@@ -39686,7 +40094,8 @@
           "imdb": {
             "id": "tt29603959",
             "rating": 6.5,
-            "votes": 98341,
+            "votes": 98507,
+            "manual": true,
             "cast": [
               "Jack Quaid",
               "Amber Midthunder",
@@ -42704,7 +43113,25 @@
           "price": "$19.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/PARAMOUNT/2127786acfb7c18b71dc64b0272bdcd410416702c7b81cb8e4f3110c2d6fc9d3",
-          "year": 2005
+          "year": 2005,
+          "imdb": {
+            "id": "tt0417299",
+            "rating": 9.3,
+            "votes": 461164,
+            "manual": true,
+            "cast": [
+              "Dee Bradley Baker",
+              "Zach Tyler Eisen",
+              "Mae Whitman",
+              "Jack De Sena",
+              "Dante Basco"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ]
+          }
         },
         {
           "title": "The Legend of Korra: The Complete Series",
@@ -42810,7 +43237,25 @@
           "price": "$14.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/PARAMOUNT/9b1bb7f2cd75d604ff341d3008be92c4eb9818a59bb174e512cff89ba0b95a21",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0131613",
+            "rating": 7.9,
+            "votes": 41397,
+            "manual": true,
+            "cast": [
+              "Cam Clarke",
+              "Barry Gordon",
+              "Rob Paulsen",
+              "Townsend Coleman",
+              "Renae Jacobs"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ]
+          }
         },
         {
           "title": "Teenage Mutant Ninja Turtles (2003): The Complete Series",
@@ -50069,15 +50514,16 @@
           "image": "https://img.fanflix.co/martwork/universal/2f3ba661-4f25-4273-b78e-921684cab6c8-2x3.png",
           "year": 1976,
           "imdb": {
-            "id": "tt0074899",
-            "rating": 6.8,
-            "votes": 23780,
+            "id": "tt6924650",
+            "rating": 6.7,
+            "votes": 107647,
+            "manual": true,
             "cast": [
-              "Charlton Heston",
-              "Henry Fonda",
-              "James Coburn",
-              "Glenn Ford",
-              "Hal Holbrook"
+              "Ed Skrein",
+              "Patrick Wilson",
+              "Woody Harrelson",
+              "Luke Evans",
+              "Mandy Moore"
             ],
             "genres": [
               "Action",
@@ -51218,15 +51664,16 @@
               "resolution": "UHD",
               "year": 1976,
               "imdb": {
-                "id": "tt0074899",
-                "rating": 6.8,
-                "votes": 23780,
+                "id": "tt6924650",
+                "rating": 6.7,
+                "votes": 107647,
+                "manual": true,
                 "cast": [
-                  "Charlton Heston",
-                  "Henry Fonda",
-                  "James Coburn",
-                  "Glenn Ford",
-                  "Hal Holbrook"
+                  "Ed Skrein",
+                  "Patrick Wilson",
+                  "Woody Harrelson",
+                  "Luke Evans",
+                  "Mandy Moore"
                 ],
                 "genres": [
                   "Action",

@@ -12342,6 +12342,56 @@
   }
  },
  "manual": {
+  "tt0027200": {
+   "rating": 5.7,
+   "votes": 727,
+   "checked": "2026-11-18"
+  },
+  "tt0031448": {
+   "rating": 7.4,
+   "votes": 13270,
+   "checked": "2026-11-18"
+  },
+  "tt0037168": {
+   "rating": 7.1,
+   "votes": 5546,
+   "checked": "2026-11-18"
+  },
+  "tt0037248": {
+   "rating": 7.1,
+   "votes": 6714,
+   "checked": "2026-11-18"
+  },
+  "tt0037303": {
+   "rating": 7,
+   "votes": 5861,
+   "checked": "2026-11-18"
+  },
+  "tt0037627": {
+   "rating": 5.9,
+   "votes": 1917,
+   "checked": "2026-11-18"
+  },
+  "tt0037794": {
+   "rating": 7.1,
+   "votes": 6314,
+   "checked": "2026-11-18"
+  },
+  "tt0038259": {
+   "rating": 6.6,
+   "votes": 7919,
+   "checked": "2026-11-18"
+  },
+  "tt0038494": {
+   "rating": 6.7,
+   "votes": 7830,
+   "checked": "2026-11-18"
+  },
+  "tt0039017": {
+   "rating": 6.7,
+   "votes": 7877,
+   "checked": "2026-11-18"
+  },
   "tt0039266": {
    "rating": 5.7,
    "votes": 1002,
@@ -12357,6 +12407,11 @@
    "votes": 111586,
    "checked": "2026-11-16"
   },
+  "tt0059309": {
+   "rating": 7.3,
+   "votes": 11750,
+   "checked": "2026-11-18"
+  },
   "tt0060009": {
    "rating": 7.9,
    "votes": 13203,
@@ -12367,10 +12422,20 @@
    "votes": 102792,
    "checked": "2026-11-13"
   },
+  "tt0076138": {
+   "rating": 6.1,
+   "votes": 2443,
+   "checked": "2026-11-18"
+  },
   "tt0078446": {
    "rating": 6.9,
    "votes": 44189,
    "checked": "2026-11-17"
+  },
+  "tt0078788": {
+   "rating": 8.4,
+   "votes": 782419,
+   "checked": "2026-11-18"
   },
   "tt0078915": {
    "rating": 7.3,
@@ -12407,6 +12472,11 @@
    "votes": 2483,
    "checked": "2026-11-18"
   },
+  "tt0083944": {
+   "rating": 7.7,
+   "votes": 308361,
+   "checked": "2026-11-18"
+  },
   "tt0087800": {
    "rating": 7.4,
    "votes": 299125,
@@ -12417,6 +12487,11 @@
    "votes": 45782,
    "checked": "2026-11-16"
   },
+  "tt0089880": {
+   "rating": 6.5,
+   "votes": 199741,
+   "checked": "2026-11-18"
+  },
   "tt0092501": {
    "rating": 7,
    "votes": 12851,
@@ -12426,6 +12501,11 @@
    "rating": 6.1,
    "votes": 4950,
    "checked": "2026-11-13"
+  },
+  "tt0095956": {
+   "rating": 5.8,
+   "votes": 152272,
+   "checked": "2026-11-18"
   },
   "tt0098936": {
    "rating": 8.7,
@@ -12502,6 +12582,16 @@
    "votes": 554,
    "checked": "2026-11-13"
   },
+  "tt0115641": {
+   "rating": 6.8,
+   "votes": 63539,
+   "checked": "2026-11-18"
+  },
+  "tt0115697": {
+   "rating": 6.2,
+   "votes": 46643,
+   "checked": "2026-11-18"
+  },
   "tt0116514": {
    "rating": 5.1,
    "votes": 27782,
@@ -12517,6 +12607,11 @@
    "votes": 420378,
    "checked": "2026-11-16"
   },
+  "tt0120804": {
+   "rating": 6.6,
+   "votes": 322234,
+   "checked": "2026-11-18"
+  },
   "tt0120844": {
    "rating": 6.4,
    "votes": 84216,
@@ -12526,6 +12621,11 @@
    "rating": 4.8,
    "votes": 1725,
    "checked": "2026-11-13"
+  },
+  "tt0131613": {
+   "rating": 7.9,
+   "votes": 41397,
+   "checked": "2026-11-18"
   },
   "tt0166792": {
    "rating": 7.7,
@@ -12541,6 +12641,11 @@
    "rating": 7.3,
    "votes": 12010,
    "checked": "2026-11-13"
+  },
+  "tt0219653": {
+   "rating": 4.9,
+   "votes": 39473,
+   "checked": "2026-11-18"
   },
   "tt0247082": {
    "rating": 7.7,
@@ -12577,6 +12682,11 @@
    "votes": 259221,
    "checked": "2026-11-17"
   },
+  "tt0303929": {
+   "rating": 4.6,
+   "votes": 3743,
+   "checked": "2026-11-18"
+  },
   "tt0306047": {
    "rating": 5.6,
    "votes": 178745,
@@ -12606,6 +12716,21 @@
    "rating": 5.5,
    "votes": 152561,
    "checked": "2026-11-13"
+  },
+  "tt0326856": {
+   "rating": 4.8,
+   "votes": 33793,
+   "checked": "2026-11-18"
+  },
+  "tt0327162": {
+   "rating": 5.4,
+   "votes": 73437,
+   "checked": "2026-11-18"
+  },
+  "tt0336325": {
+   "rating": 4.6,
+   "votes": 5436,
+   "checked": "2026-11-18"
   },
   "tt0338580": {
    "rating": 6.2,
@@ -12737,10 +12862,35 @@
    "votes": 2690,
    "checked": "2026-11-13"
   },
+  "tt13623608": {
+   "rating": 7.1,
+   "votes": 18360,
+   "checked": "2026-11-18"
+  },
   "tt1399045": {
    "rating": 5.5,
    "votes": 25066,
    "checked": "2026-11-16"
+  },
+  "tt1408101": {
+   "rating": 7.7,
+   "votes": 513969,
+   "checked": "2026-11-18"
+  },
+  "tt14458442": {
+   "rating": 6.5,
+   "votes": 21913,
+   "checked": "2026-11-18"
+  },
+  "tt15153532": {
+   "rating": 6.3,
+   "votes": 38816,
+   "checked": "2026-11-18"
+  },
+  "tt15338966": {
+   "rating": 5.6,
+   "votes": 7972,
+   "checked": "2026-11-18"
   },
   "tt1592154": {
    "rating": 7.7,
@@ -12787,10 +12937,20 @@
    "votes": 459,
    "checked": "2026-11-18"
   },
+  "tt20417104": {
+   "rating": 7.2,
+   "votes": 478,
+   "checked": "2026-11-18"
+  },
   "tt2105055": {
    "rating": 5.1,
    "votes": 54,
    "checked": "2026-11-13"
+  },
+  "tt22399738": {
+   "rating": 5.5,
+   "votes": 2161,
+   "checked": "2026-11-18"
   },
   "tt2248893": {
    "rating": 7.3,
@@ -12807,10 +12967,35 @@
    "votes": 20956,
    "checked": "2026-11-16"
   },
+  "tt2614684": {
+   "rating": 7.2,
+   "votes": 65569,
+   "checked": "2026-11-18"
+  },
+  "tt2660888": {
+   "rating": 7,
+   "votes": 273133,
+   "checked": "2026-11-18"
+  },
   "tt2917336": {
    "rating": 5.1,
    "votes": 2310,
    "checked": "2026-11-13"
+  },
+  "tt29603959": {
+   "rating": 6.5,
+   "votes": 98507,
+   "checked": "2026-11-18"
+  },
+  "tt33763941": {
+   "rating": 5.5,
+   "votes": 26346,
+   "checked": "2026-11-18"
+  },
+  "tt34910018": {
+   "rating": 4.8,
+   "votes": 2365,
+   "checked": "2026-11-18"
   },
   "tt3699508": {
    "rating": 5.4,
@@ -12821,6 +13006,11 @@
    "rating": 8,
    "votes": 37,
    "checked": "2026-11-13"
+  },
+  "tt38907741": {
+   "rating": 4.4,
+   "votes": 457,
+   "checked": "2026-11-18"
   },
   "tt3919322": {
    "rating": 6.6,
@@ -12862,10 +13052,25 @@
    "votes": 27606,
    "checked": "2026-11-16"
   },
+  "tt6198246": {
+   "rating": 4.1,
+   "votes": 1460,
+   "checked": "2026-11-18"
+  },
   "tt6394324": {
    "rating": 4.8,
    "votes": 19224,
    "checked": "2026-11-16"
+  },
+  "tt6875952": {
+   "rating": 5.7,
+   "votes": 1598,
+   "checked": "2026-11-18"
+  },
+  "tt6924650": {
+   "rating": 6.7,
+   "votes": 107647,
+   "checked": "2026-11-18"
   },
   "tt6951546": {
    "rating": 7.7,
@@ -12876,6 +13081,11 @@
    "rating": 6.4,
    "votes": 19720,
    "checked": "2026-11-16"
+  },
+  "tt8019694": {
+   "rating": 5.4,
+   "votes": 2183,
+   "checked": "2026-11-18"
   },
   "tt8976664": {
    "rating": 4.6,
@@ -13809,6 +14019,16 @@
     }
    }
   },
+  "tt13623608": {
+   "checked": "2026-11-18",
+   "s": {
+    "1": {
+     "rating": 7.789,
+     "votes": 11051,
+     "episodes": 10
+    }
+   }
+  },
   "tt1378167": {
    "checked": "2026-11-13",
    "s": {
@@ -14561,6 +14781,16 @@
     "Susan Hayward"
    ]
   },
+  "tt0031448": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Richard Greene",
+    "Wendy Barrie",
+    "Lionel Atwill"
+   ]
+  },
   "tt0031566": {
    "checked": "2026-11-17",
    "names": [
@@ -14761,6 +14991,36 @@
     "Leonid Kinskey"
    ]
   },
+  "tt0037168": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Dennis Hoey",
+    "Evelyn Ankers",
+    "Miles Mander"
+   ]
+  },
+  "tt0037248": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Gerald Hamer",
+    "Paul Cavanagh",
+    "Arthur Hohl"
+   ]
+  },
+  "tt0037303": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Gale Sondergaard",
+    "Dennis Hoey",
+    "Vernon Downing"
+   ]
+  },
   "tt0037536": {
    "checked": "2026-11-17",
    "names": [
@@ -14791,6 +15051,16 @@
     "Virginia Grey"
    ]
   },
+  "tt0037794": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Aubrey Mather",
+    "Dennis Hoey",
+    "Paul Cavanagh"
+   ]
+  },
   "tt0037913": {
    "checked": "2026-11-17",
    "names": [
@@ -14799,6 +15069,26 @@
     "Zachary Scott",
     "Eve Arden",
     "Ann Blyth"
+   ]
+  },
+  "tt0038259": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Hillary Brooke",
+    "Henry Daniell",
+    "Paul Cavanagh"
+   ]
+  },
+  "tt0038494": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Patricia Morison",
+    "Edmund Breon",
+    "Frederick Worlock"
    ]
   },
   "tt0038559": {
@@ -14839,6 +15129,16 @@
     "Lizabeth Scott",
     "Kirk Douglas",
     "Judith Anderson"
+   ]
+  },
+  "tt0039017": {
+   "checked": "2026-11-18",
+   "names": [
+    "Basil Rathbone",
+    "Nigel Bruce",
+    "Alan Mowbray",
+    "Dennis Hoey",
+    "Renee Godfrey"
    ]
   },
   "tt0039152": {
@@ -17210,16 +17510,6 @@
     "Marthe Keller"
    ]
   },
-  "tt0074899": {
-   "checked": "2026-11-17",
-   "names": [
-    "Charlton Heston",
-    "Henry Fonda",
-    "James Coburn",
-    "Glenn Ford",
-    "Hal Holbrook"
-   ]
-  },
   "tt0074958": {
    "checked": "2026-11-17",
    "names": [
@@ -17318,6 +17608,16 @@
     "Albert Finney",
     "Edward Fox",
     "Cristina Raines"
+   ]
+  },
+  "tt0076138": {
+   "checked": "2026-11-18",
+   "names": [
+    "Henry Winkler",
+    "Sally Field",
+    "Harrison Ford",
+    "Val Avery",
+    "Olivia Cole"
    ]
   },
   "tt0076150": {
@@ -18039,6 +18339,16 @@
     "Ronald Lacey"
    ]
   },
+  "tt0083944": {
+   "checked": "2026-11-18",
+   "names": [
+    "Sylvester Stallone",
+    "Brian Dennehy",
+    "Richard Crenna",
+    "Bill McKinney",
+    "Jack Starrett"
+   ]
+  },
   "tt0084021": {
    "checked": "2026-11-18",
    "names": [
@@ -18687,6 +18997,16 @@
     "Judd Omen"
    ]
   },
+  "tt0089880": {
+   "checked": "2026-11-18",
+   "names": [
+    "Sylvester Stallone",
+    "Richard Crenna",
+    "Charles Napier",
+    "Steven Berkoff",
+    "Julia Nickson"
+   ]
+  },
   "tt0090021": {
    "checked": "2026-11-17",
    "names": [
@@ -19315,6 +19635,16 @@
     "Meg Ryan",
     "Jack Warden",
     "Mark Blum"
+   ]
+  },
+  "tt0095956": {
+   "checked": "2026-11-18",
+   "names": [
+    "Sylvester Stallone",
+    "Richard Crenna",
+    "Marc de Jonge",
+    "Kurtwood Smith",
+    "Spyros Fokas"
    ]
   },
   "tt0096061": {
@@ -21327,6 +21657,16 @@
     "Lauren Holly"
    ]
   },
+  "tt0115641": {
+   "checked": "2026-11-18",
+   "names": [
+    "Mike Judge",
+    "Bruce Willis",
+    "Demi Moore",
+    "Cloris Leachman",
+    "Robert Stack"
+   ]
+  },
   "tt0115697": {
    "checked": "2026-11-17",
    "names": [
@@ -22277,6 +22617,16 @@
     "Irene Grazioli"
    ]
   },
+  "tt0120804": {
+   "checked": "2026-11-18",
+   "names": [
+    "Milla Jovovich",
+    "Michelle Rodriguez",
+    "Ryan McCluskey",
+    "Oscar Pearce",
+    "Indra Ové"
+   ]
+  },
   "tt0120812": {
    "checked": "2026-11-17",
    "names": [
@@ -22485,6 +22835,16 @@
     "Tobin Bell",
     "Thure Riefenstein",
     "Jessica Collins"
+   ]
+  },
+  "tt0131613": {
+   "checked": "2026-11-18",
+   "names": [
+    "Cam Clarke",
+    "Barry Gordon",
+    "Rob Paulsen",
+    "Townsend Coleman",
+    "Renae Jacobs"
    ]
   },
   "tt0131857": {
@@ -23365,6 +23725,16 @@
     "Patrick Swayze",
     "Natasha Richardson",
     "Holmes Osborne"
+   ]
+  },
+  "tt0219653": {
+   "checked": "2026-11-18",
+   "names": [
+    "Gerard Butler",
+    "Justine Waddell",
+    "Jonny Lee Miller",
+    "Christopher Plummer",
+    "Vitamin C"
    ]
   },
   "tt0219699": {
@@ -24356,6 +24726,16 @@
     "Ellen Pompeo"
    ]
   },
+  "tt0303929": {
+   "checked": "2026-11-18",
+   "names": [
+    "Jason Scott Lee",
+    "Stephen Billington",
+    "Diane Neal",
+    "Jason London",
+    "Rutger Hauer"
+   ]
+  },
   "tt0305224": {
    "checked": "2026-11-17",
    "names": [
@@ -24666,6 +25046,16 @@
     "Laurence Fishburne"
    ]
   },
+  "tt0327162": {
+   "checked": "2026-11-18",
+   "names": [
+    "Nicole Kidman",
+    "Bette Midler",
+    "Matthew Broderick",
+    "Glenn Close",
+    "Christopher Walken"
+   ]
+  },
   "tt0327679": {
    "checked": "2026-11-17",
    "names": [
@@ -24734,6 +25124,16 @@
     "Kate Bosworth",
     "Christina Applegate",
     "Carrie Fisher"
+   ]
+  },
+  "tt0336325": {
+   "checked": "2026-11-18",
+   "names": [
+    "Jennifer Kroll",
+    "Jason Scott Lee",
+    "Craig Sheffer",
+    "Diane Neal",
+    "Khary Payton"
    ]
   },
   "tt0337697": {
@@ -28204,6 +28604,16 @@
     "Peter Greene"
    ]
   },
+  "tt13623608": {
+   "checked": "2026-11-18",
+   "names": [
+    "Emma Stone",
+    "Nathan Fielder",
+    "Benny Safdie",
+    "Hikmah Warsame",
+    "Christopher D. Calderon"
+   ]
+  },
   "tt1370889": {
    "checked": "2026-11-17",
    "names": [
@@ -28614,6 +29024,16 @@
     "Adam Gopnik"
    ]
   },
+  "tt14458442": {
+   "checked": "2026-11-18",
+   "names": [
+    "Vanessa Kirby",
+    "Hugh Jackman",
+    "Laura Dern",
+    "Shin-Fei Chen",
+    "Zen McGrath"
+   ]
+  },
   "tt14483774": {
    "checked": "2026-11-17",
    "names": [
@@ -28814,6 +29234,16 @@
     "Kevin Spacey"
    ]
   },
+  "tt15153532": {
+   "checked": "2026-11-18",
+   "names": [
+    "Will Ferrell",
+    "Jamie Foxx",
+    "Isla Fisher",
+    "Randall Park",
+    "Will Forte"
+   ]
+  },
   "tt1517451": {
    "checked": "2026-11-17",
    "names": [
@@ -28882,6 +29312,16 @@
     "Linda Cardellini",
     "Thomas Haden Church",
     "Scarlett Estevez"
+   ]
+  },
+  "tt15338966": {
+   "checked": "2026-11-18",
+   "names": [
+    "Lil Rel Howery",
+    "Billy Magnussen",
+    "Jamie Chung",
+    "Chace Crawford",
+    "Jillian Bell"
    ]
   },
   "tt1536044": {
@@ -30024,6 +30464,12 @@
     "Pedro Pascal"
    ]
   },
+  "tt20417104": {
+   "checked": "2026-11-18",
+   "names": [
+    "Carlos Santana"
+   ]
+  },
   "tt20420628": {
    "checked": "2026-11-17",
    "names": [
@@ -30322,6 +30768,16 @@
     "Clive Owen",
     "Rihanna",
     "Ethan Hawke"
+   ]
+  },
+  "tt22399738": {
+   "checked": "2026-11-18",
+   "names": [
+    "Johnny Knoxville",
+    "Mohammed Amer",
+    "Kate Upton",
+    "Gata",
+    "Bobby Lee"
    ]
   },
   "tt22475008": {
@@ -31452,6 +31908,16 @@
     "Brooke Markham"
    ]
   },
+  "tt33763941": {
+   "checked": "2026-11-18",
+   "names": [
+    "Jacob Scipio",
+    "Lou Llobell",
+    "Melissa Leo",
+    "Joseph Lopez",
+    "Miles Fowler"
+   ]
+  },
   "tt3385524": {
    "checked": "2026-11-17",
    "names": [
@@ -31780,6 +32246,16 @@
     "James Russell",
     "Jim Norton",
     "Diana Hardcastle"
+   ]
+  },
+  "tt38907741": {
+   "checked": "2026-11-18",
+   "names": [
+    "Nathalie Emmanuel",
+    "Claire Forlani",
+    "Eloise Lovell Anderson",
+    "Ben Cura",
+    "Charlie Hiscock"
    ]
   },
   "tt3919322": {
@@ -32762,6 +33238,16 @@
     "Piper Perabo"
    ]
   },
+  "tt6198246": {
+   "checked": "2026-11-18",
+   "names": [
+    "Bates Wilder",
+    "Hiram A. Murray",
+    "Ron Perlman",
+    "Billy Zane",
+    "Aaron Courteau"
+   ]
+  },
   "tt6288694": {
    "checked": "2026-11-17",
    "names": [
@@ -32952,6 +33438,16 @@
     "Andy Garcia"
    ]
   },
+  "tt6875952": {
+   "checked": "2026-11-18",
+   "names": [
+    "Marina de Tavira",
+    "Marina Tamayo",
+    "Nico Cortez",
+    "Melissa Barrera",
+    "Erick Granados-Gavito"
+   ]
+  },
   "tt6906292": {
    "checked": "2026-11-17",
    "names": [
@@ -32990,6 +33486,16 @@
     "Olga Kurylenko",
     "Emma Thompson",
     "Kevin Eldon"
+   ]
+  },
+  "tt6924650": {
+   "checked": "2026-11-18",
+   "names": [
+    "Ed Skrein",
+    "Patrick Wilson",
+    "Woody Harrelson",
+    "Luke Evans",
+    "Mandy Moore"
    ]
   },
   "tt6951546": {
@@ -33230,6 +33736,16 @@
     "Zachary Knighton",
     "Stephen Hill",
     "Amy Hill"
+   ]
+  },
+  "tt8019694": {
+   "checked": "2026-11-18",
+   "names": [
+    "Isabelle Huppert",
+    "Sennia Nanua",
+    "Ariyon Bakare",
+    "Vinette Robinson",
+    "Jérémie Renier"
    ]
   },
   "tt8026448": {
@@ -33869,6 +34385,14 @@
     "Drama"
    ]
   },
+  "tt0031448": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Mystery",
+    "Thriller"
+   ]
+  },
   "tt0031566": {
    "checked": "2026-11-18",
    "g": [
@@ -34023,6 +34547,30 @@
     "War"
    ]
   },
+  "tt0037168": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Horror"
+   ]
+  },
+  "tt0037248": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Horror",
+    "Mystery"
+   ]
+  },
+  "tt0037303": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+   ]
+  },
   "tt0037536": {
    "checked": "2026-11-18",
    "g": [
@@ -34043,12 +34591,36 @@
     "Romance"
    ]
   },
+  "tt0037794": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Film-Noir"
+   ]
+  },
   "tt0037913": {
    "checked": "2026-11-18",
    "g": [
     "Crime",
     "Drama",
     "Film-Noir"
+   ]
+  },
+  "tt0038259": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Horror"
+   ]
+  },
+  "tt0038494": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Mystery"
    ]
   },
   "tt0038559": {
@@ -34080,6 +34652,14 @@
     "Drama",
     "Film-Noir",
     "Romance"
+   ]
+  },
+  "tt0039017": {
+   "checked": "2026-11-18",
+   "g": [
+    "Crime",
+    "Drama",
+    "Film-Noir"
    ]
   },
   "tt0039152": {
@@ -35869,14 +36449,6 @@
     "Thriller"
    ]
   },
-  "tt0074899": {
-   "checked": "2026-11-18",
-   "g": [
-    "Action",
-    "Drama",
-    "History"
-   ]
-  },
   "tt0074958": {
    "checked": "2026-11-18",
    "g": [
@@ -35945,6 +36517,13 @@
    "g": [
     "Drama",
     "War"
+   ]
+  },
+  "tt0076138": {
+   "checked": "2026-11-18",
+   "g": [
+    "Comedy",
+    "Drama"
    ]
   },
   "tt0076150": {
@@ -36488,6 +37067,14 @@
     "Thriller"
    ]
   },
+  "tt0083944": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Thriller"
+   ]
+  },
   "tt0084021": {
    "checked": "2026-11-18",
    "g": [
@@ -36975,6 +37562,14 @@
     "Family"
    ]
   },
+  "tt0089880": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Thriller"
+   ]
+  },
   "tt0090021": {
    "checked": "2026-11-18",
    "g": [
@@ -37435,6 +38030,14 @@
     "Action",
     "Crime",
     "Mystery"
+   ]
+  },
+  "tt0095956": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Thriller"
    ]
   },
   "tt0096061": {
@@ -38946,6 +39549,14 @@
     "Romance"
    ]
   },
+  "tt0115641": {
+   "checked": "2026-11-18",
+   "g": [
+    "Adventure",
+    "Animation",
+    "Comedy"
+   ]
+  },
   "tt0115697": {
    "checked": "2026-11-18",
    "g": [
@@ -39654,6 +40265,14 @@
     "Mystery"
    ]
   },
+  "tt0120804": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Horror",
+    "Sci-Fi"
+   ]
+  },
   "tt0120812": {
    "checked": "2026-11-18",
    "g": [
@@ -39812,6 +40431,14 @@
     "Action",
     "Adventure",
     "Thriller"
+   ]
+  },
+  "tt0131613": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Animation"
    ]
   },
   "tt0131857": {
@@ -40476,6 +41103,14 @@
    "g": [
     "Comedy",
     "Romance"
+   ]
+  },
+  "tt0219653": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Fantasy",
+    "Horror"
    ]
   },
   "tt0219699": {
@@ -41231,6 +41866,12 @@
     "Comedy"
    ]
   },
+  "tt0303929": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror"
+   ]
+  },
   "tt0305224": {
    "checked": "2026-11-18",
    "g": [
@@ -41463,6 +42104,14 @@
     "Mystery"
    ]
   },
+  "tt0327162": {
+   "checked": "2026-11-18",
+   "g": [
+    "Comedy",
+    "Horror",
+    "Sci-Fi"
+   ]
+  },
   "tt0327679": {
    "checked": "2026-11-18",
    "g": [
@@ -41512,6 +42161,12 @@
     "Crime",
     "Drama",
     "Mystery"
+   ]
+  },
+  "tt0336325": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror"
    ]
   },
   "tt0337697": {
@@ -44167,6 +44822,14 @@
     "Thriller"
    ]
   },
+  "tt13623608": {
+   "checked": "2026-11-18",
+   "g": [
+    "Comedy",
+    "Drama",
+    "Thriller"
+   ]
+  },
   "tt1370889": {
    "checked": "2026-11-18",
    "g": [
@@ -44478,6 +45141,12 @@
     "Music"
    ]
   },
+  "tt14458442": {
+   "checked": "2026-11-18",
+   "g": [
+    "Drama"
+   ]
+  },
   "tt14483774": {
    "checked": "2026-11-18",
    "g": [
@@ -44633,6 +45302,13 @@
     "Crime"
    ]
   },
+  "tt15153532": {
+   "checked": "2026-11-18",
+   "g": [
+    "Adventure",
+    "Comedy"
+   ]
+  },
   "tt1517451": {
    "checked": "2026-11-18",
    "g": [
@@ -44683,6 +45359,13 @@
    "g": [
     "Comedy",
     "Family"
+   ]
+  },
+  "tt15338966": {
+   "checked": "2026-11-18",
+   "g": [
+    "Comedy",
+    "Mystery"
    ]
   },
   "tt1536044": {
@@ -45556,6 +46239,14 @@
     "Fantasy"
    ]
   },
+  "tt20417104": {
+   "checked": "2026-11-18",
+   "g": [
+    "Biography",
+    "Documentary",
+    "Music"
+   ]
+  },
   "tt20420628": {
    "checked": "2026-11-18",
    "g": [
@@ -45785,6 +46476,14 @@
     "Action",
     "Adventure",
     "Fantasy"
+   ]
+  },
+  "tt22399738": {
+   "checked": "2026-11-18",
+   "g": [
+    "Comedy",
+    "Drama",
+    "Sport"
    ]
   },
   "tt22475008": {
@@ -46626,6 +47325,13 @@
     "Thriller"
    ]
   },
+  "tt33763941": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror",
+    "Thriller"
+   ]
+  },
   "tt3385524": {
    "checked": "2026-11-18",
    "g": [
@@ -46866,6 +47572,13 @@
    "g": [
     "Horror",
     "Mystery",
+    "Thriller"
+   ]
+  },
+  "tt38907741": {
+   "checked": "2026-11-18",
+   "g": [
+    "Horror",
     "Thriller"
    ]
   },
@@ -47615,6 +48328,13 @@
     "Thriller"
    ]
   },
+  "tt6198246": {
+   "checked": "2026-11-18",
+   "g": [
+    "Drama",
+    "War"
+   ]
+  },
   "tt6288694": {
    "checked": "2026-11-18",
    "g": [
@@ -47756,6 +48476,13 @@
     "Romance"
    ]
   },
+  "tt6875952": {
+   "checked": "2026-11-18",
+   "g": [
+    "Drama",
+    "Musical"
+   ]
+  },
   "tt6906292": {
    "checked": "2026-11-18",
    "g": [
@@ -47786,6 +48513,14 @@
     "Action",
     "Adventure",
     "Comedy"
+   ]
+  },
+  "tt6924650": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Drama",
+    "History"
    ]
   },
   "tt6951546": {
@@ -47969,6 +48704,13 @@
     "Action",
     "Adventure",
     "Crime"
+   ]
+  },
+  "tt8019694": {
+   "checked": "2026-11-18",
+   "g": [
+    "Drama",
+    "Romance"
    ]
   },
   "tt8026448": {
