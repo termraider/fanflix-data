@@ -8606,7 +8606,6 @@
     "url": "https://fanflix.co/c/1mhak61tumgbv-rake-in-the-deals-only-4-99-each",
     "firstSeen": "2026-11-08",
     "lastSeen": "2026-11-18",
-    "live": true,
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
@@ -12062,7 +12061,6 @@
     "url": "https://fanflix.co/c/1mh3v8zq7m0qd-hits-harvest-2-or-more-starting-at-4-99",
     "firstSeen": "2026-11-08",
     "lastSeen": "2026-11-18",
-    "live": true,
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
@@ -27199,7 +27197,7 @@
     "bundle": null,
     "resolutions": {
       "UHD": 18,
-      "HD": 33
+      "HD": 29
     },
     "items": [
       {
@@ -28312,385 +28310,6 @@
             "Romance"
           ]
         }
-      },
-      {
-        "title": "John Hughes 3-Movie Collection",
-        "price": "$9.99",
-        "resolution": "HD",
-        "pack": [
-          {
-            "title": "Sixteen Candles",
-            "resolution": "HD",
-            "year": 1984,
-            "imdb": {
-              "id": "tt0088128",
-              "rating": 7,
-              "votes": 137192,
-              "cast": [
-                "Molly Ringwald",
-                "Anthony Michael Hall",
-                "Justin Henry",
-                "Michael Schoeffling",
-                "Haviland Morris"
-              ],
-              "genres": [
-                "Comedy",
-                "Romance"
-              ]
-            }
-          },
-          {
-            "title": "The Breakfast Club",
-            "resolution": "HD",
-            "year": 1985,
-            "imdb": {
-              "id": "tt0088847",
-              "rating": 7.8,
-              "votes": 479436,
-              "cast": [
-                "Emilio Estevez",
-                "Judd Nelson",
-                "Molly Ringwald",
-                "Ally Sheedy",
-                "Paul Gleason"
-              ],
-              "genres": [
-                "Comedy",
-                "Drama"
-              ]
-            }
-          },
-          {
-            "title": "Weird Science",
-            "resolution": "HD",
-            "year": 1985,
-            "imdb": {
-              "id": "tt0090305",
-              "rating": 6.6,
-              "votes": 107302,
-              "cast": [
-                "Anthony Michael Hall",
-                "Ilan Mitchell-Smith",
-                "Kelly LeBrock",
-                "Bill Paxton",
-                "Suzanne Snyder"
-              ],
-              "genres": [
-                "Comedy",
-                "Romance",
-                "Sci-Fi"
-              ]
-            }
-          }
-        ],
-        "image": "https://img.fanflix.co/UNIVERSAL/ba5a7c77804773771f9f32fcbd43ec95b85628d3fd9d45aa09b31d5d79dc83eb"
-      },
-      {
-        "title": "American Pie 4-Movie Collection (Unrated) (HD, UHD)",
-        "price": "$14.99",
-        "resolution": "HD",
-        "pack": [
-          {
-            "title": "American Pie (Unrated)",
-            "resolution": "HD",
-            "year": 1999,
-            "runtime": 95,
-            "imdb": {
-              "id": "tt0163651",
-              "rating": 7,
-              "votes": 474996,
-              "cast": [
-                "Jason Biggs",
-                "Chris Klein",
-                "Thomas Ian Nicholas",
-                "Jennifer Coolidge",
-                "Shannon Elizabeth"
-              ],
-              "genres": [
-                "Comedy"
-              ]
-            }
-          },
-          {
-            "title": "American Pie 2 (Unrated)",
-            "resolution": "HD",
-            "year": 2002,
-            "runtime": 110,
-            "imdb": {
-              "id": "tt0252866",
-              "rating": 6.5,
-              "votes": 290461,
-              "cast": [
-                "Jason Biggs",
-                "Seann William Scott",
-                "Shannon Elizabeth",
-                "Alyson Hannigan",
-                "Chris Klein"
-              ],
-              "genres": [
-                "Comedy"
-              ]
-            }
-          },
-          {
-            "title": "American Reunion (Unrated)",
-            "resolution": "HD",
-            "year": 2012,
-            "runtime": 113,
-            "imdb": {
-              "id": "tt1605630",
-              "rating": 6.7,
-              "votes": 236276,
-              "cast": [
-                "Jason Biggs",
-                "Alyson Hannigan",
-                "Seann William Scott",
-                "Chris Klein",
-                "Thomas Ian Nicholas"
-              ],
-              "genres": [
-                "Comedy"
-              ]
-            }
-          },
-          {
-            "title": "American Wedding (Unrated)",
-            "resolution": "HD",
-            "year": 2004,
-            "runtime": 103,
-            "imdb": {
-              "id": "tt0328828",
-              "rating": 6.3,
-              "votes": 231919,
-              "cast": [
-                "Jason Biggs",
-                "Alyson Hannigan",
-                "Seann William Scott",
-                "Eugene Levy",
-                "Eddie Kaye Thomas"
-              ],
-              "genres": [
-                "Comedy"
-              ]
-            }
-          }
-        ],
-        "image": "https://img.fanflix.co/UNIVERSAL/48821e82c6a22c60d50eb59eda4c5c1524165282c92436f3ecef2c44e24caa60"
-      },
-      {
-        "title": "Johnny English 3 Movie Collection (HD, UHD)",
-        "price": "$9.99",
-        "resolution": "HD",
-        "pack": [
-          {
-            "title": "Johnny English",
-            "resolution": "HD",
-            "year": 2003,
-            "runtime": 87,
-            "imdb": {
-              "id": "tt0274166",
-              "rating": 6.3,
-              "votes": 187968,
-              "cast": [
-                "Rowan Atkinson",
-                "John Malkovich",
-                "Natalie Imbruglia",
-                "Tasha de Vasconcelos",
-                "Ben Miller"
-              ],
-              "genres": [
-                "Action",
-                "Adventure",
-                "Comedy"
-              ]
-            }
-          },
-          {
-            "title": "Johnny English Strikes Again",
-            "resolution": "HD",
-            "year": 2018,
-            "runtime": 89,
-            "imdb": {
-              "id": "tt6921996",
-              "rating": 6.2,
-              "votes": 92436,
-              "cast": [
-                "Rowan Atkinson",
-                "Ben Miller",
-                "Olga Kurylenko",
-                "Emma Thompson",
-                "Kevin Eldon"
-              ],
-              "genres": [
-                "Action",
-                "Adventure",
-                "Comedy"
-              ]
-            }
-          },
-          {
-            "title": "Johnny English Reborn",
-            "resolution": "HD",
-            "year": 2011,
-            "runtime": 101,
-            "imdb": {
-              "id": "tt1634122",
-              "rating": 6.3,
-              "votes": 151250,
-              "cast": [
-                "Rowan Atkinson",
-                "Rosamund Pike",
-                "Dominic West",
-                "Roger Barclay",
-                "Eric Carte"
-              ],
-              "genres": [
-                "Action",
-                "Adventure",
-                "Comedy"
-              ]
-            }
-          }
-        ],
-        "image": "https://img.fanflix.co/UNIVERSAL/5e2243afef99bdd6d875fc9151017cb61e593d8984cac6b8d8f5e5b223aebb98"
-      },
-      {
-        "title": "6 Spike Lee Joints (HD, UHD)",
-        "price": "$24.99",
-        "resolution": "HD",
-        "pack": [
-          {
-            "title": "Blackkklansman",
-            "resolution": "HD",
-            "year": 2018,
-            "imdb": {
-              "id": "tt7349662",
-              "rating": 7.5,
-              "votes": 318787,
-              "cast": [
-                "John David Washington",
-                "Adam Driver",
-                "Laura Harrier",
-                "Topher Grace",
-                "Alec Baldwin"
-              ],
-              "genres": [
-                "Biography",
-                "Comedy",
-                "Crime"
-              ]
-            }
-          },
-          {
-            "title": "Do the Right Thing",
-            "resolution": "HD",
-            "year": 1989,
-            "imdb": {
-              "id": "tt0097216",
-              "rating": 7.9,
-              "votes": 127079,
-              "cast": [
-                "Danny Aiello",
-                "Ossie Davis",
-                "Ruby Dee",
-                "Richard Edson",
-                "Giancarlo Esposito"
-              ],
-              "genres": [
-                "Comedy",
-                "Drama"
-              ]
-            }
-          },
-          {
-            "title": "Inside Man",
-            "resolution": "HD",
-            "year": 2006,
-            "imdb": {
-              "id": "tt0454848",
-              "rating": 7.6,
-              "votes": 431806,
-              "cast": [
-                "Denzel Washington",
-                "Clive Owen",
-                "Jodie Foster",
-                "Christopher Plummer",
-                "Willem Dafoe"
-              ],
-              "genres": [
-                "Crime",
-                "Drama",
-                "Mystery"
-              ]
-            }
-          },
-          {
-            "title": "Mo' Better Blues",
-            "resolution": "HD",
-            "year": 1990,
-            "imdb": {
-              "id": "tt0100168",
-              "rating": 6.7,
-              "votes": 15252,
-              "cast": [
-                "Denzel Washington",
-                "Spike Lee",
-                "Wesley Snipes",
-                "Giancarlo Esposito",
-                "Robin Harris"
-              ],
-              "genres": [
-                "Drama",
-                "Music",
-                "Romance"
-              ]
-            }
-          },
-          {
-            "title": "Clockers",
-            "resolution": "HD",
-            "year": 1995,
-            "imdb": {
-              "id": "tt0112688",
-              "rating": 6.9,
-              "votes": 25275,
-              "cast": [
-                "Harvey Keitel",
-                "John Turturro",
-                "Delroy Lindo",
-                "Mekhi Phifer",
-                "Isaiah Washington"
-              ],
-              "genres": [
-                "Crime",
-                "Drama",
-                "Mystery"
-              ]
-            }
-          },
-          {
-            "title": "Crooklyn",
-            "resolution": "HD",
-            "year": 1994,
-            "imdb": {
-              "id": "tt0109504",
-              "rating": 7.1,
-              "votes": 12566,
-              "cast": [
-                "Alfre Woodard",
-                "Delroy Lindo",
-                "David Patrick Kelly",
-                "Zelda Harris",
-                "Carlton Williams"
-              ],
-              "genres": [
-                "Comedy",
-                "Drama"
-              ]
-            }
-          }
-        ],
-        "image": "https://img.fanflix.co/UNIVERSAL/dee11defbdd756ee9d90e745e7d46e3b6f8b642d10e27aa3439576278915ca85"
       }
     ]
   },
@@ -73563,6 +73182,3053 @@
         "resolution": "HD",
         "year": 2002,
         "image": "https://img.fanflix.co/WB/2a94786d4a4b80b85b813d732deb8bbae9a53242e22acd1215b298bc25744c4c"
+      }
+    ]
+  },
+  "/c/1mjxhy1jyps6h-flash-sale-cinematic-fanatic-5-for-15": {
+    "title": "Flash Sale - Cinematic Fanatic - 5 for $15",
+    "url": "https://fanflix.co/c/1mjxhy1jyps6h-flash-sale-cinematic-fanatic-5-for-15",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "live": true,
+    "canSplit": true,
+    "checkoutPrice": "",
+    "platforms": [
+      "Movies Anywhere"
+    ],
+    "bannerFile": "images/1mjxhy1jyps6h-flash-sale-cinematic-fanatic-5-for-15--banner.png",
+    "screenshot": "images/1mjxhy1jyps6h-flash-sale-cinematic-fanatic-5-for-15.png",
+    "locationScreenshots": {},
+    "bundle": {
+      "count": 5,
+      "price": 15,
+      "perItem": 3
+    },
+    "resolutions": {
+      "UHD": 17,
+      "HD": 16
+    },
+    "items": [
+      {
+        "title": "Baby Boy",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 2001,
+        "runtime": 130,
+        "image": "https://img.fanflix.co/martwork/sphe/ff0c3660-13cc-4718-8799-f3d2327f9e8a-2x3.png",
+        "imdb": {
+          "id": "tt0255819",
+          "rating": 6.5,
+          "votes": 19038,
+          "cast": [
+            "Alexsandra Wright",
+            "Tyrese Gibson",
+            "Taraji P. Henson",
+            "Omar Gooding",
+            "Tamara Bass"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Five Easy Pieces",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1970,
+        "image": "https://img.fanflix.co/martwork/sphe/97911d30-db6c-46ba-aeb6-058ea2173956-2x3.png",
+        "imdb": {
+          "id": "tt0065724",
+          "rating": 7.3,
+          "votes": 45421,
+          "cast": [
+            "Jack Nicholson",
+            "Karen Black",
+            "Billy Green Bush",
+            "Fannie Flagg",
+            "Sally Struthers"
+          ],
+          "genres": [
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Call Me by Your Name",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 2017,
+        "image": "https://img.fanflix.co/martwork/sphe/2872e95d-342d-4bfc-b965-389daf18de7d-2x3.png",
+        "imdb": {
+          "id": "tt5726616",
+          "rating": 7.8,
+          "votes": 366816,
+          "cast": [
+            "Timothée Chalamet",
+            "Armie Hammer",
+            "Michael Stuhlbarg",
+            "Amira Casar",
+            "Esther Garrel"
+          ],
+          "genres": [
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "T2: Trainspotting",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 2017,
+        "image": "https://img.fanflix.co/martwork/sphe/e4cacfe6-3525-4021-9e75-a35a9e9f74a0-2x3.png",
+        "imdb": {
+          "id": "tt2763304",
+          "rating": 7.1,
+          "votes": 143636,
+          "cast": [
+            "Ewan McGregor",
+            "Ewen Bremner",
+            "Jonny Lee Miller",
+            "Robert Carlyle",
+            "Logan Gillies"
+          ],
+          "genres": [
+            "Comedy",
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "The Lady In The Van",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2015,
+        "image": "https://img.fanflix.co/martwork/sphe/79f9d77e-faed-4c21-ac24-775e4d0060e9-2x3.png",
+        "imdb": {
+          "id": "tt3722070",
+          "rating": 6.7,
+          "votes": 35185,
+          "cast": [
+            "Maggie Smith",
+            "Alex Jennings",
+            "Jim Broadbent",
+            "Clare Hammond",
+            "George Fenton"
+          ],
+          "genres": [
+            "Biography",
+            "Comedy",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "The Girl with the Dragon Tattoo (2011)",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2011,
+        "image": "https://img.fanflix.co/martwork/sphe/abc317aa-1898-4f1b-9f64-5adba432d86a-2x3.png",
+        "imdb": {
+          "id": "tt1568346",
+          "rating": 7.8,
+          "votes": 536447,
+          "cast": [
+            "Daniel Craig",
+            "Rooney Mara",
+            "Christopher Plummer",
+            "Stellan Skarsgård",
+            "Steven Berkoff"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Mystery"
+          ]
+        }
+      },
+      {
+        "title": "The White Ribbon",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2010,
+        "image": "https://img.fanflix.co/martwork/sphe/af0a4f4a-715a-4384-ae36-02cfcb422bd9-2x3.png",
+        "imdb": {
+          "id": "tt1149362",
+          "rating": 7.8,
+          "votes": 82465,
+          "cast": [
+            "Christian Friedel",
+            "Ernst Jacobi",
+            "Leonie Benesch",
+            "Ulrich Tukur",
+            "Ursina Lardi"
+          ],
+          "genres": [
+            "Drama",
+            "Mystery",
+            "Thriller"
+          ]
+        }
+      },
+      {
+        "title": "District 9",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 2009,
+        "image": "https://img.fanflix.co/martwork/sphe/a5450740-af6a-4159-aa0c-6ae2c65d958b-2x3.png",
+        "imdb": {
+          "id": "tt1136608",
+          "rating": 7.9,
+          "votes": 760418,
+          "cast": [
+            "Sharlto Copley",
+            "David James",
+            "Jason Cope",
+            "Vanessa Haywood",
+            "Mandla Gaduka"
+          ],
+          "genres": [
+            "Action",
+            "Sci-Fi",
+            "Thriller"
+          ]
+        }
+      },
+      {
+        "title": "An Education",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2009,
+        "image": "https://img.fanflix.co/martwork/sphe/6b4e4b24-8315-4539-8f2d-e121417a4fd8-2x3.png",
+        "imdb": {
+          "id": "tt1174732",
+          "rating": 7.2,
+          "votes": 141703,
+          "cast": [
+            "Carey Mulligan",
+            "Peter Sarsgaard",
+            "Alfred Molina",
+            "Olivia Williams",
+            "Cara Seymour"
+          ],
+          "genres": [
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Cadillac Records",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2008,
+        "image": "https://img.fanflix.co/martwork/sphe/a5b3fcde-02e6-42b8-9650-390889125faa-2x3.png",
+        "imdb": {
+          "id": "tt1042877",
+          "rating": 7,
+          "votes": 24830,
+          "cast": [
+            "Adrien Brody",
+            "Jeffrey Wright",
+            "Beyoncé",
+            "Columbus Short",
+            "Josh Alscher"
+          ],
+          "genres": [
+            "Biography",
+            "Drama",
+            "Music"
+          ]
+        }
+      },
+      {
+        "title": "Redbelt",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2008,
+        "image": "https://img.fanflix.co/martwork/sphe/bc3a8e20-db04-45e3-9c02-77081cd7881f-2x3.png",
+        "imdb": {
+          "id": "tt1012804",
+          "rating": 6.7,
+          "votes": 22084,
+          "cast": [
+            "Chiwetel Ejiofor",
+            "Tim Allen",
+            "Emily Mortimer",
+            "Max Martini",
+            "Matt Cable"
+          ],
+          "genres": [
+            "Drama",
+            "Sport"
+          ]
+        }
+      },
+      {
+        "title": "Reign Over Me",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2007,
+        "image": "https://img.fanflix.co/martwork/sphe/97d05775-69c1-45e2-abaf-18f57d2c1199-2x3.png",
+        "imdb": {
+          "id": "tt0490204",
+          "rating": 7.4,
+          "votes": 106638,
+          "cast": [
+            "Adam Sandler",
+            "Don Cheadle",
+            "Jada Pinkett Smith",
+            "Liv Tyler",
+            "Saffron Burrows"
+          ],
+          "genres": [
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "The Lives of Others",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2006,
+        "image": "https://img.fanflix.co/martwork/sphe/6073ecd9-6841-4173-b01a-460b1f6c15a1-2x3.png",
+        "imdb": {
+          "id": "tt0405094",
+          "rating": 8.4,
+          "votes": 449194,
+          "cast": [
+            "Ulrich Mühe",
+            "Martina Gedeck",
+            "Sebastian Koch",
+            "Ulrich Tukur",
+            "Thomas Thieme"
+          ],
+          "genres": [
+            "Drama",
+            "Mystery",
+            "Thriller"
+          ]
+        }
+      },
+      {
+        "title": "The Squid and the Whale",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2005,
+        "image": "https://img.fanflix.co/martwork/sphe/1d0a07b0-806b-4b96-9f2c-124847a29b5a-2x3.png",
+        "imdb": {
+          "id": "tt0367089",
+          "rating": 7.3,
+          "votes": 95372,
+          "cast": [
+            "Owen Kline",
+            "Jeff Daniels",
+            "Laura Linney",
+            "Jesse Eisenberg",
+            "William Baldwin"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Spanglish",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2004,
+        "image": "https://img.fanflix.co/martwork/sphe/31f87f1c-906e-4169-be01-5cb5a8a185df-2x3.png",
+        "imdb": {
+          "id": "tt0371246",
+          "rating": 6.4,
+          "votes": 93714,
+          "cast": [
+            "Adam Sandler",
+            "Téa Leoni",
+            "Paz Vega",
+            "Cloris Leachman",
+            "Shelbie Bruce"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Ali",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 2001,
+        "image": "https://img.fanflix.co/martwork/sphe/1c3fba41-e678-44eb-90a8-45477c1976e7-2x3.png",
+        "imdb": {
+          "id": "tt0248667",
+          "rating": 6.7,
+          "votes": 111440,
+          "cast": [
+            "Will Smith",
+            "Jamie Foxx",
+            "Jon Voight",
+            "Mario Van Peebles",
+            "Ron Silver"
+          ],
+          "genres": [
+            "Biography",
+            "Drama",
+            "Sport"
+          ]
+        }
+      },
+      {
+        "title": "U-Turn",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1997,
+        "image": "https://img.fanflix.co/martwork/sphe/64f09bfd-d9e6-4cea-a269-25daa6117445-2x3.png",
+        "imdb": {
+          "id": "tt0120399",
+          "rating": 6.7,
+          "votes": 58263,
+          "cast": [
+            "Sean Penn",
+            "Jennifer Lopez",
+            "Nick Nolte",
+            "Billy Bob Thornton",
+            "Abraham Benrubi"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+          ]
+        }
+      },
+      {
+        "title": "Bottle Rocket",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1996,
+        "image": "https://img.fanflix.co/martwork/sphe/b2865ae3-e923-4404-81eb-b549b82f53eb-2x3.png",
+        "imdb": {
+          "id": "tt0115734",
+          "rating": 6.9,
+          "votes": 89434,
+          "cast": [
+            "Luke Wilson",
+            "Owen Wilson",
+            "Ned Dowd",
+            "Shea Fowler",
+            "Haley Miller"
+          ],
+          "genres": [
+            "Comedy",
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Desperado",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1995,
+        "image": "https://img.fanflix.co/martwork/sphe/d1670c64-84bf-4d6c-abc3-48686be11679-2x3.png",
+        "imdb": {
+          "id": "tt0112851",
+          "rating": 7.1,
+          "votes": 211924,
+          "cast": [
+            "Antonio Banderas",
+            "Salma Hayek",
+            "Joaquim de Almeida",
+            "Cheech Marin",
+            "Steve Buscemi"
+          ],
+          "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Devil in a Blue Dress",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1995,
+        "image": "https://img.fanflix.co/martwork/sphe/f0a97a39-b282-4d9f-8ae3-55189c3b5c3e-2x3.png",
+        "imdb": {
+          "id": "tt0112857",
+          "rating": 6.8,
+          "votes": 28244,
+          "cast": [
+            "Denzel Washington",
+            "Tom Sizemore",
+            "Jennifer Beals",
+            "Don Cheadle",
+            "Maury Chaykin"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Mystery"
+          ]
+        }
+      },
+      {
+        "title": "The Quick and the Dead (1995)",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1995,
+        "image": "https://img.fanflix.co/martwork/sphe/10be51f0-5f75-444f-9d23-62fafe79da19-2x3.png",
+        "imdb": {
+          "id": "tt0114214",
+          "rating": 6.5,
+          "votes": 115602,
+          "cast": [
+            "Sharon Stone",
+            "Gene Hackman",
+            "Russell Crowe",
+            "Leonardo DiCaprio",
+            "Tobin Bell"
+          ],
+          "genres": [
+            "Action",
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Orlando",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1993,
+        "image": "https://img.fanflix.co/martwork/sphe/876ebff0-49f9-4e66-8b37-534d0440d729-2x3.png",
+        "imdb": {
+          "id": "tt0107756",
+          "rating": 7.1,
+          "votes": 21521,
+          "cast": [
+            "Tilda Swinton",
+            "Billy Zane",
+            "Quentin Crisp",
+            "Jimmy Somerville",
+            "John Bott"
+          ],
+          "genres": [
+            "Biography",
+            "Drama",
+            "Fantasy"
+          ]
+        }
+      },
+      {
+        "title": "The Remains of the Day",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1993,
+        "image": "https://img.fanflix.co/martwork/sphe/210b934e-3348-4f79-b708-2d574fbbb8cb-2x3.png",
+        "imdb": {
+          "id": "tt0107943",
+          "rating": 7.8,
+          "votes": 94845,
+          "cast": [
+            "Anthony Hopkins",
+            "Emma Thompson",
+            "John Haycraft",
+            "Christopher Reeve",
+            "Caroline Hunt"
+          ],
+          "genres": [
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Radio Flyer",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1992,
+        "image": "https://img.fanflix.co/martwork/sphe/cd7d0edd-c73a-449f-bf25-7036c7f38fd8-2x3.png",
+        "imdb": {
+          "id": "tt0105211",
+          "rating": 6.9,
+          "votes": 15456,
+          "cast": [
+            "Lorraine Bracco",
+            "John Heard",
+            "Adam Baldwin",
+            "Elijah Wood",
+            "Joseph Mazzello"
+          ],
+          "genres": [
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Boyz N the Hood",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1991,
+        "image": "https://img.fanflix.co/martwork/sphe/ec635da3-da49-4816-8957-82e3895b1016-2x3.png",
+        "imdb": {
+          "id": "tt0101507",
+          "rating": 7.7,
+          "votes": 171496,
+          "cast": [
+            "Cuba Gooding Jr.",
+            "Laurence Fishburne",
+            "Hudhail Al-Amir",
+            "Lloyd Avery II",
+            "Angela Bassett"
+          ],
+          "genres": [
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "The Fisher King",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1991,
+        "image": "https://img.fanflix.co/martwork/sphe/488a0d8f-6a35-4f7c-97f6-63072bdfb46f-2x3.png",
+        "imdb": {
+          "id": "tt0101889",
+          "rating": 7.5,
+          "votes": 98046,
+          "cast": [
+            "Jeff Bridges",
+            "Robin Williams",
+            "Adam Bryant",
+            "Paul Lombardi",
+            "David Hyde Pierce"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Fantasy"
+          ]
+        }
+      },
+      {
+        "title": "The Prince of Tides",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1991,
+        "image": "https://img.fanflix.co/martwork/sphe/428eb18a-b160-468a-938e-cd78f16356de-2x3.png",
+        "imdb": {
+          "id": "tt0102713",
+          "rating": 6.8,
+          "votes": 21837,
+          "cast": [
+            "Barbra Streisand",
+            "Nick Nolte",
+            "Blythe Danner",
+            "Kate Nelligan",
+            "Jeroen Krabbé"
+          ],
+          "genres": [
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Starman",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1984,
+        "image": "https://img.fanflix.co/martwork/sphe/dee0983f-cf6e-4821-a480-90e8349d3595-2x3.png",
+        "imdb": {
+          "id": "tt0088172",
+          "rating": 7,
+          "votes": 60631,
+          "cast": [
+            "Jeff Bridges",
+            "Karen Allen",
+            "Charles Martin Smith",
+            "Richard Jaeckel",
+            "Robert Phalen"
+          ],
+          "genres": [
+            "Romance",
+            "Sci-Fi"
+          ]
+        }
+      },
+      {
+        "title": "Tootsie",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1982,
+        "image": "https://img.fanflix.co/martwork/sphe/a13f94ac-d2a9-47de-b739-4077f808a2ce-2x3.png",
+        "imdb": {
+          "id": "tt0084805",
+          "rating": 7.4,
+          "votes": 124512,
+          "cast": [
+            "Dustin Hoffman",
+            "Jessica Lange",
+            "Teri Garr",
+            "Dabney Coleman",
+            "Charles Durning"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "The China Syndrome",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1979,
+        "image": "https://img.fanflix.co/martwork/sphe/94932dc8-6b53-4191-88cd-9d3d0229dc36-2x3.png",
+        "imdb": {
+          "id": "tt0078966",
+          "rating": 7.4,
+          "votes": 36538,
+          "cast": [
+            "Jane Fonda",
+            "Jack Lemmon",
+            "Michael Douglas",
+            "Scott Brady",
+            "James Hampton"
+          ],
+          "genres": [
+            "Drama",
+            "Thriller"
+          ]
+        }
+      },
+      {
+        "title": "Close Encounters of the Third Kind (Director's Cut)",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1977,
+        "image": "https://img.fanflix.co/martwork/sphe/93bdd6df-0ae1-43b6-997b-f62d364d71ae-2x3.png",
+        "imdb": {
+          "id": "tt0075860",
+          "rating": 7.6,
+          "votes": 240063,
+          "cast": [
+            "Richard Dreyfuss",
+            "François Truffaut",
+            "Teri Garr",
+            "Melinda Dillon",
+            "Bob Balaban"
+          ],
+          "genres": [
+            "Drama",
+            "Sci-Fi"
+          ]
+        }
+      },
+      {
+        "title": "Shampoo",
+        "price": "$3.00",
+        "resolution": "HD",
+        "year": 1975,
+        "image": "https://img.fanflix.co/martwork/sphe/fb1bf6a8-c63c-4d3f-adff-5550600e4ef8-2x3.png",
+        "imdb": {
+          "id": "tt0073692",
+          "rating": 6.4,
+          "votes": 16245,
+          "cast": [
+            "Warren Beatty",
+            "Julie Christie",
+            "Goldie Hawn",
+            "Lee Grant",
+            "Jack Warden"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "The Last Detail",
+        "price": "$3.00",
+        "resolution": "UHD",
+        "year": 1973,
+        "image": "https://img.fanflix.co/martwork/sphe/9c0f2f67-0c19-441e-b728-c232175f505f-2x3.png",
+        "imdb": {
+          "id": "tt0070290",
+          "rating": 7.5,
+          "votes": 31818,
+          "cast": [
+            "Jack Nicholson",
+            "Randy Quaid",
+            "Otis Young",
+            "Clifton James",
+            "Carol Kane"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama"
+          ]
+        }
+      }
+    ]
+  },
+  "/c/1mkjsqvufyqm7-black-friday-tv-2-for-40": {
+    "title": "Black Friday TV - 2 for $40",
+    "url": "https://fanflix.co/c/1mkjsqvufyqm7-black-friday-tv-2-for-40",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "live": true,
+    "canSplit": true,
+    "checkoutPrice": "",
+    "platforms": [
+      "Fandango at Home"
+    ],
+    "bannerFile": "images/1mkjsqvufyqm7-black-friday-tv-2-for-40--banner.png",
+    "screenshot": "images/1mkjsqvufyqm7-black-friday-tv-2-for-40.png",
+    "locationScreenshots": {},
+    "bundle": {
+      "count": 2,
+      "price": 40,
+      "perItem": 20
+    },
+    "resolutions": {
+      "UHD": 2,
+      "HD": 28,
+      "SD": 5
+    },
+    "items": [
+      {
+        "title": "The Last of Us: Seasons 1-2",
+        "price": "$20.00",
+        "resolution": "UHD",
+        "year": 2023,
+        "seasons": 2,
+        "image": "https://img.fanflix.co/WB/3d08b9aaf9af8df291009667970c1edb14382d71ba6ece0a617e608156212da8",
+        "imdb": {
+          "id": "tt3581920",
+          "rating": 8.4,
+          "votes": 756546,
+          "season": {
+            "seasons": [
+              1,
+              2
+            ],
+            "rating": 8.3,
+            "votes": 1192818,
+            "episodes": 16
+          },
+          "cast": [
+            "Bella Ramsey",
+            "Pedro Pascal",
+            "Gabriel Luna",
+            "Isabela Merced",
+            "Young Mazino"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "True Detective: Seasons 1-4",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2024,
+        "seasons": 4,
+        "image": "https://img.fanflix.co/WB/082077fe382d14e66320a6df8284db6f892c9a6c17d74d1864d016fdccc3df7a",
+        "imdb": {
+          "id": "tt2356777",
+          "rating": 8.8,
+          "votes": 779363,
+          "season": {
+            "seasons": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "rating": 8.4,
+            "votes": 583567,
+            "episodes": 30
+          },
+          "cast": [
+            "Vince Vaughn",
+            "Colin Farrell",
+            "Rachel McAdams",
+            "Taylor Kitsch",
+            "Matthew McConaughey"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Mystery"
+          ]
+        }
+      },
+      {
+        "title": "The Sandman: The Complete Series",
+        "price": "$20.00",
+        "resolution": "UHD",
+        "year": 2023,
+        "image": "https://img.fanflix.co/WB/931020e8ed12d12881f340dca4245eaf8b2c0495de46a128dd68eb90eb1c1370",
+        "imdb": {
+          "id": "tt1751634",
+          "rating": 7.6,
+          "votes": 213496,
+          "cast": [
+            "Tom Sturridge",
+            "Vivienne Acheampong",
+            "Patton Oswalt",
+            "Nina Wadia",
+            "Souad Faress"
+          ],
+          "genres": [
+            "Drama",
+            "Fantasy",
+            "Horror"
+          ]
+        }
+      },
+      {
+        "title": "Ballers: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2019,
+        "image": "https://img.fanflix.co/WB/46df184c117c65711e009995581f3f0ed3127574144620d03337467a3cffdd38",
+        "imdb": {
+          "id": "tt2891574",
+          "rating": 7.6,
+          "votes": 79011,
+          "cast": [
+            "Dwayne Johnson",
+            "John David Washington",
+            "Donovan W. Carter",
+            "Troy Garity",
+            "Omar Benson Miller"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Sport"
+          ]
+        }
+      },
+      {
+        "title": "Boardwalk Empire: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2014,
+        "image": "https://img.fanflix.co/WB/4607433db57e57cfb335b1a3fd37ea47f7595083c1b17cd96bcd40ce331038fd",
+        "imdb": {
+          "id": "tt0979432",
+          "rating": 8.5,
+          "votes": 221426,
+          "cast": [
+            "Steve Buscemi",
+            "Kelly Macdonald",
+            "Michael Shannon",
+            "Shea Whigham",
+            "Stephen Graham"
+          ],
+          "genres": [
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "The Newsroom: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2012,
+        "image": "https://img.fanflix.co/WB/38de7a0805092887772366cb5e2164ac1569c81dd3c3036bbcddd20cb914125e",
+        "imdb": {
+          "id": "tt1870479",
+          "rating": 8.6,
+          "votes": 137404,
+          "cast": [
+            "Jeff Daniels",
+            "Emily Mortimer",
+            "John Gallagher Jr.",
+            "Alison Pill",
+            "Thomas Sadoski"
+          ],
+          "genres": [
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Deadwood: The Complete Collection",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2019,
+        "image": "https://img.fanflix.co/WB/b61188c948a7be05a016a9f2c4f23d8d68f3cf0b95a6844ab7fe2709f73aba85"
+      },
+      {
+        "title": "The Righteous Gemstones: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2019,
+        "image": "https://img.fanflix.co/WB/60906e6ecfef8e64f6262d80436b396107cce92bb21b70ef9d24c5db0ac3dd0a",
+        "imdb": {
+          "id": "tt8634332",
+          "rating": 8.1,
+          "votes": 68077,
+          "cast": [
+            "John Goodman",
+            "Danny McBride",
+            "Adam Devine",
+            "Edi Patterson",
+            "Cassidy Freeman"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Eastbound & Down: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2009,
+        "image": "https://img.fanflix.co/WB/a9dcf4abbc29eb1fc64982730ffb5a42172de6c96b529f10e4ba6f35a19f1601",
+        "imdb": {
+          "id": "tt0866442",
+          "rating": 8.2,
+          "votes": 71695,
+          "cast": [
+            "Danny McBride",
+            "Steve Little",
+            "Katy Mixon Greer",
+            "Elizabeth De Razzo",
+            "John Hawkes"
+          ],
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Sport"
+          ]
+        }
+      },
+      {
+        "title": "Barry: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2018,
+        "image": "https://img.fanflix.co/WB/c3976ea52cdf22dea7c796f60fab8f5a1369755f92c21bca98e28e9de21dea03",
+        "imdb": {
+          "id": "tt5348176",
+          "rating": 8.3,
+          "votes": 147358,
+          "cast": [
+            "Bill Hader",
+            "Stephen Root",
+            "Sarah Goldberg",
+            "Anthony Carrigan",
+            "Henry Winkler"
+          ],
+          "genres": [
+            "Action",
+            "Comedy",
+            "Crime"
+          ]
+        }
+      },
+      {
+        "title": "You: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2018,
+        "image": "https://img.fanflix.co/WB/1f0025966921b072f7d8ac9aa13c414958d20f6d93488f76b53863e5066007da",
+        "imdb": {
+          "id": "tt7335184",
+          "rating": 7.6,
+          "votes": 378926,
+          "cast": [
+            "Penn Badgley",
+            "Victoria Pedretti",
+            "Charlotte Ritchie",
+            "Tati Gabrielle",
+            "Elizabeth Lail"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Banshee: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2020,
+        "image": "https://img.fanflix.co/WB/1b981439cfd30abcb8d208acddfeb14c664d53547665ca6a9e9ae1d95e743c75",
+        "imdb": {
+          "id": "tt2017109",
+          "rating": 8.4,
+          "votes": 153841,
+          "cast": [
+            "Antony Starr",
+            "Ivana Milicevic",
+            "Ulrich Thomsen",
+            "Frankie Faison",
+            "Matt Servitto"
+          ],
+          "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Longmire: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2012,
+        "image": "https://img.fanflix.co/WB/31ff64d4ffe0b4c9c9daa3cfff299f7cd6ad432f22562ce96ac883d7f29ce0f7",
+        "imdb": {
+          "id": "tt1836037",
+          "rating": 8.3,
+          "votes": 44629,
+          "cast": [
+            "Robert Taylor",
+            "Katee Sackhoff",
+            "Lou Diamond Phillips",
+            "Cassidy Freeman",
+            "Adam Bartley"
+          ],
+          "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Revolution: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2012,
+        "image": "https://img.fanflix.co/WB/bd91150eaeb8c4694ca0750a73d07742fc3b929c42720919e029635b2442f684",
+        "imdb": {
+          "id": "tt2070791",
+          "rating": 6.6,
+          "votes": 88663,
+          "cast": [
+            "Billy Burke",
+            "Tracy Spiridakos",
+            "Giancarlo Esposito",
+            "Zak Orth",
+            "David Lyons"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Nikita: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2010,
+        "image": "https://img.fanflix.co/WB/94e77e0f783337935e4284b048cb194c0b9e9e415fa7a696059e216f734bf33f"
+      },
+      {
+        "title": "Brilliant Minds: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2024,
+        "image": "https://img.fanflix.co/WB/d682f6ed61c52e5f358cb88cfe42369b5578fe976739b641017b1919a9f8200d",
+        "imdb": {
+          "id": "tt26448526",
+          "rating": 7.1,
+          "votes": 7314,
+          "cast": [
+            "Zachary Quinto",
+            "Tamberla Perry",
+            "Ashleigh LaThrop",
+            "Aury Krebs",
+            "Teddy Sears"
+          ],
+          "genres": [
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Tacoma FD: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2019,
+        "image": "https://img.fanflix.co/WB/4ad806ad2e6322a6cba010fa909d224ce1400bca3ee1c757e66eb7c08c9d791a",
+        "imdb": {
+          "id": "tt8026448",
+          "rating": 8.1,
+          "votes": 12523,
+          "cast": [
+            "Kevin Heffernan",
+            "Steve Lemme",
+            "Marcus Henderson",
+            "Gabriel Hogan",
+            "Hassie Harrison"
+          ],
+          "genres": [
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Veronica's Closet: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1997,
+        "image": "https://img.fanflix.co/WB/bfd052073f5dd506f5d66803f1f87401cc12e55dc37b08fa353a9befc6a7882c",
+        "imdb": {
+          "id": "tt0118506",
+          "rating": 5.8,
+          "votes": 2619,
+          "cast": [
+            "Kirstie Alley",
+            "Kathy Najimy",
+            "Dan Cortese",
+            "Wallace Langham",
+            "Daryl Mitchell"
+          ],
+          "genres": [
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "China Beach: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1988,
+        "image": "https://img.fanflix.co/WB/b988f73721012887f8ff858bea1c0bc0ee34fe3ae46118609b6ba4917bef0bf5",
+        "imdb": {
+          "id": "tt0094433",
+          "rating": 8.2,
+          "votes": 4472,
+          "cast": [
+            "Dana Delany",
+            "Marg Helgenberger",
+            "Brian Wimmer",
+            "Michael Boatman",
+            "Robert Picardo"
+          ],
+          "genres": [
+            "Drama",
+            "History",
+            "War"
+          ]
+        }
+      },
+      {
+        "title": "Gotham: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2019,
+        "image": "https://img.fanflix.co/WB/8f05c3e6b4cacaca869b39e4bb8f05b9f34876988b4896cdb264f18f5da105b8",
+        "imdb": {
+          "id": "tt3749900",
+          "rating": 7.8,
+          "votes": 254192,
+          "cast": [
+            "Ben McKenzie",
+            "Jada Pinkett Smith",
+            "Donal Logue",
+            "Camren Bicondova",
+            "David Mazouz"
+          ],
+          "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Batman Beyond: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1999,
+        "image": "https://img.fanflix.co/WB/688e8c40f6ac8ec4f7d5e01563e13abaa59680a07059a80693258d8f0583fa11",
+        "imdb": {
+          "id": "tt0147746",
+          "rating": 8.1,
+          "votes": 34219,
+          "cast": [
+            "Will Friedle",
+            "Kevin Conroy",
+            "Lauren Tom",
+            "Cree Summer",
+            "Ryan O'Donohue"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Animation"
+          ]
+        }
+      },
+      {
+        "title": "Superman & Lois: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2021,
+        "image": "https://img.fanflix.co/WB/62ebcb7ffda210b8dd73695ab6c0fd8a66907baa0c24e9632df344746285a7ec",
+        "imdb": {
+          "id": "tt11192306",
+          "rating": 7.8,
+          "votes": 51853,
+          "cast": [
+            "Tyler Hoechlin",
+            "Elizabeth Tulloch",
+            "Alex Garfin",
+            "Inde Navarrette",
+            "Erik Valdez"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama"
+          ]
+        }
+      },
+      {
+        "title": "Lois & Clark: The New Adventures of Superman S1-4 Bundle",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1993,
+        "image": "https://img.fanflix.co/WB/96d86e107b39d071d20a048bd6a2842f7adc6ef02af3a7518d5194e1a56d3044"
+      },
+      {
+        "title": "The Fresh Prince of Bel-Air: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1995,
+        "image": "https://img.fanflix.co/WB/b2ec7a81bf01d7507a052c60076a191715cf007bef359f95cf8cd7b0c1cc120d",
+        "imdb": {
+          "id": "tt0098800",
+          "rating": 7.9,
+          "votes": 154989,
+          "cast": [
+            "Will Smith",
+            "James Avery",
+            "Alfonso Ribeiro",
+            "Tatyana Ali",
+            "Karyn Parsons"
+          ],
+          "genres": [
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Mama's Family: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1983,
+        "image": "https://img.fanflix.co/WB/9e2fdc4222a751e52b0f4a18d9907d0f217bf28f7a655e5570f603b4c0049de1",
+        "imdb": {
+          "id": "tt0085050",
+          "rating": 7.3,
+          "votes": 7818,
+          "cast": [
+            "Vicki Lawrence",
+            "Beverly Archer",
+            "Ken Berry",
+            "Dorothy Lyman",
+            "Allan Kayser"
+          ],
+          "genres": [
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Step By Step: The Complete Series (Seasons 1-7)",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1991,
+        "seasons": 7,
+        "image": "https://img.fanflix.co/WB/07c9d010da644354078a0b807cd909bb2ff221454c2e71f2e2869fc2ae59e37a",
+        "imdb": {
+          "id": "tt0101205",
+          "rating": 6.6,
+          "votes": 18193,
+          "cast": [
+            "Patrick Duffy",
+            "Suzanne Somers",
+            "Brandon Call",
+            "Staci Keanan",
+            "Angela Watson"
+          ],
+          "genres": [
+            "Comedy",
+            "Romance"
+          ]
+        }
+      },
+      {
+        "title": "Get Smart: The Complete Series",
+        "price": "$20.00",
+        "resolution": "SD",
+        "year": 1965,
+        "image": "https://img.fanflix.co/WB/e0d7ebf3ad8e7539203daf69c02851049f2aa1dcde17fe385730c2793b4ff549",
+        "imdb": {
+          "id": "tt0058805",
+          "rating": 8.2,
+          "votes": 15508,
+          "cast": [
+            "Don Adams",
+            "Barbara Feldon",
+            "Edward Platt",
+            "Robert Karvelas",
+            "Rose Michtom"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Gilligan's Island: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1964,
+        "image": "https://img.fanflix.co/WB/b8c333323b53fb0a59045cf3eeb3c5551b69e57e8ead3f1605b92d8bea9c4e78",
+        "imdb": {
+          "id": "tt0057751",
+          "rating": 7.4,
+          "votes": 18890,
+          "cast": [
+            "Bob Denver",
+            "Alan Hale Jr.",
+            "Jim Backus",
+            "Natalie Schafer",
+            "Tina Louise"
+          ],
+          "genres": [
+            "Comedy",
+            "Family"
+          ]
+        }
+      },
+      {
+        "title": "Beetlejuice: The Complete Series",
+        "price": "$20.00",
+        "resolution": "SD",
+        "year": 1989,
+        "image": "https://img.fanflix.co/WB/54dd052b66bc59790fc32180e3d6249ce0446b3fb4ed67543ae0c4063249ef31",
+        "imdb": {
+          "id": "tt0096543",
+          "rating": 7.3,
+          "votes": 9212,
+          "cast": [
+            "Stephen Ouimette",
+            "Alyson Court",
+            "Tabitha St. Germain",
+            "Elizabeth Hanna",
+            "Roger Dunn"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Scooby-Doo, Where Are You!: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 1969,
+        "image": "https://img.fanflix.co/WB/3febca43715a8f93f8c0dccd15e67ad901104567dc2da3fc6ba1a77e514c5e7a",
+        "imdb": {
+          "id": "tt0063950",
+          "rating": 7.9,
+          "votes": 48814,
+          "cast": [
+            "Don Messick",
+            "Casey Kasem",
+            "Nicole Jaffe",
+            "Vic Perrin",
+            "Hal Smith"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Scooby-Doo and Guess Who?: The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2019,
+        "image": "https://img.fanflix.co/WB/80311d91b41e84b3148415d18ac8df81a05af0ff855e5a05b2d179b4cbc81d55",
+        "imdb": {
+          "id": "tt8456094",
+          "rating": 7.3,
+          "votes": 2929,
+          "cast": [
+            "Frank Welker",
+            "Grey DeLisle",
+            "Matthew Lillard",
+            "Kate Micucci",
+            "Dee Bradley Baker"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Courage the Cowardly Dog: The Complete Series",
+        "price": "$20.00",
+        "resolution": "SD",
+        "year": 1999,
+        "image": "https://img.fanflix.co/WB/1799d4aafd90458fcf58cb216f24d7fba34d0db01b21b6b9994a542759925c53",
+        "imdb": {
+          "id": "tt0220880",
+          "rating": 8.3,
+          "votes": 58877,
+          "cast": [
+            "Marty Grabstein",
+            "Thea White",
+            "Peter Fernandez",
+            "Simon Prebble",
+            "Paul Schoeffler"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
+      },
+      {
+        "title": "Ed, Edd 'n' Eddy: The Complete Series",
+        "price": "$20.00",
+        "resolution": "SD",
+        "year": 2000,
+        "image": "https://img.fanflix.co/WB/f03509a6fabccc8a1ba76d347299df8761f9cf2abb9b5f28d0125f964a0d8a27",
+        "imdb": {
+          "id": "tt0184111",
+          "rating": 7.4,
+          "votes": 43759,
+          "cast": [
+            "Matt Hill",
+            "Sam Vincent",
+            "Tony Sampson",
+            "Keenan Christensen",
+            "Kathleen Barr"
+          ],
+          "genres": [
+            "Animation",
+            "Comedy",
+            "Family"
+          ]
+        }
+      },
+      {
+        "title": "Animaniacs (2020/21): The Complete Series",
+        "price": "$20.00",
+        "resolution": "HD",
+        "year": 2020,
+        "image": "https://img.fanflix.co/WB/c46bdeabbd1555ee87b5b13e26ce0949b112212ce47590fcc202b7b8b8753d6d"
+      },
+      {
+        "title": "Steven Spielberg Presents: Pinky and the Brain: The Complete Series",
+        "price": "$20.00",
+        "resolution": "SD",
+        "year": 1995,
+        "image": "https://img.fanflix.co/WB/101dc7869de9608b1895b1bec2aafc20ba0be4c5ef1c1e1e96e4c1a020df39db"
+      }
+    ]
+  },
+  "/c/1mjxl58is1me0-triple-feature-2-for-15": {
+    "title": "Triple Feature - 2 for $15",
+    "url": "https://fanflix.co/c/1mjxl58is1me0-triple-feature-2-for-15",
+    "firstSeen": "2026-11-18",
+    "lastSeen": "2026-11-18",
+    "live": true,
+    "canSplit": true,
+    "checkoutPrice": "",
+    "platforms": [
+      "Fandango at Home"
+    ],
+    "bannerFile": "images/1mjxl58is1me0-triple-feature-2-for-15--banner.png",
+    "screenshot": "images/1mjxl58is1me0-triple-feature-2-for-15.png",
+    "locationScreenshots": {},
+    "bundle": {
+      "count": 2,
+      "price": 15,
+      "perItem": 7.5
+    },
+    "resolutions": {
+      "UHD": 8,
+      "HD": 14
+    },
+    "items": [
+      {
+        "title": "Star Trek Trilogy",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "pack": [
+          {
+            "title": "Star Trek (2009)",
+            "resolution": "UHD",
+            "year": 2009,
+            "imdb": {
+              "id": "tt0796366",
+              "rating": 7.9,
+              "votes": 643042,
+              "cast": [
+                "Chris Pine",
+                "Zachary Quinto",
+                "Simon Pegg",
+                "Leonard Nimoy",
+                "Eric Bana"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ]
+            }
+          },
+          {
+            "title": "Star Trek Into Darkness",
+            "resolution": "UHD",
+            "year": 2013,
+            "imdb": {
+              "id": "tt1408101",
+              "rating": 7.7,
+              "votes": 513923,
+              "cast": [
+                "Chris Pine",
+                "Zachary Quinto",
+                "Zoe Saldaña",
+                "Benedict Cumberbatch",
+                "Leonard Nimoy"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ]
+            }
+          },
+          {
+            "title": "Star Trek Beyond",
+            "resolution": "UHD",
+            "year": 2016,
+            "imdb": {
+              "id": "tt2660888",
+              "rating": 7,
+              "votes": 273069,
+              "cast": [
+                "Chris Pine",
+                "Zachary Quinto",
+                "Karl Urban",
+                "Zoe Saldaña",
+                "Simon Pegg"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/845e8671999727cb255c6584ce16b3900ef894e7c7ffd05cff3051514c3b4e0b"
+      },
+      {
+        "title": "3 Christmas Classics",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Scrooge",
+            "resolution": "HD",
+            "year": 1970,
+            "runtime": 114,
+            "imdb": {
+              "id": "tt0066344",
+              "rating": 7.5,
+              "votes": 14161,
+              "cast": [
+                "Albert Finney",
+                "Alec Guinness",
+                "Edith Evans",
+                "Kenneth More",
+                "Laurence Naismith"
+              ],
+              "genres": [
+                "Drama",
+                "Family",
+                "Fantasy"
+              ]
+            }
+          },
+          {
+            "title": "White Christmas",
+            "resolution": "HD",
+            "year": 1954,
+            "imdb": {
+              "id": "tt0047673",
+              "rating": 7.6,
+              "votes": 57522,
+              "cast": [
+                "Bing Crosby",
+                "Danny Kaye",
+                "Rosemary Clooney",
+                "Vera-Ellen",
+                "Dean Jagger"
+              ],
+              "genres": [
+                "Comedy",
+                "Musical",
+                "Romance"
+              ]
+            }
+          },
+          {
+            "title": "It's A Wonderful Life",
+            "resolution": "HD",
+            "year": 1947,
+            "imdb": {
+              "id": "tt0038650",
+              "rating": 8.6,
+              "votes": 563486,
+              "cast": [
+                "James Stewart",
+                "Donna Reed",
+                "Lionel Barrymore",
+                "Thomas Mitchell",
+                "Henry Travers"
+              ],
+              "genres": [
+                "Drama",
+                "Family",
+                "Fantasy"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/3119ee1466686b6911ae15452a877fbcb6f6bd5c72cbe3d252af8988d4f69f5e"
+      },
+      {
+        "title": "Grease Triple Feature",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Grease (1978)",
+            "resolution": "HD",
+            "year": 1978,
+            "imdb": {
+              "id": "tt0077631",
+              "rating": 7.2,
+              "votes": 331804,
+              "cast": [
+                "John Travolta",
+                "Olivia Newton-John",
+                "Stockard Channing",
+                "Jeff Conaway",
+                "Barry Pearl"
+              ],
+              "genres": [
+                "Comedy",
+                "Musical",
+                "Romance"
+              ]
+            }
+          },
+          {
+            "title": "Grease 2",
+            "resolution": "HD",
+            "year": 1982,
+            "imdb": {
+              "id": "tt0084021",
+              "rating": 4.6,
+              "votes": 41997,
+              "cast": [
+                "Michelle Pfeiffer",
+                "Maxwell Caulfield",
+                "Lorna Luft",
+                "Maureen Teefy",
+                "Alison Price"
+              ],
+              "genres": [
+                "Comedy",
+                "Music",
+                "Musical"
+              ]
+            }
+          },
+          {
+            "title": "Grease Live!",
+            "resolution": "HD",
+            "year": 2016,
+            "imdb": {
+              "id": "tt4366830",
+              "rating": 7.2,
+              "votes": 10392,
+              "cast": [
+                "Julianne Hough",
+                "Aaron Tveit",
+                "Vanessa Hudgens",
+                "Keke Palmer",
+                "Carly Rae Jepsen"
+              ],
+              "genres": [
+                "Comedy",
+                "Musical",
+                "Romance"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/ebe68710ab707ad0075cde0cff3d539059a4c714d75fe686ff987e7e7ea681ee"
+      },
+      {
+        "title": "Ladies Night In 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Book Club",
+            "resolution": "HD",
+            "year": 2018,
+            "imdb": {
+              "id": "tt6857166",
+              "rating": 6.1,
+              "votes": 35369,
+              "cast": [
+                "Diane Keaton",
+                "Jane Fonda",
+                "Candice Bergen",
+                "Mary Steenburgen",
+                "Andy Garcia"
+              ],
+              "genres": [
+                "Comedy",
+                "Drama",
+                "Romance"
+              ]
+            }
+          },
+          {
+            "title": "The First Wives Club",
+            "resolution": "HD",
+            "year": 1996,
+            "imdb": {
+              "id": "tt0116313",
+              "rating": 6.5,
+              "votes": 61298,
+              "cast": [
+                "Goldie Hawn",
+                "Bette Midler",
+                "Diane Keaton",
+                "Maggie Smith",
+                "Sarah Jessica Parker"
+              ],
+              "genres": [
+                "Comedy"
+              ]
+            }
+          },
+          {
+            "title": "Soapdish",
+            "resolution": "HD",
+            "year": 1991,
+            "imdb": {
+              "id": "tt0102951",
+              "rating": 6.6,
+              "votes": 19139,
+              "cast": [
+                "Sally Field",
+                "Kevin Kline",
+                "Cathy Moriarty",
+                "Teri Hatcher",
+                "Robert Downey Jr."
+              ],
+              "genres": [
+                "Comedy",
+                "Romance"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/1da8b1800e76ebfccfd9350a14d8b2741ee660c28ffc43a23b32f724f5261d39"
+      },
+      {
+        "title": "Road Trip Triple Feature",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Road Trip",
+            "resolution": "HD",
+            "year": 2000,
+            "imdb": {
+              "id": "tt0215129",
+              "rating": 6.5,
+              "votes": 191047,
+              "cast": [
+                "Breckin Meyer",
+                "Seann William Scott",
+                "Amy Smart",
+                "Paulo Costanzo",
+                "DJ Qualls"
+              ],
+              "genres": [
+                "Comedy"
+              ]
+            }
+          },
+          {
+            "title": "Road Trip: Beer Pong",
+            "resolution": "HD",
+            "year": 2009,
+            "runtime": 95
+          },
+          {
+            "title": "Eurotrip",
+            "resolution": "HD",
+            "year": 2004,
+            "imdb": {
+              "id": "tt0356150",
+              "rating": 6.6,
+              "votes": 249182,
+              "cast": [
+                "Scott Mechlowicz",
+                "Jacob Pitts",
+                "Michelle Trachtenberg",
+                "Travis Wester",
+                "Kristin Kreuk"
+              ],
+              "genres": [
+                "Comedy"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/f46a6b0e86cdfd3459f694c3205e59be5f0cdca4da56956723a073ffcc54b848"
+      },
+      {
+        "title": "Rap Pack 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Hustle & Flow",
+            "resolution": "HD",
+            "year": 2005,
+            "imdb": {
+              "id": "tt0410097",
+              "rating": 7.3,
+              "votes": 46121,
+              "cast": [
+                "Terrence Howard",
+                "Ludacris",
+                "Anthony Anderson",
+                "Taryn Manning",
+                "Taraji P. Henson"
+              ],
+              "genres": [
+                "Crime",
+                "Drama",
+                "Music"
+              ]
+            }
+          },
+          {
+            "title": "Juice",
+            "resolution": "HD",
+            "year": 1992,
+            "imdb": {
+              "id": "tt0104573",
+              "rating": 7,
+              "votes": 34123,
+              "cast": [
+                "Omar Epps",
+                "Tupac Shakur",
+                "Jermaine Hopkins",
+                "Khalil Kain",
+                "Cindy Herron"
+              ],
+              "genres": [
+                "Action",
+                "Crime",
+                "Drama"
+              ]
+            }
+          },
+          {
+            "title": "Get Rich or Die Tryin'",
+            "resolution": "HD",
+            "year": 2005,
+            "imdb": {
+              "id": "tt0430308",
+              "rating": 5.6,
+              "votes": 55165,
+              "cast": [
+                "50 Cent",
+                "Joy Bryant",
+                "Adewale Akinnuoye-Agbaje",
+                "Omar Benson Miller",
+                "Tory Kittles"
+              ],
+              "genres": [
+                "Biography",
+                "Crime",
+                "Drama"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/93e9ad6b7f25e2aefb7b40279dc06079bbb08ab4bd2716830e0794c96f41a498"
+      },
+      {
+        "title": "Martin Scorsese 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "pack": [
+          {
+            "title": "The Wolf of Wall Street",
+            "resolution": "UHD",
+            "year": 2014,
+            "imdb": {
+              "id": "tt0993846",
+              "rating": 8.2,
+              "votes": 1839168,
+              "cast": [
+                "Leonardo DiCaprio",
+                "Jonah Hill",
+                "Margot Robbie",
+                "Matthew McConaughey",
+                "Kyle Chandler"
+              ],
+              "genres": [
+                "Biography",
+                "Comedy",
+                "Crime"
+              ]
+            }
+          },
+          {
+            "title": "Shutter Island",
+            "resolution": "UHD",
+            "year": 2010,
+            "imdb": {
+              "id": "tt1130884",
+              "rating": 8.2,
+              "votes": 1698239,
+              "cast": [
+                "Leonardo DiCaprio",
+                "Emily Mortimer",
+                "Mark Ruffalo",
+                "Ben Kingsley",
+                "Max von Sydow"
+              ],
+              "genres": [
+                "Mystery",
+                "Thriller"
+              ]
+            }
+          },
+          {
+            "title": "Bringing Out the Dead",
+            "resolution": "UHD",
+            "year": 1999,
+            "imdb": {
+              "id": "tt0163988",
+              "rating": 6.9,
+              "votes": 82380,
+              "cast": [
+                "Nicolas Cage",
+                "Patricia Arquette",
+                "John Goodman",
+                "Ving Rhames",
+                "Tom Sizemore"
+              ],
+              "genres": [
+                "Drama",
+                "Thriller"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/e2a145743937c5d39b36450d72863fb84337e69304df25c0e8d4206172cbee3c"
+      },
+      {
+        "title": "Coen Brothers 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "No Country for Old Men",
+            "resolution": "HD",
+            "year": 2007,
+            "imdb": {
+              "id": "tt0477348",
+              "rating": 8.2,
+              "votes": 1222822,
+              "cast": [
+                "Tommy Lee Jones",
+                "Javier Bardem",
+                "Josh Brolin",
+                "Woody Harrelson",
+                "Kelly Macdonald"
+              ],
+              "genres": [
+                "Crime",
+                "Drama",
+                "Thriller"
+              ]
+            }
+          },
+          {
+            "title": "True Grit",
+            "resolution": "HD",
+            "year": 2010,
+            "imdb": {
+              "id": "tt1403865",
+              "rating": 7.6,
+              "votes": 380679,
+              "cast": [
+                "Jeff Bridges",
+                "Matt Damon",
+                "Hailee Steinfeld",
+                "Josh Brolin",
+                "Barry Pepper"
+              ],
+              "genres": [
+                "Drama",
+                "Western"
+              ]
+            }
+          },
+          {
+            "title": "Inside Llewyn Davis",
+            "resolution": "HD",
+            "year": 2014,
+            "imdb": {
+              "id": "tt2042568",
+              "rating": 7.4,
+              "votes": 173851,
+              "cast": [
+                "Oscar Isaac",
+                "Carey Mulligan",
+                "John Goodman",
+                "Garrett Hedlund",
+                "Justin Timberlake"
+              ],
+              "genres": [
+                "Drama",
+                "Music"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/d358455daa95d60ba9f582b0894167c1488ce035e9780668944d4271481ae06f"
+      },
+      {
+        "title": "Morgan Freeman 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Along Came A Spider",
+            "resolution": "HD",
+            "year": 2001,
+            "imdb": {
+              "id": "tt0164334",
+              "rating": 6.4,
+              "votes": 105729,
+              "cast": [
+                "Morgan Freeman",
+                "Michael Wincott",
+                "Monica Potter",
+                "Dylan Baker",
+                "Mika Boorem"
+              ],
+              "genres": [
+                "Crime",
+                "Drama",
+                "Mystery"
+              ]
+            }
+          },
+          {
+            "title": "Kiss the Girls",
+            "resolution": "HD",
+            "year": 1997,
+            "imdb": {
+              "id": "tt0119468",
+              "rating": 6.6,
+              "votes": 102138,
+              "cast": [
+                "Morgan Freeman",
+                "Ashley Judd",
+                "Cary Elwes",
+                "Alex McArthur",
+                "Tony Goldwyn"
+              ],
+              "genres": [
+                "Crime",
+                "Drama",
+                "Mystery"
+              ]
+            }
+          },
+          {
+            "title": "The Sum of All Fears",
+            "resolution": "HD",
+            "year": 2002,
+            "imdb": {
+              "id": "tt0164184",
+              "rating": 6.5,
+              "votes": 135980,
+              "cast": [
+                "Ben Affleck",
+                "Morgan Freeman",
+                "Ian Mongrain",
+                "Russell Bobbitt",
+                "James Cromwell"
+              ],
+              "genres": [
+                "Action",
+                "Drama",
+                "Thriller"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/4283048a44d2dbc56c681c6dc320d65d3ac30981094cc56786bb71786fe7061b"
+      },
+      {
+        "title": "The Natural Disaster 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Hard Rain",
+            "resolution": "HD",
+            "year": 1998,
+            "imdb": {
+              "id": "tt0120696",
+              "rating": 5.9,
+              "votes": 39030,
+              "cast": [
+                "Morgan Freeman",
+                "Christian Slater",
+                "Randy Quaid",
+                "Minnie Driver",
+                "Edward Asner"
+              ],
+              "genres": [
+                "Action",
+                "Crime",
+                "Drama"
+              ]
+            }
+          },
+          {
+            "title": "Deep Impact",
+            "resolution": "HD",
+            "year": 1998,
+            "imdb": {
+              "id": "tt0120647",
+              "rating": 6.3,
+              "votes": 208773,
+              "cast": [
+                "Robert Duvall",
+                "Téa Leoni",
+                "Elijah Wood",
+                "Morgan Freeman",
+                "Vanessa Redgrave"
+              ],
+              "genres": [
+                "Action",
+                "Drama",
+                "Sci-Fi"
+              ]
+            }
+          },
+          {
+            "title": "The Core",
+            "resolution": "HD",
+            "year": 2003,
+            "imdb": {
+              "id": "tt0298814",
+              "rating": 5.6,
+              "votes": 117909,
+              "cast": [
+                "Aaron Eckhart",
+                "Hilary Swank",
+                "Delroy Lindo",
+                "Bruce Greenwood",
+                "Christopher Shyer"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/51e4e89c951e78c14a15f51289a97d37d2630346da53865ea552cbe30b7e3bc8"
+      },
+      {
+        "title": "G.I. JOE 3-MOVIE COLLECTION",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "pack": [
+          {
+            "title": "G.I. Joe: The Rise of Cobra",
+            "resolution": "UHD",
+            "year": 2009,
+            "imdb": {
+              "id": "tt1046173",
+              "rating": 5.7,
+              "votes": 223176,
+              "cast": [
+                "Dennis Quaid",
+                "Channing Tatum",
+                "Marlon Wayans",
+                "Adewale Akinnuoye-Agbaje",
+                "Christopher Eccleston"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ]
+            }
+          },
+          {
+            "title": "G.I. Joe: Retaliation",
+            "resolution": "UHD",
+            "year": 2013,
+            "imdb": {
+              "id": "tt1583421",
+              "rating": 5.7,
+              "votes": 194599,
+              "cast": [
+                "Dwayne Johnson",
+                "Channing Tatum",
+                "Adrianne Palicki",
+                "Lee Byung-hun",
+                "Jonathan Pryce"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ]
+            }
+          },
+          {
+            "title": "Snake Eyes: G.I. Joe Origins",
+            "resolution": "UHD",
+            "year": 2021,
+            "imdb": {
+              "id": "tt8404256",
+              "rating": 5.4,
+              "votes": 49443,
+              "cast": [
+                "Henry Golding",
+                "Andrew Koji",
+                "Haruka Abe",
+                "Takehiro Hira",
+                "Eri Ishida"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Crime"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/cb4cb8d372e950285e047ba741f34a20dfc9e460aa243b4b2156ef52f7474e84"
+      },
+      {
+        "title": "The Crow 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "The Crow",
+            "resolution": "HD",
+            "year": 1994,
+            "imdb": {
+              "id": "tt0109506",
+              "rating": 7.5,
+              "votes": 235229,
+              "cast": [
+                "Brandon Lee",
+                "Michael Wincott",
+                "Rochelle Davis",
+                "Ernie Hudson",
+                "Bai Ling"
+              ],
+              "genres": [
+                "Action",
+                "Crime",
+                "Drama"
+              ]
+            }
+          },
+          {
+            "title": "The Crow: City Of Angels",
+            "resolution": "HD",
+            "year": 1996,
+            "imdb": {
+              "id": "tt0115986",
+              "rating": 4.6,
+              "votes": 23724,
+              "cast": [
+                "Vincent Perez",
+                "Mia Kirshner",
+                "Richard Brooks",
+                "Iggy Pop",
+                "Thomas Jane"
+              ],
+              "genres": [
+                "Action",
+                "Crime",
+                "Fantasy"
+              ]
+            }
+          },
+          {
+            "title": "The Crow: Wicked Prayer",
+            "resolution": "HD",
+            "year": 2005,
+            "imdb": {
+              "id": "tt0353324",
+              "rating": 3,
+              "votes": 10630,
+              "cast": [
+                "Yuji Okumoto",
+                "Marcus Chong",
+                "Tito Ortiz",
+                "Tara Reid",
+                "David Boreanaz"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Comedy"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/537f39127f6b2beef1f00754345e886028c7bbd069250d13564233798faadce5"
+      },
+      {
+        "title": "From Dusk Till Dawn Trilogy",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "From Dusk Till Dawn",
+            "resolution": "HD",
+            "year": 1996,
+            "imdb": {
+              "id": "tt0116367",
+              "rating": 7.2,
+              "votes": 378067,
+              "cast": [
+                "Harvey Keitel",
+                "George Clooney",
+                "Juliette Lewis",
+                "Quentin Tarantino",
+                "Ernest Liu"
+              ],
+              "genres": [
+                "Action",
+                "Crime",
+                "Horror"
+              ]
+            }
+          },
+          {
+            "title": "From Dusk Till Dawn 2: Texas Blood Money",
+            "resolution": "HD",
+            "year": 1999,
+            "runtime": 88
+          },
+          {
+            "title": "From Dusk Till Dawn 3: The Hangman's Daughter",
+            "resolution": "HD",
+            "year": 2000,
+            "runtime": 94,
+            "imdb": {
+              "id": "tt0120695",
+              "rating": 4.8,
+              "votes": 13731,
+              "manual": true,
+              "cast": [
+                "Marco Leonardi",
+                "Michael Parks",
+                "Ara Celi",
+                "Jordana Spiro",
+                "Lennie Loftin"
+              ],
+              "genres": [
+                "Horror",
+                "Thriller",
+                "Western"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/3e985c7f4b545ad1713767af715d7e6183b1f587ecfe0c004e85e63c35f2fc66"
+      },
+      {
+        "title": "A Quiet Place 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "year": 2024,
+        "image": "https://img.fanflix.co/PARAMOUNT/3c5927ba1b0ba22235c16ff54d03dac4f91d6f165b3da79a28e203a5e9f2e4b1"
+      },
+      {
+        "title": "Halloween 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "pack": [
+          {
+            "title": "Halloween H20: 20 Years Later",
+            "resolution": "UHD",
+            "year": 1998,
+            "imdb": {
+              "id": "tt0120694",
+              "rating": 5.8,
+              "votes": 90901,
+              "cast": [
+                "Jamie Lee Curtis",
+                "Josh Hartnett",
+                "Adam Arkin",
+                "Michelle Williams",
+                "Adam Hann-Byrd"
+              ],
+              "genres": [
+                "Horror",
+                "Thriller"
+              ]
+            }
+          },
+          {
+            "title": "Halloween VI: The Curse of Michael Myers",
+            "resolution": "UHD",
+            "year": 1995
+          },
+          {
+            "title": "Halloween: Resurrection",
+            "resolution": "UHD",
+            "year": 2002,
+            "imdb": {
+              "id": "tt0220506",
+              "rating": 3.9,
+              "votes": 55456,
+              "cast": [
+                "Jamie Lee Curtis",
+                "Busta Rhymes",
+                "Brad Loree",
+                "Bianca Kajlich",
+                "Sean Patrick Thomas"
+              ],
+              "genres": [
+                "Horror",
+                "Thriller"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/a824552ed4058d56a652df62cf541d8a93dc8da2ae3a53f32a2e24282f13dc4f"
+      },
+      {
+        "title": "Dracula 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Wes Craven Presents: Dracula 2000",
+            "resolution": "HD",
+            "year": 2000
+          },
+          {
+            "title": "Dracula II: Ascension",
+            "resolution": "HD",
+            "year": 2003
+          },
+          {
+            "title": "Dracula III: Legacy",
+            "resolution": "HD",
+            "year": 2004,
+            "runtime": 91
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/f9bd473a885f9bcc02764641177dccf9851b1e2225a57c388fb0dc5f4d14fbf8"
+      },
+      {
+        "title": "The Ring 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "pack": [
+          {
+            "title": "The Ring",
+            "resolution": "UHD",
+            "year": 2002,
+            "imdb": {
+              "id": "tt0298130",
+              "rating": 7.1,
+              "votes": 409736,
+              "cast": [
+                "Naomi Watts",
+                "Martin Henderson",
+                "Brian Cox",
+                "David Dorfman",
+                "Jane Alexander"
+              ],
+              "genres": [
+                "Horror",
+                "Mystery"
+              ]
+            }
+          },
+          {
+            "title": "The Ring Two",
+            "resolution": "UHD",
+            "year": 2005,
+            "runtime": 110,
+            "imdb": {
+              "id": "tt0377109",
+              "rating": 5.4,
+              "votes": 107340,
+              "cast": [
+                "Naomi Watts",
+                "David Dorfman",
+                "Sissy Spacek",
+                "Simon Baker",
+                "Elizabeth Perkins"
+              ],
+              "genres": [
+                "Horror",
+                "Mystery"
+              ]
+            }
+          },
+          {
+            "title": "Rings",
+            "resolution": "UHD",
+            "year": 2017,
+            "imdb": {
+              "id": "tt0498381",
+              "rating": 4.5,
+              "votes": 46621,
+              "cast": [
+                "Matilda Lutz",
+                "Alex Roe",
+                "Johnny Galecki",
+                "Vincent D'Onofrio",
+                "Aimee Teegarden"
+              ],
+              "genres": [
+                "Drama",
+                "Horror",
+                "Mystery"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/07e02aefc9bb58786e68aada4df6244579c529d36e4c0cae70c6ed74d4426e55"
+      },
+      {
+        "title": "Mimic 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Mimic: The Director's Cut",
+            "resolution": "HD",
+            "year": 1998,
+            "imdb": {
+              "id": "tt0119675",
+              "rating": 6,
+              "votes": 61237,
+              "cast": [
+                "Mira Sorvino",
+                "Jeremy Northam",
+                "Alexander Goodwin",
+                "Giancarlo Giannini",
+                "Charles S. Dutton"
+              ],
+              "genres": [
+                "Horror",
+                "Sci-Fi"
+              ]
+            }
+          },
+          {
+            "title": "Mimic 2",
+            "resolution": "HD",
+            "year": 2001,
+            "runtime": 82
+          },
+          {
+            "title": "Mimic 3: Sentinel",
+            "resolution": "HD",
+            "year": 2003,
+            "runtime": 77
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/02091c9223294689be7230385d406d7f6e898f6a41454f8c4e9b584304e28402"
+      },
+      {
+        "title": "Sherlock Holmes 13-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Sherlock Holmes In Terror by Night",
+            "resolution": "HD",
+            "year": 1946,
+            "runtime": 60
+          },
+          {
+            "title": "Sherlock Holmes in Dressed to Kill",
+            "resolution": "HD",
+            "year": 1946,
+            "runtime": 72
+          },
+          {
+            "title": "Sherlock Holmes and The Woman in Green",
+            "resolution": "HD",
+            "year": 1945,
+            "runtime": 68
+          },
+          {
+            "title": "Sherlock Holmes in The House of Fear",
+            "resolution": "HD",
+            "year": 1945,
+            "runtime": 69
+          },
+          {
+            "title": "Sherlock Holmes and the Pearl of Death",
+            "resolution": "HD",
+            "year": 1944,
+            "runtime": 69
+          },
+          {
+            "title": "Sherlock Holmes and the Spider Woman",
+            "resolution": "HD",
+            "year": 1944,
+            "runtime": 63
+          },
+          {
+            "title": "Sherlock Holmes and the Scarlet Claw",
+            "resolution": "HD",
+            "year": 1944,
+            "runtime": 74
+          },
+          {
+            "title": "Sherlock Holmes and the Secret Weapon",
+            "resolution": "HD",
+            "year": 1943,
+            "runtime": 80,
+            "imdb": {
+              "id": "tt0035317",
+              "rating": 6.5,
+              "votes": 7499,
+              "cast": [
+                "Basil Rathbone",
+                "Nigel Bruce",
+                "Lionel Atwill",
+                "Karen Verne",
+                "William Post Jr."
+              ],
+              "genres": [
+                "Adventure",
+                "Crime",
+                "Drama"
+              ]
+            }
+          },
+          {
+            "title": "Sherlock Holmes Faces Death",
+            "resolution": "HD",
+            "year": 1943,
+            "runtime": 68,
+            "imdb": {
+              "id": "tt0036348",
+              "rating": 6.9,
+              "votes": 5865,
+              "cast": [
+                "Basil Rathbone",
+                "Nigel Bruce",
+                "Dennis Hoey",
+                "Arthur Margetson",
+                "Hillary Brooke"
+              ],
+              "genres": [
+                "Crime",
+                "Horror",
+                "Mystery"
+              ]
+            }
+          },
+          {
+            "title": "Sherlock Holmes in Washington",
+            "resolution": "HD",
+            "year": 1943,
+            "runtime": 71,
+            "imdb": {
+              "id": "tt0036349",
+              "rating": 6.6,
+              "votes": 5394,
+              "cast": [
+                "Basil Rathbone",
+                "Nigel Bruce",
+                "Marjorie Lord",
+                "Henry Daniell",
+                "George Zucco"
+              ],
+              "genres": [
+                "Horror",
+                "Mystery",
+                "Thriller"
+              ]
+            }
+          },
+          {
+            "title": "Sherlock Holmes and the Voice of Terror",
+            "resolution": "HD",
+            "year": 1943,
+            "runtime": 65,
+            "imdb": {
+              "id": "tt0035318",
+              "rating": 6.4,
+              "votes": 5888,
+              "cast": [
+                "Basil Rathbone",
+                "Nigel Bruce",
+                "Evelyn Ankers",
+                "Reginald Denny",
+                "Thomas Gomez"
+              ],
+              "genres": [
+                "Crime",
+                "Horror",
+                "Mystery"
+              ]
+            }
+          },
+          {
+            "title": "Sherlock Holmes and The Hound of The Baskervilles",
+            "resolution": "HD",
+            "year": 1939,
+            "runtime": 100
+          },
+          {
+            "title": "The Adventures of Sherlock Holmes",
+            "resolution": "HD",
+            "year": 1939,
+            "runtime": 82,
+            "imdb": {
+              "id": "tt0031022",
+              "rating": 7.2,
+              "votes": 8368,
+              "cast": [
+                "Basil Rathbone",
+                "Nigel Bruce",
+                "Ida Lupino",
+                "Alan Marshal",
+                "Terry Kilburn"
+              ],
+              "genres": [
+                "Crime",
+                "Mystery",
+                "Thriller"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/c57717fca295797778264f3f6a0c7cbc357eccf7dea2a6117d93eb38dc034784"
+      },
+      {
+        "title": "Sonic the Hedgehog 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "year": 2025,
+        "runtime": 331,
+        "image": "https://img.fanflix.co/PARAMOUNT/3fdc10987115b6c5ee5f38387721445aee82a2266e4e2593bc0ad8851efab19e"
+      },
+      {
+        "title": "Spy Kids 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "HD",
+        "pack": [
+          {
+            "title": "Spy Kids",
+            "resolution": "HD",
+            "year": 2001,
+            "imdb": {
+              "id": "tt0227538",
+              "rating": 5.7,
+              "votes": 138300,
+              "cast": [
+                "Alexa PenaVega",
+                "Daryl Sabara",
+                "Antonio Banderas",
+                "Carla Gugino",
+                "Alan Cumming"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Comedy"
+              ]
+            }
+          },
+          {
+            "title": "Spy Kids 2: The Island Of Lost Dreams",
+            "resolution": "HD",
+            "year": 2002
+          },
+          {
+            "title": "Spy Kids 3: Game Over",
+            "resolution": "HD",
+            "year": 2003,
+            "imdb": {
+              "id": "tt0338459",
+              "rating": 4.4,
+              "votes": 72658,
+              "cast": [
+                "Daryl Sabara",
+                "Alexa PenaVega",
+                "Antonio Banderas",
+                "Carla Gugino",
+                "Ricardo Montalban"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Comedy"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/1066af495b1202091155231fd934791fdef80e40ae4c293c23f03bb52eda6120"
+      },
+      {
+        "title": "Rugrats 3-Movie Collection",
+        "price": "$7.50",
+        "resolution": "UHD",
+        "pack": [
+          {
+            "title": "The Rugrats Movie",
+            "resolution": "UHD",
+            "year": 1998,
+            "imdb": {
+              "id": "tt0134067",
+              "rating": 6,
+              "votes": 22260,
+              "cast": [
+                "Elizabeth Daily",
+                "Christine Cavanaugh",
+                "Kath Soucie",
+                "Melanie Chartoff",
+                "Phil Proctor"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ]
+            }
+          },
+          {
+            "title": "Rugrats In Paris",
+            "resolution": "UHD",
+            "year": 2000,
+            "imdb": {
+              "id": "tt0213203",
+              "rating": 6.2,
+              "votes": 14809,
+              "cast": [
+                "Christine Cavanaugh",
+                "Elizabeth Daily",
+                "Cheryl Chase",
+                "Tara Strong",
+                "Cree Summer"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ]
+            }
+          },
+          {
+            "title": "Rugrats Go Wild",
+            "resolution": "UHD",
+            "year": 2003,
+            "imdb": {
+              "id": "tt0337711",
+              "rating": 5.6,
+              "votes": 9777,
+              "cast": [
+                "Jodi Carlisle",
+                "Lacey Chabert",
+                "Tim Curry",
+                "Elizabeth Daily",
+                "Nancy Cartwright"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ]
+            }
+          }
+        ],
+        "image": "https://img.fanflix.co/PARAMOUNT/7be710e75f58cbd83984cabe7e04f1d81da08942dc43c698fe93332058d6d23a"
       }
     ]
   }
