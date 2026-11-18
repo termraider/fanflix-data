@@ -72741,14 +72741,50 @@
         "price": "$3.00",
         "resolution": "HD",
         "year": 2006,
-        "image": "https://img.fanflix.co/martwork/wb/9f73d5e1-1bb2-43f8-9b7a-1dad2093ca61-2x3.png"
+        "image": "https://img.fanflix.co/martwork/wb/9f73d5e1-1bb2-43f8-9b7a-1dad2093ca61-2x3.png",
+        "imdb": {
+          "id": "tt0896522",
+          "rating": 6.3,
+          "votes": 1726,
+          "manual": true,
+          "cast": [
+            "Joe Alaskey",
+            "Bob Bergen",
+            "Billy West",
+            "June Foray",
+            "Maurice LaMarche"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "Looney Tunes: Rabbits Run",
         "price": "$3.00",
         "resolution": "HD",
         "year": 2015,
-        "image": "https://img.fanflix.co/martwork/wb/92b3ffb7-6a12-4127-9a7b-bae8fe1612f5-2x3.png"
+        "image": "https://img.fanflix.co/martwork/wb/92b3ffb7-6a12-4127-9a7b-bae8fe1612f5-2x3.png",
+        "imdb": {
+          "id": "tt4840666",
+          "rating": 5.7,
+          "votes": 1338,
+          "manual": true,
+          "cast": [
+            "Fred Armisen",
+            "Bob Bergen",
+            "Jeff Bergman",
+            "Jess Harnell",
+            "Damon Jones"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "The New Looney Tunes: Season 1, Part 2",
@@ -72880,7 +72916,25 @@
         "price": "$3.00",
         "resolution": "HD",
         "year": 1982,
-        "image": "https://img.fanflix.co/martwork/wb/d700eee3-9600-4135-b953-48f2be67cd08-2x3.png"
+        "image": "https://img.fanflix.co/martwork/wb/d700eee3-9600-4135-b953-48f2be67cd08-2x3.png",
+        "imdb": {
+          "id": "tt0083701",
+          "rating": 7,
+          "votes": 2483,
+          "manual": true,
+          "cast": [
+            "Mel Blanc",
+            "Arthur Q. Bryan",
+            "Shepard Menken",
+            "Lennie Weinrib",
+            "Bea Benaderet"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "The Looney, Looney, Looney Bugs Bunny Movie",
@@ -72911,7 +72965,24 @@
         "price": "$3.00",
         "resolution": "HD",
         "year": 1979,
-        "image": "https://img.fanflix.co/martwork/wb/7d4fdedf-0966-4270-8748-674631571004-2x3.png"
+        "image": "https://img.fanflix.co/martwork/wb/7d4fdedf-0966-4270-8748-674631571004-2x3.png",
+        "imdb": {
+          "id": "tt0078915",
+          "rating": 7.3,
+          "votes": 4879,
+          "manual": true,
+          "cast": [
+            "Mel Blanc",
+            "Arthur Q. Bryan",
+            "Nicolai Shutorev",
+            "Joan Gerber"
+          ],
+          "genres": [
+            "Animation",
+            "Comedy",
+            "Family"
+          ]
+        }
       },
       {
         "title": "Looney Tunes Cartoons: Season 1",
@@ -73127,14 +73198,50 @@
         "price": "$3.00",
         "resolution": "HD",
         "year": 2022,
-        "image": "https://img.fanflix.co/martwork/6765cec7fda82d577ca439c8d2db6880b9af6a6d26d4755c441d10e2e6056831"
+        "image": "https://img.fanflix.co/martwork/6765cec7fda82d577ca439c8d2db6880b9af6a6d26d4755c441d10e2e6056831",
+        "imdb": {
+          "id": "tt18951472",
+          "rating": 5.2,
+          "votes": 459,
+          "manual": true,
+          "cast": [
+            "Eric Bauza",
+            "Flula Borg",
+            "Carlease Burke",
+            "Jon Daly",
+            "Regi Davis"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "Tweety's High Flying Adventure",
         "price": "$3.00",
         "resolution": "HD",
         "year": 2000,
-        "image": "https://img.fanflix.co/martwork/wb/054483da-0f01-48ab-a9ed-3e947d274f93-2x3.png"
+        "image": "https://img.fanflix.co/martwork/wb/054483da-0f01-48ab-a9ed-3e947d274f93-2x3.png",
+        "imdb": {
+          "id": "tt0248575",
+          "rating": 5.7,
+          "votes": 996,
+          "manual": true,
+          "cast": [
+            "Joe Alaskey",
+            "June Foray",
+            "Julie Bernstein",
+            "Steven Bernstein",
+            "Elizabeth Lamers"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "The Sylvester and Tweety Mysteries: The Complete Series",
@@ -73174,14 +73281,50 @@
         "price": "$3.00",
         "resolution": "HD",
         "year": 2002,
-        "image": "https://img.fanflix.co/WB/4d64c616a564efa6f7d830a844faf844035fca7e9bc3d5139e7426b931ab7290"
+        "image": "https://img.fanflix.co/WB/4d64c616a564efa6f7d830a844faf844035fca7e9bc3d5139e7426b931ab7290",
+        "imdb": {
+          "id": "tt0338580",
+          "rating": 6.2,
+          "votes": 6140,
+          "manual": true,
+          "cast": [
+            "Sam Vincent",
+            "Terry Klassen",
+            "Britt McKillip",
+            "Ian James Corlett",
+            "June Foray"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "Baby Looney Tunes: Volume 2",
         "price": "$3.00",
         "resolution": "HD",
         "year": 2002,
-        "image": "https://img.fanflix.co/WB/2a94786d4a4b80b85b813d732deb8bbae9a53242e22acd1215b298bc25744c4c"
+        "image": "https://img.fanflix.co/WB/2a94786d4a4b80b85b813d732deb8bbae9a53242e22acd1215b298bc25744c4c",
+        "imdb": {
+          "id": "tt0338580",
+          "rating": 6.2,
+          "votes": 6140,
+          "manual": true,
+          "cast": [
+            "Sam Vincent",
+            "Terry Klassen",
+            "Britt McKillip",
+            "Ian James Corlett",
+            "June Foray"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       }
     ]
   },
@@ -74178,7 +74321,25 @@
         "price": "$20.00",
         "resolution": "HD",
         "year": 2019,
-        "image": "https://img.fanflix.co/WB/b61188c948a7be05a016a9f2c4f23d8d68f3cf0b95a6844ab7fe2709f73aba85"
+        "image": "https://img.fanflix.co/WB/b61188c948a7be05a016a9f2c4f23d8d68f3cf0b95a6844ab7fe2709f73aba85",
+        "imdb": {
+          "id": "tt0348914",
+          "rating": 8.6,
+          "votes": 131117,
+          "manual": true,
+          "cast": [
+            "Timothy Olyphant",
+            "Ian McShane",
+            "Molly Parker",
+            "Brad Dourif",
+            "W. Earl Brown"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "History"
+          ]
+        }
       },
       {
         "title": "The Righteous Gemstones: The Complete Series",
@@ -74352,7 +74513,25 @@
         "price": "$20.00",
         "resolution": "HD",
         "year": 2010,
-        "image": "https://img.fanflix.co/WB/94e77e0f783337935e4284b048cb194c0b9e9e415fa7a696059e216f734bf33f"
+        "image": "https://img.fanflix.co/WB/94e77e0f783337935e4284b048cb194c0b9e9e415fa7a696059e216f734bf33f",
+        "imdb": {
+          "id": "tt1592154",
+          "rating": 7.7,
+          "votes": 56770,
+          "manual": true,
+          "cast": [
+            "Maggie Q",
+            "Shane West",
+            "Lyndsy Fonseca",
+            "Aaron Stanford",
+            "Melinda Clarke"
+          ],
+          "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ]
+        }
       },
       {
         "title": "Brilliant Minds: The Complete Series",
@@ -74521,7 +74700,25 @@
         "price": "$20.00",
         "resolution": "HD",
         "year": 1993,
-        "image": "https://img.fanflix.co/WB/96d86e107b39d071d20a048bd6a2842f7adc6ef02af3a7518d5194e1a56d3044"
+        "image": "https://img.fanflix.co/WB/96d86e107b39d071d20a048bd6a2842f7adc6ef02af3a7518d5194e1a56d3044",
+        "imdb": {
+          "id": "tt0106057",
+          "rating": 6.7,
+          "votes": 29329,
+          "manual": true,
+          "cast": [
+            "Dean Cain",
+            "Teri Hatcher",
+            "Lane Smith",
+            "K Callan",
+            "Eddie Jones"
+          ],
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Drama"
+          ]
+        }
       },
       {
         "title": "The Fresh Prince of Bel-Air: The Complete Series",
@@ -74763,14 +74960,50 @@
         "price": "$20.00",
         "resolution": "HD",
         "year": 2020,
-        "image": "https://img.fanflix.co/WB/c46bdeabbd1555ee87b5b13e26ce0949b112212ce47590fcc202b7b8b8753d6d"
+        "image": "https://img.fanflix.co/WB/c46bdeabbd1555ee87b5b13e26ce0949b112212ce47590fcc202b7b8b8753d6d",
+        "imdb": {
+          "id": "tt6951546",
+          "rating": 7.7,
+          "votes": 4682,
+          "manual": true,
+          "cast": [
+            "Jess Harnell",
+            "Tress MacNeille",
+            "Rob Paulsen",
+            "Maurice LaMarche",
+            "Danny Jacobs"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       },
       {
         "title": "Steven Spielberg Presents: Pinky and the Brain: The Complete Series",
         "price": "$20.00",
         "resolution": "SD",
         "year": 1995,
-        "image": "https://img.fanflix.co/WB/101dc7869de9608b1895b1bec2aafc20ba0be4c5ef1c1e1e96e4c1a020df39db"
+        "image": "https://img.fanflix.co/WB/101dc7869de9608b1895b1bec2aafc20ba0be4c5ef1c1e1e96e4c1a020df39db",
+        "imdb": {
+          "id": "tt0112123",
+          "rating": 7.8,
+          "votes": 35658,
+          "manual": true,
+          "cast": [
+            "Maurice LaMarche",
+            "Rob Paulsen",
+            "Tress MacNeille",
+            "Frank Welker",
+            "Jeff Bennett"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ]
+        }
       }
     ]
   },
