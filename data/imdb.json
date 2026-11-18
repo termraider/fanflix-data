@@ -12422,6 +12422,11 @@
    "votes": 102792,
    "checked": "2026-11-13"
   },
+  "tt0063522": {
+   "rating": 8,
+   "votes": 263372,
+   "checked": "2026-11-18"
+  },
   "tt0076138": {
    "rating": 6.1,
    "votes": 2443,
@@ -12747,6 +12752,11 @@
    "votes": 17044,
    "checked": "2026-11-13"
   },
+  "tt0364845": {
+   "rating": 7.8,
+   "votes": 179483,
+   "checked": "2026-11-18"
+  },
   "tt0365265": {
    "rating": 5.8,
    "votes": 12815,
@@ -12872,6 +12882,11 @@
    "votes": 25066,
    "checked": "2026-11-16"
   },
+  "tt1399103": {
+   "rating": 6.2,
+   "votes": 462540,
+   "checked": "2026-11-18"
+  },
   "tt1408101": {
    "rating": 7.7,
    "votes": 513969,
@@ -12947,6 +12962,11 @@
    "votes": 54,
    "checked": "2026-11-13"
   },
+  "tt2109248": {
+   "rating": 5.6,
+   "votes": 355315,
+   "checked": "2026-11-18"
+  },
   "tt22399738": {
    "rating": 5.5,
    "votes": 2161,
@@ -12985,6 +13005,11 @@
   "tt29603959": {
    "rating": 6.5,
    "votes": 98507,
+   "checked": "2026-11-18"
+  },
+  "tt3371366": {
+   "rating": 5.2,
+   "votes": 190884,
    "checked": "2026-11-18"
   },
   "tt33763941": {
@@ -13035,6 +13060,11 @@
   "tt4840666": {
    "rating": 5.7,
    "votes": 1338,
+   "checked": "2026-11-18"
+  },
+  "tt4912910": {
+   "rating": 7.7,
+   "votes": 427263,
    "checked": "2026-11-18"
   },
   "tt5057054": {
@@ -33146,6 +33176,19 @@
     "David Straiton"
    ]
   },
+  "tt1399103": {
+   "checked": "2026-11-18",
+   "names": [
+    "Shia LaBeouf",
+    "Rosie Huntington-Whiteley",
+    "Tyrese Gibson",
+    "Josh Duhamel",
+    "John Turturro"
+   ],
+   "dir": [
+    "Michael Bay"
+   ]
+  },
   "tt1402488": {
    "checked": "2026-11-18",
    "names": [
@@ -35600,6 +35643,19 @@
     "Ariel Schulman"
    ]
   },
+  "tt2109248": {
+   "checked": "2026-11-18",
+   "names": [
+    "Mark Wahlberg",
+    "Nicola Peltz Beckham",
+    "Jack Reynor",
+    "Stanley Tucci",
+    "Kelsey Grammer"
+   ],
+   "dir": [
+    "Michael Bay"
+   ]
+  },
   "tt21103300": {
    "checked": "2026-11-18",
    "names": [
@@ -37320,6 +37376,19 @@
    ],
    "dir": [
     "Simon Verhoeven"
+   ]
+  },
+  "tt3371366": {
+   "checked": "2026-11-18",
+   "names": [
+    "Mark Wahlberg",
+    "Anthony Hopkins",
+    "Josh Duhamel",
+    "Laura Haddock",
+    "Santiago Cabrera"
+   ],
+   "dir": [
+    "Michael Bay"
    ]
   },
   "tt33763941": {
@@ -53930,6 +53999,16 @@
    "y": 2016,
    "rt": 43
   },
+  "tt1399103": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Comedy"
+   ],
+   "y": 2011,
+   "rt": 154
+  },
   "tt1402488": {
    "checked": "2026-11-18",
    "g": [
@@ -55719,6 +55798,16 @@
    "y": 2012,
    "rt": 88
   },
+  "tt2109248": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Comedy"
+   ],
+   "y": 2014,
+   "rt": 165
+  },
   "tt21103300": {
    "checked": "2026-11-18",
    "g": [
@@ -56959,6 +57048,16 @@
    ],
    "y": 2016,
    "rt": 92
+  },
+  "tt3371366": {
+   "checked": "2026-11-18",
+   "g": [
+    "Action",
+    "Adventure",
+    "Comedy"
+   ],
+   "y": 2017,
+   "rt": 154
   },
   "tt33763941": {
    "checked": "2026-11-18",
