@@ -37,7 +37,7 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:14px 0}
 .prompt-field input{flex:1;min-width:0;background:transparent;border:0;color:var(--hi);font:inherit;font-size:16px;min-height:44px;outline:none}
 .prompt-field:focus-within{outline:2px solid var(--green);outline-offset:1px}
 input::placeholder{color:var(--ph)}
-main{padding:28px 0 72px;min-height:70vh}
+main.wrap{padding-top:32px;padding-bottom:72px;min-height:70vh}
 /* buttons, badges */
 .btns{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;max-width:560px}
 .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid var(--line2);color:var(--hi);background:transparent;cursor:pointer}
@@ -178,7 +178,7 @@ footer{border-top:1px solid var(--line)}
   nav{gap:6px 18px;padding:10px 0}
   .hsearch{flex-basis:100%}
   .prompt-field{max-width:none}
-  main{padding:16px 0 48px}
+  main.wrap{padding-top:16px;padding-bottom:48px}
   .btns{grid-template-columns:1fr;max-width:none}
   .slide{display:flex;flex-direction:column-reverse;flex-wrap:nowrap;justify-content:flex-end;min-height:700px}
   .stext .btns{margin-top:0;grid-template-columns:1fr;max-width:none}
