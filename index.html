@@ -104,6 +104,12 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .tile .tp span{color:var(--dim);font-size:13px}
 .tile .hit{font-size:13px;color:var(--dim);margin-top:6px}.tile .hit b{color:var(--hi);font-weight:600}
 .tile.ended{opacity:.75}
+.b-ended{background:var(--dim);color:#050605}
+.endnote{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 16px;padding:14px 18px;border:1px dashed var(--line2);border-radius:12px;background:repeating-linear-gradient(135deg,#0A100B 0 12px,#0D140E 12px 24px);color:var(--hi);font-size:15px}
+.endnote b{background:var(--dim);color:#050605;border-radius:4px;padding:3px 10px;font-size:13px;letter-spacing:.08em}
+.endnote span{color:var(--dim)}
+.top.is-ended .art img{filter:grayscale(1);opacity:.5}
+.top.is-ended h1{color:var(--dim)}
 .morewrap{text-align:center;margin-top:24px}
 /* deal + title pages */
 .crumb{margin:0 0 20px;font-size:13px;color:var(--dim);overflow-wrap:anywhere}
@@ -667,11 +673,12 @@ function viewDeal(slug, q) {
   const render = () => {
     app.replaceChildren(
       h('p', { class: 'crumb' }, h('a', { href: '#/' }, 'deals'), ' / ', d.slug.replace(/^[a-z0-9]+-/, '')),
-      h('section', { class: 'top' },
+      d.live ? '' : h('div', { class: 'endnote', role: 'note' }, h('b', null, 'ENDED'), `This deal ended ${fmtDate(d.lastSeen)}.`, h('span', null, 'Prices below are what it cost then.')),
+      h('section', { class: 'top' + (d.live ? '' : ' is-ended') },
         h('div', { class: 'art' }, img(BASE + d.bannerFile, `${d.name} banner`, 'bimg')),
         h('div', { class: 'info' },
           h('div', { class: 'tags' },
-            d.live ? h('span', { class: 'badge b-green' }, d.endsAt ? `live · ends ${shortDate(d.endsAt)}` : 'live') : h('span', { class: 'badge b-line' }, 'ended'),
+            d.live ? h('span', { class: 'badge b-green' }, d.endsAt ? `live · ends ${shortDate(d.endsAt)}` : 'live') : h('span', { class: 'badge b-ended' }, 'ended'),
             d.hidden ? h('span', { class: 'badge b-gold' }, '🤫 hidden deal · email only') : '',
             isFlash(d) ? h('span', { class: 'badge b-red' }, 'flash sale') : null,
             h('span', { class: 'badge b-line' }, kindShort(d)),
@@ -684,7 +691,7 @@ function viewDeal(slug, q) {
             h('dt', null, 'seen'), h('dd', null, `${fmtDate(d.firstSeen)} → ${d.live ? 'now' : fmtDate(d.lastSeen)}`),
             shots.length ? [h('dt', null, 'screens'), h('dd', null, ...shots.flatMap(([n, p], k) => [k ? ' · ' : '', h('a', { href: BASE + p }, n)]))] : null),
           h('div', { class: 'btns' },
-            h('a', { class: 'btn primary', href: d.url }, d.live ? 'open on FanFlix' : 'FanFlix page (ended)'),
+            h('a', { class: d.live ? 'btn primary' : 'btn', href: d.url }, d.live ? 'open on FanFlix' : 'FanFlix page (ended)'),
             d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(d) }, 'find the Splits thread') : null))),
       h('section', { class: 'sec stats', style: 'margin-top:28px', 'aria-label': 'Price check' },
         h('div', { class: 'stat' }, h('div', { class: 'l' }, "lowest we've seen"), h('div', { class: 'n gold' }, c.low, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'cheaper than any earlier deal')),
