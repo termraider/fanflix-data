@@ -295,6 +295,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .checks.big{flex-direction:column;gap:6px}.checks.big label{font-size:17px;min-height:44px}
 .endnote a{margin-left:auto}
 .sub.warn{color:var(--accent)}
+.jump{margin:-10px 0 22px;font-size:14px}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -1627,7 +1628,7 @@ function syncCard() {
       field, h('div', { class: 'btns', style: 'margin-top:10px;max-width:none' }, copy, share || ''),
       h('p', { class: 'sub', style: 'margin-top:10px' }, 'Send it to yourself (AirDrop, Messages, email, Notes) and open it on the other device. Anyone with the link can see these lists, so keep it to yourself.'));
   } }, 'make my sync link');
-  return h('section', { class: 'card sync', style: 'margin-top:28px', 'aria-labelledby': 'sy' },
+  return h('section', { class: 'card sync', id: 'sync', style: 'margin-top:28px', 'aria-labelledby': 'sy' },
     h('p', { class: 'prompt' }, '$ sync --to another-device'), h('h2', { id: 'sy' }, 'Use your lists on another device'),
     h('ol', { class: 'steps3' },
       h('li', null, h('b', null, 'Make a link'), h('span', { class: 'sub' }, 'Your watchlist, library and follows get packed into one link. Nothing is uploaded anywhere: it’s all inside the link.')),
@@ -1843,9 +1844,10 @@ function viewLibrary(q) {
   app.replaceChildren(
     libTabs('lib'),
     ...pageHead('splitsbot@splitsbot.com:~$ ls ~/library', 'My library.', 'Movies you already own, wherever you got them. Deal pages can hide them, so you only see what you still need.'),
+    h('p', { class: 'jump' }, h('a', { href: '#/library', onclick: e => { e.preventDefault(); document.getElementById('libadd')?.scrollIntoView({ behavior: 'smooth' }); } }, '↓ add from a list'), ' · ', h('a', { href: '#/library', onclick: e => { e.preventDefault(); document.getElementById('sync')?.scrollIntoView({ behavior: 'smooth' }); } }, '↓ move to another device (sync link or sync file)')),
     h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; libLimit = 200; render(); }))),
     out,
-    h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --import'), h('h2', null, 'Add your movies from a list'),
+    h('section', { class: 'card', id: 'libadd', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --import'), h('h2', null, 'Add your movies from a list'),
       h('p', { class: 'sub', style: 'margin:-6px 0 14px' }, 'Upload an export file or paste a list. The easiest way is a CheapCharts export, but any CSV with a title column or one title per line works too. Big lists are fine (thousands of movies). Movies that haven’t been in a FanFlix deal yet are saved and added on their own when they show up.'),
       h('div', { class: 'srcs' }, ...[
         ['CheapCharts', 'Export your movie library as a CSV.', ['In CheapCharts, open your movie library and choose ', h('b', null, 'Export'), ' (CSV).', ' Upload that file here.']],
