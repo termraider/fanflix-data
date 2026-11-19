@@ -367,6 +367,12 @@ function prepare(archive, endsData) {
     t.lowByRes = {};
     for (const x of priced) if (t.lowByRes[x.resolution] == null || x.price < t.lowByRes[x.resolution]) t.lowByRes[x.resolution] = x.price;
     t.live = t.hits.some(x => x.deal.live);
+    // Cheapest price right now: on its own first; a movie that's only live inside a pack shows its per-movie pack price
+    const lowOf = xs => xs.length ? Math.min(...xs.map(x => x.price)) : null;
+    const liveSolo = lowOf(t.hits.filter(x => x.deal.live && x.price != null && !x.packName));
+    const livePack = lowOf(t.hits.filter(x => x.deal.live && x.price != null && x.packName));
+    t.liveLow = liveSolo ?? livePack;
+    t.liveInPack = liveSolo == null && livePack != null;
     t.res = new Set(t.hits.map(x => x.resolution).filter(Boolean));
     t.dealCount = new Set(t.hits.map(x => x.deal.id)).size;
   }
@@ -705,22 +711,22 @@ function viewTitles(q) {
     const rs = resSet();
     let list = all.filter(t =>
       (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) &&
-      (st.max >= 20 || (t.low != null && t.low <= st.max + 0.001)) &&
+      (st.max >= 20 || ((st.live ? t.liveLow : t.low) != null && (st.live ? t.liveLow : t.low) <= st.max + 0.001)) &&
       (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) &&
       (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
-    const S = { az: (a, b) => a.title.localeCompare(b.title), cheap: (a, b) => (a.low ?? 1e9) - (b.low ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0), deals: (a, b) => b.dealCount - a.dealCount || a.title.localeCompare(b.title) };
+    const S = { az: (a, b) => a.title.localeCompare(b.title), cheap: (a, b) => ((st.live ? a.liveLow : a.low) ?? 1e9) - ((st.live ? b.liveLow : b.low) ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0), deals: (a, b) => b.dealCount - a.dealCount || a.title.localeCompare(b.title) };
     list.sort(S[st.sort] || S.az);
     count.textContent = `${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`;
     const shown = list.slice(0, limit);
     results.replaceChildren(list.length ? h('div', { class: 'tablebox' }, h('table', null,
-      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'))),
+      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'))),
       h('tbody', { class: 'cards' }, shown.map(t => h('tr', null,
         h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))),
         h('td', null, ['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ') || '—'),
-        h('td', { class: 'num', 'data-l': 'low', style: 'color:var(--gold);font-weight:700' }, money(t.low)),
+        h('td', { class: 'num', 'data-l': 'lowest ever', style: 'color:var(--gold);font-weight:700' }, money(t.low)),
         h('td', { class: 'num', 'data-a': t.dealCount === 1 ? 'deal' : 'deals' }, t.dealCount),
         h('td', { class: 'num', 'data-l': 'IMDb' }, t.imdb?.rating ? t.imdb.rating.toFixed(1) : '—'),
-        h('td', null, t.live ? h('span', { class: 'live-dot' }, '● live') : h('span', { class: 'ended-dot' }, '○ ended'))))))) : h('p', { class: 'empty' }, 'No titles match.'),
+        h('td', null, t.live ? h('span', { class: 'live-dot', title: 'Cheapest price in a deal that is live right now' }, `● ${t.liveLow != null ? money(t.liveLow) + (t.liveInPack ? ' in a pack' : ' now') : 'live'}`) : h('span', { class: 'ended-dot' }, '○ not live'))))))) : h('p', { class: 'empty' }, 'No titles match.'),
       moreBtn(shown.length, list.length, () => { limit += PAGE; run(); }));
   };
   const set = k => v => { st[k] = v; limit = PAGE; run(); };
@@ -732,10 +738,10 @@ function viewTitles(q) {
     h('p', { style: 'margin:0 0 28px;color:var(--dim);max-width:700px' }, 'Search by title, actor or director. Open any title for its full price history across FanFlix deals.'),
     h('div', { class: 'panel', role: 'search' },
       searchFld('xq', 'search titles, actors, directors', st.q, 'Enter a title or name', set('q'), 'wide'),
-      rangeFld('xp', 'lowest price under:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
+      rangeFld('xp', st.live ? 'price now under:' : 'lowest price under:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
       rangeFld('xr', 'min IMDb:', 0, 9, 0.5, st.imdb, v => v > 0 ? v.toFixed(1) + '+' : 'any', set('imdb')),
       h('fieldset', { class: 'fld' }, h('legend', null, 'quality'), h('div', { class: 'checks' }, rcheck('UHD', '4K'), rcheck('HD', 'HD'), rcheck('SD', 'SD'),
-        h('label', null, h('input', { type: 'checkbox', checked: !!st.live, onchange: e => set('live')(e.target.checked ? '1' : '') }), 'in a live deal'))),
+        h('label', null, h('input', { type: 'checkbox', checked: !!st.live, onchange: e => { st.live = e.target.checked ? '1' : ''; setQuery('titles', { ...st, max: st.max >= 20 ? '' : st.max, imdb: st.imdb || '', sort: st.sort === 'az' ? '' : st.sort }); viewTitles(new URLSearchParams(location.hash.split('?')[1] || '')); } }), 'in a live deal (use today\'s price)'))),
       selectFld('xs', 'sort', st.sort, [['az', 'A–Z'], ['cheap', 'lowest price'], ['rating', 'IMDb rating'], ['deals', 'most deals']], set('sort'))),
     count, results);
   run();
