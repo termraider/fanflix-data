@@ -288,6 +288,13 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .src{border:0;border-top:1px solid var(--line);padding:12px 16px}.src:first-child{border-top:0}.src:last-of-type{border-bottom:0}
 .src summary{font-size:15px}.src p{font-size:14px;margin-top:8px}.src p b{color:var(--hi)}
 .upl{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.upl .btn{cursor:pointer}
+.navgear{color:var(--dim)!important;font-size:16px}
+.chip.setchip{text-decoration:none;display:inline-flex;align-items:center;border-style:dashed;color:var(--green)}
+.tile.nope{opacity:.55}.tile .tbadge.nb{background:var(--line2);color:var(--hi)}
+.tile.ended .tbadge.nb{top:46px}
+.checks.big{flex-direction:column;gap:6px}.checks.big label{font-size:17px;min-height:44px}
+.endnote a{margin-left:auto}
+.sub.warn{color:var(--accent)}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -439,6 +446,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 <a href="#/about" data-nav="about">./about</a>
 <a href="#/plan" data-nav="plan" class="navx">./plan</a>
 <a href="#/watch" data-nav="watch" class="navstar" id="starcount" aria-label="Watchlist">★ 0</a>
+<a href="#/settings" data-nav="settings" class="navgear" aria-label="Settings">⚙</a>
 </div>
 <form class="hsearch" role="search" id="hsearch">
 <label class="sr" for="hq">Search titles</label>
@@ -451,7 +459,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 <footer>
 <div class="wrap foot">
 <span>I am fully operational. you may split now<span class="cur">_</span></span>
-<nav aria-label="Footer"><a href="#/about">about</a><a href="TERMS.md">terms</a><a href="PRIVACY.md">privacy</a><a href="https://www.reddit.com/r/fanflixco/">r/fanflixco</a></nav>
+<nav aria-label="Footer"><a href="#/about">about</a><a href="#/settings">settings</a><a href="TERMS.md">terms</a><a href="PRIVACY.md">privacy</a><a href="https://www.reddit.com/r/fanflixco/">r/fanflixco</a></nav>
 <span>Prices as listed when SplitsBot checked · history since Nov 8, 2026 · not affiliated with FanFlix or Reddit</span>
 </div>
 </footer>
@@ -495,6 +503,22 @@ const img = (src, alt, cls) => {
   el.addEventListener('error', () => { el.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; el.alt = ''; }, { once: true });
   return el;
 };
+
+// ---------- redeem sites (each visitor picks where they can redeem; saved in this browser) ----------
+const PLATS = ['Movies Anywhere', 'Fandango at Home', 'Google Play'];
+const RKEY = 'splitsbot-redeem';
+const RP = {
+  list() { try { const v = JSON.parse(localStorage.getItem(RKEY) || '[]'); return Array.isArray(v) ? v.filter(p => PLATS.includes(p)) : []; } catch { return []; } },
+  save(v) { try { v.length && v.length < PLATS.length ? localStorage.setItem(RKEY, JSON.stringify(v)) : localStorage.removeItem(RKEY); } catch {} },
+  on() { return this.list().length > 0; }
+};
+// Can this visitor redeem this deal? Deals with no known platforms are kept (better to show than to hide by mistake).
+const canUse = d => { const mine = RP.list(); return !mine.length || !(d.platforms || []).length || d.platforms.some(p => mine.includes(p)); };
+const usable = d => d.live && canUse(d);
+// A title inside a deal: some multi-platform deals have titles that only redeem on some of them (r.platforms)
+const canUseRow = r => { const mine = RP.list(); return !mine.length || !r.platforms?.length || r.platforms.some(p => mine.includes(p)); };
+const usableHit = x => usable(x.deal) && canUseRow(x);
+const platOnly = r => r.platforms?.length ? r.platforms.map(p => PLAT_SHORT[p] || p).join(' + ') + ' only' : '';
 
 // ---------- data ----------
 let deals = [], dealById = new Map(), titles = new Map(), ends = {};
@@ -540,7 +564,7 @@ function prepare(archive, endsData, postedHidden) {
         if (!t.imdb && r.imdb) t.imdb = r.imdb;
         if (!t.image && r.image) t.image = r.image;
         if (!t.packImage && r.packCover) t.packImage = r.packCover;
-        t.hits.push({ deal: d, price: r.price, resolution: r.resolution, packName: r.packName || null });
+        t.hits.push({ deal: d, price: r.price, resolution: r.resolution, packName: r.packName || null, platforms: r.platforms || null });
         r.key = key;
       }
       it._rows = rows;
@@ -556,13 +580,7 @@ function prepare(archive, endsData, postedHidden) {
     t.low = priced.length ? Math.min(...priced.map(x => x.price)) : null;
     t.lowByRes = {};
     for (const x of priced) if (t.lowByRes[x.resolution] == null || x.price < t.lowByRes[x.resolution]) t.lowByRes[x.resolution] = x.price;
-    t.live = t.hits.some(x => x.deal.live);
-    // Cheapest price right now: on its own first; a movie that's only live inside a pack shows its per-movie pack price
-    const lowOf = xs => xs.length ? Math.min(...xs.map(x => x.price)) : null;
-    const liveSolo = lowOf(t.hits.filter(x => x.deal.live && x.price != null && !x.packName));
-    const livePack = lowOf(t.hits.filter(x => x.deal.live && x.price != null && x.packName));
-    t.liveLow = liveSolo ?? livePack;
-    t.liveInPack = liveSolo == null && livePack != null;
+    recalcLive(t);
     t.res = new Set(t.hits.map(x => x.resolution).filter(Boolean));
     t.dealCount = new Set(t.hits.map(x => x.deal.id)).size;
   }
@@ -574,6 +592,17 @@ async function load() {
   const [archive, endsData, postedHidden] = await Promise.all([get('data/archive.json'), get('data/deal-ends.json'), get('data/posted-hidden.json')]);
   if (!archive) throw new Error('no data');
   prepare(archive, endsData, postedHidden);
+}
+
+// "Live" for this visitor: in a live deal they can redeem (see redeem sites). Re-run when the setting changes.
+function recalcLive(t) {
+  t.live = t.hits.some(usableHit);
+  // Cheapest price right now: on its own first; a movie that's only live inside a pack shows its per-movie pack price
+  const lowOf = xs => xs.length ? Math.min(...xs.map(x => x.price)) : null;
+  const liveSolo = lowOf(t.hits.filter(x => usableHit(x) && x.price != null && !x.packName));
+  const livePack = lowOf(t.hits.filter(x => usableHit(x) && x.price != null && x.packName));
+  t.liveLow = liveSolo ?? livePack;
+  t.liveInPack = liveSolo == null && livePack != null;
 }
 
 // ---------- state in the URL ----------
@@ -708,7 +737,7 @@ const splitsSearch = d => 'https://www.reddit.com/r/fanflixco/search/?q=' + enco
 
 const TYPES = [['split', 'split'], ['nomin', 'no minimum'], ['packs', 'packs'], ['single', 'single code']];
 function viewHome(q) {
-  const st = { q: q.get('q') || '', status: q.get('status') || 'live', plat: q.get('plat') || '', k4: q.get('k4') || '', type: q.get('type') || '', max: +(q.get('max') || 20), sort: q.get('sort') || 'new' };
+  const st = { mine: q.get('mine') !== '0', q: q.get('q') || '', status: q.get('status') || 'live', plat: q.get('plat') || '', k4: q.get('k4') || '', type: q.get('type') || '', max: +(q.get('max') || 20), sort: q.get('sort') || 'new' };
   let limit = PAGE;
   const results = h('div');
   const count = h('p', { class: 'count', 'aria-live': 'polite' });
@@ -718,19 +747,20 @@ function viewHome(q) {
     const chip = (label, on, fn) => h('button', { class: 'chip', type: 'button', 'aria-pressed': on ? 'true' : 'false', onclick: fn }, `[${on ? 'x' : ' '}] ${label}`);
     const live = st.status === 'live' || st.status === 'all', ended = st.status === 'ended' || st.status === 'all';
     const setStatus = (l, e) => { st.status = l && e ? 'all' : l ? 'live' : e ? 'ended' : 'all'; };
-    chipsEl.replaceChildren(
+    chipsEl.replaceChildren(h('a', { class: 'chip setchip', href: '#/settings', title: 'Where you can redeem' }, RP.on() ? '⚙ ' + RP.list().map(p => PLAT_SHORT[p] || p).join(' + ') : '⚙ set my redeem sites'),
       chip('live', live, () => { setStatus(!live, ended); reset(); }),
       chip('ended', ended, () => { setStatus(live, !ended); reset(); }),
       chip('4K', !!st.k4, () => { st.k4 = st.k4 ? '' : '1'; reset(); }),
+      ...(RP.on() ? [chip('my redeem sites', st.mine, () => { st.mine = !st.mine; reset(); })] : []),
       ...TYPES.map(([k, l]) => { const on = types().includes(k); return chip(l, on, () => { const t = new Set(types()); on ? t.delete(k) : t.add(k); st.type = [...t].join(','); reset(); }); }));
   };
   const run = () => {
-    setQuery('', { ...st, status: st.status === 'live' ? '' : st.status, max: st.max >= 20 ? '' : st.max, sort: st.sort === 'new' ? '' : st.sort });
+    setQuery('', { ...st, mine: st.mine ? '' : '0', status: st.status === 'live' ? '' : st.status, max: st.max >= 20 ? '' : st.max, sort: st.sort === 'new' ? '' : st.sort });
     renderChips();
     const terms = norm(st.q).split(' ').filter(Boolean);
     const tset = types();
     let list = deals.filter(d =>
-      (st.status === 'all' || (st.status === 'live') === d.live) &&
+      (st.status === 'all' || (st.status === 'live') === d.live) && (!st.mine || canUse(d)) &&
       (!st.plat || d.platforms.includes(st.plat)) &&
       (!st.k4 || d.res.has('UHD')) &&
       (!tset.length || tset.includes(d.kind.key)) &&
@@ -769,7 +799,8 @@ function viewHome(q) {
 }
 function tile(d, hits) {
   const per = d.kind.key === 'packs' ? '/movie' : d.kind.key === 'single' ? '' : '/title';
-  return h('a', { class: 'tile' + (d.live ? '' : ' ended'), href: dealHref(d) },
+  return h('a', { class: 'tile' + (d.live ? '' : ' ended') + (canUse(d) ? '' : ' nope'), href: dealHref(d) },
+    canUse(d) ? '' : h('span', { class: 'tbadge nb' }, 'not on your sites'),
     d.live ? '' : h('span', { class: 'tbadge' }, 'ended · ' + shortDate(d.lastSeen)),
     img(BASE + d.bannerFile, '', 'timg'),
     h('div', { class: 'tb' },
@@ -818,7 +849,7 @@ function viewDeal(slug, q) {
   const cheaper = !d.live ? [] : rows.map(r => {
     const t = titles.get(r.key);
     if (!t || r.price == null || r.packName) return null; // titles you can buy on their own only (like SplitsBot's 🚨 alert)
-    const best = t.hits.filter(x => x.deal !== d && x.deal.live && !x.packName && x.resolution === r.resolution && x.price != null && x.price < r.price - 0.001)
+    const best = t.hits.filter(x => x.deal !== d && usableHit(x) && !x.packName && x.resolution === r.resolution && x.price != null && x.price < r.price - 0.001)
       .sort((a, b) => a.price - b.price)[0];
     return best ? { r, best } : null;
   }).filter(Boolean).sort((a, b) => a.best.price - b.best.price || a.r.title.localeCompare(b.r.title));
@@ -830,19 +861,22 @@ function viewDeal(slug, q) {
   const run = () => {
     setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '' });
     const terms = norm(st.q).split(' ').filter(Boolean);
-    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
+    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (st.showNope || canUseRow(r)) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
     const S = { title: (a, b) => a.title.localeCompare(b.title), price: (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     list.sort(S[st.sort] || S.title);
     const ownN = new Set(rows.filter(r => OW.has(r.key)).map(r => r.key)).size;
     const niN = new Set(rows.filter(r => NI.has(r.key)).map(r => r.key)).size;
+    const nopeN = rows.filter(r => !canUseRow(r)).length;
     count.replaceChildren(`${list.length} of ${rows.length} titles`,
       ...(ownN ? [' · ', h('span', { class: 'green' }, `you own ${ownN}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.hideOwned = !st.hideOwned; run(); } }, st.hideOwned ? 'show them' : 'hide them')] : []),
-      ...(niN ? [' · ', h('span', null, `${niN} not interested`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNI = !st.showNI; run(); } }, st.showNI ? 'hide them' : 'show them')] : []));
+      ...(niN ? [' · ', h('span', null, `${niN} not interested`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNI = !st.showNI; run(); } }, st.showNI ? 'hide them' : 'show them')] : []),
+      ...(nopeN ? [' · ', h('span', null, `${nopeN} not on your redeem sites`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNope = !st.showNope; run(); } }, st.showNope ? 'hide them' : 'show them')] : []));
     tbody.replaceChildren(...list.map(r => h('tr', { class: [OW.has(r.key) ? 'owned' : '', NI.has(r.key) ? 'nint' : ''].join(' ').trim() || null },
       h('td', null, h('div', { class: 'tcell' }, r.image ? img(r.image, '', 'thumb') : null,
         h('div', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year),
           r.seasons > 1 ? h('div', { class: 'sub' }, `${r.seasons} seasons`) : null,
-          r.packName ? h('div', { class: 'sub' }, `in pack: ${r.packName}`) : null))),
+          r.packName ? h('div', { class: 'sub' }, `in pack: ${r.packName}`) : null,
+          r.platforms?.length ? h('div', { class: 'sub' + (canUseRow(r) ? '' : ' warn') }, platOnly(r) + (canUseRow(r) ? '' : ' · not on your sites')) : null))),
       h('td', null, resLabel(r.resolution)),
       h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price)),
       h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
@@ -854,6 +888,7 @@ function viewDeal(slug, q) {
   const render = () => {
     app.replaceChildren(
       h('p', { class: 'crumb' }, h('a', { href: '#/' }, 'deals'), ' / ', d.slug.replace(/^[a-z0-9]+-/, '')),
+      canUse(d) ? '' : h('div', { class: 'endnote', role: 'note' }, h('b', null, 'NOT FOR YOU'), `This deal redeems at ${(d.platforms || []).join(' / ')}, which isn’t one of your redeem sites.`, h('a', { href: '#/settings' }, 'change')),
       d.live ? '' : h('div', { class: 'endnote', role: 'note' }, h('b', null, 'ENDED'), `This deal ended ${fmtDate(d.lastSeen)}.`, h('span', null, 'Prices below are what it cost then.')),
       h('section', { class: 'top' + (d.live ? '' : ' is-ended') },
         h('div', { class: 'art' }, img(BASE + d.bannerFile, `${d.name} banner`, 'bimg')),
@@ -957,10 +992,10 @@ function viewTitle(key) {
   document.title = `${t.title} · price history · SplitsBot`;
   const im = t.imdb;
   const firstRes = ['UHD', 'HD', 'SD'].find(r => t.lowByRes[r] != null);
-  const liveCount = new Set(t.hits.filter(x => x.deal.live).map(x => x.deal.id)).size;
+  const liveCount = new Set(t.hits.filter(usableHit).map(x => x.deal.id)).size;
   const byPrice = (a, b) => a.price - b.price;
-  const liveSolo = t.hits.filter(x => x.deal.live && x.price != null && !x.packName).sort(byPrice)[0];
-  const livePack = t.hits.filter(x => x.deal.live && x.price != null && x.packName).sort(byPrice)[0];
+  const liveSolo = t.hits.filter(x => usableHit(x) && x.price != null && !x.packName).sort(byPrice)[0];
+  const livePack = t.hits.filter(x => usableHit(x) && x.price != null && x.packName).sort(byPrice)[0];
   const cheapestLive = liveSolo || livePack;
   const packNote = liveSolo && livePack && livePack.price < liveSolo.price - 0.009 ? livePack : null;
   const lowNote = r => {
@@ -1457,11 +1492,11 @@ function viewPlan(q) {
     if (!picks.length) { right.replaceChildren(h('div', { class: 'card' }, h('p', { class: 'prompt' }, '$ plan --split'), h('h2', null, 'Cheapest way to get them'), h('p', { class: 'sub' }, 'Add the titles you want on the left. SplitsBot checks every live deal and ranks them by what you’d pay in total.'))); return; }
     // evaluate every live deal
     const opts = [];
-    for (const d of deals.filter(x => x.live)) {
+    for (const d of deals.filter(usable)) {
       const rows = dealRows(d);
       const got = [];
       for (const t of picks) {
-        const cand = rows.filter(r => r.key === t.key && r.price != null && (st.any || r.resolution === 'UHD')).sort((a, b) => (!!a.packName - !!b.packName) || a.price - b.price)[0];
+        const cand = rows.filter(r => r.key === t.key && r.price != null && canUseRow(r) && (st.any || r.resolution === 'UHD')).sort((a, b) => (!!a.packName - !!b.packName) || a.price - b.price)[0];
         if (cand) got.push({ t, r: cand });
       }
       if (!got.length) continue;
@@ -1508,7 +1543,7 @@ function viewWatch() {
   const ts = keys.map(k => titles.get(k));
   const liveN = ts.filter(t => t.liveLow != null).length;
   const status = t => {
-    const solo = t.hits.filter(x => x.deal.live && x.price != null).sort((a, b) => (!!a.packName - !!b.packName) || a.price - b.price)[0];
+    const solo = t.hits.filter(x => usableHit(x) && x.price != null).sort((a, b) => (!!a.packName - !!b.packName) || a.price - b.price)[0];
     if (!solo) { const last = [...t.hits].sort((a, b) => b.deal.lastSeen.localeCompare(a.deal.lastSeen))[0]; return { now: h('span', { class: 'sub' }, `○ not live · low ${money(t.low)}`), where: h('span', { class: 'sub' }, last ? `last seen ${shortDate(last.deal.lastSeen)}` : ''), pill: h('span', { class: 'pill p-new' }, 'waiting') }; }
     const low = t.lowByRes[solo.resolution];
     const isNew = t.hits.every(x => x.deal.firstSeen === TODAY);
@@ -1518,7 +1553,7 @@ function viewWatch() {
   const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.ownedPending)) pending.save([...pending.list(), ...v.ownedPending.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
   const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   app.replaceChildren(
     libTabs('watch'),
@@ -1558,7 +1593,7 @@ const b64u = bytes => { let s2 = ''; for (const b of bytes) s2 += String.fromCha
 const unb64u = str => { const s2 = atob(str.replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(s2, c => c.charCodeAt(0)); };
 const pipeBytes = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
 async function makeSyncLink() {
-  const data = { w: WL.list(), o: OW.list(), n: NI.list(), f: FL.list().map(x => [x.role, x.name]) };
+  const data = { w: WL.list(), o: OW.list(), n: NI.list(), r: RP.list(), f: FL.list().map(x => [x.role, x.name]) };
   const raw = new TextEncoder().encode(JSON.stringify(data));
   let code = 'j' + b64u(raw);
   if (window.CompressionStream) { try { code = 'z' + b64u(await pipeBytes(raw, new CompressionStream('deflate-raw'))); } catch {} }
@@ -1569,7 +1604,7 @@ async function readSyncCode(code) {
   const raw = kind === 'z' ? await pipeBytes(bytes, new DecompressionStream('deflate-raw')) : bytes;
   const v = JSON.parse(new TextDecoder().decode(raw));
   const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
-  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
+  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), redeem: strs(v.r), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
 }
 function syncCard() {
   const out = h('div');
@@ -1601,8 +1636,9 @@ async function viewSync(q) {
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
   const done = h('div');
   const apply = replace => {
-    if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); }
+    if (data.redeem.length) RP.save(data.redeem); if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); }
     else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
+    for (const t of titles.values()) recalcLive(t);
     history.replaceState(null, '', '#/watch');
     done.replaceChildren(h('div', { class: 'okbox', style: 'margin-top:18px' }, h('b', { class: 'green' }, '✓ Done.'), ' Your lists are on this device now. ', h('a', { href: '#/watch' }, 'open my watchlist'), ' · ', h('a', { href: '#/library' }, 'my library')));
   };
@@ -1709,6 +1745,32 @@ function checkPending() {
   for (const l of p) { const t = match(l); t ? found.push(t.key) : miss.push(l); }
   if (found.length) { OW.save([...OW.list(), ...found]); pending.save(miss); }
   return found.length;
+}
+
+// ---------- settings: redeem sites ----------
+function viewSettings() {
+  document.title = 'Settings · SplitsBot';
+  const box = h('div');
+  const draw = () => {
+    const mine = RP.list();
+    const on = p => !mine.length || mine.includes(p);
+    box.replaceChildren(
+      h('div', { class: 'checks big' }, PLATS.map(p => h('label', null, h('input', { type: 'checkbox', checked: on(p), onchange: e => {
+        const cur = PLATS.filter(x => x === p ? e.target.checked : on(x));
+        if (!cur.length) { e.target.checked = true; note.textContent = 'Keep at least one.'; return; }
+        RP.save(cur); for (const t of titles.values()) recalcLive(t); verdictCache.clear(); note.textContent = cur.length === PLATS.length ? 'Showing deals from every site.' : `Saved. Deals you can’t redeem at ${cur.map(x => PLAT_SHORT[x] || x).join(' or ')} are hidden.`; draw();
+      } }), h('span', null, p)))),
+      note);
+  };
+  const note = h('p', { class: 'sub', 'aria-live': 'polite', style: 'margin-top:10px' });
+  draw();
+  app.replaceChildren(
+    ...pageHead('splitsbot@splitsbot.com:~$ config --redeem', 'Where can you redeem?', 'Untick the sites you can’t use. SplitsBot then hides deals you can’t redeem and works out “cheapest live” prices from the rest. Saved in this browser.'),
+    h('section', { class: 'card' }, h('p', { class: 'prompt' }, '$ redeem-at'), h('h2', null, 'My redeem sites'), box),
+    h('section', { class: 'card', style: 'margin-top:22px' }, h('p', { class: 'prompt' }, '$ man redeem'), h('h2', null, 'Which ones should I tick?'),
+      h('p', { class: 'sub' }, 'Tick the sites where your movies end up. ', h('b', { style: 'color:var(--hi)' }, 'Movies Anywhere'), ' links Apple TV / iTunes, Fandango at Home, Google Play, Prime Video and more, so if your library lives in iTunes, Movies Anywhere is the one that gets movies there. Codes that only redeem at Fandango at Home or Google Play won’t reach iTunes unless the studio is on Movies Anywhere and you redeem through it.'),
+      h('p', { class: 'sub' }, 'When it’s set, the deals page has a “my redeem sites” chip, so you can still peek at everything.')),
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Included in your sync link. ', h('a', { href: '#/watch' }, 'your lists')));
 }
 
 // ---------- my library ----------
@@ -1852,7 +1914,7 @@ function route() {
   const { parts, q } = parseHash();
   const view = parts[0] || '';
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', compare: 'deals' }[view];
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', settings: 'settings', compare: 'deals' }[view];
   document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   if (view === 'deal') viewDeal(parts[1], q);
   else if (view === 'titles') viewTitles(q);
@@ -1866,6 +1928,7 @@ function route() {
   else if (view === 'watch') viewWatch();
   else if (view === 'library') viewLibrary(q);
   else if (view === 'sync') viewSync(q);
+  else if (view === 'settings') viewSettings();
   else if (view === 'compare') viewCompare(parts[1], parts[2], q);
   else viewHome(q);
 }
