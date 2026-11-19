@@ -1718,6 +1718,11 @@ function viewLibrary(q) {
   const ts = keys.map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
   const st = { q: q.get('q') || '' };
   let libLimit = 200;
+  let armedLib = false;
+  const clearLib = h('button', { class: 'linkbtn', type: 'button', onclick: () => {
+    if (!armedLib) { armedLib = true; clearLib.textContent = `tap again to remove all ${OW.list().length.toLocaleString()} owned titles and ${pending.list().length.toLocaleString()} waiting`; setTimeout(() => { armedLib = false; clearLib.textContent = 'clear my library'; }, 6000); return; }
+    OW.save([]); pending.save([]); armedLib = false; clearLib.textContent = 'clear my library'; res.replaceChildren(h('p', { class: 'sub' }, 'Library cleared. Your watchlist, follows and not-interested list weren’t touched.')); render();
+  } }, 'clear my library');
   const out = h('div'); const res = h('div'); const conv = h('p', { class: 'sub', 'aria-live': 'polite', style: 'margin:8px 0' });
   const box = h('textarea', { class: 'f ta', rows: 6, placeholder: 'The Matrix (1999)\nTop Gun: Maverick\nGremlins', 'aria-label': 'Titles you own, one per line' });
   const add = h('button', { class: 'btn', type: 'button', onclick: () => {
@@ -1768,7 +1773,7 @@ function viewLibrary(q) {
       box, h('div', { class: 'btns', style: 'margin-top:12px;max-width:520px' }, add, h('button', { class: 'btn', type: 'button', onclick: () => { const r = convertList(box.value); box.value = r.lines.join('\n'); conv.textContent = `Cleaned up: ${r.lines.length.toLocaleString()} titles (${r.kind}).`; } }, 'clean up the list')), res),
     niSection(),
     syncCard(),
-    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist.'));
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist. ', clearLib));
   render();
 }
 
