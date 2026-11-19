@@ -253,7 +253,13 @@ td.stc{width:44px;text-align:center;padding-left:4px;padding-right:8px}
 .btn.won{border-color:var(--gold);color:var(--gold)}
 .btn.ghost{border-color:var(--green);color:var(--green)}
 .names{margin:0 0 22px;font-size:14px;color:var(--text)}
-.names a{color:var(--green)}
+.names a{color:var(--green);white-space:nowrap}
+.followrow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:-8px 0 22px}.followrow .btn{min-width:170px}
+.follows{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.follow{display:flex;flex-direction:column;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:inherit}
+.follow:hover{border-color:var(--line2);color:inherit}.follow b{color:var(--hi);font-size:18px}
+.follow.off{opacity:.65}.ftop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
 .ptile{position:relative;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
@@ -915,7 +921,19 @@ function viewTitle(key) {
   const im = t.imdb;
   const firstRes = ['UHD', 'HD', 'SD'].find(r => t.lowByRes[r] != null);
   const liveCount = new Set(t.hits.filter(x => x.deal.live).map(x => x.deal.id)).size;
-  const cheapestLive = t.hits.filter(x => x.deal.live && x.price != null).sort((a, b) => a.price - b.price)[0];
+  const byPrice = (a, b) => a.price - b.price;
+  const liveSolo = t.hits.filter(x => x.deal.live && x.price != null && !x.packName).sort(byPrice)[0];
+  const livePack = t.hits.filter(x => x.deal.live && x.price != null && x.packName).sort(byPrice)[0];
+  const cheapestLive = liveSolo || livePack;
+  const packNote = liveSolo && livePack && livePack.price < liveSolo.price - 0.009 ? livePack : null;
+  const lowNote = r => {
+    const xs = t.hits.filter(x => x.resolution === r && x.price != null);
+    const solo = xs.filter(x => !x.packName).map(x => x.price);
+    const best = [...xs].sort(byPrice)[0];
+    if (!best?.packName) return null;
+    const soloMin = solo.length ? Math.min(...solo) : null;
+    return soloMin != null && soloMin < best.price + 0.009 ? null : 'in a pack' + (soloMin != null ? ` · on its own ${money(soloMin)}` : '');
+  };
   const hist = [...t.hits].filter(x => x.price != null).sort((a, b) => a.deal.firstSeen.localeCompare(b.deal.firstSeen));
   const maxP = Math.max(...hist.map(x => x.price), 1);
   const multiRes = t.res.size > 1;
@@ -932,13 +950,14 @@ function viewTitle(key) {
         (im?.cast?.length || fr) ? h('p', { class: 'names' }, im?.cast?.length ? [h('span', { class: 'sub' }, 'cast '), ...im.cast.slice(0, 5).flatMap((n, i) => [i ? ' · ' : '', h('a', { href: personHref('cast', n) }, n)])] : null,
           fr ? [im?.cast?.length ? '  ·  ' : '', h('span', { class: 'sub' }, 'franchise '), h('a', { href: personHref('franchise', fr.term) }, `${fr.name} (${fr.list.length})`)] : null) : null,
         h('div', { class: 'stats' },
-          ...['UHD', 'HD', 'SD'].filter(r => t.lowByRes[r] != null).map(r => h('div', { class: 'stat' }, h('div', { class: 'l' }, `lowest seen · ${resLabel(r)}`), h('div', { class: 'n gold' }, money(t.lowByRes[r])))),
+          ...['UHD', 'HD', 'SD'].filter(r => t.lowByRes[r] != null).map(r => h('div', { class: 'stat' }, h('div', { class: 'l' }, `lowest seen · ${resLabel(r)}`), h('div', { class: 'n gold' }, money(t.lowByRes[r])), lowNote(r) ? h('div', { class: 's' }, lowNote(r)) : null)),
           h('div', { class: 'stat' }, h('div', { class: 'l' }, "deals it's been in"), h('div', { class: 'n' }, t.dealCount)),
           h('div', { class: 'stat' }, h('div', { class: 'l' }, 'live right now'), h('div', { class: 'n ' + (liveCount ? 'green' : '') }, liveCount ? `${liveCount} deal${liveCount === 1 ? '' : 's'}` : 'none'))),
-        h('div', { class: 'btns' },
-          cheapestLive ? h('a', { class: 'btn primary', href: dealHref(cheapestLive.deal) }, `cheapest live deal · ${money(cheapestLive.price)}`) : null,
+        h('div', { class: 'btns tbtns' },
+          cheapestLive ? h('a', { class: 'btn primary', href: dealHref(cheapestLive.deal) }, `cheapest live · ${money(cheapestLive.price)}${liveSolo ? '' : ' in a pack'}`) : null,
           im?.id ? h('a', { class: 'btn', href: `https://www.imdb.com/title/${im.id}/` }, 'IMDb') : null,
-          watchBtn(t.key, t.title)))),
+          watchBtn(t.key, t.title)),
+        packNote ? h('p', { class: 'sub', style: 'margin:12px 0 0' }, `or ${money(packNote.price)} a movie in the `, h('a', { href: dealHref(packNote.deal) }, packNote.packName), ' pack') : null)),
     patternSection(t),
     hist.length > 1 ? h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'ch' },
       h('h2', { id: 'ch', style: 'font-size:26px;margin-bottom:4px' }, 'Price per title, every deal'),
@@ -1051,7 +1070,25 @@ const WL = {
   has(k) { return this.list().includes(k); },
   toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
 };
-function updateStarCount() { const el = document.getElementById('starcount'); if (el) el.textContent = `★ ${WL.list().filter(k => titles.has(k)).length}`; }
+const FKEY = 'splitsbot-follow';
+const FL = {
+  list() { try { const v = JSON.parse(localStorage.getItem(FKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.role === 'string' && typeof x.name === 'string') : []; } catch { return []; } },
+  save(v) { try { localStorage.setItem(FKEY, JSON.stringify(v)); } catch {} updateStarCount(); },
+  has(role, name) { return this.list().some(x => x.role === role && x.name === name); },
+  toggle(role, name) { const v = this.list(); const i = v.findIndex(x => x.role === role && x.name === name); i < 0 ? v.unshift({ role, name }) : v.splice(i, 1); this.save(v); return i < 0; }
+};
+function peopleTitles(role, name) {
+  if (role === 'franchise') { const term = norm(name); return [...titles.values()].filter(t => t.search === term || t.search.startsWith(term + ' ')); }
+  const key = role === 'director' ? 'directors' : 'cast';
+  return [...titles.values()].filter(t => (t.imdb?.[key] || []).includes(name));
+}
+function followBtn(role, name) {
+  const lab = on => on ? '✓ following' : '+ follow';
+  const b = h('button', { class: 'btn' + (FL.has(role, name) ? ' won' : ''), type: 'button', 'aria-pressed': FL.has(role, name) ? 'true' : 'false' }, lab(FL.has(role, name)));
+  b.addEventListener('click', () => { const on = FL.toggle(role, name); b.textContent = lab(on); b.classList.toggle('won', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+  return b;
+}
+function updateStarCount() { const el = document.getElementById('starcount'); if (el) el.textContent = `★ ${WL.list().filter(k => titles.has(k)).length + FL.list().length}`; }
 function starBtn(key, name) {
   const on = WL.has(key);
   const b = h('button', { class: 'star' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' watchlist: ' + name, title: on ? 'on your watchlist' : 'add to watchlist' }, on ? '★' : '☆');
@@ -1270,8 +1307,7 @@ function viewToday(q) {
 function viewPeople(role, name, q) {
   const isF = role === 'franchise';
   let list, label;
-  if (isF) { const term = norm(name); list = [...titles.values()].filter(t => t.search === term || t.search.startsWith(term + ' ')); label = titleCase(term); }
-  else { const key = role === 'director' ? 'directors' : 'cast'; list = [...titles.values()].filter(t => (t.imdb?.[key] || []).includes(name)); label = name; }
+  list = peopleTitles(role, name); label = isF ? titleCase(norm(name)) : name;
   if (!list.length) return notFound('No titles found for that name.');
   document.title = `${label} · SplitsBot`;
   const st = { live: !!q.get('live'), k4: !!q.get('k4'), sort: q.get('sort') || 'live' };
@@ -1296,6 +1332,7 @@ function viewPeople(role, name, q) {
   app.replaceChildren(
     h('p', { class: 'crumb' }, h('a', { href: '#/titles' }, 'titles'), ` / ${roleWord} / `, label),
     ...pageHead(`splitsbot@splitsbot.com:~$ ${isF ? 'franchise' : role} "${label.toLowerCase()}"`, label, isF ? `Every ${label} title FanFlix has had in a deal, with today's price and the lowest we've seen.` : `Every title ${role === 'director' ? 'directed by' : 'with'} ${label} that FanFlix has had in a deal, with today's price and the lowest we've seen.`),
+    h('div', { class: 'followrow' }, followBtn(role, isF ? norm(name) : name), h('span', { class: 'sub' }, `Following puts ${label} on your watchlist page with what’s live and what’s new. Saved in this browser.`)),
     h('div', { class: 'stats', style: 'margin-bottom:22px' },
       stat("titles we've seen", list.length, isF ? 'in this franchise' : role === 'director' ? 'directed' : 'with them in the cast'),
       stat('live right now', liveList.length, 'in at least one deal', 'green'),
@@ -1383,6 +1420,7 @@ function viewPlan(q) {
 // ---------- watchlist ----------
 function viewWatch() {
   document.title = 'Watchlist · SplitsBot';
+  updateStarCount();
   const keys = WL.list().filter(k => titles.has(k));
   const ts = keys.map(k => titles.get(k));
   const liveN = ts.filter(t => t.liveLow != null).length;
@@ -1394,19 +1432,40 @@ function viewWatch() {
     const vs = isNew ? 'first time seen' : solo.price < low + 0.009 ? 'ties the low' : `low was ${money(low)}`;
     return { now: [h('b', { class: 'green' }, '● ' + money(solo.price)), h('span', { class: 'sub' }, ` · ${resLabel(solo.resolution)} · ${vs}`)], where: h('a', { href: dealHref(solo.deal) }, splitName(solo.deal)[0]), pill: solo.deal.firstSeen === TODAY ? h('span', { class: 'pill p-low' }, 'new today') : h('span', { class: 'pill p-tie', style: 'border-color:var(--green);color:var(--green)' }, 'in a live deal') };
   };
-  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) { WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); viewWatch(); } } catch {} }); } });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
-  const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); viewWatch(); } }, 'clear');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   app.replaceChildren(
-    ...pageHead('splitsbot@splitsbot.com:~$ watch --list', 'Your watchlist.', 'Star titles anywhere on the site (☆). They light up here when they show up in a live deal.'),
+    ...pageHead('splitsbot@splitsbot.com:~$ watch --list', 'Your watchlist.', 'Star titles (☆) and follow actors, directors or franchises. They light up here when they show up in a live deal.'),
     ts.length ? h('div', { class: 'okbox' }, h('b', { class: 'green' }, `● ${liveN} of your ${ts.length}`), liveN === 1 ? ' is in a live deal right now.' : ' are in a live deal right now.') : '',
     ts.length ? h('div', { class: 'tablebox' }, h('table', null,
       h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'price now'), h('th', { scope: 'col' }, 'where'), h('th', { scope: 'col' }, 'status'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
       h('tbody', { class: 'cards' }, ts.sort((a, b) => (a.liveLow == null) - (b.liveLow == null) || a.title.localeCompare(b.title)).map(t => { const s = status(t); return h('tr', null, h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))), h('td', null, s.now), h('td', null, s.where), h('td', null, s.pill), h('td', { class: 'stc' }, starBtn(t.key, t.title))); })))) :
-      h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles')),
+      FL.list().length ? h('p', { class: 'sub' }, 'No starred titles yet. Tap ☆ next to any title to add one.') : h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles')),
+    followSection(),
     h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. ', exp, ' · ', imp, ' · ', clear, file));
+}
+
+function followSection() {
+  const fl = FL.list();
+  if (!fl.length) return h('p', { class: 'sub', style: 'margin-top:28px' }, 'Tip: open any actor, director or franchise (tap a name on a title page) and press + follow.');
+  const role = { cast: 'actor', director: 'director', franchise: 'franchise' };
+  return h('section', { class: 'sec', style: 'margin-top:36px', 'aria-labelledby': 'fw' },
+    h('p', { class: 'prompt' }, '$ follow --list'), h('h2', { id: 'fw', style: 'font-size:26px;margin-bottom:14px' }, 'Following'),
+    h('div', { class: 'follows' }, fl.map(f => {
+      const ts = peopleTitles(f.role, f.name);
+      const live = ts.filter(t => t.liveLow != null);
+      const fresh = ts.filter(t => t.hits.some(x => x.deal.firstSeen === TODAY));
+      const cheapest = [...live].sort((a, b) => a.liveLow - b.liveLow)[0];
+      const label = f.role === 'franchise' ? titleCase(f.name) : f.name;
+      const rm = h('button', { class: 'xbtn', type: 'button', 'aria-label': 'Unfollow ' + label, onclick: e => { e.preventDefault(); FL.toggle(f.role, f.name); viewWatch(); } }, '×');
+      return h('a', { class: 'follow' + (live.length ? '' : ' off'), href: personHref(f.role, f.name) },
+        h('div', { class: 'ftop' }, h('div', null, h('div', { class: 'sub' }, role[f.role] || f.role), h('b', null, label)), rm),
+        h('div', { class: 'sub' }, `${ts.length} title${ts.length === 1 ? '' : 's'} · `, h('span', { class: live.length ? 'green' : '' }, `${live.length} live`), fresh.length ? [' · ', h('span', { class: 'goldc' }, `${fresh.length} new today`)] : ''),
+        cheapest ? h('div', { class: 'sub' }, 'cheapest: ', h('span', { style: 'color:var(--hi)' }, cheapest.title), ' ', h('b', { class: 'green' }, money(cheapest.liveLow))) : h('div', { class: 'sub' }, 'nothing live right now'));
+    })));
 }
 
 // ---------- compare ----------
@@ -1473,7 +1532,7 @@ function patternSection(t) {
     h('div', { class: 'stats', style: 'margin:14px 0 16px' },
       box('shows up', every ? `every ~${every} day${every === 1 ? '' : 's'}` : `${t.dealCount} deals at once`, `${t.dealCount} deals in ${days.length} days · live ${onDays} of ${days.length} days`),
       box('usual price · ' + resLabel(res), lo === hi ? money(lo) : `${money(lo)}–${money(hi)}`, 'buying it on its own'),
-      box('lowest it gets', money(lo), `${atLow} of ${ps.length} deals`, 'gold')),
+      box('lowest on its own', money(lo), `${atLow} of ${ps.length} deals`, 'gold')),
     h('div', { class: 'strip', style: `grid-template-columns:repeat(${days.length},1fr)` }, days.map((x, i) => h('div', { title: `${fmtDate(x)}: ${on[i] ? 'in a live deal' : 'not in a deal'}` }, h('i', { class: on[i] ? 'on' : '' }), String(+x.slice(8))))),
     h('p', { class: 'sub', style: 'margin-top:10px' }, `days it was in at least one live deal · an estimate from ${days.length} days of data, it gets better over time`));
 }
