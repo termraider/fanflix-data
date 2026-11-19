@@ -1592,11 +1592,19 @@ function followSection() {
 const b64u = bytes => { let s2 = ''; for (const b of bytes) s2 += String.fromCharCode(b); return btoa(s2).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); };
 const unb64u = str => { const s2 = atob(str.replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(s2, c => c.charCodeAt(0)); };
 const pipeBytes = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
-async function makeSyncLink() {
-  const data = { w: WL.list(), o: OW.list(), n: NI.list(), r: RP.list(), f: FL.list().map(x => [x.role, x.name]) };
+const SYNC_MAX = 16000; // longer links get cut off by some apps
+async function packSync(withPending) {
+  const data = { w: WL.list(), o: OW.list(), n: NI.list(), r: RP.list(), f: FL.list().map(x => [x.role, x.name]), ...(withPending ? { p: pending.list() } : {}) };
   const raw = new TextEncoder().encode(JSON.stringify(data));
   let code = 'j' + b64u(raw);
   if (window.CompressionStream) { try { code = 'z' + b64u(await pipeBytes(raw, new CompressionStream('deflate-raw'))); } catch {} }
+  return code;
+}
+// The waiting list (titles not in a deal yet) rides along when it fits; otherwise the sync file carries it
+async function makeSyncLink() {
+  let code = await packSync(true), withPending = true;
+  if (pending.list().length && code.length > SYNC_MAX) { code = await packSync(false); withPending = false; }
+  makeSyncLink.withPending = withPending;
   return location.origin + location.pathname + '#/sync?d=' + code;
 }
 async function readSyncCode(code) {
@@ -1604,17 +1612,19 @@ async function readSyncCode(code) {
   const raw = kind === 'z' ? await pipeBytes(bytes, new DecompressionStream('deflate-raw')) : bytes;
   const v = JSON.parse(new TextDecoder().decode(raw));
   const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
-  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), redeem: strs(v.r), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
+  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), redeem: strs(v.r), waiting: strs(v.p), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
 }
 function syncCard() {
-  const out = h('div');
+  const out = h('div'); const alertBox = h('p', { class: 'sub warn', 'aria-live': 'polite' });
   const counts = () => `${WL.list().length} starred · ${OW.list().length} owned · ${FL.list().length} following · ${NI.list().length} not interested`;
   const make = h('button', { class: 'btn primary', type: 'button', onclick: async () => {
     const link = await makeSyncLink();
     const field = h('input', { class: 'f', value: link, readonly: true, 'aria-label': 'Your sync link', onfocus: e => e.target.select() });
     const copy = h('button', { class: 'btn', type: 'button', onclick: () => navigator.clipboard?.writeText(link).then(() => { copy.textContent = 'copied ✓'; setTimeout(() => copy.textContent = 'copy link', 1600); }, () => field.select()) }, 'copy link');
     const share = navigator.share ? h('button', { class: 'btn', type: 'button', onclick: () => navigator.share({ title: 'My SplitsBot lists', url: link }).catch(() => {}) }, 'share…') : null;
-    out.replaceChildren(h('p', { class: 'sub', style: 'margin:14px 0 6px' }, `Link made with ${counts()}:`), field, h('div', { class: 'btns', style: 'margin-top:10px;max-width:none' }, copy, share || ''),
+    out.replaceChildren(h('p', { class: 'sub', style: 'margin:14px 0 6px' }, `Link made with ${counts()}${makeSyncLink.withPending && pending.list().length ? ` · ${pending.list().length.toLocaleString()} waiting` : ''}:`),
+      !makeSyncLink.withPending ? h('p', { class: 'sub warn', style: 'margin:0 0 8px' }, `Your ${pending.list().length.toLocaleString()} waiting titles are too many for a link, so they’re not in it. To bring them too, use “save sync file” below instead.`) : '',
+      field, h('div', { class: 'btns', style: 'margin-top:10px;max-width:none' }, copy, share || ''),
       h('p', { class: 'sub', style: 'margin-top:10px' }, 'Send it to yourself (AirDrop, Messages, email, Notes) and open it on the other device. Anyone with the link can see these lists, so keep it to yourself.'));
   } }, 'make my sync link');
   return h('section', { class: 'card sync', style: 'margin-top:28px', 'aria-labelledby': 'sy' },
@@ -1624,7 +1634,19 @@ function syncCard() {
       h('li', null, h('b', null, 'Send it to yourself'), h('span', { class: 'sub' }, 'AirDrop it, text it, email it or paste it in Notes.')),
       h('li', null, h('b', null, 'Open it on the other device'), h('span', { class: 'sub' }, 'Your phone, laptop, another browser. Tap “add to this device” and you’re done.'))),
     h('p', { class: 'sub' }, 'It’s a copy, not a live sync: if you change your lists later, make a new link. No account, no sign-in.'),
-    h('div', { style: 'max-width:300px;margin-top:12px' }, make), out);
+    h('div', { style: 'max-width:300px;margin-top:12px' }, make), out,
+    h('details', { class: 'src', style: 'margin-top:16px;border:1px solid var(--line);border-radius:10px' }, h('summary', null, 'Big library? Use a sync file', h('span', { class: 'sub' }, ' · carries everything, including titles still waiting')),
+      h('p', null, '1. Tap ', h('b', null, 'save sync file'), ' here. 2. AirDrop or email the file to your other device (on iPhone, save it to Files). 3. On that device, open this page and tap ', h('b', null, 'open sync file'), '.'),
+      h('div', { class: 'btns', style: 'margin-top:10px;max-width:520px' },
+        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
+        h('label', { class: 'btn', for: 'syncfile', style: 'cursor:pointer' }, 'open sync file'),
+        h('input', { id: 'syncfile', type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const fl = e.target.files[0]; if (!fl) return; fl.text().then(txt => { try { const v = JSON.parse(txt); const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
+          WL.save([...WL.list(), ...strs(v.watch)]); OW.save([...OW.list(), ...strs(v.owned)]); NI.save([...NI.list(), ...strs(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]);
+          if (strs(v.redeem).length) RP.save(strs(v.redeem));
+          if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); }
+          checkPending(); for (const t of titles.values()) recalcLive(t); route();
+        } catch { alertBox.textContent = 'That file didn’t work. Save a new one on the other device.'; } }); e.target.value = ''; } })),
+      alertBox));
 }
 async function viewSync(q) {
   document.title = 'Sync link · SplitsBot';
@@ -1636,8 +1658,9 @@ async function viewSync(q) {
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
   const done = h('div');
   const apply = replace => {
-    if (data.redeem.length) RP.save(data.redeem); if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); }
-    else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
+    if (data.redeem.length) RP.save(data.redeem); if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); pending.save(data.waiting); }
+    else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); pending.save([...pending.list(), ...data.waiting]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
+    checkPending();
     for (const t of titles.values()) recalcLive(t);
     history.replaceState(null, '', '#/watch');
     done.replaceChildren(h('div', { class: 'okbox', style: 'margin-top:18px' }, h('b', { class: 'green' }, '✓ Done.'), ' Your lists are on this device now. ', h('a', { href: '#/watch' }, 'open my watchlist'), ' · ', h('a', { href: '#/library' }, 'my library')));
