@@ -271,6 +271,10 @@ tr.owned td:first-child .thumb{opacity:.45}
 .ptile.owned .pimg{opacity:.55}
 a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .ta{height:auto;padding:12px 14px;resize:vertical;line-height:1.5;font-size:15px}
+.steps3{margin:4px 0 14px;padding:0;list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.steps3 li{counter-increment:s;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.steps3 li::before{content:counter(s);color:var(--green);font-weight:700;font-size:13px}
+.steps3 b{color:var(--hi)}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -1485,7 +1489,8 @@ function viewWatch() {
       h('tbody', { class: 'cards' }, ts.sort((a, b) => (a.liveLow == null) - (b.liveLow == null) || a.title.localeCompare(b.title)).map(t => { const s = status(t); return h('tr', null, h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))), h('td', null, s.now), h('td', null, s.where), h('td', null, s.pill), h('td', { class: 'stc' }, starBtn(t.key, t.title))); })))) :
       FL.list().length ? h('p', { class: 'sub' }, 'No starred titles yet. Tap ☆ next to any title to add one.') : h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles')),
     followSection(),
-    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. ', exp, ' · ', imp, ' · ', clear, file));
+    syncCard(),
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. Backup file: ', exp, ' · ', imp, ' · ', clear, file));
 }
 
 function followSection() {
@@ -1506,6 +1511,70 @@ function followSection() {
         h('div', { class: 'sub' }, `${ts.length} title${ts.length === 1 ? '' : 's'} · `, h('span', { class: live.length ? 'green' : '' }, `${live.length} live`), fresh.length ? [' · ', h('span', { class: 'goldc' }, `${fresh.length} new today`)] : ''),
         cheapest ? h('div', { class: 'sub' }, 'cheapest: ', h('span', { style: 'color:var(--hi)' }, cheapest.title), ' ', h('b', { class: 'green' }, money(cheapest.liveLow))) : h('div', { class: 'sub' }, 'nothing live right now'));
     })));
+}
+
+// ---------- sync link (copy your lists to another device, no account) ----------
+const b64u = bytes => { let s2 = ''; for (const b of bytes) s2 += String.fromCharCode(b); return btoa(s2).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); };
+const unb64u = str => { const s2 = atob(str.replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(s2, c => c.charCodeAt(0)); };
+const pipeBytes = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
+async function makeSyncLink() {
+  const data = { w: WL.list(), o: OW.list(), f: FL.list().map(x => [x.role, x.name]) };
+  const raw = new TextEncoder().encode(JSON.stringify(data));
+  let code = 'j' + b64u(raw);
+  if (window.CompressionStream) { try { code = 'z' + b64u(await pipeBytes(raw, new CompressionStream('deflate-raw'))); } catch {} }
+  return location.origin + location.pathname + '#/sync?d=' + code;
+}
+async function readSyncCode(code) {
+  const kind = code[0], bytes = unb64u(code.slice(1));
+  const raw = kind === 'z' ? await pipeBytes(bytes, new DecompressionStream('deflate-raw')) : bytes;
+  const v = JSON.parse(new TextDecoder().decode(raw));
+  const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
+  return { watch: strs(v.w), owned: strs(v.o), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
+}
+function syncCard() {
+  const out = h('div');
+  const counts = () => `${WL.list().length} starred · ${OW.list().length} owned · ${FL.list().length} following`;
+  const make = h('button', { class: 'btn primary', type: 'button', onclick: async () => {
+    const link = await makeSyncLink();
+    const field = h('input', { class: 'f', value: link, readonly: true, 'aria-label': 'Your sync link', onfocus: e => e.target.select() });
+    const copy = h('button', { class: 'btn', type: 'button', onclick: () => navigator.clipboard?.writeText(link).then(() => { copy.textContent = 'copied ✓'; setTimeout(() => copy.textContent = 'copy link', 1600); }, () => field.select()) }, 'copy link');
+    const share = navigator.share ? h('button', { class: 'btn', type: 'button', onclick: () => navigator.share({ title: 'My SplitsBot lists', url: link }).catch(() => {}) }, 'share…') : null;
+    out.replaceChildren(h('p', { class: 'sub', style: 'margin:14px 0 6px' }, `Link made with ${counts()}:`), field, h('div', { class: 'btns', style: 'margin-top:10px;max-width:none' }, copy, share || ''),
+      h('p', { class: 'sub', style: 'margin-top:10px' }, 'Send it to yourself (AirDrop, Messages, email, Notes) and open it on the other device. Anyone with the link can see these lists, so keep it to yourself.'));
+  } }, 'make my sync link');
+  return h('section', { class: 'card sync', style: 'margin-top:28px', 'aria-labelledby': 'sy' },
+    h('p', { class: 'prompt' }, '$ sync --to another-device'), h('h2', { id: 'sy' }, 'Use your lists on another device'),
+    h('ol', { class: 'steps3' },
+      h('li', null, h('b', null, 'Make a link'), h('span', { class: 'sub' }, 'Your watchlist, library and follows get packed into one link. Nothing is uploaded anywhere: it’s all inside the link.')),
+      h('li', null, h('b', null, 'Send it to yourself'), h('span', { class: 'sub' }, 'AirDrop it, text it, email it or paste it in Notes.')),
+      h('li', null, h('b', null, 'Open it on the other device'), h('span', { class: 'sub' }, 'Your phone, laptop, another browser. Tap “add to this device” and you’re done.'))),
+    h('p', { class: 'sub' }, 'It’s a copy, not a live sync: if you change your lists later, make a new link. No account, no sign-in.'),
+    h('div', { style: 'max-width:300px;margin-top:12px' }, make), out);
+}
+async function viewSync(q) {
+  document.title = 'Sync link · SplitsBot';
+  const code = q.get('d') || '';
+  let data = null;
+  try { if (code) data = await readSyncCode(code); } catch {}
+  if (!data) { app.replaceChildren(...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'That link didn’t work.', 'It may have been cut off when it was copied. Make a new one on the other device (★ in the menu, then “make my sync link”).'), h('a', { class: 'btn', href: '#/watch' }, 'go to my watchlist')); return; }
+  const w = data.watch.filter(k => titles.has(k)), o = data.owned.filter(k => titles.has(k)), f = data.follow;
+  const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
+  const done = h('div');
+  const apply = replace => {
+    if (replace) { WL.save(w); OW.save(o); FL.save(f); }
+    else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
+    history.replaceState(null, '', '#/watch');
+    done.replaceChildren(h('div', { class: 'okbox', style: 'margin-top:18px' }, h('b', { class: 'green' }, '✓ Done.'), ' Your lists are on this device now. ', h('a', { href: '#/watch' }, 'open my watchlist'), ' · ', h('a', { href: '#/library' }, 'my library')));
+  };
+  const stat = (l, n, s2) => h('div', { class: 'stat' }, h('div', { class: 'l' }, l), h('div', { class: 'n' }, n), h('div', { class: 's' }, s2));
+  app.replaceChildren(
+    ...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'Copy these lists to this device?', 'This link was made on another device. Nothing was uploaded: everything is inside the link.'),
+    h('div', { class: 'stats', style: 'margin-bottom:22px' }, stat('★ starred', w.length, `${newW} new here`), stat('✓ owned', o.length, `${newO} new here`), stat('following', f.length, `${newF} new here`)),
+    h('div', { class: 'btns', style: 'max-width:640px' },
+      h('button', { class: 'btn primary', type: 'button', onclick: () => apply(false) }, 'add to this device'),
+      (WL.list().length || OW.list().length || FL.list().length) ? h('button', { class: 'btn', type: 'button', onclick: () => apply(true) }, 'replace what’s here') : ''),
+    (WL.list().length || OW.list().length || FL.list().length) ? h('p', { class: 'sub', style: 'margin-top:12px' }, '“Add” keeps what’s already saved on this device and adds the rest. “Replace” makes this device match the link exactly.') : '',
+    done);
 }
 
 // ---------- my library ----------
@@ -1556,7 +1625,8 @@ function viewLibrary(q) {
     h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --add'), h('h2', null, 'Paste a list'),
       h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'One title per line, a year in brackets helps: The Matrix (1999). Copy them from your Movies Anywhere or Fandango at Home library.'),
       box, h('div', { style: 'margin-top:12px;max-width:260px' }, add), res),
-    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist. Use export on the watchlist page to move it to another device.'));
+    syncCard(),
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist.'));
   render();
 }
 
@@ -1635,7 +1705,7 @@ function route() {
   const { parts, q } = parseHash();
   const view = parts[0] || '';
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', compare: 'deals' }[view];
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', compare: 'deals' }[view];
   document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   if (view === 'deal') viewDeal(parts[1], q);
   else if (view === 'titles') viewTitles(q);
@@ -1648,6 +1718,7 @@ function route() {
   else if (view === 'plan') viewPlan(q);
   else if (view === 'watch') viewWatch();
   else if (view === 'library') viewLibrary(q);
+  else if (view === 'sync') viewSync(q);
   else if (view === 'compare') viewCompare(parts[1], parts[2], q);
   else viewHome(q);
 }
