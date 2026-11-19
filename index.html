@@ -523,6 +523,7 @@ const usable = d => d.live && canUse(d);
 // A title inside a deal: some multi-platform deals have titles that only redeem on some of them (r.platforms)
 const canUseRow = r => { const mine = RP.list(); return !mine.length || !r.platforms?.length || r.platforms.some(p => mine.includes(p)); };
 const usableHit = x => usable(x.deal) && canUseRow(x);
+const offSites = () => PLATS.filter(p => !RP.list().includes(p)).join(' or ');
 const platOnly = r => r.platforms?.length ? r.platforms.map(p => PLAT_SHORT[p] || p).join(' + ') + ' only' : '';
 
 // ---------- data ----------
@@ -779,7 +780,8 @@ function viewHome(q) {
     });
     const S = { new: (a, b) => (b.live - a.live) || b.firstSeen.localeCompare(a.firstSeen), cheap: (a, b) => (a.perTitle ?? 1e9) - (b.perTitle ?? 1e9), big: (a, b) => b.titleCount - a.titleCount, az: (a, b) => a.name.localeCompare(b.name) };
     list.sort(S[st.sort] || S.new);
-    count.textContent = `${list.length} deal${list.length === 1 ? '' : 's'}` + (terms.length ? ` matching “${st.q}”` : '');
+    const hiddenBySite = st.mine && RP.on() ? deals.filter(d => (st.status === 'all' || (st.status === 'live') === d.live) && !canUse(d)).length : 0;
+    count.replaceChildren(`${list.length} deal${list.length === 1 ? '' : 's'}` + (terms.length ? ` matching “${st.q}”` : ''), ...(hiddenBySite ? [' · ', h('span', { class: 'warnc' }, `hiding ${hiddenBySite} that only redeem at ${offSites()}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.mine = false; reset(); } }, 'show them')] : []));
     const ended = deals.filter(d => !d.live).length;
     results.replaceChildren(
       list.length ? h('div', { class: 'grid' }, list.slice(0, limit).map(d => tile(d, matches.get(d.id)))) : h('p', { class: 'empty' }, 'No deals match. Try fewer filters.'),
@@ -957,7 +959,8 @@ function viewTitles(q) {
       (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
     const S = { az: (a, b) => a.title.localeCompare(b.title), cheap: (a, b) => ((st.live ? a.liveLow : a.low) ?? 1e9) - ((st.live ? b.liveLow : b.low) ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0), deals: (a, b) => b.dealCount - a.dealCount || a.title.localeCompare(b.title) };
     list.sort(S[st.sort] || S.az);
-    count.textContent = `${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`;
+    const offOnly = RP.on() ? all.filter(t => !t.live && t.hits.some(x => x.deal.live)).length : 0;
+    count.replaceChildren(`${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`, ...(offOnly ? [' · ', h('span', { class: 'warnc' }, `${offOnly.toLocaleString()} only live at ${offSites()} right now, so they show as not live`), ' · ', h('a', { href: '#/settings' }, '⚙ change')] : []));
     const shown = list.slice(0, limit);
     results.replaceChildren(list.length ? h('div', { class: 'tablebox' }, h('table', null,
       h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
