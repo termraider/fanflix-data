@@ -500,7 +500,7 @@ function prepare(archive, endsData, postedHidden) {
     d.res = new Set();
     // per-title rows
     for (const it of d.items) {
-      const rows = it.pack ? it.pack.map(p => ({ ...p, packName: it.title, price: d.bundle ? d.perTitle : (num(it.price) != null ? num(it.price) / it.pack.length : d.perTitle) })) : [{ ...it, price: d.bundle?.perItem ?? (num(it.price) ?? (!d.canSplit && checkout && d.items.length === 1 ? checkout : null)) }];
+      const rows = it.pack ? it.pack.map(p => ({ ...p, packName: it.title, packCover: it.image || null, price: d.bundle ? d.perTitle : (num(it.price) != null ? num(it.price) / it.pack.length : d.perTitle) })) : [{ ...it, price: d.bundle?.perItem ?? (num(it.price) ?? (!d.canSplit && checkout && d.items.length === 1 ? checkout : null)) }];
       for (const r of rows) {
         const year = r.year || r.imdb?.year || null;
         const key = slugify(r.title) + (year ? '-' + year : '');
@@ -509,6 +509,7 @@ function prepare(archive, endsData, postedHidden) {
         if (!t) { t = { key, title: r.title, year, imdb: r.imdb || null, image: r.image || null, seasons: r.seasons || null, hits: [], search: norm(r.title) }; titles.set(key, t); }
         if (!t.imdb && r.imdb) t.imdb = r.imdb;
         if (!t.image && r.image) t.image = r.image;
+        if (!t.packImage && r.packCover) t.packImage = r.packCover;
         t.hits.push({ deal: d, price: r.price, resolution: r.resolution, packName: r.packName || null });
         r.key = key;
       }
@@ -519,6 +520,7 @@ function prepare(archive, endsData, postedHidden) {
   }
   deals.sort((a, b) => (b.live - a.live) || b.firstSeen.localeCompare(a.firstSeen) || a.name.localeCompare(b.name));
   for (const t of titles.values()) {
+    if (!t.image && t.packImage) t.image = t.packImage; // only seen inside packs: show the pack's cover until the scraper saves its own poster
     t.hits.sort((a, b) => b.deal.firstSeen.localeCompare(a.deal.firstSeen));
     const priced = t.hits.filter(x => x.price != null);
     t.low = priced.length ? Math.min(...priced.map(x => x.price)) : null;
