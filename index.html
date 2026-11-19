@@ -275,6 +275,15 @@ a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .steps3 li{counter-increment:s;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
 .steps3 li::before{content:counter(s);color:var(--green);font-weight:700;font-size:13px}
 .steps3 b{color:var(--hi)}
+.nib{background:transparent;border:0;color:#3A5440;font-size:17px;line-height:1;cursor:pointer;width:28px;height:28px;padding:0;flex:none}
+.nib:hover{color:var(--accent)}
+.nib.on{color:var(--accent)}
+tr.nint td{opacity:.45}tr.nint td.stc{opacity:1}
+tr.gone{opacity:.25;transition:opacity .25s}
+.btn.nion{border-color:var(--accent);color:var(--accent)}
+.nilist{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.niitem{display:flex;justify-content:space-between;gap:12px;padding:10px 16px;border-top:1px solid var(--line);font-size:14px}
+.niitem:first-child{border-top:0}.niitem a{color:var(--dim)}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -408,7 +417,8 @@ a.chip{text-decoration:none;display:inline-flex;align-items:center}
   td.stc{position:absolute;right:6px;top:6px;width:auto;padding:0!important}
   .cards tr{position:relative}
   .card .stats{grid-template-columns:1fr 1fr}
-  .cards tr:has(td.stc) td:first-child{padding-right:40px}
+  .cards tr:has(td.stc) td:first-child{padding-right:44px}
+  .cards tr:has(.acts) td:first-child{padding-right:104px}
 }
 </style>
 </head>
@@ -816,12 +826,15 @@ function viewDeal(slug, q) {
   const run = () => {
     setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '' });
     const terms = norm(st.q).split(' ').filter(Boolean);
-    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
+    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
     const S = { title: (a, b) => a.title.localeCompare(b.title), price: (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     list.sort(S[st.sort] || S.title);
     const ownN = new Set(rows.filter(r => OW.has(r.key)).map(r => r.key)).size;
-    count.replaceChildren(`${list.length} of ${rows.length} titles`, ...(ownN ? [' · ', h('span', { class: 'green' }, `you own ${ownN}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.hideOwned = !st.hideOwned; run(); } }, st.hideOwned ? 'show them' : 'hide them')] : []));
-    tbody.replaceChildren(...list.map(r => h('tr', { class: OW.has(r.key) ? 'owned' : null },
+    const niN = new Set(rows.filter(r => NI.has(r.key)).map(r => r.key)).size;
+    count.replaceChildren(`${list.length} of ${rows.length} titles`,
+      ...(ownN ? [' · ', h('span', { class: 'green' }, `you own ${ownN}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.hideOwned = !st.hideOwned; run(); } }, st.hideOwned ? 'show them' : 'hide them')] : []),
+      ...(niN ? [' · ', h('span', null, `${niN} not interested`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNI = !st.showNI; run(); } }, st.showNI ? 'hide them' : 'show them')] : []));
+    tbody.replaceChildren(...list.map(r => h('tr', { class: [OW.has(r.key) ? 'owned' : '', NI.has(r.key) ? 'nint' : ''].join(' ').trim() || null },
       h('td', null, h('div', { class: 'tcell' }, r.image ? img(r.image, '', 'thumb') : null,
         h('div', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year),
           r.seasons > 1 ? h('div', { class: 'sub' }, `${r.seasons} seasons`) : null,
@@ -830,7 +843,7 @@ function viewDeal(slug, q) {
       h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price)),
       h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
       h('td', null, r.v.text ? h('span', { class: 'pill ' + r.v.cls }, r.v.text) : ''),
-      h('td', { class: 'stc' }, h('div', { class: 'acts' }, ownBtn(r.key, r.title, () => run()), starBtn(r.key, r.title))))));
+      h('td', { class: 'stc' }, h('div', { class: 'acts' }, niBtn(r.key, r.title, () => setTimeout(run, 250)), ownBtn(r.key, r.title, () => run()), starBtn(r.key, r.title))))));
   };
   const set = k => v => { st[k] = v; run(); };
   const sortTh = (key, label, cls) => h('th', { scope: 'col', class: cls, 'aria-sort': st.sort === key ? 'ascending' : null }, h('button', { type: 'button', onclick: () => { st.sort = key; render(); } }, label + (st.sort === key ? ' ▾' : '')));
@@ -893,7 +906,7 @@ function viewTitles(q) {
     const terms = norm(st.q).split(' ').filter(Boolean);
     const rs = resSet();
     let list = all.filter(t =>
-      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) && (st.own !== 'hide' || !OW.has(t.key)) && (st.own !== 'only' || OW.has(t.key)) &&
+      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) && (st.own !== 'hide' || !OW.has(t.key)) && (st.own !== 'only' || OW.has(t.key)) && (st.own === 'ni' ? NI.has(t.key) : !NI.has(t.key)) &&
       (st.max >= 20 || ((st.live ? t.liveLow : t.low) != null && (st.live ? t.liveLow : t.low) <= st.max + 0.001)) &&
       (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) &&
       (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
@@ -903,14 +916,14 @@ function viewTitles(q) {
     const shown = list.slice(0, limit);
     results.replaceChildren(list.length ? h('div', { class: 'tablebox' }, h('table', null,
       h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
-      h('tbody', { class: 'cards' }, shown.map(t => h('tr', { class: OW.has(t.key) ? 'owned' : null },
+      h('tbody', { class: 'cards' }, shown.map(t => h('tr', { class: [OW.has(t.key) ? 'owned' : '', NI.has(t.key) ? 'nint' : ''].join(' ').trim() || null },
         h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))),
         h('td', null, ['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ') || '—'),
         h('td', { class: 'num', 'data-l': 'lowest ever', style: 'color:var(--gold);font-weight:700' }, money(t.low)),
         h('td', { class: 'num', 'data-a': t.dealCount === 1 ? 'deal' : 'deals' }, t.dealCount),
         h('td', { class: 'num', 'data-l': 'IMDb' }, t.imdb?.rating ? t.imdb.rating.toFixed(1) : '—'),
         h('td', null, t.live ? h('span', { class: 'live-dot', title: 'Cheapest price in a deal that is live right now' }, `● ${t.liveLow != null ? money(t.liveLow) + (t.liveInPack ? ' in a pack' : ' now') : 'live'}`) : h('span', { class: 'ended-dot' }, '○ not live')),
-        h('td', { class: 'stc' }, h('div', { class: 'acts' }, ownBtn(t.key, t.title), starBtn(t.key, t.title)))))))) : h('p', { class: 'empty' }, 'No titles match.'),
+        h('td', { class: 'stc' }, h('div', { class: 'acts' }, niBtn(t.key, t.title), ownBtn(t.key, t.title), starBtn(t.key, t.title)))))))) : h('p', { class: 'empty' }, 'No titles match.'),
       moreBtn(shown.length, list.length, () => { limit += PAGE; run(); }));
   };
   const set = k => v => { st[k] = v; limit = PAGE; run(); };
@@ -926,7 +939,7 @@ function viewTitles(q) {
       rangeFld('xr', 'min IMDb:', 0, 9, 0.5, st.imdb, v => v > 0 ? v.toFixed(1) + '+' : 'any', set('imdb')),
       h('fieldset', { class: 'fld' }, h('legend', null, 'quality'), h('div', { class: 'checks' }, rcheck('UHD', '4K'), rcheck('HD', 'HD'), rcheck('SD', 'SD'),
         h('label', null, h('input', { type: 'checkbox', checked: !!st.live, onchange: e => { st.live = e.target.checked ? '1' : ''; setQuery('titles', { ...st, max: st.max >= 20 ? '' : st.max, imdb: st.imdb || '', sort: st.sort === 'az' ? '' : st.sort }); viewTitles(new URLSearchParams(location.hash.split('?')[1] || '')); } }), 'in a live deal (use today\'s price)'))),
-      selectFld('xo', 'my library', st.own, [['', 'show everything'], ['hide', 'hide what I own'], ['only', 'only what I own']], set('own')),
+      selectFld('xo', 'my library', st.own, [['', 'show everything'], ['hide', 'hide what I own'], ['only', 'only what I own'], ['ni', 'only not interested']], set('own')),
       selectFld('xs', 'sort', st.sort, [['az', 'A–Z'], ['cheap', 'lowest price'], ['rating', 'IMDb rating'], ['deals', 'most deals']], set('sort'))),
     count, results);
   run();
@@ -977,7 +990,8 @@ function viewTitle(key) {
           cheapestLive ? h('a', { class: 'btn primary', href: dealHref(cheapestLive.deal) }, `cheapest live · ${money(cheapestLive.price)}${liveSolo ? '' : ' in a pack'}`) : null,
           im?.id ? h('a', { class: 'btn', href: `https://www.imdb.com/title/${im.id}/` }, 'IMDb') : null,
           watchBtn(t.key, t.title),
-          ownBigBtn(t.key)),
+          ownBigBtn(t.key),
+          niBigBtn(t.key)),
         packNote ? h('p', { class: 'sub', style: 'margin:12px 0 0' }, `or ${money(packNote.price)} a movie in the `, h('a', { href: dealHref(packNote.deal) }, packNote.packName), ' pack') : null)),
     patternSection(t),
     hist.length > 1 ? h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'ch' },
@@ -1109,6 +1123,26 @@ function ownBigBtn(key) {
   const lab = on => on ? '✓ in my library' : '+ I own this';
   const b = h('button', { class: 'btn' + (OW.has(key) ? ' oon' : ''), type: 'button', 'aria-pressed': OW.has(key) ? 'true' : 'false' }, lab(OW.has(key)));
   b.addEventListener('click', () => { const on = OW.toggle(key); b.textContent = lab(on); b.classList.toggle('oon', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+  return b;
+}
+const NKEY = 'splitsbot-hidden';
+const NI = {
+  list() { try { const v = JSON.parse(localStorage.getItem(NKEY) || '[]'); return Array.isArray(v) ? v.filter(k => typeof k === 'string') : []; } catch { return []; } },
+  set() { if (this._s && this._v === localStorage.getItem(NKEY)) return this._s; this._v = localStorage.getItem(NKEY); return (this._s = new Set(this.list())); },
+  save(v) { try { localStorage.setItem(NKEY, JSON.stringify([...new Set(v)])); } catch {} },
+  has(k) { return this.set().has(k); },
+  toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
+};
+function niBtn(key, name, onChange) {
+  const on = NI.has(key);
+  const b = h('button', { class: 'nib' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Show again: ' : 'Not interested: ') + name, title: on ? 'hidden · tap to show it again' : 'not interested (hide it everywhere)' }, '⊘');
+  b.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); const now = NI.toggle(key); b.classList.toggle('on', now); b.setAttribute('aria-pressed', now ? 'true' : 'false'); b.title = now ? 'hidden · tap to show it again' : 'not interested (hide it everywhere)'; const row = b.closest('tr, .ptile'); if (row) { row.classList.toggle('nint', now); if (now && !onChange) row.classList.add('gone'); } onChange?.(now); });
+  return b;
+}
+function niBigBtn(key) {
+  const lab = on => on ? '⊘ hidden · show it again' : '⊘ not interested';
+  const b = h('button', { class: 'btn' + (NI.has(key) ? ' nion' : ''), type: 'button', 'aria-pressed': NI.has(key) ? 'true' : 'false' }, lab(NI.has(key)));
+  b.addEventListener('click', () => { const on = NI.toggle(key); b.textContent = lab(on); b.classList.toggle('nion', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
 }
 const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`));
@@ -1328,6 +1362,8 @@ function viewToday(q) {
     h('td', { class: 'num', 'data-l': 'now', style: 'font-weight:700' + (cls === 'p-low' ? ';color:var(--gold)' : '') }, money(o.x.price)),
     h('td', null, h('span', { class: 'pill ' + cls }, what)),
     h('td', null, starBtn(o.t.key, o.t.title)));
+  const keepNI = o => !NI.has(o.t.key);
+  lows.splice(0, lows.length, ...lows.filter(keepNI)); back.splice(0, back.length, ...back.filter(keepNI));
   const changes = [...lows.map(o => trow(o, `new low · was ${money(o.was)}`, 'p-low')), ...back.slice(0, 25).map(o => trow(o, `back in a deal · low was ${money(o.was)}`, 'p-new'))];
   const nav = h('div', { class: 'daynav' },
     day > FIRST ? h('a', { class: 'btn', href: '#/today?d=' + prev }, `← ${wday(prev)} ${shortDate(prev)}`) : h('span', { class: 'btn dis' }, '←'),
@@ -1360,7 +1396,7 @@ function viewPeople(role, name, q) {
   const run = () => {
     setQuery(`people/${role}/${encodeURIComponent(name)}`, { live: st.live ? '1' : '', k4: st.k4 ? '1' : '', sort: st.sort === 'live' ? '' : st.sort });
     const S = { live: (a, b) => ((a.liveLow ?? 1e9) - (b.liveLow ?? 1e9)) || a.title.localeCompare(b.title), az: (a, b) => a.title.localeCompare(b.title), year: (a, b) => (a.year || 0) - (b.year || 0), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
-    const shown = list.filter(t => (!st.live || t.liveLow != null) && (!st.k4 || t.res.has('UHD'))).sort(S[st.sort] || S.live);
+    const shown = list.filter(t => (!st.live || t.liveLow != null) && (!st.k4 || t.res.has('UHD')) && !NI.has(t.key)).sort(S[st.sort] || S.live);
     grid.replaceChildren(...shown.map(t => h('a', { class: 'ptile' + (t.liveLow == null ? ' off' : '') + (OW.has(t.key) ? ' owned' : ''), href: titleHref(t) },
       OW.has(t.key) ? h('span', { class: 'obadge' }, '✓ owned') : '',
       t.image ? img(t.image, '', 'pimg') : h('div', { class: 'pimg' }),
@@ -1399,7 +1435,7 @@ function viewPlan(q) {
   const pool = () => fromDeal ? [...new Map(dealRows(fromDeal).map(r => [r.key, titles.get(r.key)])).values()].filter(Boolean) : [...titles.values()].filter(t => t.live);
   const suggest = () => {
     const terms = norm(input.value).split(' ').filter(Boolean);
-    const list = (terms.length ? pool().filter(t => terms.every(w => t.search.includes(w))) : fromDeal ? pool() : []).filter(t => !st.t.includes(t.key) && !OW.has(t.key)).sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0)).slice(0, 8);
+    const list = (terms.length ? pool().filter(t => terms.every(w => t.search.includes(w))) : fromDeal ? pool() : []).filter(t => !st.t.includes(t.key) && !OW.has(t.key) && !NI.has(t.key)).sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0)).slice(0, 8);
     sugg.replaceChildren(...list.map(t => h('button', { type: 'button', role: 'option', onclick: () => { st.t.push(t.key); input.value = ''; sugg.replaceChildren(); render(); input.focus(); } }, t.image ? img(t.image, '', 'thumb sm') : '', h('span', null, t.title, yr(t.title, t.year)), h('span', { class: 'sub' }, t.liveLow != null ? '● ' + money(t.liveLow) : 'not live'))));
   };
   let tmr; input.addEventListener('input', () => { clearTimeout(tmr); tmr = setTimeout(suggest, 120); });
@@ -1475,10 +1511,10 @@ function viewWatch() {
     const vs = isNew ? 'first time seen' : solo.price < low + 0.009 ? 'ties the low' : `low was ${money(low)}`;
     return { now: [h('b', { class: 'green' }, '● ' + money(solo.price)), h('span', { class: 'sub' }, ` · ${resLabel(solo.resolution)} · ${vs}`)], where: h('a', { href: dealHref(solo.deal) }, splitName(solo.deal)[0]), pill: solo.deal.firstSeen === TODAY ? h('span', { class: 'pill p-low' }, 'new today') : h('span', { class: 'pill p-tie', style: 'border-color:var(--green);color:var(--green)' }, 'in a live deal') };
   };
-  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
-  const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); viewWatch(); } }, 'clear');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   app.replaceChildren(
     libTabs('watch'),
@@ -1518,7 +1554,7 @@ const b64u = bytes => { let s2 = ''; for (const b of bytes) s2 += String.fromCha
 const unb64u = str => { const s2 = atob(str.replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(s2, c => c.charCodeAt(0)); };
 const pipeBytes = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
 async function makeSyncLink() {
-  const data = { w: WL.list(), o: OW.list(), f: FL.list().map(x => [x.role, x.name]) };
+  const data = { w: WL.list(), o: OW.list(), n: NI.list(), f: FL.list().map(x => [x.role, x.name]) };
   const raw = new TextEncoder().encode(JSON.stringify(data));
   let code = 'j' + b64u(raw);
   if (window.CompressionStream) { try { code = 'z' + b64u(await pipeBytes(raw, new CompressionStream('deflate-raw'))); } catch {} }
@@ -1529,11 +1565,11 @@ async function readSyncCode(code) {
   const raw = kind === 'z' ? await pipeBytes(bytes, new DecompressionStream('deflate-raw')) : bytes;
   const v = JSON.parse(new TextDecoder().decode(raw));
   const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
-  return { watch: strs(v.w), owned: strs(v.o), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
+  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
 }
 function syncCard() {
   const out = h('div');
-  const counts = () => `${WL.list().length} starred · ${OW.list().length} owned · ${FL.list().length} following`;
+  const counts = () => `${WL.list().length} starred · ${OW.list().length} owned · ${FL.list().length} following · ${NI.list().length} not interested`;
   const make = h('button', { class: 'btn primary', type: 'button', onclick: async () => {
     const link = await makeSyncLink();
     const field = h('input', { class: 'f', value: link, readonly: true, 'aria-label': 'Your sync link', onfocus: e => e.target.select() });
@@ -1557,24 +1593,36 @@ async function viewSync(q) {
   let data = null;
   try { if (code) data = await readSyncCode(code); } catch {}
   if (!data) { app.replaceChildren(...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'That link didn’t work.', 'It may have been cut off when it was copied. Make a new one on the other device (★ in the menu, then “make my sync link”).'), h('a', { class: 'btn', href: '#/watch' }, 'go to my watchlist')); return; }
-  const w = data.watch.filter(k => titles.has(k)), o = data.owned.filter(k => titles.has(k)), f = data.follow;
+  const w = data.watch.filter(k => titles.has(k)), o = data.owned.filter(k => titles.has(k)), nn = data.hidden.filter(k => titles.has(k)), f = data.follow;
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
   const done = h('div');
   const apply = replace => {
-    if (replace) { WL.save(w); OW.save(o); FL.save(f); }
-    else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
+    if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); }
+    else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
     history.replaceState(null, '', '#/watch');
     done.replaceChildren(h('div', { class: 'okbox', style: 'margin-top:18px' }, h('b', { class: 'green' }, '✓ Done.'), ' Your lists are on this device now. ', h('a', { href: '#/watch' }, 'open my watchlist'), ' · ', h('a', { href: '#/library' }, 'my library')));
   };
   const stat = (l, n, s2) => h('div', { class: 'stat' }, h('div', { class: 'l' }, l), h('div', { class: 'n' }, n), h('div', { class: 's' }, s2));
   app.replaceChildren(
     ...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'Copy these lists to this device?', 'This link was made on another device. Nothing was uploaded: everything is inside the link.'),
-    h('div', { class: 'stats', style: 'margin-bottom:22px' }, stat('★ starred', w.length, `${newW} new here`), stat('✓ owned', o.length, `${newO} new here`), stat('following', f.length, `${newF} new here`)),
+    h('div', { class: 'stats', style: 'margin-bottom:22px' }, stat('★ starred', w.length, `${newW} new here`), stat('✓ owned', o.length, `${newO} new here`), stat('following', f.length, `${newF} new here`), nn.length ? stat('⊘ not interested', nn.length, 'hidden titles') : ''),
     h('div', { class: 'btns', style: 'max-width:640px' },
       h('button', { class: 'btn primary', type: 'button', onclick: () => apply(false) }, 'add to this device'),
       (WL.list().length || OW.list().length || FL.list().length) ? h('button', { class: 'btn', type: 'button', onclick: () => apply(true) }, 'replace what’s here') : ''),
     (WL.list().length || OW.list().length || FL.list().length) ? h('p', { class: 'sub', style: 'margin-top:12px' }, '“Add” keeps what’s already saved on this device and adds the rest. “Replace” makes this device match the link exactly.') : '',
     done);
+}
+
+function niSection() {
+  const wrap = h('section', { class: 'sec', style: 'margin-top:36px', 'aria-labelledby': 'ni' });
+  const draw = () => {
+    const ts = NI.list().filter(k => titles.has(k)).map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
+    wrap.replaceChildren(h('p', { class: 'prompt' }, '$ ls ~/.not-interested'), h('h2', { id: 'ni', style: 'font-size:26px;margin-bottom:8px' }, `Not interested (${ts.length})`),
+      h('p', { class: 'sub', style: 'margin:0 0 14px' }, ts.length ? 'Hidden from deal pages, Titles, ./today, actor pages and the planner. Tap ⊘ to bring one back.' : 'Tap ⊘ next to any title you’d never want and it’s hidden everywhere on the site. They show up here so you can bring them back.'),
+      ts.length ? h('div', { class: 'nilist' }, ts.map(t => h('div', { class: 'niitem' }, h('a', { href: titleHref(t) }, t.title, yr(t.title, t.year)), h('button', { class: 'linkbtn', type: 'button', onclick: () => { NI.toggle(t.key); draw(); } }, 'show again')))) : '');
+  };
+  draw();
+  return wrap;
 }
 
 // ---------- my library ----------
@@ -1625,6 +1673,7 @@ function viewLibrary(q) {
     h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --add'), h('h2', null, 'Paste a list'),
       h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'One title per line, a year in brackets helps: The Matrix (1999). Copy them from your Movies Anywhere or Fandango at Home library.'),
       box, h('div', { style: 'margin-top:12px;max-width:260px' }, add), res),
+    niSection(),
     syncCard(),
     h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist.'));
   render();
