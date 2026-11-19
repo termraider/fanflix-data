@@ -875,7 +875,7 @@ function viewDeal(slug, q) {
   const d = dealById.get(slug);
   if (!d) return notFound('That deal isn’t in the archive (yet).');
   document.title = `${d.name} · SplitsBot`;
-  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title', hideOwned: q.get('own') === 'hide' };
+  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title', hideOwned: q.get('own') === 'hide', res: q.get('res') || '', max: q.get('max') || '', imdb: q.get('imdb') || '' };
   const rows = dealRows(d).map(r => ({ ...r, v: verdict(d, r) }));
   const c = verdictCounts(d);
   // Titles in this deal that are cheaper right now in another LIVE deal (same title, same quality)
@@ -892,9 +892,9 @@ function viewDeal(slug, q) {
   const tbody = h('tbody', { class: 'cards' });
   const count = h('p', { class: 'count', 'aria-live': 'polite' });
   const run = () => {
-    setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '' });
+    setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '', res: st.res, max: st.max, imdb: st.imdb });
     const terms = norm(st.q).split(' ').filter(Boolean);
-    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (st.showNope || canUseRow(r)) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
+    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (st.showNope || canUseRow(r)) && (!st.res || r.resolution === st.res) && (!st.max || (r.price != null && r.price <= +st.max + 0.001)) && (!st.imdb || (r.imdb?.rating ?? 0) >= +st.imdb) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
     const S = { title: (a, b) => a.title.localeCompare(b.title), price: (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     list.sort(S[st.sort] || S.title);
     const ownN = new Set(rows.filter(r => OW.has(r.key)).map(r => r.key)).size;
@@ -955,7 +955,10 @@ function viewDeal(slug, q) {
           h('div', null, h('p', { class: 'prompt' }, `splitsbot@fanflixco:~$ titles --deal ${d.slug.replace(/^[a-z0-9]+-/, '').slice(0, 28)}`), h('h2', { id: 'tl', style: 'font-size:28px' }, 'Titles in this deal')),
           h('div', { class: 'filters' },
             searchFld('tq', 'search this deal', st.q, 'Enter a title', set('q'), 'wide'),
-            selectFld('tv', 'show', st.show, [['', `all titles (${rows.length})`], ['low', `lowest we've seen (${c.low})`], ['tie', `ties the low (${c.tie})`], ['new', `first time seen · new in this deal (${c.new})`], ['up', `cheaper before (${c.up})`]], set('show'), 'wide'))),
+            selectFld('tv', 'show', st.show, [['', `all titles (${rows.length})`], ['low', `lowest we've seen (${c.low})`], ['tie', `ties the low (${c.tie})`], ['new', `first time seen · new in this deal (${c.new})`], ['up', `cheaper before (${c.up})`]], set('show'), 'wide'),
+            selectFld('tr', 'quality', st.res, [['', 'any quality'], ...['UHD', 'HD', 'SD'].filter(k => rc[k]).map(k => [k, `${resLabel(k)} (${rc[k]})`])], set('res')),
+            selectFld('tp', 'price', st.max, [['', 'any price'], ...[3, 5, 7, 10].map(n => [String(n), `≤ $${n} (${rows.filter(r => r.price != null && r.price <= n + 0.001).length})`])], set('max')),
+            selectFld('ti', 'IMDb', st.imdb, [['', 'any rating'], ...[6, 7, 8].map(n => [String(n), `${n}+ (${rows.filter(r => (r.imdb?.rating ?? 0) >= n).length})`])], set('imdb')))),
         count,
         h('div', { class: 'tablebox' }, h('table', null,
           h('thead', null, h('tr', null, sortTh('title', 'title'), h('th', { scope: 'col' }, 'quality'), sortTh('price', 'price', 'num'), sortTh('rating', 'IMDb', 'num'), h('th', { scope: 'col' }, 'history'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
