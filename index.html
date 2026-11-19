@@ -154,6 +154,9 @@ td a{color:var(--hi)}
 fieldset.fld{border:0;padding:0;margin:0}
 .checks{display:flex;gap:16px;flex-wrap:wrap}
 .checks label{display:flex;gap:8px;align-items:center;min-height:40px;cursor:pointer}
+.cheap{background:#1A0B0A;border:1px solid #5A1E19;border-radius:14px;padding:22px 24px}
+.cheap h2{font-size:24px}
+.cheap .tablebox{border-color:#4A1C18;background:#0B0606}
 .empty{color:var(--dim);padding:40px 0;text-align:center}
 /* about */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:20px}
@@ -232,6 +235,8 @@ footer{border-top:1px solid var(--line)}
   .cards td[data-a]::after{content:" " attr(data-a);color:var(--dim)}
   .thumb{width:32px;height:48px}
   .bars{padding:16px}
+  .cheap{padding:16px}
+  .cheap h2{font-size:20px}
   .bar{grid-template-columns:1fr 60px;gap:6px 10px}
   .bar>span:first-child{grid-column:1/-1;font-size:13px}
   .panel{padding:14px;gap:14px}
@@ -337,7 +342,7 @@ function prepare(archive, endsData) {
     d.res = new Set();
     // per-title rows
     for (const it of d.items) {
-      const rows = it.pack ? it.pack.map(p => ({ ...p, packName: it.title, price: d.perTitle })) : [{ ...it, price: d.bundle?.perItem ?? (num(it.price) ?? (!d.canSplit && checkout && d.items.length === 1 ? checkout : null)) }];
+      const rows = it.pack ? it.pack.map(p => ({ ...p, packName: it.title, price: d.bundle ? d.perTitle : (num(it.price) != null ? num(it.price) / it.pack.length : d.perTitle) })) : [{ ...it, price: d.bundle?.perItem ?? (num(it.price) ?? (!d.canSplit && checkout && d.items.length === 1 ? checkout : null)) }];
       for (const r of rows) {
         const year = r.year || r.imdb?.year || null;
         const key = slugify(r.title) + (year ? '-' + year : '');
@@ -578,6 +583,32 @@ function tile(d, hits) {
       hits ? h('div', { class: 'hit' }, 'includes ', h('b', null, hits[0].title), hits.length > 1 ? ` +${hits.length - 1}` : '') : null));
 }
 
+// "Cheaper in another deal right now": the deal page's warning box (live deals only)
+function cheaperSection(list) {
+  if (!list.length) return null; // nothing cheaper elsewhere: no section at all
+  let open = false;
+  const body = h('tbody', { class: 'cards' });
+  const more = h('div', { class: 'morewrap', style: 'margin-top:14px' });
+  const fill = () => {
+    const shown = open ? list : list.slice(0, 10);
+    body.replaceChildren(...shown.map(({ r, best }) => h('tr', null,
+      h('td', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year)),
+      h('td', null, resLabel(r.resolution)),
+      h('td', { class: 'num', 'data-l': 'here' }, money(r.price)),
+      h('td', { class: 'num', 'data-l': 'there', style: 'color:var(--gold);font-weight:700' }, money(best.price)),
+      h('td', null, h('a', { href: dealHref(best.deal) }, splitName(best.deal)[0]), h('div', { class: 'sub' }, `save ${money(r.price - best.price)} · ${kindShort(best.deal)}`)))));
+    more.replaceChildren(list.length > 10 ? h('button', { class: 'btn', type: 'button', onclick: () => { open = !open; fill(); } }, open ? 'show fewer' : `show all ${list.length}`) : '');
+  };
+  fill();
+  return h('section', { class: 'sec cheap', style: 'margin-top:28px', 'aria-labelledby': 'ch2' },
+    h('h2', { id: 'ch2' }, h('span', { class: 'badge b-red', style: 'margin-right:10px;vertical-align:middle' }, 'heads up'), `Cheaper in another deal right now`),
+    h('p', { class: 'sub', style: 'margin:6px 0 16px' }, `${list.length} title${list.length === 1 ? ' is' : 's are'} cheaper in another live FanFlix deal at the same quality. Check before you buy.`),
+    h('div', { class: 'tablebox' }, h('table', null,
+      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality'), h('th', { scope: 'col', class: 'num' }, 'here'), h('th', { scope: 'col', class: 'num' }, 'there'), h('th', { scope: 'col' }, 'cheaper in'))),
+      body)),
+    more);
+}
+
 // ---------- Deal page ----------
 function viewDeal(slug, q) {
   const d = dealById.get(slug);
@@ -586,6 +617,14 @@ function viewDeal(slug, q) {
   const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title' };
   const rows = dealRows(d).map(r => ({ ...r, v: verdict(d, r) }));
   const c = verdictCounts(d);
+  // Titles in this deal that are cheaper right now in another LIVE deal (same title, same quality)
+  const cheaper = !d.live ? [] : rows.map(r => {
+    const t = titles.get(r.key);
+    if (!t || r.price == null || r.packName) return null; // titles you can buy on their own only (like SplitsBot's 🚨 alert)
+    const best = t.hits.filter(x => x.deal !== d && x.deal.live && !x.packName && x.resolution === r.resolution && x.price != null && x.price < r.price - 0.001)
+      .sort((a, b) => a.price - b.price)[0];
+    return best ? { r, best } : null;
+  }).filter(Boolean).sort((a, b) => a.best.price - b.best.price || a.r.title.localeCompare(b.r.title));
   const rc = {}; for (const r of rows) if (r.resolution) rc[r.resolution] = (rc[r.resolution] || 0) + 1;
   const resText = ['UHD', 'HD', 'SD'].filter(k => rc[k]).map(k => `${rc[k]} ${resLabel(k)}`).join(' · ');
   const shots = [d.screenshot ? ['A–Z', d.screenshot] : null, ...Object.entries(d.locationScreenshots || {})].filter(Boolean);
@@ -635,6 +674,7 @@ function viewDeal(slug, q) {
         h('div', { class: 'stat' }, h('div', { class: 'l' }, "lowest we've seen"), h('div', { class: 'n gold' }, c.low, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'cheaper than any earlier deal')),
         h('div', { class: 'stat' }, h('div', { class: 'l' }, 'ties the low'), h('div', { class: 'n' }, c.tie, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'same as the best price so far')),
         h('div', { class: 'stat' }, h('div', { class: 'l' }, 'first time seen'), h('div', { class: 'n' }, c.new, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'no earlier price to compare'))),
+      d.live ? cheaperSection(cheaper) : null,
       h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'tl' },
         h('div', { class: 'sec-head' },
           h('div', null, h('p', { class: 'prompt' }, `splitsbot@fanflixco:~$ titles --deal ${d.slug.replace(/^[a-z0-9]+-/, '').slice(0, 28)}`), h('h2', { id: 'tl', style: 'font-size:28px' }, 'Titles in this deal')),
