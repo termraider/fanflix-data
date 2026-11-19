@@ -102992,17 +102992,18 @@
     "url": "https://fanflix.co/c/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99",
     "firstSeen": "2026-11-19",
     "lastSeen": "2026-11-19",
+    "live": true,
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
-      "Movies Anywhere",
-      "Fandango at Home"
+      "Fandango at Home",
+      "Movies Anywhere"
     ],
     "bannerFile": "images/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99--banner.png",
     "screenshot": "images/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99.png",
     "locationScreenshots": {
-      "Movies Anywhere": "images/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99--movies-anywhere.png",
-      "Fandango at Home": "images/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99--fandango-at-home.png"
+      "Fandango at Home": "images/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99--fandango-at-home.png",
+      "Movies Anywhere": "images/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99--movies-anywhere.png"
     },
     "bundle": null,
     "resolutions": {
