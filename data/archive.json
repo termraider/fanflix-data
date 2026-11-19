@@ -94694,14 +94694,14 @@
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
-      "Movies Anywhere",
-      "Fandango at Home"
+      "Fandango at Home",
+      "Movies Anywhere"
     ],
     "bannerFile": "images/1mj4embznfasl-black-friday-film-bonanza--banner.png",
     "screenshot": "images/1mj4embznfasl-black-friday-film-bonanza.png",
     "locationScreenshots": {
-      "Movies Anywhere": "images/1mj4embznfasl-black-friday-film-bonanza--movies-anywhere.png",
-      "Fandango at Home": "images/1mj4embznfasl-black-friday-film-bonanza--fandango-at-home.png"
+      "Fandango at Home": "images/1mj4embznfasl-black-friday-film-bonanza--fandango-at-home.png",
+      "Movies Anywhere": "images/1mj4embznfasl-black-friday-film-bonanza--movies-anywhere.png"
     },
     "bundle": null,
     "resolutions": {
@@ -102992,7 +102992,6 @@
     "url": "https://fanflix.co/c/1mk1871aafk7h-cozy-classics-2-or-more-starting-at-3-99",
     "firstSeen": "2026-11-19",
     "lastSeen": "2026-11-19",
-    "live": true,
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
