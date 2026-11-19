@@ -53,12 +53,13 @@ main{padding:28px 0 72px;min-height:70vh}
 .live-dot{color:var(--green)}.ended-dot{color:var(--dim)}
 /* carousel */
 .hero{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.slide{display:flex;flex-wrap:wrap;align-items:stretch;min-height:580px}
+.slide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,min(580px,48%));align-items:stretch}
 .slide[hidden]{display:none}
-.stext{flex:999 1 440px;min-width:0;padding:56px 48px 48px;align-self:flex-start}
+.stext{min-width:0;padding:28px 48px;display:flex;flex-direction:column}
+.stext .btns{margin-top:auto;padding-top:20px}
 .stext h1,.stext h2{font-size:clamp(34px,4.6vw,56px);line-height:1.05;margin:16px 0 12px}
 .stext p{margin:0 0 28px;color:var(--dim);font-size:17px;max-width:500px}
-.simg{flex:0 1 580px;min-width:0;padding:28px;display:flex;align-items:center;justify-content:center}
+.simg{min-width:0;padding:28px;display:flex;align-items:center;justify-content:center}
 .simg a{display:block;width:100%;max-width:524px}
 .bimg{width:100%;aspect-ratio:1/1;object-fit:contain;border-radius:10px;display:block;background:#000;clip-path:inset(0.4% round 10px)}
 .ctrl{border-top:1px solid var(--line);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -178,7 +179,8 @@ footer{border-top:1px solid var(--line)}
   .prompt-field{max-width:none}
   main{padding:16px 0 48px}
   .btns{grid-template-columns:1fr;max-width:none}
-  .slide{flex-direction:column-reverse;flex-wrap:nowrap;justify-content:flex-end;min-height:700px}
+  .slide{display:flex;flex-direction:column-reverse;flex-wrap:nowrap;justify-content:flex-end;min-height:700px}
+  .stext .btns{margin-top:0}
   .slide>div{flex:none;width:100%}
   .stext{padding:20px 18px 22px}
   .stext h1,.stext h2{font-size:30px}
