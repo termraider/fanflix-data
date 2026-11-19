@@ -284,6 +284,10 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .nilist{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .niitem{display:flex;justify-content:space-between;gap:12px;padding:10px 16px;border-top:1px solid var(--line);font-size:14px}
 .niitem:first-child{border-top:0}.niitem a{color:var(--dim)}
+.srcs{display:flex;flex-direction:column;margin-bottom:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.src{border:0;border-top:1px solid var(--line);padding:12px 16px}.src:first-child{border-top:0}.src:last-of-type{border-bottom:0}
+.src summary{font-size:15px}.src p{font-size:14px;margin-top:8px}.src p b{color:var(--hi)}
+.upl{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.upl .btn{cursor:pointer}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -1652,6 +1656,50 @@ const match = line => {
   return [...c].sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0))[0];
 };
 
+// Turns an exported or copied list into "Title (Year)" lines: CSV/TSV with a title column (CheapCharts and
+// most library exporters), JSON, or text copied from a store's library page (labels, prices and buttons dropped)
+function csvRows(text, sep) {
+  const rows = []; let row = [], f = '', q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; continue; }
+    if (c === '"' && !f.trim()) { q = true; f = ''; } else if (c === sep) { row.push(f.trim()); f = ''; } else if (c === '\n' || c === '\r') { if (c === '\r' && text[i + 1] === '\n') i++; row.push(f.trim()); rows.push(row); row = []; f = ''; } else f += c;
+  }
+  if (f.trim() || row.length) { row.push(f.trim()); rows.push(row); }
+  return rows.filter(r => r.some(x => x));
+}
+const NOISE = /^(?:4k(?: uhd)?|uhd|hdx?|sd|ultra hd|dolby vision|hdr10?\+?|atmos|watch(?: now| trailer)?|play|resume|buy|rent|own|download|details|more|movies?|my movies|my library|library|purchased|all|sort(?: by)?.*|filter.*|a-z|z-a|recently added|date added|title|grid|list|tv shows?|bundles?|collections?|view all|see all|available|unavailable|expires?.*|digital copy|extras?|bonus|trailer|\$\s?\d.*|\d+\.\d+|pg-?13|pg|g|r|nc-?17|nr|not rated|unrated|tv-[a-z0-9]+|cc|ad|sdh|\d+\s?h(?:r|rs)?\s?\d*\s?m(?:in)?|\d+\s?min|\d{1,2}:\d{2}(?::\d{2})?|movies anywhere|fandango at home|vudu|itunes|apple tv|google play|prime video)$/i;
+function convertList(text, name = '') {
+  text = String(text || '').replace(/^﻿/, '');
+  const t = text.trim();
+  const fmt = (title, year) => { title = String(title || '').replace(/\s+/g, ' ').trim(); const y = String(year || '').match(/(?:19|20)\d\d/)?.[0]; if (!title) return null; return y && !/[\(\[](?:19|20)\d\d[\)\]]\s*$/.test(title) ? `${title} (${y})` : title; };
+  if (/^[\[{]/.test(t)) {
+    try {
+      let v = JSON.parse(t); if (!Array.isArray(v)) v = v.movies || v.items || v.titles || v.library || v.owned || Object.values(v).find(Array.isArray) || [];
+      const lines = v.map(x => typeof x === 'string' ? x : fmt(x.title || x.Title || x.name || x.Name, x.year || x.Year || x.releaseYear || x.release_date || x.ReleaseDate)).filter(Boolean);
+      if (lines.length) return { lines, kind: 'JSON file' };
+    } catch {}
+  }
+  const first = t.split(/\r?\n/)[0] || '';
+  const sep = first.includes('\t') ? '\t' : first.includes(',') ? ',' : null;
+  if (sep) {
+    const rows = csvRows(t, sep), head = (rows[0] || []).map(x => x.toLowerCase());
+    let ti = head.findIndex(x => /^(movie )?(title|name|movie)( name)?$/.test(x)); if (ti < 0) ti = head.findIndex(x => /title|name/.test(x));
+    const yi = head.findIndex(x => /year|release|date/.test(x));
+    if (ti >= 0) {
+      const lines = rows.slice(1).map(r => fmt(r[ti], yi >= 0 ? r[yi] : '')).filter(Boolean);
+      const kind = /artist/.test(head.join(' ')) && /url/.test(head.join(' ')) ? 'CheapCharts export' : sep === '\t' ? 'TSV file' : 'CSV file';
+      return { lines, kind };
+    }
+  }
+  const seen = new Set(), lines = [];
+  for (let l of t.split(/\r?\n/)) {
+    l = l.replace(/\s+/g, ' ').trim().replace(/\s*[·•|–-]\s*(?:4k(?: uhd)?|uhd|hdx?|sd)\s*$/i, '');
+    if (l.length < 2 || NOISE.test(l) || /^(?:\d+ (?:movies?|titles?|items?)|showing .*|page \d+.*)$/i.test(l)) continue;
+    const k = l.toLowerCase(); if (seen.has(k)) continue; seen.add(k); lines.push(l);
+  }
+  return { lines, kind: name ? 'text file' : 'pasted text' };
+}
 const PKEY = 'splitsbot-owned-pending';
 const pending = { list() { try { const v = JSON.parse(localStorage.getItem(PKEY) || '[]'); return Array.isArray(v) ? v.filter(x => typeof x === 'string') : []; } catch { return []; } }, save(v) { try { v.length ? localStorage.setItem(PKEY, JSON.stringify([...new Set(v)])) : localStorage.removeItem(PKEY); } catch {} } };
 // Lines that didn't match yet are kept and re-checked on every visit, so movies are added on their own once they show up in a FanFlix deal
@@ -1670,10 +1718,10 @@ function viewLibrary(q) {
   const ts = keys.map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
   const st = { q: q.get('q') || '' };
   let libLimit = 200;
-  const out = h('div'); const res = h('div');
+  const out = h('div'); const res = h('div'); const conv = h('p', { class: 'sub', 'aria-live': 'polite', style: 'margin:8px 0' });
   const box = h('textarea', { class: 'f ta', rows: 6, placeholder: 'The Matrix (1999)\nTop Gun: Maverick\nGremlins', 'aria-label': 'Titles you own, one per line' });
   const add = h('button', { class: 'btn', type: 'button', onclick: () => {
-    const lines = box.value.split(/\n+/).map(x => x.trim()).filter(Boolean);
+    const lines = convertList(box.value).lines;
     const found = [], miss = [];
     for (const l of lines) { const t = match(l); t ? found.push(t) : miss.push(l); }
     OW.save([...OW.list(), ...found.map(t => t.key)]);
@@ -1705,9 +1753,22 @@ function viewLibrary(q) {
     ...pageHead('splitsbot@splitsbot.com:~$ ls ~/library', 'My library.', 'Movies you already own, wherever you got them. Deal pages can hide them, so you only see what you still need.'),
     h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; libLimit = 200; render(); }))),
     out,
-    h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --add'), h('h2', null, 'Paste a list'),
-      h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'One title per line, a year in brackets helps: The Matrix (1999). Big lists are fine (thousands of lines). Movies that haven’t been in a FanFlix deal yet are saved and added on their own when they show up.'),
-      box, h('div', { style: 'margin-top:12px;max-width:260px' }, add), res),
+    h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --import'), h('h2', null, 'Add your movies from a list'),
+      h('p', { class: 'sub', style: 'margin:-6px 0 14px' }, 'Upload an export file or paste a list. SplitsBot figures out the format, so a CSV, a copied library page or one title per line all work. Big lists are fine (thousands of movies). Movies that haven’t been in a FanFlix deal yet are saved and added on their own when they show up.'),
+      h('div', { class: 'srcs' }, ...[
+        ['CheapCharts', 'Best option, and it covers iTunes / Apple TV too.', ['In CheapCharts, open your movie library and choose ', h('b', null, 'Export'), ' (CSV).', ' Upload that file here.']],
+        ['Movies Anywhere', 'No export button, but copying the page works.', ['On ', h('b', null, 'moviesanywhere.com'), ' (a computer browser is easiest), open ', h('b', null, 'My Movies'), ' and scroll to the bottom so every movie loads. Select all (⌘A / Ctrl+A), copy, and paste it here. Store labels like “4K UHD” and buttons get dropped.']],
+        ['Fandango at Home', 'Same as Movies Anywhere.', ['On ', h('b', null, 'fandangoathome.com'), ', open ', h('b', null, 'My Movies'), ' and switch to the list view if there is one. Scroll to the end, select all, copy, and paste it here.']],
+        ['iTunes / Apple TV', 'Apple doesn’t offer an export.', ['If CheapCharts tracks your iTunes movies, export from CheapCharts (above). Otherwise copy the titles from your Purchased list on a Mac, or type the ones that matter.']],
+        ['Anything else', 'Spreadsheets, Letterboxd, notes.', ['A CSV with a “Title” (and “Year”) column, a JSON list, or one title per line. A year in brackets helps: The Matrix (1999).']]
+      ].map(([n, sub2, how]) => h('details', { class: 'src' }, h('summary', null, n, h('span', { class: 'sub' }, ' · ' + sub2)), h('p', null, ...how)))),
+      h('div', { class: 'upl' }, h('label', { class: 'btn', for: 'libfile' }, 'upload a file'), h('input', { id: 'libfile', type: 'file', accept: '.csv,.tsv,.txt,.json,text/*,application/json', class: 'sr', onchange: e => {
+        const f = e.target.files[0]; if (!f) return;
+        f.text().then(txt => { const r = convertList(txt, f.name); box.value = r.lines.join('\n'); conv.textContent = r.lines.length ? `Read ${r.lines.length.toLocaleString()} titles from ${f.name} (${r.kind}). Check the list below, then tap “add to my library”.` : `Couldn’t find any titles in ${f.name}.`; });
+        e.target.value = '';
+      } }), h('span', { class: 'sub' }, 'or paste below')),
+      conv,
+      box, h('div', { class: 'btns', style: 'margin-top:12px;max-width:520px' }, add, h('button', { class: 'btn', type: 'button', onclick: () => { const r = convertList(box.value); box.value = r.lines.join('\n'); conv.textContent = `Cleaned up: ${r.lines.length.toLocaleString()} titles (${r.kind}).`; } }, 'clean up the list')), res),
     niSection(),
     syncCard(),
     h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist.'));
