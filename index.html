@@ -103,7 +103,11 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .tile .tp b{font-size:22px;color:var(--green)}
 .tile .tp span{color:var(--dim);font-size:13px}
 .tile .hit{font-size:13px;color:var(--dim);margin-top:6px}.tile .hit b{color:var(--hi);font-weight:600}
-.tile.ended{opacity:.75}
+.tile{position:relative}
+.tile .tbadge{position:absolute;top:12px;left:12px;z-index:1;background:var(--dim);color:#050605;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:4px 10px;box-shadow:0 0 0 3px #050605}
+.tile.ended .timg{filter:grayscale(1);opacity:.45;transition:filter .2s,opacity .2s}
+.tile.ended:hover .timg{filter:grayscale(.3);opacity:.8}
+.tile.ended .tk,.tile.ended .tp b,.tile.ended .tn{color:var(--dim)}
 .b-ended{background:var(--dim);color:#050605}
 .endnote{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 16px;padding:14px 18px;border:1px dashed var(--line2);border-radius:12px;background:repeating-linear-gradient(135deg,#0A100B 0 12px,#0D140E 12px 24px);color:var(--hi);font-size:15px}
 .endnote b{background:var(--dim);color:#050605;border-radius:4px;padding:3px 10px;font-size:13px;letter-spacing:.08em}
@@ -191,6 +195,7 @@ footer{border-top:1px solid var(--line)}
 .foot nav{padding:0;gap:6px 18px}
 /* phones */
 @media (max-width:700px){
+  .tile .tbadge{top:8px;left:8px;font-size:10px;padding:3px 7px;letter-spacing:.05em}
   .wrap{padding:0 14px}
   nav{gap:6px 18px;padding:10px 0}
   .hsearch{flex-basis:100%}
@@ -595,9 +600,10 @@ function viewHome(q) {
 function tile(d, hits) {
   const per = d.kind.key === 'packs' ? '/movie' : d.kind.key === 'single' ? '' : '/title';
   return h('a', { class: 'tile' + (d.live ? '' : ' ended'), href: dealHref(d) },
+    d.live ? '' : h('span', { class: 'tbadge' }, 'ended · ' + shortDate(d.lastSeen)),
     img(BASE + d.bannerFile, '', 'timg'),
     h('div', { class: 'tb' },
-      h('div', { class: 'tk' + (isFlash(d) && d.live ? ' flash' : '') }, [isFlash(d) ? 'flash sale' : null, kindShort(d), plats(d), d.live ? null : 'ended ' + shortDate(d.lastSeen)].filter(Boolean).join(' · ')),
+      h('div', { class: 'tk' + (isFlash(d) && d.live ? ' flash' : '') }, [isFlash(d) ? 'flash sale' : null, kindShort(d), plats(d)].filter(Boolean).join(' · ')),
       h('div', { class: 'tn' }, splitName(d)[0]),
       h('div', { class: 'tp' }, h('b', null, d.bundle ? `${d.bundle.count} for ${usd(d.bundle.price)}` : d.kind.key === 'nomin' ? `from ${money(d.perTitle)}` : money(num(d.checkoutPrice) ?? d.perTitle)),
         h('span', null, [d.bundle ? money(d.perTitle) + per : null, `${d.titleCount} title${d.titleCount === 1 ? '' : 's'}`].filter(Boolean).join(' · '))),
