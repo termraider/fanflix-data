@@ -552,7 +552,7 @@ function viewHome(q) {
         h('div', { class: 'filters' },
           searchFld('dq', 'find a deal or title', st.q, 'Enter a title', set('q'), 'wide'),
           rangeFld('dm', 'max per title:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
-          selectFld('dp', 'redeem at', st.plat, [['', 'all services'], ['Movies Anywhere', 'Movies Anywhere'], ['Fandango at Home', 'Fandango at Home'], ['Google Play', 'Google Play']], set('plat')),
+          selectFld('dp', 'where to redeem', st.plat, [['', 'All'], ['Movies Anywhere', 'Movies Anywhere'], ['Fandango at Home', 'Fandango at Home'], ['Google Play', 'Google Play']], set('plat')),
           selectFld('ds', 'sort', st.sort, [['new', 'newest'], ['cheap', 'cheapest / title'], ['big', 'most titles'], ['az', 'A–Z']], set('sort')))),
       chipsEl, count, results));
   run();
