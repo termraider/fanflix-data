@@ -267,7 +267,7 @@ td.stc{width:auto!important}
 tr.owned td:first-child a{color:var(--dim)}
 tr.owned td:first-child .thumb{opacity:.45}
 .btn.oon{border-color:var(--green);color:var(--green)}
-.ptile .obadge{position:absolute;top:8px;left:8px;z-index:1;background:var(--green);color:#04130A;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px}
+.ptile .obadge{align-self:flex-start;margin-bottom:4px;background:var(--green);color:#04130A;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px}
 .ptile.owned .pimg{opacity:.55}
 a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .ta{height:auto;padding:12px 14px;resize:vertical;line-height:1.5;font-size:15px}
@@ -302,7 +302,8 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .ptile:hover{border-color:var(--line2);color:inherit}
 .ptile .pimg{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;background:#111A13}
 .ptile.off .pimg{filter:grayscale(1);opacity:.5}.ptile.off .pn{color:var(--dim)}
-.ptile .star{position:absolute;top:6px;right:6px;background:rgba(5,6,5,.75);border-radius:6px}
+.ptile .tacts{position:absolute;top:6px;right:6px;display:flex;align-items:center;gap:2px;background:rgba(5,6,5,.8);border-radius:8px;padding:2px 4px}
+.ptile .tacts .own{width:26px;height:26px;font-size:14px}
 .pb{padding:10px 12px 12px;font-size:13px;display:flex;flex-direction:column;gap:2px;flex:1}
 .pn{color:var(--hi);font-weight:600;line-height:1.3}
 .pp{display:flex;justify-content:space-between;gap:6px;margin-top:auto;padding-top:6px;flex-wrap:wrap}
@@ -1437,10 +1438,9 @@ function viewPeople(role, name, q) {
     const S = { live: (a, b) => ((a.liveLow ?? 1e9) - (b.liveLow ?? 1e9)) || a.title.localeCompare(b.title), az: (a, b) => a.title.localeCompare(b.title), year: (a, b) => (a.year || 0) - (b.year || 0), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     const shown = list.filter(t => (!st.live || t.liveLow != null) && (!st.k4 || t.res.has('UHD')) && !NI.has(t.key)).sort(S[st.sort] || S.live);
     grid.replaceChildren(...shown.map(t => h('a', { class: 'ptile' + (t.liveLow == null ? ' off' : '') + (OW.has(t.key) ? ' owned' : ''), href: titleHref(t) },
-      OW.has(t.key) ? h('span', { class: 'obadge' }, '✓ owned') : '',
       t.image ? img(t.image, '', 'pimg') : h('div', { class: 'pimg' }),
-      starBtn(t.key, t.title),
-      h('div', { class: 'pb' }, h('div', { class: 'pn' }, t.title), h('div', { class: 'sub' }, [t.year, t.imdb?.rating ? 'IMDb ' + t.imdb.rating.toFixed(1) : null].filter(Boolean).join(' · ')),
+      h('div', { class: 'tacts' }, niBtn(t.key, t.title, () => setTimeout(run, 250)), ownBtn(t.key, t.title, () => run()), starBtn(t.key, t.title)),
+      h('div', { class: 'pb' }, OW.has(t.key) ? h('span', { class: 'obadge' }, '✓ owned') : '', h('div', { class: 'pn' }, t.title), h('div', { class: 'sub' }, [t.year, t.imdb?.rating ? 'IMDb ' + t.imdb.rating.toFixed(1) : null].filter(Boolean).join(' · ')),
         h('div', { class: 'pp' }, t.liveLow != null ? h('b', { class: 'green' }, '● ' + money(t.liveLow) + (t.liveInPack ? ' pack' : '')) : h('span', { class: 'sub' }, '○ not live'), h('span', { class: t.liveLow != null && Math.abs(t.liveLow - t.low) < 0.01 ? 'goldc' : 'sub' }, 'low ' + money(t.low)))))));
     chips.replaceChildren(chipBtn('live only', st.live, () => { st.live = !st.live; run(); }), chipBtn('4K', st.k4, () => { st.k4 = !st.k4; run(); }));
   };
