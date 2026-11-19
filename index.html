@@ -259,6 +259,18 @@ td.stc{width:44px;text-align:center;padding-left:4px;padding-right:8px}
 .follow{display:flex;flex-direction:column;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:inherit}
 .follow:hover{border-color:var(--line2);color:inherit}.follow b{color:var(--hi);font-size:18px}
 .follow.off{opacity:.65}.ftop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.acts{display:flex;align-items:center;gap:2px;justify-content:flex-end}
+td.stc{width:auto!important}
+.own{background:transparent;border:1px solid var(--line2);color:var(--dim);border-radius:50%;width:28px;height:28px;font-size:15px;line-height:1;cursor:pointer;padding:0;flex:none}
+.own:hover{border-color:var(--green);color:var(--green)}
+.own.on{background:var(--green);border-color:var(--green);color:#04130A;font-weight:700}
+tr.owned td:first-child a{color:var(--dim)}
+tr.owned td:first-child .thumb{opacity:.45}
+.btn.oon{border-color:var(--green);color:var(--green)}
+.ptile .obadge{position:absolute;top:8px;left:8px;z-index:1;background:var(--green);color:#04130A;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px}
+.ptile.owned .pimg{opacity:.55}
+a.chip{text-decoration:none;display:inline-flex;align-items:center}
+.ta{height:auto;padding:12px 14px;resize:vertical;line-height:1.5;font-size:15px}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -781,7 +793,7 @@ function viewDeal(slug, q) {
   const d = dealById.get(slug);
   if (!d) return notFound('That deal isn’t in the archive (yet).');
   document.title = `${d.name} · SplitsBot`;
-  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title' };
+  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title', hideOwned: q.get('own') === 'hide' };
   const rows = dealRows(d).map(r => ({ ...r, v: verdict(d, r) }));
   const c = verdictCounts(d);
   // Titles in this deal that are cheaper right now in another LIVE deal (same title, same quality)
@@ -798,13 +810,14 @@ function viewDeal(slug, q) {
   const tbody = h('tbody', { class: 'cards' });
   const count = h('p', { class: 'count', 'aria-live': 'polite' });
   const run = () => {
-    setQuery('deal/' + encodeURIComponent(slug), { ...st, sort: st.sort === 'title' ? '' : st.sort });
+    setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '' });
     const terms = norm(st.q).split(' ').filter(Boolean);
-    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
+    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
     const S = { title: (a, b) => a.title.localeCompare(b.title), price: (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     list.sort(S[st.sort] || S.title);
-    count.textContent = `${list.length} of ${rows.length} titles`;
-    tbody.replaceChildren(...list.map(r => h('tr', null,
+    const ownN = new Set(rows.filter(r => OW.has(r.key)).map(r => r.key)).size;
+    count.replaceChildren(`${list.length} of ${rows.length} titles`, ...(ownN ? [' · ', h('span', { class: 'green' }, `you own ${ownN}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.hideOwned = !st.hideOwned; run(); } }, st.hideOwned ? 'show them' : 'hide them')] : []));
+    tbody.replaceChildren(...list.map(r => h('tr', { class: OW.has(r.key) ? 'owned' : null },
       h('td', null, h('div', { class: 'tcell' }, r.image ? img(r.image, '', 'thumb') : null,
         h('div', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year),
           r.seasons > 1 ? h('div', { class: 'sub' }, `${r.seasons} seasons`) : null,
@@ -813,7 +826,7 @@ function viewDeal(slug, q) {
       h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price)),
       h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
       h('td', null, r.v.text ? h('span', { class: 'pill ' + r.v.cls }, r.v.text) : ''),
-      h('td', { class: 'stc' }, starBtn(r.key, r.title)))));
+      h('td', { class: 'stc' }, h('div', { class: 'acts' }, ownBtn(r.key, r.title, () => run()), starBtn(r.key, r.title))))));
   };
   const set = k => v => { st[k] = v; run(); };
   const sortTh = (key, label, cls) => h('th', { scope: 'col', class: cls, 'aria-sort': st.sort === key ? 'ascending' : null }, h('button', { type: 'button', onclick: () => { st.sort = key; render(); } }, label + (st.sort === key ? ' ▾' : '')));
@@ -865,7 +878,7 @@ function viewDeal(slug, q) {
 
 // ---------- Titles index ----------
 function viewTitles(q) {
-  const st = { q: q.get('q') || '', max: +(q.get('max') || 20), imdb: +(q.get('imdb') || 0), res: q.get('res') || '', live: q.get('live') || '', sort: q.get('sort') || 'az' };
+  const st = { q: q.get('q') || '', max: +(q.get('max') || 20), imdb: +(q.get('imdb') || 0), res: q.get('res') || '', live: q.get('live') || '', own: q.get('own') || '', sort: q.get('sort') || 'az' };
   let limit = PAGE;
   const all = [...titles.values()];
   const results = h('div');
@@ -876,7 +889,7 @@ function viewTitles(q) {
     const terms = norm(st.q).split(' ').filter(Boolean);
     const rs = resSet();
     let list = all.filter(t =>
-      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) &&
+      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) && (st.own !== 'hide' || !OW.has(t.key)) && (st.own !== 'only' || OW.has(t.key)) &&
       (st.max >= 20 || ((st.live ? t.liveLow : t.low) != null && (st.live ? t.liveLow : t.low) <= st.max + 0.001)) &&
       (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) &&
       (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
@@ -886,14 +899,14 @@ function viewTitles(q) {
     const shown = list.slice(0, limit);
     results.replaceChildren(list.length ? h('div', { class: 'tablebox' }, h('table', null,
       h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
-      h('tbody', { class: 'cards' }, shown.map(t => h('tr', null,
+      h('tbody', { class: 'cards' }, shown.map(t => h('tr', { class: OW.has(t.key) ? 'owned' : null },
         h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))),
         h('td', null, ['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ') || '—'),
         h('td', { class: 'num', 'data-l': 'lowest ever', style: 'color:var(--gold);font-weight:700' }, money(t.low)),
         h('td', { class: 'num', 'data-a': t.dealCount === 1 ? 'deal' : 'deals' }, t.dealCount),
         h('td', { class: 'num', 'data-l': 'IMDb' }, t.imdb?.rating ? t.imdb.rating.toFixed(1) : '—'),
         h('td', null, t.live ? h('span', { class: 'live-dot', title: 'Cheapest price in a deal that is live right now' }, `● ${t.liveLow != null ? money(t.liveLow) + (t.liveInPack ? ' in a pack' : ' now') : 'live'}`) : h('span', { class: 'ended-dot' }, '○ not live')),
-        h('td', { class: 'stc' }, starBtn(t.key, t.title))))))) : h('p', { class: 'empty' }, 'No titles match.'),
+        h('td', { class: 'stc' }, h('div', { class: 'acts' }, ownBtn(t.key, t.title), starBtn(t.key, t.title)))))))) : h('p', { class: 'empty' }, 'No titles match.'),
       moreBtn(shown.length, list.length, () => { limit += PAGE; run(); }));
   };
   const set = k => v => { st[k] = v; limit = PAGE; run(); };
@@ -909,6 +922,7 @@ function viewTitles(q) {
       rangeFld('xr', 'min IMDb:', 0, 9, 0.5, st.imdb, v => v > 0 ? v.toFixed(1) + '+' : 'any', set('imdb')),
       h('fieldset', { class: 'fld' }, h('legend', null, 'quality'), h('div', { class: 'checks' }, rcheck('UHD', '4K'), rcheck('HD', 'HD'), rcheck('SD', 'SD'),
         h('label', null, h('input', { type: 'checkbox', checked: !!st.live, onchange: e => { st.live = e.target.checked ? '1' : ''; setQuery('titles', { ...st, max: st.max >= 20 ? '' : st.max, imdb: st.imdb || '', sort: st.sort === 'az' ? '' : st.sort }); viewTitles(new URLSearchParams(location.hash.split('?')[1] || '')); } }), 'in a live deal (use today\'s price)'))),
+      selectFld('xo', 'my library', st.own, [['', 'show everything'], ['hide', 'hide what I own'], ['only', 'only what I own']], set('own')),
       selectFld('xs', 'sort', st.sort, [['az', 'A–Z'], ['cheap', 'lowest price'], ['rating', 'IMDb rating'], ['deals', 'most deals']], set('sort'))),
     count, results);
   run();
@@ -958,7 +972,8 @@ function viewTitle(key) {
         h('div', { class: 'btns tbtns' },
           cheapestLive ? h('a', { class: 'btn primary', href: dealHref(cheapestLive.deal) }, `cheapest live · ${money(cheapestLive.price)}${liveSolo ? '' : ' in a pack'}`) : null,
           im?.id ? h('a', { class: 'btn', href: `https://www.imdb.com/title/${im.id}/` }, 'IMDb') : null,
-          watchBtn(t.key, t.title)),
+          watchBtn(t.key, t.title),
+          ownBigBtn(t.key)),
         packNote ? h('p', { class: 'sub', style: 'margin:12px 0 0' }, `or ${money(packNote.price)} a movie in the `, h('a', { href: dealHref(packNote.deal) }, packNote.packName), ' pack') : null)),
     patternSection(t),
     hist.length > 1 ? h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'ch' },
@@ -1072,6 +1087,27 @@ const WL = {
   has(k) { return this.list().includes(k); },
   toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
 };
+const OKEY = 'splitsbot-owned';
+const OW = {
+  list() { try { const v = JSON.parse(localStorage.getItem(OKEY) || '[]'); return Array.isArray(v) ? v.filter(k => typeof k === 'string') : []; } catch { return []; } },
+  set() { if (this._s && this._v === localStorage.getItem(OKEY)) return this._s; this._v = localStorage.getItem(OKEY); return (this._s = new Set(this.list())); },
+  save(v) { try { localStorage.setItem(OKEY, JSON.stringify([...new Set(v)])); } catch {} },
+  has(k) { return this.set().has(k); },
+  toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
+};
+function ownBtn(key, name, onChange) {
+  const on = OW.has(key);
+  const b = h('button', { class: 'own' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' my library: ' + name, title: on ? 'in your library' : 'I own this' }, on ? '✓' : '+');
+  b.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); const now = OW.toggle(key); b.textContent = now ? '✓' : '+'; b.classList.toggle('on', now); b.setAttribute('aria-pressed', now ? 'true' : 'false'); b.title = now ? 'in your library' : 'I own this'; b.closest('tr')?.classList.toggle('owned', now); onChange?.(now); });
+  return b;
+}
+function ownBigBtn(key) {
+  const lab = on => on ? '✓ in my library' : '+ I own this';
+  const b = h('button', { class: 'btn' + (OW.has(key) ? ' oon' : ''), type: 'button', 'aria-pressed': OW.has(key) ? 'true' : 'false' }, lab(OW.has(key)));
+  b.addEventListener('click', () => { const on = OW.toggle(key); b.textContent = lab(on); b.classList.toggle('oon', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+  return b;
+}
+const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`));
 const FKEY = 'splitsbot-follow';
 const FL = {
   list() { try { const v = JSON.parse(localStorage.getItem(FKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.role === 'string' && typeof x.name === 'string') : []; } catch { return []; } },
@@ -1321,7 +1357,8 @@ function viewPeople(role, name, q) {
     setQuery(`people/${role}/${encodeURIComponent(name)}`, { live: st.live ? '1' : '', k4: st.k4 ? '1' : '', sort: st.sort === 'live' ? '' : st.sort });
     const S = { live: (a, b) => ((a.liveLow ?? 1e9) - (b.liveLow ?? 1e9)) || a.title.localeCompare(b.title), az: (a, b) => a.title.localeCompare(b.title), year: (a, b) => (a.year || 0) - (b.year || 0), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     const shown = list.filter(t => (!st.live || t.liveLow != null) && (!st.k4 || t.res.has('UHD'))).sort(S[st.sort] || S.live);
-    grid.replaceChildren(...shown.map(t => h('a', { class: 'ptile' + (t.liveLow == null ? ' off' : ''), href: titleHref(t) },
+    grid.replaceChildren(...shown.map(t => h('a', { class: 'ptile' + (t.liveLow == null ? ' off' : '') + (OW.has(t.key) ? ' owned' : ''), href: titleHref(t) },
+      OW.has(t.key) ? h('span', { class: 'obadge' }, '✓ owned') : '',
       t.image ? img(t.image, '', 'pimg') : h('div', { class: 'pimg' }),
       starBtn(t.key, t.title),
       h('div', { class: 'pb' }, h('div', { class: 'pn' }, t.title), h('div', { class: 'sub' }, [t.year, t.imdb?.rating ? 'IMDb ' + t.imdb.rating.toFixed(1) : null].filter(Boolean).join(' · ')),
@@ -1358,7 +1395,7 @@ function viewPlan(q) {
   const pool = () => fromDeal ? [...new Map(dealRows(fromDeal).map(r => [r.key, titles.get(r.key)])).values()].filter(Boolean) : [...titles.values()].filter(t => t.live);
   const suggest = () => {
     const terms = norm(input.value).split(' ').filter(Boolean);
-    const list = (terms.length ? pool().filter(t => terms.every(w => t.search.includes(w))) : fromDeal ? pool() : []).filter(t => !st.t.includes(t.key)).sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0)).slice(0, 8);
+    const list = (terms.length ? pool().filter(t => terms.every(w => t.search.includes(w))) : fromDeal ? pool() : []).filter(t => !st.t.includes(t.key) && !OW.has(t.key)).sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0)).slice(0, 8);
     sugg.replaceChildren(...list.map(t => h('button', { type: 'button', role: 'option', onclick: () => { st.t.push(t.key); input.value = ''; sugg.replaceChildren(); render(); input.focus(); } }, t.image ? img(t.image, '', 'thumb sm') : '', h('span', null, t.title, yr(t.title, t.year)), h('span', { class: 'sub' }, t.liveLow != null ? '● ' + money(t.liveLow) : 'not live'))));
   };
   let tmr; input.addEventListener('input', () => { clearTimeout(tmr); tmr = setTimeout(suggest, 120); });
@@ -1434,12 +1471,13 @@ function viewWatch() {
     const vs = isNew ? 'first time seen' : solo.price < low + 0.009 ? 'ties the low' : `low was ${money(low)}`;
     return { now: [h('b', { class: 'green' }, '● ' + money(solo.price)), h('span', { class: 'sub' }, ` · ${resLabel(solo.resolution)} · ${vs}`)], where: h('a', { href: dealHref(solo.deal) }, splitName(solo.deal)[0]), pill: solo.deal.firstSeen === TODAY ? h('span', { class: 'pill p-low' }, 'new today') : h('span', { class: 'pill p-tie', style: 'border-color:var(--green);color:var(--green)' }, 'in a live deal') };
   };
-  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
   const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   app.replaceChildren(
+    libTabs('watch'),
     ...pageHead('splitsbot@splitsbot.com:~$ watch --list', 'Your watchlist.', 'Star titles (☆) and follow actors, directors or franchises. They light up here when they show up in a live deal.'),
     ts.length ? h('div', { class: 'okbox' }, h('b', { class: 'green' }, `● ${liveN} of your ${ts.length}`), liveN === 1 ? ' is in a live deal right now.' : ' are in a live deal right now.') : '',
     ts.length ? h('div', { class: 'tablebox' }, h('table', null,
@@ -1468,6 +1506,58 @@ function followSection() {
         h('div', { class: 'sub' }, `${ts.length} title${ts.length === 1 ? '' : 's'} · `, h('span', { class: live.length ? 'green' : '' }, `${live.length} live`), fresh.length ? [' · ', h('span', { class: 'goldc' }, `${fresh.length} new today`)] : ''),
         cheapest ? h('div', { class: 'sub' }, 'cheapest: ', h('span', { style: 'color:var(--hi)' }, cheapest.title), ' ', h('b', { class: 'green' }, money(cheapest.liveLow))) : h('div', { class: 'sub' }, 'nothing live right now'));
     })));
+}
+
+// ---------- my library ----------
+function viewLibrary(q) {
+  document.title = 'My library · SplitsBot';
+  const keys = OW.list().filter(k => titles.has(k));
+  const ts = keys.map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
+  const st = { q: q.get('q') || '' };
+  const out = h('div'); const res = h('div');
+  const box = h('textarea', { class: 'f ta', rows: 6, placeholder: 'The Matrix (1999)\nTop Gun: Maverick\nGremlins', 'aria-label': 'Titles you own, one per line' });
+  const match = line => {
+    const m = line.match(/^(.*?)(?:\s*[\(\[]?((?:19|20)\d\d)[\)\]]?)?\s*$/);
+    const n = norm(m ? m[1] : line), y = m && m[2] ? +m[2] : null;
+    if (!n) return null;
+    const c = [...titles.values()].filter(t => t.search === n || norm(t.title.replace(/\(\d{4}\)/, '')) === n);
+    return (y ? c.find(t => t.year === y) : null) || c.sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0))[0] || null;
+  };
+  const add = h('button', { class: 'btn', type: 'button', onclick: () => {
+    const lines = box.value.split(/\n+/).map(x => x.trim()).filter(Boolean);
+    const found = [], miss = [];
+    for (const l of lines) { const t = match(l); t ? found.push(t) : miss.push(l); }
+    OW.save([...OW.list(), ...found.map(t => t.key)]);
+    res.replaceChildren(h('p', { class: 'sub' }, h('b', { class: 'green' }, `added ${found.length}`), miss.length ? ` · not found: ${miss.slice(0, 12).join(', ')}${miss.length > 12 ? ` +${miss.length - 12} more` : ''} (only titles that have been in a FanFlix deal can be added)` : ''));
+    box.value = miss.join('\n'); render();
+  } }, 'add to my library');
+  const render = () => {
+    setQuery('library', { q: st.q });
+    const all = OW.list().filter(k => titles.has(k)).map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
+    const terms = norm(st.q).split(' ').filter(Boolean);
+    const list = all.filter(t => !terms.length || terms.every(w => t.search.includes(w)));
+    const live = all.filter(t => t.liveLow != null).length;
+    out.replaceChildren(...(all.length ? [
+      h('p', { class: 'count' }, `${all.length} title${all.length === 1 ? '' : 's'} in your library · ${live} of them are in a live deal right now (you can skip those)`),
+      h('div', { class: 'tablebox' }, h('table', null, h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col' }, 'now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'owned')))),
+        h('tbody', { class: 'cards' }, list.map(t => h('tr', null,
+          h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))),
+          h('td', null, ['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ') || '—'),
+          h('td', { class: 'num', 'data-l': 'lowest ever' }, money(t.low)),
+          h('td', null, t.liveLow != null ? h('span', { class: 'sub' }, `in a live deal · ${money(t.liveLow)}`) : h('span', { class: 'sub' }, 'not live')),
+          h('td', { class: 'stc' }, ownBtn(t.key, t.title, () => render())))))))] :
+      [h('div', { class: 'card', style: 'text-align:center;padding:36px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--green)' }, '✓'), h('p', null, 'Your library is empty.'), h('p', { class: 'sub' }, 'Tap + next to any title (deal pages, Titles, a title’s page), or paste a list below.'))]));
+  };
+  app.replaceChildren(
+    libTabs('lib'),
+    ...pageHead('splitsbot@splitsbot.com:~$ ls ~/library', 'My library.', 'Movies you already own, wherever you got them. Deal pages can hide them, so you only see what you still need.'),
+    h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; render(); }))),
+    out,
+    h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --add'), h('h2', null, 'Paste a list'),
+      h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'One title per line, a year in brackets helps: The Matrix (1999). Copy them from your Movies Anywhere or Fandango at Home library.'),
+      box, h('div', { style: 'margin-top:12px;max-width:260px' }, add), res),
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist. Use export on the watchlist page to move it to another device.'));
+  render();
 }
 
 // ---------- compare ----------
@@ -1545,7 +1635,7 @@ function route() {
   const { parts, q } = parseHash();
   const view = parts[0] || '';
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', compare: 'deals' }[view];
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', compare: 'deals' }[view];
   document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   if (view === 'deal') viewDeal(parts[1], q);
   else if (view === 'titles') viewTitles(q);
@@ -1557,6 +1647,7 @@ function route() {
   else if (view === 'people') viewPeople(parts[1], parts[2] || '', q);
   else if (view === 'plan') viewPlan(q);
   else if (view === 'watch') viewWatch();
+  else if (view === 'library') viewLibrary(q);
   else if (view === 'compare') viewCompare(parts[1], parts[2], q);
   else viewHome(q);
 }
