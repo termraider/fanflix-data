@@ -13258,12 +13258,6 @@
    "votes": 51853,
    "checked": "2026-11-18"
   },
-  "tv|sylvester and tweety mysteries|": {
-   "id": "tt0112186",
-   "rating": 7,
-   "votes": 5884,
-   "checked": "2026-11-17"
-  },
   "tv|tacoma fd|": {
    "id": "tt8026448",
    "rating": 8.1,
@@ -25229,20 +25223,6 @@
    "dir": [
     "David Livingston",
     "Winrich Kolbe"
-   ]
-  },
-  "tt0112186": {
-   "checked": "2026-11-18",
-   "names": [
-    "Joe Alaskey",
-    "June Foray",
-    "Frank Welker",
-    "Jeff Bennett",
-    "Jim Cummings"
-   ],
-   "dir": [
-    "Karl Toerge",
-    "Al Zegler"
    ]
   },
   "tt0112346": {
@@ -50749,16 +50729,6 @@
    ],
    "y": 1995,
    "rt": 44
-  },
-  "tt0112186": {
-   "checked": "2026-11-18",
-   "g": [
-    "Adventure",
-    "Animation",
-    "Comedy"
-   ],
-   "y": 1995,
-   "rt": 30
   },
   "tt0112346": {
    "checked": "2026-11-19",

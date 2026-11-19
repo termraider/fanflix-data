@@ -89552,7 +89552,7 @@
     },
     "resolutions": {
       "UHD": 2,
-      "HD": 28
+      "HD": 27
     },
     "items": [
       {
@@ -90358,36 +90358,6 @@
           "directors": [
             "Karl Toerge",
             "Charles Visser"
-          ]
-        }
-      },
-      {
-        "title": "The Sylvester and Tweety Mysteries: The Complete Series",
-        "price": "$3.00",
-        "resolution": "HD",
-        "year": 1995,
-        "image": "https://img.fanflix.co/WB/ef1f456ca3121853b3a555430d8f9728b795c43aada50ceb8357f747e00811cb",
-        "imdb": {
-          "id": "tt0112186",
-          "rating": 7,
-          "votes": 5884,
-          "cast": [
-            "Joe Alaskey",
-            "June Foray",
-            "Frank Welker",
-            "Jeff Bennett",
-            "Jim Cummings"
-          ],
-          "genres": [
-            "Adventure",
-            "Animation",
-            "Comedy"
-          ],
-          "year": 1995,
-          "runtime": 30,
-          "directors": [
-            "Karl Toerge",
-            "Al Zegler"
           ]
         }
       },

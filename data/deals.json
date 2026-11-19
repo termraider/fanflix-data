@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T08:31:12.995Z",
+  "updatedAt": "2026-11-19T18:23:07.546Z",
   "deals": [
     {
       "id": "/c/1mj8577aogn7n-flash-sale-nashville-complete-series",
@@ -75323,7 +75323,7 @@
       },
       "resolutions": {
         "UHD": 2,
-        "HD": 28
+        "HD": 27
       },
       "title": "Space Jam 30th - Looney Tunes 5 for $15",
       "canSplit": true,
@@ -75332,7 +75332,7 @@
         "Fandango at Home",
         "Movies Anywhere"
       ],
-      "itemCount": 30,
+      "itemCount": 29,
       "items": [
         {
           "title": "Space Jam",
@@ -76163,37 +76163,6 @@
             "directors": [
               "Karl Toerge",
               "Charles Visser"
-            ]
-          }
-        },
-        {
-          "title": "The Sylvester and Tweety Mysteries: The Complete Series",
-          "price": "$3.00",
-          "resolution": "HD",
-          "image": "https://img.fanflix.co/WB/ef1f456ca3121853b3a555430d8f9728b795c43aada50ceb8357f747e00811cb",
-          "priceFromBundle": true,
-          "year": 1995,
-          "imdb": {
-            "id": "tt0112186",
-            "rating": 7,
-            "votes": 5884,
-            "cast": [
-              "Joe Alaskey",
-              "June Foray",
-              "Frank Welker",
-              "Jeff Bennett",
-              "Jim Cummings"
-            ],
-            "genres": [
-              "Adventure",
-              "Animation",
-              "Comedy"
-            ],
-            "year": 1995,
-            "runtime": 30,
-            "directors": [
-              "Karl Toerge",
-              "Al Zegler"
             ]
           }
         },
