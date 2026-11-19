@@ -276,6 +276,8 @@ footer{border-top:1px solid var(--line)}
 const BASE = window.SPLITSBOT_BASE || '';
 const PAGE = 60;
 const app = document.getElementById('app');
+const _rc = app.replaceChildren.bind(app);
+app.replaceChildren = (...kids) => _rc(...kids.filter(k => k != null && k !== false));
 
 // ---------- helpers ----------
 const h = (tag, attrs, ...kids) => {
@@ -680,7 +682,7 @@ function viewDeal(slug, q) {
         h('div', { class: 'stat' }, h('div', { class: 'l' }, "lowest we've seen"), h('div', { class: 'n gold' }, c.low, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'cheaper than any earlier deal')),
         h('div', { class: 'stat' }, h('div', { class: 'l' }, 'ties the low'), h('div', { class: 'n' }, c.tie, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'same as the best price so far')),
         h('div', { class: 'stat' }, h('div', { class: 'l' }, 'first time seen'), h('div', { class: 'n' }, c.new, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'no earlier price to compare'))),
-      d.live ? cheaperSection(cheaper) : null,
+      (d.live && cheaperSection(cheaper)) || '',
       h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'tl' },
         h('div', { class: 'sec-head' },
           h('div', null, h('p', { class: 'prompt' }, `splitsbot@fanflixco:~$ titles --deal ${d.slug.replace(/^[a-z0-9]+-/, '').slice(0, 28)}`), h('h2', { id: 'tl', style: 'font-size:28px' }, 'Titles in this deal')),
@@ -784,7 +786,7 @@ function viewTitle(key) {
           h('span', null, splitName(x.deal)[0], h('span', { class: 'sub' }, ` · ${multiRes ? resLabel(x.resolution) + ' · ' : ''}${shortDate(x.deal.firstSeen)}${x.deal.live ? ' →' : '–' + shortDate(x.deal.lastSeen)}`)),
           h('div', { class: 'track', 'aria-hidden': 'true' }, h('div', { class: low ? 'low' : '', style: `width:${Math.max(4, x.price / maxP * 100).toFixed(1)}%` })),
           h('span', { class: 'v' + (low ? ' low' : '') }, money(x.price)));
-      }))) : null,
+      }))) : '',
     h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'dl' },
       h('h2', { id: 'dl', style: 'font-size:26px;margin-bottom:16px' }, `In ${t.dealCount} deal${t.dealCount === 1 ? '' : 's'}`),
       h('div', { class: 'tablebox' }, h('table', null,
