@@ -297,6 +297,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .sub.warn{color:var(--accent)}
 .jump{margin:-10px 0 22px;font-size:14px}
 .sublist{margin:8px 0 0;padding-left:20px;font-size:14px;color:var(--dim)}.sublist li{margin:4px 0}.sublist b{color:var(--hi)}
+.warnc{color:var(--accent)}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -873,7 +874,7 @@ function viewDeal(slug, q) {
     count.replaceChildren(`${list.length} of ${rows.length} titles`,
       ...(ownN ? [' · ', h('span', { class: 'green' }, `you own ${ownN}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.hideOwned = !st.hideOwned; run(); } }, st.hideOwned ? 'show them' : 'hide them')] : []),
       ...(niN ? [' · ', h('span', null, `${niN} not interested`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNI = !st.showNI; run(); } }, st.showNI ? 'hide them' : 'show them')] : []),
-      ...(nopeN ? [' · ', h('span', null, `${nopeN} not on your redeem sites`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNope = !st.showNope; run(); } }, st.showNope ? 'hide them' : 'show them')] : []));
+      ...(nopeN ? [' · ', h('span', { class: 'warnc', title: 'Titles in this deal that only redeem at sites you unticked in ⚙' }, `${nopeN} can’t redeem at ${RP.list().map(p => PLAT_SHORT[p] || p).join(' or ')}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.showNope = !st.showNope; run(); } }, st.showNope ? 'hide them' : 'show them')] : []));
     tbody.replaceChildren(...list.map(r => h('tr', { class: [OW.has(r.key) ? 'owned' : '', NI.has(r.key) ? 'nint' : ''].join(' ').trim() || null },
       h('td', null, h('div', { class: 'tcell' }, r.image ? img(r.image, '', 'thumb') : null,
         h('div', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year),
