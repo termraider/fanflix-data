@@ -546,6 +546,8 @@ function portSection(t) {
     list.length ? h('p', { class: 'portwarn' }, '⚠ reported as ', portText(t.key)) : '',
     h('button', { class: 'linkbtn', type: 'button', onclick: () => { box.hidden = !box.hidden; } }, list.length ? 'report it too' : '⚠ report a porting problem'), box);
 }
+// Every deal this title has been in only redeems at sites this visitor unticked
+const offsiteOnly = t => RP.on() && t.hits.length > 0 && !t.hits.some(x => canUse(x.deal) && canUseRow(x));
 const offSites = () => PLATS.filter(p => !RP.list().includes(p)).join(' or ');
 const platOnly = r => r.platforms?.length ? r.platforms.map(p => PLAT_SHORT[p] || p).join(' + ') + ' only' : '';
 
@@ -976,15 +978,15 @@ function viewTitles(q) {
     setQuery('titles', { ...st, max: st.max >= 20 ? '' : st.max, imdb: st.imdb || '', sort: st.sort === 'az' ? '' : st.sort });
     const terms = norm(st.q).split(' ').filter(Boolean);
     const rs = resSet();
+    const offN = RP.on() ? all.filter(offsiteOnly).length : 0;
     let list = all.filter(t =>
-      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) && (st.own !== 'hide' || !OW.has(t.key)) && (st.own !== 'only' || OW.has(t.key)) && (st.own === 'ni' ? NI.has(t.key) : !NI.has(t.key)) &&
+      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) && (st.allsites || !offsiteOnly(t)) && (st.own !== 'hide' || !OW.has(t.key)) && (st.own !== 'only' || OW.has(t.key)) && (st.own === 'ni' ? NI.has(t.key) : !NI.has(t.key)) &&
       (st.max >= 20 || ((st.live ? t.liveLow : t.low) != null && (st.live ? t.liveLow : t.low) <= st.max + 0.001)) &&
       (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) &&
       (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
     const S = { az: (a, b) => a.title.localeCompare(b.title), cheap: (a, b) => ((st.live ? a.liveLow : a.low) ?? 1e9) - ((st.live ? b.liveLow : b.low) ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0), deals: (a, b) => b.dealCount - a.dealCount || a.title.localeCompare(b.title) };
     list.sort(S[st.sort] || S.az);
-    const offOnly = RP.on() ? all.filter(t => !t.live && t.hits.some(x => x.deal.live)).length : 0;
-    count.replaceChildren(`${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`, ...(offOnly ? [' · ', h('span', { class: 'warnc' }, `${offOnly.toLocaleString()} only live at ${offSites()} right now, so they show as not live`), ' · ', h('a', { href: '#/settings' }, '⚙ change')] : []));
+    count.replaceChildren(`${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`, ...(offN ? [' · ', h('span', { class: 'warnc' }, `${offN.toLocaleString()} only redeem at ${offSites()}, so they’re ${st.allsites ? 'shown' : 'hidden'}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.allsites = !st.allsites; limit = PAGE; run(); } }, st.allsites ? 'hide them' : 'show them')] : []));
     const shown = list.slice(0, limit);
     results.replaceChildren(list.length ? h('div', { class: 'tablebox' }, h('table', null,
       h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
