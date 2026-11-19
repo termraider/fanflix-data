@@ -298,6 +298,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .jump{margin:-10px 0 22px;font-size:14px}
 .sublist{margin:8px 0 0;padding-left:20px;font-size:14px;color:var(--dim)}.sublist li{margin:4px 0}.sublist b{color:var(--hi)}
 .warnc{color:var(--accent)}
+.tile .fit{font-size:13px;color:var(--dim);margin-top:4px}.tile .fit b{color:var(--green)}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -812,6 +813,7 @@ function tile(d, hits) {
       h('div', { class: 'tn' }, splitName(d)[0]),
       h('div', { class: 'tp' }, h('b', null, d.bundle ? `${d.bundle.count} for ${usd(d.bundle.price)}` : d.kind.key === 'nomin' ? `from ${money(d.perTitle)}` : money(num(d.checkoutPrice) ?? d.perTitle)),
         h('span', null, [d.bundle ? money(d.perTitle) + per : null, `${d.titleCount} title${d.titleCount === 1 ? '' : 's'}`].filter(Boolean).join(' · '))),
+      (() => { if (!RP.on() || !canUse(d)) return null; const rows = dealRows(d), ok = rows.filter(canUseRow).length; return ok < rows.length ? h('div', { class: 'fit' }, h('b', null, ok), ` of ${rows.length} redeem at ${RP.list().map(p => PLAT_SHORT[p] || p).join(' or ')}`) : null; })(),
       hits ? h('div', { class: 'hit' }, 'includes ', h('b', null, hits[0].title), hits.length > 1 ? ` +${hits.length - 1}` : '') : null));
 }
 
