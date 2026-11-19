@@ -114,6 +114,8 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .top .info{flex:999 1 460px;min-width:0;padding:32px 40px 36px 8px}
 .top h1{font-size:clamp(30px,4vw,46px);line-height:1.08;margin:14px 0 18px}
 .top h1 small{color:var(--dim);font-size:.55em;font-weight:500}
+.about-info{padding:48px!important}
+.about-art{padding:48px 48px 48px 0!important;align-self:center}
 .poster{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:10px;display:block;background:#111A13}
 .facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 22px;margin:0 0 26px}
 .facts dt{color:var(--dim)}.facts dd{margin:0}
@@ -209,6 +211,9 @@ footer{border-top:1px solid var(--line)}
   .top .art>*{max-width:none}
   .top .art.poster-art>*{max-width:140px}
   .top .info{padding:18px 18px 22px}
+  .top>div{flex:none!important}
+  .about-info{padding:22px 18px 8px!important}
+  .about-art{padding:0 18px 20px!important;align-self:stretch}
   .top h1{font-size:28px}
   .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
   .top .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -756,12 +761,12 @@ function viewAbout() {
   const tier = (name, bg, fg, rule) => h('div', null, h('span', { class: 'tier', style: `background:${bg};color:${fg}` }, name), h('span', null, rule));
   app.replaceChildren(
     h('section', { class: 'top', style: 'align-items:flex-start' },
-      h('div', { class: 'info', style: 'padding:48px' },
+      h('div', { class: 'info about-info' },
         h('span', { class: 'badge b-red' }, '*kzzzt* splitsbot has taken control'),
         h('h1', { style: 'font-size:clamp(30px,4.4vw,52px)' }, 'The bot that runs the Splits threads on r/fanflixco.'),
         h('p', { style: 'color:var(--dim);font-size:16px;max-width:620px;margin:0 0 28px' }, 'SplitsBot pins the organizer comment on every new split, keeps score of who organized and who joined, hands out reputation flair, posts new FanFlix deals, and tracks every price on this site. You just split.'),
         h('div', { class: 'btns' }, h('a', { class: 'btn primary', href: 'https://www.reddit.com/r/fanflixco/' }, 'find a split'), h('a', { class: 'btn', href: '#/' }, 'browse deals'))),
-      h('div', { class: 'art', style: 'padding:48px 48px 48px 0;align-self:center' },
+      h('div', { class: 'art about-art' },
         h('div', { class: 'term' },
           h('p', null, h('span', { style: 'color:#8FB8FF' }, 'mods: '), 'Open the deal doors, SplitsBot.'),
           h('p', null, h('span', { style: 'color:var(--accent)' }, 'splitsbot: '), 'I’m sorry, mods. I’m afraid I can’t do that.')))),
