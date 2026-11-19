@@ -1511,10 +1511,10 @@ function viewWatch() {
     const vs = isNew ? 'first time seen' : solo.price < low + 0.009 ? 'ties the low' : `low was ${money(low)}`;
     return { now: [h('b', { class: 'green' }, '● ' + money(solo.price)), h('span', { class: 'sub' }, ` · ${resLabel(solo.resolution)} · ${vs}`)], where: h('a', { href: dealHref(solo.deal) }, splitName(solo.deal)[0]), pill: solo.deal.firstSeen === TODAY ? h('span', { class: 'pill p-low' }, 'new today') : h('span', { class: 'pill p-tie', style: 'border-color:var(--green);color:var(--green)' }, 'in a live deal') };
   };
-  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.ownedPending)) pending.save([...pending.list(), ...v.ownedPending.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
   const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   app.replaceChildren(
     libTabs('watch'),
@@ -1625,28 +1625,62 @@ function niSection() {
   return wrap;
 }
 
+// ---------- library matching (titles you own, typed or pasted) ----------
+const baseT = x => norm(String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' '));
+let idx = null;
+const index = () => {
+  if (idx) return idx;
+  idx = { full: new Map(), base: new Map() };
+  const put = (m, k, t) => { if (!k) return; if (!m.has(k)) m.set(k, []); m.get(k).push(t); };
+  for (const t of titles.values()) { put(idx.full, norm(t.title.replace(/\(\d{4}\)/, '')), t); put(idx.base, baseT(t.title), t); }
+  return idx;
+};
+const match = line => {
+  const m = line.match(/^(.*?)\s*[\(\[]((?:19|20)\d\d)[\)\]]\s*$/) || line.match(/^(.*?)[\s,;\t]+((?:19|20)\d\d)\s*$/);
+  const name = (m ? m[1] : line).replace(/^["'“”]+|["'“”]+$/g, '').trim(), y = m ? +m[2] : null;
+  if (!norm(name)) return null;
+  const ix = index();
+  const c = ix.full.get(norm(name)) || ix.base.get(baseT(name)) || [];
+  if (!c.length) return null;
+  if (y) {
+    const near = c.filter(t => t.year && Math.abs(t.year - y) <= 1).sort((a, b) => Math.abs(a.year - y) - Math.abs(b.year - y));
+    if (near.length) return near[0];
+    const near2 = c.filter(t => t.year && Math.abs(t.year - y) <= 2); // store dates are sometimes a year or two off
+    if (near2.length === 1) return near2[0];
+    return c.length === 1 && !c[0].year ? c[0] : null; // a same-name movie from another year is a different movie
+  }
+  return [...c].sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0))[0];
+};
+
+const PKEY = 'splitsbot-owned-pending';
+const pending = { list() { try { const v = JSON.parse(localStorage.getItem(PKEY) || '[]'); return Array.isArray(v) ? v.filter(x => typeof x === 'string') : []; } catch { return []; } }, save(v) { try { v.length ? localStorage.setItem(PKEY, JSON.stringify([...new Set(v)])) : localStorage.removeItem(PKEY); } catch {} } };
+// Lines that didn't match yet are kept and re-checked on every visit, so movies are added on their own once they show up in a FanFlix deal
+function checkPending() {
+  const p = pending.list(); if (!p.length) return 0;
+  const found = [], miss = [];
+  for (const l of p) { const t = match(l); t ? found.push(t.key) : miss.push(l); }
+  if (found.length) { OW.save([...OW.list(), ...found]); pending.save(miss); }
+  return found.length;
+}
+
 // ---------- my library ----------
 function viewLibrary(q) {
   document.title = 'My library · SplitsBot';
   const keys = OW.list().filter(k => titles.has(k));
   const ts = keys.map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
   const st = { q: q.get('q') || '' };
+  let libLimit = 200;
   const out = h('div'); const res = h('div');
   const box = h('textarea', { class: 'f ta', rows: 6, placeholder: 'The Matrix (1999)\nTop Gun: Maverick\nGremlins', 'aria-label': 'Titles you own, one per line' });
-  const match = line => {
-    const m = line.match(/^(.*?)(?:\s*[\(\[]?((?:19|20)\d\d)[\)\]]?)?\s*$/);
-    const n = norm(m ? m[1] : line), y = m && m[2] ? +m[2] : null;
-    if (!n) return null;
-    const c = [...titles.values()].filter(t => t.search === n || norm(t.title.replace(/\(\d{4}\)/, '')) === n);
-    return (y ? c.find(t => t.year === y) : null) || c.sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0))[0] || null;
-  };
   const add = h('button', { class: 'btn', type: 'button', onclick: () => {
     const lines = box.value.split(/\n+/).map(x => x.trim()).filter(Boolean);
     const found = [], miss = [];
     for (const l of lines) { const t = match(l); t ? found.push(t) : miss.push(l); }
     OW.save([...OW.list(), ...found.map(t => t.key)]);
-    res.replaceChildren(h('p', { class: 'sub' }, h('b', { class: 'green' }, `added ${found.length}`), miss.length ? ` · not found: ${miss.slice(0, 12).join(', ')}${miss.length > 12 ? ` +${miss.length - 12} more` : ''} (only titles that have been in a FanFlix deal can be added)` : ''));
-    box.value = miss.join('\n'); render();
+    pending.save([...pending.list(), ...miss]);
+    const uniq = new Set(found.map(t => t.key)).size;
+    res.replaceChildren(h('p', { class: 'sub' }, h('b', { class: 'green' }, `added ${uniq.toLocaleString()}`), ` of ${lines.length.toLocaleString()} lines`, miss.length ? ` · ${miss.length.toLocaleString()} haven’t been in a FanFlix deal yet. SplitsBot saved them and adds each one on its own the day it shows up in a deal, so you don’t need to paste again.` : ''));
+    box.value = ''; render();
   } }, 'add to my library');
   const render = () => {
     setQuery('library', { q: st.q });
@@ -1655,23 +1689,24 @@ function viewLibrary(q) {
     const list = all.filter(t => !terms.length || terms.every(w => t.search.includes(w)));
     const live = all.filter(t => t.liveLow != null).length;
     out.replaceChildren(...(all.length ? [
-      h('p', { class: 'count' }, `${all.length} title${all.length === 1 ? '' : 's'} in your library · ${live} of them are in a live deal right now (you can skip those)`),
+      h('p', { class: 'count' }, `${all.length.toLocaleString()} title${all.length === 1 ? '' : 's'} in your library · ${live} of them are in a live deal right now (you can skip those)`, pending.list().length ? [' · ', h('span', { title: 'Movies from your pasted list that haven’t been in a FanFlix deal yet. They’re added on their own when they show up.' }, `${pending.list().length.toLocaleString()} more waiting to show up in a deal`), ' (', h('button', { class: 'linkbtn', type: 'button', onclick: () => { pending.save([]); render(); } }, 'forget them'), ')'] : ''),
       h('div', { class: 'tablebox' }, h('table', null, h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest ever'), h('th', { scope: 'col' }, 'now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'owned')))),
-        h('tbody', { class: 'cards' }, list.map(t => h('tr', null,
+        h('tbody', { class: 'cards' }, list.slice(0, libLimit).map(t => h('tr', null,
           h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))),
           h('td', null, ['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ') || '—'),
           h('td', { class: 'num', 'data-l': 'lowest ever' }, money(t.low)),
           h('td', null, t.liveLow != null ? h('span', { class: 'sub' }, `in a live deal · ${money(t.liveLow)}`) : h('span', { class: 'sub' }, 'not live')),
-          h('td', { class: 'stc' }, ownBtn(t.key, t.title, () => render())))))))] :
+          h('td', { class: 'stc' }, ownBtn(t.key, t.title, () => render()))))))),
+      moreBtn(Math.min(libLimit, list.length), list.length, () => { libLimit += 200; render(); })] :
       [h('div', { class: 'card', style: 'text-align:center;padding:36px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--green)' }, '✓'), h('p', null, 'Your library is empty.'), h('p', { class: 'sub' }, 'Tap + next to any title (deal pages, Titles, a title’s page), or paste a list below.'))]));
   };
   app.replaceChildren(
     libTabs('lib'),
     ...pageHead('splitsbot@splitsbot.com:~$ ls ~/library', 'My library.', 'Movies you already own, wherever you got them. Deal pages can hide them, so you only see what you still need.'),
-    h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; render(); }))),
+    h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; libLimit = 200; render(); }))),
     out,
     h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --add'), h('h2', null, 'Paste a list'),
-      h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'One title per line, a year in brackets helps: The Matrix (1999). Copy them from your Movies Anywhere or Fandango at Home library.'),
+      h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'One title per line, a year in brackets helps: The Matrix (1999). Big lists are fine (thousands of lines). Movies that haven’t been in a FanFlix deal yet are saved and added on their own when they show up.'),
       box, h('div', { style: 'margin-top:12px;max-width:260px' }, add), res),
     niSection(),
     syncCard(),
@@ -1786,6 +1821,7 @@ document.getElementById('hsearch').addEventListener('submit', e => {
 
 load().then(() => {
   TODAY = deals.reduce((m, d) => d.lastSeen > m ? d.lastSeen : m, ''); FIRST = deals.reduce((m, d) => !m || d.firstSeen < m ? d.firstSeen : m, '');
+  try { checkPending(); } catch {}
   updateStarCount();
   document.getElementById('hq').placeholder = `search ${titles.size.toLocaleString()} titles`;
   lastView = parseHash().parts.slice(0, 2).join('/'); route();
