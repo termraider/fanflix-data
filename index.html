@@ -1475,7 +1475,9 @@ function viewPeople(role, name, q) {
   const run = () => {
     setQuery(`people/${role}/${encodeURIComponent(name)}`, { live: st.live ? '1' : '', k4: st.k4 ? '1' : '', sort: st.sort === 'live' ? '' : st.sort });
     const S = { live: (a, b) => ((a.liveLow ?? 1e9) - (b.liveLow ?? 1e9)) || a.title.localeCompare(b.title), az: (a, b) => a.title.localeCompare(b.title), year: (a, b) => (a.year || 0) - (b.year || 0), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
-    const shown = list.filter(t => (!st.live || t.liveLow != null) && (!st.k4 || t.res.has('UHD')) && !NI.has(t.key)).sort(S[st.sort] || S.live);
+    const shown = list.filter(t => (!st.live || t.liveLow != null) && (!st.k4 || t.res.has('UHD')) && !NI.has(t.key) && (st.allsites || !offsiteOnly(t))).sort(S[st.sort] || S.live);
+    const offN = list.filter(offsiteOnly).length;
+    offNote.replaceChildren(...(offN ? [h('span', { class: 'warnc' }, `${offN} only redeem at ${offSites()}, so they’re ${st.allsites ? 'shown' : 'hidden'}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.allsites = !st.allsites; run(); } }, st.allsites ? 'hide them' : 'show them')] : []));
     grid.replaceChildren(...shown.map(t => h('a', { class: 'ptile' + (t.liveLow == null ? ' off' : '') + (OW.has(t.key) ? ' owned' : ''), href: titleHref(t) },
       t.image ? img(t.image, '', 'pimg') : h('div', { class: 'pimg' }),
       h('div', { class: 'tacts' }, niBtn(t.key, t.title, () => setTimeout(run, 250)), ownBtn(t.key, t.title, () => run()), starBtn(t.key, t.title)),
@@ -1484,6 +1486,7 @@ function viewPeople(role, name, q) {
     chips.replaceChildren(chipBtn('live only', st.live, () => { st.live = !st.live; run(); }), chipBtn('4K', st.k4, () => { st.k4 = !st.k4; run(); }));
   };
   const chips = h('div', { class: 'chips', style: 'margin:0' });
+  const offNote = h('p', { class: 'count', style: 'margin:0 0 12px' });
   const stat = (l, n, s, cls) => h('div', { class: 'stat' }, h('div', { class: 'l' }, l), h('div', { class: 'n' + (cls ? ' ' + cls : '') }, n), h('div', { class: 's' }, s));
   const roleWord = { cast: 'actor', director: 'director', franchise: 'franchise' }[role] || role;
   app.replaceChildren(
@@ -1495,6 +1498,7 @@ function viewPeople(role, name, q) {
       stat('live right now', liveList.length, 'in at least one deal', 'green'),
       stat('cheapest live', cheapest ? money(cheapest.liveLow) : '—', cheapest ? cheapest.title : 'nothing live', 'gold'),
       stat('buy all live ones', liveList.length ? money(allLive) : '—', 'cheapest live price for each')),
+    offNote,
     h('div', { class: 'pbar' }, chips, h('span', { class: 'grow' }), h('div', { style: 'min-width:200px' }, selectFld('ps', 'sort', st.sort, [['live', 'cheapest live'], ['az', 'A–Z'], ['year', 'oldest first'], ['rating', 'IMDb rating']], v => { st.sort = v; run(); }))),
     grid);
   run();
