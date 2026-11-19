@@ -325,10 +325,11 @@ function dealKind(d) {
   return { key: 'nomin', label: 'No minimum', long: 'No minimum · buy any number' };
 }
 
-function prepare(archive, endsData) {
+function prepare(archive, endsData, postedHidden) {
   ends = endsData || {};
+  const posted = new Set(postedHidden || []);
   for (const [id, raw] of Object.entries(archive)) {
-    if (raw.hidden) continue; // email-only deals wait for a mod OK before going public
+    if (raw.hidden && !posted.has(id)) continue; // email-only deals go public once posted to r/fanflixco
     const d = { ...raw, id, slug: id.replace(/^\/c\//, ''), name: fixCase(raw.title) };
     d.kind = dealKind(d);
     d.live = !!raw.live;
@@ -383,9 +384,9 @@ function prepare(archive, endsData) {
 async function load() {
   if (window.__ARCHIVE__) return prepare(window.__ARCHIVE__, window.__ENDS__);
   const get = p => fetch(BASE + p, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
-  const [archive, endsData] = await Promise.all([get('data/archive.json'), get('data/deal-ends.json')]);
+  const [archive, endsData, postedHidden] = await Promise.all([get('data/archive.json'), get('data/deal-ends.json'), get('data/posted-hidden.json')]);
   if (!archive) throw new Error('no data');
-  prepare(archive, endsData);
+  prepare(archive, endsData, postedHidden);
 }
 
 // ---------- state in the URL ----------
@@ -665,6 +666,7 @@ function viewDeal(slug, q) {
         h('div', { class: 'info' },
           h('div', { class: 'tags' },
             d.live ? h('span', { class: 'badge b-green' }, d.endsAt ? `live · ends ${shortDate(d.endsAt)}` : 'live') : h('span', { class: 'badge b-line' }, 'ended'),
+            d.hidden ? h('span', { class: 'badge b-gold' }, '🤫 hidden deal · email only') : '',
             isFlash(d) ? h('span', { class: 'badge b-red' }, 'flash sale') : null,
             h('span', { class: 'badge b-line' }, kindShort(d)),
             ...(d.platforms || []).map(p => h('span', { class: 'badge b-line' }, p))),
