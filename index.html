@@ -299,6 +299,8 @@ tr.gone{opacity:.25;transition:opacity .25s}
 .sublist{margin:8px 0 0;padding-left:20px;font-size:14px;color:var(--dim)}.sublist li{margin:4px 0}.sublist b{color:var(--hi)}
 .warnc{color:var(--accent)}
 .tile .fit{font-size:13px;color:var(--dim);margin-top:4px}.tile .fit b{color:var(--green)}
+.ports{margin-top:14px;font-size:14px}.portwarn{margin:0 0 6px;color:var(--gold)}
+.portpick{margin-top:10px;background:var(--bg);border:1px solid var(--line2);border-radius:10px;padding:12px 14px}.portpick .chip{text-decoration:none;display:inline-flex;align-items:center}
 .tbtns{grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));max-width:760px}
 .pbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-bottom:16px}
 .ptiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
@@ -523,6 +525,27 @@ const usable = d => d.live && canUse(d);
 // A title inside a deal: some multi-platform deals have titles that only redeem on some of them (r.platforms)
 const canUseRow = r => { const mine = RP.list(); return !mine.length || !r.platforms?.length || r.platforms.some(p => mine.includes(p)); };
 const usableHit = x => usable(x.deal) && canUseRow(x);
+// "Doesn't port" reports: members send them from a title page (prefilled modmail); SplitsBot counts them on the wiki
+const PORT_SITES = { itunes: 'iTunes / Apple TV', ma: 'Movies Anywhere', fandango: 'Fandango at Home', google: 'Google Play', prime: 'Prime Video', youtube: 'YouTube' };
+let PORTS = {};
+async function loadPorts() {
+  try {
+    const r = await fetch('https://www.reddit.com/r/fanflixco/wiki/splitsbot/port-reports.json?raw_json=1', { cache: 'no-cache' });
+    if (!r.ok) return;
+    const j = await r.json(); const v = JSON.parse(j?.data?.content_md || '{}');
+    if (v && typeof v.r === 'object') PORTS = v.r;
+  } catch {}
+}
+const portList = key => Object.entries(PORTS[key] || {}).filter(([s, n]) => PORT_SITES[s] && n > 0).sort((a, b) => b[1] - a[1]);
+const portText = key => portList(key).map(([s, n]) => `not porting to ${PORT_SITES[s]} (${n})`).join(' · ');
+function portSection(t) {
+  const list = portList(t.key);
+  const box = h('div', { class: 'portpick', hidden: true }, h('p', { class: 'sub', style: 'margin:0 0 8px' }, 'Bought it and it didn’t show up where it should? Pick where it didn’t port. This opens a message to the r/fanflixco mods with everything filled in: just tap send. SplitsBot counts it (once per person).'),
+    h('div', { class: 'chips', style: 'margin:0' }, Object.entries(PORT_SITES).map(([k, name]) => h('a', { class: 'chip', target: '_blank', rel: 'noopener', href: 'https://www.reddit.com/message/compose?' + new URLSearchParams({ to: 'r/fanflixco', subject: 'Port report', message: `!noport ${t.key} ${k}\n\n${t.title}${t.year ? ' (' + t.year + ')' : ''} doesn’t port to ${name}.\n\n(Sent from splitsbot.com. Just tap send.)` }).toString() }, name))));
+  return h('div', { class: 'ports' },
+    list.length ? h('p', { class: 'portwarn' }, '⚠ reported as ', portText(t.key)) : '',
+    h('button', { class: 'linkbtn', type: 'button', onclick: () => { box.hidden = !box.hidden; } }, list.length ? 'report it too' : '⚠ report a porting problem'), box);
+}
 const offSites = () => PLATS.filter(p => !RP.list().includes(p)).join(' or ');
 const platOnly = r => r.platforms?.length ? r.platforms.map(p => PLAT_SHORT[p] || p).join(' + ') + ' only' : '';
 
@@ -884,7 +907,8 @@ function viewDeal(slug, q) {
         h('div', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year),
           r.seasons > 1 ? h('div', { class: 'sub' }, `${r.seasons} seasons`) : null,
           r.packName ? h('div', { class: 'sub' }, `in pack: ${r.packName}`) : null,
-          r.platforms?.length ? h('div', { class: 'sub' + (canUseRow(r) ? '' : ' warn') }, platOnly(r) + (canUseRow(r) ? '' : ' · not on your sites')) : null))),
+          r.platforms?.length ? h('div', { class: 'sub' + (canUseRow(r) ? '' : ' warn') }, platOnly(r) + (canUseRow(r) ? '' : ' · not on your sites')) : null,
+          portList(r.key).length ? h('div', { class: 'sub warn' }, '⚠ ' + portText(r.key)) : null))),
       h('td', null, resLabel(r.resolution)),
       h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price)),
       h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
@@ -1040,7 +1064,8 @@ function viewTitle(key) {
           watchBtn(t.key, t.title),
           ownBigBtn(t.key),
           niBigBtn(t.key)),
-        packNote ? h('p', { class: 'sub', style: 'margin:12px 0 0' }, `or ${money(packNote.price)} a movie in the `, h('a', { href: dealHref(packNote.deal) }, packNote.packName), ' pack') : null)),
+        packNote ? h('p', { class: 'sub', style: 'margin:12px 0 0' }, `or ${money(packNote.price)} a movie in the `, h('a', { href: dealHref(packNote.deal) }, packNote.packName), ' pack') : null,
+        portSection(t))),
     patternSection(t),
     hist.length > 1 ? h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'ch' },
       h('h2', { id: 'ch', style: 'font-size:26px;margin-bottom:4px' }, 'Price per title, every deal'),
@@ -1120,6 +1145,7 @@ function viewAbout() {
         ['Is SplitsBot part of FanFlix or Reddit?', 'No. It’s a free community tool run by the r/fanflixco mods. No ads.'],
         ['Where are my watchlist and library saved?', 'In your browser only, on that device. Nothing is uploaded and there’s no account. To use them on your phone and computer, use “move to another device” on your library page: a sync link for small lists, a sync file for big libraries.'],
         ['How do I add my whole movie library?', 'Export it from CheapCharts as a CSV and upload it on your library page (★ → my library). Movies that haven’t been in a FanFlix deal yet are saved as “waiting” and added on their own when they show up.'],
+        ['What does “reported as not porting” mean?', 'Members bought the title and it didn’t show up on that site (for example, a Movies Anywhere code that never reached iTunes). Report one from the title’s page: it opens a prefilled message to the mods, SplitsBot counts it once per person, and the count shows on the site.'],
         ['Can I hide deals I can’t redeem?', 'Yes. Tap ⚙ in the menu and untick the sites you can’t use. Deals and titles you can’t redeem are hidden, and prices only count the ones you can.']
       ].map(([qq, a]) => h('details', null, h('summary', null, qq), h('p', null, a))),
       h('details', null, h('summary', null, 'Something went wrong. Who do I ask?'), h('p', null, 'Send a ', h('a', { href: 'https://www.reddit.com/message/compose?to=r/fanflixco' }, 'message to the r/fanflixco mods'), '.'))));
@@ -1991,6 +2017,7 @@ document.getElementById('hsearch').addEventListener('submit', e => {
 load().then(() => {
   TODAY = deals.reduce((m, d) => d.lastSeen > m ? d.lastSeen : m, ''); FIRST = deals.reduce((m, d) => !m || d.firstSeen < m ? d.firstSeen : m, '');
   try { checkPending(); } catch {}
+  loadPorts().then(() => { if (Object.keys(PORTS).length && /^#\/(title|deal|titles)/.test(location.hash)) route(); });
   updateStarCount();
   document.getElementById('hq').placeholder = `search ${titles.size.toLocaleString()} titles`;
   lastView = parseHash().parts.slice(0, 2).join('/'); route();
