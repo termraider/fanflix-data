@@ -1754,12 +1754,9 @@ function viewLibrary(q) {
     h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; libLimit = 200; render(); }))),
     out,
     h('section', { class: 'card', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ library --import'), h('h2', null, 'Add your movies from a list'),
-      h('p', { class: 'sub', style: 'margin:-6px 0 14px' }, 'Upload an export file or paste a list. SplitsBot figures out the format, so a CSV, a copied library page or one title per line all work. Big lists are fine (thousands of movies). Movies that haven’t been in a FanFlix deal yet are saved and added on their own when they show up.'),
+      h('p', { class: 'sub', style: 'margin:-6px 0 14px' }, 'Upload an export file or paste a list. The easiest way is a CheapCharts export, but any CSV with a title column or one title per line works too. Big lists are fine (thousands of movies). Movies that haven’t been in a FanFlix deal yet are saved and added on their own when they show up.'),
       h('div', { class: 'srcs' }, ...[
-        ['CheapCharts', 'Best option, and it covers iTunes / Apple TV too.', ['In CheapCharts, open your movie library and choose ', h('b', null, 'Export'), ' (CSV).', ' Upload that file here.']],
-        ['Movies Anywhere', 'No export button, but copying the page works.', ['On ', h('b', null, 'moviesanywhere.com'), ' (a computer browser is easiest), open ', h('b', null, 'My Movies'), ' and scroll to the bottom so every movie loads. Select all (⌘A / Ctrl+A), copy, and paste it here. Store labels like “4K UHD” and buttons get dropped.']],
-        ['Fandango at Home', 'Same as Movies Anywhere.', ['On ', h('b', null, 'fandangoathome.com'), ', open ', h('b', null, 'My Movies'), ' and switch to the list view if there is one. Scroll to the end, select all, copy, and paste it here.']],
-        ['iTunes / Apple TV', 'Apple doesn’t offer an export.', ['If CheapCharts tracks your iTunes movies, export from CheapCharts (above). Otherwise copy the titles from your Purchased list on a Mac, or type the ones that matter.']],
+        ['CheapCharts', 'Export your movie library as a CSV.', ['In CheapCharts, open your movie library and choose ', h('b', null, 'Export'), ' (CSV).', ' Upload that file here.']],
         ['Anything else', 'Spreadsheets, Letterboxd, notes.', ['A CSV with a “Title” (and “Year”) column, a JSON list, or one title per line. A year in brackets helps: The Matrix (1999).']]
       ].map(([n, sub2, how]) => h('details', { class: 'src' }, h('summary', null, n, h('span', { class: 'sub' }, ' · ' + sub2)), h('p', null, ...how)))),
       h('div', { class: 'upl' }, h('label', { class: 'btn', for: 'libfile' }, 'upload a file'), h('input', { id: 'libfile', type: 'file', accept: '.csv,.tsv,.txt,.json,text/*,application/json', class: 'sr', onchange: e => {
