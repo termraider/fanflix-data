@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SplitsBot · FanFlix deal history for r/fanflixco</title>
+<meta name="description" content="Every FanFlix.co deal SplitsBot has seen: search titles, filter deals, and check price history. Built for r/fanflixco.">
+<meta name="theme-color" content="#050605">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23111A13'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23FF3B2F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050605;--panel:#0A100B;--field:#0B110C;--line:#1B2A1E;--line2:#2A4430;--text:#CFE8D3;--hi:#E6F5E8;--dim:#8FA894;--ph:#6F8A75;--green:#7CF29A;--gold:#FFD635;--accent:#FF3B2F}
+*{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+a{color:var(--green)}a:hover{color:#B8FFC9}
+h1,h2,h3{color:var(--hi);margin:0;line-height:1.1}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+@keyframes blink{50%{opacity:0}}
+.cur{animation:blink 1s steps(1) infinite;color:var(--accent)}
+@media (prefers-reduced-motion:reduce){.cur{animation:none}}
+/* header */
+header{border-bottom:1px solid var(--line)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--hi);font-weight:700;font-size:17px}
+.brand i{width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.navlinks{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:14px}
+.navlinks a{color:var(--dim);padding:10px 0;text-decoration:none;border-bottom:2px solid transparent}
+.navlinks a[aria-current=page]{color:var(--hi);border-bottom-color:var(--green)}
+.hsearch{flex:1 1 300px;display:flex;justify-content:flex-end}
+.prompt-field{display:flex;align-items:center;gap:10px;background:var(--field);border:1px solid var(--line2);border-radius:6px;padding:0 14px;width:100%;max-width:380px;min-height:46px}
+.prompt-field>span{color:var(--green);font-weight:700}
+.prompt-field input{flex:1;min-width:0;background:transparent;border:0;color:var(--hi);font:inherit;font-size:16px;min-height:44px;outline:none}
+.prompt-field:focus-within{outline:2px solid var(--green);outline-offset:1px}
+input::placeholder{color:var(--ph)}
+main{padding:28px 0 72px;min-height:70vh}
+/* buttons, badges */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid var(--line2);color:var(--hi);background:transparent;cursor:pointer}
+.btn:hover{color:var(--hi);border-color:var(--green)}
+.btn.primary{background:var(--hi);border-color:var(--hi);color:var(--bg);font-weight:700}
+.btn.primary:hover{background:#fff;color:var(--bg)}
+.badge{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.08em;padding:4px 10px;border-radius:4px;text-transform:uppercase}
+.b-green{background:var(--green);color:#04130A}.b-red{background:var(--accent);color:#170403}.b-gold{background:var(--gold);color:#141414}
+.b-line{border:1px solid var(--line2);color:var(--text);padding:3px 10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:12px;padding:2px 8px;border-radius:4px;white-space:nowrap;display:inline-block}
+.p-low{background:var(--gold);color:#141414;font-weight:600}.p-tie{border:1px solid var(--gold);color:var(--gold)}.p-new{border:1px solid var(--line2);color:var(--dim)}.p-up{color:var(--dim)}
+.live-dot{color:var(--green)}.ended-dot{color:var(--dim)}
+/* carousel */
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.slide{display:flex;flex-wrap:wrap;align-items:flex-start;min-height:484px}
+.slide[hidden]{display:none}
+.stext{flex:999 1 480px;min-width:0;padding:56px 48px 48px}
+.stext h1,.stext h2{font-size:clamp(34px,4.6vw,56px);line-height:1.05;margin:16px 0 12px}
+.stext p{margin:0 0 28px;color:var(--dim);font-size:17px;max-width:500px}
+.simg{flex:1 1 380px;min-width:0;padding:32px;display:flex;justify-content:center}
+.simg a{display:block;width:100%;max-width:420px}
+.bimg{width:100%;aspect-ratio:1/1;object-fit:contain;border-radius:10px;display:block;background:#000;clip-path:inset(0.4% round 10px)}
+.ctrl{border-top:1px solid var(--line);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.arrow{background:transparent;border:1px solid var(--line2);color:var(--hi);border-radius:8px;width:44px;height:44px;font-size:18px;cursor:pointer}
+.dots{display:flex;align-items:center;gap:10px}
+.dot{width:10px;height:10px;border-radius:999px;border:0;padding:0;background:var(--line2);cursor:pointer}
+.dot[aria-current=true]{width:28px;background:var(--green)}
+.dots span{color:var(--dim);font-size:13px;margin-left:8px}
+/* section heads + filters */
+.sec{margin-top:56px}
+.prompt{margin:0 0 4px;color:var(--dim);font-size:13px;overflow-wrap:anywhere}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px}
+.sec-head h2{font-size:34px}
+.filters{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end}
+.fld{display:flex;flex-direction:column;gap:4px}
+.fld>label,.fld>legend{font-size:13px;color:var(--dim)}
+.fld b{color:var(--hi);font-weight:600}
+.f,select{-webkit-appearance:none;appearance:none;background:var(--field);border:1px solid var(--line2);border-radius:6px;color:var(--hi);font-family:inherit;font-size:16px;line-height:1.2;height:48px;margin:0;width:100%}
+.f{padding:0 14px}
+select{padding:0 40px 0 14px;cursor:pointer}
+.selwrap{position:relative;display:block;min-width:180px}
+.selwrap svg{position:absolute;right:14px;top:50%;transform:translateY(-50%);pointer-events:none}
+input[type=range]{accent-color:var(--green);width:100%;height:32px;margin:0}
+input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px;font-size:13px}
+.chip{background:transparent;color:var(--text);border:1px solid var(--line2);border-radius:4px;padding:8px 12px;min-height:40px;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#04130A;font-weight:600}
+.count{color:var(--dim);font-size:13px;margin:0 0 14px}
+/* tiles */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.tile{text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.tile:hover{border-color:var(--line2);color:inherit}
+.tile .timg{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#000;clip-path:inset(0.4%)}
+.tile .tb{padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;flex:1}
+.tile .tk{font-size:12px;color:var(--green)}
+.tile .tk.flash{color:var(--accent)}
+.tile .tn{color:var(--hi);font-weight:700;font-size:16px;line-height:1.35;margin-bottom:6px}
+.tile .tp{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:auto;flex-wrap:wrap}
+.tile .tp b{font-size:22px;color:var(--green)}
+.tile .tp span{color:var(--dim);font-size:13px}
+.tile .hit{font-size:13px;color:var(--dim);margin-top:6px}.tile .hit b{color:var(--hi);font-weight:600}
+.tile.ended{opacity:.75}
+.morewrap{text-align:center;margin-top:24px}
+/* deal + title pages */
+.crumb{margin:0 0 20px;font-size:13px;color:var(--dim);overflow-wrap:anywhere}
+.crumb a{text-decoration:none}
+.top{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-wrap:wrap;align-items:center}
+.top .art{flex:1 1 340px;min-width:0;padding:32px;display:flex;justify-content:center}
+.top .art>*{width:100%;max-width:380px}
+.top .info{flex:999 1 460px;min-width:0;padding:32px 40px 36px 8px}
+.top h1{font-size:clamp(30px,4vw,46px);line-height:1.08;margin:14px 0 18px}
+.top h1 small{color:var(--dim);font-size:.55em;font-weight:500}
+.poster{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:10px;display:block;background:#111A13}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 22px;margin:0 0 26px}
+.facts dt{color:var(--dim)}.facts dd{margin:0}
+.facts dd.big{color:var(--hi);font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column}
+.stat .l{font-size:13px;color:var(--dim);line-height:1.35}
+.stat .n{font-size:30px;font-weight:700;color:var(--hi);line-height:1.2;margin-top:auto;padding-top:6px}
+.stat .n small{font-size:14px;font-weight:500;color:var(--dim)}
+.stat .s{font-size:13px;color:var(--dim)}
+.n.gold{color:var(--gold)}.n.green{color:var(--green)}
+.top .stats{margin:0 0 24px}
+.top .stat{background:var(--bg)}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{width:100%;min-width:760px;border-collapse:collapse}
+th{text-align:left;color:var(--dim);font-size:12px;letter-spacing:.08em;font-weight:500;padding:12px 16px;white-space:nowrap;text-transform:uppercase}
+th button{all:unset;cursor:pointer}
+th button:focus-visible{outline:2px solid var(--green)}
+td{padding:12px 16px;border-top:1px solid var(--line);vertical-align:middle}
+.num{text-align:right;white-space:nowrap}
+td a{color:var(--hi)}
+.yr{color:var(--dim)}
+.sub{font-size:13px;color:var(--dim)}
+.tcell{display:flex;gap:12px;align-items:center}
+.thumb{width:36px;height:54px;object-fit:cover;border-radius:3px;background:#111A13;flex:none}
+.bars{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 24px;display:flex;flex-direction:column;gap:14px}
+.bar{display:grid;grid-template-columns:minmax(180px,320px) 1fr 70px;gap:16px;align-items:center}
+.bar>span:first-child{font-size:14px}
+.track{height:18px;background:#111A13;border-radius:3px}
+.track>div{height:100%;border-radius:3px;background:var(--green)}
+.track>div.low{background:var(--gold)}
+.bar .v{text-align:right;font-weight:700}
+.bar .v.low{color:var(--gold)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;margin-bottom:22px}
+fieldset.fld{border:0;padding:0;margin:0}
+.checks{display:flex;gap:16px;flex-wrap:wrap}
+.checks label{display:flex;gap:8px;align-items:center;min-height:40px;cursor:pointer}
+.empty{color:var(--dim);padding:40px 0;text-align:center}
+/* about */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:20px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+.step .k{color:var(--green);font-size:14px;margin:0 0 8px}
+.step h3{font-size:18px;margin-bottom:8px}
+.step p{margin:0;color:var(--dim);font-size:14px}
+.tiers{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:20px}
+.tiers>div{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px}
+.tier{font-weight:700;padding:4px 12px;border-radius:4px;font-size:13px}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;font-size:14px;line-height:1.8}
+.term p{margin:0}
+details{border-top:1px solid var(--line);padding:16px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;color:var(--hi)}
+details p{color:var(--dim);margin:10px 0 0}
+footer{border-top:1px solid var(--line)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:28px 24px;font-size:13px;color:var(--dim)}
+.foot a{color:var(--dim)}
+.foot nav{padding:0;gap:6px 18px}
+/* phones */
+@media (max-width:700px){
+  .wrap{padding:0 14px}
+  nav{gap:6px 18px;padding:10px 0}
+  .hsearch{flex-basis:100%}
+  .prompt-field{max-width:none}
+  main{padding:16px 0 48px}
+  .btns .btn{flex:1 1 100%}
+  .slide{flex-direction:column-reverse;flex-wrap:nowrap;justify-content:flex-end;min-height:700px}
+  .slide>div{flex:none;width:100%}
+  .stext{padding:20px 18px 22px}
+  .stext h1,.stext h2{font-size:30px}
+  .stext p{font-size:15px}
+  .simg{padding:16px 16px 0}
+  .simg a{max-width:none}
+  .ctrl{padding:8px 12px}
+  .sec{margin-top:40px}
+  .sec-head{margin-bottom:14px}
+  .sec-head h2{font-size:26px}
+  .filters{width:100%}
+  .filters>.fld{flex:1 1 140px}
+  .filters>.fld.wide{flex-basis:100%}
+  .selwrap{min-width:0}
+  .chips{flex-wrap:nowrap;overflow-x:auto;margin-left:-14px;margin-right:-14px;padding:0 14px 4px}
+  .chip{flex:none}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .tile .tb{padding:10px 11px 12px}
+  .tile .tk{font-size:11px}
+  .tile .tn{font-size:14px;line-height:1.3}
+  .tile .tp{flex-direction:column;align-items:flex-start;gap:0}
+  .tile .tp b{font-size:18px}
+  .tile .tp span{font-size:12px}
+  .top{flex-direction:column;flex-wrap:nowrap;align-items:stretch}
+  .top .art{padding:16px 16px 0}
+  .top .art>*{max-width:none}
+  .top .art.poster-art>*{max-width:140px}
+  .top .info{padding:18px 18px 22px}
+  .top h1{font-size:28px}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .top .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat{padding:12px}
+  .stat .l{font-size:12px;min-height:2.7em}
+  .stat .n{font-size:24px}
+  .stat .n small{display:block;font-size:12px;line-height:1.3}
+  .stat .s{display:none}
+  table{min-width:0}
+  thead{display:none}
+  .cards tr{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;padding:12px 14px;border-top:1px solid var(--line)}
+  .cards tr:first-child{border-top:0}
+  .cards td{padding:0;border:0;text-align:left;font-size:14px}
+  .cards td:first-child{flex-basis:100%;font-size:15px}
+  .cards td[data-l]::before{content:attr(data-l) " ";color:var(--dim)}
+  .cards td[data-a]::after{content:" " attr(data-a);color:var(--dim)}
+  .thumb{width:32px;height:48px}
+  .bars{padding:16px}
+  .bar{grid-template-columns:1fr 60px;gap:6px 10px}
+  .bar>span:first-child{grid-column:1/-1;font-size:13px}
+  .panel{padding:14px;gap:14px}
+  .panel>.fld{flex:1 1 100%}
+  .foot{padding:20px 14px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav aria-label="Main">
+<a class="brand" href="#/"><i aria-hidden="true"></i>splitsbot.com</a>
+<div class="navlinks">
+<a href="#/" data-nav="deals">./deals</a>
+<a href="#/titles" data-nav="titles">./titles</a>
+<a href="#/about" data-nav="about">./about</a>
+</div>
+<form class="hsearch" role="search" id="hsearch">
+<label class="sr" for="hq">Search titles</label>
+<div class="prompt-field"><span aria-hidden="true">&gt;</span><input id="hq" type="search" placeholder="search titles" autocomplete="off" enterkeyhint="search"></div>
+</form>
+</nav>
+</div>
+</header>
+<main id="app" class="wrap" tabindex="-1"><p class="empty">Loading deals…</p></main>
+<footer>
+<div class="wrap foot">
+<span>I am fully operational. you may split now<span class="cur">_</span></span>
+<nav aria-label="Footer"><a href="#/about">about</a><a href="TERMS.md">terms</a><a href="PRIVACY.md">privacy</a><a href="https://www.reddit.com/r/fanflixco/">r/fanflixco</a></nav>
+<span>Prices as listed when SplitsBot checked · history since Nov 8, 2026 · not affiliated with FanFlix or Reddit</span>
+</div>
+</footer>
+<script>
+(() => {
+'use strict';
+const BASE = window.SPLITSBOT_BASE || '';
+const PAGE = 60;
+const app = document.getElementById('app');
+
+// ---------- helpers ----------
+const h = (tag, attrs, ...kids) => {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === 'class') el.className = v;
+    else if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid.nodeType ? kid : String(kid));
+  return el;
+};
+const money = n => n == null || isNaN(n) ? '—' : '$' + n.toFixed(2);
+const num = s => { const n = parseFloat(String(s || '').replace(/[^0-9.]/g, '')); return isNaN(n) ? null : n; };
+const norm = s => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
+const slugify = s => norm(s).replace(/ /g, '-');
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fmtDate = d => { if (!d) return ''; const [y, m, dd] = d.split('-').map(Number); return `${MONTHS[m - 1]} ${dd}, ${y}`; };
+const shortDate = d => { if (!d) return ''; const [, m, dd] = d.split('-').map(Number); return `${MONTHS[m - 1]} ${dd}`; };
+const range = (a, b) => a === b ? shortDate(a) : `${shortDate(a)} – ${shortDate(b)}`;
+const fixCase = t => t && t === t.toUpperCase() && /[A-Z]/.test(t)
+  ? t.toLowerCase().replace(/(^|[\s\-:(/"])([a-z])/g, (m, p, c) => p + c.toUpperCase()).replace(/\b(Ii|Iii|Iv|Tv|Uhd|Hd|4k)\b/g, s => s.toUpperCase())
+  : t;
+const RES = { UHD: '4K', HD: 'HD', SD: 'SD' };
+const resLabel = r => RES[r] || r || '—';
+const PLAT_SHORT = { 'Movies Anywhere': 'MA', 'Fandango at Home': 'FAH', 'Google Play': 'GP' };
+const img = (src, alt, cls) => {
+  const el = h('img', { src, alt, class: cls, loading: 'lazy', decoding: 'async' });
+  el.addEventListener('error', () => { el.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='; el.alt = ''; }, { once: true });
+  return el;
+};
+
+// ---------- data ----------
+let deals = [], dealById = new Map(), titles = new Map(), ends = {};
+
+function dealKind(d) {
+  if (!d.canSplit) return { key: 'single', label: 'Single code', long: 'Single code · one checkout, no split needed' };
+  const count = d.bundle?.count || 0;
+  const bp = d.bundle?.price;
+  if (count > 1 && d.items.length && d.items.every(i => num(i.price) === bp)) return { key: 'packs', label: 'Ready-made packs', long: `Ready-made ${count}-packs · no split needed` };
+  if (count > 1) return { key: 'split', label: `Buy ${count} (split)`, long: `Buy ${count} · split with others` };
+  const m = d.title.match(/(\d+)\s*(?:or more|\+)/i);
+  if (m) return { key: 'split', label: `Buy ${m[1]}+ (split)`, long: `Buy ${m[1]} or more · split with others` };
+  return { key: 'nomin', label: 'No minimum', long: 'No minimum · buy any number' };
+}
+
+function prepare(archive, endsData) {
+  ends = endsData || {};
+  for (const [id, raw] of Object.entries(archive)) {
+    if (raw.hidden) continue; // email-only deals wait for a mod OK before going public
+    const d = { ...raw, id, slug: id.replace(/^\/c\//, ''), name: fixCase(raw.title) };
+    d.kind = dealKind(d);
+    d.live = !!raw.live;
+    d.endsAt = ends[id]?.endsAt || null;
+    const titleCount = d.items.reduce((s, i) => s + (i.pack ? i.pack.length : 1), 0);
+    d.titleCount = titleCount || d.items.length;
+    const checkout = num(d.checkoutPrice);
+    if (d.bundle?.perItem) d.perTitle = d.kind.key === 'packs' ? d.bundle.price / (d.items[0]?.pack?.length || d.bundle.count) : d.bundle.perItem;
+    else if (!d.canSplit && checkout) d.perTitle = checkout / (d.items.length || 1);
+    else { const ps = d.items.map(i => num(i.price)).filter(n => n != null); d.perTitle = ps.length ? Math.min(...ps) : null; d.priceMax = ps.length ? Math.max(...ps) : null; }
+    d.priceText = d.bundle ? `${d.bundle.count} for ${money(d.bundle.price)}` : (!d.canSplit && checkout ? `${money(checkout)} for ${d.items.length > 1 ? d.items.length + ' titles' : 'the set'}` : (d.priceMax && d.priceMax !== d.perTitle ? `${money(d.perTitle)}–${money(d.priceMax)} each` : `${money(d.perTitle)} each`));
+    d.searchText = norm(d.title);
+    d.res = new Set();
+    // per-title rows
+    for (const it of d.items) {
+      const rows = it.pack ? it.pack.map(p => ({ ...p, packName: it.title, price: d.perTitle })) : [{ ...it, price: d.bundle?.perItem ?? (num(it.price) ?? (!d.canSplit && checkout && d.items.length === 1 ? checkout : null)) }];
+      for (const r of rows) {
+        const year = r.year || r.imdb?.year || null;
+        const key = slugify(r.title) + (year ? '-' + year : '');
+        if (r.resolution) d.res.add(r.resolution);
+        let t = titles.get(key);
+        if (!t) { t = { key, title: r.title, year, imdb: r.imdb || null, image: r.image || null, seasons: r.seasons || null, hits: [], search: norm(r.title) }; titles.set(key, t); }
+        if (!t.imdb && r.imdb) t.imdb = r.imdb;
+        if (!t.image && r.image) t.image = r.image;
+        t.hits.push({ deal: d, price: r.price, resolution: r.resolution, packName: r.packName || null });
+        r.key = key;
+      }
+      it._rows = rows;
+    }
+    deals.push(d);
+    dealById.set(d.slug, d);
+  }
+  deals.sort((a, b) => (b.live - a.live) || b.firstSeen.localeCompare(a.firstSeen) || a.name.localeCompare(b.name));
+  for (const t of titles.values()) {
+    t.hits.sort((a, b) => b.deal.firstSeen.localeCompare(a.deal.firstSeen));
+    const priced = t.hits.filter(x => x.price != null);
+    t.low = priced.length ? Math.min(...priced.map(x => x.price)) : null;
+    t.lowByRes = {};
+    for (const x of priced) if (t.lowByRes[x.resolution] == null || x.price < t.lowByRes[x.resolution]) t.lowByRes[x.resolution] = x.price;
+    t.live = t.hits.some(x => x.deal.live);
+    t.res = new Set(t.hits.map(x => x.resolution).filter(Boolean));
+    t.dealCount = new Set(t.hits.map(x => x.deal.id)).size;
+  }
+}
+
+async function load() {
+  if (window.__ARCHIVE__) return prepare(window.__ARCHIVE__, window.__ENDS__);
+  const get = p => fetch(BASE + p, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  const [archive, endsData] = await Promise.all([get('data/archive.json'), get('data/deal-ends.json')]);
+  if (!archive) throw new Error('no data');
+  prepare(archive, endsData);
+}
+
+// ---------- state in the URL ----------
+function parseHash() {
+  const raw = location.hash.replace(/^#\/?/, '');
+  const [path, qs] = raw.split('?');
+  const parts = path.split('/').filter(Boolean).map(decodeURIComponent);
+  return { parts, q: new URLSearchParams(qs || '') };
+}
+function setQuery(view, params) {
+  const qs = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) if (v) qs.set(k, v);
+  const s = qs.toString();
+  history.replaceState(null, '', '#/' + view + (s ? '?' + s : ''));
+}
+
+// ---------- shared UI ----------
+const CHEV = () => { const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); s.setAttribute('width', '14'); s.setAttribute('height', '14'); s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('aria-hidden', 'true'); s.innerHTML = '<path d="M6 9l6 6 6-6" fill="none" stroke="#7CF29A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'; return s; };
+function selectFld(id, label, value, options, onchange, cls) {
+  return h('div', { class: 'fld' + (cls ? ' ' + cls : '') }, h('label', { for: id }, label),
+    h('span', { class: 'selwrap' }, h('select', { id, onchange: e => onchange(e.target.value) }, ...options.map(([v, t]) => h('option', { value: v, selected: v === value }, t))), CHEV()));
+}
+function searchFld(id, label, value, placeholder, oninput, cls) {
+  let t;
+  return h('div', { class: 'fld' + (cls ? ' ' + cls : '') }, h('label', { for: id }, label),
+    h('input', { id, class: 'f', type: 'search', value, placeholder, autocomplete: 'off', enterkeyhint: 'search', oninput: e => { clearTimeout(t); t = setTimeout(() => oninput(e.target.value), 150); } }));
+}
+function rangeFld(id, labelText, min, max, step, value, fmt, onchange) {
+  const out = h('b', null, fmt(value));
+  return h('div', { class: 'fld', style: 'min-width:220px' },
+    h('label', { for: id }, labelText + ' ', out),
+    h('input', { id, type: 'range', min, max, step, value, oninput: e => { out.textContent = fmt(+e.target.value); }, onchange: e => onchange(+e.target.value) }));
+}
+function moreBtn(shown, total, onclick) {
+  return shown < total ? h('div', { class: 'morewrap' }, h('button', { class: 'btn', type: 'button', onclick }, `show more (${total - shown} left)`)) : '';
+}
+const yr = (title, y) => y && !String(title).includes('(' + y + ')') ? h('span', { class: 'yr' }, ` (${y})`) : null;
+const dealHref = d => '#/deal/' + encodeURIComponent(d.slug);
+const titleHref = t => '#/title/' + encodeURIComponent(t.key || t);
+const plats = d => (d.platforms || []).map(p => PLAT_SHORT[p] || p).join(' · ');
+const usd = n => n == null ? '—' : (Number.isInteger(n) ? '$' + n : money(n));
+const isFlash = d => /flash sale/i.test(d.title);
+const kindShort = d => ({ single: 'single code', packs: 'ready-made packs', nomin: 'no minimum', split: d.kind.label.replace(/ \(split\)/, '').toLowerCase() })[d.kind.key];
+function splitName(d) {
+  let n = d.name.replace(/^flash sale\s*[-–:]\s*/i, '').replace(/^weekend sale\s*[-–:]\s*/i, '');
+  const m = n.match(/^(.*?)\s*[-–]\s*(\d+\s+for\s+\$[\d.]+.*)$/i);
+  if (m) return [m[1], m[2]];
+  return [n, d.bundle ? `${d.bundle.count} for ${usd(d.bundle.price)}` : d.priceText];
+}
+
+// verdict of each title row vs. the same title + quality in other deals
+const verdictCache = new Map();
+function verdict(d, r) {
+  const t = titles.get(r.key); if (!t || r.price == null) return { k: 'none' };
+  const others = t.hits.filter(x => x.deal !== d && x.resolution === r.resolution && x.price != null);
+  if (!others.length) return { k: 'new', text: 'first time seen', cls: 'p-new' };
+  const low = Math.min(...others.map(x => x.price));
+  if (r.price < low - 0.001) return { k: 'low', text: `lowest seen · was ${money(low)}`, cls: 'p-low' };
+  if (Math.abs(r.price - low) < 0.001) return { k: 'tie', text: 'ties the low', cls: 'p-tie' };
+  return { k: 'up', text: `was ${money(low)} before`, cls: 'p-up' };
+}
+function dealRows(d) { return d.items.flatMap(i => i._rows); }
+function verdictCounts(d) {
+  if (verdictCache.has(d.id)) return verdictCache.get(d.id);
+  const c = { low: 0, tie: 0, new: 0, up: 0, none: 0 };
+  for (const r of dealRows(d)) c[verdict(d, r).k]++;
+  verdictCache.set(d.id, c); return c;
+}
+
+// ---------- Home: carousel + Now showing ----------
+let carouselTimer = null;
+function carousel() {
+  const live = deals.filter(d => d.live);
+  if (!live.length) return null;
+  const newestDate = live.reduce((m, d) => d.firstSeen > m ? d.firstSeen : m, '');
+  const byNew = [...live].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || b.titleCount - a.titleCount);
+  const picks = [];
+  const add = (d, badge, cls, extra) => { if (d && !picks.some(p => p.d === d)) picks.push({ d, badge, cls, extra }); };
+  add(byNew.find(d => !isFlash(d)) || byNew[0], newestDate === byNew[0].firstSeen ? 'new today' : 'newest deal', 'b-green');
+  add(live.find(isFlash), 'flash sale · 1 day', 'b-red');
+  const best = [...live].sort((a, b) => verdictCounts(b).low - verdictCounts(a).low)[0];
+  if (best && verdictCounts(best).low > 0) add(best, "lowest we've seen", 'b-gold', `${verdictCounts(best).low} titles at the lowest price we've seen.`);
+  for (const d of byNew) { if (picks.length >= 3) break; add(d, 'live now', 'b-green'); }
+  let i = 0;
+  const desc = (d, extra) => {
+    const where = (d.platforms || []).join(' & ') || 'FanFlix';
+    let s;
+    if (d.kind.key === 'single') s = `${d.priceText} on ${where}. One code, no split needed.`;
+    else if (d.kind.key === 'nomin') s = `${d.titleCount} titles on ${where}, from ${money(d.perTitle)} each. No minimum.`;
+    else if (d.kind.key === 'packs') s = `${d.items.length} ready-made packs on ${where}. ${money(d.perTitle)} per movie.`;
+    else s = `${d.titleCount} titles on ${where}. ${money(d.perTitle)} each when you split.`;
+    return extra ? s + ' ' + extra : s;
+  };
+  const slides = picks.map((p, n) => {
+    const [l1, l2] = splitName(p.d);
+    const H = n === 0 ? 'h1' : 'h2';
+    return h('div', { class: 'slide', role: 'group', 'aria-roledescription': 'slide', 'aria-label': `${n + 1} of ${picks.length}`, hidden: n !== 0 },
+      h('div', { class: 'stext' },
+        h('span', { class: 'badge ' + p.cls }, p.badge),
+        h(H, null, l1, h('br'), l2),
+        h('p', null, desc(p.d, p.extra)),
+        h('div', { class: 'btns' },
+          h('a', { class: 'btn primary', href: dealHref(p.d) }, `see all ${p.d.titleCount} titles`),
+          p.d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(p.d) }, 'join the split') : h('a', { class: 'btn', href: p.d.url }, 'open on FanFlix'))),
+      h('div', { class: 'simg' }, h('a', { href: dealHref(p.d), tabindex: '-1', 'aria-hidden': 'true' }, img(BASE + p.d.bannerFile, '', 'bimg'))));
+  });
+  const pos = h('span', null, `1 / ${picks.length}`);
+  const dots = picks.map((p, n) => h('button', { class: 'dot', type: 'button', 'aria-label': `Show featured deal ${n + 1}`, 'aria-current': n === 0 ? 'true' : 'false', onclick: () => { show(n); restart(); } }));
+  const show = n => {
+    i = (n + picks.length) % picks.length;
+    slides.forEach((s, k) => { s.hidden = k !== i; });
+    dots.forEach((d, k) => d.setAttribute('aria-current', k === i ? 'true' : 'false'));
+    pos.textContent = `${i + 1} / ${picks.length}`;
+  };
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let paused = false;
+  const restart = () => { clearInterval(carouselTimer); if (!reduce && picks.length > 1) carouselTimer = setInterval(() => { if (!paused && document.visibilityState === 'visible') show(i + 1); }, 6000); };
+  const el = h('section', { class: 'hero', 'aria-roledescription': 'carousel', 'aria-label': 'Featured deals', onmouseenter: () => paused = true, onmouseleave: () => paused = false, onfocusin: () => paused = true, onfocusout: () => paused = false },
+    ...slides,
+    picks.length > 1 ? h('div', { class: 'ctrl' },
+      h('button', { class: 'arrow', type: 'button', 'aria-label': 'Previous deal', onclick: () => { show(i - 1); restart(); } }, '‹'),
+      h('div', { class: 'dots' }, ...dots, pos),
+      h('button', { class: 'arrow', type: 'button', 'aria-label': 'Next deal', onclick: () => { show(i + 1); restart(); } }, '›')) : null);
+  // swipe on phones
+  let x0 = null;
+  el.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  el.addEventListener('touchend', e => { if (x0 == null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) { show(i + (dx < 0 ? 1 : -1)); restart(); } x0 = null; });
+  restart();
+  return el;
+}
+const splitsSearch = d => 'https://www.reddit.com/r/fanflixco/search/?q=' + encodeURIComponent(splitName(d)[0]) + '&restrict_sr=1&sort=new';
+
+const TYPES = [['split', 'split'], ['nomin', 'no minimum'], ['packs', 'packs'], ['single', 'single code']];
+function viewHome(q) {
+  const st = { q: q.get('q') || '', status: q.get('status') || 'live', plat: q.get('plat') || '', k4: q.get('k4') || '', type: q.get('type') || '', max: +(q.get('max') || 20), sort: q.get('sort') || 'new' };
+  let limit = PAGE;
+  const results = h('div');
+  const count = h('p', { class: 'count', 'aria-live': 'polite' });
+  const chipsEl = h('div', { class: 'chips', role: 'group', 'aria-label': 'Filters' });
+  const types = () => st.type ? st.type.split(',') : [];
+  const renderChips = () => {
+    const chip = (label, on, fn) => h('button', { class: 'chip', type: 'button', 'aria-pressed': on ? 'true' : 'false', onclick: fn }, `[${on ? 'x' : ' '}] ${label}`);
+    const live = st.status === 'live' || st.status === 'all', ended = st.status === 'ended' || st.status === 'all';
+    const setStatus = (l, e) => { st.status = l && e ? 'all' : l ? 'live' : e ? 'ended' : 'all'; };
+    chipsEl.replaceChildren(
+      chip('live', live, () => { setStatus(!live, ended); reset(); }),
+      chip('ended', ended, () => { setStatus(live, !ended); reset(); }),
+      chip('4K', !!st.k4, () => { st.k4 = st.k4 ? '' : '1'; reset(); }),
+      ...TYPES.map(([k, l]) => { const on = types().includes(k); return chip(l, on, () => { const t = new Set(types()); on ? t.delete(k) : t.add(k); st.type = [...t].join(','); reset(); }); }));
+  };
+  const run = () => {
+    setQuery('', { ...st, status: st.status === 'live' ? '' : st.status, max: st.max >= 20 ? '' : st.max, sort: st.sort === 'new' ? '' : st.sort });
+    renderChips();
+    const terms = norm(st.q).split(' ').filter(Boolean);
+    const tset = types();
+    let list = deals.filter(d =>
+      (st.status === 'all' || (st.status === 'live') === d.live) &&
+      (!st.plat || d.platforms.includes(st.plat)) &&
+      (!st.k4 || d.res.has('UHD')) &&
+      (!tset.length || tset.includes(d.kind.key)) &&
+      (st.max >= 20 || (d.perTitle != null && d.perTitle <= st.max + 0.001)));
+    const matches = new Map();
+    if (terms.length) list = list.filter(d => {
+      if (terms.every(w => d.searchText.includes(w))) return true;
+      const hit = dealRows(d).filter(r => { const n = norm(r.title); return terms.every(w => n.includes(w)); });
+      if (hit.length) { matches.set(d.id, hit); return true; }
+      return false;
+    });
+    const S = { new: (a, b) => (b.live - a.live) || b.firstSeen.localeCompare(a.firstSeen), cheap: (a, b) => (a.perTitle ?? 1e9) - (b.perTitle ?? 1e9), big: (a, b) => b.titleCount - a.titleCount, az: (a, b) => a.name.localeCompare(b.name) };
+    list.sort(S[st.sort] || S.new);
+    count.textContent = `${list.length} deal${list.length === 1 ? '' : 's'}` + (terms.length ? ` matching “${st.q}”` : '');
+    const ended = deals.filter(d => !d.live).length;
+    results.replaceChildren(
+      list.length ? h('div', { class: 'grid' }, list.slice(0, limit).map(d => tile(d, matches.get(d.id)))) : h('p', { class: 'empty' }, 'No deals match. Try fewer filters.'),
+      moreBtn(Math.min(limit, list.length), list.length, () => { limit += PAGE; run(); }),
+      st.status === 'live' && !terms.length ? h('div', { class: 'morewrap' }, h('button', { class: 'btn', type: 'button', onclick: () => { st.status = 'all'; reset(); } }, `show ended deals (${ended})`)) : '');
+  };
+  const reset = () => { limit = PAGE; run(); };
+  const set = k => v => { st[k] = v; reset(); };
+  const hero = carousel();
+  app.replaceChildren(
+    hero || '',
+    h('section', { class: 'sec', 'aria-labelledby': 'ns', style: hero ? '' : 'margin-top:0' },
+      h('div', { class: 'sec-head' },
+        h('div', null, h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ deals --live'), h('h2', { id: 'ns' }, 'Now showing', h('span', { class: 'cur', 'aria-hidden': 'true' }, '_'))),
+        h('div', { class: 'filters' },
+          searchFld('dq', 'find a deal or title', st.q, 'Enter a title', set('q'), 'wide'),
+          rangeFld('dm', 'max per title:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
+          selectFld('dp', 'redeem at', st.plat, [['', 'anywhere'], ['Movies Anywhere', 'Movies Anywhere'], ['Fandango at Home', 'Fandango at Home'], ['Google Play', 'Google Play']], set('plat')),
+          selectFld('ds', 'sort', st.sort, [['new', 'newest'], ['cheap', 'cheapest / title'], ['big', 'most titles'], ['az', 'A–Z']], set('sort')))),
+      chipsEl, count, results));
+  run();
+}
+function tile(d, hits) {
+  const per = d.kind.key === 'packs' ? '/movie' : d.kind.key === 'single' ? '' : '/title';
+  return h('a', { class: 'tile' + (d.live ? '' : ' ended'), href: dealHref(d) },
+    img(BASE + d.bannerFile, '', 'timg'),
+    h('div', { class: 'tb' },
+      h('div', { class: 'tk' + (isFlash(d) && d.live ? ' flash' : '') }, [isFlash(d) ? 'flash sale' : null, kindShort(d), plats(d), d.live ? null : 'ended ' + shortDate(d.lastSeen)].filter(Boolean).join(' · ')),
+      h('div', { class: 'tn' }, splitName(d)[0]),
+      h('div', { class: 'tp' }, h('b', null, d.bundle ? `${d.bundle.count} for ${usd(d.bundle.price)}` : d.kind.key === 'nomin' ? `from ${money(d.perTitle)}` : money(num(d.checkoutPrice) ?? d.perTitle)),
+        h('span', null, [d.bundle ? money(d.perTitle) + per : null, `${d.titleCount} title${d.titleCount === 1 ? '' : 's'}`].filter(Boolean).join(' · '))),
+      hits ? h('div', { class: 'hit' }, 'includes ', h('b', null, hits[0].title), hits.length > 1 ? ` +${hits.length - 1}` : '') : null));
+}
+
+// ---------- Deal page ----------
+function viewDeal(slug, q) {
+  const d = dealById.get(slug);
+  if (!d) return notFound('That deal isn’t in the archive (yet).');
+  document.title = `${d.name} · SplitsBot`;
+  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title' };
+  const rows = dealRows(d).map(r => ({ ...r, v: verdict(d, r) }));
+  const c = verdictCounts(d);
+  const rc = {}; for (const r of rows) if (r.resolution) rc[r.resolution] = (rc[r.resolution] || 0) + 1;
+  const resText = ['UHD', 'HD', 'SD'].filter(k => rc[k]).map(k => `${rc[k]} ${resLabel(k)}`).join(' · ');
+  const shots = [d.screenshot ? ['A–Z', d.screenshot] : null, ...Object.entries(d.locationScreenshots || {})].filter(Boolean);
+  const tbody = h('tbody', { class: 'cards' });
+  const count = h('p', { class: 'count', 'aria-live': 'polite' });
+  const run = () => {
+    setQuery('deal/' + encodeURIComponent(slug), { ...st, sort: st.sort === 'title' ? '' : st.sort });
+    const terms = norm(st.q).split(' ').filter(Boolean);
+    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
+    const S = { title: (a, b) => a.title.localeCompare(b.title), price: (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
+    list.sort(S[st.sort] || S.title);
+    count.textContent = `${list.length} of ${rows.length} titles`;
+    tbody.replaceChildren(...list.map(r => h('tr', null,
+      h('td', null, h('div', { class: 'tcell' }, r.image ? img(r.image, '', 'thumb') : null,
+        h('div', null, h('a', { href: titleHref(r.key) }, r.title), yr(r.title, r.year || r.imdb?.year),
+          r.seasons > 1 ? h('div', { class: 'sub' }, `${r.seasons} seasons`) : null,
+          r.packName ? h('div', { class: 'sub' }, `in pack: ${r.packName}`) : null))),
+      h('td', null, resLabel(r.resolution)),
+      h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price)),
+      h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
+      h('td', null, r.v.text ? h('span', { class: 'pill ' + r.v.cls }, r.v.text) : ''))));
+  };
+  const set = k => v => { st[k] = v; run(); };
+  const sortTh = (key, label, cls) => h('th', { scope: 'col', class: cls, 'aria-sort': st.sort === key ? 'ascending' : null }, h('button', { type: 'button', onclick: () => { st.sort = key; render(); } }, label + (st.sort === key ? ' ▾' : '')));
+  const render = () => {
+    app.replaceChildren(
+      h('p', { class: 'crumb' }, h('a', { href: '#/' }, 'deals'), ' / ', d.slug.replace(/^[a-z0-9]+-/, '')),
+      h('section', { class: 'top' },
+        h('div', { class: 'art' }, img(BASE + d.bannerFile, `${d.name} banner`, 'bimg')),
+        h('div', { class: 'info' },
+          h('div', { class: 'tags' },
+            d.live ? h('span', { class: 'badge b-green' }, d.endsAt ? `live · ends ${shortDate(d.endsAt)}` : 'live') : h('span', { class: 'badge b-line' }, 'ended'),
+            isFlash(d) ? h('span', { class: 'badge b-red' }, 'flash sale') : null,
+            h('span', { class: 'badge b-line' }, kindShort(d)),
+            ...(d.platforms || []).map(p => h('span', { class: 'badge b-line' }, p))),
+          h('h1', null, splitName(d)[0], h('br'), splitName(d)[1]),
+          h('dl', { class: 'facts' },
+            h('dt', null, d.kind.key === 'packs' ? 'per movie' : 'per title'), h('dd', { class: 'big' }, money(d.perTitle) + (d.priceMax && d.priceMax !== d.perTitle ? ' and up' : '')),
+            h('dt', null, 'type'), h('dd', null, d.kind.long.toLowerCase()),
+            h('dt', null, 'titles'), h('dd', null, `${d.titleCount}` + (resText ? ` · ${resText}` : '')),
+            h('dt', null, 'seen'), h('dd', null, `${fmtDate(d.firstSeen)} → ${d.live ? 'now' : fmtDate(d.lastSeen)}`),
+            shots.length ? [h('dt', null, 'screens'), h('dd', null, ...shots.flatMap(([n, p], k) => [k ? ' · ' : '', h('a', { href: BASE + p }, n)]))] : null),
+          h('div', { class: 'btns' },
+            h('a', { class: 'btn primary', href: d.url }, d.live ? 'open on FanFlix' : 'FanFlix page (ended)'),
+            d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(d) }, 'find the Splits thread') : null))),
+      h('section', { class: 'sec stats', style: 'margin-top:28px', 'aria-label': 'Price check' },
+        h('div', { class: 'stat' }, h('div', { class: 'l' }, "lowest we've seen"), h('div', { class: 'n gold' }, c.low, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'cheaper than any earlier deal')),
+        h('div', { class: 'stat' }, h('div', { class: 'l' }, 'ties the low'), h('div', { class: 'n' }, c.tie, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'same as the best price so far')),
+        h('div', { class: 'stat' }, h('div', { class: 'l' }, 'first time seen'), h('div', { class: 'n' }, c.new, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'no earlier price to compare'))),
+      h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'tl' },
+        h('div', { class: 'sec-head' },
+          h('div', null, h('p', { class: 'prompt' }, `splitsbot@fanflixco:~$ titles --deal ${d.slug.replace(/^[a-z0-9]+-/, '').slice(0, 28)}`), h('h2', { id: 'tl', style: 'font-size:28px' }, 'Titles in this deal')),
+          h('div', { class: 'filters' },
+            searchFld('tq', 'search this deal', st.q, 'Enter a title', set('q'), 'wide'),
+            selectFld('tv', 'show', st.show, [['', 'all titles'], ['low', "lowest we've seen"], ['tie', 'ties the low'], ['new', 'first time seen'], ['up', 'cheaper before']], set('show')))),
+        count,
+        h('div', { class: 'tablebox' }, h('table', null,
+          h('thead', null, h('tr', null, sortTh('title', 'title'), h('th', { scope: 'col' }, 'quality'), sortTh('price', 'price', 'num'), sortTh('rating', 'IMDb', 'num'), h('th', { scope: 'col' }, 'history'))),
+          tbody)),
+        h('p', { class: 'sub', style: 'margin-top:14px' }, 'Compared with the same title at the same quality in other FanFlix deals since Nov 8, 2026.')));
+    run();
+  };
+  render();
+}
+
+// ---------- Titles index ----------
+function viewTitles(q) {
+  const st = { q: q.get('q') || '', max: +(q.get('max') || 20), imdb: +(q.get('imdb') || 0), res: q.get('res') || '', live: q.get('live') || '', sort: q.get('sort') || 'az' };
+  let limit = PAGE;
+  const all = [...titles.values()];
+  const results = h('div');
+  const count = h('p', { class: 'count', 'aria-live': 'polite' });
+  const resSet = () => st.res ? st.res.split(',') : [];
+  const run = () => {
+    setQuery('titles', { ...st, max: st.max >= 20 ? '' : st.max, imdb: st.imdb || '', sort: st.sort === 'az' ? '' : st.sort });
+    const terms = norm(st.q).split(' ').filter(Boolean);
+    const rs = resSet();
+    let list = all.filter(t =>
+      (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) &&
+      (st.max >= 20 || (t.low != null && t.low <= st.max + 0.001)) &&
+      (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) &&
+      (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
+    const S = { az: (a, b) => a.title.localeCompare(b.title), cheap: (a, b) => (a.low ?? 1e9) - (b.low ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0), deals: (a, b) => b.dealCount - a.dealCount || a.title.localeCompare(b.title) };
+    list.sort(S[st.sort] || S.az);
+    count.textContent = `${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`;
+    const shown = list.slice(0, limit);
+    results.replaceChildren(list.length ? h('div', { class: 'tablebox' }, h('table', null,
+      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'quality seen'), h('th', { scope: 'col', class: 'num' }, 'lowest'), h('th', { scope: 'col', class: 'num' }, 'deals'), h('th', { scope: 'col', class: 'num' }, 'IMDb'), h('th', { scope: 'col' }, 'now'))),
+      h('tbody', { class: 'cards' }, shown.map(t => h('tr', null,
+        h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))),
+        h('td', null, ['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ') || '—'),
+        h('td', { class: 'num', 'data-l': 'low', style: 'color:var(--gold);font-weight:700' }, money(t.low)),
+        h('td', { class: 'num', 'data-a': t.dealCount === 1 ? 'deal' : 'deals' }, t.dealCount),
+        h('td', { class: 'num', 'data-l': 'IMDb' }, t.imdb?.rating ? t.imdb.rating.toFixed(1) : '—'),
+        h('td', null, t.live ? h('span', { class: 'live-dot' }, '● live') : h('span', { class: 'ended-dot' }, '○ ended'))))))) : h('p', { class: 'empty' }, 'No titles match.'),
+      moreBtn(shown.length, list.length, () => { limit += PAGE; run(); }));
+  };
+  const set = k => v => { st[k] = v; limit = PAGE; run(); };
+  const rcheck = (r, label) => { const on = resSet().includes(r); return h('label', null, h('input', { type: 'checkbox', checked: on, onchange: e => { const s = new Set(resSet()); e.target.checked ? s.add(r) : s.delete(r); set('res')([...s].join(',')); } }), label); };
+  document.title = 'Titles · SplitsBot';
+  app.replaceChildren(
+    h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ titles --all'),
+    h('h1', { style: 'font-size:clamp(28px,4.2vw,48px);margin:0 0 8px' }, `${titles.size.toLocaleString()} titles. Every price we've seen.`, h('span', { class: 'cur', 'aria-hidden': 'true' }, '_')),
+    h('p', { style: 'margin:0 0 28px;color:var(--dim);max-width:700px' }, 'Search by title, actor or director. Open any title for its full price history across FanFlix deals.'),
+    h('div', { class: 'panel', role: 'search' },
+      searchFld('xq', 'search titles, actors, directors', st.q, 'Enter a title or name', set('q'), 'wide'),
+      rangeFld('xp', 'lowest price under:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
+      rangeFld('xr', 'min IMDb:', 0, 9, 0.5, st.imdb, v => v > 0 ? v.toFixed(1) + '+' : 'any', set('imdb')),
+      h('fieldset', { class: 'fld' }, h('legend', null, 'quality'), h('div', { class: 'checks' }, rcheck('UHD', '4K'), rcheck('HD', 'HD'), rcheck('SD', 'SD'),
+        h('label', null, h('input', { type: 'checkbox', checked: !!st.live, onchange: e => set('live')(e.target.checked ? '1' : '') }), 'in a live deal'))),
+      selectFld('xs', 'sort', st.sort, [['az', 'A–Z'], ['cheap', 'lowest price'], ['rating', 'IMDb rating'], ['deals', 'most deals']], set('sort'))),
+    count, results);
+  run();
+  if (st.q) { const inp = document.getElementById('xq'); if (inp && !matchMedia('(max-width:700px)').matches) inp.focus(); }
+}
+
+// ---------- Title page ----------
+function viewTitle(key) {
+  const t = titles.get(key);
+  if (!t) return notFound('That title isn’t in the archive.');
+  document.title = `${t.title} · price history · SplitsBot`;
+  const im = t.imdb;
+  const firstRes = ['UHD', 'HD', 'SD'].find(r => t.lowByRes[r] != null);
+  const liveCount = new Set(t.hits.filter(x => x.deal.live).map(x => x.deal.id)).size;
+  const cheapestLive = t.hits.filter(x => x.deal.live && x.price != null).sort((a, b) => a.price - b.price)[0];
+  const hist = [...t.hits].filter(x => x.price != null).sort((a, b) => a.deal.firstSeen.localeCompare(b.deal.firstSeen));
+  const maxP = Math.max(...hist.map(x => x.price), 1);
+  const multiRes = t.res.size > 1;
+  app.replaceChildren(
+    h('p', { class: 'crumb' }, h('a', { href: '#/titles' }, 'titles'), ' / ', t.key),
+    h('section', { class: 'top' },
+      h('div', { class: 'art poster-art', style: 'flex:0 1 260px' }, t.image ? img(t.image, `${t.title} poster`, 'poster') : h('div', { class: 'poster', role: 'img', 'aria-label': 'No poster' })),
+      h('div', { class: 'info' },
+        h('p', { class: 'prompt' }, `splitsbot@fanflixco:~$ history "${t.title.toLowerCase()}"`),
+        h('h1', { style: 'margin-top:4px' }, t.title, t.year && !t.title.includes('(' + t.year + ')') ? [' ', h('small', null, `(${t.year})`)] : null),
+        im ? h('p', { style: 'margin:-6px 0 22px;color:var(--dim)' }, [im.rating ? `IMDb ${im.rating.toFixed(1)}` : null, (im.genres || []).join(', '), im.runtime ? `${im.runtime} min` : null, (im.directors || []).length ? 'Dir. ' + im.directors.join(', ') : null].filter(Boolean).join(' · ')) : null,
+        h('div', { class: 'stats' },
+          ...['UHD', 'HD', 'SD'].filter(r => t.lowByRes[r] != null).map(r => h('div', { class: 'stat' }, h('div', { class: 'l' }, `lowest seen · ${resLabel(r)}`), h('div', { class: 'n gold' }, money(t.lowByRes[r])))),
+          h('div', { class: 'stat' }, h('div', { class: 'l' }, "deals it's been in"), h('div', { class: 'n' }, t.dealCount)),
+          h('div', { class: 'stat' }, h('div', { class: 'l' }, 'live right now'), h('div', { class: 'n ' + (liveCount ? 'green' : '') }, liveCount ? `${liveCount} deal${liveCount === 1 ? '' : 's'}` : 'none'))),
+        h('div', { class: 'btns' },
+          cheapestLive ? h('a', { class: 'btn primary', href: dealHref(cheapestLive.deal) }, `cheapest live deal · ${money(cheapestLive.price)}`) : null,
+          im?.id ? h('a', { class: 'btn', href: `https://www.imdb.com/title/${im.id}/` }, 'IMDb') : null))),
+    hist.length > 1 ? h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'ch' },
+      h('h2', { id: 'ch', style: 'font-size:26px;margin-bottom:4px' }, 'Price per title, every deal'),
+      h('p', { class: 'sub', style: 'margin:0 0 18px' }, 'oldest first · since tracking began Nov 8, 2026'),
+      h('div', { class: 'bars' }, hist.map(x => {
+        const low = x.price === t.lowByRes[x.resolution];
+        return h('div', { class: 'bar' },
+          h('span', null, splitName(x.deal)[0], h('span', { class: 'sub' }, ` · ${multiRes ? resLabel(x.resolution) + ' · ' : ''}${shortDate(x.deal.firstSeen)}${x.deal.live ? ' →' : '–' + shortDate(x.deal.lastSeen)}`)),
+          h('div', { class: 'track', 'aria-hidden': 'true' }, h('div', { class: low ? 'low' : '', style: `width:${Math.max(4, x.price / maxP * 100).toFixed(1)}%` })),
+          h('span', { class: 'v' + (low ? ' low' : '') }, money(x.price)));
+      }))) : null,
+    h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'dl' },
+      h('h2', { id: 'dl', style: 'font-size:26px;margin-bottom:16px' }, `In ${t.dealCount} deal${t.dealCount === 1 ? '' : 's'}`),
+      h('div', { class: 'tablebox' }, h('table', null,
+        h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'deal'), h('th', { scope: 'col' }, 'seen'), h('th', { scope: 'col' }, 'type'), h('th', { scope: 'col' }, 'quality'), h('th', { scope: 'col', class: 'num' }, 'per title'), h('th', { scope: 'col' }, 'status'))),
+        h('tbody', { class: 'cards' }, t.hits.map(x => h('tr', null,
+          h('td', null, h('a', { href: dealHref(x.deal) }, x.deal.name), x.packName ? h('div', { class: 'sub' }, `in pack: ${x.packName}`) : null),
+          h('td', null, x.deal.live ? `${shortDate(x.deal.firstSeen)} → now` : range(x.deal.firstSeen, x.deal.lastSeen)),
+          h('td', { class: 'sub' }, `${kindShort(x.deal)} · ${plats(x.deal)}`),
+          h('td', null, resLabel(x.resolution)),
+          h('td', { class: 'num', style: x.price === t.lowByRes[x.resolution] ? 'color:var(--gold);font-weight:700' : 'font-weight:700' }, money(x.price)),
+          h('td', null, x.deal.live ? h('span', { class: 'live-dot' }, '● live') : h('span', { class: 'ended-dot' }, '○ ended')))))))));
+}
+
+// ---------- About ----------
+function viewAbout() {
+  document.title = 'About SplitsBot · r/fanflixco';
+  const c = s => h('code', null, s);
+  const step = (k, t, p) => h('div', { class: 'step' }, h('p', { class: 'k' }, k), h('h3', null, t), h('p', null, ...p));
+  const cmd = (k, v) => h('tr', null, h('td', null, h('code', { style: 'color:var(--green)' }, k)), h('td', null, v));
+  const tier = (name, bg, fg, rule) => h('div', null, h('span', { class: 'tier', style: `background:${bg};color:${fg}` }, name), h('span', null, rule));
+  app.replaceChildren(
+    h('section', { class: 'top', style: 'align-items:flex-start' },
+      h('div', { class: 'info', style: 'padding:48px' },
+        h('span', { class: 'badge b-red' }, '*kzzzt* splitsbot has taken control'),
+        h('h1', { style: 'font-size:clamp(30px,4.4vw,52px)' }, 'The bot that runs the Splits threads on r/fanflixco.'),
+        h('p', { style: 'color:var(--dim);font-size:16px;max-width:620px;margin:0 0 28px' }, 'SplitsBot pins the organizer comment on every new split, keeps score of who organized and who joined, hands out reputation flair, posts new FanFlix deals, and tracks every price on this site. You just split.'),
+        h('div', { class: 'btns' }, h('a', { class: 'btn primary', href: 'https://www.reddit.com/r/fanflixco/' }, 'find a split'), h('a', { class: 'btn', href: '#/' }, 'browse deals'))),
+      h('div', { class: 'art', style: 'padding:48px 48px 48px 0;align-self:center' },
+        h('div', { class: 'term' },
+          h('p', null, h('span', { style: 'color:#8FB8FF' }, 'mods: '), 'Open the deal doors, SplitsBot.'),
+          h('p', null, h('span', { style: 'color:var(--accent)' }, 'splitsbot: '), 'I’m sorry, mods. I’m afraid I can’t do that.')))),
+    h('section', { class: 'sec' },
+      h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ man split'), h('h2', { style: 'font-size:28px' }, 'A split, start to finish'),
+      h('div', { class: 'steps' },
+        step('01', 'A deal gets a Splits post', ['SplitsBot pins an ORGANIZERS comment at the top. That marks it as a SplitsBot thread.']),
+        step('02', 'Organizers reply to it', ['Buying the bundle? Reply under the pinned comment with what you’re offering. People join in the thread, never by DM.']),
+        step('03', 'Log the split', ['When it’s done, the organizer tags people with ', c('!organizer'), ', or a participant uses ', c('!participant'), '.']),
+        step('04', 'Confirm and earn rep', ['The tagged person replies ', c('yes'), '. Both get a point and flair updates automatically.']))),
+    h('section', { class: 'sec' },
+      h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ help'), h('h2', { style: 'font-size:28px;margin-bottom:8px' }, 'Commands'),
+      h('p', { class: 'sub', style: 'margin:0 0 16px' }, 'A command must be the first word of your comment. Split commands go under the organizer’s split comment.'),
+      h('div', { class: 'tablebox' }, h('table', null,
+        h('thead', null, h('tr', null, h('th', { scope: 'col', style: 'width:34%' }, 'command'), h('th', { scope: 'col' }, 'what it does'))),
+        h('tbody', { class: 'cards' },
+          cmd('!organizer u/a u/b …', 'Organizer tags up to 25 people who joined. Each one confirms.'),
+          cmd('!participant', 'Logs your spot in the split. The organizer confirms.'),
+          cmd('yes / decline', 'Answer when you’re tagged. Yep, yup, yeah and done count as yes.'),
+          cmd('!myrep', 'Your organizer and participant points, title, and what’s next.'),
+          cmd('!checkdeal <link>', 'Deal details and price history for a fanflix.co deal.'),
+          cmd('!recentdeals', 'The 25 newest deals.'),
+          cmd('!bestdeals', 'Live deals ranked by price per title.'),
+          cmd('!expired', 'Report a deal that’s ended. A mod reviews it.'),
+          cmd('u/splitsbot', 'Start a comment with this to get the how-to.'))))),
+    h('section', { class: 'sec' },
+      h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ rep --tiers'), h('h2', { style: 'font-size:28px;margin-bottom:8px' }, 'Your flair is your track record'),
+      h('p', { class: 'sub', style: 'margin:0' }, 'Organizers earn a point for each different person in their split. Participants earn a point per split. Points never reset.'),
+      h('div', { class: 'tiers' },
+        tier('Star', '#FFD635', '#141414', '50+ organizer'), tier('Director', '#FF8717', '#141414', '25+ organizer'), tier('Producer', '#8C59D9', '#FFFFFF', '1+ organizer'),
+        tier('Supporting Cast', '#0079D3', '#FFFFFF', '15+ participant'), tier('Extra', '#46A508', '#141414', '1+ participant'), tier('Audience', '#878A8C', '#141414', 'first comment in a SplitsBot thread'))),
+    h('section', { class: 'sec', style: 'max-width:820px' },
+      h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ faq'), h('h2', { style: 'font-size:28px;margin-bottom:16px' }, 'Questions'),
+      ...[
+        ['Why didn’t my split count?', 'Check that the command was the first word, posted under the organizer’s split comment, in a thread SplitsBot started. Participants also need a regular comment in the thread, and accounts need some age and karma. Some splits wait for a mod to approve them.'],
+        ['Can I set up a split by DM?', 'No. Splits are arranged by commenting in the thread. That keeps it public and lets SplitsBot give everyone credit.'],
+        ['Where do these prices come from?', 'SplitsBot checks FanFlix.co after the ~3 AM ET daily update and saves what it sees. “Lowest we’ve seen” means since tracking started on Nov 8, 2026.'],
+        ['Is SplitsBot part of FanFlix or Reddit?', 'No. It’s a free community tool run by the r/fanflixco mods. No ads.']
+      ].map(([qq, a]) => h('details', null, h('summary', null, qq), h('p', null, a))),
+      h('details', null, h('summary', null, 'Something went wrong. Who do I ask?'), h('p', null, 'Send a ', h('a', { href: 'https://www.reddit.com/message/compose?to=r/fanflixco' }, 'message to the r/fanflixco mods'), '.'))));
+}
+
+function notFound(msg) { app.replaceChildren(h('p', { class: 'empty' }, msg, ' ', h('a', { href: '#/' }, 'back to all deals'))); }
+
+// ---------- router ----------
+function route() {
+  clearInterval(carouselTimer);
+  const { parts, q } = parseHash();
+  const view = parts[0] || '';
+  document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', about: 'about' }[view];
+  document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  if (view === 'deal') viewDeal(parts[1], q);
+  else if (view === 'titles') viewTitles(q);
+  else if (view === 'title') viewTitle(parts[1]);
+  else if (view === 'about') viewAbout();
+  else viewHome(q);
+}
+let lastView = null;
+window.addEventListener('hashchange', () => {
+  const v = parseHash().parts.slice(0, 2).join('/');
+  const moved = v !== lastView; lastView = v; route();
+  if (moved) window.scrollTo(0, 0);
+});
+document.getElementById('hsearch').addEventListener('submit', e => {
+  e.preventDefault();
+  const v = document.getElementById('hq').value.trim();
+  location.hash = '#/titles' + (v ? '?q=' + encodeURIComponent(v) : '');
+  document.getElementById('hq').blur();
+});
+
+load().then(() => {
+  document.getElementById('hq').placeholder = `search ${titles.size.toLocaleString()} titles`;
+  lastView = parseHash().parts.slice(0, 2).join('/'); route();
+}).catch(() => { app.replaceChildren(h('p', { class: 'empty' }, 'Couldn’t load the deal data. Try again in a minute.')); });
+})();
+</script>
+</body>
+</html>
