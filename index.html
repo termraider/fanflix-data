@@ -888,9 +888,9 @@ function cheaperSection(list) {
 }
 
 // ---------- Deal page ----------
-// Deals in the order they showed up on FanFlix (first seen; same day → FanFlix's own ID order)
+// Deals newest first, like the deals list: "next" goes to the one that showed up before it (first seen; same day → FanFlix's own ID order)
 function dealNav(d) {
-  const seq = [...deals].sort((a, b) => a.firstSeen.localeCompare(b.firstSeen) || a.id.split('/').pop().localeCompare(b.id.split('/').pop()));
+  const seq = [...deals].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || b.id.split('/').pop().localeCompare(a.id.split('/').pop()));
   const i = seq.indexOf(d), prev = seq[i - 1], next = seq[i + 1];
   const link = (x, cls, dir) => x ? h('a', { class: cls, href: dealHref(x), title: x.name }, h('span', null, dir === 'p' ? `← previous · ${shortDate(x.firstSeen)}` : `${shortDate(x.firstSeen)} · next →`), h('b', null, splitName(x)[0])) : h('span', { class: 'gap' });
   return h('nav', { class: 'dnav', 'aria-label': 'Previous and next deal' }, link(prev, 'pv', 'p'), link(next, 'nx', 'n'));
