@@ -127,6 +127,11 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .dnav .gap{flex:1 1 0}
 .disc{margin:12px 0 0;font-size:12px;color:var(--dim)}
 .wsec{font-size:22px;margin:30px 0 12px}
+.bslots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bslot h3{margin:4px 0 6px;font-size:18px;overflow-wrap:anywhere}
+.blist{margin:8px 0 0;padding-left:18px;text-align:left;max-height:260px;overflow:auto;font-size:13px}
+td details,td details:last-of-type{border:0;padding:0;margin:0;background:none}
+td details summary{cursor:pointer;color:var(--green);padding:0;border:0}
 .apfld{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;color:var(--dim)}
 .apin{width:84px;padding:6px 8px;font-size:14px}
 tr.ahit td:first-child a{color:var(--gold)}
@@ -386,6 +391,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
   .sec-head{margin-bottom:14px}
   .sec-head h2{font-size:26px}
   .filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .bslots{grid-template-columns:1fr}
   .filters>.fld.wide,.filters>.fld.range{grid-column:1/-1}
   .selwrap{min-width:0}
   .chips{flex-wrap:nowrap;overflow-x:auto;margin-left:-14px;margin-right:-14px;padding:0 14px 4px}
@@ -1289,7 +1295,7 @@ function niBigBtn(key) {
   b.addEventListener('click', () => { const on = NI.toggle(key); b.textContent = lab(on); b.classList.toggle('nion', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
 }
-const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`));
+const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/backup', 'aria-pressed': cur === 'backup' ? 'true' : 'false' }, '⤓ backups'));
 const FKEY = 'splitsbot-follow';
 const FL = {
   list() { try { const v = JSON.parse(localStorage.getItem(FKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.role === 'string' && typeof x.name === 'string') : []; } catch { return []; } },
@@ -1719,7 +1725,7 @@ function viewWatch() {
       FL.list().length ? h('p', { class: 'sub' }, 'No starred titles yet. Tap ☆ next to any title to add one.') : h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles'))]),
     followSection(),
     syncCard(),
-    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. Backup file: ', exp, ' · ', imp, ' · ', clear, file));
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. ', h('a', { href: '#/backup' }, 'Backups, undo a sync, compare & merge'), ' · quick file: ', exp, ' · ', imp, ' · ', clear, file));
 }
 
 function followSection() {
@@ -1801,7 +1807,7 @@ function syncCard() {
       h('div', { class: 'btns', style: 'margin-top:10px;max-width:520px' },
         h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
         h('label', { class: 'btn', for: 'syncfile', style: 'cursor:pointer' }, 'open sync file'),
-        h('input', { id: 'syncfile', type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const fl = e.target.files[0]; if (!fl) return; fl.text().then(txt => { try { const v = JSON.parse(txt); const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
+        h('input', { id: 'syncfile', type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const fl = e.target.files[0]; if (!fl) return; fl.text().then(txt => { try { const v = JSON.parse(txt); snapBeforeSync(); const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
           const fx = a => strs(a).map(k => KEY_ALIAS.get(k) || k); WL.save([...WL.list(), ...fx(v.watch)]); OW.save([...OW.list(), ...fx(v.owned)]); NI.save([...NI.list(), ...fx(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]); if (Array.isArray(v.ownedMaybe)) maybe.save([...maybe.list(), ...v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k }))]);
           if (strs(v.redeem).length) RP.save(strs(v.redeem)); AP.merge(v.alerts);
           if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); }
@@ -1809,6 +1815,110 @@ function syncCard() {
           setTimeout(() => { const m = document.querySelector('#syncdone'); if (m) m.textContent = `✓ Sync file opened: ${OW.list().length.toLocaleString()} owned · ${pending.list().length.toLocaleString()} waiting to show up in a deal · ${WL.list().length} starred · ${FL.list().length} following.`; }, 50);
         } catch { alertBox.textContent = 'That file didn’t work. Save a new one on the other device.'; } }); e.target.value = ''; } })),
       alertBox));
+}
+// ---------- backups: save everything to a file, undo the last sync, compare two backups and merge ----------
+const BLISTS = [['owned', 'owned (my library)'], ['ownedPending', 'waiting to show up in a deal'], ['watch', 'watchlist (★)'], ['follow', 'following'], ['hidden', 'not interested'], ['alerts', 'alert prices'], ['ownedMaybe', 'might own'], ['redeem', 'redeem sites']];
+const fKey = x => typeof x === 'string' ? x : x && x.role ? x.role + ':' + x.name : x && x.k ? x.k : JSON.stringify(x);
+function snapData() {
+  return { app: 'splitsbot', v: 1, at: new Date().toISOString(), watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() };
+}
+// any of our files (backup, sync file, old watchlist export) → one shape
+function readBackup(v, allowEmpty) {
+  if (Array.isArray(v)) v = { watch: v };
+  if (!v || typeof v !== 'object') throw new Error('not a backup');
+  const strs = a => Array.isArray(a) ? [...new Set(a.filter(k => typeof k === 'string').map(k => KEY_ALIAS.get(k) || k))] : [];
+  const out = { at: typeof v.at === 'string' ? v.at : '', watch: strs(v.watch), owned: strs(v.owned), hidden: strs(v.hidden), ownedPending: Array.isArray(v.ownedPending) ? [...new Set(v.ownedPending.filter(k => typeof k === 'string'))] : [],
+    redeem: Array.isArray(v.redeem) ? v.redeem.filter(k => typeof k === 'string') : [],
+    follow: Array.isArray(v.follow) ? v.follow.filter(f => f && typeof f.role === 'string' && typeof f.name === 'string').map(f => ({ role: f.role, name: f.name })) : [],
+    ownedMaybe: Array.isArray(v.ownedMaybe) ? v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k })) : [],
+    alerts: {} };
+  if (v.alerts && typeof v.alerts === 'object') for (const [k, x] of Object.entries(v.alerts)) if (typeof x === 'number' && x > 0) out.alerts[KEY_ALIAS.get(k) || k] = x;
+  if (!allowEmpty && !['watch', 'owned', 'hidden', 'ownedPending', 'follow'].some(k => out[k].length) && !Object.keys(out.alerts).length) throw new Error('empty');
+  return out;
+}
+const asList = (d, k) => k === 'alerts' ? Object.entries(d.alerts).map(([key, p]) => ({ key, p })) : d[k];
+const itemId = (k, x) => k === 'alerts' ? x.key : fKey(x);
+function mergeData(a, b) {
+  const u = (x, y, id) => { const seen = new Set(), out = []; for (const i of [...x, ...y]) { const k = id(i); if (!seen.has(k)) { seen.add(k); out.push(i); } } return out; };
+  const owned = u(a.owned, b.owned, String);
+  return { app: 'splitsbot', v: 1, at: new Date().toISOString(), watch: u(a.watch, b.watch, String), owned, hidden: u(a.hidden, b.hidden, String), ownedPending: u(a.ownedPending, b.ownedPending, String),
+    follow: u(a.follow, b.follow, fKey), ownedMaybe: u(a.ownedMaybe, b.ownedMaybe, x => x.k).filter(x => !owned.includes(x.k)),
+    redeem: [...new Set([...a.redeem, ...b.redeem])], alerts: { ...b.alerts, ...a.alerts } };
+}
+function applyData(d) {
+  WL.save(d.watch); FL.save(d.follow); OW.save(d.owned); NI.save(d.hidden); pending.save(d.ownedPending); maybe.save(d.ownedMaybe); AP.save(d.alerts); if (d.redeem.length) RP.save(d.redeem);
+  checkPending(); for (const t of titles.values()) recalcLive(t); updateStarCount();
+}
+const SNAPKEY = 'splitsbot-before-sync';
+// called before a sync link or sync file changes anything, so it can be undone
+function snapBeforeSync() { try { localStorage.setItem(SNAPKEY, JSON.stringify(snapData())); } catch {} }
+const lastSnap = () => { try { const v = JSON.parse(localStorage.getItem(SNAPKEY) || 'null'); return v ? readBackup(v, true) : null; } catch { return null; } };
+function downloadJSON(obj, name) { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(obj, null, 1)], { type: 'application/json' })), download: name }); document.body.append(a); a.click(); a.remove(); }
+const stamp = () => { const d = new Date(), z = n => String(n).padStart(2, '0'); return `${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}-${z(d.getHours())}${z(d.getMinutes())}`; };
+const whenText = iso => { if (!iso) return 'date unknown'; const d = new Date(iso); return isNaN(d) ? 'date unknown' : d.toLocaleString([], { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }); };
+
+function viewBackup() {
+  document.title = 'Backups · SplitsBot';
+  const slots = { a: { name: 'this device', d: readBackup(snapData(), true) }, b: null };
+  const note = h('div', { 'aria-live': 'polite' });
+  const cmp = h('div');
+  const slotBox = h('div', { class: 'bslots' });
+  const pick = which => {
+    const inp = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { try { slots[which] = { name: f.name, d: readBackup(JSON.parse(t)) }; draw(); } catch { note.replaceChildren(h('p', { class: 'sub warn' }, `${f.name} isn’t a SplitsBot backup.`)); } }); e.target.value = ''; } });
+    return [h('button', { class: 'btn', type: 'button', onclick: () => inp.click() }, 'open a backup file'), inp];
+  };
+  const slotCard = which => {
+    const s = slots[which];
+    return h('div', { class: 'card bslot' }, h('p', { class: 'prompt' }, which === 'a' ? '$ backup A' : '$ backup B'),
+      s ? [h('h3', null, s.name), h('p', { class: 'sub' }, s.name === 'this device' ? 'what’s saved in this browser now' : `saved ${whenText(s.d.at)}`),
+        h('p', { class: 'sub' }, `${s.d.owned.length.toLocaleString()} owned · ${s.d.ownedPending.length.toLocaleString()} waiting · ${s.d.watch.length} starred · ${s.d.follow.length} following`)] : [h('h3', null, 'nothing yet'), h('p', { class: 'sub' }, 'Open a backup file to compare it with A.')],
+      h('div', { class: 'btns', style: 'margin-top:12px;max-width:none' }, ...pick(which),
+        s?.name !== 'this device' ? h('button', { class: 'btn ghost', type: 'button', onclick: () => { slots[which] = { name: 'this device', d: readBackup(snapData(), true) }; draw(); } }, 'use this device') : ''));
+  };
+  const draw = () => {
+    slotBox.replaceChildren(slotCard('a'), slotCard('b'));
+    const A = slots.a?.d, B = slots.b?.d;
+    if (!A || !B) { cmp.replaceChildren(); return; }
+    const rows = BLISTS.map(([k, label]) => {
+      const a = asList(A, k), b = asList(B, k), ia = new Set(a.map(x => itemId(k, x))), ib = new Set(b.map(x => itemId(k, x)));
+      const onlyA = a.filter(x => !ib.has(itemId(k, x))), onlyB = b.filter(x => !ia.has(itemId(k, x)));
+      return { k, label, onlyA, onlyB, both: a.length - onlyA.length };
+    });
+    const nameOf = (k, x) => { const key = k === 'alerts' ? x.key : k === 'ownedMaybe' ? x.k : typeof x === 'string' ? x : null; if (k === 'follow') return x.name; if (k === 'ownedPending' || k === 'redeem') return x; const t = key && titles.get(key); return t ? t.title + (t.year ? ` (${t.year})` : '') + (k === 'alerts' ? ` ≤ $${x.p.toFixed(2)}` : '') : key; };
+    const peek = (k, list) => list.length ? h('details', null, h('summary', null, list.length.toLocaleString()), h('ul', { class: 'blist' }, list.slice(0, 300).map(x => h('li', null, nameOf(k, x))), list.length > 300 ? h('li', { class: 'sub' }, `…and ${list.length - 300} more`) : '')) : h('span', { class: 'sub' }, '0');
+    const diff = rows.some(r => r.onlyA.length || r.onlyB.length);
+    const merged = mergeData(A, B);
+    const useIt = (d, label) => { snapBeforeSync(); applyData(d); slots.a = { name: 'this device', d: readBackup(snapData(), true) }; slots.b = null; note.replaceChildren(h('div', { class: 'okbox' }, h('b', { class: 'green' }, '✓ Done. '), `${label} is on this device now. If that was a mistake, use “undo” above.`)); render(); };
+    cmp.replaceChildren(h('section', { class: 'sec', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ diff A B'), h('h2', { style: 'font-size:24px' }, diff ? 'What’s different' : 'They match'),
+      h('div', { class: 'tablebox' }, h('table', null, h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'list'), h('th', { scope: 'col', class: 'num' }, 'only in A'), h('th', { scope: 'col', class: 'num' }, 'only in B'), h('th', { scope: 'col', class: 'num' }, 'in both'))),
+        h('tbody', null, rows.map(r => h('tr', null, h('td', null, r.label), h('td', { class: 'num' }, peek(r.k, r.onlyA)), h('td', { class: 'num' }, peek(r.k, r.onlyB)), h('td', { class: 'num' }, r.both.toLocaleString())))))),
+      h('p', { class: 'sub', style: 'margin-top:10px' }, 'Tap a number to see the titles. Merging keeps everything from both (nothing is removed). If an alert price differs, A’s wins.'),
+      h('div', { class: 'btns', style: 'margin-top:14px;max-width:none' },
+        h('button', { class: 'btn primary', type: 'button', onclick: () => useIt(merged, 'The merged copy') }, 'merge both onto this device'),
+        h('button', { class: 'btn', type: 'button', onclick: () => downloadJSON(merged, `splitsbot-backup-merged-${stamp()}.json`) }, 'download the merged backup'),
+        slots.a.name !== 'this device' ? h('button', { class: 'btn ghost', type: 'button', onclick: () => useIt(A, 'Backup A') }, 'use A only') : '',
+        slots.b.name !== 'this device' ? h('button', { class: 'btn ghost', type: 'button', onclick: () => useIt(B, 'Backup B') }, 'use B only') : '')));
+  };
+  const render = () => {
+    const snap = lastSnap();
+    app.replaceChildren(libTabs('backup'),
+      ...pageHead('splitsbot@splitsbot.com:~$ backup', 'Backups.', 'Your lists live in this browser only. Save a backup file now and then (or before syncing), so a bad sync can always be fixed.'),
+      h('div', { class: 'card' }, h('p', { class: 'prompt' }, '$ backup --save'), h('h2', null, 'Save a backup'),
+        h('p', { class: 'sub' }, `Everything on this device: ${OW.list().length.toLocaleString()} owned · ${pending.list().length.toLocaleString()} waiting · ${WL.list().length} starred · ${FL.list().length} following · ${NI.list().length} not interested · ${Object.keys(AP.all()).length} alert prices.`),
+        h('div', { class: 'btns', style: 'margin-top:12px;max-width:none' }, h('button', { class: 'btn primary', type: 'button', onclick: () => downloadJSON(snapData(), `splitsbot-backup-${stamp()}.json`) }, 'download backup')),
+        h('p', { class: 'sub', style: 'margin-top:10px' }, 'It’s a small file with the date in its name. Keep it in Files, iCloud Drive, email it to yourself, anywhere.')),
+      snap ? h('div', { class: 'card', style: 'margin-top:18px' }, h('p', { class: 'prompt' }, '$ undo --last-sync'), h('h2', null, 'Undo the last sync'),
+        h('p', { class: 'sub' }, `SplitsBot kept a copy of this device from just before your last sync (${whenText(snap.at)}): ${snap.owned.length.toLocaleString()} owned · ${snap.ownedPending.length.toLocaleString()} waiting · ${snap.watch.length} starred.`),
+        h('div', { class: 'btns', style: 'margin-top:12px;max-width:none' },
+          h('button', { class: 'btn', type: 'button', onclick: () => { slots.b = { name: 'before last sync', d: snap }; draw(); cmp.scrollIntoView({ behavior: 'smooth' }); } }, 'compare with now'),
+          h('button', { class: 'btn', type: 'button', onclick: () => { const cur = snapData(); applyData(snap); try { localStorage.setItem(SNAPKEY, JSON.stringify(cur)); } catch {} slots.a = { name: 'this device', d: readBackup(snapData(), true) }; render(); note.replaceChildren(h('div', { class: 'okbox' }, h('b', { class: 'green' }, '✓ Undone. '), 'Tap undo again to go back.')); } }, 'undo'))) : '',
+      h('section', { class: 'sec', style: 'margin-top:28px' }, h('p', { class: 'prompt' }, '$ backup --compare'), h('h2', { style: 'font-size:24px' }, 'Compare two backups and merge'),
+        h('p', { class: 'sub', style: 'margin:0 0 14px' }, 'A starts as this device. Open a backup as B (from your phone, or an older one) to see what’s different, then merge.'),
+        slotBox),
+      note, cmp);
+    draw();
+  };
+  render();
 }
 async function viewSync(q) {
   document.title = 'Sync link · SplitsBot';
@@ -1821,6 +1931,7 @@ async function viewSync(q) {
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
   const done = h('div');
   const apply = replace => {
+    snapBeforeSync();
     if (data.redeem.length) RP.save(data.redeem); if (replace) AP.save({}); AP.merge(data.alerts); if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); pending.save(data.waiting); }
     else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); pending.save([...pending.list(), ...data.waiting]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
     checkPending();
@@ -2176,7 +2287,7 @@ function route() {
   const { parts, q } = parseHash();
   const view = parts[0] || '';
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', settings: 'settings', compare: 'deals' }[view];
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', backup: 'watch', settings: 'settings', compare: 'deals' }[view];
   document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   if (view === 'deal') viewDeal(parts[1], q);
   else if (view === 'titles') viewTitles(q);
@@ -2190,6 +2301,7 @@ function route() {
   else if (view === 'watch') viewWatch();
   else if (view === 'library') viewLibrary(q);
   else if (view === 'sync') viewSync(q);
+  else if (view === 'backup') viewBackup();
   else if (view === 'settings') viewSettings();
   else if (view === 'compare') viewCompare(parts[1], parts[2], q);
   else viewHome(q);
