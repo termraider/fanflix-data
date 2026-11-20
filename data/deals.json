@@ -1814,7 +1814,30 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2014
+          "year": 2014,
+          "imdb": {
+            "id": "tt1631867",
+            "rating": 7.9,
+            "votes": 821688,
+            "manual": true,
+            "cast": [
+              "Tom Cruise",
+              "Emily Blunt",
+              "Bill Paxton",
+              "Brendan Gleeson",
+              "Jonas Armstrong"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Sci-Fi"
+            ],
+            "year": 2014,
+            "runtime": 113,
+            "directors": [
+              "Doug Liman"
+            ]
+          }
         },
         {
           "title": "The Lego Movie",
@@ -2932,7 +2955,30 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2007
+          "year": 2007,
+          "imdb": {
+            "id": "tt0480249",
+            "rating": 7.2,
+            "votes": 893704,
+            "manual": true,
+            "cast": [
+              "Will Smith",
+              "Alice Braga",
+              "Charlie Tahan",
+              "Salli Richardson-Whitfield",
+              "Willow Smith"
+            ],
+            "genres": [
+              "Drama",
+              "Horror",
+              "Sci-Fi"
+            ],
+            "year": 2007,
+            "runtime": 101,
+            "directors": [
+              "Francis Lawrence"
+            ]
+          }
         },
         {
           "title": "Hairspray (2007)",
@@ -3577,7 +3623,29 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2001
+          "year": 2001,
+          "imdb": {
+            "id": "tt0245674",
+            "rating": 5.7,
+            "votes": 103802,
+            "manual": true,
+            "cast": [
+              "Tony Shalhoub",
+              "Shannon Elizabeth",
+              "Embeth Davidtz",
+              "Matthew Lillard",
+              "Alec Roberts"
+            ],
+            "genres": [
+              "Fantasy",
+              "Horror"
+            ],
+            "year": 2001,
+            "runtime": 91,
+            "directors": [
+              "Steve Beck"
+            ]
+          }
         },
         {
           "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -5847,7 +5915,29 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 1983
+          "year": 1983,
+          "imdb": {
+            "id": "tt0086066",
+            "rating": 7,
+            "votes": 112461,
+            "manual": true,
+            "cast": [
+              "C. Thomas Howell",
+              "Matt Dillon",
+              "Ralph Macchio",
+              "Patrick Swayze",
+              "Rob Lowe"
+            ],
+            "genres": [
+              "Crime",
+              "Drama"
+            ],
+            "year": 1983,
+            "runtime": 91,
+            "directors": [
+              "Francis Ford Coppola"
+            ]
+          }
         },
         {
           "title": "The Outsiders",

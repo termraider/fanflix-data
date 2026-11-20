@@ -8927,7 +8927,30 @@
           {
             "title": "Live Die Repeat: Edge of Tomorrow",
             "resolution": "UHD",
-            "year": 2014
+            "year": 2014,
+            "imdb": {
+              "id": "tt1631867",
+              "rating": 7.9,
+              "votes": 821688,
+              "manual": true,
+              "cast": [
+                "Tom Cruise",
+                "Emily Blunt",
+                "Bill Paxton",
+                "Brendan Gleeson",
+                "Jonas Armstrong"
+              ],
+              "genres": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+              ],
+              "year": 2014,
+              "runtime": 113,
+              "directors": [
+                "Doug Liman"
+              ]
+            }
           },
           {
             "title": "Pacific Rim",
@@ -97584,7 +97607,30 @@
         "image": "https://img.fanflix.co/WB/848bb79b25ace89b17d20b571b5541bcc767a5c75a5fe799f8456a3a4c0d8c79",
         "platforms": [
           "Movies Anywhere"
-        ]
+        ],
+        "imdb": {
+          "id": "tt1631867",
+          "rating": 7.9,
+          "votes": 821688,
+          "manual": true,
+          "cast": [
+            "Tom Cruise",
+            "Emily Blunt",
+            "Bill Paxton",
+            "Brendan Gleeson",
+            "Jonas Armstrong"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+          ],
+          "year": 2014,
+          "runtime": 113,
+          "directors": [
+            "Doug Liman"
+          ]
+        }
       },
       {
         "title": "The Lego Movie",
@@ -98702,7 +98748,30 @@
         "image": "https://img.fanflix.co/martwork/wb/28b0c2e1-25d1-43b4-8ab0-c91c248a4952-2x3.png",
         "platforms": [
           "Movies Anywhere"
-        ]
+        ],
+        "imdb": {
+          "id": "tt0480249",
+          "rating": 7.2,
+          "votes": 893704,
+          "manual": true,
+          "cast": [
+            "Will Smith",
+            "Alice Braga",
+            "Charlie Tahan",
+            "Salli Richardson-Whitfield",
+            "Willow Smith"
+          ],
+          "genres": [
+            "Drama",
+            "Horror",
+            "Sci-Fi"
+          ],
+          "year": 2007,
+          "runtime": 101,
+          "directors": [
+            "Francis Lawrence"
+          ]
+        }
       },
       {
         "title": "Hairspray (2007)",
@@ -99347,7 +99416,29 @@
         "image": "https://img.fanflix.co/martwork/wb/7fc99f8b-0e73-4ce4-b1cb-4e3475aa59b4-2x3.png",
         "platforms": [
           "Movies Anywhere"
-        ]
+        ],
+        "imdb": {
+          "id": "tt0245674",
+          "rating": 5.7,
+          "votes": 103802,
+          "manual": true,
+          "cast": [
+            "Tony Shalhoub",
+            "Shannon Elizabeth",
+            "Embeth Davidtz",
+            "Matthew Lillard",
+            "Alec Roberts"
+          ],
+          "genres": [
+            "Fantasy",
+            "Horror"
+          ],
+          "year": 2001,
+          "runtime": 91,
+          "directors": [
+            "Steve Beck"
+          ]
+        }
       },
       {
         "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -101617,7 +101708,29 @@
         "image": "https://img.fanflix.co/WB/0c87f168e1298e1f94ad81245fc7a37f2566a69b1015bd7d8e505b1932d3a17b",
         "platforms": [
           "Movies Anywhere"
-        ]
+        ],
+        "imdb": {
+          "id": "tt0086066",
+          "rating": 7,
+          "votes": 112461,
+          "manual": true,
+          "cast": [
+            "C. Thomas Howell",
+            "Matt Dillon",
+            "Ralph Macchio",
+            "Patrick Swayze",
+            "Rob Lowe"
+          ],
+          "genres": [
+            "Crime",
+            "Drama"
+          ],
+          "year": 1983,
+          "runtime": 91,
+          "directors": [
+            "Francis Ford Coppola"
+          ]
+        }
       },
       {
         "title": "The Outsiders",

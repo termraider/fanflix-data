@@ -13500,6 +13500,11 @@
    "votes": 308361,
    "checked": "2026-11-18"
   },
+  "tt0086066": {
+   "rating": 7,
+   "votes": 112461,
+   "checked": "2026-11-19"
+  },
   "tt0087800": {
    "rating": 7.4,
    "votes": 299125,
@@ -13690,6 +13695,11 @@
    "votes": 6688,
    "checked": "2026-11-18"
   },
+  "tt0245674": {
+   "rating": 5.7,
+   "votes": 103802,
+   "checked": "2026-11-19"
+  },
   "tt0247082": {
    "rating": 7.7,
    "votes": 95169,
@@ -13845,6 +13855,11 @@
    "votes": 2173,
    "checked": "2026-11-13"
   },
+  "tt0480249": {
+   "rating": 7.2,
+   "votes": 893704,
+   "checked": "2026-11-19"
+  },
   "tt0483268": {
    "rating": 4.5,
    "votes": 1303,
@@ -13974,6 +13989,11 @@
    "rating": 7.7,
    "votes": 56770,
    "checked": "2026-11-18"
+  },
+  "tt1631867": {
+   "rating": 7.9,
+   "votes": 821688,
+   "checked": "2026-11-19"
   },
   "tt1753968": {
    "rating": 6.6,
@@ -29165,6 +29185,19 @@
     "Allan Kroeker"
    ]
   },
+  "tt0245674": {
+   "checked": "2026-11-19",
+   "names": [
+    "Tony Shalhoub",
+    "Shannon Elizabeth",
+    "Embeth Davidtz",
+    "Matthew Lillard",
+    "Alec Roberts"
+   ],
+   "dir": [
+    "Steve Beck"
+   ]
+  },
   "tt0247082": {
    "checked": "2026-11-18",
    "names": [
@@ -37105,6 +37138,19 @@
    ],
    "dir": [
     "Joseph Kosinski"
+   ]
+  },
+  "tt1631867": {
+   "checked": "2026-11-19",
+   "names": [
+    "Tom Cruise",
+    "Emily Blunt",
+    "Bill Paxton",
+    "Brendan Gleeson",
+    "Jonas Armstrong"
+   ],
+   "dir": [
+    "Doug Liman"
    ]
   },
   "tt1634122": {
@@ -53607,6 +53653,15 @@
    "y": 2001,
    "rt": 60
   },
+  "tt0245674": {
+   "checked": "2026-11-19",
+   "g": [
+    "Fantasy",
+    "Horror"
+   ],
+   "y": 2001,
+   "rt": 91
+  },
   "tt0247082": {
    "checked": "2026-11-18",
    "g": [
@@ -59417,6 +59472,16 @@
    ],
    "y": 2025,
    "rt": 155
+  },
+  "tt1631867": {
+   "checked": "2026-11-19",
+   "g": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+   ],
+   "y": 2014,
+   "rt": 113
   },
   "tt1634122": {
    "checked": "2026-11-18",
