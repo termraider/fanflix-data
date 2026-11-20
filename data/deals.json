@@ -51,7 +51,28 @@
           "title": "A Waltons Easter",
           "price": "",
           "resolution": "HD",
-          "image": "https://img.fanflix.co/martwork/6a2be46fb0f96505743ae301e59f938ab0f4803f079dfddca99ee5e78b536cfc"
+          "image": "https://img.fanflix.co/martwork/6a2be46fb0f96505743ae301e59f938ab0f4803f079dfddca99ee5e78b536cfc",
+          "imdb": {
+            "id": "tt0120476",
+            "rating": 7.1,
+            "votes": 387,
+            "manual": true,
+            "cast": [
+              "Richard Thomas",
+              "Ralph Waite",
+              "Michael Learned",
+              "Jon Walmsley",
+              "Judy Norton"
+            ],
+            "genres": [
+              "Drama"
+            ],
+            "year": 1997,
+            "runtime": 120,
+            "directors": [
+              "Bill Corcoran"
+            ]
+          }
         },
         {
           "title": "A Walton Wedding",
@@ -839,7 +860,30 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2019
+          "year": 2019,
+          "imdb": {
+            "id": "tt0087089",
+            "rating": 6.6,
+            "votes": 21490,
+            "manual": true,
+            "cast": [
+              "Richard Gere",
+              "Gregory Hines",
+              "Diane Lane",
+              "Lonette McKee",
+              "Bob Hoskins"
+            ],
+            "genres": [
+              "Crime",
+              "Drama",
+              "Music"
+            ],
+            "year": 1984,
+            "runtime": 129,
+            "directors": [
+              "Francis Ford Coppola"
+            ]
+          }
         },
         {
           "title": "ANNA (2019)",
@@ -2828,7 +2872,30 @@
           "price": "$9.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/WB/01ecf75aee4d33d73771c9baf6749b835aab3cd360de78a4c91eb3c8f6d11891",
-          "year": 1994
+          "year": 1994,
+          "imdb": {
+            "id": "tt0108778",
+            "rating": 8.8,
+            "votes": 1215564,
+            "manual": true,
+            "cast": [
+              "Jennifer Aniston",
+              "Courteney Cox",
+              "Lisa Kudrow",
+              "Matt LeBlanc",
+              "Matthew Perry"
+            ],
+            "genres": [
+              "Comedy",
+              "Romance"
+            ],
+            "year": 1994,
+            "runtime": 22,
+            "directors": [
+              "Gary Halvorson",
+              "Kevin Bright"
+            ]
+          }
         },
         {
           "title": "The Fresh Prince of Bel-Air: The Complete Series",
@@ -4074,7 +4141,40 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/5b7e321df40754f4ad51be5397a734cb30d082e0a070273c7884716c3cebf748",
           "seasons": 3,
-          "year": 2019
+          "year": 2019,
+          "imdb": {
+            "id": "tt10332508",
+            "rating": 8.6,
+            "votes": 31535,
+            "manual": true,
+            "season": {
+              "seasons": [
+                1,
+                2,
+                3
+              ],
+              "rating": 8.6,
+              "votes": 42235,
+              "episodes": 30
+            },
+            "cast": [
+              "Aaron LaPlante",
+              "Laëtitia Eïdo",
+              "Fred Tatasciore",
+              "Imari Williams",
+              "Jon Olson"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ],
+            "year": 2019,
+            "runtime": 22,
+            "directors": [
+              "Genndy Tartakovsky"
+            ]
+          }
         },
         {
           "title": "Genndy Tartakovsky's Primal: Season 3",
@@ -4082,7 +4182,36 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/b34207b8cfb2db770ed4c4cc368b172fcb73e7b094542ec83e559362ce39c125",
           "seasons": 1,
-          "year": 2026
+          "year": 2026,
+          "imdb": {
+            "id": "tt10332508",
+            "rating": 8.6,
+            "votes": 31535,
+            "manual": true,
+            "season": {
+              "n": 3,
+              "rating": 8.3,
+              "votes": 6856,
+              "episodes": 10
+            },
+            "cast": [
+              "Aaron LaPlante",
+              "Laëtitia Eïdo",
+              "Fred Tatasciore",
+              "Imari Williams",
+              "Jon Olson"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ],
+            "year": 2019,
+            "runtime": 22,
+            "directors": [
+              "Genndy Tartakovsky"
+            ]
+          }
         },
         {
           "title": "The White Lotus: Season 1-3",
@@ -4481,7 +4610,31 @@
           "price": "$29.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/d8d93403fd16a805b7d0a73fde8b9027facb330b653f4187a45403cfd297b89d",
-          "year": 2018
+          "year": 2018,
+          "imdb": {
+            "id": "tt0368530",
+            "rating": 7.8,
+            "votes": 96852,
+            "manual": true,
+            "cast": [
+              "Chad Michael Murray",
+              "James Lafferty",
+              "Hilarie Burton Morgan",
+              "Bethany Joy Lenz",
+              "Sophia Bush"
+            ],
+            "genres": [
+              "Drama",
+              "Romance",
+              "Sport"
+            ],
+            "year": 2003,
+            "runtime": 60,
+            "directors": [
+              "Gregory Prange",
+              "Paul Johansson"
+            ]
+          }
         },
         {
           "title": "The O.C.: The Complete Series",
@@ -4585,7 +4738,37 @@
           "resolution": "UHD",
           "image": "https://img.fanflix.co/WB/2df5cfcb9b82f41972f7bf62021252649b128e829fd96988e8a11ac276892437",
           "seasons": 1,
-          "year": 2025
+          "year": 2025,
+          "imdb": {
+            "id": "tt31710822",
+            "rating": 7.1,
+            "votes": 75634,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7.3,
+              "votes": 12593,
+              "episodes": 6
+            },
+            "cast": [
+              "Eric Bana",
+              "Sam Neill",
+              "Rosemarie DeWitt",
+              "Lily Santiago",
+              "William Smillie"
+            ],
+            "genres": [
+              "Crime",
+              "Drama",
+              "Mystery"
+            ],
+            "year": 2025,
+            "runtime": 50,
+            "directors": [
+              "Daniel Percival",
+              "Thomas Bezucha"
+            ]
+          }
         },
         {
           "title": "All American: Season 8",
@@ -4856,7 +5039,30 @@
           "price": "$9.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/16f4d394a416ed123f8181e43ea1034bc11aa12c198953f10a3baaaa7a016f45",
-          "year": 1983
+          "year": 1983,
+          "imdb": {
+            "id": "tt0085106",
+            "rating": 7.8,
+            "votes": 19144,
+            "manual": true,
+            "cast": [
+              "Jane Badler",
+              "Michael Durrell",
+              "Faye Grant",
+              "Peter Nelson",
+              "David Packer"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Drama"
+            ],
+            "year": 1983,
+            "runtime": 99,
+            "directors": [
+              "Kenneth Johnson"
+            ]
+          }
         },
         {
           "title": "Babylon 5: The Complete Series",
@@ -4953,7 +5159,30 @@
           "price": "$49.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/cea9e05325073f64302367b2cf0769105f0b256958eeaf3d04f60bdf0bcf2191",
-          "year": 1978
+          "year": 1978,
+          "imdb": {
+            "id": "tt0077000",
+            "rating": 7.1,
+            "votes": 18626,
+            "manual": true,
+            "cast": [
+              "Larry Hagman",
+              "Ken Kercheval",
+              "Patrick Duffy",
+              "Linda Gray",
+              "Barbara Bel Geddes"
+            ],
+            "genres": [
+              "Drama",
+              "Romance"
+            ],
+            "year": 1978,
+            "runtime": 60,
+            "directors": [
+              "Leonard Katzman",
+              "Michael Preece"
+            ]
+          }
         },
         {
           "title": "Dune: Prophecy: Season 1",
@@ -5075,7 +5304,31 @@
           "price": "$14.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/WB/72bd579e2c8bf797206b3f61f0a5e060a98a37480699ca3c08e958fd323eec61",
-          "year": 2022
+          "year": 2022,
+          "imdb": {
+            "id": "tt11198330",
+            "rating": 8.2,
+            "votes": 578381,
+            "manual": true,
+            "cast": [
+              "Matt Smith",
+              "Emma D'Arcy",
+              "Olivia Cooke",
+              "Steve Toussaint",
+              "Sonoya Mizuno"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Drama"
+            ],
+            "year": 2022,
+            "runtime": 60,
+            "directors": [
+              "Clare Kilner",
+              "Geeta Vasant Patel"
+            ]
+          }
         },
         {
           "title": "House of the Dragon: Season 2",
@@ -5300,7 +5553,31 @@
           "price": "$9.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/5569867823c826b1b12f9bf7ff8bbddf628f799cc2404ef530d2b751e5b54b9e",
-          "year": 2014
+          "year": 2014,
+          "imdb": {
+            "id": "tt2356777",
+            "rating": 8.8,
+            "votes": 779531,
+            "manual": true,
+            "cast": [
+              "Vince Vaughn",
+              "Colin Farrell",
+              "Rachel McAdams",
+              "Taylor Kitsch",
+              "Matthew McConaughey"
+            ],
+            "genres": [
+              "Crime",
+              "Drama",
+              "Mystery"
+            ],
+            "year": 2014,
+            "runtime": 60,
+            "directors": [
+              "Cary Joji Fukunaga",
+              "Issa López"
+            ]
+          }
         },
         {
           "title": "True Detective: Night Country: Season 4",
@@ -5308,7 +5585,37 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/2ada14774861ba2e673caaeda850d1fbfc7f6b0aed2807e0d180f76861ca63c8",
           "seasons": 1,
-          "year": 2024
+          "year": 2024,
+          "imdb": {
+            "id": "tt2356777",
+            "rating": 8.8,
+            "votes": 779531,
+            "manual": true,
+            "season": {
+              "n": 4,
+              "rating": 6.5,
+              "votes": 94234,
+              "episodes": 6
+            },
+            "cast": [
+              "Vince Vaughn",
+              "Colin Farrell",
+              "Rachel McAdams",
+              "Taylor Kitsch",
+              "Matthew McConaughey"
+            ],
+            "genres": [
+              "Crime",
+              "Drama",
+              "Mystery"
+            ],
+            "year": 2014,
+            "runtime": 60,
+            "directors": [
+              "Cary Joji Fukunaga",
+              "Issa López"
+            ]
+          }
         },
         {
           "title": "The Last of Us: Seasons 1-2",
@@ -5355,7 +5662,31 @@
           "price": "$14.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/WB/6ff89ced4c84e1263be1f14b16be11ad5cae817034adf0d742b314936f737f44",
-          "year": 2023
+          "year": 2023,
+          "imdb": {
+            "id": "tt3581920",
+            "rating": 8.4,
+            "votes": 756654,
+            "manual": true,
+            "cast": [
+              "Bella Ramsey",
+              "Pedro Pascal",
+              "Gabriel Luna",
+              "Isabela Merced",
+              "Young Mazino"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Drama"
+            ],
+            "year": 2023,
+            "runtime": 50,
+            "directors": [
+              "Craig Mazin",
+              "Neil Druckmann"
+            ]
+          }
         },
         {
           "title": "The Last of Us: Season 2",
@@ -5468,14 +5799,73 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/b217744bc7d0509d1109805ed3f0ee3034091c32ac7761881401f01368469df4",
           "seasons": 4,
-          "year": 2022
+          "year": 2022,
+          "imdb": {
+            "id": "tt0475784",
+            "rating": 8.4,
+            "votes": 563406,
+            "manual": true,
+            "season": {
+              "seasons": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "rating": 8.5,
+              "votes": 459905,
+              "episodes": 36
+            },
+            "cast": [
+              "Evan Rachel Wood",
+              "Jeffrey Wright",
+              "Ed Harris",
+              "Thandiwe Newton",
+              "Tessa Thompson"
+            ],
+            "genres": [
+              "Drama",
+              "Mystery",
+              "Sci-Fi"
+            ],
+            "year": 2016,
+            "runtime": 60,
+            "directors": [
+              "Richard J. Lewis",
+              "Jonathan Nolan"
+            ]
+          }
         },
         {
           "title": "Westworld: The Complete First Season",
           "price": "$12.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/3b38726685a1faa5289a9d8fca89b62bfce4dba75778af4464e2724a0a74ca0c",
-          "year": 2016
+          "year": 2016,
+          "imdb": {
+            "id": "tt0475784",
+            "rating": 8.4,
+            "votes": 563406,
+            "manual": true,
+            "cast": [
+              "Evan Rachel Wood",
+              "Jeffrey Wright",
+              "Ed Harris",
+              "Thandiwe Newton",
+              "Tessa Thompson"
+            ],
+            "genres": [
+              "Drama",
+              "Mystery",
+              "Sci-Fi"
+            ],
+            "year": 2016,
+            "runtime": 60,
+            "directors": [
+              "Richard J. Lewis",
+              "Jonathan Nolan"
+            ]
+          }
         },
         {
           "title": "Task: Season 1",
@@ -5519,7 +5909,30 @@
           "price": "$12.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/f98d19437f954d807eeb0b3d612cecab5f58920269202662a479cc054b288052",
-          "year": 2019
+          "year": 2019,
+          "imdb": {
+            "id": "tt7366338",
+            "rating": 9.3,
+            "votes": 1077459,
+            "manual": true,
+            "cast": [
+              "Jessie Buckley",
+              "Jared Harris",
+              "Stellan Skarsgård",
+              "Adam Nagaitis",
+              "Emily Watson"
+            ],
+            "genres": [
+              "Drama",
+              "History",
+              "Thriller"
+            ],
+            "year": 2019,
+            "runtime": 60,
+            "directors": [
+              "Johan Renck"
+            ]
+          }
         },
         {
           "title": "Like Water for Chocolate: The Complete Series",
@@ -5650,7 +6063,43 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/29a96494a1d07733d38096e4d332fb2cb5232def776c876a51354f56818c6833",
           "seasons": 7,
-          "year": 2005
+          "year": 2005,
+          "imdb": {
+            "id": "tt0200276",
+            "rating": 8.9,
+            "votes": 102216,
+            "manual": true,
+            "season": {
+              "seasons": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "rating": 8.3,
+              "votes": 178146,
+              "episodes": 155
+            },
+            "cast": [
+              "Martin Sheen",
+              "Rob Lowe",
+              "Allison Janney",
+              "John Spencer",
+              "Bradley Whitford"
+            ],
+            "genres": [
+              "Drama"
+            ],
+            "year": 1999,
+            "runtime": 42,
+            "directors": [
+              "Christopher Misiano",
+              "Alex Graves"
+            ]
+          }
         },
         {
           "title": "Succession: The Complete Series",
@@ -5990,7 +6439,30 @@
           "price": "$14.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/ba1f4a51b9d02dad6d3faea6b1eda8aec394159c0e9bd8c2b46a7deda3bea644",
-          "year": 2008
+          "year": 2008,
+          "imdb": {
+            "id": "tt0472027",
+            "rating": 8.4,
+            "votes": 40887,
+            "manual": true,
+            "cast": [
+              "Paul Giamatti",
+              "Laura Linney",
+              "John Dossett",
+              "Stephen Dillane",
+              "Sarah Polley"
+            ],
+            "genres": [
+              "Biography",
+              "Drama",
+              "History"
+            ],
+            "year": 2008,
+            "runtime": 60,
+            "directors": [
+              "Tom Hooper"
+            ]
+          }
         },
         {
           "title": "Half Man: Season 1",
@@ -6261,14 +6733,62 @@
           "price": "$34.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/fcb82d8b8bc9b74baeeb7f25073142d96848d22cae93a33d1f1c627217756f17",
-          "year": 1992
+          "year": 1992,
+          "imdb": {
+            "id": "tt0103359",
+            "rating": 9,
+            "votes": 141365,
+            "manual": true,
+            "cast": [
+              "Kevin Conroy",
+              "Loren Lester",
+              "Efrem Zimbalist Jr.",
+              "Bob Hastings",
+              "Robert Costanzo"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ],
+            "year": 1992,
+            "runtime": 22,
+            "directors": [
+              "Kevin Altieri",
+              "Boyd Kirkland"
+            ]
+          }
         },
         {
           "title": "Batman: The Complete Television Series",
           "price": "$34.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/f5f11e394eec305c349f99bb3637df47620d9e0f73be895c1c19b29f5ae94ffb",
-          "year": 1966
+          "year": 1966,
+          "imdb": {
+            "id": "tt0059968",
+            "rating": 7.5,
+            "votes": 29902,
+            "manual": true,
+            "cast": [
+              "Adam West",
+              "Burt Ward",
+              "Alan Napier",
+              "Neil Hamilton",
+              "Stafford Repp"
+            ],
+            "genres": [
+              "Action",
+              "Crime",
+              "Fantasy"
+            ],
+            "year": 1966,
+            "runtime": 25,
+            "directors": [
+              "Oscar Rudolph",
+              "James B. Clark"
+            ]
+          }
         },
         {
           "title": "Superman & Lois: The Complete Series",
@@ -6646,7 +7166,31 @@
           "price": "$34.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/WB/f47855cd56d859b54b9032967745302a16b45bc5f946cb820c7b6ab39543f4ae",
-          "year": 1998
+          "year": 1998,
+          "imdb": {
+            "id": "tt0175058",
+            "rating": 7.3,
+            "votes": 53635,
+            "manual": true,
+            "cast": [
+              "Cathy Cavadini",
+              "Elizabeth Daily",
+              "Tara Strong",
+              "Tom Kenny",
+              "Tom Kane"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ],
+            "year": 1998,
+            "runtime": 30,
+            "directors": [
+              "Craig McCracken",
+              "John McIntyre"
+            ]
+          }
         },
         {
           "title": "Courage the Cowardly Dog: The Complete Series",
@@ -6682,7 +7226,30 @@
           "price": "$9.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/WB/1799d4aafd90458fcf58cb216f24d7fba34d0db01b21b6b9994a542759925c53",
-          "year": 1999
+          "year": 1999,
+          "imdb": {
+            "id": "tt0220880",
+            "rating": 8.3,
+            "votes": 58894,
+            "manual": true,
+            "cast": [
+              "Marty Grabstein",
+              "Thea White",
+              "Peter Fernandez",
+              "Simon Prebble",
+              "Paul Schoeffler"
+            ],
+            "genres": [
+              "Adventure",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1999,
+            "runtime": 11,
+            "directors": [
+              "John R. Dilworth"
+            ]
+          }
         },
         {
           "title": "Dexter's Laboratory: The Complete Series",
@@ -6779,7 +7346,31 @@
           "price": "$49.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/5618bc281033ba7ee06005a232da8883c8a6141afb1521ddb3d85cf0cd87cec0",
-          "year": 2005
+          "year": 2005,
+          "imdb": {
+            "id": "tt0760437",
+            "rating": 7.6,
+            "votes": 38284,
+            "manual": true,
+            "cast": [
+              "Tara Strong",
+              "Paul Eiding",
+              "Meagan Moore",
+              "Meric B",
+              "Dee Bradley Baker"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ],
+            "year": 2005,
+            "runtime": 30,
+            "directors": [
+              "Scooter Tidwell",
+              "Sebastian Montes"
+            ]
+          }
         },
         {
           "title": "Scooby-Doo, Where Are You!: The Complete Series",
@@ -7004,7 +7595,26 @@
           "price": "$19.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/3327df0682f9b52e8810ccc84ca2f04aff09f793c636fc9a8742b0702b740850",
-          "year": 1954
+          "year": 1954,
+          "imdb": {
+            "id": "tt37522729",
+            "rating": 9,
+            "votes": 1033,
+            "manual": true,
+            "cast": [
+              "Charles Napier",
+              "Bob Laztny",
+              "Jack Sabel"
+            ],
+            "genres": [
+              "Animation"
+            ],
+            "year": 1965,
+            "directors": [
+              "Joseph Barbera",
+              "William Hanna"
+            ]
+          }
         },
         {
           "title": "Bugs Bunny Builders: The Complete Series",
@@ -7041,7 +7651,31 @@
           "price": "$7.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/WB/1827ebebd10b5f737e4efa1fa7110527a4e05968344939a18c9536da5055f096",
-          "year": 2022
+          "year": 2022,
+          "imdb": {
+            "id": "tt13292830",
+            "rating": 5.7,
+            "votes": 591,
+            "manual": true,
+            "cast": [
+              "Jacob Bertrand",
+              "Noah Kaye Bentley",
+              "Madigan Kacmar",
+              "Lilimar",
+              "Mick Wingert"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Animation"
+            ],
+            "year": 2022,
+            "runtime": 12,
+            "directors": [
+              "Antoine Charreyron",
+              "Michael G. Stern"
+            ]
+          }
         }
       ]
     },
@@ -7485,7 +8119,30 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2025
+          "year": 2025,
+          "imdb": {
+            "id": "tt7181546",
+            "rating": 6.8,
+            "votes": 166197,
+            "manual": true,
+            "cast": [
+              "Ana de Armas",
+              "Keanu Reeves",
+              "Ian McShane",
+              "Anjelica Huston",
+              "Gabriel Byrne"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Crime"
+            ],
+            "year": 2025,
+            "runtime": 124,
+            "directors": [
+              "Len Wiseman"
+            ]
+          }
         },
         {
           "title": "The Strangers - Chapter 2",
@@ -8121,7 +8778,30 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2025
+          "year": 2025,
+          "imdb": {
+            "id": "tt8008948",
+            "rating": 6.3,
+            "votes": 46648,
+            "manual": true,
+            "cast": [
+              "Gerard Butler",
+              "O'Shea Jackson Jr.",
+              "Evin Ahmad",
+              "Salvatore Esposito",
+              "Orli Shuka"
+            ],
+            "genres": [
+              "Action",
+              "Crime",
+              "Drama"
+            ],
+            "year": 2025,
+            "runtime": 144,
+            "directors": [
+              "Christian Gudegast"
+            ]
+          }
         },
         {
           "title": "Flight Risk",
@@ -9538,7 +10218,29 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2010
+          "year": 2010,
+          "imdb": {
+            "id": "tt1477076",
+            "rating": 5.5,
+            "votes": 120799,
+            "manual": true,
+            "cast": [
+              "Tobin Bell",
+              "Costas Mandylor",
+              "Betsy Russell",
+              "Cary Elwes",
+              "Sean Patrick Flanery"
+            ],
+            "genres": [
+              "Horror",
+              "Mystery"
+            ],
+            "year": 2010,
+            "runtime": 90,
+            "directors": [
+              "Kevin Greutert"
+            ]
+          }
         },
         {
           "title": "Jigsaw",
@@ -10529,7 +11231,31 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2010
+          "year": 2010,
+          "imdb": {
+            "id": "tt1520211",
+            "rating": 8.1,
+            "votes": 1222782,
+            "manual": true,
+            "cast": [
+              "Andrew Lincoln",
+              "Norman Reedus",
+              "Melissa McBride",
+              "Lauren Cohan",
+              "Christian Serratos"
+            ],
+            "genres": [
+              "Drama",
+              "Horror",
+              "Thriller"
+            ],
+            "year": 2010,
+            "runtime": 45,
+            "directors": [
+              "Greg Nicotero",
+              "Michael E. Satrazemis"
+            ]
+          }
         },
         {
           "title": "Fear the Walking Dead: The Complete Collection",
@@ -10539,7 +11265,31 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2015
+          "year": 2015,
+          "imdb": {
+            "id": "tt3743822",
+            "rating": 6.7,
+            "votes": 155968,
+            "manual": true,
+            "cast": [
+              "Kim Dickens",
+              "Frank Dillane",
+              "Cliff Curtis",
+              "Rubén Blades",
+              "Colman Domingo"
+            ],
+            "genres": [
+              "Drama",
+              "Horror",
+              "Sci-Fi"
+            ],
+            "year": 2015,
+            "runtime": 44,
+            "directors": [
+              "Michael E. Satrazemis",
+              "Stefan Schwartz"
+            ]
+          }
         },
         {
           "title": "Ghosts: Seasons 1-5 Bundle",
@@ -10550,7 +11300,42 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2021
+          "year": 2021,
+          "imdb": {
+            "id": "tt11379026",
+            "rating": 7.9,
+            "votes": 54435,
+            "manual": true,
+            "season": {
+              "seasons": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "rating": 7.7,
+              "votes": 77545,
+              "episodes": 94
+            },
+            "cast": [
+              "Rose McIver",
+              "Utkarsh Ambudkar",
+              "Brandon Scott Jones",
+              "Danielle Pinnock",
+              "Richie Moriarty"
+            ],
+            "genres": [
+              "Comedy",
+              "Fantasy"
+            ],
+            "year": 2021,
+            "runtime": 21,
+            "directors": [
+              "Trent O'Donnell",
+              "Richie Keen"
+            ]
+          }
         },
         {
           "title": "The Rainmaker: Season 1",
@@ -10645,7 +11430,29 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2026
+          "year": 2026,
+          "imdb": {
+            "id": "tt8595140",
+            "rating": 5.9,
+            "votes": 14906,
+            "manual": true,
+            "cast": [
+              "John Goodman",
+              "Laurie Metcalf",
+              "Sara Gilbert",
+              "Alicia Goranson",
+              "Emma Kenney"
+            ],
+            "genres": [
+              "Comedy"
+            ],
+            "year": 2018,
+            "runtime": 30,
+            "directors": [
+              "Jody Margolin Hahn",
+              "Lynda Tarryk"
+            ]
+          }
         },
         {
           "title": "Welcome to Flatch: The Complete Series",
@@ -10766,7 +11573,30 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2014
+          "year": 2014,
+          "imdb": {
+            "id": "tt3281796",
+            "rating": 8.1,
+            "votes": 60475,
+            "manual": true,
+            "cast": [
+              "Omari Hardwick",
+              "Lela Loren",
+              "Naturi Naughton",
+              "Joseph Sikora",
+              "Shane Johnson"
+            ],
+            "genres": [
+              "Crime",
+              "Drama"
+            ],
+            "year": 2014,
+            "runtime": 60,
+            "directors": [
+              "Sanford Bookstaver",
+              "MJ Bassett"
+            ]
+          }
         },
         {
           "title": "Power Book II: Ghosts: The Complete Series",
@@ -10776,7 +11606,30 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2020
+          "year": 2020,
+          "imdb": {
+            "id": "tt10732104",
+            "rating": 7.5,
+            "votes": 14880,
+            "manual": true,
+            "cast": [
+              "Michael Rainey Jr.",
+              "Gianni Paolo",
+              "Lovell Adams-Gray",
+              "Woody McClain",
+              "Method Man"
+            ],
+            "genres": [
+              "Crime",
+              "Drama"
+            ],
+            "year": 2020,
+            "runtime": 60,
+            "directors": [
+              "Brendan Walsh",
+              "Rob Hardy"
+            ]
+          }
         },
         {
           "title": "Heartland: Seasons 1-18 Collection (Bundle)",
@@ -11739,7 +12592,29 @@
           "price": "$6.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/martwork/sphe/9997946d-2a29-48fc-8ec9-44aa2fb8b04e-2x3.png",
-          "year": 2020
+          "year": 2020,
+          "imdb": {
+            "id": "tt12305696",
+            "rating": 5.4,
+            "votes": 5866,
+            "manual": true,
+            "cast": [
+              "Chad Michael Collins",
+              "Sayaka Akimoto",
+              "Tom Berenger",
+              "Ryan Robbins",
+              "Lochlyn Munro"
+            ],
+            "genres": [
+              "Action",
+              "Thriller"
+            ],
+            "year": 2020,
+            "runtime": 95,
+            "directors": [
+              "Kaare Andrews"
+            ]
+          }
         },
         {
           "title": "Sniper: Rogue Mission",
@@ -13515,7 +14390,30 @@
           "price": "$7.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/martwork/sphe/857dc35e-095e-4a6d-a859-e3cdeae9cbc2-2x3.png",
-          "year": 2019
+          "year": 2019,
+          "imdb": {
+            "id": "tt2283336",
+            "rating": 5.6,
+            "votes": 163880,
+            "manual": true,
+            "cast": [
+              "Chris Hemsworth",
+              "Tessa Thompson",
+              "Kumail Nanjiani",
+              "Rebecca Ferguson",
+              "Rafe Spall"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Comedy"
+            ],
+            "year": 2019,
+            "runtime": 114,
+            "directors": [
+              "F. Gary Gray"
+            ]
+          }
         },
         {
           "title": "Underworld",
@@ -17693,7 +18591,30 @@
               "title": "MIB: International",
               "resolution": "UHD",
               "year": 2019,
-              "image": "https://img.fanflix.co/martwork/sphe/857dc35e-095e-4a6d-a859-e3cdeae9cbc2-2x3.png"
+              "image": "https://img.fanflix.co/martwork/sphe/857dc35e-095e-4a6d-a859-e3cdeae9cbc2-2x3.png",
+              "imdb": {
+                "id": "tt2283336",
+                "rating": 5.6,
+                "votes": 163880,
+                "manual": true,
+                "cast": [
+                  "Chris Hemsworth",
+                  "Tessa Thompson",
+                  "Kumail Nanjiani",
+                  "Rebecca Ferguson",
+                  "Rafe Spall"
+                ],
+                "genres": [
+                  "Action",
+                  "Adventure",
+                  "Comedy"
+                ],
+                "year": 2019,
+                "runtime": 114,
+                "directors": [
+                  "F. Gary Gray"
+                ]
+              }
             }
           ]
         },
