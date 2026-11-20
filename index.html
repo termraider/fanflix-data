@@ -920,6 +920,7 @@ function viewDeal(slug, q) {
   const cheaper = !d.live ? [] : rows.map(r => {
     const t = titles.get(r.key);
     if (!t || r.price == null || r.packName) return null; // titles you can buy on their own only (like SplitsBot's 🚨 alert)
+    if (OW.has(r.key) || NI.has(r.key) || !canUseRow(r)) return null; // you own it, said not interested, or can't redeem it here
     const best = t.hits.filter(x => x.deal !== d && usableHit(x) && !x.packName && x.resolution === r.resolution && x.price != null && x.price < r.price - 0.001)
       .sort((a, b) => a.price - b.price)[0];
     return best ? { r, best } : null;

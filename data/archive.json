@@ -21554,7 +21554,30 @@
       {
         "title": "Angel And The Badman",
         "price": "$3.99",
-        "resolution": "SD"
+        "resolution": "SD",
+        "imdb": {
+          "id": "tt0039152",
+          "rating": 6.8,
+          "votes": 7626,
+          "manual": true,
+          "cast": [
+            "John Wayne",
+            "Gail Russell",
+            "Harry Carey",
+            "Bruce Cabot",
+            "Irene Rich"
+          ],
+          "genres": [
+            "Drama",
+            "Romance",
+            "Western"
+          ],
+          "year": 1947,
+          "runtime": 100,
+          "directors": [
+            "James Edward Grant"
+          ]
+        }
       },
       {
         "title": "Dakota",
@@ -82194,7 +82217,8 @@
             "imdb": {
               "id": "tt0039152",
               "rating": 6.8,
-              "votes": 7622,
+              "votes": 7626,
+              "manual": true,
               "cast": [
                 "John Wayne",
                 "Gail Russell",

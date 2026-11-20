@@ -69342,7 +69342,8 @@
               "imdb": {
                 "id": "tt0039152",
                 "rating": 6.8,
-                "votes": 7622,
+                "votes": 7626,
+                "manual": true,
                 "cast": [
                   "John Wayne",
                   "Gail Russell",
