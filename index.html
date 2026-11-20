@@ -1840,6 +1840,10 @@ const altT = x => {
   const ROM = { ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10 };
   const num = baseT(raw.replace(/\b(ii|iii|iv|vi{0,3}|ix|x)\b(?=\s*(?::|$|\s[-–—]\s))/gi, m => ROM[m.toLowerCase()] || m)); out.push(num);
   if (/\s\d{1,2}\s*:/.test(raw.replace(/\b(ii|iii|iv|vi{0,3}|ix|x)\b(?=\s*:)/gi, '2'))) out.push(baseT(raw.replace(/\s+(?:\d{1,2}|ii|iii|iv|vi{0,3}|ix|x)\s*:/i, ':')));
+  // spacing and spelling: "Kill Bill: Volume 1" ↔ "Kill Bill Vol 1", "Project A 2" ↔ "Project A2", "Road Runner" ↔ "Roadrunner", "Zoolander No. 2" ↔ "Zoolander 2"
+  const sq = k => '~' + k.replace(/\bvolume\b/g, 'vol').replace(/\bno (?=\d)/g, '').replace(/\s+/g, '');
+  const all = [...new Set([baseT(raw), ...out])];
+  out.push(...all.map(sq));
   return [...new Set(out)].filter(k => k.length >= 4 && k !== baseT(raw));
 };
 let idx = null;
