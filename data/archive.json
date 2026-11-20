@@ -5533,7 +5533,30 @@
         "title": "Apocalypse Now Redux",
         "price": "$4.00",
         "resolution": "UHD",
-        "image": "https://img.fanflix.co/LG/3df5bc6b7dcafba363896baead3ec9996553ac48774284fb865a6f0d3d0bf13d"
+        "image": "https://img.fanflix.co/LG/3df5bc6b7dcafba363896baead3ec9996553ac48774284fb865a6f0d3d0bf13d",
+        "imdb": {
+          "id": "tt0078788",
+          "rating": 8.4,
+          "votes": 782419,
+          "manual": true,
+          "cast": [
+            "Martin Sheen",
+            "Marlon Brando",
+            "Robert Duvall",
+            "Frederic Forrest",
+            "Sam Bottoms"
+          ],
+          "genres": [
+            "Drama",
+            "Mystery",
+            "War"
+          ],
+          "year": 1979,
+          "runtime": 147,
+          "directors": [
+            "Francis Ford Coppola"
+          ]
+        }
       },
       {
         "title": "Apocalypse Now Final Cut",
@@ -5596,7 +5619,30 @@
         "title": "Grant (Miniseries)",
         "price": "$4.00",
         "resolution": "HD",
-        "image": "https://img.fanflix.co/LG/8587d7f88293b4adc29a0d6d38f617a7e50244b1caa120e1397c94d1d18cce99"
+        "image": "https://img.fanflix.co/LG/8587d7f88293b4adc29a0d6d38f617a7e50244b1caa120e1397c94d1d18cce99",
+        "imdb": {
+          "id": "tt8690814",
+          "rating": 8.4,
+          "votes": 3048,
+          "manual": true,
+          "cast": [
+            "Justin Salinger",
+            "Ron Chernow",
+            "Carel Nel",
+            "Doug Douds",
+            "Francis Chouler"
+          ],
+          "genres": [
+            "Biography",
+            "Documentary",
+            "History"
+          ],
+          "year": 2020,
+          "runtime": 85,
+          "directors": [
+            "Malcolm Venville"
+          ]
+        }
       },
       {
         "title": "The Great War",
@@ -22011,7 +22057,30 @@
       {
         "title": "Oldboy",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt1321511",
+          "rating": 5.8,
+          "votes": 86185,
+          "manual": true,
+          "cast": [
+            "Josh Brolin",
+            "Elizabeth Olsen",
+            "Samuel L. Jackson",
+            "Sharlto Copley",
+            "Michael Imperioli"
+          ],
+          "genres": [
+            "Action",
+            "Drama",
+            "Mystery"
+          ],
+          "year": 2013,
+          "runtime": 104,
+          "directors": [
+            "Spike Lee"
+          ]
+        }
       },
       {
         "title": "The Girl with the Dragon Tattoo (2011)",
@@ -22311,7 +22380,30 @@
       {
         "title": "The Taking of Pelham 1 2 3",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt1111422",
+          "rating": 6.4,
+          "votes": 219734,
+          "manual": true,
+          "cast": [
+            "Denzel Washington",
+            "John Travolta",
+            "Luis Guzmán",
+            "Victor Gojcaj",
+            "Robert Vataj"
+          ],
+          "genres": [
+            "Action",
+            "Crime",
+            "Thriller"
+          ],
+          "year": 2009,
+          "runtime": 106,
+          "directors": [
+            "Tony Scott"
+          ]
+        }
       },
       {
         "title": "Perfect Stranger",
@@ -22450,7 +22542,30 @@
       {
         "title": "No Mercy",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt0091637",
+          "rating": 5.7,
+          "votes": 9521,
+          "manual": true,
+          "cast": [
+            "Richard Gere",
+            "Kim Basinger",
+            "Jeroen Krabbé",
+            "George Dzundza",
+            "Gary Basaraba"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Romance"
+          ],
+          "year": 1986,
+          "runtime": 106,
+          "directors": [
+            "Richard Pearce"
+          ]
+        }
       },
       {
         "title": "Against All Odds",
@@ -22616,17 +22731,86 @@
       {
         "title": "The Burglar",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt0049035",
+          "rating": 6.5,
+          "votes": 2328,
+          "manual": true,
+          "cast": [
+            "Dan Duryea",
+            "Jayne Mansfield",
+            "Martha Vickers",
+            "Peter Capell",
+            "Mickey Shaughnessy"
+          ],
+          "genres": [
+            "Drama",
+            "Film-Noir",
+            "Thriller"
+          ],
+          "year": 1957,
+          "runtime": 90,
+          "directors": [
+            "Paul Wendkos"
+          ]
+        }
       },
       {
         "title": "The Harder They Fall",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt0049291",
+          "rating": 7.5,
+          "votes": 10590,
+          "manual": true,
+          "cast": [
+            "Humphrey Bogart",
+            "Rod Steiger",
+            "Jan Sterling",
+            "Mike Lane",
+            "Max Baer"
+          ],
+          "genres": [
+            "Drama",
+            "Film-Noir",
+            "Sport"
+          ],
+          "year": 1956,
+          "runtime": 109,
+          "directors": [
+            "Mark Robson"
+          ]
+        }
       },
       {
         "title": "Bait",
         "price": "$4.99",
-        "resolution": "SD"
+        "resolution": "SD",
+        "imdb": {
+          "id": "tt0046743",
+          "rating": 5.9,
+          "votes": 613,
+          "manual": true,
+          "cast": [
+            "Cleo Moore",
+            "Hugo Haas",
+            "John Agar",
+            "Cedric Hardwicke",
+            "Emmett Lynn"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Film-Noir"
+          ],
+          "year": 1954,
+          "runtime": 79,
+          "directors": [
+            "Hugo Haas"
+          ]
+        }
       },
       {
         "title": "Drive a Crooked Road",
@@ -22739,7 +22923,30 @@
       {
         "title": "Dead Reckoning",
         "price": "$4.99",
-        "resolution": "HD"
+        "resolution": "HD",
+        "imdb": {
+          "id": "tt0039305",
+          "rating": 7,
+          "votes": 10248,
+          "manual": true,
+          "cast": [
+            "Humphrey Bogart",
+            "Lizabeth Scott",
+            "Morris Carnovsky",
+            "Charles Cane",
+            "William Prince"
+          ],
+          "genres": [
+            "Crime",
+            "Drama",
+            "Film-Noir"
+          ],
+          "year": 1946,
+          "runtime": 100,
+          "directors": [
+            "John Cromwell"
+          ]
+        }
       },
       {
         "title": "Gilda",

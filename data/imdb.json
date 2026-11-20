@@ -13415,10 +13415,30 @@
    "votes": 1002,
    "checked": "2026-11-17"
   },
+  "tt0039305": {
+   "rating": 7,
+   "votes": 10248,
+   "checked": "2026-11-19"
+  },
   "tt0041387": {
    "rating": 6.5,
    "votes": 1712,
    "checked": "2026-11-13"
+  },
+  "tt0046743": {
+   "rating": 5.9,
+   "votes": 613,
+   "checked": "2026-11-19"
+  },
+  "tt0049035": {
+   "rating": 6.5,
+   "votes": 2328,
+   "checked": "2026-11-19"
+  },
+  "tt0049291": {
+   "rating": 7.5,
+   "votes": 10590,
+   "checked": "2026-11-19"
   },
   "tt0052520": {
    "rating": 9,
@@ -13519,6 +13539,11 @@
    "rating": 6.5,
    "votes": 199741,
    "checked": "2026-11-18"
+  },
+  "tt0091637": {
+   "rating": 5.7,
+   "votes": 9521,
+   "checked": "2026-11-19"
   },
   "tt0092501": {
    "rating": 7,
@@ -13915,6 +13940,11 @@
    "votes": 3220,
    "checked": "2026-11-13"
   },
+  "tt1111422": {
+   "rating": 6.4,
+   "votes": 219734,
+   "checked": "2026-11-19"
+  },
   "tt1116184": {
    "rating": 7,
    "votes": 71998,
@@ -13949,6 +13979,11 @@
    "rating": 4.8,
    "votes": 12924,
    "checked": "2026-11-18"
+  },
+  "tt1321511": {
+   "rating": 5.8,
+   "votes": 86185,
+   "checked": "2026-11-19"
   },
   "tt13623608": {
    "rating": 7.1,
@@ -14199,6 +14234,11 @@
    "rating": 5.4,
    "votes": 2183,
    "checked": "2026-11-18"
+  },
+  "tt8690814": {
+   "rating": 8.4,
+   "votes": 3048,
+   "checked": "2026-11-19"
   },
   "tt8976664": {
    "rating": 4.6,
@@ -16672,6 +16712,19 @@
     "Edwin L. Marin"
    ]
   },
+  "tt0039305": {
+   "checked": "2026-11-19",
+   "names": [
+    "Humphrey Bogart",
+    "Lizabeth Scott",
+    "Morris Carnovsky",
+    "Charles Cane",
+    "William Prince"
+   ],
+   "dir": [
+    "John Cromwell"
+   ]
+  },
   "tt0039482": {
    "checked": "2026-11-18",
    "names": [
@@ -17469,6 +17522,19 @@
     "Byron Haskin"
    ]
   },
+  "tt0046743": {
+   "checked": "2026-11-19",
+   "names": [
+    "Cleo Moore",
+    "Hugo Haas",
+    "John Agar",
+    "Cedric Hardwicke",
+    "Emmett Lynn"
+   ],
+   "dir": [
+    "Hugo Haas"
+   ]
+  },
   "tt0046767": {
    "checked": "2026-11-18",
    "names": [
@@ -17703,6 +17769,19 @@
     "Michael Curtiz"
    ]
   },
+  "tt0049035": {
+   "checked": "2026-11-19",
+   "names": [
+    "Dan Duryea",
+    "Jayne Mansfield",
+    "Martha Vickers",
+    "Peter Capell",
+    "Mickey Shaughnessy"
+   ],
+   "dir": [
+    "Paul Wendkos"
+   ]
+  },
   "tt0049096": {
    "checked": "2026-11-18",
    "names": [
@@ -17741,6 +17820,19 @@
    ],
    "dir": [
     "George Stevens"
+   ]
+  },
+  "tt0049291": {
+   "checked": "2026-11-19",
+   "names": [
+    "Humphrey Bogart",
+    "Rod Steiger",
+    "Jan Sterling",
+    "Mike Lane",
+    "Max Baer"
+   ],
+   "dir": [
+    "Mark Robson"
    ]
   },
   "tt0049314": {
@@ -22530,6 +22622,19 @@
    ],
    "dir": [
     "Richard Benjamin"
+   ]
+  },
+  "tt0091637": {
+   "checked": "2026-11-19",
+   "names": [
+    "Richard Gere",
+    "Kim Basinger",
+    "Jeroen Krabbé",
+    "George Dzundza",
+    "Gary Basaraba"
+   ],
+   "dir": [
+    "Richard Pearce"
    ]
   },
   "tt0091790": {
@@ -34642,6 +34747,19 @@
     "Richard Boddington"
    ]
   },
+  "tt1111422": {
+   "checked": "2026-11-19",
+   "names": [
+    "Denzel Washington",
+    "John Travolta",
+    "Luis Guzmán",
+    "Victor Gojcaj",
+    "Robert Vataj"
+   ],
+   "dir": [
+    "Tony Scott"
+   ]
+  },
   "tt11138512": {
    "checked": "2026-11-18",
    "names": [
@@ -35583,6 +35701,19 @@
    ],
    "dir": [
     "Jon M. Chu"
+   ]
+  },
+  "tt1321511": {
+   "checked": "2026-11-19",
+   "names": [
+    "Josh Brolin",
+    "Elizabeth Olsen",
+    "Samuel L. Jackson",
+    "Sharlto Copley",
+    "Michael Imperioli"
+   ],
+   "dir": [
+    "Spike Lee"
    ]
   },
   "tt13223398": {
@@ -43468,6 +43599,19 @@
     "David Gordon Green"
    ]
   },
+  "tt8690814": {
+   "checked": "2026-11-19",
+   "names": [
+    "Justin Salinger",
+    "Ron Chernow",
+    "Carel Nel",
+    "Doug Douds",
+    "Francis Chouler"
+   ],
+   "dir": [
+    "Malcolm Venville"
+   ]
+  },
   "tt8806524": {
    "checked": "2026-11-18",
    "names": [
@@ -44548,6 +44692,16 @@
    "y": 1947,
    "rt": 90
   },
+  "tt0039305": {
+   "checked": "2026-11-19",
+   "g": [
+    "Crime",
+    "Drama",
+    "Film-Noir"
+   ],
+   "y": 1946,
+   "rt": 100
+  },
   "tt0039482": {
    "checked": "2026-11-18",
    "g": [
@@ -45142,6 +45296,16 @@
    "y": 1953,
    "rt": 87
   },
+  "tt0046743": {
+   "checked": "2026-11-19",
+   "g": [
+    "Crime",
+    "Drama",
+    "Film-Noir"
+   ],
+   "y": 1954,
+   "rt": 79
+  },
   "tt0046767": {
    "checked": "2026-11-18",
    "g": [
@@ -45317,6 +45481,16 @@
    "y": 1955,
    "rt": 106
   },
+  "tt0049035": {
+   "checked": "2026-11-19",
+   "g": [
+    "Drama",
+    "Film-Noir",
+    "Thriller"
+   ],
+   "y": 1957,
+   "rt": 90
+  },
   "tt0049096": {
    "checked": "2026-11-18",
    "g": [
@@ -45344,6 +45518,16 @@
    ],
    "y": 1956,
    "rt": 201
+  },
+  "tt0049291": {
+   "checked": "2026-11-19",
+   "g": [
+    "Drama",
+    "Film-Noir",
+    "Sport"
+   ],
+   "y": 1956,
+   "rt": 109
   },
   "tt0049314": {
    "checked": "2026-11-19",
@@ -48814,6 +48998,16 @@
    ],
    "y": 1986,
    "rt": 90
+  },
+  "tt0091637": {
+   "checked": "2026-11-19",
+   "g": [
+    "Crime",
+    "Drama",
+    "Romance"
+   ],
+   "y": 1986,
+   "rt": 106
   },
   "tt0091790": {
    "checked": "2026-11-18",
@@ -57653,6 +57847,16 @@
    "y": 2021,
    "rt": 90
   },
+  "tt1111422": {
+   "checked": "2026-11-19",
+   "g": [
+    "Action",
+    "Crime",
+    "Thriller"
+   ],
+   "y": 2009,
+   "rt": 106
+  },
   "tt11138512": {
    "checked": "2026-11-18",
    "g": [
@@ -58341,6 +58545,16 @@
    ],
    "y": 2021,
    "rt": 143
+  },
+  "tt1321511": {
+   "checked": "2026-11-19",
+   "g": [
+    "Action",
+    "Drama",
+    "Mystery"
+   ],
+   "y": 2013,
+   "rt": 104
   },
   "tt13223398": {
    "checked": "2026-11-18",
@@ -64056,6 +64270,16 @@
    ],
    "y": 2019,
    "rt": 40
+  },
+  "tt8690814": {
+   "checked": "2026-11-19",
+   "g": [
+    "Biography",
+    "Documentary",
+    "History"
+   ],
+   "y": 2020,
+   "rt": 85
   },
   "tt8806524": {
    "checked": "2026-11-18",
