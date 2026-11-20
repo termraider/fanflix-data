@@ -1775,13 +1775,15 @@ function niSection() {
 }
 
 // ---------- library matching (titles you own, typed or pasted) ----------
-const baseT = x => norm(String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' '));
+const baseT = x => norm(String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' ')).replace(/^(?:the|a|an) /, '');
+// "Furiosa: A Mad Max Saga" ↔ "Furiosa", "Mission: Impossible - Dead Reckoning" ↔ "Dead Reckoning": the part before a colon or dash
+const headT = x => { const m = String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' ').split(/\s*(?::|\s[-–—]\s)\s*/)[0]; const k = baseT(m); return k.length >= 4 ? k : ''; };
 let idx = null;
 const index = () => {
   if (idx) return idx;
-  idx = { full: new Map(), base: new Map() };
-  const put = (m, k, t) => { if (!k) return; if (!m.has(k)) m.set(k, []); m.get(k).push(t); };
-  for (const t of titles.values()) { put(idx.full, norm(t.title.replace(/\(\d{4}\)/, '')), t); put(idx.base, baseT(t.title), t); }
+  idx = { full: new Map(), base: new Map(), head: new Map() };
+  const put = (m, k, t) => { if (!k) return; if (!m.has(k)) m.set(k, []); if (!m.get(k).includes(t)) m.get(k).push(t); };
+  for (const t of titles.values()) { put(idx.full, norm(t.title.replace(/\(\d{4}\)/, '')), t); put(idx.base, baseT(t.title), t); put(idx.head, headT(t.title), t); }
   return idx;
 };
 const match = line => {
@@ -1789,8 +1791,16 @@ const match = line => {
   const name = (m ? m[1] : line).replace(/^["'“”]+|["'“”]+$/g, '').trim(), y = m ? +m[2] : null;
   if (!norm(name)) return null;
   const ix = index();
-  const c = ix.full.get(norm(name)) || ix.base.get(baseT(name)) || [];
-  if (!c.length) return null;
+  let c = ix.full.get(norm(name)) || ix.base.get(baseT(name)) || [];
+  if (!c.length) {
+    // Subtitle on one side only ("Furiosa: A Mad Max Saga" vs "Furiosa"): needs the same year, or one clear match
+    // Without a year, only when FanFlix has the longer name ("Furiosa" in your list, "Furiosa: A Mad Max Saga" on FanFlix);
+    // the other way round ("Alien: Romulus" vs "Alien") needs the year, or it would pick the wrong movie
+    const hc = y ? [...new Set([...(ix.base.get(headT(name)) || []), ...(ix.head.get(baseT(name)) || []), ...(ix.head.get(headT(name)) || [])])] : ix.head.get(baseT(name)) || [];
+    const ok = y ? hc.filter(t => t.year && Math.abs(t.year - y) <= 1) : hc.length === 1 ? hc : [];
+    if (ok.length === 1) return ok[0];
+    return null;
+  }
   if (y) {
     const near = c.filter(t => t.year && Math.abs(t.year - y) <= 1).sort((a, b) => Math.abs(a.year - y) - Math.abs(b.year - y));
     if (near.length) return near[0];
@@ -1830,7 +1840,8 @@ function convertList(text, name = '') {
   if (sep) {
     const rows = csvRows(t, sep), head = (rows[0] || []).map(x => x.toLowerCase());
     let ti = head.findIndex(x => /^(movie )?(title|name|movie)( name)?$/.test(x)); if (ti < 0) ti = head.findIndex(x => /title|name/.test(x));
-    const yi = head.findIndex(x => /year|release|date/.test(x));
+    let yi = head.findIndex(x => /^(?:year|release year|released|release date|release)$/.test(x));
+    if (yi < 0) yi = head.findIndex(x => /year|release|date/.test(x) && !/purchas|bought|added|acquired|modified|updated|watched|expir/.test(x));
     if (ti >= 0) {
       const lines = rows.slice(1).map(r => fmt(r[ti], yi >= 0 ? r[yi] : '')).filter(Boolean);
       const kind = /artist/.test(head.join(' ')) && /url/.test(head.join(' ')) ? 'CheapCharts export' : sep === '\t' ? 'TSV file' : 'CSV file';
