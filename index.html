@@ -549,7 +549,8 @@ function portSection(t) {
 // Every deal this title has been in only redeems at sites this visitor unticked
 const offsiteOnly = t => RP.on() && t.hits.length > 0 && !t.hits.some(x => canUse(x.deal) && canUseRow(x));
 const offSites = () => PLATS.filter(p => !RP.list().includes(p)).join(' or ');
-const platOnly = r => r.platforms?.length ? r.platforms.map(p => PLAT_SHORT[p] || p).join(' + ') + ' only' : '';
+// Movies Anywhere sends the title on to iTunes, Fandango, Google Play etc., so it's never "only" (port reports cover the exceptions)
+const platOnly = r => !r.platforms?.length ? '' : r.platforms.includes('Movies Anywhere') ? 'Movies Anywhere' : r.platforms.join(' + ') + ' only';
 
 // ---------- data ----------
 let deals = [], dealById = new Map(), titles = new Map(), ends = {};
