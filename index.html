@@ -264,6 +264,10 @@ td.stc{width:auto!important}
 .own{background:transparent;border:1px solid var(--line2);color:var(--dim);border-radius:50%;width:28px;height:28px;font-size:15px;line-height:1;cursor:pointer;padding:0;flex:none}
 .own:hover{border-color:var(--green);color:var(--green)}
 .own.on{background:var(--green);border-color:var(--green);color:#04130A;font-weight:700}
+.own.maybe{border:1px dashed var(--gold);color:var(--gold);font-weight:700}
+.maybelist{display:grid;gap:8px;margin:10px 0}
+.maybeitem{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;border:1px dashed var(--line2);border-radius:10px;padding:10px 12px}
+.maybeitem .q{flex:1 1 260px}
 tr.owned td:first-child a{color:var(--dim)}
 tr.owned td:first-child .thumb{opacity:.45}
 .btn.oon{border-color:var(--green);color:var(--green)}
@@ -554,6 +558,7 @@ const platOnly = r => !r.platforms?.length ? '' : r.platforms.includes('Movies A
 
 // ---------- data ----------
 let deals = [], dealById = new Map(), titles = new Map(), ends = {};
+const KEY_ALIAS = new Map(); // old title key → current one (FanFlix sometimes puts the year in the name: "Superman (2025)")
 
 function dealKind(d) {
   if (!d.canSplit) return { key: 'single', label: 'Single code', long: 'Single code · one checkout, no split needed' };
@@ -589,9 +594,13 @@ function prepare(archive, endsData, postedHidden) {
       const rows = it.pack ? it.pack.map(p => ({ ...p, packName: it.title, packCover: it.image || null, price: d.bundle ? d.perTitle : (num(it.price) != null ? num(it.price) / it.pack.length : d.perTitle) })) : [{ ...it, price: d.bundle?.perItem ?? (num(it.price) ?? (!d.canSplit && checkout && d.items.length === 1 ? checkout : null)) }];
       for (const r of rows) {
         const year = r.year || r.imdb?.year || null;
-        const key = slugify(r.title) + (year ? '-' + year : '');
+        // "A Star Is Born (2018)" and "A Star Is Born" from 2018 are the same movie: one key, the year in the name dropped
+        const bare = year ? r.title.replace(new RegExp(`\\s*[\\(\\[]${year}[\\)\\]]\\s*$`), '') : r.title;
+        const key = slugify(bare) + (year ? '-' + year : '');
+        if (bare !== r.title) KEY_ALIAS.set(slugify(r.title) + '-' + year, key);
         if (r.resolution) d.res.add(r.resolution);
         let t = titles.get(key);
+        if (t && bare === r.title && t.title !== r.title) t.title = r.title; // show the name without the year
         if (!t) { t = { key, title: r.title, year, imdb: r.imdb || null, image: r.image || null, seasons: r.seasons || null, hits: [], search: norm(r.title) }; titles.set(key, t); }
         if (!t.imdb && r.imdb) t.imdb = r.imdb;
         if (!t.image && r.image) t.image = r.image;
@@ -1028,7 +1037,7 @@ function viewTitles(q) {
 
 // ---------- Title page ----------
 function viewTitle(key) {
-  const t = titles.get(key);
+  const t = titles.get(key) || titles.get(KEY_ALIAS.get(key));
   if (!t) return notFound('That title isn’t in the archive.');
   document.title = `${t.title} · price history · SplitsBot`;
   const im = t.imdb;
@@ -1199,15 +1208,16 @@ const OW = {
   toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
 };
 function ownBtn(key, name, onChange) {
-  const on = OW.has(key);
-  const b = h('button', { class: 'own' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' my library: ' + name, title: on ? 'in your library' : 'I own this' }, on ? '✓' : '+');
-  b.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); const now = OW.toggle(key); b.textContent = now ? '✓' : '+'; b.classList.toggle('on', now); b.setAttribute('aria-pressed', now ? 'true' : 'false'); b.title = now ? 'in your library' : 'I own this'; b.closest('tr')?.classList.toggle('owned', now); onChange?.(now); });
+  const on = OW.has(key), mb = !on && maybe.has(key);
+  const b = h('button', { class: 'own' + (on ? ' on' : mb ? ' maybe' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' my library: ' + name + (mb ? ' (might own: a close match from your list)' : ''), title: on ? 'in your library' : mb ? 'might own: close to a movie in your list. Tap to confirm' : 'I own this' }, on ? '✓' : mb ? '?' : '+');
+  b.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); b.classList.remove('maybe'); maybe.drop(key); const now = OW.toggle(key); b.textContent = now ? '✓' : '+'; b.classList.toggle('on', now); b.setAttribute('aria-pressed', now ? 'true' : 'false'); b.title = now ? 'in your library' : 'I own this'; b.closest('tr')?.classList.toggle('owned', now); onChange?.(now); });
   return b;
 }
 function ownBigBtn(key) {
-  const lab = on => on ? '✓ in my library' : '+ I own this';
+  const mb = !OW.has(key) && maybe.has(key);
+  const lab = on => on ? '✓ in my library' : mb ? '? might own · confirm' : '+ I own this';
   const b = h('button', { class: 'btn' + (OW.has(key) ? ' oon' : ''), type: 'button', 'aria-pressed': OW.has(key) ? 'true' : 'false' }, lab(OW.has(key)));
-  b.addEventListener('click', () => { const on = OW.toggle(key); b.textContent = lab(on); b.classList.toggle('oon', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+  b.addEventListener('click', () => { maybe.drop(key); const on = OW.toggle(key); b.textContent = lab(on); b.classList.toggle('oon', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
 }
 const NKEY = 'splitsbot-hidden';
@@ -1723,10 +1733,10 @@ function syncCard() {
         h('li', null, 'On the other device, open splitsbot.com → ★ → my library → ', h('b', null, '↓ move to another device'), ' → this section, and tap ', h('b', null, 'open sync file'), '. Pick the file.'),
         h('li', null, 'You’ll see “✓ Sync file opened” with your counts. Waiting titles keep getting added there as they show up in deals.')),
       h('div', { class: 'btns', style: 'margin-top:10px;max-width:520px' },
-        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
+        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
         h('label', { class: 'btn', for: 'syncfile', style: 'cursor:pointer' }, 'open sync file'),
         h('input', { id: 'syncfile', type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const fl = e.target.files[0]; if (!fl) return; fl.text().then(txt => { try { const v = JSON.parse(txt); const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
-          WL.save([...WL.list(), ...strs(v.watch)]); OW.save([...OW.list(), ...strs(v.owned)]); NI.save([...NI.list(), ...strs(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]);
+          const fx = a => strs(a).map(k => KEY_ALIAS.get(k) || k); WL.save([...WL.list(), ...fx(v.watch)]); OW.save([...OW.list(), ...fx(v.owned)]); NI.save([...NI.list(), ...fx(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]); if (Array.isArray(v.ownedMaybe)) maybe.save([...maybe.list(), ...v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k }))]);
           if (strs(v.redeem).length) RP.save(strs(v.redeem));
           if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); }
           const added = checkPending(); for (const t of titles.values()) recalcLive(t); route();
@@ -1740,7 +1750,8 @@ async function viewSync(q) {
   let data = null;
   try { if (code) data = await readSyncCode(code); } catch {}
   if (!data) { app.replaceChildren(...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'That link didn’t work.', 'It may have been cut off when it was copied. Make a new one on the other device (★ in the menu, then “make my sync link”).'), h('a', { class: 'btn', href: '#/watch' }, 'go to my watchlist')); return; }
-  const w = data.watch.filter(k => titles.has(k)), o = data.owned.filter(k => titles.has(k)), nn = data.hidden.filter(k => titles.has(k)), f = data.follow;
+  const fx = a => a.map(k => KEY_ALIAS.get(k) || k).filter(k => titles.has(k));
+  const w = fx(data.watch), o = fx(data.owned), nn = fx(data.hidden), f = data.follow;
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
   const done = h('div');
   const apply = replace => {
@@ -1786,9 +1797,10 @@ const index = () => {
   for (const t of titles.values()) { put(idx.full, norm(t.title.replace(/\(\d{4}\)/, '')), t); put(idx.base, baseT(t.title), t); put(idx.head, headT(t.title), t); }
   return idx;
 };
-const match = line => {
+// Returns { t, sure }: sure = same name (and year, when given). Anything looser is a "might own" for the member to confirm.
+const matchInfo = line => {
   const m = line.match(/^(.*?)\s*[\(\[]((?:19|20)\d\d)[\)\]]\s*$/) || line.match(/^(.*?)[\s,;\t]+((?:19|20)\d\d)\s*$/);
-  const name = (m ? m[1] : line).replace(/^["'“”]+|["'“”]+$/g, '').trim(), y = m ? +m[2] : null;
+  const name = (m ? m[1] : line).replace(/^["'“”]+|["'“”]+$/g, '').trim().replace(/^(.+?),\s*(the|a|an)$/i, '$2 $1'), y = m ? +m[2] : null; // "Star Is Born, A" → "A Star Is Born"
   if (!norm(name)) return null;
   const ix = index();
   let c = ix.full.get(norm(name)) || ix.base.get(baseT(name)) || [];
@@ -1798,18 +1810,19 @@ const match = line => {
     // the other way round ("Alien: Romulus" vs "Alien") needs the year, or it would pick the wrong movie
     const hc = y ? [...new Set([...(ix.base.get(headT(name)) || []), ...(ix.head.get(baseT(name)) || []), ...(ix.head.get(headT(name)) || [])])] : ix.head.get(baseT(name)) || [];
     const ok = y ? hc.filter(t => t.year && Math.abs(t.year - y) <= 1) : hc.length === 1 ? hc : [];
-    if (ok.length === 1) return ok[0];
-    return null;
+    return ok.length === 1 ? { t: ok[0], sure: false } : null;
   }
   if (y) {
     const near = c.filter(t => t.year && Math.abs(t.year - y) <= 1).sort((a, b) => Math.abs(a.year - y) - Math.abs(b.year - y));
-    if (near.length) return near[0];
+    if (near.length) return { t: near[0], sure: near[0].year === y || near.length === 1 };
     const near2 = c.filter(t => t.year && Math.abs(t.year - y) <= 2); // store dates are sometimes a year or two off
-    if (near2.length === 1) return near2[0];
-    return c.length === 1 && !c[0].year ? c[0] : null; // a same-name movie from another year is a different movie
+    if (near2.length === 1) return { t: near2[0], sure: false };
+    return c.length === 1 && !c[0].year ? { t: c[0], sure: false } : null; // a same-name movie from another year is a different movie
   }
-  return [...c].sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0))[0];
+  if (c.length === 1) return { t: c[0], sure: true };
+  return { t: [...c].sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0))[0], sure: false }; // same name, several years: ask
 };
+const match = line => matchInfo(line)?.t || null;
 
 // Turns an exported or copied list into "Title (Year)" lines: CSV/TSV with a title column (CheapCharts and
 // most library exporters), JSON, or text copied from a store's library page (labels, prices and buttons dropped)
@@ -1856,14 +1869,33 @@ function convertList(text, name = '') {
   }
   return { lines, kind: name ? 'text file' : 'pasted text' };
 }
+const MKEY = 'splitsbot-owned-maybe', XKEY = 'splitsbot-owned-notit';
+// Close matches waiting for the member to confirm ({ l: their line, k: title key }), and pairs they said were wrong
+const maybe = {
+  list() { try { const v = JSON.parse(localStorage.getItem(MKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string') : []; } catch { return []; } },
+  save(v) { const seen = new Set(); v = v.filter(x => !OW.has(x.k) && !seen.has(x.k) && seen.add(x.k)); try { v.length ? localStorage.setItem(MKEY, JSON.stringify(v)) : localStorage.removeItem(MKEY); } catch {} },
+  has(k) { const raw = localStorage.getItem(MKEY); if (this._v !== raw || !this._s) { this._v = raw; this._s = new Set(this.list().map(x => x.k)); } return this._s.has(k); },
+  drop(k) { this.save(this.list().filter(x => x.k !== k)); }
+};
+const notIt = { list() { try { const v = JSON.parse(localStorage.getItem(XKEY) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; } }, add(l, k) { try { localStorage.setItem(XKEY, JSON.stringify([...new Set([...this.list(), l + '|' + k])])); } catch {} }, has(l, k) { return this.list().includes(l + '|' + k); } };
+/** Sorts lines into owned (sure), might own (close) and still waiting. */
+function sortLines(lines) {
+  const found = [], close = [], miss = [];
+  for (const l of lines) {
+    const r = matchInfo(l);
+    if (!r || notIt.has(l, r.t.key)) miss.push(l);
+    else if (r.sure) found.push(r.t);
+    else close.push({ l, k: r.t.key });
+  }
+  return { found, close, miss };
+}
 const PKEY = 'splitsbot-owned-pending';
 const pending = { list() { try { const v = JSON.parse(localStorage.getItem(PKEY) || '[]'); return Array.isArray(v) ? v.filter(x => typeof x === 'string') : []; } catch { return []; } }, save(v) { try { v.length ? localStorage.setItem(PKEY, JSON.stringify([...new Set(v)])) : localStorage.removeItem(PKEY); } catch {} } };
 // Lines that didn't match yet are kept and re-checked on every visit, so movies are added on their own once they show up in a FanFlix deal
 function checkPending() {
   const p = pending.list(); if (!p.length) return 0;
-  const found = [], miss = [];
-  for (const l of p) { const t = match(l); t ? found.push(t.key) : miss.push(l); }
-  if (found.length) { OW.save([...OW.list(), ...found]); pending.save(miss); }
+  const { found, close, miss } = sortLines(p);
+  if (found.length || close.length) { OW.save([...OW.list(), ...found.map(t => t.key)]); maybe.save([...maybe.list(), ...close]); pending.save(miss); }
   return found.length;
 }
 
@@ -1909,16 +1941,32 @@ function viewLibrary(q) {
   const box = h('textarea', { class: 'f ta', rows: 6, placeholder: 'The Matrix (1999)\nTop Gun: Maverick\nGremlins', 'aria-label': 'Titles you own, one per line' });
   const add = h('button', { class: 'btn', type: 'button', onclick: () => {
     const lines = convertList(box.value).lines;
-    const found = [], miss = [];
-    for (const l of lines) { const t = match(l); t ? found.push(t) : miss.push(l); }
+    const { found, close, miss } = sortLines(lines);
     OW.save([...OW.list(), ...found.map(t => t.key)]);
+    maybe.save([...maybe.list(), ...close]);
     pending.save([...pending.list(), ...miss]);
     const uniq = new Set(found.map(t => t.key)).size;
-    res.replaceChildren(h('p', { class: 'sub' }, h('b', { class: 'green' }, `added ${uniq.toLocaleString()}`), ` of ${lines.length.toLocaleString()} lines`, miss.length ? ` · ${miss.length.toLocaleString()} haven’t been in a FanFlix deal yet. SplitsBot saved them and adds each one on its own the day it shows up in a deal, so you don’t need to paste again.` : ''));
+    res.replaceChildren(h('p', { class: 'sub' }, h('b', { class: 'green' }, `added ${uniq.toLocaleString()}`), ` of ${lines.length.toLocaleString()} lines`, close.length ? [' · ', h('b', { style: 'color:var(--gold)' }, `${close.length.toLocaleString()} might be yours`), ': the names are close but not exact, so check them under “Might own” above'] : '', miss.length ? ` · ${miss.length.toLocaleString()} haven’t been in a FanFlix deal yet. SplitsBot saved them and adds each one on its own the day it shows up in a deal, so you don’t need to paste again.` : ''));
     box.value = ''; render();
   } }, 'add to my library');
+  const maybeBox = h('div');
+  const drawMaybe = () => {
+    const ms = maybe.list().filter(x => titles.has(x.k));
+    if (!ms.length) { maybeBox.replaceChildren(); return; }
+    const yes = x => { OW.save([...OW.list(), x.k]); maybe.drop(x.k); drawMaybe(); render(); };
+    const no = x => { notIt.add(x.l, x.k); maybe.drop(x.k); pending.save([...pending.list(), x.l]); drawMaybe(); render(); };
+    maybeBox.replaceChildren(h('section', { class: 'card', style: 'margin:0 0 22px;border-color:var(--gold)', 'aria-labelledby': 'mo' },
+      h('p', { class: 'prompt' }, '$ library --check'), h('h2', { id: 'mo', style: 'color:var(--gold)' }, `Might own (${ms.length})`),
+      h('p', { class: 'sub', style: 'margin:-6px 0 8px' }, 'These names from your list are close to a FanFlix title but not an exact match. Is it the same movie?'),
+      h('div', { class: 'maybelist' }, ms.slice(0, 100).map(x => { const t = titles.get(x.k); return h('div', { class: 'maybeitem' },
+        h('div', { class: 'q' }, h('span', { class: 'sub' }, 'your list: '), x.l, h('br'), h('span', { class: 'sub' }, 'FanFlix: '), h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)),
+        h('button', { class: 'btn', type: 'button', onclick: () => yes(x) }, '✓ yes, I own it'),
+        h('button', { class: 'linkbtn', type: 'button', onclick: () => no(x) }, 'not this one')); })),
+      ms.length > 1 ? h('button', { class: 'linkbtn', type: 'button', onclick: () => { OW.save([...OW.list(), ...ms.map(x => x.k)]); maybe.save([]); drawMaybe(); render(); } }, `they’re all mine (add all ${ms.length})`) : ''));
+  };
   const render = () => {
     setQuery('library', { q: st.q });
+    drawMaybe();
     const all = OW.list().filter(k => titles.has(k)).map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
     const terms = norm(st.q).split(' ').filter(Boolean);
     const list = all.filter(t => !terms.length || hayHas(t, terms));
@@ -1938,6 +1986,7 @@ function viewLibrary(q) {
   app.replaceChildren(
     libTabs('lib'),
     ...pageHead('splitsbot@splitsbot.com:~$ ls ~/library', 'My library.', 'Movies you already own, wherever you got them. Deal pages can hide them, so you only see what you still need.'),
+    maybeBox,
     h('p', { class: 'jump' }, h('a', { href: '#/library', onclick: e => { e.preventDefault(); document.getElementById('libadd')?.scrollIntoView({ behavior: 'smooth' }); } }, '↓ add from a list'), ' · ', h('a', { href: '#/library', onclick: e => { e.preventDefault(); document.getElementById('sync')?.scrollIntoView({ behavior: 'smooth' }); } }, '↓ move to another device (sync link or sync file)')),
     h('div', { class: 'pbar' }, h('div', { style: 'min-width:260px;flex:1;max-width:420px' }, searchFld('lq', 'search my library', st.q, 'Enter a title', v => { st.q = v; libLimit = 200; render(); }))),
     out,
@@ -2068,6 +2117,8 @@ document.getElementById('hsearch').addEventListener('submit', e => {
 
 load().then(() => {
   TODAY = deals.reduce((m, d) => d.lastSeen > m ? d.lastSeen : m, ''); FIRST = deals.reduce((m, d) => !m || d.firstSeen < m ? d.firstSeen : m, '');
+  // Lists saved under an old title key move to the current one
+  try { for (const L of [WL, OW, NI]) { const v = L.list(); if (v.some(k => KEY_ALIAS.has(k))) L.save(v.map(k => KEY_ALIAS.get(k) || k)); } } catch {}
   try { checkPending(); } catch {}
   loadPorts().then(() => { if (Object.keys(PORTS).length && /^#\/(title|deal|titles)/.test(location.hash)) route(); });
   updateStarCount();
