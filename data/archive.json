@@ -107984,9 +107984,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.fanflix.co/LG/88f25aadcd183451e9fc93c3ffa24e4b52a3dd108f3cabcd8ab0de22203b692c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0087089",
           "rating": 6.6,
@@ -108009,7 +108006,10 @@
           "directors": [
             "Francis Ford Coppola"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "ANNA (2019)",
@@ -115186,9 +115186,6 @@
         "resolution": "UHD",
         "year": 2025,
         "image": "https://img.fanflix.co/LG/0157fc213efd5a9f0cdabc42d213ac59aec2fd0afedd9e20d56a200f0200187e",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt7181546",
           "rating": 6.8,
@@ -115211,7 +115208,10 @@
           "directors": [
             "Len Wiseman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Strangers - Chapter 2",
@@ -115845,9 +115845,6 @@
         "resolution": "UHD",
         "year": 2025,
         "image": "https://img.fanflix.co/LG/dbd318b02b542de008d8879aaac62c7cdd4dee33dd60ebf2793f35c18c34a2e0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt8008948",
           "rating": 6.3,
@@ -115870,7 +115867,10 @@
           "directors": [
             "Christian Gudegast"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Flight Risk",
@@ -117285,9 +117285,6 @@
         "resolution": "UHD",
         "year": 2010,
         "image": "https://img.fanflix.co/LG/41795ef306933b5eeea0b7b76814522384818b5ca7a83e759b27afec5bd9f8d3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1477076",
           "rating": 5.5,
@@ -117309,7 +117306,10 @@
           "directors": [
             "Kevin Greutert"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Jigsaw",
@@ -118298,9 +118298,6 @@
         "resolution": "HD",
         "year": 2010,
         "image": "https://img.fanflix.co/LG/d804f080444149997883d6a782e6885cbf7b2769c9722d56fc17ea320b986a9f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1520211",
           "rating": 8.1,
@@ -118324,7 +118321,10 @@
             "Greg Nicotero",
             "Michael E. Satrazemis"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Fear the Walking Dead: The Complete Collection",
@@ -118332,9 +118332,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/2facc962387d0366a46655f62e9d43732d25175dea844536b15e0adf3f971339",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt3743822",
           "rating": 6.7,
@@ -118358,7 +118355,10 @@
             "Michael E. Satrazemis",
             "Stefan Schwartz"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Ghosts: Seasons 1-5 Bundle",
@@ -118367,9 +118367,6 @@
         "year": 2021,
         "seasons": 5,
         "image": "https://img.fanflix.co/LG/dca820f66de62f2c21572afa9af6448cfad252f5f9e7331c92d73af853c5f1fb",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt11379026",
           "rating": 7.9,
@@ -118404,7 +118401,10 @@
             "Trent O'Donnell",
             "Richie Keen"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Rainmaker: Season 1",
@@ -118497,9 +118497,6 @@
         "resolution": "HD",
         "year": 2026,
         "image": "https://img.fanflix.co/LG/196eaf526e0a2645c3decf401d948bff93f0275b4fca681d2dc5d79c93407fc9",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8595140",
           "rating": 5.9,
@@ -118521,7 +118518,10 @@
             "Jody Margolin Hahn",
             "Lynda Tarryk"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Welcome to Flatch: The Complete Series",
@@ -118640,9 +118640,6 @@
         "year": 2014,
         "seasons": 6,
         "image": "https://img.fanflix.co/LG/e03f51d8366bb07bed6d89163c99632ee3f63a2e67f676aa6ba234cc808022f0",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt3281796",
           "rating": 8.1,
@@ -118665,7 +118662,10 @@
             "Sanford Bookstaver",
             "MJ Bassett"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Power Book II: Ghosts: The Complete Series",
@@ -118673,9 +118673,6 @@
         "resolution": "HD",
         "year": 2020,
         "image": "https://img.fanflix.co/LG/a19172fbd1663932cdf0ffd26f32db11a64076d53baceba1b1a38ba18e7226b5",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt10732104",
           "rating": 7.5,
@@ -118698,7 +118695,10 @@
             "Brendan Walsh",
             "Rob Hardy"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Heartland: Seasons 1-18 Collection (Bundle)",
