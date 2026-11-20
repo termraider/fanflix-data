@@ -126,6 +126,10 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .dnav b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
 .dnav .gap{flex:1 1 0}
 .disc{margin:12px 0 0;font-size:12px;color:var(--dim)}
+.wsec{font-size:22px;margin:30px 0 12px}
+.apfld{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;color:var(--dim)}
+.apin{width:84px;padding:6px 8px;font-size:14px}
+tr.ahit td:first-child a{color:var(--gold)}
 .disc b{color:var(--gold);font-weight:600}
 .top{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-wrap:wrap;align-items:center}
 .top .art{flex:1 1 340px;min-width:0;padding:32px;display:flex;justify-content:center}
@@ -1235,6 +1239,15 @@ function sameKeys(k) {
   }
   return sameIx.of.get(k) || [k];
 }
+// Watchlist alert prices: { titleKey: 4.99 } — "tell me when it's this or less"
+const AKEY = 'splitsbot-alert';
+const AP = {
+  all() { try { const v = JSON.parse(localStorage.getItem(AKEY) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? Object.fromEntries(Object.entries(v).filter(([k, x]) => typeof k === 'string' && typeof x === 'number' && x > 0)) : {}; } catch { return {}; } },
+  get(k) { return this.all()[k] ?? null; },
+  set(k, v) { const a = this.all(); if (v > 0) a[k] = Math.round(v * 100) / 100; else delete a[k]; this.save(a); },
+  save(a) { try { Object.keys(a).length ? localStorage.setItem(AKEY, JSON.stringify(a)) : localStorage.removeItem(AKEY); } catch {} },
+  merge(o) { if (!o || typeof o !== 'object') return; const a = this.all(); for (const [k, x] of Object.entries(o)) if (typeof x === 'number' && x > 0) a[KEY_ALIAS.get(k) || k] = x; this.save(a); }
+};
 const OKEY = 'splitsbot-owned';
 const OW = {
   list() { try { const v = JSON.parse(localStorage.getItem(OKEY) || '[]'); return Array.isArray(v) ? v.filter(k => typeof k === 'string') : []; } catch { return []; } },
@@ -1667,27 +1680,43 @@ function viewWatch() {
   const keys = WL.list().filter(k => titles.has(k));
   const ts = keys.map(k => titles.get(k));
   const liveN = ts.filter(t => t.liveLow != null).length;
+  const soloOf = t => t.hits.filter(x => usableHit(x) && x.price != null).sort((a, b) => (!!a.packName - !!b.packName) || a.price - b.price)[0];
   const status = t => {
-    const solo = t.hits.filter(x => usableHit(x) && x.price != null).sort((a, b) => (!!a.packName - !!b.packName) || a.price - b.price)[0];
+    const solo = soloOf(t);
     if (!solo) { const last = [...t.hits].sort((a, b) => b.deal.lastSeen.localeCompare(a.deal.lastSeen))[0]; return { now: h('span', { class: 'sub' }, `○ not live · low ${money(t.low)}`), where: h('span', { class: 'sub' }, last ? `last seen ${shortDate(last.deal.lastSeen)}` : ''), pill: h('span', { class: 'pill p-new' }, 'waiting') }; }
     const low = t.lowByRes[solo.resolution];
     const isNew = t.hits.every(x => x.deal.firstSeen === TODAY);
     const vs = isNew ? 'first time seen' : solo.price < low + 0.009 ? 'ties the low' : `low was ${money(low)}`;
     return { now: [h('b', { class: 'green' }, '● ' + money(solo.price)), h('span', { class: 'sub' }, ` · ${resLabel(solo.resolution)} · ${vs}`)], where: h('a', { href: dealHref(solo.deal) }, splitName(solo.deal)[0]), pill: solo.deal.firstSeen === TODAY ? h('span', { class: 'pill p-low' }, 'new today') : h('span', { class: 'pill p-tie', style: 'border-color:var(--green);color:var(--green)' }, 'in a live deal') };
   };
-  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.ownedPending)) pending.save([...pending.list(), ...v.ownedPending.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.ownedPending)) pending.save([...pending.list(), ...v.ownedPending.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); AP.merge(v.alerts); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
-  const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); AP.save({}); viewWatch(); } }, 'clear');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list(), alerts: AP.all() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
+  // alert prices: at/below = a live deal is at that price or less right now; everything else (higher, not live, no price set) is above
+  const isBelow = t => { const a = AP.get(t.key), s = soloOf(t); return a != null && s != null && s.price <= a + 0.001; };
+  const below = ts.filter(isBelow).sort((a, b) => soloOf(a).price - soloOf(b).price || a.title.localeCompare(b.title));
+  const above = ts.filter(t => !isBelow(t)).sort((a, b) => (AP.get(a.key) == null) - (AP.get(b.key) == null) || (a.liveLow == null) - (b.liveLow == null) || a.title.localeCompare(b.title));
+  const alertFld = t => {
+    const v = AP.get(t.key);
+    const inp = h('input', { class: 'f apin', type: 'number', min: '0', step: '0.01', inputmode: 'decimal', value: v != null ? v.toFixed(2) : '', placeholder: 'set', 'aria-label': 'Alert price for ' + t.title,
+      onchange: e => { const n = parseFloat(e.target.value); AP.set(t.key, isFinite(n) ? n : 0); viewWatch(); }, onkeydown: e => { if (e.key === 'Enter') e.target.blur(); } });
+    return h('label', { class: 'apfld' }, h('span', null, '≤ $'), inp);
+  };
+  const table = list => h('div', { class: 'tablebox' }, h('table', null,
+    h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'price now'), h('th', { scope: 'col' }, 'alert price'), h('th', { scope: 'col' }, 'where'), h('th', { scope: 'col' }, 'status'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
+    h('tbody', { class: 'cards' }, list.map(t => { const s = status(t), hit = isBelow(t); return h('tr', { class: hit ? 'ahit' : null }, h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))), h('td', null, s.now), h('td', { 'data-l': 'alert' }, alertFld(t)), h('td', null, s.where), h('td', null, hit ? h('span', { class: 'pill p-low' }, 'at your price') : s.pill), h('td', { class: 'stc' }, starBtn(t.key, t.title))); }))));
   app.replaceChildren(
     libTabs('watch'),
     ...pageHead('splitsbot@splitsbot.com:~$ watch --list', 'Your watchlist.', 'Star titles (☆) and follow actors, directors or franchises. They light up here when they show up in a live deal.'),
-    ts.length ? h('div', { class: 'okbox' }, h('b', { class: 'green' }, `● ${liveN} of your ${ts.length}`), liveN === 1 ? ' is in a live deal right now.' : ' are in a live deal right now.') : '',
-    ts.length ? h('div', { class: 'tablebox' }, h('table', null,
-      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'price now'), h('th', { scope: 'col' }, 'where'), h('th', { scope: 'col' }, 'status'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
-      h('tbody', { class: 'cards' }, ts.sort((a, b) => (a.liveLow == null) - (b.liveLow == null) || a.title.localeCompare(b.title)).map(t => { const s = status(t); return h('tr', null, h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))), h('td', null, s.now), h('td', null, s.where), h('td', null, s.pill), h('td', { class: 'stc' }, starBtn(t.key, t.title))); })))) :
-      FL.list().length ? h('p', { class: 'sub' }, 'No starred titles yet. Tap ☆ next to any title to add one.') : h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles')),
+    ts.length ? h('div', { class: 'okbox' }, h('b', { class: 'green' }, `● ${liveN} of your ${ts.length}`), liveN === 1 ? ' is in a live deal right now.' : ' are in a live deal right now.', below.length ? [' ', h('b', { class: 'gold' }, `${below.length} at or below your alert price.`)] : '') : '',
+    ...(ts.length ? [
+      h('h2', { class: 'wsec', id: 'wb' }, `At or below your alert price (${below.length})`),
+      below.length ? table(below) : h('p', { class: 'sub' }, 'Nothing yet. Type an alert price next to a title below and it moves up here once a live deal is at that price or less.'),
+      h('h2', { class: 'wsec', id: 'wa' }, `Above your alert price (${above.length})`),
+      above.length ? table(above) : h('p', { class: 'sub' }, 'Everything you starred is at or below your price right now.')] : [
+      FL.list().length ? h('p', { class: 'sub' }, 'No starred titles yet. Tap ☆ next to any title to add one.') : h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles'))]),
     followSection(),
     syncCard(),
     h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. Backup file: ', exp, ' · ', imp, ' · ', clear, file));
@@ -1719,7 +1748,7 @@ const unb64u = str => { const s2 = atob(str.replace(/-/g, '+').replace(/_/g, '/'
 const pipeBytes = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
 const SYNC_MAX = 16000; // longer links get cut off by some apps
 async function packSync(withPending) {
-  const data = { w: WL.list(), o: OW.list(), n: NI.list(), r: RP.list(), f: FL.list().map(x => [x.role, x.name]), ...(withPending ? { p: pending.list() } : {}) };
+  const data = { w: WL.list(), o: OW.list(), n: NI.list(), r: RP.list(), f: FL.list().map(x => [x.role, x.name]), ...(Object.keys(AP.all()).length ? { a: AP.all() } : {}), ...(withPending ? { p: pending.list() } : {}) };
   const raw = new TextEncoder().encode(JSON.stringify(data));
   let code = 'j' + b64u(raw);
   if (window.CompressionStream) { try { code = 'z' + b64u(await pipeBytes(raw, new CompressionStream('deflate-raw'))); } catch {} }
@@ -1737,7 +1766,7 @@ async function readSyncCode(code) {
   const raw = kind === 'z' ? await pipeBytes(bytes, new DecompressionStream('deflate-raw')) : bytes;
   const v = JSON.parse(new TextDecoder().decode(raw));
   const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
-  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), redeem: strs(v.r), waiting: strs(v.p), follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
+  return { watch: strs(v.w), owned: strs(v.o), hidden: strs(v.n), redeem: strs(v.r), waiting: strs(v.p), alerts: v.a && typeof v.a === 'object' ? v.a : {}, follow: (Array.isArray(v.f) ? v.f : []).filter(x => Array.isArray(x) && typeof x[0] === 'string' && typeof x[1] === 'string').map(([role, name]) => ({ role, name })) };
 }
 function syncCard() {
   const out = h('div'); const alertBox = h('p', { class: 'sub warn', 'aria-live': 'polite' });
@@ -1770,11 +1799,11 @@ function syncCard() {
         h('li', null, 'On the other device, open splitsbot.com → ★ → my library → ', h('b', null, '↓ move to another device'), ' → this section, and tap ', h('b', null, 'open sync file'), '. Pick the file.'),
         h('li', null, 'You’ll see “✓ Sync file opened” with your counts. Waiting titles keep getting added there as they show up in deals.')),
       h('div', { class: 'btns', style: 'margin-top:10px;max-width:520px' },
-        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
+        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
         h('label', { class: 'btn', for: 'syncfile', style: 'cursor:pointer' }, 'open sync file'),
         h('input', { id: 'syncfile', type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const fl = e.target.files[0]; if (!fl) return; fl.text().then(txt => { try { const v = JSON.parse(txt); const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
           const fx = a => strs(a).map(k => KEY_ALIAS.get(k) || k); WL.save([...WL.list(), ...fx(v.watch)]); OW.save([...OW.list(), ...fx(v.owned)]); NI.save([...NI.list(), ...fx(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]); if (Array.isArray(v.ownedMaybe)) maybe.save([...maybe.list(), ...v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k }))]);
-          if (strs(v.redeem).length) RP.save(strs(v.redeem));
+          if (strs(v.redeem).length) RP.save(strs(v.redeem)); AP.merge(v.alerts);
           if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); }
           const added = checkPending(); for (const t of titles.values()) recalcLive(t); route();
           setTimeout(() => { const m = document.querySelector('#syncdone'); if (m) m.textContent = `✓ Sync file opened: ${OW.list().length.toLocaleString()} owned · ${pending.list().length.toLocaleString()} waiting to show up in a deal · ${WL.list().length} starred · ${FL.list().length} following.`; }, 50);
@@ -1792,7 +1821,7 @@ async function viewSync(q) {
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
   const done = h('div');
   const apply = replace => {
-    if (data.redeem.length) RP.save(data.redeem); if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); pending.save(data.waiting); }
+    if (data.redeem.length) RP.save(data.redeem); if (replace) AP.save({}); AP.merge(data.alerts); if (replace) { WL.save(w); OW.save(o); NI.save(nn); FL.save(f); pending.save(data.waiting); }
     else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); pending.save([...pending.list(), ...data.waiting]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
     checkPending();
     for (const t of titles.values()) recalcLive(t);
