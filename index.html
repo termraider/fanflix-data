@@ -1221,13 +1221,27 @@ const WL = {
   has(k) { return this.list().includes(k); },
   toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
 };
+// The same movie can sit under two keys ("Breakdown" in a pack, "Breakdown (Remastered)" on its own).
+// Owning one counts for both: same IMDb title, or same name without the (…) part and same year.
+let sameIx = null;
+function sameKeys(k) {
+  if (!sameIx || sameIx.n !== titles.size) {
+    const par = new Map(), find = x => { while (par.get(x) !== x) { par.set(x, par.get(par.get(x))); x = par.get(x); } return x; };
+    const by = new Map(), link = (id, key) => { if (!id) return; if (by.has(id)) par.set(find(key), find(by.get(id))); else by.set(id, key); };
+    for (const t of titles.values()) par.set(t.key, t.key);
+    for (const t of titles.values()) { link(t.imdb?.id && 'i:' + t.imdb.id, t.key); const y = t.year || t.imdb?.year; if (y) link('n:' + baseT(t.title) + '|' + y, t.key); }
+    const groups = new Map(); for (const key of par.keys()) { const r = find(key); if (!groups.has(r)) groups.set(r, []); groups.get(r).push(key); }
+    sameIx = { n: titles.size, of: new Map() }; for (const g of groups.values()) if (g.length > 1) for (const key of g) sameIx.of.set(key, g);
+  }
+  return sameIx.of.get(k) || [k];
+}
 const OKEY = 'splitsbot-owned';
 const OW = {
   list() { try { const v = JSON.parse(localStorage.getItem(OKEY) || '[]'); return Array.isArray(v) ? v.filter(k => typeof k === 'string') : []; } catch { return []; } },
   set() { if (this._s && this._v === localStorage.getItem(OKEY)) return this._s; this._v = localStorage.getItem(OKEY); return (this._s = new Set(this.list())); },
   save(v) { try { localStorage.setItem(OKEY, JSON.stringify([...new Set(v)])); } catch {} },
-  has(k) { return this.set().has(k); },
-  toggle(k) { const v = this.list(); const i = v.indexOf(k); i < 0 ? v.unshift(k) : v.splice(i, 1); this.save(v); return i < 0; }
+  has(k) { const s = this.set(); return s.has(k) || (s.size > 0 && sameKeys(k).some(x => s.has(x))); },
+  toggle(k) { const g = sameKeys(k); if (this.has(k)) { this.save(this.list().filter(x => !g.includes(x))); return false; } const v = this.list(); v.unshift(k); this.save(v); return true; }
 };
 function ownBtn(key, name, onChange) {
   const on = OW.has(key), mb = !on && maybe.has(key);
@@ -1812,12 +1826,28 @@ function niSection() {
 const baseT = x => norm(String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' ')).replace(/^(?:the|a|an) /, '');
 // "Furiosa: A Mad Max Saga" ↔ "Furiosa", "Mission: Impossible - Dead Reckoning" ↔ "Dead Reckoning": the part before a colon or dash
 const headT = x => { const m = String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' ').split(/\s*(?::|\s[-–—]\s)\s*/)[0]; const k = baseT(m); return k.length >= 4 ? k : ''; };
+// Other names for the same movie: "Stephen King's Silver Bullet" ↔ "Silver Bullet", "The Divergent Series: Divergent" ↔ "Divergent",
+// "Live Die Repeat: Edge of Tomorrow" ↔ "Edge of Tomorrow", "Peanuts: Bon Voyage Charlie Brown" ↔ "Bon Voyage Charlie Brown"
+const altT = x => {
+  const raw = String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' ').trim(), out = [];
+  // a person's name in front: "Stephen King's", "Tyler Perry's" (two or three capitalised words, not "The Tiger's" or "Daddy's")
+  const poss = raw.match(/^(?!The\s)([A-Z][\w.]*(?:\s+[A-Z][\w.]*){1,2})[’']s?\s+(.{4,})$/); if (poss) out.push(baseT(poss[2]));
+  // the part after a colon, when it's a real name ("Edge of Tomorrow") and not "Volume 1"; one word only if the first part has it too ("Divergent Series: Divergent")
+  const tail = raw.split(/\s*:\s+/);
+  if (tail.length === 2) { const tb = baseT(tail[1]), words = tb.split(' ').length;
+    if (tb.length >= 4 && !/^(vol(ume)?|part|chapter|season|episode|book)\b/.test(tb) && (words >= 2 || baseT(tail[0]).split(' ').includes(tb))) out.push(tb); }
+  // sequel numbers: "Hellraiser IV: Bloodline" ↔ "Hellraiser 4: Bloodline", "Mortal Kombat 2: Annihilation" ↔ "Mortal Kombat: Annihilation"
+  const ROM = { ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10 };
+  const num = baseT(raw.replace(/\b(ii|iii|iv|vi{0,3}|ix|x)\b(?=\s*(?::|$|\s[-–—]\s))/gi, m => ROM[m.toLowerCase()] || m)); out.push(num);
+  if (/\s\d{1,2}\s*:/.test(raw.replace(/\b(ii|iii|iv|vi{0,3}|ix|x)\b(?=\s*:)/gi, '2'))) out.push(baseT(raw.replace(/\s+(?:\d{1,2}|ii|iii|iv|vi{0,3}|ix|x)\s*:/i, ':')));
+  return [...new Set(out)].filter(k => k.length >= 4 && k !== baseT(raw));
+};
 let idx = null;
 const index = () => {
   if (idx) return idx;
-  idx = { full: new Map(), base: new Map(), head: new Map() };
+  idx = { full: new Map(), base: new Map(), head: new Map(), alt: new Map() };
   const put = (m, k, t) => { if (!k) return; if (!m.has(k)) m.set(k, []); if (!m.get(k).includes(t)) m.get(k).push(t); };
-  for (const t of titles.values()) { put(idx.full, norm(t.title.replace(/\(\d{4}\)/, '')), t); put(idx.base, baseT(t.title), t); put(idx.head, headT(t.title), t); }
+  for (const t of titles.values()) { put(idx.full, norm(t.title.replace(/\(\d{4}\)/, '')), t); put(idx.base, baseT(t.title), t); put(idx.head, headT(t.title), t); for (const a of altT(t.title)) put(idx.alt, a, t); }
   return idx;
 };
 // Returns { t, sure }: sure = same name (and year, when given). Anything looser is a "might own" for the member to confirm.
@@ -1827,6 +1857,12 @@ const matchInfo = line => {
   if (!norm(name)) return null;
   const ix = index();
   let c = ix.full.get(norm(name)) || ix.base.get(baseT(name)) || [];
+  if (!c.length && y) {
+    // Other names (needs the year): "Stephen King's Silver Bullet" ↔ "Silver Bullet"
+    const keys = [baseT(name), ...altT(name)];
+    const ac = [...new Set(keys.flatMap(k => [...(ix.alt.get(k) || []), ...(ix.base.get(k) || [])]))].filter(t => t.year && Math.abs(t.year - y) <= 1);
+    if (ac.length === 1) return { t: ac[0], sure: ac[0].year === y };
+  }
   if (!c.length) {
     // Subtitle on one side only ("Furiosa: A Mad Max Saga" vs "Furiosa"): needs the same year, or one clear match
     // Without a year, only when FanFlix has the longer name ("Furiosa" in your list, "Furiosa: A Mad Max Saga" on FanFlix);
