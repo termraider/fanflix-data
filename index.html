@@ -800,7 +800,7 @@ function viewHome(q) {
     const matches = new Map();
     if (terms.length) list = list.filter(d => {
       if (terms.every(w => d.searchText.includes(w))) return true;
-      const hit = dealRows(d).filter(r => { const n = norm(r.title); return terms.every(w => n.includes(w)); });
+      const hit = dealRows(d).filter(r => { const n = norm(r.title) + ' ' + titleHay(titles.get(r.key)); return terms.every(w => n.includes(w)); });
       if (hit.length) { matches.set(d.id, hit); return true; }
       return false;
     });
@@ -823,7 +823,7 @@ function viewHome(q) {
       h('div', { class: 'sec-head' },
         h('div', null, h('p', { class: 'prompt' }, 'splitsbot@fanflixco:~$ deals --live'), h('h2', { id: 'ns' }, 'Now showing', h('span', { class: 'cur', 'aria-hidden': 'true' }, '_'))),
         h('div', { class: 'filters' },
-          searchFld('dq', 'find a deal or title', st.q, 'Enter a title', set('q'), 'wide'),
+          searchFld('dq', 'find a deal, title, star, director', st.q, titleLabel, set('q'), 'wide'),
           rangeFld('dm', 'max per title:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
           selectFld('dp', 'where to redeem', st.plat, [['', 'All'], ['Movies Anywhere', 'Movies Anywhere'], ['Fandango at Home', 'Fandango at Home'], ['Google Play', 'Google Play']], set('plat')),
           selectFld('ds', 'sort', st.sort, [['new', 'newest'], ['cheap', 'cheapest / title'], ['big', 'most titles'], ['az', 'A–Z']], set('sort')))),
@@ -876,7 +876,7 @@ function viewDeal(slug, q) {
   const d = dealById.get(slug);
   if (!d) return notFound('That deal isn’t in the archive (yet).');
   document.title = `${d.name} · SplitsBot`;
-  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title', hideOwned: q.get('own') === 'hide', res: q.get('res') || '', max: q.get('max') || '', imdb: q.get('imdb') || '' };
+  const st = { q: q.get('q') || '', show: q.get('show') || '', sort: q.get('sort') || 'title', hideOwned: q.get('own') === 'hide', res: q.get('res') || '', max: q.get('max') || '', imdb: q.get('imdb') || '', g: q.get('g') || '' };
   const rows = dealRows(d).map(r => ({ ...r, v: verdict(d, r) }));
   const c = verdictCounts(d);
   // Titles in this deal that are cheaper right now in another LIVE deal (same title, same quality)
@@ -893,9 +893,9 @@ function viewDeal(slug, q) {
   const tbody = h('tbody', { class: 'cards' });
   const count = h('p', { class: 'count', 'aria-live': 'polite' });
   const run = () => {
-    setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '', res: st.res, max: st.max, imdb: st.imdb });
+    setQuery('deal/' + encodeURIComponent(slug), { q: st.q, show: st.show, sort: st.sort === 'title' ? '' : st.sort, own: st.hideOwned ? 'hide' : '', res: st.res, max: st.max, imdb: st.imdb, g: st.g });
     const terms = norm(st.q).split(' ').filter(Boolean);
-    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (st.showNope || canUseRow(r)) && (!st.res || r.resolution === st.res) && (!st.max || (r.price != null && r.price <= +st.max + 0.001)) && (!st.imdb || (r.imdb?.rating ?? 0) >= +st.imdb) && (!terms.length || terms.every(w => norm(r.title + ' ' + (r.packName || '')).includes(w))));
+    let list = rows.filter(r => (!st.show || r.v.k === st.show) && (!st.hideOwned || !OW.has(r.key)) && (st.showNI || !NI.has(r.key)) && (st.showNope || canUseRow(r)) && (!st.res || r.resolution === st.res) && (!st.max || (r.price != null && r.price <= +st.max + 0.001)) && (!st.imdb || (r.imdb?.rating ?? 0) >= +st.imdb) && hasGenre(titles.get(r.key), st.g) && (!terms.length || terms.every(w => (titleHay(titles.get(r.key)) + ' ' + norm(r.title + ' ' + (r.packName || ''))).includes(w))));
     const S = { title: (a, b) => a.title.localeCompare(b.title), price: (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0) };
     list.sort(S[st.sort] || S.title);
     const ownN = new Set(rows.filter(r => OW.has(r.key)).map(r => r.key)).size;
@@ -955,11 +955,12 @@ function viewDeal(slug, q) {
         h('div', { class: 'sec-head' },
           h('div', null, h('p', { class: 'prompt' }, `splitsbot@fanflixco:~$ titles --deal ${d.slug.replace(/^[a-z0-9]+-/, '').slice(0, 28)}`), h('h2', { id: 'tl', style: 'font-size:28px' }, 'Titles in this deal')),
           h('div', { class: 'filters' },
-            searchFld('tq', 'search this deal', st.q, 'Enter a title', set('q'), 'wide'),
+            searchFld('tq', 'search this deal', st.q, titleLabel, set('q'), 'wide'),
             selectFld('tv', 'show', st.show, [['', `all titles (${rows.length})`], ['low', `lowest we've seen (${c.low})`], ['tie', `ties the low (${c.tie})`], ['new', `first time seen · new in this deal (${c.new})`], ['up', `cheaper before (${c.up})`]], set('show'), 'wide'),
             selectFld('tr', 'quality', st.res, [['', 'any quality'], ...['UHD', 'HD', 'SD'].filter(k => rc[k]).map(k => [k, `${resLabel(k)} (${rc[k]})`])], set('res')),
             selectFld('tp', 'price', st.max, [['', 'any price'], ...[3, 5, 7, 10].map(n => [String(n), `≤ $${n} (${rows.filter(r => r.price != null && r.price <= n + 0.001).length})`])], set('max')),
-            selectFld('ti', 'IMDb', st.imdb, [['', 'any rating'], ...[6, 7, 8].map(n => [String(n), `${n}+ (${rows.filter(r => (r.imdb?.rating ?? 0) >= n).length})`])], set('imdb')))),
+            selectFld('ti', 'IMDb', st.imdb, [['', 'any rating'], ...[6, 7, 8].map(n => [String(n), `${n}+ (${rows.filter(r => (r.imdb?.rating ?? 0) >= n).length})`])], set('imdb')),
+            selectFld('tg', 'genre', st.g, genreOpts(rows.map(r => titles.get(r.key)), st.g), set('g')))),
         count,
         h('div', { class: 'tablebox' }, h('table', null,
           h('thead', null, h('tr', null, sortTh('title', 'title'), h('th', { scope: 'col' }, 'quality'), sortTh('price', 'price', 'num'), sortTh('rating', 'IMDb', 'num'), h('th', { scope: 'col' }, 'history'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
@@ -972,7 +973,7 @@ function viewDeal(slug, q) {
 
 // ---------- Titles index ----------
 function viewTitles(q) {
-  const st = { q: q.get('q') || '', max: +(q.get('max') || 20), imdb: +(q.get('imdb') || 0), res: q.get('res') || '', live: q.get('live') || '', own: q.get('own') || '', sort: q.get('sort') || 'az' };
+  const st = { q: q.get('q') || '', max: +(q.get('max') || 20), imdb: +(q.get('imdb') || 0), res: q.get('res') || '', live: q.get('live') || '', own: q.get('own') || '', sort: q.get('sort') || 'az', g: q.get('g') || '' };
   let limit = PAGE;
   const all = [...titles.values()];
   const results = h('div');
@@ -986,8 +987,8 @@ function viewTitles(q) {
     let list = all.filter(t =>
       (!rs.length || rs.some(r => t.res.has(r))) && (!st.live || t.live) && (st.allsites || !offsiteOnly(t)) && (st.own !== 'hide' || !OW.has(t.key)) && (st.own !== 'only' || OW.has(t.key)) && (st.own === 'ni' ? NI.has(t.key) : !NI.has(t.key)) &&
       (st.max >= 20 || ((st.live ? t.liveLow : t.low) != null && (st.live ? t.liveLow : t.low) <= st.max + 0.001)) &&
-      (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) &&
-      (!terms.length || terms.every(w => t.search.includes(w) || (t.imdb?.cast || []).some(c => norm(c).includes(w)) || (t.imdb?.directors || []).some(c => norm(c).includes(w)))));
+      (!st.imdb || (t.imdb?.rating ?? 0) >= st.imdb) && hasGenre(t, st.g) &&
+      (!terms.length || hayHas(t, terms)));
     const S = { az: (a, b) => a.title.localeCompare(b.title), cheap: (a, b) => ((st.live ? a.liveLow : a.low) ?? 1e9) - ((st.live ? b.liveLow : b.low) ?? 1e9), rating: (a, b) => (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0), deals: (a, b) => b.dealCount - a.dealCount || a.title.localeCompare(b.title) };
     list.sort(S[st.sort] || S.az);
     count.replaceChildren(`${list.length.toLocaleString()} title${list.length === 1 ? '' : 's'}`, ...(offN ? [' · ', h('span', { class: 'warnc' }, `${offN.toLocaleString()} only redeem at ${offSites()}, so they’re ${st.allsites ? 'shown' : 'hidden'}`), ' · ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.allsites = !st.allsites; limit = PAGE; run(); } }, st.allsites ? 'hide them' : 'show them')] : []));
@@ -1012,11 +1013,12 @@ function viewTitles(q) {
     h('h1', { style: 'font-size:clamp(28px,4.2vw,48px);margin:0 0 8px' }, `${titles.size.toLocaleString()} titles. Every price we've seen.`, h('span', { class: 'cur', 'aria-hidden': 'true' }, '_')),
     h('p', { style: 'margin:0 0 28px;color:var(--dim);max-width:700px' }, 'Search by title, actor or director. Open any title for its full price history across FanFlix deals.'),
     h('div', { class: 'panel', role: 'search' },
-      searchFld('xq', 'search titles, actors, directors', st.q, 'Enter a title or name', set('q'), 'wide'),
+      searchFld('xq', 'search titles, stars, directors, years', st.q, titleLabel, set('q'), 'wide'),
       rangeFld('xp', st.live ? 'price now under:' : 'lowest price under:', 1, 20, 1, st.max, v => v >= 20 ? 'any' : '$' + v + '.00', set('max')),
       rangeFld('xr', 'min IMDb:', 0, 9, 0.5, st.imdb, v => v > 0 ? v.toFixed(1) + '+' : 'any', set('imdb')),
       h('fieldset', { class: 'fld' }, h('legend', null, 'quality'), h('div', { class: 'checks' }, rcheck('UHD', '4K'), rcheck('HD', 'HD'), rcheck('SD', 'SD'),
         h('label', null, h('input', { type: 'checkbox', checked: !!st.live, onchange: e => { st.live = e.target.checked ? '1' : ''; setQuery('titles', { ...st, max: st.max >= 20 ? '' : st.max, imdb: st.imdb || '', sort: st.sort === 'az' ? '' : st.sort }); viewTitles(new URLSearchParams(location.hash.split('?')[1] || '')); } }), 'in a live deal (use today\'s price)'))),
+      selectFld('xg', 'genre', st.g, genreOpts(all, st.g), set('g')),
       selectFld('xo', 'my library', st.own, [['', 'show everything'], ['hide', 'hide what I own'], ['only', 'only what I own'], ['ni', 'only not interested']], set('own')),
       selectFld('xs', 'sort', st.sort, [['az', 'A–Z'], ['cheap', 'lowest price'], ['rating', 'IMDb rating'], ['deals', 'most deals']], set('sort'))),
     count, results);
@@ -1266,6 +1268,32 @@ function watchBtn(key, name) {
 const STOP = new Set(['the', 'a', 'an', 'of', 'and', 'in', 'on', 'to', 'my', 'for', 'at', 'is', 'it', 'love', 'night', 'man', 'girl', 'big', 'little', 'last', 'first', 'one', 'black', 'white', 'red', 'blue', 'dark', 'best', 'new', 'old', 'american', 'christmas', 'house', 'home', 'day', 'life']);
 const personHref = (role, name) => `#/people/${role}/${encodeURIComponent(name)}`;
 const franchiseCache = new Map();
+// ---------- search: a title can be found by its title, cast, directors, genres, year or franchise ----------
+const hayCache = new Map();
+function titleHay(t) {
+  if (!t) return '';
+  let v = hayCache.get(t.key);
+  if (v == null) { const im = t.imdb || {}; v = [t.search, ...(im.cast || []), ...(im.directors || []), t.year || im.year || '', franchiseOf(t) || ''].map(x => norm(String(x))).join(' | '); hayCache.set(t.key, v); }
+  return v;
+}
+const hayHas = (t, terms) => { const s = titleHay(t); return terms.every(w => s.includes(w)); };
+// why a title matched, when it isn't the title itself ("with Keanu Reeves", "dir. Christopher Nolan", "Horror")
+function whyMatch(t, terms) {
+  if (!t || !terms.length || terms.every(w => t.search.includes(w))) return '';
+  const im = t.imdb || {}, has = n => terms.some(w => norm(n).includes(w));
+  const c = (im.cast || []).find(has); if (c) return 'with ' + c;
+  const d = (im.directors || []).find(has); if (d) return 'dir. ' + d;
+  const f = franchiseOf(t); if (f && has(f)) return f;
+  return '';
+}
+// genre dropdown helpers
+const hasGenre = (t, g) => !g || (t?.imdb?.genres || []).includes(g);
+function genreOpts(list, cur) {
+  const c = {}; for (const t of list) for (const g of (t?.imdb?.genres || [])) c[g] = (c[g] || 0) + 1;
+  const keys = Object.keys(c).sort(); if (cur && !c[cur]) keys.unshift(cur);
+  return [['', 'any genre'], ...keys.map(g => [g, `${g} (${c[g] || 0})`])];
+}
+const titleLabel = 'Title, star, director, year';
 function franchiseOf(t) {
   if (franchiseCache.has(t.key)) return franchiseCache.get(t.key);
   const words = norm(t.title.replace(/\(\d{4}\)/, '')).split(' ').filter(Boolean);
@@ -1511,26 +1539,29 @@ function viewPeople(role, name, q) {
 // ---------- ./plan ----------
 function viewPlan(q) {
   document.title = 'Plan a split · SplitsBot';
-  const st = { t: (q.get('t') || '').split(',').filter(k => titles.has(k)), any: q.get('q') === 'any', from: q.get('from') || '' };
+  const st = { t: (q.get('t') || '').split(',').filter(k => titles.has(k)), any: q.get('q') === 'any', from: q.get('from') || '', g: q.get('g') || '' };
   const fromDeal = dealById.get(st.from);
-  const save = () => setQuery('plan', { t: st.t.join(','), q: st.any ? 'any' : '', from: st.from });
+  const save = () => setQuery('plan', { t: st.t.join(','), q: st.any ? 'any' : '', from: st.from, g: st.g });
   const left = h('div', { class: 'card' });
   const right = h('div');
   const sugg = h('div', { class: 'sugg', role: 'listbox' });
-  const input = h('input', { class: 'f', type: 'search', placeholder: fromDeal ? `add a title from ${splitName(fromDeal)[0]}…` : 'add a title…', autocomplete: 'off', 'aria-label': 'Add a title' });
+  const input = h('input', { class: 'f', type: 'search', placeholder: fromDeal ? `search ${splitName(fromDeal)[0]} by title, star, director or year…` : 'title, star, director or year…', autocomplete: 'off', 'aria-label': 'Search by title, star, director or year' });
+  const more = h('p', { class: 'sub', style: 'margin:4px 0 0' });
   const pool = () => fromDeal ? [...new Map(dealRows(fromDeal).map(r => [r.key, titles.get(r.key)])).values()].filter(Boolean) : [...titles.values()].filter(t => t.live);
   const suggest = () => {
     const terms = norm(input.value).split(' ').filter(Boolean);
-    const list = (terms.length ? pool().filter(t => terms.every(w => t.search.includes(w))) : fromDeal ? pool() : []).filter(t => !st.t.includes(t.key) && !OW.has(t.key) && !NI.has(t.key)).sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0)).slice(0, 8);
-    sugg.replaceChildren(...list.map(t => h('button', { type: 'button', role: 'option', onclick: () => { st.t.push(t.key); input.value = ''; sugg.replaceChildren(); render(); input.focus(); } }, t.image ? img(t.image, '', 'thumb sm') : '', h('span', null, t.title, yr(t.title, t.year)), h('span', { class: 'sub' }, t.liveLow != null ? '● ' + money(t.liveLow) : 'not live'))));
+    const all = (terms.length ? pool().filter(t => hayHas(t, terms)) : (fromDeal || st.g) ? pool() : []).filter(t => hasGenre(t, st.g)).filter(t => !st.t.includes(t.key) && !OW.has(t.key) && !NI.has(t.key)).sort((a, b) => (b.imdb?.votes ?? 0) - (a.imdb?.votes ?? 0));
+    const list = all.slice(0, st.allSugg ? 60 : 8);
+    sugg.replaceChildren(...list.map(t => { const w = whyMatch(t, terms); return h('button', { type: 'button', role: 'option', onclick: () => { st.t.push(t.key); input.value = ''; st.allSugg = false; sugg.replaceChildren(); more.replaceChildren(); render(); input.focus(); } }, t.image ? img(t.image, '', 'thumb sm') : '', h('span', null, t.title, yr(t.title, t.year), w ? h('span', { class: 'sub', style: 'display:block' }, w) : ''), h('span', { class: 'sub' }, t.liveLow != null ? '● ' + money(t.liveLow) : 'not live')); }));
+    more.replaceChildren(...(terms.length && !all.length ? ['No live titles match.'] : all.length > list.length ? [`${all.length} match · `, h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.allSugg = true; suggest(); } }, all.length > 60 ? 'show 60' : 'show all')] : []));
   };
-  let tmr; input.addEventListener('input', () => { clearTimeout(tmr); tmr = setTimeout(suggest, 120); });
+  let tmr; input.addEventListener('input', () => { clearTimeout(tmr); st.allSugg = false; tmr = setTimeout(suggest, 120); });
   input.addEventListener('focus', () => { if (fromDeal && !input.value) suggest(); });
   const render = () => {
     save();
     const picks = st.t.map(k => titles.get(k));
     left.replaceChildren(h('p', { class: 'prompt' }, '$ pick --titles'), h('h2', null, picks.length ? `Your ${picks.length}` : 'Your titles'),
-      h('div', { class: 'prompt-field', style: 'max-width:none;margin:14px 0 4px' }, h('span', { 'aria-hidden': 'true' }, '>'), input), sugg,
+      h('div', { class: 'prompt-field', style: 'max-width:none;margin:14px 0 4px' }, h('span', { 'aria-hidden': 'true' }, '>'), input), selectFld('pg', 'genre', st.g, genreOpts(pool(), st.g), v => { st.g = v; st.allSugg = false; save(); suggest(); }), sugg, more,
       ...picks.map(t => h('div', { class: 'pick' }, t.image ? img(t.image, '', 'thumb') : h('div', { class: 'thumb' }),
         h('div', { style: 'flex:1;min-width:0' }, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year), h('div', { class: 'sub' }, `${['UHD', 'HD', 'SD'].filter(r => t.res.has(r)).map(resLabel).join(', ')} · in ${new Set(t.hits.filter(x => x.deal.live).map(x => x.deal.id)).size} live deals`)),
         h('button', { class: 'xbtn', type: 'button', 'aria-label': 'Remove ' + t.title, onclick: () => { st.t = st.t.filter(k => k !== t.key); render(); } }, '×'))),
@@ -1879,7 +1910,7 @@ function viewLibrary(q) {
     setQuery('library', { q: st.q });
     const all = OW.list().filter(k => titles.has(k)).map(k => titles.get(k)).sort((a, b) => a.title.localeCompare(b.title));
     const terms = norm(st.q).split(' ').filter(Boolean);
-    const list = all.filter(t => !terms.length || terms.every(w => t.search.includes(w)));
+    const list = all.filter(t => !terms.length || hayHas(t, terms));
     const live = all.filter(t => t.liveLow != null).length;
     out.replaceChildren(...(all.length ? [
       h('p', { class: 'count' }, `${all.length.toLocaleString()} title${all.length === 1 ? '' : 's'} in your library · ${live} of them are in a live deal right now (you can skip those)`, pending.list().length ? [' · ', h('span', { title: 'Movies from your pasted list that haven’t been in a FanFlix deal yet. They’re added on their own when they show up.' }, `${pending.list().length.toLocaleString()} more waiting to show up in a deal`), ' (', h('button', { class: 'linkbtn', type: 'button', onclick: () => { pending.save([]); render(); } }, 'forget them'), ')'] : ''),
