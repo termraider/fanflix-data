@@ -125,6 +125,8 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .dnav span{display:block;color:var(--dim);font-size:12px;margin-bottom:2px}
 .dnav b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
 .dnav .gap{flex:1 1 0}
+.disc{margin:12px 0 0;font-size:12px;color:var(--dim)}
+.disc b{color:var(--gold);font-weight:600}
 .top{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-wrap:wrap;align-items:center}
 .top .art{flex:1 1 340px;min-width:0;padding:32px;display:flex;justify-content:center}
 .top .art>*{width:100%;max-width:380px}
@@ -478,6 +480,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 <div class="wrap foot">
 <span>I am fully operational. you may split now<span class="cur">_</span></span>
 <nav aria-label="Footer"><a href="#/about">about</a><a href="#/settings">settings</a><a href="TERMS.md">terms</a><a href="PRIVACY.md">privacy</a><a href="https://www.reddit.com/r/fanflixco/">r/fanflixco</a></nav>
+<span>Double-check that titles are available in your library of choice before you buy on fanflix.co.</span>
 <span>Prices as listed when SplitsBot checked · history since Nov 8, 2026 · not affiliated with FanFlix or Reddit</span>
 </div>
 </footer>
@@ -889,6 +892,7 @@ function cheaperSection(list) {
 
 // ---------- Deal page ----------
 // Deals newest first, like the deals list: "next" goes to the one that showed up before it (first seen; same day → FanFlix's own ID order)
+const buyNote = () => h('p', { class: 'disc', role: 'note' }, h('b', null, '⚠ '), 'Double-check that titles are available in your library of choice before you buy on fanflix.co.');
 function dealNav(d) {
   const seq = [...deals].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || b.id.split('/').pop().localeCompare(a.id.split('/').pop()));
   const i = seq.indexOf(d), prev = seq[i - 1], next = seq[i + 1];
@@ -969,7 +973,8 @@ function viewDeal(slug, q) {
             h('a', { class: d.live ? 'btn primary' : 'btn', href: d.url }, d.live ? 'open on FanFlix' : 'FanFlix page (ended)'),
             d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(d) }, 'find the Splits thread') : null,
             h('a', { class: 'btn ghost', href: '#/compare/' + encodeURIComponent(d.slug) }, 'compare with…'),
-            d.live ? h('a', { class: 'btn ghost', href: '#/plan?from=' + encodeURIComponent(d.slug) }, 'plan a split') : null))),
+            d.live ? h('a', { class: 'btn ghost', href: '#/plan?from=' + encodeURIComponent(d.slug) }, 'plan a split') : null),
+          d.live ? buyNote() : null)),
       h('section', { class: 'sec stats', style: 'margin-top:28px', 'aria-label': 'Price check' },
         h('div', { class: 'stat' }, h('div', { class: 'l' }, "lowest we've seen"), h('div', { class: 'n gold' }, c.low, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'cheaper than any earlier deal')),
         h('div', { class: 'stat' }, h('div', { class: 'l' }, 'ties the low'), h('div', { class: 'n' }, c.tie, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'same as the best price so far')),
@@ -1098,6 +1103,7 @@ function viewTitle(key) {
           ownBigBtn(t.key),
           niBigBtn(t.key)),
         packNote ? h('p', { class: 'sub', style: 'margin:12px 0 0' }, `or ${money(packNote.price)} a movie in the `, h('a', { href: dealHref(packNote.deal) }, packNote.packName), ' pack') : null,
+        cheapestLive ? buyNote() : null,
         portSection(t))),
     patternSection(t),
     hist.length > 1 ? h('section', { class: 'sec', style: 'margin-top:40px', 'aria-labelledby': 'ch' },
@@ -1630,7 +1636,8 @@ function viewPlan(q) {
           h('div', { class: 'sub' }, `${o.k === picks.length ? (picks.length === 1 ? 'has it' : `all ${picks.length}`) : `${o.k} of ${picks.length}`} · ${o.note}`),
           o.k < picks.length ? h('div', { class: 'sub' }, 'missing: ' + picks.filter(t => !o.got.some(g => g.t === t)).map(t => t.title).join(', ')) : '',
           best && o.each && o.k > 1 ? h('div', { class: 'people' }, o.got.map((g, j) => h('div', null, h('span', { class: 'sub' }, j === 0 ? 'you' : `member ${j + 1}`), h('b', null, money(o.each)), h('span', { class: 'sub pt' }, g.t.title)))) : '',
-          best ? h('div', { class: 'btns', style: 'margin-top:14px;max-width:none' }, h('a', { class: 'btn primary', href: dealHref(o.d) }, 'open the deal'), o.d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(o.d) }, 'find the Splits thread') : '', copy) : '');
+          best ? h('div', { class: 'btns', style: 'margin-top:14px;max-width:none' }, h('a', { class: 'btn primary', href: dealHref(o.d) }, 'open the deal'), o.d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(o.d) }, 'find the Splits thread') : '', copy) : '',
+          best ? buyNote() : '');
       }) : h('p', { class: 'sub' }, st.any ? 'None of these are in a live deal right now.' : 'None of these are in a live deal in 4K right now. Try quality: any.'),
       missing.length ? h('p', { class: 'sub', style: 'margin-top:14px' }, `Not in any live deal${st.any ? '' : ' in 4K'}: ${missing.map(t => t.title).join(', ')}.`) : ''),
       h('p', { class: 'sub', style: 'margin-top:16px' }, 'How it works: SplitsBot checks every live deal for your picks at the same quality, fills the deal’s minimum, and ranks by how many it has, then by total. Prices are as of this morning’s check.'));
