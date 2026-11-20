@@ -118,6 +118,13 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 /* deal + title pages */
 .crumb{margin:0 0 20px;font-size:13px;color:var(--dim);overflow-wrap:anywhere}
 .crumb a{text-decoration:none}
+.dnav{display:flex;justify-content:space-between;gap:12px;margin:0 0 20px;font-size:13px}
+.dnav a{flex:1 1 0;min-width:0;display:block;text-decoration:none;border:1px solid var(--line2);border-radius:10px;padding:10px 14px;color:var(--text);background:var(--panel)}
+.dnav a:hover{border-color:var(--green)}
+.dnav a.nx{text-align:right}
+.dnav span{display:block;color:var(--dim);font-size:12px;margin-bottom:2px}
+.dnav b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.dnav .gap{flex:1 1 0}
 .top{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-wrap:wrap;align-items:center}
 .top .art{flex:1 1 340px;min-width:0;padding:32px;display:flex;justify-content:center}
 .top .art>*{width:100%;max-width:380px}
@@ -881,6 +888,13 @@ function cheaperSection(list) {
 }
 
 // ---------- Deal page ----------
+// Deals in the order they showed up on FanFlix (first seen; same day → FanFlix's own ID order)
+function dealNav(d) {
+  const seq = [...deals].sort((a, b) => a.firstSeen.localeCompare(b.firstSeen) || a.id.split('/').pop().localeCompare(b.id.split('/').pop()));
+  const i = seq.indexOf(d), prev = seq[i - 1], next = seq[i + 1];
+  const link = (x, cls, dir) => x ? h('a', { class: cls, href: dealHref(x), title: x.name }, h('span', null, dir === 'p' ? `← previous · ${shortDate(x.firstSeen)}` : `${shortDate(x.firstSeen)} · next →`), h('b', null, splitName(x)[0])) : h('span', { class: 'gap' });
+  return h('nav', { class: 'dnav', 'aria-label': 'Previous and next deal' }, link(prev, 'pv', 'p'), link(next, 'nx', 'n'));
+}
 function viewDeal(slug, q) {
   const d = dealById.get(slug);
   if (!d) return notFound('That deal isn’t in the archive (yet).');
@@ -932,6 +946,7 @@ function viewDeal(slug, q) {
   const render = () => {
     app.replaceChildren(
       h('p', { class: 'crumb' }, h('a', { href: '#/' }, 'deals'), ' / ', d.slug.replace(/^[a-z0-9]+-/, '')),
+      dealNav(d),
       canUse(d) ? '' : h('div', { class: 'endnote', role: 'note' }, h('b', null, 'NOT FOR YOU'), `This deal redeems at ${(d.platforms || []).join(' / ')}, which isn’t one of your redeem sites.`, h('a', { href: '#/settings' }, 'change')),
       d.live ? '' : h('div', { class: 'endnote', role: 'note' }, h('b', null, 'ENDED'), `This deal ended ${fmtDate(d.lastSeen)}.`, h('span', null, 'Prices below are what it cost then.')),
       h('section', { class: 'top' + (d.live ? '' : ' is-ended') },
@@ -974,7 +989,8 @@ function viewDeal(slug, q) {
         h('div', { class: 'tablebox' }, h('table', null,
           h('thead', null, h('tr', null, sortTh('title', 'title'), h('th', { scope: 'col' }, 'quality'), sortTh('price', 'price', 'num'), sortTh('rating', 'IMDb', 'num'), h('th', { scope: 'col' }, 'history'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
           tbody)),
-        h('p', { class: 'sub', style: 'margin-top:14px' }, 'Compared with the same title at the same quality in other FanFlix deals since Nov 8, 2026.')));
+        h('p', { class: 'sub', style: 'margin-top:14px' }, 'Compared with the same title at the same quality in other FanFlix deals since Nov 8, 2026.')),
+      h('div', { style: 'margin-top:28px' }, dealNav(d)));
     run();
   };
   render();
