@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T08:08:41.033Z",
+  "updatedAt": "2026-11-21T08:15:40.689Z",
   "deals": [
     {
       "id": "/c/1mkgrit877bfj-turkey-day-tv-bonanza",
@@ -11836,8 +11836,8 @@
       "bannerFile": "images/1mkjhe2b2vks4-mega-deal-drop-3-or-more-starting-at-3-99-w-10-off--banner.png",
       "screenshot": "images/1mkjhe2b2vks4-mega-deal-drop-3-or-more-starting-at-3-99-w-10-off.png",
       "locationScreenshots": {
-        "Movies Anywhere": "images/1mkjhe2b2vks4-mega-deal-drop-3-or-more-starting-at-3-99-w-10-off--movies-anywhere.png",
-        "Fandango at Home": "images/1mkjhe2b2vks4-mega-deal-drop-3-or-more-starting-at-3-99-w-10-off--fandango-at-home.png"
+        "Fandango at Home": "images/1mkjhe2b2vks4-mega-deal-drop-3-or-more-starting-at-3-99-w-10-off--fandango-at-home.png",
+        "Movies Anywhere": "images/1mkjhe2b2vks4-mega-deal-drop-3-or-more-starting-at-3-99-w-10-off--movies-anywhere.png"
       },
       "bannerAlt": "Mega Deal Drop - 3 or more starting at $3.99 ea. Use code MEGADEAL10 FOR 10% Off",
       "bundle": null,
@@ -11850,8 +11850,8 @@
       "canSplit": true,
       "checkoutPrice": "",
       "platforms": [
-        "Movies Anywhere",
-        "Fandango at Home"
+        "Fandango at Home",
+        "Movies Anywhere"
       ],
       "itemCount": 214,
       "items": [
