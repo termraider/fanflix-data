@@ -133326,7 +133326,31 @@
         "price": "$29.99",
         "resolution": "SD",
         "year": 1976,
-        "image": "https://img.fanflix.co/SPHE/918d1f9c07ac4fdeb5f3525ac1142b851a8c11329c45179ad6a6ba578f04368a"
+        "image": "https://img.fanflix.co/SPHE/918d1f9c07ac4fdeb5f3525ac1142b851a8c11329c45179ad6a6ba578f04368a",
+        "imdb": {
+          "id": "tt0073972",
+          "rating": 6.6,
+          "votes": 16430,
+          "manual": true,
+          "cast": [
+            "Kate Jackson",
+            "Farrah Fawcett",
+            "Jaclyn Smith",
+            "David Doyle",
+            "Cheryl Ladd"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Crime"
+          ],
+          "year": 1976,
+          "runtime": 60,
+          "directors": [
+            "Dennis Donnelly",
+            "Allen Baron"
+          ]
+        }
       },
       {
         "title": "Charlie's Angels (1976-1981): Season 2",
@@ -133334,7 +133358,37 @@
         "resolution": "SD",
         "year": 1977,
         "seasons": 1,
-        "image": "https://img.fanflix.co/SPHE/0858376c3bd3334aa237e420be9cca1c479b0aef187f8568e2256fd0f1edfee1"
+        "image": "https://img.fanflix.co/SPHE/0858376c3bd3334aa237e420be9cca1c479b0aef187f8568e2256fd0f1edfee1",
+        "imdb": {
+          "id": "tt0073972",
+          "rating": 6.6,
+          "votes": 16430,
+          "manual": true,
+          "season": {
+            "n": 2,
+            "rating": 7.3,
+            "votes": 6092,
+            "episodes": 24
+          },
+          "cast": [
+            "Kate Jackson",
+            "Farrah Fawcett",
+            "Jaclyn Smith",
+            "David Doyle",
+            "Cheryl Ladd"
+          ],
+          "genres": [
+            "Action",
+            "Adventure",
+            "Crime"
+          ],
+          "year": 1976,
+          "runtime": 60,
+          "directors": [
+            "Dennis Donnelly",
+            "Allen Baron"
+          ]
+        }
       },
       {
         "title": "Charlie's Angels (1976-1981): Season 4",
@@ -152931,7 +152985,30 @@
         "image": "https://img.fanflix.co/LG/3618aefd316ef3072d7f8f1912c26a9c9579ba6b56592c013cbc38d8f33fe559",
         "platforms": [
           "Fandango at Home"
-        ]
+        ],
+        "imdb": {
+          "id": "tt1833285",
+          "rating": 8.1,
+          "votes": 19045,
+          "manual": true,
+          "cast": [
+            "Kelsey Grammer",
+            "Connie Nielsen",
+            "Hannah Ware",
+            "Jeff Hephner",
+            "Kathleen Robertson"
+          ],
+          "genres": [
+            "Crime",
+            "Drama"
+          ],
+          "year": 2011,
+          "runtime": 60,
+          "directors": [
+            "Jean de Segonzac",
+            "Mario Van Peebles"
+          ]
+        }
       },
       {
         "title": "Cardinal: The Complete Series",

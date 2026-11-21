@@ -19577,6 +19577,11 @@
    "votes": 263372,
    "checked": "2026-11-18"
   },
+  "tt0073972": {
+   "rating": 6.6,
+   "votes": 16430,
+   "checked": "2026-11-21"
+  },
   "tt0076138": {
    "rating": 6.1,
    "votes": 2443,
@@ -20267,6 +20272,11 @@
    "votes": 16336,
    "checked": "2026-11-17"
   },
+  "tt1833285": {
+   "rating": 8.1,
+   "votes": 19045,
+   "checked": "2026-11-21"
+  },
   "tt18335752": {
    "rating": 8.3,
    "votes": 108810,
@@ -20671,6 +20681,36 @@
      "rating": 7.851,
      "votes": 5767,
      "episodes": 8
+    }
+   }
+  },
+  "tt0073972": {
+   "checked": "2026-11-21",
+   "s": {
+    "1": {
+     "rating": 7.3,
+     "votes": 8307,
+     "episodes": 22
+    },
+    "2": {
+     "rating": 7.281,
+     "votes": 6092,
+     "episodes": 24
+    },
+    "3": {
+     "rating": 7.174,
+     "votes": 5105,
+     "episodes": 22
+    },
+    "4": {
+     "rating": 7.34,
+     "votes": 5810,
+     "episodes": 25
+    },
+    "5": {
+     "rating": 6.788,
+     "votes": 3393,
+     "episodes": 16
     }
    }
   },
@@ -28556,6 +28596,20 @@
    ],
    "dir": [
     "Sydney Pollack"
+   ]
+  },
+  "tt0073972": {
+   "checked": "2026-11-21",
+   "names": [
+    "Kate Jackson",
+    "Farrah Fawcett",
+    "Jaclyn Smith",
+    "David Doyle",
+    "Cheryl Ladd"
+   ],
+   "dir": [
+    "Dennis Donnelly",
+    "Allen Baron"
    ]
   },
   "tt0074053": {
@@ -53146,6 +53200,20 @@
     "Darren Lynn Bousman"
    ]
   },
+  "tt1833285": {
+   "checked": "2026-11-21",
+   "names": [
+    "Kelsey Grammer",
+    "Connie Nielsen",
+    "Hannah Ware",
+    "Jeff Hephner",
+    "Kathleen Robertson"
+   ],
+   "dir": [
+    "Jean de Segonzac",
+    "Mario Van Peebles"
+   ]
+  },
   "tt18332852": {
    "checked": "2026-11-21",
    "names": [
@@ -68171,6 +68239,16 @@
    ],
    "y": 1975,
    "rt": 117
+  },
+  "tt0073972": {
+   "checked": "2026-11-21",
+   "g": [
+    "Action",
+    "Adventure",
+    "Crime"
+   ],
+   "y": 1976,
+   "rt": 60
   },
   "tt0074053": {
    "checked": "2026-11-18",
@@ -86049,6 +86127,15 @@
    ],
    "y": 2020,
    "rt": 94
+  },
+  "tt1833285": {
+   "checked": "2026-11-21",
+   "g": [
+    "Crime",
+    "Drama"
+   ],
+   "y": 2011,
+   "rt": 60
   },
   "tt18332852": {
    "checked": "2026-11-21",
