@@ -1296,7 +1296,7 @@ function niBigBtn(key) {
   b.addEventListener('click', () => { const on = NI.toggle(key); b.textContent = lab(on); b.classList.toggle('nion', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
 }
-const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/backup', 'aria-pressed': cur === 'backup' ? 'true' : 'false' }, '⤓ backups'));
+const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0;flex-wrap:wrap' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/hidden', 'aria-pressed': cur === 'hidden' ? 'true' : 'false' }, `⊘ hidden (${NI.list().length})`), h('a', { class: 'chip', href: '#/backup', 'aria-pressed': cur === 'backup' ? 'true' : 'false' }, '⤓ backups'));
 const FKEY = 'splitsbot-follow';
 const FL = {
   list() { try { const v = JSON.parse(localStorage.getItem(FKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.role === 'string' && typeof x.name === 'string') : []; } catch { return []; } },
@@ -1963,6 +1963,39 @@ function niSection() {
   return wrap;
 }
 
+// Page: everything you hid with ⊘ (not interested), searchable, one tap to unhide
+function viewHidden(q) {
+  document.title = 'Hidden titles · SplitsBot';
+  const st = { q: q.get('q') || '' };
+  const list = h('div');
+  const count = h('p', { class: 'count', 'aria-live': 'polite' });
+  const undo = h('div', { 'aria-live': 'polite' });
+  const draw = () => {
+    setQuery('hidden', { q: st.q });
+    const all = NI.list().map(k => titles.get(k) || { key: k, title: k.replace(/-(\d{4})$/, ' ($1)').replace(/-/g, ' ').replace(/^./, c => c.toUpperCase()), missing: true }).sort((a, b) => a.title.localeCompare(b.title));
+    const terms = norm(st.q).split(' ').filter(Boolean);
+    const shown = all.filter(t => !terms.length || (t.missing ? terms.every(w => norm(t.key).includes(w)) : hayHas(t, terms)));
+    count.textContent = all.length ? `${shown.length} of ${all.length} hidden` : '';
+    list.replaceChildren(all.length ? (shown.length ? h('div', { class: 'tablebox' }, h('table', null,
+      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'price now'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'unhide')))),
+      h('tbody', { class: 'cards' }, shown.map(t => h('tr', null,
+        h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, t.missing ? h('span', null, t.title) : h('a', { href: titleHref(t) }, t.title), t.missing ? h('div', { class: 'sub' }, 'not in any deal right now') : yr(t.title, t.year)))),
+        h('td', null, t.liveLow != null ? money(t.liveLow) : h('span', { class: 'sub' }, 'not live')),
+        h('td', { class: 'num' }, h('button', { class: 'btn ghost', type: 'button', style: 'padding:8px 14px', onclick: () => {
+          NI.toggle(t.key); if (!t.missing) recalcLive(t);
+          undo.replaceChildren(h('div', { class: 'okbox' }, h('b', { class: 'green' }, '✓ '), h('a', { href: titleHref(t) }, t.title), ' is back everywhere. ', h('button', { class: 'linkbtn', type: 'button', onclick: () => { NI.toggle(t.key); undo.replaceChildren(); draw(); } }, 'hide it again')));
+          draw(); } }, 'unhide'))))))) : h('p', { class: 'empty' }, 'No hidden title matches that.')) :
+      h('p', { class: 'empty' }, 'Nothing hidden. Tap ⊘ next to any title you’d never want and it’s hidden everywhere on the site.'));
+    tabs.replaceWith(tabs = libTabs('hidden'));
+  };
+  let tabs = libTabs('hidden');
+  app.replaceChildren(tabs,
+    ...pageHead('splitsbot@splitsbot.com:~$ ls ~/.not-interested', 'Hidden titles.', 'Titles you marked ⊘ not interested. They’re hidden from deal pages, Titles, ./today, actor pages and the planner. Unhide one to bring it back.'),
+    h('div', { class: 'filters', style: 'margin-bottom:10px' }, searchFld('hq2', 'search hidden titles', st.q, titleLabel, v => { st.q = v; draw(); }, 'wide')),
+    count, undo, list);
+  draw();
+}
+
 // ---------- library matching (titles you own, typed or pasted) ----------
 const baseT = x => norm(String(x).replace(/\s*[\(\[][^\)\]]*[\)\]]/g, ' ')).replace(/^(?:the|a|an) /, '');
 // "Furiosa: A Mad Max Saga" ↔ "Furiosa", "Mission: Impossible - Dead Reckoning" ↔ "Dead Reckoning": the part before a colon or dash
@@ -2207,7 +2240,6 @@ function viewLibrary(q) {
       } }), h('span', { class: 'sub' }, 'or paste below')),
       conv,
       box, h('div', { class: 'btns', style: 'margin-top:12px;max-width:520px' }, add, h('button', { class: 'btn', type: 'button', onclick: () => { const r = convertList(box.value); box.value = r.lines.join('\n'); conv.textContent = `Cleaned up: ${r.lines.length.toLocaleString()} titles (${r.kind}).`; } }, 'clean up the list')), res),
-    niSection(),
     syncCard(),
     h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist. ', clearLib));
   render();
@@ -2288,7 +2320,7 @@ function route() {
   const { parts, q } = parseHash();
   const view = parts[0] || '';
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', backup: 'watch', settings: 'settings', compare: 'deals' }[view];
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', backup: 'watch', hidden: 'watch', settings: 'settings', compare: 'deals' }[view];
   document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   if (view === 'deal') viewDeal(parts[1], q);
   else if (view === 'titles') viewTitles(q);
@@ -2303,6 +2335,7 @@ function route() {
   else if (view === 'library') viewLibrary(q);
   else if (view === 'sync') viewSync(q);
   else if (view === 'backup') viewBackup();
+  else if (view === 'hidden') viewHidden(q);
   else if (view === 'settings') viewSettings();
   else if (view === 'compare') viewCompare(parts[1], parts[2], q);
   else viewHome(q);
