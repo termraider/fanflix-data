@@ -152983,9 +152983,6 @@
         "resolution": "HD",
         "year": 2011,
         "image": "https://img.fanflix.co/LG/3618aefd316ef3072d7f8f1912c26a9c9579ba6b56592c013cbc38d8f33fe559",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1833285",
           "rating": 8.1,
@@ -153008,7 +153005,10 @@
             "Jean de Segonzac",
             "Mario Van Peebles"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Cardinal: The Complete Series",
