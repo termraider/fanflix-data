@@ -1136,7 +1136,34 @@
           "image": "https://img.fanflix.co/SPHE/e31c85c4cb0d91682fe0079dbae2f1304551e176b4d5f779289a874e49325022",
           "seasons": 1,
           "year": 2025,
-          "runtime": 704
+          "runtime": 704,
+          "imdb": {
+            "id": "tt26748321",
+            "rating": 7.3,
+            "votes": 8108,
+            "manual": true,
+            "season": {
+              "n": 2,
+              "rating": 8,
+              "votes": 5264,
+              "episodes": 22
+            },
+            "cast": [
+              "Molly Parker",
+              "Omar Metwally",
+              "Jon-Michael Ecker",
+              "Amirah Vann",
+              "Anya Banerjee"
+            ],
+            "genres": [
+              "Drama"
+            ],
+            "year": 2025,
+            "directors": [
+              "Russell Lee Fine",
+              "Marisol Adler"
+            ]
+          }
         },
         {
           "title": "Dope Girls: Season 1",
@@ -1252,7 +1279,27 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/3df6292dcd83e301fe7bf1225b0aded2590c75fed676b88c7817088f3574becd",
           "seasons": 1,
-          "year": 2024
+          "year": 2024,
+          "imdb": {
+            "id": "tt27349153",
+            "rating": 6.2,
+            "votes": 1942,
+            "manual": true,
+            "cast": [
+              "Vicky McClure",
+              "Leanne Best",
+              "Tom Cullen",
+              "Lyndsey Marshal",
+              "Dominic Tighe"
+            ],
+            "genres": [
+              "Thriller"
+            ],
+            "year": 2024,
+            "directors": [
+              "Börkur Sigþórsson"
+            ]
+          }
         },
         {
           "title": "Red Eye: Season 1",
@@ -1296,7 +1343,37 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/ab31b60cf9871831b7bc0bfc7ca39bcbff1f6237afad238fe0f1ce3d6c6791fa",
           "seasons": 1,
-          "year": 2023
+          "year": 2023,
+          "imdb": {
+            "id": "tt7949212",
+            "rating": 7,
+            "votes": 7341,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7.2,
+              "votes": 8893,
+              "episodes": 15
+            },
+            "cast": [
+              "Michael Chiklis",
+              "Shawn Doyle",
+              "Matthew James Thomas",
+              "Daniel Maslany",
+              "Vicki Kim"
+            ],
+            "genres": [
+              "Crime",
+              "Drama",
+              "Mystery"
+            ],
+            "year": 2023,
+            "runtime": 44,
+            "directors": [
+              "Milan Cheylov",
+              "Tazbah Chavez"
+            ]
+          }
         },
         {
           "title": "Alert: Missing Persons Unit: The Complete Series",
@@ -1629,7 +1706,30 @@
           "price": "$19.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/63e74e7743f943c1b65c5367307e58720a42b1b44943aea4c1603a6303265c87",
-          "year": 2023
+          "year": 2023,
+          "imdb": {
+            "id": "tt13784584",
+            "rating": 6.3,
+            "votes": 6005,
+            "manual": true,
+            "cast": [
+              "Roselyn Sanchez",
+              "Kiara Barnes",
+              "John Gabriel Rodriquez",
+              "Daniel Lugo",
+              "María Gabriela González"
+            ],
+            "genres": [
+              "Adventure",
+              "Drama",
+              "Fantasy"
+            ],
+            "year": 2021,
+            "directors": [
+              "Adam Kane",
+              "Diana Valentine"
+            ]
+          }
         },
         {
           "title": "Fantasy Island (2021): Season 1",
@@ -1637,7 +1737,36 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/2ed80cc619dde96a1981ca476c7b4abd9d8215f5292e0dbfc75ddca2605c0d12",
           "seasons": 1,
-          "year": 2021
+          "year": 2021,
+          "imdb": {
+            "id": "tt13784584",
+            "rating": 6.3,
+            "votes": 6005,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7,
+              "votes": 2939,
+              "episodes": 10
+            },
+            "cast": [
+              "Roselyn Sanchez",
+              "Kiara Barnes",
+              "John Gabriel Rodriquez",
+              "Daniel Lugo",
+              "María Gabriela González"
+            ],
+            "genres": [
+              "Adventure",
+              "Drama",
+              "Fantasy"
+            ],
+            "year": 2021,
+            "directors": [
+              "Adam Kane",
+              "Diana Valentine"
+            ]
+          }
         },
         {
           "title": "Fantasy Island (2021): Season 2",
@@ -1645,7 +1774,36 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/63e74e7743f943c1b65c5367307e58720a42b1b44943aea4c1603a6303265c87",
           "seasons": 1,
-          "year": 2023
+          "year": 2023,
+          "imdb": {
+            "id": "tt13784584",
+            "rating": 6.3,
+            "votes": 6005,
+            "manual": true,
+            "season": {
+              "n": 2,
+              "rating": 7.5,
+              "votes": 1934,
+              "episodes": 13
+            },
+            "cast": [
+              "Roselyn Sanchez",
+              "Kiara Barnes",
+              "John Gabriel Rodriquez",
+              "Daniel Lugo",
+              "María Gabriela González"
+            ],
+            "genres": [
+              "Adventure",
+              "Drama",
+              "Fantasy"
+            ],
+            "year": 2021,
+            "directors": [
+              "Adam Kane",
+              "Diana Valentine"
+            ]
+          }
         },
         {
           "title": "I Know What You Did Last Summer (2021): Season 1",
@@ -1937,7 +2095,28 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/ffd8fd99aef5995dfff4a08b3df63a73ed602085bdff2b9a0448de8e7e97dee4",
           "seasons": 1,
-          "year": 2018
+          "year": 2018,
+          "imdb": {
+            "id": "tt6244196",
+            "rating": 7.7,
+            "votes": 2916,
+            "manual": true,
+            "cast": [
+              "Chris Bearde",
+              "Steve Binder",
+              "Hal Blaine"
+            ],
+            "genres": [
+              "Biography",
+              "Documentary",
+              "Music"
+            ],
+            "year": 2018,
+            "runtime": 205,
+            "directors": [
+              "Thom Zimny"
+            ]
+          }
         },
         {
           "title": "Cloudy With A Chance Of Meatballs: Season 1",
@@ -2426,7 +2605,30 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/8987409a51e9e8a67cecb53716cdc0d88b5b404f90eecb24b010158fd453f365",
           "year": 2017,
-          "runtime": 299
+          "runtime": 299,
+          "imdb": {
+            "id": "tt4858114",
+            "rating": 5.6,
+            "votes": 1055,
+            "manual": true,
+            "cast": [
+              "Bryn McAuley",
+              "Evany Rosen",
+              "Gage Munroe",
+              "Joseph Motiki",
+              "Dan Chameroy"
+            ],
+            "genres": [
+              "Animation",
+              "Comedy",
+              "Family"
+            ],
+            "year": 2017,
+            "runtime": 21,
+            "directors": [
+              "Robin Budd"
+            ]
+          }
         },
         {
           "title": "Hotel Transylvania: The Series: Volume 2",
@@ -2434,7 +2636,30 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/e66bb7e19c3ee57bceb34a5c59994229ae8a340420aebb93a16623b5d091b386",
           "year": 2017,
-          "runtime": 299
+          "runtime": 299,
+          "imdb": {
+            "id": "tt4858114",
+            "rating": 5.6,
+            "votes": 1055,
+            "manual": true,
+            "cast": [
+              "Bryn McAuley",
+              "Evany Rosen",
+              "Gage Munroe",
+              "Joseph Motiki",
+              "Dan Chameroy"
+            ],
+            "genres": [
+              "Animation",
+              "Comedy",
+              "Family"
+            ],
+            "year": 2017,
+            "runtime": 21,
+            "directors": [
+              "Robin Budd"
+            ]
+          }
         },
         {
           "title": "Imaginary Mary: Season 1",
@@ -2481,7 +2706,36 @@
           "image": "https://img.fanflix.co/SPHE/57f674c840b6e0ef7cdd8b81666a99b9deaaf0749fef1e7f61ee5a271f83ab0e",
           "seasons": 1,
           "year": 2018,
-          "runtime": 496
+          "runtime": 496,
+          "imdb": {
+            "id": "tt5711280",
+            "rating": 7.2,
+            "votes": 20747,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7,
+              "votes": 34964,
+              "episodes": 10
+            },
+            "cast": [
+              "Steve Buscemi",
+              "Bryan Cranston",
+              "Richard Madden",
+              "Timothy Spall",
+              "Terrence Howard"
+            ],
+            "genres": [
+              "Drama",
+              "Sci-Fi"
+            ],
+            "year": 2017,
+            "runtime": 60,
+            "directors": [
+              "David Farr",
+              "Francesca Gregorini"
+            ]
+          }
         },
         {
           "title": "S.W.A.T. (2017): The Complete Series",
@@ -2778,7 +3032,37 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/bc453e228089f8a7c836338984ab14e8023318f0ebc5ac58d4fd9ad28fbe1b19",
           "seasons": 1,
-          "year": 2017
+          "year": 2017,
+          "imdb": {
+            "id": "tt4522400",
+            "rating": 7.8,
+            "votes": 5904,
+            "manual": true,
+            "season": {
+              "n": 2,
+              "rating": 7,
+              "votes": 1426,
+              "episodes": 10
+            },
+            "cast": [
+              "Jurnee Smollett",
+              "Aldis Hodge",
+              "Jessica De Gouw",
+              "Alano Miller",
+              "Christopher Meloni"
+            ],
+            "genres": [
+              "Adventure",
+              "Drama",
+              "History"
+            ],
+            "year": 2016,
+            "runtime": 43,
+            "directors": [
+              "Anthony Hemingway",
+              "Kate Woods"
+            ]
+          }
         },
         {
           "title": "Good Girls Revolt: Season 1",
@@ -2890,7 +3174,37 @@
           "image": "https://img.fanflix.co/SPHE/f694580b3718ccdbc0378febd69918531298b02aec1f323eaecc495e0fcbb40d",
           "seasons": 1,
           "year": 2015,
-          "runtime": 570
+          "runtime": 570,
+          "imdb": {
+            "id": "tt2805574",
+            "rating": 7.5,
+            "votes": 9419,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7.8,
+              "votes": 2268,
+              "episodes": 10
+            },
+            "cast": [
+              "Ben Chaplin",
+              "Michael Imperioli",
+              "Romany Malco",
+              "Steve Zahn",
+              "Phil Davis"
+            ],
+            "genres": [
+              "Comedy",
+              "Crime",
+              "Drama"
+            ],
+            "year": 2015,
+            "runtime": 56,
+            "directors": [
+              "Charles McDougall",
+              "Uta Briesewitz"
+            ]
+          }
         },
         {
           "title": "Outsiders: Season 1",
@@ -3000,7 +3314,37 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/267aac59628f187c4790a06b5fa6f0a69affc1887f4a5383724cd7b071ae63f1",
           "seasons": 1,
-          "year": 2016
+          "year": 2016,
+          "imdb": {
+            "id": "tt1399664",
+            "rating": 8,
+            "votes": 144453,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 8,
+              "votes": 25100,
+              "episodes": 6
+            },
+            "cast": [
+              "Tom Hiddleston",
+              "Hugh Laurie",
+              "Olivia Colman",
+              "Alistair Petrie",
+              "Michael Nardone"
+            ],
+            "genres": [
+              "Crime",
+              "Drama",
+              "Mystery"
+            ],
+            "year": 2016,
+            "runtime": 60,
+            "directors": [
+              "Susanne Bier",
+              "Georgi Banks-Davies"
+            ]
+          }
         },
         {
           "title": "Timeless: The Complete Series",
@@ -3315,7 +3659,31 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/fe893ead4a0af5c1edf01ccee77c061bb41b4dd4eef6d1e4c3c7305b6059e803",
           "year": 2015,
-          "runtime": 336
+          "runtime": 336,
+          "imdb": {
+            "id": "tt4145760",
+            "rating": 6.9,
+            "votes": 5057,
+            "manual": true,
+            "cast": [
+              "Christina Ricci",
+              "Clea DuVall",
+              "Cole Hauser",
+              "Dylan Taylor",
+              "John Ralston"
+            ],
+            "genres": [
+              "Biography",
+              "Crime",
+              "Drama"
+            ],
+            "year": 2015,
+            "runtime": 42,
+            "directors": [
+              "Howard Deutch",
+              "Stephen Kay"
+            ]
+          }
         },
         {
           "title": "SuperMansion: Season 1",
@@ -3530,7 +3898,37 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/29589781c0075b0964295c2cbd4b7104cca71229b06a9543af0c53e04eb1023b",
           "seasons": 1,
-          "year": 2014
+          "year": 2014,
+          "imdb": {
+            "id": "tt2515462",
+            "rating": 6.8,
+            "votes": 3535,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7.2,
+              "votes": 867,
+              "episodes": 13
+            },
+            "cast": [
+              "Greg Kinnear",
+              "John Ortiz",
+              "Miranda Otto",
+              "Necar Zadegan",
+              "Bojana Novakovic"
+            ],
+            "genres": [
+              "Comedy",
+              "Crime",
+              "Drama"
+            ],
+            "year": 2014,
+            "runtime": 43,
+            "directors": [
+              "Cherie Nowlan",
+              "Sam Raimi"
+            ]
+          }
         },
         {
           "title": "The Night Shift: The Complete Series",
@@ -3566,7 +3964,30 @@
           "price": "$14.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/9dc71ff5920bc28cdf2402207c23ce95e6b4bd57df23b9f2172774122a92e82f",
-          "year": 2013
+          "year": 2013,
+          "imdb": {
+            "id": "tt2707792",
+            "rating": 6.5,
+            "votes": 6346,
+            "manual": true,
+            "cast": [
+              "Emile Hirsch",
+              "Holliday Grainger",
+              "Sarah Hyland",
+              "Elizabeth Reaser",
+              "Lane Garrison"
+            ],
+            "genres": [
+              "Biography",
+              "Crime",
+              "Drama"
+            ],
+            "year": 2013,
+            "runtime": 87,
+            "directors": [
+              "Bruce Beresford"
+            ]
+          }
         },
         {
           "title": "The Goldbergs: The Complete Series",
@@ -3847,7 +4268,30 @@
           "price": "$9.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/251d71a7cec05e559f7418ded544dcefae5745c76d3b8915ad60dc127c5aae9e",
-          "year": 2012
+          "year": 2012,
+          "imdb": {
+            "id": "tt1985443",
+            "rating": 7.9,
+            "votes": 31496,
+            "manual": true,
+            "cast": [
+              "Kevin Costner",
+              "Bill Paxton",
+              "Matt Barr",
+              "Tom Berenger",
+              "Powers Boothe"
+            ],
+            "genres": [
+              "Drama",
+              "History",
+              "Romance"
+            ],
+            "year": 2012,
+            "runtime": 97,
+            "directors": [
+              "Kevin Reynolds"
+            ]
+          }
         },
         {
           "title": "Last Resort: Season 1",
@@ -5344,7 +5788,29 @@
           "price": "$34.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/b5b6f63a8b1ef6adedc8030caae6d94d622f370f3ecbaf1aba6a58428d8e23f4",
-          "year": 1994
+          "year": 1994,
+          "imdb": {
+            "id": "tt0108894",
+            "rating": 6.9,
+            "votes": 12364,
+            "manual": true,
+            "cast": [
+              "Matthew Fox",
+              "Scott Wolf",
+              "Neve Campbell",
+              "Lacey Chabert",
+              "Paula Devicq"
+            ],
+            "genres": [
+              "Drama"
+            ],
+            "year": 1994,
+            "runtime": 60,
+            "directors": [
+              "Steven Robman",
+              "Ken Topolsky"
+            ]
+          }
         },
         {
           "title": "The Larry Sanders Show: The Complete Series",
@@ -5653,84 +6119,372 @@
           "price": "$29.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/308370af0db8f6c9fe0c16c3b4d48de04d29706e5c81a1d933edbd50eac6ee32",
-          "year": 1986
+          "year": 1986,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 1",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/78e2f7ee9c4129d76ae5723d6485197adbb36aebb09e32cbe7e3576dbf958efb",
-          "year": 1986
+          "year": 1986,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 2",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/075b7ba66d5d78acb053bbc2a76b1ca89035e91a0bd0c7f8ecc1a1cb4eb5ca7f",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 3",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/88dbfd8659aebc887049355e519168bef97f470504595c6ef017202d911b4c5b",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 4",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/048294fba026a3b4a711aba931f0b41e911b508df0f32e246b460448504888a5",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 5",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/819b236ecddb4f073fd0941a0059490a93352c2e5ce5f9cf7ffa0c36d6b68170",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 6",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/ccc08d892d5d48841efa57eff0748306c751a99ff8315315bb9e0c7f570e177f",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 7",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/d2b7d3561958fc87e88dcb8e487ca7197583f7941b94b7318eec53c9f725c644",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 8",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/924dc184d30d6625e2138b1e25c8f84a257c5a669f296c36ae412046a440ed77",
-          "year": 1987
+          "year": 1987,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 9",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/97d0aa2d77aef28e4202ab358eca8bc5a2d9db575ba8b3a67fec727ac54910f5",
-          "year": 1988
+          "year": 1988,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "The Real Ghostbusters: Volume 10",
           "price": "$7.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/76fde9e4309cd622fb9b327d76cf6fde5ce8507f98f26d899311fcd59ab91bd5",
-          "year": 1989
+          "year": 1989,
+          "imdb": {
+            "id": "tt0090506",
+            "rating": 7.6,
+            "votes": 12348,
+            "manual": true,
+            "cast": [
+              "Maurice LaMarche",
+              "Dave Coulier",
+              "Frank Welker",
+              "Arsenio Hall",
+              "Lorenzo Music"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1986,
+            "runtime": 23,
+            "directors": [
+              "Masakazu Higuchi",
+              "Will Meugniot"
+            ]
+          }
         },
         {
           "title": "Fraggle Rock: The Complete Series",
           "price": "$34.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/9475e9c5731a45b6ade12e8aa95c4e8c2ddf00a6ccdb9ce4021c67282ceffa53",
-          "year": 1986
+          "year": 1986,
+          "imdb": {
+            "id": "tt0085017",
+            "rating": 7.9,
+            "votes": 9183,
+            "manual": true,
+            "cast": [
+              "Karen Prell",
+              "Gerard Parkes",
+              "Kathryn Mullen",
+              "Jerry Nelson",
+              "Dave Goelz"
+            ],
+            "genres": [
+              "Adventure",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 1983,
+            "runtime": 30,
+            "directors": [
+              "George Bloomfield",
+              "Terry Maskell"
+            ]
+          }
         },
         {
           "title": "Charlie's Angels (1976): The Complete Series",
@@ -5807,7 +6561,37 @@
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/acec98cd4b591901c4e31859a5c2f4820d3c0b6dd1e66e4f841f5d5d4a83a3c9",
           "seasons": 1,
-          "year": 1979
+          "year": 1979,
+          "imdb": {
+            "id": "tt0073972",
+            "rating": 6.6,
+            "votes": 16430,
+            "manual": true,
+            "season": {
+              "n": 4,
+              "rating": 7.3,
+              "votes": 5810,
+              "episodes": 25
+            },
+            "cast": [
+              "Kate Jackson",
+              "Farrah Fawcett",
+              "Jaclyn Smith",
+              "David Doyle",
+              "Cheryl Ladd"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Crime"
+            ],
+            "year": 1976,
+            "runtime": 60,
+            "directors": [
+              "Dennis Donnelly",
+              "Allen Baron"
+            ]
+          }
         },
         {
           "title": "Charlie's Angels (1976-1981): Season 5",
@@ -5815,7 +6599,37 @@
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/44e8bda63113b68351a0f4831ee762cb5989f6b75572377f847d252591ebee6a",
           "seasons": 1,
-          "year": 1980
+          "year": 1980,
+          "imdb": {
+            "id": "tt0073972",
+            "rating": 6.6,
+            "votes": 16430,
+            "manual": true,
+            "season": {
+              "n": 5,
+              "rating": 6.8,
+              "votes": 3393,
+              "episodes": 16
+            },
+            "cast": [
+              "Kate Jackson",
+              "Farrah Fawcett",
+              "Jaclyn Smith",
+              "David Doyle",
+              "Cheryl Ladd"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Crime"
+            ],
+            "year": 1976,
+            "runtime": 60,
+            "directors": [
+              "Dennis Donnelly",
+              "Allen Baron"
+            ]
+          }
         },
         {
           "title": "Bewitched (1964) (Colorized): The Complete Series",
@@ -7285,7 +8099,30 @@
           "price": "$4.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/UNIVERSAL/3f66fbea721696dcb8f2b9cb2ff04cd5d165a2903fec055b3d91f695a5d8b250",
-          "year": 2023
+          "year": 2023,
+          "imdb": {
+            "id": "tt1001520",
+            "rating": 6.1,
+            "votes": 72694,
+            "manual": true,
+            "cast": [
+              "Corey Hawkins",
+              "Aisling Franciosi",
+              "Liam Cunningham",
+              "David Dastmalchian",
+              "Chris Walley"
+            ],
+            "genres": [
+              "Fantasy",
+              "Horror",
+              "Thriller"
+            ],
+            "year": 2023,
+            "runtime": 119,
+            "directors": [
+              "André Øvredal"
+            ]
+          }
         },
         {
           "title": "Ruby Gillman, Teenage Kraken",
@@ -9037,7 +9874,30 @@
           "price": "$4.99",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/martwork/universal/ad7e6be3-095e-4d40-b93c-79ae99e5a82f-2x3.png",
-          "year": 2004
+          "year": 2004,
+          "imdb": {
+            "id": "tt0892791",
+            "rating": 6.4,
+            "votes": 251632,
+            "manual": true,
+            "cast": [
+              "Mike Myers",
+              "Cameron Diaz",
+              "Eddie Murphy",
+              "Antonio Banderas",
+              "Julie Andrews"
+            ],
+            "genres": [
+              "Adventure",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 2010,
+            "runtime": 93,
+            "directors": [
+              "Mike Mitchell"
+            ]
+          }
         },
         {
           "title": "Shrek",
@@ -9605,7 +10465,30 @@
               "title": "Shrek Forever After",
               "resolution": "UHD",
               "year": 2004,
-              "image": "https://img.fanflix.co/martwork/universal/ad7e6be3-095e-4d40-b93c-79ae99e5a82f-2x3.png"
+              "image": "https://img.fanflix.co/martwork/universal/ad7e6be3-095e-4d40-b93c-79ae99e5a82f-2x3.png",
+              "imdb": {
+                "id": "tt0892791",
+                "rating": 6.4,
+                "votes": 251632,
+                "manual": true,
+                "cast": [
+                  "Mike Myers",
+                  "Cameron Diaz",
+                  "Eddie Murphy",
+                  "Antonio Banderas",
+                  "Julie Andrews"
+                ],
+                "genres": [
+                  "Adventure",
+                  "Animation",
+                  "Comedy"
+                ],
+                "year": 2010,
+                "runtime": 93,
+                "directors": [
+                  "Mike Mitchell"
+                ]
+              }
             },
             {
               "title": "Shrek the Third",
@@ -10368,7 +11251,30 @@
               "title": "Shrek Forever After",
               "resolution": "UHD",
               "year": 2004,
-              "image": "https://img.fanflix.co/martwork/universal/ad7e6be3-095e-4d40-b93c-79ae99e5a82f-2x3.png"
+              "image": "https://img.fanflix.co/martwork/universal/ad7e6be3-095e-4d40-b93c-79ae99e5a82f-2x3.png",
+              "imdb": {
+                "id": "tt0892791",
+                "rating": 6.4,
+                "votes": 251632,
+                "manual": true,
+                "cast": [
+                  "Mike Myers",
+                  "Cameron Diaz",
+                  "Eddie Murphy",
+                  "Antonio Banderas",
+                  "Julie Andrews"
+                ],
+                "genres": [
+                  "Adventure",
+                  "Animation",
+                  "Comedy"
+                ],
+                "year": 2010,
+                "runtime": 93,
+                "directors": [
+                  "Mike Mitchell"
+                ]
+              }
             },
             {
               "title": "Shrek the Third",
@@ -12598,7 +13504,28 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2024
+          "year": 2024,
+          "imdb": {
+            "id": "tt28658276",
+            "rating": 6,
+            "votes": 5059,
+            "manual": true,
+            "cast": [
+              "Siena Agudong",
+              "Austin Zajur",
+              "Kate Micucci",
+              "Ming Chen",
+              "Method Man"
+            ],
+            "genres": [
+              "Comedy"
+            ],
+            "year": 2024,
+            "runtime": 87,
+            "directors": [
+              "Kevin Smith"
+            ]
+          }
         },
         {
           "title": "Kill (2024)",
@@ -14767,7 +15694,30 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 2010
+          "year": 2010,
+          "imdb": {
+            "id": "tt1073105",
+            "rating": 5.7,
+            "votes": 57401,
+            "manual": true,
+            "cast": [
+              "Michael J. Reynolds",
+              "Shauna Macdonald",
+              "Jessika Williams",
+              "Douglas Hodge",
+              "Josh Dallas"
+            ],
+            "genres": [
+              "Adventure",
+              "Horror",
+              "Thriller"
+            ],
+            "year": 2009,
+            "runtime": 94,
+            "directors": [
+              "Jon Harris"
+            ]
+          }
         },
         {
           "title": "Winters Bone",
@@ -15876,7 +16826,30 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2001
+          "year": 2001,
+          "imdb": {
+            "id": "tt0185708",
+            "rating": 5.8,
+            "votes": 3119,
+            "manual": true,
+            "cast": [
+              "Kane Kosugi",
+              "Kazuya Ichijô",
+              "Yumi Touma",
+              "Tomomichi Nishimura",
+              "Ai Orikasa"
+            ],
+            "genres": [
+              "Action",
+              "Animation",
+              "Fantasy"
+            ],
+            "year": 1999,
+            "runtime": 94,
+            "directors": [
+              "Shigeyasu Yamauchi"
+            ]
+          }
         },
         {
           "title": "Made",
@@ -16044,7 +17017,30 @@
           "platforms": [
             "Movies Anywhere"
           ],
-          "year": 1999
+          "year": 1999,
+          "imdb": {
+            "id": "tt0185937",
+            "rating": 6.5,
+            "votes": 326708,
+            "manual": true,
+            "cast": [
+              "Heather Donahue",
+              "Michael C. Williams",
+              "Joshua Leonard",
+              "Bob Griffin",
+              "Jim King"
+            ],
+            "genres": [
+              "Horror",
+              "Mystery"
+            ],
+            "year": 1999,
+            "runtime": 81,
+            "directors": [
+              "Daniel Myrick",
+              "Eduardo Sánchez"
+            ]
+          }
         },
         {
           "title": "The Ninth Gate",
@@ -25803,7 +26799,37 @@
             "Fandango at Home"
           ],
           "year": 2025,
-          "runtime": 1
+          "runtime": 1,
+          "imdb": {
+            "id": "tt33484460",
+            "rating": 6.8,
+            "votes": 8001,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 7.7,
+              "votes": 5802,
+              "episodes": 10
+            },
+            "cast": [
+              "Lydia Peckham",
+              "Marcus Fraser",
+              "Henry Rowley",
+              "Erica Ford",
+              "Angus Castle-Doughty"
+            ],
+            "genres": [
+              "Action",
+              "Adventure",
+              "Drama"
+            ],
+            "year": 2025,
+            "runtime": 60,
+            "directors": [
+              "Jonathan English",
+              "Orsi Nagypal"
+            ]
+          }
         },
         {
           "title": "Step Up: High Water: The Complete Series",
@@ -25975,7 +27001,31 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2013
+          "year": 2013,
+          "imdb": {
+            "id": "tt2372162",
+            "rating": 8,
+            "votes": 339743,
+            "manual": true,
+            "cast": [
+              "Taylor Schilling",
+              "Danielle Brooks",
+              "Taryn Manning",
+              "Emma Myles",
+              "Kate Mulgrew"
+            ],
+            "genres": [
+              "Comedy",
+              "Crime",
+              "Drama"
+            ],
+            "year": 2013,
+            "runtime": 60,
+            "directors": [
+              "Andrew McCarthy",
+              "Phil Abraham"
+            ]
+          }
         },
         {
           "title": "Party Down: The Complete Series",
@@ -26111,7 +27161,31 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2021
+          "year": 2021,
+          "imdb": {
+            "id": "tt13107070",
+            "rating": 6.9,
+            "votes": 4607,
+            "manual": true,
+            "cast": [
+              "Rakie Ayola",
+              "Laura Fraser",
+              "Julie Hesmondhalgh",
+              "Eiry Thomas",
+              "Heledd Gwynn"
+            ],
+            "genres": [
+              "Drama",
+              "Mystery",
+              "Thriller"
+            ],
+            "year": 2021,
+            "runtime": 60,
+            "directors": [
+              "Rebecca Johnson",
+              "Eric Styles"
+            ]
+          }
         },
         {
           "title": "Love Life: The Complete Series",
@@ -26317,7 +27391,28 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2016
+          "year": 2016,
+          "imdb": {
+            "id": "tt5507340",
+            "rating": 5.4,
+            "votes": 616,
+            "manual": true,
+            "cast": [
+              "Alexandra Wentworth",
+              "Lauren Blumenfeld",
+              "Don Fanelli",
+              "Cherie Corinne Rice",
+              "Jeff Hiller"
+            ],
+            "genres": [
+              "Comedy"
+            ],
+            "year": 2016,
+            "runtime": 21,
+            "directors": [
+              "Johnny Milord"
+            ]
+          }
         },
         {
           "title": "Nurse Jackie: Complete Series (S1-7)",
@@ -26327,7 +27422,30 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2016
+          "year": 2016,
+          "imdb": {
+            "id": "tt1190689",
+            "rating": 7.9,
+            "votes": 34133,
+            "manual": true,
+            "cast": [
+              "Edie Falco",
+              "Merritt Wever",
+              "Paul Schulze",
+              "Dominic Fumusa",
+              "Ruby Jerins"
+            ],
+            "genres": [
+              "Comedy",
+              "Drama"
+            ],
+            "year": 2009,
+            "runtime": 30,
+            "directors": [
+              "Paul Feig",
+              "Jesse Peretz"
+            ]
+          }
         },
         {
           "title": "Hell On Wheels: The Complete Series",
@@ -26532,7 +27650,25 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2014
+          "year": 2014,
+          "imdb": {
+            "id": "tt26472829",
+            "rating": 7,
+            "votes": 41,
+            "manual": true,
+            "cast": [
+              "Rob Naughton",
+              "Marissa Mclaughlin",
+              "Tyler Mclaughlin",
+              "Sandro Maniaci",
+              "Jarrett Przybyszewski"
+            ],
+            "genres": [
+              "Reality-TV"
+            ],
+            "year": 2022,
+            "runtime": 44
+          }
         },
         {
           "title": "Weeds: The Complete Series",
@@ -26606,7 +27742,29 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2008
+          "year": 2008,
+          "imdb": {
+            "id": "tt1178636",
+            "rating": 6.8,
+            "votes": 1804,
+            "manual": true,
+            "cast": [
+              "Dennis Hopper",
+              "Moran Atias",
+              "Ross McCall",
+              "Jocko Sims",
+              "Dana Ashbrook"
+            ],
+            "genres": [
+              "Drama"
+            ],
+            "year": 2008,
+            "runtime": 60,
+            "directors": [
+              "Stefan Schwartz",
+              "Sanford Bookstaver"
+            ]
+          }
         },
         {
           "title": "Little House on the Prairie: The Complete Series",
@@ -26616,7 +27774,31 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 1974
+          "year": 1974,
+          "imdb": {
+            "id": "tt0071007",
+            "rating": 7.6,
+            "votes": 31547,
+            "manual": true,
+            "cast": [
+              "Melissa Gilbert",
+              "Michael Landon",
+              "Karen Grassle",
+              "Rachel Lindsay Greenbush",
+              "Sidney Greenbush"
+            ],
+            "genres": [
+              "Drama",
+              "Family",
+              "Romance"
+            ],
+            "year": 1974,
+            "runtime": 60,
+            "directors": [
+              "Michael Landon",
+              "William F. Claxton"
+            ]
+          }
         },
         {
           "title": "The Avengers: Emma Peel Collection",
@@ -26626,7 +27808,31 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 1965
+          "year": 1965,
+          "imdb": {
+            "id": "tt0054518",
+            "rating": 8.3,
+            "votes": 10028,
+            "manual": true,
+            "cast": [
+              "Patrick Macnee",
+              "Diana Rigg",
+              "Honor Blackman",
+              "Linda Thorson",
+              "Ian Hendry"
+            ],
+            "genres": [
+              "Action",
+              "Comedy",
+              "Crime"
+            ],
+            "year": 1961,
+            "runtime": 50,
+            "directors": [
+              "Don Leaver",
+              "Peter Hammond"
+            ]
+          }
         }
       ]
     },
