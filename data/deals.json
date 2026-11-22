@@ -3038,7 +3038,37 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/SPHE/478ebd9b6cdb6c71ea68310141c153bca183abcf9574bba00f6767f65c59c666",
           "seasons": 1,
-          "year": 2016
+          "year": 2016,
+          "imdb": {
+            "id": "tt4522400",
+            "rating": 7.8,
+            "votes": 5904,
+            "manual": true,
+            "season": {
+              "n": 1,
+              "rating": 8.1,
+              "votes": 2678,
+              "episodes": 10
+            },
+            "cast": [
+              "Jurnee Smollett",
+              "Aldis Hodge",
+              "Jessica De Gouw",
+              "Alano Miller",
+              "Christopher Meloni"
+            ],
+            "genres": [
+              "Adventure",
+              "Drama",
+              "History"
+            ],
+            "year": 2016,
+            "runtime": 43,
+            "directors": [
+              "Anthony Hemingway",
+              "Kate Woods"
+            ]
+          }
         },
         {
           "title": "Bloodline: The Complete Series",
@@ -6003,7 +6033,24 @@
           "price": "$34.99",
           "resolution": "SD",
           "image": "https://img.fanflix.co/SPHE/83f487127755847c770f29632cb1395cd429fa47285d24b5b3284aecf6e02368",
-          "year": 1934
+          "year": 1934,
+          "imdb": {
+            "id": "tt31065735",
+            "rating": 6.6,
+            "votes": 41,
+            "manual": true,
+            "cast": [
+              "Charles Dewandeler"
+            ],
+            "genres": [
+              "Comedy"
+            ],
+            "year": 2024,
+            "runtime": 66,
+            "directors": [
+              "Charles Dewandeler"
+            ]
+          }
         }
       ]
     },
@@ -26355,7 +26402,29 @@
           "platforms": [
             "Fandango at Home"
           ],
-          "year": 2015
+          "year": 2015,
+          "imdb": {
+            "id": "tt3597912",
+            "rating": 7.4,
+            "votes": 15100,
+            "manual": true,
+            "cast": [
+              "Joan Collins",
+              "William Moseley",
+              "Alexandra Park",
+              "Jake Maskall",
+              "Tom Austen"
+            ],
+            "genres": [
+              "Drama"
+            ],
+            "year": 2015,
+            "runtime": 42,
+            "directors": [
+              "Mark Schwahn",
+              "James Lafferty"
+            ]
+          }
         },
         {
           "title": "Bitten: The Complete Series",

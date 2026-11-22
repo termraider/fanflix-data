@@ -20362,6 +20362,11 @@
    "votes": 98507,
    "checked": "2026-11-18"
   },
+  "tt31065735": {
+   "rating": 6.6,
+   "votes": 41,
+   "checked": "2026-11-21"
+  },
   "tt31710822": {
    "rating": 7.1,
    "votes": 75634,
@@ -20392,6 +20397,11 @@
    "votes": 756654,
    "checked": "2026-11-20"
   },
+  "tt3597912": {
+   "rating": 7.4,
+   "votes": 15100,
+   "checked": "2026-11-21"
+  },
   "tt3699508": {
    "rating": 5.4,
    "votes": 7206,
@@ -20421,6 +20431,11 @@
    "rating": 6.6,
    "votes": 3235,
    "checked": "2026-11-20"
+  },
+  "tt4522400": {
+   "rating": 7.8,
+   "votes": 5904,
+   "checked": "2026-11-21"
   },
   "tt4530884": {
    "rating": 5.1,
@@ -23296,6 +23311,21 @@
      "rating": 7.692,
      "votes": 46853,
      "episodes": 14
+    }
+   }
+  },
+  "tt4522400": {
+   "checked": "2026-11-21",
+   "s": {
+    "1": {
+     "rating": 8.138,
+     "votes": 2678,
+     "episodes": 10
+    },
+    "2": {
+     "rating": 7,
+     "votes": 1426,
+     "episodes": 10
     }
    }
   },
@@ -57674,6 +57704,15 @@
     "Jon M. Chu"
    ]
   },
+  "tt31065735": {
+   "checked": "2026-11-21",
+   "names": [
+    "Charles Dewandeler"
+   ],
+   "dir": [
+    "Charles Dewandeler"
+   ]
+  },
   "tt3107288": {
    "checked": "2026-11-20",
    "names": [
@@ -59316,6 +59355,20 @@
     "Adam Weissman"
    ]
   },
+  "tt3597912": {
+   "checked": "2026-11-21",
+   "names": [
+    "Joan Collins",
+    "William Moseley",
+    "Alexandra Park",
+    "Jake Maskall",
+    "Tom Austen"
+   ],
+   "dir": [
+    "Mark Schwahn",
+    "James Lafferty"
+   ]
+  },
   "tt35995947": {
    "checked": "2026-11-19",
    "names": [
@@ -60437,6 +60490,20 @@
    ],
    "dir": [
     "Robert Harmon"
+   ]
+  },
+  "tt4522400": {
+   "checked": "2026-11-21",
+   "names": [
+    "Jurnee Smollett",
+    "Aldis Hodge",
+    "Jessica De Gouw",
+    "Alano Miller",
+    "Christopher Meloni"
+   ],
+   "dir": [
+    "Anthony Hemingway",
+    "Kate Woods"
    ]
   },
   "tt4530422": {
@@ -89365,6 +89432,14 @@
    "y": 2018,
    "rt": 120
   },
+  "tt31065735": {
+   "checked": "2026-11-21",
+   "g": [
+    "Comedy"
+   ],
+   "y": 2024,
+   "rt": 66
+  },
   "tt3107288": {
    "checked": "2026-11-20",
    "g": [
@@ -90528,6 +90603,14 @@
    "y": 2014,
    "rt": 30
   },
+  "tt3597912": {
+   "checked": "2026-11-21",
+   "g": [
+    "Drama"
+   ],
+   "y": 2015,
+   "rt": 42
+  },
   "tt35995947": {
    "checked": "2026-11-19",
    "g": [
@@ -91337,6 +91420,16 @@
    ],
    "y": 2015,
    "rt": 86
+  },
+  "tt4522400": {
+   "checked": "2026-11-21",
+   "g": [
+    "Adventure",
+    "Drama",
+    "History"
+   ],
+   "y": 2016,
+   "rt": 43
   },
   "tt4530422": {
    "checked": "2026-11-18",
