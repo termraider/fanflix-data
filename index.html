@@ -565,7 +565,7 @@ const portText = key => portList(key).map(([s, n]) => `not porting to ${PORT_SIT
 function portSection(t) {
   const list = portList(t.key);
   const box = h('div', { class: 'portpick', hidden: true }, h('p', { class: 'sub', style: 'margin:0 0 8px' }, 'Bought it and it didn’t show up where it should? Pick where it didn’t port. This opens a message to the r/fanflixco mods with everything filled in: just tap send. SplitsBot counts it (once per person).'),
-    h('div', { class: 'chips', style: 'margin:0' }, Object.entries(PORT_SITES).map(([k, name]) => h('a', { class: 'chip', target: '_blank', rel: 'noopener', href: 'https://www.reddit.com/message/compose?' + new URLSearchParams({ to: 'r/fanflixco', subject: 'Port report', message: `!noport ${t.key} ${k}\n\n${t.title}${t.year ? ' (' + t.year + ')' : ''} doesn’t port to ${name}.\n\n(Sent from splitsbot.com. Just tap send.)` }).toString() }, name))));
+    h('div', { class: 'chips', style: 'margin:0;flex-wrap:wrap;overflow:visible;justify-content:flex-start' }, Object.entries(PORT_SITES).map(([k, name]) => h('a', { class: 'chip', target: '_blank', rel: 'noopener', href: 'https://www.reddit.com/message/compose?' + new URLSearchParams({ to: 'r/fanflixco', subject: 'Port report', message: `!noport ${t.key} ${k}\n\n${t.title}${t.year ? ' (' + t.year + ')' : ''} doesn’t port to ${name}.\n\n(Sent from splitsbot.com. Just tap send.)` }).toString() }, name))));
   return h('div', { class: 'ports' },
     list.length ? h('p', { class: 'portwarn' }, '⚠ reported as ', portText(t.key)) : '',
     h('button', { class: 'linkbtn', type: 'button', onclick: () => { box.hidden = !box.hidden; } }, list.length ? 'report it too' : '⚠ report a porting problem'), box);
