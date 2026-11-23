@@ -135,7 +135,7 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .ccard .cimg{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:10px;display:block}
 .ccard h2.ccode{font-size:40px;margin:10px 0 6px}
 .cline{margin:14px 0 0;font-size:14px}
-.cprice{font-weight:400;color:var(--gold);white-space:nowrap}
+.cprice{display:block;margin-left:auto;font:inherit;font-size:12px;font-weight:400;color:var(--gold);white-space:nowrap;background:none;border:0;padding:0;cursor:help;text-decoration:underline dotted}
 .bslots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .bslot h3{margin:4px 0 6px;font-size:18px;overflow-wrap:anywhere}
 .blist{margin:8px 0 0;padding-left:18px;text-align:left;max-height:260px;overflow:auto;font-size:13px}
@@ -777,10 +777,17 @@ function copyBtn(code, cls = 'btn primary') {
     b.textContent = `✓ copied ${code}`; setTimeout(() => { b.textContent = `copy code ${code}`; }, 1800); } }, `copy code ${code}`);
   return b;
 }
+// "$2.70 w/ coupon" under a price; hover (or tap on a phone) shows the code
+function couponPrice(p) {
+  const c = liveCoupon(); if (!c || p == null) return null;
+  const tip = `with coupon code ${c.code} (${c.pct}% off), if the deal is eligible`, txt = `${money(withCoupon(p, c))} w/ coupon`;
+  const el = h('button', { type: 'button', class: 'sub cprice', title: tip, 'aria-label': `${money(withCoupon(p, c))} ${tip}`, onclick: e => { e.stopPropagation(); el.textContent = el.textContent === txt ? `code ${c.code}` : txt; } }, txt);
+  return el;
+}
 // one line for deal pages: "🏷️ With GOBBLE10 (10% off): $3.59 per title, if the deal is eligible"
 function couponLine(per, label = 'per title') {
   const c = liveCoupon(); if (!c || per == null) return null;
-  return h('p', { class: 'cline' }, '🏷️ With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are one use, so save it for your biggest order.'));
+  return h('p', { class: 'cline' }, '🏷️ With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are one-time use, so save it for your biggest order.'));
 }
 
 function viewCoupons() {
@@ -792,7 +799,7 @@ function viewCoupons() {
       h('h2', { class: 'ccode' }, c.code), h('p', { class: 'big', style: 'margin:0 0 6px' }, `${c.pct}% off your FanFlix order`),
       c.headline ? h('p', { class: 'sub', style: 'margin:0 0 6px' }, c.headline) : '',
       h('p', { class: 'sub', style: 'margin:0 0 6px' }, `Ends ${endText(c)}.`), c.note ? h('p', { class: 'sub warn', style: 'margin:0 0 6px' }, c.note) : '',
-      h('p', { class: 'sub', style: 'margin:0 0 14px' }, 'Coupons are one use, so save it for your biggest order. Deal pages show the price with the code.'),
+      h('p', { class: 'sub', style: 'margin:0 0 14px' }, 'Coupons are one-time use, so save it for your biggest order. Deal pages show the price with the code.'),
       h('div', { class: 'btns', style: 'max-width:none' }, copyBtn(c.code), h('a', { class: 'btn', href: 'https://fanflix.co/' }, 'open FanFlix'))));
   app.replaceChildren(
     ...pageHead('splitsbot@splitsbot.com:~$ ls ~/coupons', 'Coupons.', 'FanFlix coupon codes, as posted on r/fanflixco. Every code we’ve seen is kept here.'),
@@ -841,7 +848,7 @@ function carousel() {
       h('div', { class: 'stext' },
         h('span', { class: 'badge b-gold' }, `🏷️ coupon · ${leftText(c)}`),
         h(H, null, `${c.pct}% off`, h('br'), h('span', { class: 'ccode' }, c.code)),
-        h('p', null, `${c.headline ? c.headline + ' ' : ''}Use it at checkout on fanflix.co through ${endText(c)}.${c.note ? ' ' + c.note + '.' : ''} One use, so save it for your biggest order.`.replace('..', '.')),
+        h('p', null, `${c.headline ? c.headline + ' ' : ''}Use it at checkout on fanflix.co through ${endText(c)}.${c.note ? ' ' + c.note + '.' : ''} Coupons are one-time use, so save it for your biggest order.`.replace('..', '.')),
         h('div', { class: 'btns' }, copyBtn(c.code), h('a', { class: 'btn', href: '#/coupons' }, 'coupon history'))),
       h('div', { class: 'simg' }, h('a', { href: '#/coupons', tabindex: '-1', 'aria-hidden': 'true' }, img(BASE + c.image, '', 'bimg')))); }
     const [l1, l2] = splitName(p.d);
@@ -1036,7 +1043,7 @@ function viewDeal(slug, q) {
           r.platforms?.length ? h('div', { class: 'sub' + (canUseRow(r) ? '' : ' warn') }, platOnly(r) + (canUseRow(r) ? '' : ' · not on your sites')) : null,
           portList(r.key).length ? h('div', { class: 'sub warn' }, '⚠ ' + portText(r.key)) : null))),
       h('td', null, resLabel(r.resolution)),
-      h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price), d.live && liveCoupon() && r.price != null ? h('div', { class: 'sub cprice', title: `with ${liveCoupon().code}, if the deal is eligible` }, `${money(withCoupon(r.price, liveCoupon()))} w/ code`) : null),
+      h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price), d.live && liveCoupon() && r.price != null ? couponPrice(r.price) : null),
       h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
       h('td', null, r.v.text ? h('span', { class: 'pill ' + r.v.cls }, r.v.text) : ''),
       h('td', { class: 'stc' }, h('div', { class: 'acts' }, niBtn(r.key, r.title, () => setTimeout(run, 250)), ownBtn(r.key, r.title, () => run()), starBtn(r.key, r.title))))));
