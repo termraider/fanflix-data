@@ -127,6 +127,13 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .dnav .gap{flex:1 1 0}
 .disc{margin:12px 0 0;font-size:12px;color:var(--dim)}
 .wsec{font-size:22px;margin:30px 0 12px}
+.ccode{font-family:inherit;letter-spacing:.04em;color:var(--gold)}
+.ccode-sm{letter-spacing:.04em}
+.ccard{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:24px;align-items:center;margin-bottom:16px}
+.ccard .cimg{width:100%;border-radius:10px;display:block}
+.ccard h2.ccode{font-size:40px;margin:10px 0 6px}
+.cline{margin:14px 0 0;font-size:14px}
+.cprice{font-weight:400;color:var(--gold);white-space:nowrap}
 .bslots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .bslot h3{margin:4px 0 6px;font-size:18px;overflow-wrap:anywhere}
 .blist{margin:8px 0 0;padding-left:18px;text-align:left;max-height:260px;overflow:auto;font-size:13px}
@@ -392,6 +399,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
   .sec-head h2{font-size:26px}
   .filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
   .bslots{grid-template-columns:1fr}
+  .ccard{grid-template-columns:1fr}
   .filters>.fld.wide,.filters>.fld.range{grid-column:1/-1}
   .selwrap{min-width:0}
   .chips{flex-wrap:nowrap;overflow-x:auto;margin-left:-14px;margin-right:-14px;padding:0 14px 4px}
@@ -489,7 +497,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 <footer>
 <div class="wrap foot">
 <span>I am fully operational. you may split now<span class="cur">_</span></span>
-<nav aria-label="Footer"><a href="#/about">about</a><a href="#/settings">settings</a><a href="TERMS.md">terms</a><a href="PRIVACY.md">privacy</a><a href="https://www.reddit.com/r/fanflixco/">r/fanflixco</a></nav>
+<nav aria-label="Footer"><a href="#/about">about</a><a href="#/coupons">coupons</a><a href="#/settings">settings</a><a href="TERMS.md">terms</a><a href="PRIVACY.md">privacy</a><a href="https://www.reddit.com/r/fanflixco/">r/fanflixco</a></nav>
 <span>Double-check that titles are available in your library of choice before you buy on fanflix.co.</span>
 <span>Prices as listed when SplitsBot checked · history since Nov 8, 2026 · not affiliated with FanFlix or Reddit</span>
 </div>
@@ -650,8 +658,9 @@ function prepare(archive, endsData, postedHidden) {
 async function load() {
   if (window.__ARCHIVE__) return prepare(window.__ARCHIVE__, window.__ENDS__);
   const get = p => fetch(BASE + p, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
-  const [archive, endsData, postedHidden] = await Promise.all([get('data/archive.json'), get('data/deal-ends.json'), get('data/posted-hidden.json')]);
+  const [archive, endsData, postedHidden, couponHist, couponNow] = await Promise.all([get('data/archive.json'), get('data/deal-ends.json'), get('data/posted-hidden.json'), get('data/coupon-history.json'), get('data/coupons.json')]);
   if (!archive) throw new Error('no data');
+  try { setCoupons(couponHist?.coupons?.length ? couponHist : couponNow); } catch {}
   prepare(archive, endsData, postedHidden);
 }
 
@@ -733,20 +742,84 @@ function verdictCounts(d) {
   verdictCache.set(d.id, c); return c;
 }
 
+// ---------- coupons (from HQ: data/coupon-history.json, every code ever saved; coupons.json as a fallback) ----------
+let COUPONS = [];
+const etNow = () => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date()).map(x => [x.type, x.value])); return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute}`; };
+// "2026-11-30" (ends 11:59 PM ET) or "2026-11-30 5pm" / "2026-11-30 17:00" → "2026-11-30 17:00"
+function couponEnd(until) {
+  const m = String(until || '').match(/^(\d{4}-\d{2}-\d{2})(?:[ T]+(\d{1,2})(?::(\d{2}))?\s*(am|pm)?)?/i);
+  if (!m) return null;
+  if (!m[2]) return m[1] + ' 23:59';
+  let hr = +m[2]; const ap = (m[4] || '').toLowerCase(); if (ap === 'pm' && hr < 12) hr += 12; if (ap === 'am' && hr === 12) hr = 0;
+  return `${m[1]} ${String(hr).padStart(2, '0')}:${m[3] || '00'}`;
+}
+function setCoupons(raw) {
+  COUPONS = (raw?.coupons || []).filter(c => c && c.code && c.pct > 0 && c.pct < 100).map(c => {
+    const end = couponEnd(c.until), start = (c.firstAdded || c.added || '').slice(0, 10);
+    return { code: String(c.code).toUpperCase(), pct: +c.pct, until: c.until, end, start, headline: c.headline || '', note: c.note || '', image: `images/coupons/${String(c.code).toUpperCase()}.png` };
+  }).filter(c => c.end).sort((a, b) => b.end.localeCompare(a.end));
+}
+const couponLive = c => c.end >= etNow();
+const liveCoupons = () => COUPONS.filter(couponLive);
+const liveCoupon = () => liveCoupons().sort((a, b) => b.pct - a.pct)[0] || null;
+const withCoupon = (p, c) => p == null || !c ? null : Math.round(p * (100 - c.pct)) / 100;
+const daysLeft = c => { const [d] = c.end.split(' '), today = etNow().slice(0, 10); return Math.round((Date.parse(d) - Date.parse(today)) / 864e5); };
+const leftText = c => { const n = daysLeft(c); return n <= 0 ? 'ends today' : n === 1 ? 'ends tomorrow' : `${n} days left`; };
+const endText = c => { const [d, t] = c.end.split(' '); return fmtDate(d) + (t !== '23:59' ? ` at ${(+t.slice(0, 2) % 12) || 12}${t.slice(3) !== '00' ? ':' + t.slice(3) : ''} ${+t.slice(0, 2) >= 12 ? 'PM' : 'AM'} ET` : ''); };
+function copyBtn(code, cls = 'btn primary') {
+  const b = h('button', { class: cls, type: 'button', onclick: async () => {
+    try { await navigator.clipboard.writeText(code); } catch { const t = h('textarea', { style: 'position:fixed;opacity:0' }); t.value = code; document.body.append(t); t.select(); try { document.execCommand('copy'); } catch {} t.remove(); }
+    b.textContent = `✓ copied ${code}`; setTimeout(() => { b.textContent = `copy code ${code}`; }, 1800); } }, `copy code ${code}`);
+  return b;
+}
+// one line for deal pages: "🏷️ With GOBBLE10 (10% off): $3.59 per title, if the deal is eligible"
+function couponLine(per, label = 'per title') {
+  const c = liveCoupon(); if (!c || per == null) return null;
+  return h('p', { class: 'cline' }, '🏷️ With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are usually one use, so save it for your biggest order.'));
+}
+
+function viewCoupons() {
+  document.title = 'Coupons · SplitsBot';
+  const live = COUPONS.filter(couponLive), past = COUPONS.filter(c => !couponLive(c));
+  const card = c => h('div', { class: 'card ccard' },
+    h('img', { class: 'cimg', src: BASE + c.image, alt: `${c.code}: ${c.pct}% off at FanFlix`, loading: 'lazy', onerror: e => e.target.remove() }),
+    h('div', null, h('span', { class: 'badge b-green' }, `live · ${leftText(c)}`),
+      h('h2', { class: 'ccode' }, c.code), h('p', { class: 'big', style: 'margin:0 0 6px' }, `${c.pct}% off your FanFlix order`),
+      c.headline ? h('p', { class: 'sub', style: 'margin:0 0 6px' }, c.headline) : '',
+      h('p', { class: 'sub', style: 'margin:0 0 6px' }, `Ends ${endText(c)}.`), c.note ? h('p', { class: 'sub warn', style: 'margin:0 0 6px' }, c.note) : '',
+      h('p', { class: 'sub', style: 'margin:0 0 14px' }, 'Coupons are usually one use, so save it for your biggest order. Deal pages show the price with the code.'),
+      h('div', { class: 'btns', style: 'max-width:none' }, copyBtn(c.code), h('a', { class: 'btn', href: 'https://fanflix.co/' }, 'open FanFlix'))));
+  app.replaceChildren(
+    ...pageHead('splitsbot@splitsbot.com:~$ ls ~/coupons', 'Coupons.', 'FanFlix coupon codes, as posted on r/fanflixco. Every code we’ve seen is kept here.'),
+    h('h2', { class: 'wsec' }, `Live now (${live.length})`),
+    ...(live.length ? live.map(card) : [h('p', { class: 'empty' }, 'No coupon right now. New ones get posted on r/fanflixco and show up here.')]),
+    h('h2', { class: 'wsec' }, `Past coupons (${past.length})`),
+    past.length ? h('div', { class: 'tablebox' }, h('table', null,
+      h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'code'), h('th', { scope: 'col', class: 'num' }, 'off'), h('th', { scope: 'col' }, 'ran'), h('th', { scope: 'col' }, 'note'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'status')))),
+      h('tbody', { class: 'cards' }, past.map(c => h('tr', { class: 'ended' },
+        h('td', null, h('b', { class: 'ccode-sm' }, c.code), c.headline ? h('div', { class: 'sub' }, c.headline) : ''),
+        h('td', { class: 'num', 'data-l': 'off' }, `${c.pct}%`),
+        h('td', { 'data-l': 'ran' }, `${c.start ? shortDate(c.start) : '?'} → ${shortDate(c.end.slice(0, 10))}`),
+        h('td', { 'data-l': 'note' }, c.note || h('span', { class: 'sub' }, '—')),
+        h('td', null, h('span', { class: 'badge b-ended' }, 'ended'))))))) : h('p', { class: 'empty' }, 'None yet.'));
+}
+
 // ---------- Home: carousel + Now showing ----------
 let carouselTimer = null;
 function carousel() {
   const live = deals.filter(d => d.live);
-  if (!live.length) return null;
+  const coupon = liveCoupon();
+  if (!live.length && !coupon) return null;
   const newestDate = live.reduce((m, d) => d.firstSeen > m ? d.firstSeen : m, '');
   const byNew = [...live].sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || b.titleCount - a.titleCount);
   const picks = [];
   const add = (d, badge, cls, extra) => { if (d && !picks.some(p => p.d === d)) picks.push({ d, badge, cls, extra }); };
-  add(byNew.find(d => !isFlash(d)) || byNew[0], newestDate === byNew[0].firstSeen ? 'new today' : 'newest deal', 'b-green');
+  if (byNew.length) add(byNew.find(d => !isFlash(d)) || byNew[0], newestDate === byNew[0].firstSeen ? 'new today' : 'newest deal', 'b-green');
   add(live.find(isFlash), 'flash sale · 1 day', 'b-red');
   const best = [...live].sort((a, b) => verdictCounts(b).low - verdictCounts(a).low)[0];
   if (best && verdictCounts(best).low > 0) add(best, "lowest we've seen", 'b-gold', `${verdictCounts(best).low} titles at the lowest price we've seen.`);
   for (const d of byNew) { if (picks.length >= 3) break; add(d, 'live now', 'b-green'); }
+  if (coupon) picks.unshift({ coupon });
   let i = 0;
   const desc = (d, extra) => {
     const where = (d.platforms || []).join(' & ') || 'FanFlix';
@@ -758,8 +831,15 @@ function carousel() {
     return extra ? s + ' ' + extra : s;
   };
   const slides = picks.map((p, n) => {
-    const [l1, l2] = splitName(p.d);
     const H = n === 0 ? 'h1' : 'h2';
+    if (p.coupon) { const c = p.coupon; return h('div', { class: 'slide', role: 'group', 'aria-roledescription': 'slide', 'aria-label': `${n + 1} of ${picks.length}`, hidden: n !== 0 },
+      h('div', { class: 'stext' },
+        h('span', { class: 'badge b-gold' }, `🏷️ coupon · ${leftText(c)}`),
+        h(H, null, `${c.pct}% off`, h('br'), h('span', { class: 'ccode' }, c.code)),
+        h('p', null, `${c.headline ? c.headline + ' ' : ''}Use it at checkout on fanflix.co through ${endText(c)}.${c.note ? ' ' + c.note + '.' : ''} Usually one use, so save it for your biggest order.`.replace('..', '.')),
+        h('div', { class: 'btns' }, copyBtn(c.code), h('a', { class: 'btn', href: '#/coupons' }, 'coupon history'))),
+      h('div', { class: 'simg' }, h('a', { href: '#/coupons', tabindex: '-1', 'aria-hidden': 'true' }, img(BASE + c.image, '', 'bimg')))); }
+    const [l1, l2] = splitName(p.d);
     return h('div', { class: 'slide', role: 'group', 'aria-roledescription': 'slide', 'aria-label': `${n + 1} of ${picks.length}`, hidden: n !== 0 },
       h('div', { class: 'stext' },
         h('span', { class: 'badge ' + p.cls }, p.badge),
@@ -771,7 +851,7 @@ function carousel() {
       h('div', { class: 'simg' }, h('a', { href: dealHref(p.d), tabindex: '-1', 'aria-hidden': 'true' }, img(BASE + p.d.bannerFile, '', 'bimg'))));
   });
   const pos = h('span', null, `1 / ${picks.length}`);
-  const dots = picks.map((p, n) => h('button', { class: 'dot', type: 'button', 'aria-label': `Show featured deal ${n + 1}`, 'aria-current': n === 0 ? 'true' : 'false', onclick: () => { show(n); restart(); } }));
+  const dots = picks.map((p, n) => h('button', { class: 'dot', type: 'button', 'aria-label': p.coupon ? 'Show the coupon' : `Show featured deal ${n + 1}`, 'aria-current': n === 0 ? 'true' : 'false', onclick: () => { show(n); restart(); } }));
   const show = n => {
     i = (n + picks.length) % picks.length;
     slides.forEach((s, k) => { s.hidden = k !== i; });
@@ -951,7 +1031,7 @@ function viewDeal(slug, q) {
           r.platforms?.length ? h('div', { class: 'sub' + (canUseRow(r) ? '' : ' warn') }, platOnly(r) + (canUseRow(r) ? '' : ' · not on your sites')) : null,
           portList(r.key).length ? h('div', { class: 'sub warn' }, '⚠ ' + portText(r.key)) : null))),
       h('td', null, resLabel(r.resolution)),
-      h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price)),
+      h('td', { class: 'num', style: 'font-weight:700;color:var(--hi)' }, money(r.price), d.live && liveCoupon() && r.price != null ? h('div', { class: 'sub cprice', title: `with ${liveCoupon().code}, if the deal is eligible` }, `${money(withCoupon(r.price, liveCoupon()))} w/ code`) : null),
       h('td', { class: 'num', 'data-l': 'IMDb' }, r.imdb?.rating ? r.imdb.rating.toFixed(1) : '—'),
       h('td', null, r.v.text ? h('span', { class: 'pill ' + r.v.cls }, r.v.text) : ''),
       h('td', { class: 'stc' }, h('div', { class: 'acts' }, niBtn(r.key, r.title, () => setTimeout(run, 250)), ownBtn(r.key, r.title, () => run()), starBtn(r.key, r.title))))));
@@ -980,6 +1060,7 @@ function viewDeal(slug, q) {
             h('dt', null, 'titles'), h('dd', null, `${d.titleCount}` + (resText ? ` · ${resText}` : '')),
             h('dt', null, 'seen'), h('dd', null, `${fmtDate(d.firstSeen)} → ${d.live ? 'now' : fmtDate(d.lastSeen)}`),
             shots.length ? [h('dt', null, 'screens'), h('dd', null, ...shots.flatMap(([n, p], k) => [k ? ' · ' : '', h('a', { href: BASE + p }, n)]))] : null),
+          d.live ? couponLine(d.perTitle, d.kind.key === 'packs' ? 'per movie' : 'per title') : null,
           h('div', { class: 'btns' },
             h('a', { class: d.live ? 'btn primary' : 'btn', href: d.url }, d.live ? 'open on FanFlix' : 'FanFlix page (ended)'),
             d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(d) }, 'find the Splits thread') : null,
@@ -2336,6 +2417,7 @@ function route() {
   else if (view === 'sync') viewSync(q);
   else if (view === 'backup') viewBackup();
   else if (view === 'hidden') viewHidden(q);
+  else if (view === 'coupons') viewCoupons();
   else if (view === 'settings') viewSettings();
   else if (view === 'compare') viewCompare(parts[1], parts[2], q);
   else viewHome(q);
