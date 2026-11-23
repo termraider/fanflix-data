@@ -1,6 +1,15 @@
 {
   "coupons": [
     {
+      "added": "2026-11-23T18:51:16Z",
+      "code": "VETERANS10",
+      "headline": "Happy Veteran's Day",
+      "note": "STILL VALID",
+      "pct": 10,
+      "until": "2026-11-30",
+      "firstAdded": "2026-11-23T18:51:16Z"
+    },
+    {
       "added": "2026-11-16T16:08:43Z",
       "code": "GOBBLE10",
       "headline": "Get some gobble-worthy deals!",
