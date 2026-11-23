@@ -135,6 +135,9 @@ input[type=checkbox]{accent-color:var(--green);width:18px;height:18px;margin:0}
 .ccard .cimg{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:10px;display:block}
 .ccard h2.ccode{font-size:40px;margin:10px 0 6px}
 .cline{margin:14px 0 22px;font-size:14px}
+.cprice .cp-b{display:none}
+.cprice.on .cp-a{display:none}.cprice.on .cp-b{display:inline}
+@media (hover:hover){.cprice:hover .cp-a{display:none}.cprice:hover .cp-b{display:inline}.cprice.on:hover .cp-b{display:inline}}
 .cprice{display:block;margin-left:auto;font:inherit;font-size:12px;font-weight:400;color:var(--gold);white-space:nowrap;background:none;border:0;padding:0;cursor:help;text-decoration:underline dotted}
 .bslots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .bslot h3{margin:4px 0 6px;font-size:18px;overflow-wrap:anywhere}
@@ -789,7 +792,9 @@ function copyBtn(code, cls = 'btn primary') {
 function couponPrice(p) {
   const c = liveCoupon(); if (!c || p == null) return null;
   const tip = `with coupon code ${c.code} (${c.pct}% off), if the deal is eligible`, txt = `${money(withCoupon(p, c))} w/ coupon`;
-  const el = h('button', { type: 'button', class: 'sub cprice', title: tip, 'aria-label': `${money(withCoupon(p, c))} ${tip}`, onclick: e => { e.stopPropagation(); el.textContent = el.textContent === txt ? `code ${c.code}` : txt; } }, txt);
+  // desktop: hovering swaps the text to the code; phones: tap to swap
+  const el = h('button', { type: 'button', class: 'sub cprice', title: tip, 'aria-label': `${money(withCoupon(p, c))} ${tip}`, onclick: e => { e.stopPropagation(); el.classList.toggle('on'); } },
+    h('span', { class: 'cp-a' }, txt), h('span', { class: 'cp-b' }, `code ${c.code}`));
   return el;
 }
 // one line for deal pages: "🏷️ With GOBBLE10 (10% off): $3.59 per title, if the deal is eligible"
