@@ -984,7 +984,7 @@ function viewDeal(slug, q) {
             h('a', { class: d.live ? 'btn primary' : 'btn', href: d.url }, d.live ? 'open on FanFlix' : 'FanFlix page (ended)'),
             d.kind.key === 'split' ? h('a', { class: 'btn', href: splitsSearch(d) }, 'find the Splits thread') : null,
             h('a', { class: 'btn ghost', href: '#/compare/' + encodeURIComponent(d.slug) }, 'compare with…'),
-            d.live ? h('a', { class: 'btn ghost', href: '#/plan?from=' + encodeURIComponent(d.slug) }, 'plan a split') : null),
+            d.live && d.kind.key === 'split' ? h('a', { class: 'btn ghost', href: '#/plan?from=' + encodeURIComponent(d.slug) }, 'plan a split') : null), // only deals worth splitting (not no-minimum, packs or single codes)
           d.live ? buyNote() : null)),
       h('section', { class: 'sec stats', style: 'margin-top:28px', 'aria-label': 'Price check' },
         h('div', { class: 'stat' }, h('div', { class: 'l' }, "lowest we've seen"), h('div', { class: 'n gold' }, c.low, ' ', h('small', null, 'titles')), h('div', { class: 's' }, 'cheaper than any earlier deal')),
