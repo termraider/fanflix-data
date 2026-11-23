@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T08:07:31.124Z",
+  "updatedAt": "2026-11-23T08:21:36.288Z",
   "deals": [
     {
       "id": "/c/1mkgvuelys9kp-flash-sale-new-release-action-3-pack-14-99",
@@ -9,7 +9,11 @@
       "screenshot": "images/1mkgvuelys9kp-flash-sale-new-release-action-3-pack-14-99.png",
       "locationScreenshots": {},
       "bannerAlt": "New Release Action 3 Pack - $14.99 - 1 Day Flash Sale",
-      "bundle": null,
+      "bundle": {
+        "count": 3,
+        "price": 14.99,
+        "perItem": 5
+      },
       "resolutions": {
         "UHD": 3
       },
@@ -23,9 +27,10 @@
       "items": [
         {
           "title": "IN THE GREY",
-          "price": "",
+          "price": "$5.00",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/LG/774c1f7bcdac097d6c7b44a56027677a9d861475d2c7606f3c48aa2eacc9b020",
+          "priceFromBundle": true,
           "year": 2026,
           "imdb": {
             "id": "tt27681354",
@@ -52,9 +57,10 @@
         },
         {
           "title": "Mutiny",
-          "price": "",
+          "price": "$5.00",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/LG/24de57a61852ea0e937336509c8e35285bc04e7f0bd048e072a920234353f2ec",
+          "priceFromBundle": true,
           "year": 2026,
           "imdb": {
             "id": "tt32338669",
@@ -81,9 +87,10 @@
         },
         {
           "title": "Now You See Me: Now You Don't",
-          "price": "",
+          "price": "$5.00",
           "resolution": "UHD",
           "image": "https://img.fanflix.co/LG/017c8511a2e22f8a6832eba7c803c9e16611911537abf456cc99c695822b473c",
+          "priceFromBundle": true,
           "year": 2025,
           "imdb": {
             "id": "tt4712810",
@@ -116,8 +123,8 @@
       "bannerFile": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--banner.png",
       "screenshot": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15.png",
       "locationScreenshots": {
-        "Movies Anywhere": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png",
-        "Fandango at Home": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png"
+        "Fandango at Home": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png",
+        "Movies Anywhere": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png"
       },
       "bannerAlt": "Space Jam 30th - Pick 5 for $15",
       "bundle": {
@@ -133,8 +140,8 @@
       "canSplit": true,
       "checkoutPrice": "",
       "platforms": [
-        "Movies Anywhere",
-        "Fandango at Home"
+        "Fandango at Home",
+        "Movies Anywhere"
       ],
       "itemCount": 29,
       "items": [

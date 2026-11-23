@@ -96505,9 +96505,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/WB/e6ed0cea4c9ec0164e6da24c5f3af8bb15f98e47027ede5a5aaa7a50b0858490",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1160419",
           "rating": 8,
@@ -96529,7 +96526,10 @@
           "directors": [
             "Denis Villeneuve"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Dune: Part Two",
@@ -97338,9 +97338,6 @@
         "resolution": "UHD",
         "year": 2018,
         "image": "https://img.fanflix.co/WB/ead279ba0b376c33d146b4a878dd4e6a073b9b05b855fdb4719e0b97f293f68d",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1677720",
           "rating": 7.4,
@@ -97362,7 +97359,10 @@
           "directors": [
             "Steven Spielberg"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Dunkirk",
@@ -97402,9 +97402,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/martwork/wb/ff9ef9df-ac18-4533-a2c8-7ba52462d6f9-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1856101",
           "rating": 8,
@@ -97426,7 +97423,10 @@
           "directors": [
             "Denis Villeneuve"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "IT",
@@ -97560,9 +97560,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.fanflix.co/martwork/wb/105b282c-b582-47f8-95a1-5b1a0015a42f-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2674426",
           "rating": 7.4,
@@ -97583,7 +97580,10 @@
           "directors": [
             "Thea Sharrock"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Nice Guys",
@@ -97686,9 +97686,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.fanflix.co/martwork/wb/353fbabd-c383-460d-9a2b-7fabe5a47c11-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3263904",
           "rating": 7.4,
@@ -97710,7 +97707,10 @@
           "directors": [
             "Clint Eastwood"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "War Dogs",
@@ -97879,9 +97879,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/martwork/wb/96a6778a-2248-4dfb-82cd-3c8cd5b9bb22-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4116284",
           "rating": 7.3,
@@ -97903,7 +97900,10 @@
           "directors": [
             "Chris McKay"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The LEGO Movie 2: The Second Part",
@@ -98133,9 +98133,6 @@
         "resolution": "UHD",
         "year": 2013,
         "image": "https://img.fanflix.co/martwork/wb/c20111ed-e5e3-4139-9b2d-360f40d8570d-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1663662",
           "rating": 6.9,
@@ -98157,7 +98154,10 @@
           "directors": [
             "Guillermo del Toro"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Prisoners",
@@ -98197,9 +98197,6 @@
         "resolution": "HD",
         "year": 2013,
         "image": "https://img.fanflix.co/martwork/wb/dc935f54-98bc-447c-a8c5-fcc0074249bf-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1723121",
           "rating": 7,
@@ -98220,7 +98217,10 @@
           "directors": [
             "Rawson Marshall Thurber"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Project X",
@@ -98731,9 +98731,6 @@
         "resolution": "HD",
         "year": 2009,
         "image": "https://img.fanflix.co/martwork/wb/8dfee7c8-b67c-435a-89a1-261734f53ec5-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0878804",
           "rating": 7.6,
@@ -98755,7 +98752,10 @@
           "directors": [
             "John Lee Hancock"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Another Cinderella Story",
@@ -99431,9 +99431,6 @@
         "resolution": "HD",
         "year": 2004,
         "image": "https://img.fanflix.co/martwork/wb/b0cf1ba3-0535-41e1-8713-fad6f87e245d-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0332280",
           "rating": 7.8,
@@ -99454,7 +99451,10 @@
           "directors": [
             "Nick Cassavetes"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Secondhand Lions",
@@ -101883,9 +101883,6 @@
         "resolution": "UHD",
         "year": 1983,
         "image": "https://img.fanflix.co/WB/0f67f55645ed8bd27bb8d347d6b5cfbf82a73588b715a3c5cdb85eb90d613ded",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0085995",
           "rating": 7.3,
@@ -101906,7 +101903,10 @@
           "directors": [
             "Harold Ramis"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Outsiders: The Complete Novel",
@@ -155467,14 +155467,18 @@
     "bannerFile": "images/1mkgvuelys9kp-flash-sale-new-release-action-3-pack-14-99--banner.png",
     "screenshot": "images/1mkgvuelys9kp-flash-sale-new-release-action-3-pack-14-99.png",
     "locationScreenshots": {},
-    "bundle": null,
+    "bundle": {
+      "count": 3,
+      "price": 14.99,
+      "perItem": 5
+    },
     "resolutions": {
       "UHD": 3
     },
     "items": [
       {
         "title": "IN THE GREY",
-        "price": "",
+        "price": "$5.00",
         "resolution": "UHD",
         "year": 2026,
         "image": "https://img.fanflix.co/LG/774c1f7bcdac097d6c7b44a56027677a9d861475d2c7606f3c48aa2eacc9b020",
@@ -155503,7 +155507,7 @@
       },
       {
         "title": "Mutiny",
-        "price": "",
+        "price": "$5.00",
         "resolution": "UHD",
         "year": 2026,
         "image": "https://img.fanflix.co/LG/24de57a61852ea0e937336509c8e35285bc04e7f0bd048e072a920234353f2ec",
@@ -155532,7 +155536,7 @@
       },
       {
         "title": "Now You See Me: Now You Don't",
-        "price": "",
+        "price": "$5.00",
         "resolution": "UHD",
         "year": 2025,
         "image": "https://img.fanflix.co/LG/017c8511a2e22f8a6832eba7c803c9e16611911537abf456cc99c695822b473c",
@@ -155569,14 +155573,14 @@
     "canSplit": true,
     "checkoutPrice": "",
     "platforms": [
-      "Movies Anywhere",
-      "Fandango at Home"
+      "Fandango at Home",
+      "Movies Anywhere"
     ],
     "bannerFile": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--banner.png",
     "screenshot": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15.png",
     "locationScreenshots": {
-      "Movies Anywhere": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png",
-      "Fandango at Home": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png"
+      "Fandango at Home": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--fandango-at-home.png",
+      "Movies Anywhere": "images/1mknd8duf4hc9-fanflix-space-jam-30th-looney-tunes-5-for-15--movies-anywhere.png"
     },
     "bundle": {
       "count": 5,
@@ -155594,9 +155598,6 @@
         "resolution": "UHD",
         "year": 1996,
         "image": "https://img.fanflix.co/WB/cdae9dcc8d520e9ee8205d5a9b5b0345ac36ddc628f9c8cf72a7b1a5c9b0e528",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0117705",
           "rating": 6.5,
@@ -155618,7 +155619,10 @@
           "directors": [
             "Joe Pytka"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Space Jam: A New Legacy",
@@ -155626,9 +155630,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/WB/8f1e2d1f2b7b64aee36f1566c82e590e5757da514b8a3ed8f294ad5e45367bf6",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3554046",
           "rating": 4.5,
@@ -155650,7 +155651,10 @@
           "directors": [
             "Malcolm D. Lee"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Stars of Space Jam: Looney Tunes Collection",
@@ -155668,9 +155672,6 @@
         "resolution": "HD",
         "year": 2021,
         "image": "https://img.fanflix.co/martwork/77923b844f941d9f705565da11990460b7b1d593e249b8e272bac506848eb6f3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt14851194",
           "rating": 4.5,
@@ -155692,7 +155693,10 @@
           "directors": [
             "Peter Rida Michail"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Looney Tunes Show: Season 1",
@@ -155701,9 +155705,6 @@
         "year": 2011,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/ee90c75fc14eefa1e066b87b307ed01146c251de65fb7c494007f97d74bde97f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1726839",
           "rating": 7.8,
@@ -155732,7 +155733,10 @@
             "Jeff Siergey",
             "Spike Brandt"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Looney Tunes Show: Season 2",
@@ -155741,9 +155745,6 @@
         "year": 2012,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/1882659376ee8c3746eeb2ef8cf593ff3bc70818882f4d996f47c39b8298acef",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1726839",
           "rating": 7.8,
@@ -155772,7 +155773,10 @@
             "Jeff Siergey",
             "Spike Brandt"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Back In Action",
@@ -155780,9 +155784,6 @@
         "resolution": "HD",
         "year": 2003,
         "image": "https://img.fanflix.co/martwork/wb/5ac77fc3-6fa9-495a-a7d9-fd5a74e9ddab-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0318155",
           "rating": 5.8,
@@ -155804,7 +155805,10 @@
           "directors": [
             "Joe Dante"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Looney Tunes: Bah Humduck!",
@@ -155812,9 +155816,6 @@
         "resolution": "HD",
         "year": 2006,
         "image": "https://img.fanflix.co/martwork/wb/9f73d5e1-1bb2-43f8-9b7a-1dad2093ca61-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0896522",
           "rating": 6.3,
@@ -155837,7 +155838,10 @@
           "directors": [
             "Charles Visser"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Looney Tunes: Rabbits Run",
@@ -155845,9 +155849,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/martwork/wb/92b3ffb7-6a12-4127-9a7b-bae8fe1612f5-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4840666",
           "rating": 5.7,
@@ -155870,7 +155871,10 @@
           "directors": [
             "Jeff Siergey"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 1, Part 2",
@@ -155879,9 +155883,6 @@
         "year": 2015,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -155910,7 +155911,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 1, Part 1",
@@ -155919,9 +155923,6 @@
         "year": 2015,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -155950,7 +155951,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 2",
@@ -155959,9 +155963,6 @@
         "year": 2018,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/b54704cccbed74361a0b670f8474aa5e247b43199a938bf433eb72b2384f464c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -155990,7 +155991,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Bugs Bunny Superstar",
@@ -155998,9 +156002,6 @@
         "resolution": "HD",
         "year": 1975,
         "image": "https://img.fanflix.co/martwork/wb/b5a7851c-a9d9-441d-803b-5be057d1dfed-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0072751",
           "rating": 7,
@@ -156023,7 +156024,10 @@
             "Larry Jackson",
             "Tex Avery"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Bugs Bunny's 1001 Rabbit Tales",
@@ -156031,9 +156035,6 @@
         "resolution": "HD",
         "year": 1982,
         "image": "https://img.fanflix.co/martwork/wb/d700eee3-9600-4135-b953-48f2be67cd08-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0083701",
           "rating": 7,
@@ -156057,7 +156058,10 @@
             "Friz Freleng",
             "Chuck Jones"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Looney, Looney, Looney Bugs Bunny Movie",
@@ -156065,9 +156069,6 @@
         "resolution": "HD",
         "year": 1981,
         "image": "https://img.fanflix.co/martwork/wb/421fda6c-43df-4907-b12e-adedfd7e7540-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0082679",
           "rating": 7.1,
@@ -156089,7 +156090,10 @@
           "directors": [
             "Friz Freleng"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Bugs Bunny/Roadrunner Movie",
@@ -156097,9 +156101,6 @@
         "resolution": "HD",
         "year": 1979,
         "image": "https://img.fanflix.co/martwork/wb/7d4fdedf-0966-4270-8748-674631571004-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0078915",
           "rating": 7.3,
@@ -156122,7 +156123,10 @@
             "Chuck Jones",
             "Phil Monroe"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 1",
@@ -156131,9 +156135,6 @@
         "year": 2020,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/d57af84dbae3c2abdf43a7465657cd4e18441a727e588595dabfc4ffeff5da53",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156162,7 +156163,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 2",
@@ -156171,9 +156175,6 @@
         "year": 2021,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/9b911f571a3948dd70324866fc5c2886d916f20b9ef42a04aaee082622f7771f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156202,7 +156203,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 3",
@@ -156211,9 +156215,6 @@
         "year": 2021,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/788c40b5240073671389eea511214331b50d2b083b4cb374932fe1593edc85ff",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156236,7 +156237,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 4",
@@ -156245,9 +156249,6 @@
         "year": 2022,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/88047ccc3f6ce7b8bddfd13ce69d05c4d94d6ebb766b330493df164c3dc94a2c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156270,7 +156271,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 5",
@@ -156279,9 +156283,6 @@
         "year": 2022,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/758a3b2f5e736dd94317b0315bab1d705c4cb18f2cd0362274583f7152bb85a9",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156304,7 +156305,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 6",
@@ -156313,9 +156317,6 @@
         "year": 2023,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/9de88ea6f858f11d2fbb4a5acdccee5b7c61e690b0c8c66e8e34cac98933de66",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156338,7 +156339,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Daffy Duck's Movie: Fantastic Island",
@@ -156346,9 +156350,6 @@
         "resolution": "HD",
         "year": 1983,
         "image": "https://img.fanflix.co/martwork/wb/59bbf0c9-3d56-4a04-99e9-b1839720a13f-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0085390",
           "rating": 6.9,
@@ -156369,7 +156370,10 @@
             "Friz Freleng",
             "Chuck Jones"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Daffy Duck's Quackbusters",
@@ -156378,9 +156382,6 @@
         "year": 2009,
         "runtime": 72,
         "image": "https://img.fanflix.co/martwork/wb/d3e2f186-f9bd-473e-a2cb-2159b31dc420-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0094939",
           "rating": 7,
@@ -156403,7 +156404,10 @@
             "Greg Ford",
             "Friz Freleng"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "King Tweety",
@@ -156411,9 +156415,6 @@
         "resolution": "HD",
         "year": 2022,
         "image": "https://img.fanflix.co/martwork/6765cec7fda82d577ca439c8d2db6880b9af6a6d26d4755c441d10e2e6056831",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt18951472",
           "rating": 5.2,
@@ -156436,7 +156437,10 @@
           "directors": [
             "Careen Ingle"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Tweety's High Flying Adventure",
@@ -156444,9 +156448,6 @@
         "resolution": "HD",
         "year": 2000,
         "image": "https://img.fanflix.co/martwork/wb/054483da-0f01-48ab-a9ed-3e947d274f93-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0248575",
           "rating": 5.7,
@@ -156470,7 +156471,10 @@
             "Karl Toerge",
             "Charles Visser"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Looney Tunes The Chuck Jones Collection Mouse Chronicles: Season 1",
@@ -156490,9 +156494,6 @@
         "resolution": "HD",
         "year": 2002,
         "image": "https://img.fanflix.co/WB/4d64c616a564efa6f7d830a844faf844035fca7e9bc3d5139e7426b931ab7290",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0338580",
           "rating": 6.2,
@@ -156516,7 +156517,10 @@
             "Curt Walstead",
             "Ron Myrick"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Baby Looney Tunes: Volume 2",
@@ -156524,9 +156528,6 @@
         "resolution": "HD",
         "year": 2002,
         "image": "https://img.fanflix.co/WB/2a94786d4a4b80b85b813d732deb8bbae9a53242e22acd1215b298bc25744c4c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0338580",
           "rating": 6.2,
@@ -156550,7 +156551,10 @@
             "Curt Walstead",
             "Ron Myrick"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       }
     ]
   },
