@@ -780,7 +780,7 @@ function copyBtn(code, cls = 'btn primary') {
 // one line for deal pages: "🏷️ With GOBBLE10 (10% off): $3.59 per title, if the deal is eligible"
 function couponLine(per, label = 'per title') {
   const c = liveCoupon(); if (!c || per == null) return null;
-  return h('p', { class: 'cline' }, '🏷️ With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are usually one use, so save it for your biggest order.'));
+  return h('p', { class: 'cline' }, '🏷️ With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are one use, so save it for your biggest order.'));
 }
 
 function viewCoupons() {
@@ -792,7 +792,7 @@ function viewCoupons() {
       h('h2', { class: 'ccode' }, c.code), h('p', { class: 'big', style: 'margin:0 0 6px' }, `${c.pct}% off your FanFlix order`),
       c.headline ? h('p', { class: 'sub', style: 'margin:0 0 6px' }, c.headline) : '',
       h('p', { class: 'sub', style: 'margin:0 0 6px' }, `Ends ${endText(c)}.`), c.note ? h('p', { class: 'sub warn', style: 'margin:0 0 6px' }, c.note) : '',
-      h('p', { class: 'sub', style: 'margin:0 0 14px' }, 'Coupons are usually one use, so save it for your biggest order. Deal pages show the price with the code.'),
+      h('p', { class: 'sub', style: 'margin:0 0 14px' }, 'Coupons are one use, so save it for your biggest order. Deal pages show the price with the code.'),
       h('div', { class: 'btns', style: 'max-width:none' }, copyBtn(c.code), h('a', { class: 'btn', href: 'https://fanflix.co/' }, 'open FanFlix'))));
   app.replaceChildren(
     ...pageHead('splitsbot@splitsbot.com:~$ ls ~/coupons', 'Coupons.', 'FanFlix coupon codes, as posted on r/fanflixco. Every code we’ve seen is kept here.'),
@@ -841,7 +841,7 @@ function carousel() {
       h('div', { class: 'stext' },
         h('span', { class: 'badge b-gold' }, `🏷️ coupon · ${leftText(c)}`),
         h(H, null, `${c.pct}% off`, h('br'), h('span', { class: 'ccode' }, c.code)),
-        h('p', null, `${c.headline ? c.headline + ' ' : ''}Use it at checkout on fanflix.co through ${endText(c)}.${c.note ? ' ' + c.note + '.' : ''} Usually one use, so save it for your biggest order.`.replace('..', '.')),
+        h('p', null, `${c.headline ? c.headline + ' ' : ''}Use it at checkout on fanflix.co through ${endText(c)}.${c.note ? ' ' + c.note + '.' : ''} One use, so save it for your biggest order.`.replace('..', '.')),
         h('div', { class: 'btns' }, copyBtn(c.code), h('a', { class: 'btn', href: '#/coupons' }, 'coupon history'))),
       h('div', { class: 'simg' }, h('a', { href: '#/coupons', tabindex: '-1', 'aria-hidden': 'true' }, img(BASE + c.image, '', 'bimg')))); }
     const [l1, l2] = splitName(p.d);
