@@ -54,7 +54,9 @@ main.wrap{padding-top:32px;padding-bottom:72px;min-height:70vh}
 /* carousel */
 .hero{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
 .slide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,min(580px,48%));align-items:stretch}
-.slide[hidden]{display:none}
+.slides{display:grid}
+.slides>.slide{grid-area:1/1}
+.slides>.slide[hidden]{display:grid;visibility:hidden}
 .stext{min-width:0;padding:28px 48px;display:flex;flex-direction:column}
 .stext .btns{margin-top:auto;padding-top:20px;max-width:540px}
 .stext .badge{align-self:flex-start}
@@ -386,6 +388,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
   main.wrap{padding-top:16px;padding-bottom:48px}
   .btns{grid-template-columns:1fr;max-width:none}
   .slide{display:flex;flex-direction:column-reverse;flex-wrap:nowrap;justify-content:flex-end;min-height:700px}
+  .slides>.slide[hidden]{display:flex}
   .stext .btns{margin-top:0;grid-template-columns:1fr;max-width:none}
   .slide>div{flex:none;width:100%}
   .stext{padding:20px 18px 22px}
@@ -720,6 +723,8 @@ function splitName(d) {
   let n = d.name.replace(/^flash sale\s*[-–:]\s*/i, '').replace(/^weekend sale\s*[-–:]\s*/i, '');
   const m = n.match(/^(.*?)\s*[-–]\s*(\d+\s+for\s+\$[\d.]+.*)$/i);
   if (m) return [m[1], m[2]];
+  // "New Release Action 3 Pack - $14.99" → "New Release Action 3 Pack" / "3 for $14.99"
+  if (d.bundle) n = n.replace(/\s*[-–—:]\s*\$[\d.]+\s*$/, '');
   return [n, d.bundle ? `${d.bundle.count} for ${usd(d.bundle.price)}` : d.priceText];
 }
 
@@ -862,7 +867,7 @@ function carousel() {
   let paused = false;
   const restart = () => { clearInterval(carouselTimer); if (!reduce && picks.length > 1) carouselTimer = setInterval(() => { if (!paused && document.visibilityState === 'visible') show(i + 1); }, 6000); };
   const el = h('section', { class: 'hero', 'aria-roledescription': 'carousel', 'aria-label': 'Featured deals', onmouseenter: () => paused = true, onmouseleave: () => paused = false, onfocusin: () => paused = true, onfocusout: () => paused = false },
-    ...slides,
+    h('div', { class: 'slides' }, ...slides),
     picks.length > 1 ? h('div', { class: 'ctrl' },
       h('button', { class: 'arrow', type: 'button', 'aria-label': 'Previous deal', onclick: () => { show(i - 1); restart(); } }, '‹'),
       h('div', { class: 'dots' }, ...dots, pos),
