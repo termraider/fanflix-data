@@ -91025,9 +91025,6 @@
         "resolution": "HD",
         "year": 2021,
         "image": "https://img.fanflix.co/martwork/77923b844f941d9f705565da11990460b7b1d593e249b8e272bac506848eb6f3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt14851194",
           "rating": 4.5,
@@ -91049,7 +91046,10 @@
           "directors": [
             "Peter Rida Michail"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Looney Tunes Show: Season 1",
@@ -91058,9 +91058,6 @@
         "year": 2011,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/ee90c75fc14eefa1e066b87b307ed01146c251de65fb7c494007f97d74bde97f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1726839",
           "rating": 7.8,
@@ -91089,7 +91086,10 @@
             "Jeff Siergey",
             "Spike Brandt"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Looney Tunes Show: Season 2",
@@ -91098,9 +91098,6 @@
         "year": 2012,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/1882659376ee8c3746eeb2ef8cf593ff3bc70818882f4d996f47c39b8298acef",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1726839",
           "rating": 7.8,
@@ -91129,7 +91126,10 @@
             "Jeff Siergey",
             "Spike Brandt"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Back In Action",
@@ -91236,9 +91236,6 @@
         "year": 2015,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -91267,7 +91264,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 1, Part 1",
@@ -91276,9 +91276,6 @@
         "year": 2015,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -91307,7 +91304,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 2",
@@ -91316,9 +91316,6 @@
         "year": 2018,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/b54704cccbed74361a0b670f8474aa5e247b43199a938bf433eb72b2384f464c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -91347,7 +91344,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Bugs Bunny Superstar",
@@ -91422,9 +91422,6 @@
         "resolution": "HD",
         "year": 1981,
         "image": "https://img.fanflix.co/martwork/wb/421fda6c-43df-4907-b12e-adedfd7e7540-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0082679",
           "rating": 7.1,
@@ -91446,7 +91443,10 @@
           "directors": [
             "Friz Freleng"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Bugs Bunny/Roadrunner Movie",
@@ -91488,9 +91488,6 @@
         "year": 2020,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/d57af84dbae3c2abdf43a7465657cd4e18441a727e588595dabfc4ffeff5da53",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -91519,7 +91516,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 2",
@@ -91528,9 +91528,6 @@
         "year": 2021,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/9b911f571a3948dd70324866fc5c2886d916f20b9ef42a04aaee082622f7771f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -91559,7 +91556,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 3",
@@ -91568,9 +91568,6 @@
         "year": 2021,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/788c40b5240073671389eea511214331b50d2b083b4cb374932fe1593edc85ff",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -91593,7 +91590,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 4",
@@ -91602,9 +91602,6 @@
         "year": 2022,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/88047ccc3f6ce7b8bddfd13ce69d05c4d94d6ebb766b330493df164c3dc94a2c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -91627,7 +91624,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 5",
@@ -91636,9 +91636,6 @@
         "year": 2022,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/758a3b2f5e736dd94317b0315bab1d705c4cb18f2cd0362274583f7152bb85a9",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -91661,7 +91658,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 6",
@@ -91670,9 +91670,6 @@
         "year": 2023,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/9de88ea6f858f11d2fbb4a5acdccee5b7c61e690b0c8c66e8e34cac98933de66",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -91695,7 +91692,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Daffy Duck's Movie: Fantastic Island",
@@ -91703,9 +91703,6 @@
         "resolution": "HD",
         "year": 1983,
         "image": "https://img.fanflix.co/martwork/wb/59bbf0c9-3d56-4a04-99e9-b1839720a13f-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0085390",
           "rating": 6.9,
@@ -91726,7 +91723,10 @@
             "Friz Freleng",
             "Chuck Jones"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Daffy Duck's Quackbusters",
@@ -91735,9 +91735,6 @@
         "year": 2009,
         "runtime": 72,
         "image": "https://img.fanflix.co/martwork/wb/d3e2f186-f9bd-473e-a2cb-2159b31dc420-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0094939",
           "rating": 7,
@@ -91760,7 +91757,10 @@
             "Greg Ford",
             "Friz Freleng"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "King Tweety",
@@ -156224,9 +156224,6 @@
         "resolution": "HD",
         "year": 2021,
         "image": "https://img.fanflix.co/martwork/77923b844f941d9f705565da11990460b7b1d593e249b8e272bac506848eb6f3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt14851194",
           "rating": 4.5,
@@ -156248,7 +156245,10 @@
           "directors": [
             "Peter Rida Michail"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Looney Tunes Show: Season 1",
@@ -156257,9 +156257,6 @@
         "year": 2011,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/ee90c75fc14eefa1e066b87b307ed01146c251de65fb7c494007f97d74bde97f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1726839",
           "rating": 7.8,
@@ -156288,7 +156285,10 @@
             "Jeff Siergey",
             "Spike Brandt"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Looney Tunes Show: Season 2",
@@ -156297,9 +156297,6 @@
         "year": 2012,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/1882659376ee8c3746eeb2ef8cf593ff3bc70818882f4d996f47c39b8298acef",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1726839",
           "rating": 7.8,
@@ -156328,7 +156325,10 @@
             "Jeff Siergey",
             "Spike Brandt"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Back In Action",
@@ -156435,9 +156435,6 @@
         "year": 2015,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -156466,7 +156463,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 1, Part 1",
@@ -156475,9 +156475,6 @@
         "year": 2015,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/e56ab0e9de0ae48df1b6170406313fb315d3b8514a16c5bc21f01eae5ee4f3c8",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -156506,7 +156503,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The New Looney Tunes: Season 2",
@@ -156515,9 +156515,6 @@
         "year": 2018,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/b54704cccbed74361a0b670f8474aa5e247b43199a938bf433eb72b2384f464c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4558858",
           "rating": 5.8,
@@ -156546,7 +156543,10 @@
             "Ian Wasseluk",
             "Sean Petrilak"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Bugs Bunny Superstar",
@@ -156621,9 +156621,6 @@
         "resolution": "HD",
         "year": 1981,
         "image": "https://img.fanflix.co/martwork/wb/421fda6c-43df-4907-b12e-adedfd7e7540-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0082679",
           "rating": 7.1,
@@ -156645,7 +156642,10 @@
           "directors": [
             "Friz Freleng"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Bugs Bunny/Roadrunner Movie",
@@ -156687,9 +156687,6 @@
         "year": 2020,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/d57af84dbae3c2abdf43a7465657cd4e18441a727e588595dabfc4ffeff5da53",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156718,7 +156715,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 2",
@@ -156727,9 +156727,6 @@
         "year": 2021,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/9b911f571a3948dd70324866fc5c2886d916f20b9ef42a04aaee082622f7771f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156758,7 +156755,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 3",
@@ -156767,9 +156767,6 @@
         "year": 2021,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/788c40b5240073671389eea511214331b50d2b083b4cb374932fe1593edc85ff",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156792,7 +156789,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 4",
@@ -156801,9 +156801,6 @@
         "year": 2022,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/88047ccc3f6ce7b8bddfd13ce69d05c4d94d6ebb766b330493df164c3dc94a2c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156826,7 +156823,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 5",
@@ -156835,9 +156835,6 @@
         "year": 2022,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/758a3b2f5e736dd94317b0315bab1d705c4cb18f2cd0362274583f7152bb85a9",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156860,7 +156857,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Looney Tunes Cartoons: Season 6",
@@ -156869,9 +156869,6 @@
         "year": 2023,
         "seasons": 1,
         "image": "https://img.fanflix.co/WB/9de88ea6f858f11d2fbb4a5acdccee5b7c61e690b0c8c66e8e34cac98933de66",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt8543208",
           "rating": 8,
@@ -156894,7 +156891,10 @@
             "David Gemmill",
             "Ryan Kramer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Daffy Duck's Movie: Fantastic Island",
@@ -156902,9 +156902,6 @@
         "resolution": "HD",
         "year": 1983,
         "image": "https://img.fanflix.co/martwork/wb/59bbf0c9-3d56-4a04-99e9-b1839720a13f-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0085390",
           "rating": 6.9,
@@ -156925,7 +156922,10 @@
             "Friz Freleng",
             "Chuck Jones"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Daffy Duck's Quackbusters",
@@ -156934,9 +156934,6 @@
         "year": 2009,
         "runtime": 72,
         "image": "https://img.fanflix.co/martwork/wb/d3e2f186-f9bd-473e-a2cb-2159b31dc420-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0094939",
           "rating": 7,
@@ -156959,7 +156956,10 @@
             "Greg Ford",
             "Friz Freleng"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "King Tweety",
