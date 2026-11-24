@@ -286,6 +286,8 @@ footer{border-top:1px solid var(--line)}
 .vb .col{background:var(--green);border-radius:3px 3px 0 0;position:relative;min-height:2px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
 .vb .col i{display:block;background:var(--gold)}
 .vb>span{font-size:11px;color:var(--dim);margin-top:4px;white-space:nowrap}
+/* many bars: values read bottom-to-top so they don't run into each other */
+.vvert .vb>b{writing-mode:vertical-rl;transform:rotate(180deg);margin-bottom:6px;white-space:nowrap}
 .hbars{display:flex;flex-direction:column;gap:8px}
 .hb{display:grid;grid-template-columns:minmax(110px,170px) 1fr 44px;gap:12px;align-items:center;font-size:13px}
 .hb .track{height:14px}
@@ -1428,7 +1430,7 @@ const chipBtn = (label, on, fn) => h('button', { class: 'chip', type: 'button', 
 const hbars = (rows, max) => h('div', { class: 'hbars' }, rows.map(([label, n, extra]) => h('div', { class: 'hb' }, h('span', null, label), h('div', { class: 'track', 'aria-hidden': 'true' }, h('div', { style: `width:${max ? Math.max(n ? 2 : 0, n / max * 100).toFixed(1) : 0}%` })), h('b', null, n.toLocaleString()), extra || '')));
 function vbars(cols, opts = {}) {
   const max = Math.max(1, ...cols.map(c => c.v));
-  return h('div', { class: 'vbars', role: 'img', 'aria-label': opts.label || '' }, cols.map(c => h('div', { class: 'vb', title: c.title || '' },
+  return h('div', { class: 'vbars' + (opts.vert ? ' vvert' : ''), role: 'img', 'aria-label': opts.label || '' }, cols.map(c => h('div', { class: 'vb', title: c.title || '' },
     h('b', null, c.text ?? c.v.toLocaleString()),
     h('div', { class: 'col', style: `height:${(c.v / max * 100).toFixed(1)}%` + (c.gold ? ';background:var(--gold)' : '') },
       c.part ? h('i', { style: `height:${(c.part / c.v * 100).toFixed(1)}%` }) : ''),
@@ -1754,7 +1756,7 @@ function viewData(q) {
         vbars(decades.map(x => ({ label: `${String(x.d).slice(2)}s`, v: x.avg, text: money(x.avg), gold: x.avg === decMin, title: `${x.d}s: ${x.n.toLocaleString()} titles, avg ${money(x.avg)} per title` })), { label: 'Average price per title by release decade' }),
         h('p', { class: 'sub key' }, 'average price per title by release decade · ', h('span', { style: 'color:var(--gold)' }, '■'), ' cheapest decade · hover a bar for the title count')),
       card('c-trend', `prices --trend${byWeek ? ' --weekly' : ''}`, 'Price trend',
-        vbars(trend.map(x => ({ label: byWeek ? shortDate(x.k).replace(/^\w+ /, '') : String(+x.k.slice(8)), v: x.v, text: x.v ? money(x.v).replace('.00', '') : '—', gold: x.v && x.v === trendMin, title: `${byWeek ? 'week of ' : ''}${fmtDate(x.k)}: avg ${x.v ? money(x.v) : '—'} per title (${x.n.toLocaleString()} prices)` })), { label: 'Average price per title over time' }),
+        vbars(trend.map(x => ({ label: byWeek ? shortDate(x.k).replace(/^\w+ /, '') : String(+x.k.slice(8)), v: x.v, text: x.v ? money(x.v).replace('.00', '') : '—', gold: x.v && x.v === trendMin, title: `${byWeek ? 'week of ' : ''}${fmtDate(x.k)}: avg ${x.v ? money(x.v) : '—'} per title (${x.n.toLocaleString()} prices)` })), { label: 'Average price per title over time', vert: trend.length > 8 }),
         h('p', { class: 'sub key' }, `average price per title in the deals live each ${byWeek ? 'week' : 'day'} · `, h('span', { style: 'color:var(--gold)' }, '■'), ` cheapest ${byWeek ? 'week' : 'day'}`)),
       card('c-stars', 'people --top', 'Top stars', h('div', { class: 'recs recs2' }, starList('cast', topCast), starList('director', topDir)),
         h('p', { class: 'sub key' }, 'most titles in deals · tap a name to see their titles'))),
