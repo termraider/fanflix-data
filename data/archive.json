@@ -159065,7 +159065,31 @@
         "price": "$4.99",
         "resolution": "UHD",
         "year": 2021,
-        "image": "https://img.fanflix.co/martwork/e3afe461cfd2b0a1a4056c566d1321d69200eab5e1677985a743e7c99187a73b"
+        "image": "https://img.fanflix.co/martwork/e3afe461cfd2b0a1a4056c566d1321d69200eab5e1677985a743e7c99187a73b",
+        "imdb": {
+          "id": "tt11084896",
+          "rating": 5.5,
+          "votes": 5668,
+          "manual": true,
+          "cast": [
+            "Isabela Merced",
+            "Marsai Martin",
+            "Mckenna Grace",
+            "Walton Goggins",
+            "Andre Braugher"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2021,
+          "runtime": 88,
+          "directors": [
+            "Elaine Bogan",
+            "Ennio Torresan"
+          ]
+        }
       },
       {
         "title": "Mune: Guardian of the Moon",
@@ -159223,7 +159247,29 @@
         "resolution": "HD",
         "year": 2014,
         "runtime": 80,
-        "image": "https://img.fanflix.co/martwork/universal/e44ca912-81df-4891-9f58-a990a7da1a79-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/e44ca912-81df-4891-9f58-a990a7da1a79-2x3.png",
+        "imdb": {
+          "id": "tt2476096",
+          "rating": 5.9,
+          "votes": 162,
+          "manual": true,
+          "cast": [
+            "Paul Ahmarani",
+            "Benoît Brière",
+            "Anne Dorval",
+            "Luc Guérin",
+            "Marcel Jeannin"
+          ],
+          "genres": [
+            "Animation",
+            "Family"
+          ],
+          "year": 2014,
+          "runtime": 80,
+          "directors": [
+            "Pierre Greco"
+          ]
+        }
       },
       {
         "title": "The Tale of Despereaux",
@@ -159349,7 +159395,30 @@
         "price": "$4.99",
         "resolution": "HD",
         "year": 2018,
-        "image": "https://img.fanflix.co/martwork/universal/268d6697-825d-4041-a8d7-046650e3374b-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/268d6697-825d-4041-a8d7-046650e3374b-2x3.png",
+        "imdb": {
+          "id": "tt6624126",
+          "rating": 4.3,
+          "votes": 1542,
+          "manual": true,
+          "cast": [
+            "Jayden Greig",
+            "Lauren K. Robek",
+            "London Cardinal",
+            "Alexia Stroup",
+            "Sandy Robson"
+          ],
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Family"
+          ],
+          "year": 2018,
+          "runtime": 90,
+          "directors": [
+            "Sean McNamara"
+          ]
+        }
       },
       {
         "title": "A Dog's Purpose",
@@ -159414,7 +159483,29 @@
         "price": "$4.99",
         "resolution": "HD",
         "year": 2014,
-        "image": "https://img.fanflix.co/martwork/universal/e457fe16-fcfb-44ca-a3f6-3a6862ed18d7-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/e457fe16-fcfb-44ca-a3f6-3a6862ed18d7-2x3.png",
+        "imdb": {
+          "id": "tt2490004",
+          "rating": 5.2,
+          "votes": 2347,
+          "manual": true,
+          "cast": [
+            "Doris Roberts",
+            "Greg Germann",
+            "Lex Medlin",
+            "Valerie Azlynn",
+            "Jet Jurgensmeyer"
+          ],
+          "genres": [
+            "Comedy",
+            "Family"
+          ],
+          "year": 2014,
+          "runtime": 98,
+          "directors": [
+            "Alex Zamm"
+          ]
+        }
       },
       {
         "title": "Mr. Bean's Holiday",
@@ -159479,7 +159570,30 @@
         "price": "$4.99",
         "resolution": "HD",
         "year": 2010,
-        "image": "https://img.fanflix.co/martwork/universal/e8b04a62-7730-4496-9e9d-2b17db8c490b-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/e8b04a62-7730-4496-9e9d-2b17db8c490b-2x3.png",
+        "imdb": {
+          "id": "tt1415283",
+          "rating": 6.1,
+          "votes": 40812,
+          "manual": true,
+          "cast": [
+            "Emma Thompson",
+            "Maggie Gyllenhaal",
+            "Ralph Fiennes",
+            "Oscar Steer",
+            "Asa Butterfield"
+          ],
+          "genres": [
+            "Comedy",
+            "Family",
+            "Fantasy"
+          ],
+          "year": 2010,
+          "runtime": 109,
+          "directors": [
+            "Susanna White"
+          ]
+        }
       },
       {
         "title": "Dr. Seuss' The Cat in the Hat",
@@ -159487,7 +159601,30 @@
         "resolution": "HD",
         "year": 2003,
         "runtime": 81,
-        "image": "https://img.fanflix.co/martwork/universal/eb056bd7-fd9d-4e5d-9480-5294a5c3ee4b-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/eb056bd7-fd9d-4e5d-9480-5294a5c3ee4b-2x3.png",
+        "imdb": {
+          "id": "tt0312528",
+          "rating": 4.2,
+          "votes": 97394,
+          "manual": true,
+          "cast": [
+            "Mike Myers",
+            "Spencer Breslin",
+            "Dakota Fanning",
+            "Alec Baldwin",
+            "Kelly Preston"
+          ],
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Family"
+          ],
+          "year": 2003,
+          "runtime": 82,
+          "directors": [
+            "Bo Welch"
+          ]
+        }
       },
       {
         "title": "Peter Pan",
@@ -159670,7 +159807,30 @@
         "resolution": "HD",
         "year": 1994,
         "runtime": 72,
-        "image": "https://img.fanflix.co/martwork/universal/8834ed36-9632-45dc-b73b-7521b452fe67-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/8834ed36-9632-45dc-b73b-7521b452fe67-2x3.png",
+        "imdb": {
+          "id": "tt0110300",
+          "rating": 5.9,
+          "votes": 10850,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Scott McAfee",
+            "Candace Hutson",
+            "Heather Hogan",
+            "Jeff Bennett"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Drama"
+          ],
+          "year": 1994,
+          "runtime": 73,
+          "directors": [
+            "Roy Allen Smith"
+          ]
+        }
       },
       {
         "title": "The Land Before Time III: The Time of Great Giving",
@@ -159678,7 +159838,30 @@
         "resolution": "HD",
         "year": 1995,
         "runtime": 70,
-        "image": "https://img.fanflix.co/martwork/universal/b0ff7339-044e-4c02-83e8-a3ac7024f0dc-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/b0ff7339-044e-4c02-83e8-a3ac7024f0dc-2x3.png",
+        "imdb": {
+          "id": "tt0113596",
+          "rating": 5.7,
+          "votes": 7218,
+          "manual": true,
+          "cast": [
+            "Scott McAfee",
+            "Candace Hutson",
+            "Heather Hogan",
+            "Jeff Bennett",
+            "Rob Paulsen"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 1995,
+          "runtime": 71,
+          "directors": [
+            "Roy Allen Smith"
+          ]
+        }
       },
       {
         "title": "The Land Before Time IV: Journey Through the Mists",
@@ -159686,7 +159869,30 @@
         "resolution": "HD",
         "year": 1996,
         "runtime": 73,
-        "image": "https://img.fanflix.co/martwork/universal/c4cb8552-039d-4466-932e-c91aa70d1c91-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/c4cb8552-039d-4466-932e-c91aa70d1c91-2x3.png",
+        "imdb": {
+          "id": "tt0116817",
+          "rating": 5.7,
+          "votes": 5963,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Candace Hutson",
+            "Heather Hogan",
+            "Rob Paulsen",
+            "Jeff Bennett"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 1996,
+          "runtime": 74,
+          "directors": [
+            "Roy Allen Smith"
+          ]
+        }
       },
       {
         "title": "The Land Before Time V: The Mysterious Island",
@@ -159694,7 +159900,30 @@
         "resolution": "HD",
         "year": 1997,
         "runtime": 73,
-        "image": "https://img.fanflix.co/martwork/universal/a0eda6c4-0f89-416e-b63d-648f3dacf8f3-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/a0eda6c4-0f89-416e-b63d-648f3dacf8f3-2x3.png",
+        "imdb": {
+          "id": "tt0123950",
+          "rating": 5.9,
+          "votes": 5398,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Brandon La Croix",
+            "Aria Noelle Curzon",
+            "Rob Paulsen",
+            "Anndi McAfee"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 1997,
+          "runtime": 74,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time VI: The Secret of Saurus Rock",
@@ -159702,7 +159931,30 @@
         "resolution": "HD",
         "year": 1998,
         "runtime": 76,
-        "image": "https://img.fanflix.co/martwork/universal/6338821a-bcf0-4507-8c15-ee11ba7202ad-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/6338821a-bcf0-4507-8c15-ee11ba7202ad-2x3.png",
+        "imdb": {
+          "id": "tt0167247",
+          "rating": 5.8,
+          "votes": 4208,
+          "manual": true,
+          "cast": [
+            "Thomas Dekker",
+            "Kenneth Mars",
+            "Anndi McAfee",
+            "Aria Noelle Curzon",
+            "Jeff Bennett"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 1998,
+          "runtime": 77,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time VII: The Stone of Cold Fire",
@@ -159710,7 +159962,30 @@
         "resolution": "HD",
         "year": 2000,
         "runtime": 74,
-        "image": "https://img.fanflix.co/martwork/universal/b1c79b9e-05b1-48e2-bb8e-8b29580a6abc-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/b1c79b9e-05b1-48e2-bb8e-8b29580a6abc-2x3.png",
+        "imdb": {
+          "id": "tt0267657",
+          "rating": 5.8,
+          "votes": 3766,
+          "manual": true,
+          "cast": [
+            "Jeff Bennett",
+            "Anndi McAfee",
+            "Thomas Dekker",
+            "Aria Noelle Curzon",
+            "Rob Paulsen"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Drama"
+          ],
+          "year": 2000,
+          "runtime": 75,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time VIII: The Big Freeze",
@@ -159718,7 +159993,30 @@
         "resolution": "HD",
         "year": 2001,
         "runtime": 75,
-        "image": "https://img.fanflix.co/martwork/universal/6f0ad693-82d7-482b-9910-cbad8b9b48c0-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/6f0ad693-82d7-482b-9910-cbad8b9b48c0-2x3.png",
+        "imdb": {
+          "id": "tt0301526",
+          "rating": 5.7,
+          "votes": 3079,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Aria Noelle Curzon",
+            "Rob Paulsen",
+            "Thomas Dekker",
+            "Anndi McAfee"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2001,
+          "runtime": 75,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time IX: Journey to Big Water",
@@ -159726,7 +160024,30 @@
         "resolution": "HD",
         "year": 2002,
         "runtime": 74,
-        "image": "https://img.fanflix.co/martwork/universal/8017bb35-b33a-45d5-8c77-29cf14f03434-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/8017bb35-b33a-45d5-8c77-29cf14f03434-2x3.png",
+        "imdb": {
+          "id": "tt0345543",
+          "rating": 5.7,
+          "votes": 3227,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Kenneth Mars",
+            "Miriam Flynn",
+            "Thomas Dekker",
+            "Anndi McAfee"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2002,
+          "runtime": 71,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time X: The Great Longneck Migration",
@@ -159734,7 +160055,30 @@
         "resolution": "HD",
         "year": 2003,
         "runtime": 84,
-        "image": "https://img.fanflix.co/martwork/universal/6afcdf2b-f659-470d-bf56-d39327c7243f-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/6afcdf2b-f659-470d-bf56-d39327c7243f-2x3.png",
+        "imdb": {
+          "id": "tt0378230",
+          "rating": 6.1,
+          "votes": 3232,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Alec Medlock",
+            "Kenneth Mars",
+            "Miriam Flynn",
+            "Aria Noelle Curzon"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2003,
+          "runtime": 84,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time XI: Invasion of the Tinysauruses",
@@ -159742,7 +160086,30 @@
         "resolution": "SD",
         "year": 2005,
         "runtime": 84,
-        "image": "https://img.fanflix.co/martwork/universal/44dcc9b3-6bdb-4799-b320-7bc8480b6d25-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/44dcc9b3-6bdb-4799-b320-7bc8480b6d25-2x3.png",
+        "imdb": {
+          "id": "tt0424228",
+          "rating": 5.5,
+          "votes": 2298,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Aria Noelle Curzon",
+            "Jeff Bennett",
+            "Aaron Spann",
+            "Rob Paulsen"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Drama"
+          ],
+          "year": 2005,
+          "runtime": 82,
+          "directors": [
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time XIII: The Wisdom of Friends",
@@ -159750,7 +160117,31 @@
         "resolution": "HD",
         "year": 2007,
         "runtime": 75,
-        "image": "https://img.fanflix.co/martwork/universal/30458155-dc06-492e-9257-40b5bd354c3a-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/30458155-dc06-492e-9257-40b5bd354c3a-2x3.png",
+        "imdb": {
+          "id": "tt1139111",
+          "rating": 5.1,
+          "votes": 1883,
+          "manual": true,
+          "cast": [
+            "John Ingle",
+            "Cody Arens",
+            "Logan Arens",
+            "Miriam Flynn",
+            "Jeff Bennett"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2007,
+          "runtime": 76,
+          "directors": [
+            "Jamie Mitchell",
+            "Charles Grosvenor"
+          ]
+        }
       },
       {
         "title": "The Land Before Time XIV: Journey of the Brave",
@@ -159758,7 +160149,30 @@
         "resolution": "HD",
         "year": 2016,
         "runtime": 82,
-        "image": "https://img.fanflix.co/martwork/universal/59a29d49-4b26-425e-a763-7af1b6cf456a-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/59a29d49-4b26-425e-a763-7af1b6cf456a-2x3.png",
+        "imdb": {
+          "id": "tt4431254",
+          "rating": 5.7,
+          "votes": 1128,
+          "manual": true,
+          "cast": [
+            "Tony Amendola",
+            "Felix Wolfe",
+            "Issac Ryan Brown",
+            "Meghan Strange",
+            "George Ball"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2016,
+          "runtime": 82,
+          "directors": [
+            "Davis Doi"
+          ]
+        }
       },
       {
         "title": "Curious George 2: Follow That Monkey",
@@ -159826,7 +160240,30 @@
         "resolution": "HD",
         "year": 2019,
         "runtime": 89,
-        "image": "https://img.fanflix.co/martwork/universal/6d5ad5cc-1135-4d85-b34f-edc98361120c-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/6d5ad5cc-1135-4d85-b34f-edc98361120c-2x3.png",
+        "imdb": {
+          "id": "tt10510166",
+          "rating": 5.4,
+          "votes": 327,
+          "manual": true,
+          "cast": [
+            "Frank Welker",
+            "Jeff Bennett",
+            "Daniela Bobadilla",
+            "Philip Anthony-Rodriguez",
+            "Eliza Schneider"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2019,
+          "runtime": 86,
+          "directors": [
+            "Doug Murphy"
+          ]
+        }
       },
       {
         "title": "Curious George: Go West, Go Wild",
@@ -159952,7 +160389,29 @@
         "resolution": "HD",
         "year": 2000,
         "runtime": 98,
-        "image": "https://img.fanflix.co/martwork/universal/57ba5fc8-ce4a-4106-bc90-e70e607f58ca-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/57ba5fc8-ce4a-4106-bc90-e70e607f58ca-2x3.png",
+        "imdb": {
+          "id": "tt0206588",
+          "rating": 4.2,
+          "votes": 7025,
+          "manual": true,
+          "cast": [
+            "Judge Reinhold",
+            "Julia Sweeney",
+            "Joe Pichler",
+            "Michaela Gallo",
+            "Mike Ciccolini"
+          ],
+          "genres": [
+            "Comedy",
+            "Family"
+          ],
+          "year": 2000,
+          "runtime": 99,
+          "directors": [
+            "David Mickey Evans"
+          ]
+        }
       },
       {
         "title": "Beethoven's 4th",
@@ -159960,7 +160419,29 @@
         "resolution": "HD",
         "year": 2001,
         "runtime": 93,
-        "image": "https://img.fanflix.co/martwork/universal/19b2c231-4f44-4e9d-b73a-0860c6fa41fd-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/19b2c231-4f44-4e9d-b73a-0860c6fa41fd-2x3.png",
+        "imdb": {
+          "id": "tt0294345",
+          "rating": 4.1,
+          "votes": 4813,
+          "manual": true,
+          "cast": [
+            "Judge Reinhold",
+            "Julia Sweeney",
+            "Joe Pichler",
+            "Michaela Gallo",
+            "Kaleigh Krish"
+          ],
+          "genres": [
+            "Comedy",
+            "Family"
+          ],
+          "year": 2001,
+          "runtime": 93,
+          "directors": [
+            "David Mickey Evans"
+          ]
+        }
       },
       {
         "title": "Beethoven's 5th",
@@ -159968,7 +160449,30 @@
         "resolution": "HD",
         "year": 2003,
         "runtime": 90,
-        "image": "https://img.fanflix.co/martwork/universal/49398ff0-bf42-44a6-b054-7a3769524fa7-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/49398ff0-bf42-44a6-b054-7a3769524fa7-2x3.png",
+        "imdb": {
+          "id": "tt0342108",
+          "rating": 4.1,
+          "votes": 3915,
+          "manual": true,
+          "cast": [
+            "Dave Thomas",
+            "Faith Ford",
+            "Daveigh Chase",
+            "Tom Poston",
+            "Katherine Helmond"
+          ],
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Family"
+          ],
+          "year": 2003,
+          "runtime": 91,
+          "directors": [
+            "Mark Griffiths"
+          ]
+        }
       },
       {
         "title": "Beethoven's Big Break",
@@ -159976,14 +160480,59 @@
         "resolution": "HD",
         "year": 2008,
         "runtime": 100,
-        "image": "https://img.fanflix.co/martwork/universal/529efc21-5aed-46bc-89b0-8050f57b5771-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/529efc21-5aed-46bc-89b0-8050f57b5771-2x3.png",
+        "imdb": {
+          "id": "tt1176410",
+          "rating": 4.5,
+          "votes": 2584,
+          "manual": true,
+          "cast": [
+            "Jonathan Silverman",
+            "Jennifer Finnigan",
+            "Moises Arias",
+            "Eddie Griffin",
+            "Rhea Perlman"
+          ],
+          "genres": [
+            "Comedy",
+            "Family"
+          ],
+          "year": 2008,
+          "runtime": 101,
+          "directors": [
+            "Mike Elliott"
+          ]
+        }
       },
       {
         "title": "Beethoven's Christmas Adventure",
         "price": "$4.99",
         "resolution": "HD",
         "year": 2011,
-        "image": "https://img.fanflix.co/martwork/universal/e1cff418-03a9-40c9-9978-46eeca29e6ba-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/e1cff418-03a9-40c9-9978-46eeca29e6ba-2x3.png",
+        "imdb": {
+          "id": "tt1855134",
+          "rating": 4.4,
+          "votes": 1985,
+          "manual": true,
+          "cast": [
+            "John Cleese",
+            "Munro Chambers",
+            "Kim Rhodes",
+            "Jan Skene",
+            "Candace Smith"
+          ],
+          "genres": [
+            "Comedy",
+            "Family",
+            "Fantasy"
+          ],
+          "year": 2011,
+          "runtime": 90,
+          "directors": [
+            "John Putch"
+          ]
+        }
       },
       {
         "title": "Beethoven's Treasure Tail",
@@ -159991,7 +160540,30 @@
         "resolution": "HD",
         "year": 2014,
         "runtime": 97,
-        "image": "https://img.fanflix.co/martwork/universal/81c6ba63-f1b1-42e7-b125-fb9b0dd5c590-2x3.png"
+        "image": "https://img.fanflix.co/martwork/universal/81c6ba63-f1b1-42e7-b125-fb9b0dd5c590-2x3.png",
+        "imdb": {
+          "id": "tt3124476",
+          "rating": 4.4,
+          "votes": 1361,
+          "manual": true,
+          "cast": [
+            "Jonathan Silverman",
+            "Kristy Swanson",
+            "Bretton Manley",
+            "Jeffrey Combs",
+            "Alec Mapa"
+          ],
+          "genres": [
+            "Comedy",
+            "Family",
+            "Romance"
+          ],
+          "year": 2014,
+          "runtime": 98,
+          "directors": [
+            "Ron Oliver"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Duke and the Great Pie War",
@@ -159999,7 +160571,29 @@
         "resolution": "HD",
         "year": 2019,
         "runtime": 45,
-        "image": "https://img.fanflix.co/martwork/3c39416bd8df1ed7495dac5b56ae6bb1cdfbca6e2bd7b5811ff87319ad4d54db"
+        "image": "https://img.fanflix.co/martwork/3c39416bd8df1ed7495dac5b56ae6bb1cdfbca6e2bd7b5811ff87319ad4d54db",
+        "imdb": {
+          "id": "tt0453414",
+          "rating": 6.6,
+          "votes": 314,
+          "manual": true,
+          "cast": [
+            "Phil Vischer",
+            "Mike Nawrocki",
+            "Cydney Trent",
+            "Jacquelyn Ritz",
+            "Tim Hodge"
+          ],
+          "genres": [
+            "Animation",
+            "Family"
+          ],
+          "year": 2005,
+          "runtime": 45,
+          "directors": [
+            "Tim Hodge"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Pistachio - The Little Boy That Woodn't",
@@ -160007,7 +160601,31 @@
         "resolution": "HD",
         "year": 2019,
         "runtime": 49,
-        "image": "https://img.fanflix.co/martwork/e654aa4c40f63abd04e67ab0ce2d71ce83f5a9b0e5cefa81bf3d2fd5bbcff6b3"
+        "image": "https://img.fanflix.co/martwork/e654aa4c40f63abd04e67ab0ce2d71ce83f5a9b0e5cefa81bf3d2fd5bbcff6b3",
+        "imdb": {
+          "id": "tt14050144",
+          "rating": 5.5,
+          "votes": 30,
+          "manual": true,
+          "cast": [
+            "Lisa Vischer",
+            "Steven Strait",
+            "Tim Hodge",
+            "Magnús Scheving",
+            "Penn Badgley"
+          ],
+          "genres": [
+            "Animation",
+            "Family",
+            "Fantasy"
+          ],
+          "year": 2011,
+          "runtime": 58,
+          "directors": [
+            "Mike Nawrocki",
+            "Anthony Field"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Moe and the Big Exit",
@@ -160015,7 +160633,30 @@
         "resolution": "HD",
         "year": 2018,
         "runtime": 52,
-        "image": "https://img.fanflix.co/martwork/b25d833997745e8031dec31f52f44b55ce1057e503a2c6aa9f90666c2e619310"
+        "image": "https://img.fanflix.co/martwork/b25d833997745e8031dec31f52f44b55ce1057e503a2c6aa9f90666c2e619310",
+        "imdb": {
+          "id": "tt1000730",
+          "rating": 6.8,
+          "votes": 243,
+          "manual": true,
+          "cast": [
+            "Mike Nawrocki",
+            "Phil Vischer",
+            "Lisa Vischer",
+            "Cydney Trent",
+            "Tim Hodge"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Family"
+          ],
+          "year": 2007,
+          "runtime": 52,
+          "directors": [
+            "Brian Roberts"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Saint Nicholas - A Story of Joyful Giving",
@@ -160023,7 +160664,30 @@
         "resolution": "HD",
         "year": 2018,
         "runtime": 46,
-        "image": "https://img.fanflix.co/martwork/9ab8c718051576c1ae1b5d708ecbecaa2ed8042157bbe6a89886422a008b889f"
+        "image": "https://img.fanflix.co/martwork/9ab8c718051576c1ae1b5d708ecbecaa2ed8042157bbe6a89886422a008b889f",
+        "imdb": {
+          "id": "tt1695826",
+          "rating": 7.1,
+          "votes": 184,
+          "manual": true,
+          "cast": [
+            "Phil Vischer",
+            "Mike Nawrocki",
+            "Lisa Vischer",
+            "Gigi Abraham",
+            "Alan Lee"
+          ],
+          "genres": [
+            "Animation",
+            "Family",
+            "Fantasy"
+          ],
+          "year": 2009,
+          "runtime": 52,
+          "directors": [
+            "Brian Roberts"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Heroes of the Bible! - Lions, Shepherds and Queens (Oh My!)",
@@ -160031,7 +160695,27 @@
         "resolution": "HD",
         "year": 2018,
         "runtime": 82,
-        "image": "https://img.fanflix.co/martwork/501fad3d9fb6496128bf4edcfe4e17b9e7e83ed59929eb0a8d3020b0e39bc690"
+        "image": "https://img.fanflix.co/martwork/501fad3d9fb6496128bf4edcfe4e17b9e7e83ed59929eb0a8d3020b0e39bc690",
+        "imdb": {
+          "id": "tt27501053",
+          "rating": 9.2,
+          "votes": 10,
+          "manual": true,
+          "cast": [
+            "Phil Vischer",
+            "Mike Nawrocki",
+            "G. Bock",
+            "Mike Sage"
+          ],
+          "genres": [
+            "Animation"
+          ],
+          "year": 2002,
+          "directors": [
+            "Phil Vischer",
+            "Mike Nawrocki"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Heroes of the Bible! - Stand Up, Stand Tall, Stand Strong!",
@@ -160039,7 +160723,27 @@
         "resolution": "HD",
         "year": 2018,
         "runtime": 80,
-        "image": "https://img.fanflix.co/martwork/d3f5c052e22cf6e926d7732a8fd08febd52a8f8e291cc29e680e51cfbe851799"
+        "image": "https://img.fanflix.co/martwork/d3f5c052e22cf6e926d7732a8fd08febd52a8f8e291cc29e680e51cfbe851799",
+        "imdb": {
+          "id": "tt27501053",
+          "rating": 9.2,
+          "votes": 10,
+          "manual": true,
+          "cast": [
+            "Phil Vischer",
+            "Mike Nawrocki",
+            "G. Bock",
+            "Mike Sage"
+          ],
+          "genres": [
+            "Animation"
+          ],
+          "year": 2002,
+          "directors": [
+            "Phil Vischer",
+            "Mike Nawrocki"
+          ]
+        }
       },
       {
         "title": "VeggieTales: It's a Meaningful Life",
@@ -160077,7 +160781,30 @@
         "resolution": "HD",
         "year": 2018,
         "runtime": 51,
-        "image": "https://img.fanflix.co/martwork/c9c22d5958a7ef3e7137287574ba6bf90fe6cf890ea2a8ca9b469ce69a687548"
+        "image": "https://img.fanflix.co/martwork/c9c22d5958a7ef3e7137287574ba6bf90fe6cf890ea2a8ca9b469ce69a687548",
+        "imdb": {
+          "id": "tt0791201",
+          "rating": 7.2,
+          "votes": 896,
+          "manual": true,
+          "cast": [
+            "Phil Vischer",
+            "Mike Nawrocki",
+            "Lisa Vischer",
+            "Joe Spadaford",
+            "Tim Hodge"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Family"
+          ],
+          "year": 2005,
+          "runtime": 51,
+          "directors": [
+            "Mike Nawrocki"
+          ]
+        }
       },
       {
         "title": "VeggieTales: The Little Drummer Boy",
@@ -160085,7 +160812,30 @@
         "resolution": "HD",
         "year": 2018,
         "runtime": 44,
-        "image": "https://img.fanflix.co/martwork/f198ccb8837a2ba80c6e2187750b56011fabbe81249d6573f9160b0c92de15e8"
+        "image": "https://img.fanflix.co/martwork/f198ccb8837a2ba80c6e2187750b56011fabbe81249d6573f9160b0c92de15e8",
+        "imdb": {
+          "id": "tt13912120",
+          "rating": 5.5,
+          "votes": 41,
+          "manual": true,
+          "cast": [
+            "Phil Vischer",
+            "Lisa Vischer",
+            "Anthony Field",
+            "Emma Watkins",
+            "Keri Pagetta"
+          ],
+          "genres": [
+            "Animation",
+            "Comedy",
+            "Family"
+          ],
+          "year": 2012,
+          "runtime": 54,
+          "directors": [
+            "Brian Roberts"
+          ]
+        }
       },
       {
         "title": "VeggieTales: The Star of Christmas",
@@ -160101,7 +160851,30 @@
         "resolution": "HD",
         "year": 2017,
         "runtime": 45,
-        "image": "https://img.fanflix.co/martwork/b0b0be2f101cc5a2dec09c834e300731ca529499601a63b0ca97d248a2d65c95"
+        "image": "https://img.fanflix.co/martwork/b0b0be2f101cc5a2dec09c834e300731ca529499601a63b0ca97d248a2d65c95",
+        "imdb": {
+          "id": "tt3006432",
+          "rating": 6.6,
+          "votes": 86,
+          "manual": true,
+          "cast": [
+            "Mike Nawrocki",
+            "Phil Vischer",
+            "Henry Haggard",
+            "Jim Poole",
+            "Cydney Trent"
+          ],
+          "genres": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+          ],
+          "year": 2013,
+          "runtime": 46,
+          "directors": [
+            "Mike Nawrocki"
+          ]
+        }
       },
       {
         "title": "VeggieTales: The Penniless Princess - God's Little Girl",
@@ -160207,7 +160980,30 @@
         "resolution": "HD",
         "year": 2011,
         "runtime": 49,
-        "image": "https://img.fanflix.co/martwork/719e9243f100715d4ba7f130ae1af52aa534d0741195904099f8a5926dc42d11"
+        "image": "https://img.fanflix.co/martwork/719e9243f100715d4ba7f130ae1af52aa534d0741195904099f8a5926dc42d11",
+        "imdb": {
+          "id": "tt1991247",
+          "rating": 6.2,
+          "votes": 113,
+          "manual": true,
+          "cast": [
+            "Keri Pagetta",
+            "Rebecca Walker",
+            "Moriah",
+            "Mike Nawrocki",
+            "Phil Vischer"
+          ],
+          "genres": [
+            "Animation",
+            "Family",
+            "Musical"
+          ],
+          "year": 2011,
+          "runtime": 50,
+          "directors": [
+            "Brian Roberts"
+          ]
+        }
       },
       {
         "title": "VeggieTales: Sweetpea Beauty",
@@ -160245,7 +161041,30 @@
         "resolution": "HD",
         "year": 2009,
         "runtime": 50,
-        "image": "https://img.fanflix.co/martwork/7dc52d28e9bafbbf6f713debdd5945452f1e8da36a10bed3f5e53490530e4adc"
+        "image": "https://img.fanflix.co/martwork/7dc52d28e9bafbbf6f713debdd5945452f1e8da36a10bed3f5e53490530e4adc",
+        "imdb": {
+          "id": "tt1509833",
+          "rating": 6.8,
+          "votes": 204,
+          "manual": true,
+          "cast": [
+            "Mike Nawrocki",
+            "Phil Vischer",
+            "Cydney Trent",
+            "Brian K. Roberts",
+            "Megan Murphy"
+          ],
+          "genres": [
+            "Animation",
+            "Family"
+          ],
+          "year": 2009,
+          "runtime": 49,
+          "directors": [
+            "Mike Nawrocki",
+            "John Wahba"
+          ]
+        }
       },
       {
         "title": "Jonah: A VeggieTales Movie",
@@ -160899,70 +161718,300 @@
             "resolution": "HD",
             "year": 1994,
             "runtime": 72,
-            "image": "https://img.fanflix.co/martwork/universal/8834ed36-9632-45dc-b73b-7521b452fe67-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/8834ed36-9632-45dc-b73b-7521b452fe67-2x3.png",
+            "imdb": {
+              "id": "tt0110300",
+              "rating": 5.9,
+              "votes": 10850,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Scott McAfee",
+                "Candace Hutson",
+                "Heather Hogan",
+                "Jeff Bennett"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Drama"
+              ],
+              "year": 1994,
+              "runtime": 73,
+              "directors": [
+                "Roy Allen Smith"
+              ]
+            }
           },
           {
             "title": "The Land Before Time III: The Time of Great Giving",
             "resolution": "HD",
             "year": 1995,
             "runtime": 70,
-            "image": "https://img.fanflix.co/martwork/universal/b0ff7339-044e-4c02-83e8-a3ac7024f0dc-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/b0ff7339-044e-4c02-83e8-a3ac7024f0dc-2x3.png",
+            "imdb": {
+              "id": "tt0113596",
+              "rating": 5.7,
+              "votes": 7218,
+              "manual": true,
+              "cast": [
+                "Scott McAfee",
+                "Candace Hutson",
+                "Heather Hogan",
+                "Jeff Bennett",
+                "Rob Paulsen"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 1995,
+              "runtime": 71,
+              "directors": [
+                "Roy Allen Smith"
+              ]
+            }
           },
           {
             "title": "The Land Before Time IV: Journey Through the Mists",
             "resolution": "HD",
             "year": 1996,
             "runtime": 73,
-            "image": "https://img.fanflix.co/martwork/universal/c4cb8552-039d-4466-932e-c91aa70d1c91-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/c4cb8552-039d-4466-932e-c91aa70d1c91-2x3.png",
+            "imdb": {
+              "id": "tt0116817",
+              "rating": 5.7,
+              "votes": 5963,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Candace Hutson",
+                "Heather Hogan",
+                "Rob Paulsen",
+                "Jeff Bennett"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 1996,
+              "runtime": 74,
+              "directors": [
+                "Roy Allen Smith"
+              ]
+            }
           },
           {
             "title": "The Land Before Time V: The Mysterious Island",
             "resolution": "HD",
             "year": 1997,
             "runtime": 73,
-            "image": "https://img.fanflix.co/martwork/universal/a0eda6c4-0f89-416e-b63d-648f3dacf8f3-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/a0eda6c4-0f89-416e-b63d-648f3dacf8f3-2x3.png",
+            "imdb": {
+              "id": "tt0123950",
+              "rating": 5.9,
+              "votes": 5398,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Brandon La Croix",
+                "Aria Noelle Curzon",
+                "Rob Paulsen",
+                "Anndi McAfee"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 1997,
+              "runtime": 74,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time VI: The Secret of Saurus Rock",
             "resolution": "HD",
             "year": 1998,
             "runtime": 76,
-            "image": "https://img.fanflix.co/martwork/universal/6338821a-bcf0-4507-8c15-ee11ba7202ad-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/6338821a-bcf0-4507-8c15-ee11ba7202ad-2x3.png",
+            "imdb": {
+              "id": "tt0167247",
+              "rating": 5.8,
+              "votes": 4208,
+              "manual": true,
+              "cast": [
+                "Thomas Dekker",
+                "Kenneth Mars",
+                "Anndi McAfee",
+                "Aria Noelle Curzon",
+                "Jeff Bennett"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 1998,
+              "runtime": 77,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time VII: The Stone of Cold Fire",
             "resolution": "HD",
             "year": 2000,
             "runtime": 74,
-            "image": "https://img.fanflix.co/martwork/universal/b1c79b9e-05b1-48e2-bb8e-8b29580a6abc-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/b1c79b9e-05b1-48e2-bb8e-8b29580a6abc-2x3.png",
+            "imdb": {
+              "id": "tt0267657",
+              "rating": 5.8,
+              "votes": 3766,
+              "manual": true,
+              "cast": [
+                "Jeff Bennett",
+                "Anndi McAfee",
+                "Thomas Dekker",
+                "Aria Noelle Curzon",
+                "Rob Paulsen"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Drama"
+              ],
+              "year": 2000,
+              "runtime": 75,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time VIII: The Big Freeze",
             "resolution": "HD",
             "year": 2001,
             "runtime": 75,
-            "image": "https://img.fanflix.co/martwork/universal/6f0ad693-82d7-482b-9910-cbad8b9b48c0-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/6f0ad693-82d7-482b-9910-cbad8b9b48c0-2x3.png",
+            "imdb": {
+              "id": "tt0301526",
+              "rating": 5.7,
+              "votes": 3079,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Aria Noelle Curzon",
+                "Rob Paulsen",
+                "Thomas Dekker",
+                "Anndi McAfee"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 2001,
+              "runtime": 75,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time IX: Journey to Big Water",
             "resolution": "HD",
             "year": 2002,
             "runtime": 74,
-            "image": "https://img.fanflix.co/martwork/universal/8017bb35-b33a-45d5-8c77-29cf14f03434-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/8017bb35-b33a-45d5-8c77-29cf14f03434-2x3.png",
+            "imdb": {
+              "id": "tt0345543",
+              "rating": 5.7,
+              "votes": 3227,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Kenneth Mars",
+                "Miriam Flynn",
+                "Thomas Dekker",
+                "Anndi McAfee"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 2002,
+              "runtime": 71,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time X: The Great Longneck Migration",
             "resolution": "HD",
             "year": 2003,
             "runtime": 84,
-            "image": "https://img.fanflix.co/martwork/universal/6afcdf2b-f659-470d-bf56-d39327c7243f-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/6afcdf2b-f659-470d-bf56-d39327c7243f-2x3.png",
+            "imdb": {
+              "id": "tt0378230",
+              "rating": 6.1,
+              "votes": 3232,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Alec Medlock",
+                "Kenneth Mars",
+                "Miriam Flynn",
+                "Aria Noelle Curzon"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 2003,
+              "runtime": 84,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time XI: Invasion of the Tinysauruses",
             "resolution": "HD",
             "year": 2005,
             "runtime": 84,
-            "image": "https://img.fanflix.co/martwork/universal/44dcc9b3-6bdb-4799-b320-7bc8480b6d25-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/44dcc9b3-6bdb-4799-b320-7bc8480b6d25-2x3.png",
+            "imdb": {
+              "id": "tt0424228",
+              "rating": 5.5,
+              "votes": 2298,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Aria Noelle Curzon",
+                "Jeff Bennett",
+                "Aaron Spann",
+                "Rob Paulsen"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Drama"
+              ],
+              "year": 2005,
+              "runtime": 82,
+              "directors": [
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time XII: The Great Day of the Flyers",
@@ -160976,14 +162025,61 @@
             "resolution": "HD",
             "year": 2007,
             "runtime": 75,
-            "image": "https://img.fanflix.co/martwork/universal/30458155-dc06-492e-9257-40b5bd354c3a-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/30458155-dc06-492e-9257-40b5bd354c3a-2x3.png",
+            "imdb": {
+              "id": "tt1139111",
+              "rating": 5.1,
+              "votes": 1883,
+              "manual": true,
+              "cast": [
+                "John Ingle",
+                "Cody Arens",
+                "Logan Arens",
+                "Miriam Flynn",
+                "Jeff Bennett"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 2007,
+              "runtime": 76,
+              "directors": [
+                "Jamie Mitchell",
+                "Charles Grosvenor"
+              ]
+            }
           },
           {
             "title": "The Land Before Time XIV: Journey of the Brave",
             "resolution": "HD",
             "year": 2016,
             "runtime": 82,
-            "image": "https://img.fanflix.co/martwork/universal/59a29d49-4b26-425e-a763-7af1b6cf456a-2x3.png"
+            "image": "https://img.fanflix.co/martwork/universal/59a29d49-4b26-425e-a763-7af1b6cf456a-2x3.png",
+            "imdb": {
+              "id": "tt4431254",
+              "rating": 5.7,
+              "votes": 1128,
+              "manual": true,
+              "cast": [
+                "Tony Amendola",
+                "Felix Wolfe",
+                "Issac Ryan Brown",
+                "Meghan Strange",
+                "George Ball"
+              ],
+              "genres": [
+                "Adventure",
+                "Animation",
+                "Comedy"
+              ],
+              "year": 2016,
+              "runtime": 82,
+              "directors": [
+                "Davis Doi"
+              ]
+            }
           }
         ],
         "image": "https://img.fanflix.co/UNIVERSAL/a7e32c7390359ca605f72304e6eac9d7657bea00c3467202433a2dcf484f9260",
