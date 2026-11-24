@@ -58,6 +58,21 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:14px 0}
 .cchip{flex:none;font-size:13px;font-weight:700;color:var(--bg,#000);background:var(--gold);border-radius:6px;padding:7px 10px;text-decoration:none;white-space:nowrap;letter-spacing:.03em}
 .cchip:hover{filter:brightness(1.08)}
 .tagi{vertical-align:-.15em;flex:none}
+.stoggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;background:none;border:1px solid var(--line2);border-radius:6px;color:var(--text);cursor:pointer}
+.stoggle:hover,.hsearch.open .stoggle{color:var(--hi);border-color:var(--green)}
+/* narrow desktop windows (vertical monitors): everything on one row — tools/more fold into ☰, search becomes a button, coupon chip shows just the tag */
+@media (min-width:701px) and (max-width:1199px){
+  nav{flex-wrap:nowrap;gap:4px 18px}
+  .navlinks{display:contents}
+  .dd-wide{display:none}
+  .dd-burger{display:flex;order:3}
+  .hsearch{order:2;flex:0 0 auto;margin-left:auto;position:relative;gap:10px}
+  .stoggle{display:inline-flex}
+  .hsearch .prompt-field{display:none;position:absolute;right:0;top:calc(100% + 10px);width:min(380px,70vw);z-index:60;box-shadow:0 12px 32px rgba(0,0,0,.55)}
+  .hsearch.open .prompt-field{display:flex}
+  .cchip{padding:9px 10px;font-size:15px;line-height:1}
+  .cchip .cc-code{display:none}
+}
 .cline .tagi{color:var(--gold)}
 .prompt-field{display:flex;align-items:center;gap:10px;background:var(--field);border:1px solid var(--line2);border-radius:6px;padding:0 14px;width:100%;max-width:380px;min-height:46px}
 .prompt-field>span{color:var(--green);font-weight:700}
@@ -574,6 +589,7 @@ tr.gone{opacity:.25;transition:opacity .25s}
 </div>
 <form class="hsearch" role="search" id="hsearch">
 <a class="cchip" id="cchip" href="#/coupons" hidden></a>
+<button type="button" class="stoggle" id="stoggle" aria-label="Search titles" aria-expanded="false" aria-controls="hq"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
 <label class="sr" for="hq">Search titles</label>
 <div class="prompt-field"><span aria-hidden="true">&gt;</span><input id="hq" type="search" placeholder="search titles" autocomplete="off" enterkeyhint="search"></div>
 </form>
@@ -1510,7 +1526,7 @@ function updateStarCount() {
   const lc = document.getElementById('libcount');
   if (lc) { const fresh = !own && !waiting && !WL.list().length; lc.textContent = own ? `✓ ${own.toLocaleString()}` : fresh ? 'new' : ''; lc.className = 'libn' + (fresh ? ' new' : ''); }
   const c = typeof liveCoupon === 'function' ? liveCoupon() : null, chip = document.getElementById('cchip');
-  if (chip) { chip.hidden = !c; if (c) { chip.innerHTML = TAG_SVG + ' '; chip.append(c.code); chip.title = `${c.code}: ${c.pct}% off at FanFlix, ${leftText(c)}`; } }
+  if (chip) { chip.hidden = !c; if (c) { chip.innerHTML = TAG_SVG + ' <span class="cc-code"></span>'; chip.querySelector('.cc-code').textContent = c.code; chip.setAttribute('aria-label', `Coupon ${c.code}`); chip.title = `${c.code}: ${c.pct}% off at FanFlix, ${leftText(c)}`; } }
 }
 // header dropdowns: hover on desktop (CSS), tap/click everywhere, Esc or a tap outside closes
 function closeMenus(except) { document.querySelectorAll('.dd.open').forEach(d => { if (d !== except) { d.classList.remove('open'); d.querySelectorAll('[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false')); } }); }
@@ -1522,6 +1538,13 @@ document.querySelectorAll('.dd .ddbtn, .dd .ddtop').forEach(b => b.addEventListe
 document.addEventListener('click', e => { if (!e.target.closest('.dd')) closeMenus(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && document.querySelector('.dd.open')) { const b = document.querySelector('.dd.open [aria-expanded]'); closeMenus(); b?.focus(); } });
 document.querySelectorAll('.ddmenu a').forEach(a => a.addEventListener('click', () => closeMenus()));
+// narrow windows: 🔍 opens the search box under the header
+{ const form = document.getElementById('hsearch'), tog = document.getElementById('stoggle'), inp = document.getElementById('hq');
+  const setOpen = o => { form.classList.toggle('open', o); tog.setAttribute('aria-expanded', o ? 'true' : 'false'); if (o) inp.focus(); };
+  tog.addEventListener('click', e => { e.stopPropagation(); closeMenus(); setOpen(!form.classList.contains('open')); });
+  document.addEventListener('click', e => { if (!e.target.closest('#hsearch')) setOpen(false); });
+  inp.addEventListener('keydown', e => { if (e.key === 'Escape' && form.classList.contains('open')) { setOpen(false); tog.focus(); } });
+  form.addEventListener('submit', () => setOpen(false)); }
 function starBtn(key, name) {
   const on = WL.has(key);
   const b = h('button', { class: 'star' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' watchlist: ' + name, title: on ? 'on your watchlist' : 'add to watchlist' }, on ? '★' : '☆');
