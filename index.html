@@ -275,7 +275,8 @@ footer{border-top:1px solid var(--line)}
 .card>h2,.card h2{font-size:20px;margin:2px 0 16px}
 .cards2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:22px}
 .cards1{display:grid;gap:22px;margin-top:22px}
-.kpis{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.kpis{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:1000px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .key{margin:10px 0 0;white-space:pre-wrap}
 .green{color:var(--green)}.goldc{color:var(--gold)}.dimc{color:var(--dim)}
 .grow{flex:1}
@@ -1627,6 +1628,26 @@ function viewData(q) {
   const atMin = priced.filter(x => x.price < minP + 0.005).length;
   const avg = priced.length ? priced.reduce((s, x) => s + x.price, 0) / priced.length : null;
   const stat = (l, n, s, cls) => h('div', { class: 'stat' }, h('div', { class: 'l' }, l), h('div', { class: 'n' + (cls ? ' ' + cls : '') }, n), h('div', { class: 's' }, s));
+  // more boxes: new this week, new lows, 4K, MA, biggest deal, most recycled, busiest day, IMDb 8+, your library
+  const pct = (a, b) => !b ? '—' : a && a / b < 0.005 ? '<1%' : `${Math.round(a / b * 100)}%`;
+  const winTitles = [...keys].map(k => titles.get(k)).filter(Boolean);
+  const weekAgo = addDays(TODAY, -6);
+  const newWeek = [...titles.values()].filter(t => t.hits.length && t.hits.reduce((m, x) => x.deal.firstSeen < m ? x.deal.firstSeen : m, '9999') >= weekAgo).length;
+  let newLows = 0;
+  for (const t of winTitles) {
+    const byRes = {};
+    for (const x of t.hits) if (x.price != null) (byRes[x.resolution] ||= []).push(x);
+    if (Object.values(byRes).some(list => list.some(x => x.deal.lastSeen >= from && list.some(y => y.deal.firstSeen < x.deal.firstSeen) && x.price < Math.min(...list.filter(y => y.deal.firstSeen < x.deal.firstSeen).map(y => y.price)) - 0.004))) newLows++;
+  }
+  const n4k = winTitles.filter(t => t.hits.some(x => x.resolution === 'UHD')).length;
+  const atMA = x => (x.platforms?.length ? x.platforms : (x.deal.platforms || [])).includes('Movies Anywhere');
+  const nMA = winTitles.filter(t => t.hits.some(x => x.deal.lastSeen >= from && atMA(x))).length;
+  const biggest = inWin.map(d => [d, dealRows(d).length]).sort((a, b) => b[1] - a[1])[0];
+  const recycled = winTitles.map(t => [t, new Set(t.hits.filter(x => x.deal.lastSeen >= from).map(x => x.deal)).size]).sort((a, b) => b[1] - a[1] || (b[0].imdb?.votes ?? 0) - (a[0].imdb?.votes ?? 0))[0];
+  const busiest = Object.entries((() => { const c = {}; for (const d of inWin) if (d.firstSeen > FIRST && d.firstSeen >= from) c[wday(d.firstSeen)] = (c[wday(d.firstSeen)] || 0) + 1; return c; })()).sort((a, b) => b[1] - a[1])[0];
+  const WDN = { Mon: 'Mondays', Tue: 'Tuesdays', Wed: 'Wednesdays', Thu: 'Thursdays', Fri: 'Fridays', Sat: 'Saturdays', Sun: 'Sundays' };
+  const n8 = winTitles.filter(t => (t.imdb?.rating ?? 0) >= 8).length;
+  const nOwn = winTitles.filter(t => OW.has(t.key)).length;
   // per day
   const perDay = days.map(x => ({ v: deals.filter(d => liveOn(d, x)).length, part: deals.filter(d => d.firstSeen === x).length, label: String(+x.slice(8)), title: `${fmtDate(x)}: ${deals.filter(d => liveOn(d, x)).length} live, ${deals.filter(d => d.firstSeen === x).length} new` }));
   // price spread
@@ -1672,7 +1693,16 @@ function viewData(q) {
       stat('live right now', liveNow, 'deals', 'green'),
       stat('avg per title', money(avg), 'across every deal'),
       stat('avg deal lasts', avgLen ? avgLen.toFixed(1) : '—', 'days (ended deals)'),
-      stat('cheapest per title', money(minP), `${atMin.toLocaleString()} title${atMin === 1 ? '' : 's'} at that price`, 'gold')),
+      stat('cheapest per title', money(minP), `${atMin.toLocaleString()} title${atMin === 1 ? '' : 's'} at that price`, 'gold'),
+      stat('new this week', newWeek.toLocaleString(), 'titles seen for the first time', 'green'),
+      stat('new lows', newLows.toLocaleString(), 'titles cheaper than any earlier deal', 'gold'),
+      stat('4K share', pct(n4k, keys.size), `${n4k.toLocaleString()} titles come in 4K`),
+      stat('redeem at MA', pct(nMA, keys.size), `${nMA.toLocaleString()} titles on Movies Anywhere`),
+      stat('biggest deal', biggest ? biggest[1].toLocaleString() : '—', biggest ? ['titles · ', h('a', { href: dealHref(biggest[0]) }, splitName(biggest[0])[0])] : ''),
+      stat('most recycled', recycled ? String(recycled[1]) : '—', recycled ? ['deals · ', h('a', { href: titleHref(recycled[0]) }, recycled[0].title)] : ''),
+      stat('busiest day', busiest ? WDN[busiest[0]] : '—', busiest ? `${busiest[1]} new deal${busiest[1] === 1 ? '' : 's'} on that weekday` : 'not enough days yet'),
+      stat('IMDb 8+', n8.toLocaleString(), `titles rated 8 or higher (${pct(n8, keys.size)})`),
+      stat('your library', nOwn.toLocaleString(), nOwn ? `${pct(nOwn, keys.size)} of these titles are yours` : h('a', { href: '#/library' }, 'add the movies you own'))),
     h('div', { class: 'cards2' },
       card('c-day', 'deals --by-day', 'Deals live per day', vbars(perDay, { label: 'Deals live per day' }), h('p', { class: 'sub key' }, h('span', { style: 'color:var(--green)' }, '■'), ' live that day  ', h('span', { style: 'color:var(--gold)' }, '■'), ' new that day', from === FIRST ? ` · ${shortDate(FIRST)} is the first scrape` : '')),
       card('c-sp', 'prices --spread', 'Price per title, everything', vbars(spread, { label: 'Price per title spread' }), h('p', { class: 'sub key' }, 'every title in every deal, by price per title')),
