@@ -31,7 +31,32 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:14px 0}
 .navlinks{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:14px}
 .navlinks a{color:var(--dim);padding:10px 0;text-decoration:none;border-bottom:2px solid transparent}
 .navlinks a[aria-current=page]{color:var(--hi);border-bottom-color:var(--green)}
-.hsearch{flex:1 1 300px;display:flex;justify-content:flex-end}
+.hsearch{flex:1 1 300px;display:flex;justify-content:flex-end;align-items:center;gap:12px}
+/* dropdown menus */
+.dd{position:relative;display:flex;align-items:center}
+.ddlink .libn{color:var(--green);font-size:12px;margin-left:2px}
+.ddlink .libn.new{color:var(--gold);text-transform:uppercase;letter-spacing:.06em;font-size:11px;border:1px solid var(--gold);border-radius:4px;padding:1px 5px}
+.ddbtn,.ddtop{background:none;border:0;color:var(--dim);font:inherit;font-size:14px;cursor:pointer;padding:10px 4px;border-bottom:2px solid transparent}
+.ddtop{padding:10px 0}
+.ddbtn{padding:10px 2px 10px 6px;font-size:12px}
+.ddbtn:hover,.ddtop:hover,.dd.open>.ddtop,.dd.open>.ddbtn{color:var(--hi)}
+.ddtop[aria-current=page]{color:var(--hi);border-bottom-color:var(--green)}
+.ddmenu{display:none;position:absolute;top:100%;left:-12px;z-index:60;min-width:240px;padding:8px;margin-top:2px;background:var(--panel,#0b120d);border:1px solid var(--line2);border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55)}
+.ddmenu::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.ddmenu.ddright{left:auto;right:-6px}
+.dd.open>.ddmenu{display:block}
+@media (hover:hover) and (min-width:701px){.dd:hover>.ddmenu{display:block}}
+.navlinks .ddmenu a{display:flex;justify-content:space-between;gap:16px;padding:10px 12px;border:0;border-radius:6px;color:var(--text);white-space:nowrap}
+.navlinks .ddmenu a:hover,.navlinks .ddmenu a:focus-visible{background:var(--field);color:var(--hi)}
+.navlinks .ddmenu a[aria-current=page]{color:var(--green);background:var(--field)}
+.mcount{color:var(--dim);font-size:12px}
+.mcount.gold{color:var(--gold)}
+.mhead{margin:6px 12px 4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.mhead:first-child{margin-top:2px}
+.dd-burger{display:none}
+.burger{font-size:18px;padding:8px 2px}
+.cchip{flex:none;font-size:13px;font-weight:700;color:var(--bg,#000);background:var(--gold);border-radius:6px;padding:7px 10px;text-decoration:none;white-space:nowrap;letter-spacing:.03em}
+.cchip:hover{filter:brightness(1.08)}
 .prompt-field{display:flex;align-items:center;gap:10px;background:var(--field);border:1px solid var(--line2);border-radius:6px;padding:0 14px;width:100%;max-width:380px;min-height:46px}
 .prompt-field>span{color:var(--green);font-weight:700}
 .prompt-field input{flex:1;min-width:0;background:transparent;border:0;color:var(--hi);font:inherit;font-size:16px;min-height:44px;outline:none}
@@ -457,8 +482,16 @@ tr.gone{opacity:.25;transition:opacity .25s}
   .foot{padding:20px 14px}
 }
 @media (max-width:700px){
-  .navlinks{gap:2px 14px}
-  .navlinks .navx{margin-left:0}
+  .navlinks{gap:2px 16px;flex-wrap:nowrap;align-items:center;width:100%}
+  .dd-wide{display:none}
+  .dd-burger{display:flex;margin-left:auto}
+  /* phones: menus drop full width under the bar */
+  .navlinks{position:relative}
+  .dd{position:static}
+  .ddmenu,.ddmenu.ddright{left:0;right:0;min-width:0;margin-top:2px;top:100%}
+  .ddmenu::before{display:none}
+  .navlinks .ddmenu a{padding:12px 12px;font-size:15px}
+  .ddlink .libn{display:none}
   .cards2,.recs,.plan,.cmp{grid-template-columns:minmax(0,1fr)}
   .vs{display:none}
   .card{padding:16px}
@@ -490,14 +523,55 @@ tr.gone{opacity:.25;transition:opacity .25s}
 <div class="navlinks">
 <a href="#/" data-nav="deals">./deals</a>
 <a href="#/titles" data-nav="titles">./titles</a>
-<a href="#/today" data-nav="today">./today</a>
-<a href="#/data" data-nav="data">./data</a>
-<a href="#/about" data-nav="about">./about</a>
-<a href="#/plan" data-nav="plan" class="navx">./plan</a>
-<a href="#/watch" data-nav="watch" class="navstar" id="starcount" aria-label="Watchlist">★ 0</a>
-<a href="#/settings" data-nav="settings" class="navgear" aria-label="Settings">⚙</a>
+<div class="dd dd-lib">
+<a href="#/library" data-nav="watch" class="ddlink">./my library <span class="libn" id="libcount"></span></a><button type="button" class="ddbtn" aria-expanded="false" aria-controls="m-lib" aria-label="My library menu">▾</button>
+<div class="ddmenu" id="m-lib">
+<a href="#/library" data-page="library">my library <span class="mcount" id="libcount2"></span></a>
+<a href="#/watch" data-page="watch">watchlist <span class="mcount gold" id="starcount">★ 0</span></a>
+<a href="#/watch?s=follow" data-page="follow">following <span class="mcount" id="followcount"></span></a>
+<a href="#/hidden" data-page="hidden">hidden <span class="mcount" id="hiddencount"></span></a>
+<a href="#/backup" data-page="backup">backups</a>
+<a href="#/sync" data-page="sync">sync to another device</a>
+</div>
+</div>
+<div class="dd dd-wide">
+<button type="button" class="ddtop" data-nav="tools" aria-expanded="false" aria-controls="m-tools">./tools <span aria-hidden="true">▾</span></button>
+<div class="ddmenu" id="m-tools">
+<a href="#/plan" data-page="plan">plan a split</a>
+<a href="#/compare" data-page="compare">compare deals</a>
+<a href="#/today" data-page="today">today</a>
+<a href="#/timeline" data-page="timeline">timeline</a>
+<a href="#/data" data-page="data">data &amp; charts</a>
+</div>
+</div>
+<div class="dd dd-wide">
+<button type="button" class="ddtop" data-nav="more" aria-expanded="false" aria-controls="m-more">./more <span aria-hidden="true">▾</span></button>
+<div class="ddmenu" id="m-more">
+<a href="#/coupons" data-page="coupons">coupons</a>
+<a href="#/about" data-page="about">about</a>
+<a href="#/settings" data-page="settings">settings ⚙</a>
+<a href="https://www.reddit.com/r/fanflixco/">r/fanflixco ↗</a>
+</div>
+</div>
+<div class="dd dd-burger">
+<button type="button" class="ddtop burger" data-nav="menu" aria-expanded="false" aria-controls="m-all" aria-label="More pages">☰</button>
+<div class="ddmenu ddright" id="m-all">
+<p class="mhead">tools</p>
+<a href="#/plan" data-page="plan">plan a split</a>
+<a href="#/compare" data-page="compare">compare deals</a>
+<a href="#/today" data-page="today">today</a>
+<a href="#/timeline" data-page="timeline">timeline</a>
+<a href="#/data" data-page="data">data &amp; charts</a>
+<p class="mhead">more</p>
+<a href="#/coupons" data-page="coupons">coupons</a>
+<a href="#/about" data-page="about">about</a>
+<a href="#/settings" data-page="settings">settings ⚙</a>
+<a href="https://www.reddit.com/r/fanflixco/">r/fanflixco ↗</a>
+</div>
+</div>
 </div>
 <form class="hsearch" role="search" id="hsearch">
+<a class="cchip" id="cchip" href="#/coupons" hidden></a>
 <label class="sr" for="hq">Search titles</label>
 <div class="prompt-field"><span aria-hidden="true">&gt;</span><input id="hq" type="search" placeholder="search titles" autocomplete="off" enterkeyhint="search"></div>
 </form>
@@ -1421,7 +1495,28 @@ function followBtn(role, name) {
   b.addEventListener('click', () => { const on = FL.toggle(role, name); b.textContent = lab(on); b.classList.toggle('won', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
 }
-function updateStarCount() { const el = document.getElementById('starcount'); if (el) el.textContent = `★ ${WL.list().filter(k => titles.has(k)).length + FL.list().length}`; }
+function updateStarCount() {
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('starcount', `★ ${WL.list().filter(k => titles.has(k)).length}`);
+  set('followcount', FL.list().length || '');
+  set('hiddencount', NI.list().length || '');
+  const own = OW.list().filter(k => titles.has(k)).length, waiting = (typeof pending !== 'undefined' ? pending.list().length : 0);
+  set('libcount2', own ? `✓ ${own.toLocaleString()}` : '');
+  const lc = document.getElementById('libcount');
+  if (lc) { const fresh = !own && !waiting && !WL.list().length; lc.textContent = own ? `✓ ${own.toLocaleString()}` : fresh ? 'new' : ''; lc.className = 'libn' + (fresh ? ' new' : ''); }
+  const c = typeof liveCoupon === 'function' ? liveCoupon() : null, chip = document.getElementById('cchip');
+  if (chip) { chip.hidden = !c; if (c) { chip.textContent = `🏷️ ${c.code}`; chip.title = `${c.code}: ${c.pct}% off at FanFlix, ${leftText(c)}`; } }
+}
+// header dropdowns: hover on desktop (CSS), tap/click everywhere, Esc or a tap outside closes
+function closeMenus(except) { document.querySelectorAll('.dd.open').forEach(d => { if (d !== except) { d.classList.remove('open'); d.querySelectorAll('[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false')); } }); }
+document.querySelectorAll('.dd .ddbtn, .dd .ddtop').forEach(b => b.addEventListener('click', e => {
+  e.stopPropagation(); const dd = b.closest('.dd'), open = !dd.classList.contains('open'); closeMenus(dd);
+  dd.classList.toggle('open', open); b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  if (open) dd.querySelector('.ddmenu a')?.focus({ preventScroll: true });
+}));
+document.addEventListener('click', e => { if (!e.target.closest('.dd')) closeMenus(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && document.querySelector('.dd.open')) { const b = document.querySelector('.dd.open [aria-expanded]'); closeMenus(); b?.focus(); } });
+document.querySelectorAll('.ddmenu a').forEach(a => a.addEventListener('click', () => closeMenus()));
 function starBtn(key, name) {
   const on = WL.has(key);
   const b = h('button', { class: 'star' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' watchlist: ' + name, title: on ? 'on your watchlist' : 'add to watchlist' }, on ? '★' : '☆');
@@ -1837,7 +1932,8 @@ function viewWatch() {
 
 function followSection() {
   const fl = FL.list();
-  if (!fl.length) return h('p', { class: 'sub', style: 'margin-top:28px' }, 'Tip: open any actor, director or franchise (tap a name on a title page) and press + follow.');
+  if (parseHash().q.get('s') === 'follow') setTimeout(() => document.getElementById('fw')?.scrollIntoView({ block: 'start' }), 0);
+  if (!fl.length) return h('p', { class: 'sub', id: 'fw', style: 'margin-top:28px' }, 'Tip: open any actor, director or franchise (tap a name on a title page) and press + follow.');
   const role = { cast: 'actor', director: 'director', franchise: 'franchise' };
   return h('section', { class: 'sec', style: 'margin-top:36px', 'aria-labelledby': 'fw' },
     h('p', { class: 'prompt' }, '$ follow --list'), h('h2', { id: 'fw', style: 'font-size:26px;margin-bottom:14px' }, 'Following'),
@@ -2426,8 +2522,12 @@ function route() {
   const { parts, q } = parseHash();
   const view = parts[0] || '';
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'about', today: 'today', data: 'data', timeline: 'data', plan: 'plan', watch: 'watch', library: 'watch', sync: 'watch', backup: 'watch', hidden: 'watch', settings: 'settings', compare: 'deals' }[view];
-  document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  closeMenus();
+  const page = view === 'watch' && q.get('s') === 'follow' ? 'follow' : view;
+  document.querySelectorAll('.ddmenu a[data-page]').forEach(a => a.dataset.page === page ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'more', coupons: 'more', settings: 'more', today: 'tools', data: 'tools', timeline: 'tools', plan: 'tools', compare: 'tools', watch: 'watch', library: 'watch', sync: 'watch', backup: 'watch', hidden: 'watch' }[view];
+  document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav || (a.dataset.nav === 'menu' && (nav === 'tools' || nav === 'more')) ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  try { updateStarCount(); } catch {}
   if (view === 'deal') viewDeal(parts[1], q);
   else if (view === 'titles') viewTitles(q);
   else if (view === 'title') viewTitle(parts[1]);
