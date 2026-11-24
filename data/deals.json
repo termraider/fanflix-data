@@ -346,7 +346,31 @@
           "price": "$4.99",
           "resolution": "HD",
           "image": "https://img.fanflix.co/martwork/universal/b877663a-5c69-4fab-a172-d4bdc4ae56e4-2x3.png",
-          "year": 2005
+          "year": 2005,
+          "imdb": {
+            "id": "tt0312004",
+            "rating": 7.5,
+            "votes": 159701,
+            "manual": true,
+            "cast": [
+              "Peter Sallis",
+              "Helena Bonham Carter",
+              "Ralph Fiennes",
+              "Peter Kay",
+              "Nicholas Smith"
+            ],
+            "genres": [
+              "Adventure",
+              "Animation",
+              "Comedy"
+            ],
+            "year": 2005,
+            "runtime": 85,
+            "directors": [
+              "Steve Box",
+              "Nick Park"
+            ]
+          }
         },
         {
           "title": "Antz",
@@ -2161,7 +2185,30 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/martwork/cdf1e9c35d3ed882c55f54d667bd46281420cb674be6c5699eeb0eb9cd6f72ba",
           "year": 2018,
-          "runtime": 48
+          "runtime": 48,
+          "imdb": {
+            "id": "tt0399837",
+            "rating": 7,
+            "votes": 510,
+            "manual": true,
+            "cast": [
+              "Dan Anderson",
+              "Matthew Hodge",
+              "Tim Hodge",
+              "Mike Nawrocki",
+              "Jim Poole"
+            ],
+            "genres": [
+              "Animation",
+              "Comedy",
+              "Family"
+            ],
+            "year": 2002,
+            "runtime": 47,
+            "directors": [
+              "Tim Hodge"
+            ]
+          }
         },
         {
           "title": "VeggieTales: MacLarry & the Stinky Cheese Battle",
@@ -2200,7 +2247,29 @@
           "resolution": "HD",
           "image": "https://img.fanflix.co/martwork/75ecd8408f53286abf8a2e6bada83ca5065fda7d43f713889a42c1077bdc2ec8",
           "year": 2017,
-          "runtime": 50
+          "runtime": 50,
+          "imdb": {
+            "id": "tt2233580",
+            "rating": 7,
+            "votes": 89,
+            "manual": true,
+            "cast": [
+              "Anna Grace Stewart",
+              "Marin Miller",
+              "Mike Nawrocki",
+              "Phil Vischer",
+              "Lisa Vischer"
+            ],
+            "genres": [
+              "Animation",
+              "Family"
+            ],
+            "year": 2012,
+            "runtime": 50,
+            "directors": [
+              "Brian Roberts"
+            ]
+          }
         },
         {
           "title": "VeggieTales: Veggies in Space - The Fennel Frontier",

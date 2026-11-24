@@ -20734,6 +20734,11 @@
    "votes": 13678,
    "checked": "2026-11-20"
   },
+  "tt0312004": {
+   "rating": 7.5,
+   "votes": 159701,
+   "checked": "2026-11-24"
+  },
   "tt0312528": {
    "rating": 4.2,
    "votes": 97394,
@@ -20822,6 +20827,11 @@
   "tt0378230": {
    "rating": 6.1,
    "votes": 3232,
+   "checked": "2026-11-24"
+  },
+  "tt0399837": {
+   "rating": 7,
+   "votes": 510,
    "checked": "2026-11-24"
   },
   "tt0402022": {
@@ -21243,6 +21253,11 @@
    "rating": 5.6,
    "votes": 355315,
    "checked": "2026-11-18"
+  },
+  "tt2233580": {
+   "rating": 7,
+   "votes": 89,
+   "checked": "2026-11-24"
   },
   "tt22399738": {
    "rating": 5.5,
@@ -43099,6 +43114,20 @@
     "Marc Forster"
    ]
   },
+  "tt0312004": {
+   "checked": "2026-11-24",
+   "names": [
+    "Peter Sallis",
+    "Helena Bonham Carter",
+    "Ralph Fiennes",
+    "Peter Kay",
+    "Nicholas Smith"
+   ],
+   "dir": [
+    "Steve Box",
+    "Nick Park"
+   ]
+  },
   "tt0312528": {
    "checked": "2026-11-24",
    "names": [
@@ -45059,6 +45088,19 @@
    ],
    "dir": [
     "Andrew Niccol"
+   ]
+  },
+  "tt0399837": {
+   "checked": "2026-11-24",
+   "names": [
+    "Dan Anderson",
+    "Matthew Hodge",
+    "Tim Hodge",
+    "Mike Nawrocki",
+    "Jim Poole"
+   ],
+   "dir": [
+    "Tim Hodge"
    ]
   },
   "tt0400717": {
@@ -57757,6 +57799,19 @@
    ],
    "dir": [
     "Brad Peyton"
+   ]
+  },
+  "tt2233580": {
+   "checked": "2026-11-24",
+   "names": [
+    "Anna Grace Stewart",
+    "Marin Miller",
+    "Mike Nawrocki",
+    "Phil Vischer",
+    "Lisa Vischer"
+   ],
+   "dir": [
+    "Brian Roberts"
    ]
   },
   "tt2237324": {
@@ -81165,6 +81220,16 @@
    "y": 2004,
    "rt": 106
   },
+  "tt0312004": {
+   "checked": "2026-11-24",
+   "g": [
+    "Adventure",
+    "Animation",
+    "Comedy"
+   ],
+   "y": 2005,
+   "rt": 85
+  },
   "tt0312528": {
    "checked": "2026-11-24",
    "g": [
@@ -82595,6 +82660,16 @@
    ],
    "y": 2005,
    "rt": 122
+  },
+  "tt0399837": {
+   "checked": "2026-11-24",
+   "g": [
+    "Animation",
+    "Comedy",
+    "Family"
+   ],
+   "y": 2002,
+   "rt": 47
   },
   "tt0400717": {
    "checked": "2026-11-20",
@@ -91854,6 +91929,15 @@
    ],
    "y": 2018,
    "rt": 107
+  },
+  "tt2233580": {
+   "checked": "2026-11-24",
+   "g": [
+    "Animation",
+    "Family"
+   ],
+   "y": 2012,
+   "rt": 50
   },
   "tt2237324": {
    "checked": "2026-11-18",
