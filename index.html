@@ -290,6 +290,12 @@ footer{border-top:1px solid var(--line)}
 .hb{display:grid;grid-template-columns:minmax(110px,170px) 1fr 44px;gap:12px;align-items:center;font-size:13px}
 .hb .track{height:14px}
 .hb b{text-align:right;color:var(--hi)}
+.hb4{grid-template-columns:minmax(80px,120px) 1fr 40px minmax(120px,auto)}
+.hb4 a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.recs.recs2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.srow{align-items:center}
+.srow a{flex:1 1 auto}
+.srow .srt{display:flex;flex-direction:column;align-items:flex-end;line-height:1.3;font-size:12px}
 .stack{display:flex;height:34px;border-radius:6px;overflow:hidden;margin-bottom:10px;background:#111A13}
 .qleg{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px}.qleg b{color:var(--hi)}
 .recs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
@@ -520,6 +526,9 @@ tr.gone{opacity:.25;transition:opacity .25s}
   .gantt>span:nth-child(3){display:none}
   .gdays span{font-size:0}.gdays span:nth-child(odd){font-size:9px}
   .hb{grid-template-columns:100px 1fr 34px;gap:8px}
+  .hb4{grid-template-columns:86px 1fr 34px}
+  .hb4>.sub{grid-column:1/-1;margin:-4px 0 4px}
+  .recs.recs2{grid-template-columns:1fr}
   .drow{grid-template-columns:1fr}.drow>b,.drow .r{text-align:left}
   .ptiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .cimg{width:72px;height:72px}
@@ -1420,7 +1429,7 @@ const hbars = (rows, max) => h('div', { class: 'hbars' }, rows.map(([label, n, e
 function vbars(cols, opts = {}) {
   const max = Math.max(1, ...cols.map(c => c.v));
   return h('div', { class: 'vbars', role: 'img', 'aria-label': opts.label || '' }, cols.map(c => h('div', { class: 'vb', title: c.title || '' },
-    h('b', null, c.v.toLocaleString()),
+    h('b', null, c.text ?? c.v.toLocaleString()),
     h('div', { class: 'col', style: `height:${(c.v / max * 100).toFixed(1)}%` + (c.gold ? ';background:var(--gold)' : '') },
       c.part ? h('i', { style: `height:${(c.part / c.v * 100).toFixed(1)}%` }) : ''),
     h('span', null, c.label))));
@@ -1648,6 +1657,26 @@ function viewData(q) {
   const WDN = { Mon: 'Mondays', Tue: 'Tuesdays', Wed: 'Wednesdays', Thu: 'Thursdays', Fri: 'Fridays', Sat: 'Saturdays', Sun: 'Sundays' };
   const n8 = winTitles.filter(t => (t.imdb?.rating ?? 0) >= 8).length;
   const nOwn = winTitles.filter(t => OW.has(t.key)).length;
+  // charts: genres, price by decade, price trend, top stars
+  const avgOf = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+  const winPrices = new Map(); for (const x of priced) { let a = winPrices.get(x.t.key); if (!a) winPrices.set(x.t.key, a = []); a.push(x.price); }
+  const gAgg = {};
+  for (const t of winTitles) for (const g of (t.imdb?.genres || [])) { const a = (gAgg[g] ||= { n: 0, p: [] }); a.n++; a.p.push(...(winPrices.get(t.key) || [])); }
+  const genres = Object.entries(gAgg).sort((a, b) => b[1].n - a[1].n).slice(0, 10).map(([g, a]) => ({ g, n: a.n, avg: avgOf(a.p), min: a.p.length ? Math.min(...a.p) : null }));
+  const gMax = Math.max(1, ...genres.map(x => x.n));
+  const dAgg = {};
+  for (const t of winTitles) { const y = t.year || t.imdb?.year; if (!y || y < 1920) continue; const dec = Math.floor(y / 10) * 10; const a = (dAgg[dec] ||= { n: 0, p: [] }); a.n++; a.p.push(...(winPrices.get(t.key) || [])); }
+  const decades = Object.entries(dAgg).map(([d, a]) => ({ d: +d, n: a.n, avg: avgOf(a.p) })).filter(x => x.avg != null && x.n >= 3).sort((a, b) => a.d - b.d);
+  const decMin = Math.min(...decades.map(x => x.avg));
+  // price trend: average price per title across the deals live each day (weeks when the range is long)
+  const byWeek = days.length > 45;
+  const buckets = []; for (const x of days) { const k = byWeek ? addDays(x, -((new Date(x + 'T12:00:00Z').getUTCDay() + 6) % 7)) : x; if (!buckets.length || buckets[buckets.length - 1].k !== k) buckets.push({ k, days: [] }); buckets[buckets.length - 1].days.push(x); }
+  const trend = buckets.map(b => { const ps = priced.filter(x => b.days.some(dd => liveOn(x.deal, dd))).map(x => x.price); const a = avgOf(ps); return { k: b.k, v: a == null ? 0 : a, n: ps.length }; });
+  const trendMin = Math.min(...trend.filter(x => x.v).map(x => x.v));
+  // top stars: actors and directors with the most titles in deals
+  const topOf = role => { const c = new Map(); for (const t of winTitles) for (const n of (role === 'cast' ? (t.imdb?.cast || []).slice(0, 5) : (t.imdb?.directors || []))) { const a = c.get(n) || { n: 0, p: [] }; a.n++; a.p.push(...(winPrices.get(t.key) || [])); c.set(n, a); } return [...c.entries()].sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0])).slice(0, 8).map(([name, a]) => ({ name, n: a.n, avg: avgOf(a.p) })); };
+  const topCast = topOf('cast'), topDir = topOf('director');
+  const starList = (role, list) => h('div', { class: 'rec' }, h('p', { class: 'sub' }, role === 'cast' ? 'actors' : 'directors'), list.length ? list.map(x => h('div', { class: 'rrow srow' }, h('a', { href: personHref(role, x.name) }, x.name), h('span', { class: 'srt' }, h('b', null, `${x.n} titles`), x.avg != null ? h('span', { class: 'sub' }, `avg ${money(x.avg)}`) : ''))) : h('p', { class: 'sub' }, 'nothing yet'));
   // per day
   const perDay = days.map(x => ({ v: deals.filter(d => liveOn(d, x)).length, part: deals.filter(d => d.firstSeen === x).length, label: String(+x.slice(8)), title: `${fmtDate(x)}: ${deals.filter(d => liveOn(d, x)).length} live, ${deals.filter(d => d.firstSeen === x).length} new` }));
   // price spread
@@ -1713,6 +1742,22 @@ function viewData(q) {
       card('c-t', 'deals --by-type', 'Deal types', hbars(kinds, Math.max(1, ...kinds.map(k => k[1]))),
         h('p', { class: 'sub', style: 'margin:22px 0 4px' }, 'new deals by weekday' + (from === FIRST ? ' (after the first scrape)' : '')),
         vbars(Object.entries(wdC).map(([k, v]) => ({ label: k, v, gold: v === wdMax && v > 0 })), { label: 'New deals by weekday' }))),
+    h('div', { class: 'cards2' },
+      card('c-g', 'titles --by-genre', 'Genres',
+        h('div', { class: 'hbars' }, genres.map(x => h('div', { class: 'hb hb4' },
+          h('a', { href: '#/titles?g=' + encodeURIComponent(x.g) }, x.g),
+          h('div', { class: 'track', 'aria-hidden': 'true' }, h('div', { style: `width:${Math.max(2, x.n / gMax * 100).toFixed(1)}%` })),
+          h('b', null, x.n.toLocaleString()),
+          h('span', { class: 'sub' }, x.avg != null ? ['avg ', money(x.avg), ' · from ', h('span', { class: 'gold' }, money(x.min))] : '')))),
+        h('p', { class: 'sub key' }, 'top 10 genres by titles · tap one to see its titles')),
+      card('c-dec', 'prices --by-decade', 'Price by decade',
+        vbars(decades.map(x => ({ label: `${String(x.d).slice(2)}s`, v: x.avg, text: money(x.avg), gold: x.avg === decMin, title: `${x.d}s: ${x.n.toLocaleString()} titles, avg ${money(x.avg)} per title` })), { label: 'Average price per title by release decade' }),
+        h('p', { class: 'sub key' }, 'average price per title by release decade · ', h('span', { style: 'color:var(--gold)' }, '■'), ' cheapest decade · hover a bar for the title count')),
+      card('c-trend', `prices --trend${byWeek ? ' --weekly' : ''}`, 'Price trend',
+        vbars(trend.map(x => ({ label: byWeek ? shortDate(x.k).replace(/^\w+ /, '') : String(+x.k.slice(8)), v: x.v, text: x.v ? money(x.v).replace('.00', '') : '—', gold: x.v && x.v === trendMin, title: `${byWeek ? 'week of ' : ''}${fmtDate(x.k)}: avg ${x.v ? money(x.v) : '—'} per title (${x.n.toLocaleString()} prices)` })), { label: 'Average price per title over time' }),
+        h('p', { class: 'sub key' }, `average price per title in the deals live each ${byWeek ? 'week' : 'day'} · `, h('span', { style: 'color:var(--gold)' }, '■'), ` cheapest ${byWeek ? 'week' : 'day'}`)),
+      card('c-stars', 'people --top', 'Top stars', h('div', { class: 'recs recs2' }, starList('cast', topCast), starList('director', topDir)),
+        h('p', { class: 'sub key' }, 'most titles in deals · tap a name to see their titles'))),
     h('div', { class: 'cards1' },
       card('c-tl', `timeline --last ${days.length}d`, 'Timeline', gantt(tl, from, TODAY, true), h('p', { class: 'sub key' }, h('span', { style: 'color:var(--green)' }, '■'), ' live  ', h('span', { style: 'color:#3A5440' }, '■'), ' ended  ', h('span', { style: 'color:var(--accent)' }, '■'), ' flash sale · newest 12 deals · ', h('a', { href: '#/timeline' }, 'see every deal on ./timeline'))),
       card('c-r', 'records', 'Records', h('div', { class: 'recs' },
