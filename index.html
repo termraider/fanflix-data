@@ -58,6 +58,12 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:14px 0}
 .cchip{flex:none;font-size:13px;font-weight:700;color:var(--bg,#000);background:var(--gold);border-radius:6px;padding:7px 10px;text-decoration:none;white-space:nowrap;letter-spacing:.03em}
 .cchip:hover{filter:brightness(1.08)}
 .tagi{vertical-align:-.15em;flex:none}
+.bdgrid{display:grid;gap:2px}
+.bdgrid>div{display:grid;grid-template-columns:minmax(90px,130px) repeat(7,minmax(0,1fr));gap:8px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:15px;font-variant-numeric:tabular-nums}
+.bdgrid>div>span:not(:first-child){text-align:center}
+.bdgrid .bdh{border-top:0;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);padding-top:0}
+.bdgrid .green{font-weight:700}
+.bdgrid .cround{display:none}
 .colls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .coll h2{font-size:20px;margin:0}
 .cbar{height:8px;border-radius:4px;background:var(--field);margin:10px 0 8px;overflow:hidden}.cbar i{display:block;height:100%;background:var(--green)}
@@ -468,6 +474,9 @@ tr.gone{opacity:.25;transition:opacity .25s}
   .filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
   .bslots{grid-template-columns:1fr}
   .ccard{grid-template-columns:1fr}
+  .bdgrid>div{grid-template-columns:64px repeat(7,minmax(0,1fr));gap:3px;font-size:11px}
+  .bdgrid .bdh{font-size:10px;letter-spacing:0}
+  .bdgrid .cfull{display:none}.bdgrid .cround{display:inline}
   .colls{grid-template-columns:1fr}
   .rcard{grid-template-columns:110px 1fr;gap:16px}
   .rtitle{font-size:22px}
@@ -1703,6 +1712,21 @@ function viewData(q) {
   // top stars: actors and directors with the most titles in deals
   const topOf = role => { const c = new Map(); for (const t of winTitles) for (const n of (role === 'cast' ? (t.imdb?.cast || []).slice(0, 5) : (t.imdb?.directors || []))) { const a = c.get(n) || { n: 0, p: [] }; a.n++; a.p.push(...(winPrices.get(t.key) || [])); c.set(n, a); } return [...c.entries()].sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0])).slice(0, 8).map(([name, a]) => ({ name, n: a.n, avg: avgOf(a.p) })); };
   const topCast = topOf('cast'), topDir = topOf('director');
+  // best day for deals: by the weekday a deal showed up — how many, how cheap, how many new lows
+  const WDS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const bd = Object.fromEntries(WDS.map(w => [w, { n: 0, per: [], lows: 0, weeks: new Set() }]));
+  for (const d of inWin) {
+    if (d.firstSeen <= FIRST || d.firstSeen < from) continue; // the first scrape found every deal at once
+    const a = bd[wday(d.firstSeen)]; a.n++; a.weeks.add(addDays(d.firstSeen, -((new Date(d.firstSeen + 'T12:00:00Z').getUTCDay() + 6) % 7)));
+    if (d.perTitle != null) a.per.push(d.perTitle);
+    for (const r of dealRows(d)) { const t = titles.get(r.key); if (!t || r.price == null) continue; const before = t.hits.filter(x => x.resolution === r.resolution && x.price != null && x.deal.firstSeen < d.firstSeen); if (before.length && r.price < Math.min(...before.map(x => x.price)) - 0.004) a.lows++; }
+  }
+  const bdRows = WDS.map(w => ({ w, n: bd[w].n, avg: avgOf(bd[w].per), lows: bd[w].lows, perWeek: bd[w].weeks.size ? bd[w].n / bd[w].weeks.size : 0 }));
+  const bdMostN = Math.max(...bdRows.map(x => x.n)), bdMostLows = Math.max(...bdRows.map(x => x.lows));
+  const bdPriced = bdRows.filter(x => x.avg != null), bdCheap = bdPriced.length ? Math.min(...bdPriced.map(x => x.avg)) : null;
+  const bdScore = x => (x.n / (bdMostN || 1)) + (x.lows / (bdMostLows || 1)) + (x.avg != null && bdCheap ? bdCheap / x.avg : 0);
+  const bdBest = bdMostN ? [...bdRows].sort((a, b) => bdScore(b) - bdScore(a))[0] : null;
+  const WDL = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
   const starList = (role, list) => h('div', { class: 'rec' }, h('p', { class: 'sub' }, role === 'cast' ? 'actors' : 'directors'), list.length ? list.map(x => h('div', { class: 'rrow srow' }, h('a', { href: personHref(role, x.name) }, x.name), h('span', { class: 'srt' }, h('b', null, `${x.n} titles`), x.avg != null ? h('span', { class: 'sub' }, `avg ${money(x.avg)}`) : ''))) : h('p', { class: 'sub' }, 'nothing yet'));
   // per day
   const perDay = days.map(x => ({ v: deals.filter(d => liveOn(d, x)).length, part: deals.filter(d => d.firstSeen === x).length, label: String(+x.slice(8)), title: `${fmtDate(x)}: ${deals.filter(d => liveOn(d, x)).length} live, ${deals.filter(d => d.firstSeen === x).length} new` }));
@@ -1786,6 +1810,14 @@ function viewData(q) {
       card('c-stars', 'people --top', 'Top stars', h('div', { class: 'recs recs2' }, starList('cast', topCast), starList('director', topDir)),
         h('p', { class: 'sub key' }, 'most titles in deals · tap a name to see their titles'))),
     h('div', { class: 'cards1' },
+      card('c-bd', 'deals --best-day', 'Best day for deals',
+        bdBest ? h('p', { class: 'big', style: 'margin:0 0 16px' }, h('b', { class: 'gold' }, WDL[bdBest.w] + 's'), ` · ${bdBest.n} new deal${bdBest.n === 1 ? '' : 's'}`, bdBest.avg != null ? `, avg ${money(bdBest.avg)} per title` : '', `, ${bdBest.lows.toLocaleString()} new low${bdBest.lows === 1 ? '' : 's'}`) : h('p', { class: 'sub' }, 'Not enough days yet.'),
+        h('div', { class: 'bdgrid', role: 'table', 'aria-label': 'Deals by the weekday they showed up' },
+          h('div', { role: 'row', class: 'bdh' }, h('span', { role: 'columnheader' }, ''), ...WDS.map(w => h('span', { role: 'columnheader', class: bdBest && w === bdBest.w ? 'gold' : '' }, w))),
+          h('div', { role: 'row' }, h('span', { role: 'rowheader', class: 'sub' }, 'new deals'), ...bdRows.map(x => h('span', { role: 'cell', class: x.n && x.n === bdMostN ? 'green' : '' }, x.n || '—'))),
+          h('div', { role: 'row' }, h('span', { role: 'rowheader', class: 'sub' }, 'avg / title'), ...bdRows.map(x => h('span', { role: 'cell', class: x.avg != null && x.avg === bdCheap ? 'green' : '' }, x.avg != null ? [h('span', { class: 'cfull' }, money(x.avg)), h('span', { class: 'cround', 'aria-hidden': 'true' }, '$' + Math.round(x.avg))] : '—'))),
+          h('div', { role: 'row' }, h('span', { role: 'rowheader', class: 'sub' }, 'new lows'), ...bdRows.map(x => h('span', { role: 'cell', class: x.lows && x.lows === bdMostLows ? 'green' : '' }, x.lows ? x.lows.toLocaleString() : '—')))),
+        h('p', { class: 'sub key' }, 'by the weekday a deal first showed up · new lows = titles cheaper than any earlier deal · ', h('span', { class: 'green' }, 'green'), ' = best in its row', from === FIRST ? ' · the first scrape (Nov 8) is left out' : '')),
       card('c-tl', `timeline --last ${days.length}d`, 'Timeline', gantt(tl, from, TODAY, true), h('p', { class: 'sub key' }, h('span', { style: 'color:var(--green)' }, '■'), ' live  ', h('span', { style: 'color:#3A5440' }, '■'), ' ended  ', h('span', { style: 'color:var(--accent)' }, '■'), ' flash sale · newest 12 deals · ', h('a', { href: '#/timeline' }, 'see every deal on ./timeline'))),
       card('c-r', 'records', 'Records', h('div', { class: 'recs' },
         rec('biggest price drops', drops.slice(0, 5).map(x => recRow(x.t, [h('s', { class: 'sub' }, money(x.hi)), ' ', h('b', { style: 'color:var(--gold)' }, money(x.lo)), ' ', h('span', { class: 'sub' }, resLabel(x.r))]))),
