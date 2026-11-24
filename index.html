@@ -57,6 +57,8 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;padding:14px 0}
 .burger{font-size:18px;padding:8px 2px}
 .cchip{flex:none;font-size:13px;font-weight:700;color:var(--bg,#000);background:var(--gold);border-radius:6px;padding:7px 10px;text-decoration:none;white-space:nowrap;letter-spacing:.03em}
 .cchip:hover{filter:brightness(1.08)}
+.tagi{vertical-align:-.15em;flex:none}
+.cline .tagi{color:var(--gold)}
 .prompt-field{display:flex;align-items:center;gap:10px;background:var(--field);border:1px solid var(--line2);border-radius:6px;padding:0 14px;width:100%;max-width:380px;min-height:46px}
 .prompt-field>span{color:var(--green);font-weight:700}
 .prompt-field input{flex:1;min-width:0;background:transparent;border:0;color:var(--hi);font:inherit;font-size:16px;min-height:44px;outline:none}
@@ -871,10 +873,13 @@ function couponPrice(p) {
     h('span', { class: 'cp-a' }, txt), h('span', { class: 'cp-b' }, `code ${c.code}`));
   return el;
 }
+// coupon tag icon drawn in the text colour (the 🏷️ emoji is beige and vanished on the gold chips)
+const TAG_SVG = '<svg class="tagi" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"><path d="M3 12.2V4a1 1 0 0 1 1-1h8.2a1 1 0 0 1 .7.3l8.1 8.1a1 1 0 0 1 0 1.4l-8.2 8.2a1 1 0 0 1-1.4 0L3.3 12.9a1 1 0 0 1-.3-.7z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg>';
+const tagIcon = () => { const t = document.createElement('template'); t.innerHTML = TAG_SVG; return t.content.firstChild; };
 // one line for deal pages: "🏷️ With GOBBLE10 (10% off): $3.59 per title, if the deal is eligible"
 function couponLine(per, label = 'per title') {
   const c = liveCoupon(); if (!c || per == null) return null;
-  return h('p', { class: 'cline' }, '🏷️ With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are one-time use, so save it for your biggest order.'));
+  return h('p', { class: 'cline' }, tagIcon(), ' With ', h('a', { href: '#/coupons' }, h('b', null, c.code)), ` (${c.pct}% off): `, h('b', { class: 'gold' }, money(withCoupon(per, c))), ` ${label}, if the deal is eligible. `, h('span', { class: 'sub' }, 'Coupons are one-time use, so save it for your biggest order.'));
 }
 
 function viewCoupons() {
@@ -933,7 +938,7 @@ function carousel() {
     const H = n === 0 ? 'h1' : 'h2';
     if (p.coupon) { const c = p.coupon; return h('div', { class: 'slide', role: 'group', 'aria-roledescription': 'slide', 'aria-label': `${n + 1} of ${picks.length}`, hidden: n !== 0 },
       h('div', { class: 'stext' },
-        h('span', { class: 'badge b-gold' }, `🏷️ coupon · ${leftText(c)}`),
+        h('span', { class: 'badge b-gold' }, tagIcon(), ` coupon · ${leftText(c)}`),
         h(H, null, `${c.pct}% off`, h('br'), h('span', { class: 'ccode' }, c.code)),
         h('p', null, `${c.headline ? c.headline + ' ' : ''}Use it at checkout on fanflix.co through ${endText(c)}.${c.note ? ' ' + c.note + '.' : ''} Coupons are one-time use, so save it for your biggest order.`.replace('..', '.')),
         h('div', { class: 'btns' }, copyBtn(c.code), h('a', { class: 'btn', href: '#/coupons' }, 'coupon history'))),
@@ -1505,7 +1510,7 @@ function updateStarCount() {
   const lc = document.getElementById('libcount');
   if (lc) { const fresh = !own && !waiting && !WL.list().length; lc.textContent = own ? `✓ ${own.toLocaleString()}` : fresh ? 'new' : ''; lc.className = 'libn' + (fresh ? ' new' : ''); }
   const c = typeof liveCoupon === 'function' ? liveCoupon() : null, chip = document.getElementById('cchip');
-  if (chip) { chip.hidden = !c; if (c) { chip.textContent = `🏷️ ${c.code}`; chip.title = `${c.code}: ${c.pct}% off at FanFlix, ${leftText(c)}`; } }
+  if (chip) { chip.hidden = !c; if (c) { chip.innerHTML = TAG_SVG + ' '; chip.append(c.code); chip.title = `${c.code}: ${c.pct}% off at FanFlix, ${leftText(c)}`; } }
 }
 // header dropdowns: hover on desktop (CSS), tap/click everywhere, Esc or a tap outside closes
 function closeMenus(except) { document.querySelectorAll('.dd.open').forEach(d => { if (d !== except) { d.classList.remove('open'); d.querySelectorAll('[aria-expanded]').forEach(b => b.setAttribute('aria-expanded', 'false')); } }); }
