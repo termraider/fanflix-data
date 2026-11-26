@@ -96229,9 +96229,6 @@
         "year": 2026,
         "runtime": 99,
         "image": "https://img.fanflix.co/WB/944f2c60ad41c14424bac0017feafc6abc367e2b8cd5b387f7bbba4f492d626c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt27165187",
           "rating": 6.1,
@@ -96253,7 +96250,10 @@
           "directors": [
             "David Robert Mitchell"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Evil Dead Burn",
@@ -96262,9 +96262,6 @@
         "year": 2026,
         "runtime": 111,
         "image": "https://img.fanflix.co/WB/d40aa3e72899b5a336236302fdb6dcafd13869fa8ba2b207b918ecec3849b7be",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt31170389",
           "rating": 6.2,
@@ -96284,7 +96281,10 @@
           "directors": [
             "Sébastien Vanicek"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Mortal Kombat II",
@@ -96293,9 +96293,6 @@
         "year": 2026,
         "runtime": 116,
         "image": "https://img.fanflix.co/WB/df94d56849355711805adf476ba043b4421a0b9c909566e2bf16ad0b863282da",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt17490712",
           "rating": 6.3,
@@ -96317,7 +96314,10 @@
           "directors": [
             "Simon McQuoid"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Supergirl",
@@ -96326,9 +96326,6 @@
         "year": 2026,
         "runtime": 108,
         "image": "https://img.fanflix.co/WB/2847ba7884d0423e2057d1158f3cb531da8bff693b9bf8b5cd7b251e19fbae1b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt8814476",
           "rating": 5.8,
@@ -96350,7 +96347,10 @@
           "directors": [
             "Craig Gillespie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Batman: Knightfall Part 1: Knightfall",
@@ -96358,9 +96358,6 @@
         "resolution": "UHD",
         "year": 2026,
         "image": "https://img.fanflix.co/WB/7b9eb4b01eb34e90a82b708100c725264a8758dc7468a7e0e834ae8c26229022",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt32333324",
           "rating": 7.8,
@@ -96382,7 +96379,10 @@
           "directors": [
             "Jeff Wamester"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Double Trouble",
@@ -96391,9 +96391,6 @@
         "year": 2026,
         "runtime": 89,
         "image": "https://img.fanflix.co/martwork/c735b035cbb5e807dbed3515a8a6601c1b0b3e959539795ee0c3ee4f2ed552e2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt35995947",
           "rating": 4.6,
@@ -96414,7 +96411,10 @@
           "directors": [
             "Shaun Paul Piccinino"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Model Citizen",
@@ -96423,9 +96423,6 @@
         "year": 2026,
         "runtime": 93,
         "image": "https://img.fanflix.co/martwork/5793dd6dc943dcc24731bb24b7b75ba85be08d69080c1413289f4dcc72742f7d",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt13884466",
           "rating": 3.6,
@@ -96447,7 +96444,10 @@
           "directors": [
             "Tag Mendillo"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lee Cronin's The Mummy",
@@ -96456,9 +96456,6 @@
         "year": 2026,
         "runtime": 135,
         "image": "https://img.fanflix.co/WB/53a56cd52f27b68328f5b5c60d35d12d2d49e61382dce8ed7f7dc38006747fd0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt32612507",
           "rating": 6.1,
@@ -96478,7 +96475,10 @@
           "directors": [
             "Lee Cronin"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "They Will Kill You",
@@ -96487,9 +96487,6 @@
         "year": 2026,
         "runtime": 95,
         "image": "https://img.fanflix.co/WB/3b556b3f0b90b5735ac60659bebabb5f261c7e15d15cb1080fbfae100b1f9c92",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt31728330",
           "rating": 6.3,
@@ -96511,7 +96508,10 @@
           "directors": [
             "Kirill Sokolov"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Casa Grande",
@@ -96520,9 +96520,6 @@
         "year": 2026,
         "runtime": 114,
         "image": "https://img.fanflix.co/martwork/32c5e1ae835ea78baf0eb3b2830aee0e8fea8781840e3fbd71eeb2ff25ba23e9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt35887288",
           "rating": 4.6,
@@ -96542,7 +96539,10 @@
           "directors": [
             "Juan Pablo Arias Munoz"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "\"Wuthering Heights\"",
@@ -96551,9 +96551,6 @@
         "year": 2026,
         "runtime": 136,
         "image": "https://img.fanflix.co/WB/1c8e64ebe93ca7d6366c611a40d9ed95aff334109126446f9c49fc08a6378d67",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt32897959",
           "rating": 6.1,
@@ -96574,7 +96571,10 @@
           "directors": [
             "Emerald Fennell"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Bride!",
@@ -96583,9 +96583,6 @@
         "year": 2026,
         "runtime": 126,
         "image": "https://img.fanflix.co/WB/f385732e1fa42a86e70e60fc908a028048a29c9cb690afc045df1ab6f7ab4ccd",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt30851137",
           "rating": 5.6,
@@ -96607,7 +96604,10 @@
           "directors": [
             "Maggie Gyllenhaal"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "F1® The Movie",
@@ -96616,9 +96616,6 @@
         "year": 2025,
         "runtime": 155,
         "image": "https://img.fanflix.co/WB/28c5ded59977410d4654c21dfe0fe0bd143fb377dcd17d8bae68f35d8e63394e",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt16311594",
           "rating": 7.6,
@@ -96639,7 +96636,10 @@
           "directors": [
             "Joseph Kosinski"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Dune (2021)",
@@ -96679,9 +96679,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/WB/8660b5c98bb95311f661391115a287e130c46b7842e1b9b111e1e26c4389769b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt15239678",
           "rating": 8.4,
@@ -96703,7 +96700,10 @@
           "directors": [
             "Denis Villeneuve"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Conjuring: Last Rites",
@@ -96712,9 +96712,6 @@
         "year": 2025,
         "runtime": 135,
         "image": "https://img.fanflix.co/WB/c67a35ba7e40ad45fbf7fe455f7be97ebf1e937fd535214fc8b0b585f92609d3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt22898462",
           "rating": 6.2,
@@ -96736,7 +96733,10 @@
           "directors": [
             "Michael Chaves"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Weapons",
@@ -96745,9 +96745,6 @@
         "year": 2025,
         "runtime": 128,
         "image": "https://img.fanflix.co/WB/bac4490eaf4d1de1b1b619b19e70744959bce6169ed60e9cf77056a39f2e6e18",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt26581740",
           "rating": 7.4,
@@ -96768,7 +96765,10 @@
           "directors": [
             "Zach Cregger"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sinners",
@@ -96777,9 +96777,6 @@
         "year": 2025,
         "runtime": 138,
         "image": "https://img.fanflix.co/WB/9ad11854baa1cc46285104f090c8ac7b80e0704e7bc9f9c62172b769f8fd94d3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt31193180",
           "rating": 7.5,
@@ -96799,7 +96796,10 @@
           "directors": [
             "Ryan Coogler"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Final Destination Bloodlines",
@@ -96808,9 +96808,6 @@
         "year": 2025,
         "runtime": 109,
         "image": "https://img.fanflix.co/WB/a345472581b5f435cb8b846c4e8c82ef46f9030b3e6c30c5c302ebe5aeff2589",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt9619824",
           "rating": 6.7,
@@ -96832,7 +96829,10 @@
             "Zach Lipovsky",
             "Adam B. Stein"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "One Battle After Another",
@@ -96873,9 +96873,6 @@
         "year": 2025,
         "runtime": 95,
         "image": "https://img.fanflix.co/WB/481503b96d95f7d27a605c49f8b2048a762ecf5e49c03d9046744d7f5225676a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt6300910",
           "rating": 5.5,
@@ -96897,7 +96894,10 @@
           "directors": [
             "Richard Gray"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "A Minecraft Movie",
@@ -96906,9 +96906,6 @@
         "year": 2025,
         "runtime": 101,
         "image": "https://img.fanflix.co/WB/dd329101d58ce796882c0f1bb846ed608e1d1885ec9a7447116e492d4d383b88",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3566834",
           "rating": 5.5,
@@ -96930,7 +96927,10 @@
           "directors": [
             "Jared Hess"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Superman (2025)",
@@ -96939,9 +96939,6 @@
         "year": 2025,
         "runtime": 129,
         "image": "https://img.fanflix.co/WB/184e79a4a78d929f95e5335afaf34382b8f2ddd4368f677fe8e8e100aa575667",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt5950044",
           "rating": 7,
@@ -96963,7 +96960,10 @@
           "directors": [
             "James Gunn"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Barbie",
@@ -96971,9 +96971,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/WB/9d93d83ab8620ec8c981ef2857525b613563f702092a37aa8ce41db74dee4403",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1517268",
           "rating": 6.8,
@@ -96995,7 +96992,10 @@
           "directors": [
             "Greta Gerwig"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Wonka",
@@ -97035,9 +97035,6 @@
         "resolution": "UHD",
         "year": 2022,
         "image": "https://img.fanflix.co/WB/c82c196524d143bb88d89b574c58c1bfc2022392f554bcb8ee7a009f89057cf0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3704428",
           "rating": 7.3,
@@ -97059,7 +97056,10 @@
           "directors": [
             "Baz Luhrmann"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Don't Worry Darling",
@@ -97067,9 +97067,6 @@
         "resolution": "UHD",
         "year": 2022,
         "image": "https://img.fanflix.co/WB/b78d71249f16038f8cc96ffc2cccc00350a73e303d06ddbd1bf67f07692e129a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt10731256",
           "rating": 6.3,
@@ -97091,7 +97088,10 @@
           "directors": [
             "Olivia Wilde"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Batman (2022)",
@@ -97099,9 +97099,6 @@
         "resolution": "UHD",
         "year": 2022,
         "image": "https://img.fanflix.co/WB/aa263590b84db3d2ecd94af4473aeff45c1a11da7f886345a2983941a1aa0fe9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1877830",
           "rating": 7.8,
@@ -97123,7 +97120,10 @@
           "directors": [
             "Matt Reeves"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Mortal Kombat (2021)",
@@ -97131,9 +97131,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/WB/4a4e305d864fd6917e9bc15ab2254cee52967858755688a22e523f7b8f0d5f40",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0293429",
           "rating": 6.1,
@@ -97155,7 +97152,10 @@
           "directors": [
             "Simon McQuoid"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Space Jam: A New Legacy",
@@ -97195,9 +97195,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/WB/6ac6a4ef8393278ee984b34e2f647c9a37b2b0267b9aa0581496b346d35e525b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt10838180",
           "rating": 5.6,
@@ -97218,7 +97215,10 @@
           "directors": [
             "Lana Wachowski"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "In The Heights",
@@ -97226,9 +97226,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/WB/1f8413f04f8761056d6428bfeeace48f5ee3cb22ad8822589a23bcf79b0ff9a1",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1321510",
           "rating": 7.2,
@@ -97250,7 +97247,10 @@
           "directors": [
             "Jon M. Chu"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Witches (2020)",
@@ -97290,9 +97290,6 @@
         "resolution": "UHD",
         "year": 2020,
         "image": "https://img.fanflix.co/WB/1cbbbb7e07258ce51822fc6e1615633135afe5776f37cc9b818eb223c052ec93",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt6723592",
           "rating": 7.3,
@@ -97314,7 +97311,10 @@
           "directors": [
             "Christopher Nolan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Pokémon Detective Pikachu",
@@ -97638,9 +97638,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/martwork/wb/c0441f0e-b66a-476b-a5f7-3f7bdca93b96-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1972591",
           "rating": 6.7,
@@ -97662,7 +97659,10 @@
           "directors": [
             "Guy Ritchie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Accountant",
@@ -97765,9 +97765,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.fanflix.co/WB/f351ffacb089af8b84961a7f4bb543a6ffb82581850602cf1dd4cb082ade30e0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3183660",
           "rating": 7.2,
@@ -97789,7 +97786,10 @@
           "directors": [
             "David Yates"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Fantastic Beasts: The Secrets of Dumbledore",
@@ -97797,9 +97797,6 @@
         "resolution": "UHD",
         "year": 2022,
         "image": "https://img.fanflix.co/WB/329b2d3989622e45621ea7d0724420f80c072c7735d67937a8a62f268e1568cc",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4123432",
           "rating": 6.2,
@@ -97820,7 +97817,10 @@
           "directors": [
             "David Yates"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sully",
@@ -97955,9 +97955,6 @@
         "resolution": "UHD",
         "year": 2014,
         "image": "https://img.fanflix.co/WB/848bb79b25ace89b17d20b571b5541bcc767a5c75a5fe799f8456a3a4c0d8c79",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1631867",
           "rating": 7.9,
@@ -97980,7 +97977,10 @@
           "directors": [
             "Doug Liman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Lego Movie",
@@ -98053,9 +98053,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.fanflix.co/martwork/wb/4ac0b6b3-48da-41e6-87ff-e6d3b65bac61-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3513498",
           "rating": 6.5,
@@ -98077,7 +98074,10 @@
           "directors": [
             "Mike Mitchell"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "This is Where I Leave You",
@@ -98116,9 +98116,6 @@
         "resolution": "UHD",
         "year": 2013,
         "image": "https://img.fanflix.co/martwork/wb/a1674116-8d41-4bbe-886e-d37b7781a848-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1343092",
           "rating": 7.2,
@@ -98139,7 +98136,10 @@
           "directors": [
             "Baz Luhrmann"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Conjuring",
@@ -98179,9 +98179,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/martwork/wb/19263390-7507-4e8c-8d0b-ed3f33bbec75-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3065204",
           "rating": 7.3,
@@ -98203,7 +98200,10 @@
           "directors": [
             "James Wan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Conjuring: The Devil Made Me Do It",
@@ -98211,9 +98211,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/WB/c5d9a59f73f1df6773a4e1dc5d8b910012c32122adef93011d84c1ed544a24bc",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt7069210",
           "rating": 6.2,
@@ -98235,7 +98232,10 @@
           "directors": [
             "Michael Chaves"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Man of Steel",
@@ -98243,9 +98243,6 @@
         "resolution": "UHD",
         "year": 2013,
         "image": "https://img.fanflix.co/martwork/wb/6dc52afb-064f-4748-b16f-706089bf83e7-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0770828",
           "rating": 7.1,
@@ -98267,7 +98264,10 @@
           "directors": [
             "Zack Snyder"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Pacific Rim",
@@ -98307,9 +98307,6 @@
         "resolution": "HD",
         "year": 2013,
         "image": "https://img.fanflix.co/martwork/wb/855d740e-f40c-4b96-8d30-3ab6cd780640-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1392214",
           "rating": 8.2,
@@ -98331,7 +98328,10 @@
           "directors": [
             "Denis Villeneuve"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "We're the Millers",
@@ -98401,9 +98401,6 @@
         "resolution": "UHD",
         "year": 2012,
         "image": "https://img.fanflix.co/WB/98c29eb6adfedd1da34b83c7378cf4259111d785b9afbf47e7810559a3005106",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0903624",
           "rating": 7.8,
@@ -98424,7 +98421,10 @@
           "directors": [
             "Peter Jackson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Campaign",
@@ -98432,9 +98432,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/martwork/wb/baf78eba-691b-479a-83f1-fe3de10b4806-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1790886",
           "rating": 6.1,
@@ -98454,7 +98451,10 @@
           "directors": [
             "Jay Roach"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Lucky One",
@@ -98462,9 +98462,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/martwork/wb/b0fd4abb-069e-42ba-9b2b-8a4011f21231-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1327194",
           "rating": 6.4,
@@ -98486,7 +98483,10 @@
           "directors": [
             "Scott Hicks"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Trouble With The Curve",
@@ -98494,9 +98494,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/martwork/wb/5087fc29-7270-4e99-9d85-ab67694c27b2-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2083383",
           "rating": 6.8,
@@ -98518,7 +98515,10 @@
           "directors": [
             "Robert Lorenz"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Crazy, Stupid, Love",
@@ -98526,9 +98526,6 @@
         "resolution": "HD",
         "year": 2011,
         "image": "https://img.fanflix.co/martwork/wb/a4933ea5-db05-412a-954f-43d26465d11b-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1570728",
           "rating": 7.4,
@@ -98551,7 +98548,10 @@
             "Glenn Ficarra",
             "John Requa"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Something Borrowed",
@@ -98656,9 +98656,6 @@
         "resolution": "HD",
         "year": 2010,
         "image": "https://img.fanflix.co/martwork/wb/3efae476-6991-4bad-97ca-4e129a0f57c4-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1880209",
           "rating": 6.6,
@@ -98680,7 +98677,10 @@
           "directors": [
             "Adrian Moat"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "He's Just Not That Into You",
@@ -98721,9 +98721,6 @@
         "year": 2009,
         "runtime": 78,
         "image": "https://img.fanflix.co/WB/e430c6b8efc306325614bd95d780e1fe43bfd598dc862475201d72e4d82e4604",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1019454",
           "rating": 7.4,
@@ -98744,7 +98741,10 @@
           "directors": [
             "Ross Katz"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Hangover (Unrated)",
@@ -98812,9 +98812,6 @@
         "resolution": "UHD",
         "year": 2011,
         "image": "https://img.fanflix.co/martwork/wb/b4718d7c-d5d8-49f1-9004-50bc37c6949c-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1411697",
           "rating": 6.5,
@@ -98834,7 +98831,10 @@
           "directors": [
             "Todd Phillips"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Hangover Part III",
@@ -98842,9 +98842,6 @@
         "resolution": "UHD",
         "year": 2013,
         "image": "https://img.fanflix.co/martwork/wb/a6bee9c2-5031-4d56-97b1-2d1b035e4f40-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1951261",
           "rating": 5.9,
@@ -98865,7 +98862,10 @@
           "directors": [
             "Todd Phillips"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Blind Side",
@@ -98937,9 +98937,6 @@
         "resolution": "HD",
         "year": 2008,
         "image": "https://img.fanflix.co/martwork/wb/dc8d9fdf-1646-407b-a4a7-53f6083ad00b-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1205489",
           "rating": 8.1,
@@ -98959,7 +98956,10 @@
           "directors": [
             "Clint Eastwood"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sex and the City: The Movie",
@@ -99096,9 +99096,6 @@
         "resolution": "HD",
         "year": 2007,
         "image": "https://img.fanflix.co/martwork/wb/28b0c2e1-25d1-43b4-8ab0-c91c248a4952-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0480249",
           "rating": 7.2,
@@ -99121,7 +99118,10 @@
           "directors": [
             "Francis Lawrence"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hairspray (2007)",
@@ -99161,9 +99161,6 @@
         "resolution": "HD",
         "year": 2007,
         "image": "https://img.fanflix.co/martwork/wb/1f7b8367-2bfe-4ace-a506-2bd494210bbd-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0488120",
           "rating": 7.2,
@@ -99185,7 +99182,10 @@
           "directors": [
             "Gregory Hoblit"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Departed",
@@ -99225,9 +99225,6 @@
         "resolution": "UHD",
         "year": 2005,
         "image": "https://img.fanflix.co/WB/49b331872db9e715d30aedc7fc1d58048bde0c3fa3933fd9e588aa20ff4edfa2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0360486",
           "rating": 7,
@@ -99249,7 +99246,10 @@
           "directors": [
             "Francis Lawrence"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Batman Begins",
@@ -99257,9 +99257,6 @@
         "resolution": "UHD",
         "year": 2005,
         "image": "https://img.fanflix.co/martwork/wb/462ae734-2342-40d8-85c5-9cfe4bd116b3-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0372784",
           "rating": 8.2,
@@ -99279,7 +99276,10 @@
           "directors": [
             "Christopher Nolan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Dark Knight",
@@ -99287,9 +99287,6 @@
         "resolution": "UHD",
         "year": 2008,
         "image": "https://img.fanflix.co/martwork/wb/c6140695-a35f-46e2-adb7-45ed829fc0c0-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0468569",
           "rating": 9.1,
@@ -99310,7 +99307,10 @@
           "directors": [
             "Christopher Nolan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Dark Knight Rises",
@@ -99318,9 +99318,6 @@
         "resolution": "UHD",
         "year": 2012,
         "image": "https://img.fanflix.co/martwork/wb/38dd4c91-6758-46bd-969b-6acf010a249b-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1345836",
           "rating": 8.4,
@@ -99341,7 +99338,10 @@
           "directors": [
             "Christopher Nolan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Charlie and the Chocolate Factory",
@@ -99349,9 +99349,6 @@
         "resolution": "HD",
         "year": 2005,
         "image": "https://img.fanflix.co/martwork/wb/1336299a-03db-44be-8bf8-bf8a976143ca-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0367594",
           "rating": 6.7,
@@ -99373,7 +99370,10 @@
           "directors": [
             "Tim Burton"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Tim Burton's Corpse Bride",
@@ -99446,9 +99446,6 @@
         "resolution": "HD",
         "year": 2004,
         "image": "https://img.fanflix.co/martwork/wb/9179305f-0547-465d-a8aa-3e9571c7b28e-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0332452",
           "rating": 7.3,
@@ -99469,7 +99466,10 @@
           "directors": [
             "Wolfgang Petersen"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Troy (Director's Cut)",
@@ -99477,9 +99477,6 @@
         "resolution": "HD",
         "year": 2004,
         "image": "https://img.fanflix.co/martwork/wb/f34cc7c2-4672-41f8-9bc0-2e7a92cfeffb-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0332452",
           "rating": 7.3,
@@ -99500,7 +99497,10 @@
           "directors": [
             "Wolfgang Petersen"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Phantom of the Opera",
@@ -99508,9 +99508,6 @@
         "resolution": "HD",
         "year": 2004,
         "image": "https://img.fanflix.co/martwork/wb/057e30a1-eca3-4484-9996-2cc3f77e27f4-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0293508",
           "rating": 7.2,
@@ -99532,7 +99529,10 @@
           "directors": [
             "Joel Schumacher"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Butterfly Effect",
@@ -99604,9 +99604,6 @@
         "resolution": "HD",
         "year": 2003,
         "image": "https://img.fanflix.co/martwork/wb/5f8ab797-71cf-4dea-868f-edbfabaa9c94-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0327137",
           "rating": 7.5,
@@ -99628,7 +99625,10 @@
           "directors": [
             "Tim McCanlies"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Last Samurai",
@@ -99764,9 +99764,6 @@
         "resolution": "HD",
         "year": 2001,
         "image": "https://img.fanflix.co/martwork/wb/7fc99f8b-0e73-4ce4-b1cb-4e3475aa59b4-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0245674",
           "rating": 5.7,
@@ -99788,7 +99785,10 @@
           "directors": [
             "Steve Beck"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -99796,9 +99796,6 @@
         "resolution": "UHD",
         "year": 2001,
         "image": "https://img.fanflix.co/WB/1e45b8293ef6a9919fc5a84004589a4eb7c3fc6cac318d718311d4bc56ef4033",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0120737",
           "rating": 8.9,
@@ -99820,7 +99817,10 @@
           "directors": [
             "Peter Jackson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lord of the Rings: The Two Towers",
@@ -99828,9 +99828,6 @@
         "resolution": "UHD",
         "year": 2002,
         "image": "https://img.fanflix.co/WB/16418e52ffa2125771a6b64946e3760bc1e3852080b5dcb4d309c9fbe0925fc2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0167261",
           "rating": 8.8,
@@ -99852,7 +99849,10 @@
           "directors": [
             "Peter Jackson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Lord of the Rings: The Return of the King",
@@ -99892,9 +99892,6 @@
         "resolution": "UHD",
         "year": 2001,
         "image": "https://img.fanflix.co/WB/990126f269071ce7b9c8e8b24ba6ebb671e267ae6c2a776e5d40dc8c6c6d83d4",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0120737",
           "rating": 8.9,
@@ -99916,7 +99913,10 @@
           "directors": [
             "Peter Jackson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lord of the Rings: The Two Towers (Extended Edition)",
@@ -99924,9 +99924,6 @@
         "resolution": "UHD",
         "year": 2003,
         "image": "https://img.fanflix.co/WB/101726cc59137fc4ca53d88a62389c21926c700f92119711b30a9cea5a858c2f",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0167261",
           "rating": 8.8,
@@ -99948,7 +99945,10 @@
           "directors": [
             "Peter Jackson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lord of the Rings: The Return of the King (Extended Edition)",
@@ -99956,9 +99956,6 @@
         "resolution": "UHD",
         "year": 2004,
         "image": "https://img.fanflix.co/WB/cbfd34d9531e585cdee097214f9eddab9f3d0cf1fd6155b74338c03b4782af13",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0167260",
           "rating": 9,
@@ -99980,7 +99977,10 @@
           "directors": [
             "Peter Jackson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Sorcerer's Stone",
@@ -99988,9 +99988,6 @@
         "resolution": "UHD",
         "year": 2001,
         "image": "https://img.fanflix.co/WB/db3f516d5763434486abc3f284e03323aa75b07b5de82c79ffd063da14ac2ff5",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0241527",
           "rating": 7.7,
@@ -100012,7 +100009,10 @@
           "directors": [
             "Chris Columbus"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Chamber of Secrets",
@@ -100020,9 +100020,6 @@
         "resolution": "UHD",
         "year": 2002,
         "image": "https://img.fanflix.co/WB/ab448663b92fee7616d87410126b54bf34d7a4c5408bebfbc55c17bf44fcc8d7",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0295297",
           "rating": 7.5,
@@ -100044,7 +100041,10 @@
           "directors": [
             "Chris Columbus"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Prisoner of Azkaban",
@@ -100052,9 +100052,6 @@
         "resolution": "UHD",
         "year": 2004,
         "image": "https://img.fanflix.co/WB/1acfec0c6e4a52460185afcaba8bbaab90943ae2e5aaddcd389add4b3a684763",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0304141",
           "rating": 8,
@@ -100076,7 +100073,10 @@
           "directors": [
             "Alfonso Cuarón"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Goblet of Fire",
@@ -100084,9 +100084,6 @@
         "resolution": "UHD",
         "year": 2005,
         "image": "https://img.fanflix.co/WB/72a551955b0ae1998885602376c3572106cc484739d9b45363aff019ecf8cdc6",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0330373",
           "rating": 7.7,
@@ -100108,7 +100105,10 @@
           "directors": [
             "Mike Newell"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Order of the Phoenix",
@@ -100116,9 +100116,6 @@
         "resolution": "UHD",
         "year": 2007,
         "image": "https://img.fanflix.co/WB/50966ae1665460a398b46287808e28ecaca38532a2e8dbc6640194f082dbd19a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0373889",
           "rating": 7.5,
@@ -100140,7 +100137,10 @@
           "directors": [
             "David Yates"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Half Blood Prince",
@@ -100148,9 +100148,6 @@
         "resolution": "UHD",
         "year": 2009,
         "image": "https://img.fanflix.co/WB/7050a770f36d548714a163600de97083380f4529e2456b9eb4b012d91535a66a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0417741",
           "rating": 7.6,
@@ -100172,7 +100169,10 @@
           "directors": [
             "David Yates"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Deathly Hallows - Part 1",
@@ -100180,9 +100180,6 @@
         "resolution": "UHD",
         "year": 2010,
         "image": "https://img.fanflix.co/WB/bdbe069b4a6e830dc75810ede78c00ee1c6c97414a866c35e73892a2f2398cd1",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0926084",
           "rating": 7.7,
@@ -100204,7 +100201,10 @@
           "directors": [
             "David Yates"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harry Potter and the Deathly Hallows, Part 2",
@@ -100212,9 +100212,6 @@
         "resolution": "UHD",
         "year": 2011,
         "image": "https://img.fanflix.co/WB/c4c7d48ff7f099c1a8162f8140738ad639bddd68130b5cb6cccbbfbfb97e76b6",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1201607",
           "rating": 8.1,
@@ -100236,7 +100233,10 @@
           "directors": [
             "David Yates"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Ocean's Eleven (2001)",
@@ -100244,9 +100244,6 @@
         "resolution": "UHD",
         "year": 2001,
         "image": "https://img.fanflix.co/WB/e050ae673bdb2f8c74fd9a3cf1ea8208c3a7a91963103a0946e6d0750093c7b0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0240772",
           "rating": 7.7,
@@ -100267,7 +100264,10 @@
           "directors": [
             "Steven Soderbergh"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Training Day",
@@ -100275,9 +100275,6 @@
         "resolution": "UHD",
         "year": 2001,
         "image": "https://img.fanflix.co/WB/80b8c67b5f612aaff980399437fb38ccd89d5a02357c07dc35c8096eaad3bc5d",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0139654",
           "rating": 7.8,
@@ -100299,7 +100296,10 @@
           "directors": [
             "Antoine Fuqua"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Best in Show",
@@ -100337,9 +100337,6 @@
         "resolution": "HD",
         "year": 2000,
         "image": "https://img.fanflix.co/martwork/wb/f385bc81-c0a8-4f08-8949-f336d466181a-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0212346",
           "rating": 6.4,
@@ -100361,7 +100358,10 @@
           "directors": [
             "Donald Petrie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Eyes Wide Shut",
@@ -100369,9 +100369,6 @@
         "resolution": "UHD",
         "year": 1999,
         "image": "https://img.fanflix.co/martwork/wb/4b650d9c-c798-4e02-8cba-c88dd4195123-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0120663",
           "rating": 7.5,
@@ -100393,7 +100390,10 @@
           "directors": [
             "Stanley Kubrick"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Scooby-Doo and the Witch's Ghost",
@@ -100531,9 +100531,6 @@
         "resolution": "UHD",
         "year": 2003,
         "image": "https://img.fanflix.co/martwork/wb/bf0e3529-c361-416a-a36f-e5de52f12647-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0234215",
           "rating": 7.2,
@@ -100555,7 +100552,10 @@
             "Lana Wachowski",
             "Lilly Wachowski"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Blade",
@@ -100595,9 +100595,6 @@
         "resolution": "HD",
         "year": 1998,
         "image": "https://img.fanflix.co/martwork/wb/f4dd344c-17c2-490f-b5d1-6620ae2b3163-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0120586",
           "rating": 8.5,
@@ -100618,7 +100615,10 @@
           "directors": [
             "Tony Kaye"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "You've Got Mail",
@@ -100626,9 +100626,6 @@
         "resolution": "HD",
         "year": 1998,
         "image": "https://img.fanflix.co/martwork/wb/f1b4f9c6-3be1-4f33-b031-9211d0587e80-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0128853",
           "rating": 6.8,
@@ -100650,7 +100647,10 @@
           "directors": [
             "Nora Ephron"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Practical Magic",
@@ -100722,9 +100722,6 @@
         "resolution": "HD",
         "year": 2001,
         "image": "https://img.fanflix.co/martwork/wb/17a13bf5-e6af-46ca-aaf4-8051416bbac0-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0266915",
           "rating": 6.7,
@@ -100746,7 +100743,10 @@
           "directors": [
             "Brett Ratner"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Scooby-Doo On Zombie Island",
@@ -100850,9 +100850,6 @@
         "resolution": "HD",
         "year": 1999,
         "image": "https://img.fanflix.co/martwork/wb/7fe0235c-2066-46dd-9c46-96f97239c551-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0145660",
           "rating": 6.7,
@@ -100874,7 +100871,10 @@
           "directors": [
             "Jay Roach"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Devil's Advocate",
@@ -100882,9 +100882,6 @@
         "resolution": "HD",
         "year": 1997,
         "image": "https://img.fanflix.co/martwork/wb/f628b4c7-755f-4c5c-8837-166f2103b7c7-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0118971",
           "rating": 7.5,
@@ -100906,7 +100903,10 @@
           "directors": [
             "Taylor Hackford"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Contact",
@@ -100914,9 +100914,6 @@
         "resolution": "HD",
         "year": 1997,
         "image": "https://img.fanflix.co/martwork/wb/2c09da50-25f6-4723-aa85-8e7d96152898-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0118884",
           "rating": 7.5,
@@ -100938,7 +100935,10 @@
           "directors": [
             "Robert Zemeckis"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Selena",
@@ -100978,9 +100978,6 @@
         "resolution": "HD",
         "year": 1996,
         "image": "https://img.fanflix.co/martwork/wb/ad51415e-28d1-4e44-be65-71b63761e2cd-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0117913",
           "rating": 7.5,
@@ -101002,7 +100999,10 @@
           "directors": [
             "Joel Schumacher"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Space Jam",
@@ -101074,9 +101074,6 @@
         "resolution": "HD",
         "year": 1995,
         "image": "https://img.fanflix.co/martwork/wb/65ba7458-e5b0-46ec-9fe0-d9d195f04014-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0112346",
           "rating": 6.9,
@@ -101098,7 +101095,10 @@
           "directors": [
             "Rob Reiner"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Now and Then",
@@ -101107,9 +101107,6 @@
         "year": 1995,
         "runtime": 102,
         "image": "https://img.fanflix.co/WB/8d0912c2c1eb47a7926ec21b088b0966f91fe1f382d944592a5e72958812ad23",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0114011",
           "rating": 6.8,
@@ -101131,7 +101128,10 @@
           "directors": [
             "Lesli Linka Glatter"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Friday (Director's Cut)",
@@ -101139,9 +101139,6 @@
         "resolution": "HD",
         "year": 2008,
         "image": "https://img.fanflix.co/martwork/wb/433a42c0-2f58-4afb-b6be-4fb4f2be118d-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0113118",
           "rating": 7.2,
@@ -101162,7 +101159,10 @@
           "directors": [
             "F. Gary Gray"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Friday",
@@ -101295,9 +101295,6 @@
         "resolution": "HD",
         "year": 1994,
         "image": "https://img.fanflix.co/martwork/wb/ec5eb97a-54a7-4615-b773-b976d2b36a90-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0110475",
           "rating": 7,
@@ -101319,7 +101316,10 @@
           "directors": [
             "Chuck Russell"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Little Giants",
@@ -101421,9 +101421,6 @@
         "resolution": "HD",
         "year": 1993,
         "image": "https://img.fanflix.co/martwork/wb/2f3b107c-be67-4c00-b5fc-76706af34f52-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0106856",
           "rating": 7.5,
@@ -101445,7 +101442,10 @@
           "directors": [
             "Joel Schumacher"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Dennis the Menace",
@@ -101580,9 +101580,6 @@
         "resolution": "HD",
         "year": 1992,
         "image": "https://img.fanflix.co/martwork/wb/1b8365c5-637d-411e-a9fe-07f56aa8fd6a-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0105191",
           "rating": 7.2,
@@ -101604,7 +101601,10 @@
           "directors": [
             "Christopher Cain"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Bodyguard",
@@ -102056,9 +102056,6 @@
         "resolution": "UHD",
         "year": 1983,
         "image": "https://img.fanflix.co/WB/0c87f168e1298e1f94ad81245fc7a37f2566a69b1015bd7d8e505b1932d3a17b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0086066",
           "rating": 7,
@@ -102080,7 +102077,10 @@
           "directors": [
             "Francis Ford Coppola"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Outsiders",
@@ -102214,9 +102214,6 @@
         "resolution": "UHD",
         "year": 1976,
         "image": "https://img.fanflix.co/WB/645add58a336f29fcca25a7bbabc410e9643639e89018f8c069282cf2849295b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0075029",
           "rating": 7.8,
@@ -102237,7 +102234,10 @@
           "directors": [
             "Clint Eastwood"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "One Flew Over the Cuckoo's Nest",
@@ -102336,9 +102336,6 @@
         "resolution": "HD",
         "year": 1972,
         "image": "https://img.fanflix.co/martwork/wb/1366af99-26dd-4fbc-98b4-f0b768808736-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0068762",
           "rating": 7.6,
@@ -102360,7 +102357,10 @@
           "directors": [
             "Sydney Pollack"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Wizard of Oz",
@@ -105378,9 +105378,6 @@
         "resolution": "UHD",
         "year": 1939,
         "image": "https://img.fanflix.co/WB/96273e0c129c997d072a7a607e7fa0d161a96babe0b3f145cc5f2e92484edd4e",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0031381",
           "rating": 8.2,
@@ -105402,7 +105399,10 @@
           "directors": [
             "Victor Fleming"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "High Society",
@@ -105410,9 +105410,6 @@
         "resolution": "UHD",
         "year": 1956,
         "image": "https://img.fanflix.co/WB/3261b86a49d8ed287de2b652abbb0f1de76bb71c8be4f12a325df7fa9bb77706",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0049314",
           "rating": 6.9,
@@ -105434,7 +105431,10 @@
           "directors": [
             "Charles Walters"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "North By Northwest",
@@ -105442,9 +105442,6 @@
         "resolution": "UHD",
         "year": 1959,
         "image": "https://img.fanflix.co/WB/15f816733a28788034e791a50d751ca2906bc1fa975784bc81a0924c0068f6f7",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0053125",
           "rating": 8.2,
@@ -105466,7 +105463,10 @@
           "directors": [
             "Alfred Hitchcock"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Rio Bravo",
@@ -105474,9 +105474,6 @@
         "resolution": "UHD",
         "year": 1959,
         "image": "https://img.fanflix.co/martwork/wb/2feb42f2-bf0a-4a33-8a07-31dd6bcdecbc-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0053221",
           "rating": 7.9,
@@ -105496,7 +105493,10 @@
           "directors": [
             "Howard Hawks"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Incredible Mr. Limpet (1964)",
@@ -105504,9 +105504,6 @@
         "resolution": "HD",
         "year": 1964,
         "image": "https://img.fanflix.co/WB/77a105a43b0f68184e1ecd43b4e9919979fde52fff2a8ce2f898916bc483bc46",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0058230",
           "rating": 6.5,
@@ -105529,7 +105526,10 @@
             "Arthur Lubin",
             "Gerry Chiniquy"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Brigadoon",
@@ -105537,9 +105537,6 @@
         "resolution": "HD",
         "year": 1954,
         "image": "https://img.fanflix.co/martwork/wb/5823a08e-909a-4901-a53a-c9a5941e7dbd-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0046807",
           "rating": 6.8,
@@ -105561,7 +105558,10 @@
           "directors": [
             "Vincente Minnelli"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Forbidden Planet",
@@ -105569,9 +105569,6 @@
         "resolution": "HD",
         "year": 1956,
         "image": "https://img.fanflix.co/martwork/wb/5421c102-871b-4229-b61f-87d680813543-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0049223",
           "rating": 7.5,
@@ -105592,7 +105589,10 @@
           "directors": [
             "Fred M. Wilcox"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Marlowe",
@@ -105600,9 +105600,6 @@
         "resolution": "SD",
         "year": 1969,
         "image": "https://img.fanflix.co/martwork/wb/245e09b0-e2cb-43ea-912e-e94746f08e6a-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0064638",
           "rating": 6.4,
@@ -105624,7 +105621,10 @@
           "directors": [
             "Paul Bogart"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Ice Station Zebra",
@@ -105632,9 +105632,6 @@
         "resolution": "HD",
         "year": 1968,
         "image": "https://img.fanflix.co/martwork/wb/756e900e-73d2-4f89-89f1-a634b90cccb6-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0063121",
           "rating": 6.6,
@@ -105655,7 +105652,10 @@
           "directors": [
             "John Sturges"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Green Berets",
@@ -105663,9 +105663,6 @@
         "resolution": "HD",
         "year": 1968,
         "image": "https://img.fanflix.co/martwork/wb/9a16e8f2-98b9-4959-ae16-6339abe97292-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0063035",
           "rating": 5.6,
@@ -105687,7 +105684,10 @@
             "Ray Kellogg",
             "John Wayne"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Far from the Madding Crowd",
@@ -105695,9 +105695,6 @@
         "resolution": "HD",
         "year": 1967,
         "image": "https://img.fanflix.co/martwork/wb/ba0d6910-bb2a-4ac6-bb83-56d889b056ae-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0061648",
           "rating": 7.2,
@@ -105719,7 +105716,10 @@
           "directors": [
             "John Schlesinger"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hot Rods to Hell",
@@ -105759,9 +105759,6 @@
         "resolution": "HD",
         "year": 1967,
         "image": "https://img.fanflix.co/martwork/wb/4fd401c4-e32c-44c5-be45-4a251d068b72-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0062138",
           "rating": 7.2,
@@ -105783,7 +105780,10 @@
           "directors": [
             "John Boorman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Karate Killers",
@@ -105791,9 +105791,6 @@
         "resolution": "HD",
         "year": 1967,
         "image": "https://img.fanflix.co/martwork/wb/f6c3c297-8237-42f2-82f1-281dc1161ffd-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0061858",
           "rating": 5.3,
@@ -105808,7 +105805,10 @@
           "directors": [
             "Barry Shear"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Battle of the Bulge",
@@ -105816,9 +105816,6 @@
         "resolution": "HD",
         "year": 1966,
         "image": "https://img.fanflix.co/martwork/wb/9190fc8d-273c-45ec-ace0-7334473660c3-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0058947",
           "rating": 6.8,
@@ -105840,7 +105837,10 @@
           "directors": [
             "Ken Annakin"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Blow Up",
@@ -105848,9 +105848,6 @@
         "resolution": "HD",
         "year": 1966,
         "image": "https://img.fanflix.co/martwork/wb/9a74a7ef-74d0-4e80-95b4-6a3a7585419b-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0060176",
           "rating": 7.4,
@@ -105872,7 +105869,10 @@
           "directors": [
             "Michelangelo Antonioni"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harper",
@@ -105880,9 +105880,6 @@
         "resolution": "HD",
         "year": 1966,
         "image": "https://img.fanflix.co/martwork/wb/0a87597a-9d6e-465a-b6c2-bdd894144631-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0060490",
           "rating": 6.8,
@@ -105904,7 +105901,10 @@
           "directors": [
             "Jack Smight"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Harum Scarum",
@@ -105912,9 +105912,6 @@
         "resolution": "SD",
         "year": 1965,
         "image": "https://img.fanflix.co/martwork/wb/5a11b7f6-6b2a-44cb-9c44-dd5d4ec8551a-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0059255",
           "rating": 4.6,
@@ -105936,7 +105933,10 @@
           "directors": [
             "Gene Nelson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "None But The Brave",
@@ -105944,9 +105944,6 @@
         "resolution": "HD",
         "year": 1965,
         "image": "https://img.fanflix.co/martwork/wb/75426916-598a-470a-935d-1dc4bbb3d8d2-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0059518",
           "rating": 6.4,
@@ -105968,7 +105965,10 @@
           "directors": [
             "Frank Sinatra"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Operation Crossbow",
@@ -105976,9 +105976,6 @@
         "resolution": "HD",
         "year": 1965,
         "image": "https://img.fanflix.co/martwork/wb/bd50bd6d-665b-4bde-963a-06fe3a3e2da9-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0059549",
           "rating": 6.6,
@@ -106000,7 +105997,10 @@
           "directors": [
             "Michael Anderson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Murder Ahoy!",
@@ -106008,9 +106008,6 @@
         "resolution": "HD",
         "year": 1964,
         "image": "https://img.fanflix.co/martwork/wb/cfc9e290-dba2-4186-b1bb-ad735476bd13-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0058382",
           "rating": 7,
@@ -106032,7 +106029,10 @@
           "directors": [
             "George Pollock"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Seven Days in May",
@@ -106040,9 +106040,6 @@
         "resolution": "HD",
         "year": 1964,
         "image": "https://img.fanflix.co/martwork/wb/e8c2bd9a-acd4-4020-a028-aaeb48088b6d-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0058576",
           "rating": 7.8,
@@ -106063,7 +106060,10 @@
           "directors": [
             "John Frankenheimer"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Flipper (1963)",
@@ -106071,9 +106071,6 @@
         "resolution": "HD",
         "year": 1963,
         "image": "https://img.fanflix.co/martwork/wb/cf0519ca-f430-453a-87d0-3284732f54d0-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0057063",
           "rating": 6.1,
@@ -106095,7 +106092,10 @@
           "directors": [
             "James B. Clark"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "How The West Was Won",
@@ -106103,9 +106103,6 @@
         "resolution": "HD",
         "year": 1963,
         "image": "https://img.fanflix.co/WB/c952cfb12fa01b80ad1f1362db2815ec924e09b72d489328d7ee8933a2ac3b27",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0056085",
           "rating": 7.1,
@@ -106128,7 +106125,10 @@
             "John Ford",
             "Henry Hathaway"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Billy Rose's Jumbo",
@@ -106136,9 +106136,6 @@
         "resolution": "HD",
         "year": 1962,
         "image": "https://img.fanflix.co/martwork/wb/a8d5325d-e30c-455a-97be-1370cc945def-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0055797",
           "rating": 6.1,
@@ -106160,7 +106157,10 @@
           "directors": [
             "Charles Walters"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Gypsy",
@@ -106200,9 +106200,6 @@
         "resolution": "HD",
         "year": 1962,
         "image": "https://img.fanflix.co/martwork/wb/ddd9fb60-0d38-46ad-91fa-4b8c8ce0fe10-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0056264",
           "rating": 7.2,
@@ -106225,7 +106222,10 @@
             "Lewis Milestone",
             "Carol Reed"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Atlantis, the Lost Continent",
@@ -106234,9 +106234,6 @@
         "year": 1961,
         "runtime": 90,
         "image": "https://img.fanflix.co/WB/a9f2d51d244dc4cf4916c0dd1ecdfb88ab2b0ebe5959f9d4238ea3302ac9873e",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0054642",
           "rating": 5.5,
@@ -106257,7 +106254,10 @@
           "directors": [
             "George Pal"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Time Machine",
@@ -106265,9 +106265,6 @@
         "resolution": "HD",
         "year": 1960,
         "image": "https://img.fanflix.co/martwork/wb/dd1cf199-b9c8-4252-8464-a3654e21bcd9-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0054387",
           "rating": 7.5,
@@ -106289,7 +106286,10 @@
           "directors": [
             "George Pal"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Searchers",
@@ -106297,9 +106297,6 @@
         "resolution": "UHD",
         "year": 1956,
         "image": "https://img.fanflix.co/martwork/wb/f880a16c-e277-4f99-96b8-efa5a84b1bf5-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0049730",
           "rating": 7.8,
@@ -106320,7 +106317,10 @@
           "directors": [
             "John Ford"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Underwater",
@@ -106360,9 +106360,6 @@
         "resolution": "HD",
         "year": 1955,
         "image": "https://img.fanflix.co/martwork/wb/4a8b7a80-e830-4901-b826-4d50b42be885-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0047849",
           "rating": 7.6,
@@ -106384,7 +106381,10 @@
           "directors": [
             "John Sturges"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Guys and Dolls",
@@ -106393,9 +106393,6 @@
         "year": 1955,
         "runtime": 149,
         "image": "https://img.fanflix.co/martwork/3929e210abdbd8a3a333fca0ac923baa00221d4040b58671fb4d1a2c9aa42000",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0048140",
           "rating": 7.1,
@@ -106417,7 +106414,10 @@
           "directors": [
             "Joseph L. Mankiewicz"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Ivanhoe (1953)",
@@ -106426,9 +106426,6 @@
         "year": 1953,
         "runtime": 107,
         "image": "https://img.fanflix.co/WB/468cdadf4d3381a53d5543e5ca59b2b933b6f06c8c58fcff28d5f3b84d7877e0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0044760",
           "rating": 6.8,
@@ -106450,7 +106447,10 @@
           "directors": [
             "Richard Thorpe"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Julius Caesar",
@@ -106458,9 +106458,6 @@
         "resolution": "HD",
         "year": 1953,
         "image": "https://img.fanflix.co/martwork/wb/0b4826e6-2f22-4ecc-ac10-c451796cd94f-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0045943",
           "rating": 7.2,
@@ -106481,7 +106478,10 @@
           "directors": [
             "Joseph L. Mankiewicz"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Kiss Me Kate",
@@ -106489,9 +106489,6 @@
         "resolution": "HD",
         "year": 1953,
         "image": "https://img.fanflix.co/martwork/wb/efa60d2e-143d-464a-9b8c-6feb9d8b2e4c-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0045963",
           "rating": 7,
@@ -106513,7 +106510,10 @@
           "directors": [
             "George Sidney"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Mogambo",
@@ -106521,9 +106521,6 @@
         "resolution": "HD",
         "year": 1953,
         "image": "https://img.fanflix.co/martwork/wb/cd93da6a-688d-4ecc-a6c9-7c46e142e37d-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0046085",
           "rating": 6.6,
@@ -106545,7 +106542,10 @@
           "directors": [
             "John Ford"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Band Wagon",
@@ -106553,9 +106553,6 @@
         "resolution": "HD",
         "year": 1953,
         "image": "https://img.fanflix.co/martwork/wb/66505a45-0169-4669-8418-d687f8318ba8-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0045537",
           "rating": 7.4,
@@ -106577,7 +106574,10 @@
           "directors": [
             "Vincente Minnelli"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hiawatha",
@@ -106585,9 +106585,6 @@
         "resolution": "HD",
         "year": 1952,
         "image": "https://img.fanflix.co/martwork/ffe321c3d2b492819d5d5de15843f41a4daa9e013d860aac12cef555705dc021",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0044705",
           "rating": 6.1,
@@ -106609,7 +106606,10 @@
           "directors": [
             "Kurt Neumann"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Quo Vadis",
@@ -106617,9 +106617,6 @@
         "resolution": "HD",
         "year": 1951,
         "image": "https://img.fanflix.co/martwork/wb/3870aefa-77eb-48bb-9bad-21e7b80a9035-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0043949",
           "rating": 7.1,
@@ -106641,7 +106638,10 @@
             "Mervyn LeRoy",
             "Anthony Mann"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "King Solomon's Mines",
@@ -106649,9 +106649,6 @@
         "resolution": "SD",
         "year": 1950,
         "image": "https://img.fanflix.co/martwork/wb/b8ebac1a-4786-4e18-8762-9f9dfc461fb5-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0042646",
           "rating": 6.7,
@@ -106674,7 +106671,10 @@
             "Compton Bennett",
             "Andrew Marton"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "White Heat (1949)",
@@ -106682,9 +106682,6 @@
         "resolution": "HD",
         "year": 1949,
         "image": "https://img.fanflix.co/WB/f5fe6d44e3b477fce7613743c33ada460dcecadee5af4435cc65b8daa9a74cad",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0042041",
           "rating": 8.1,
@@ -106706,7 +106703,10 @@
           "directors": [
             "Raoul Walsh"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Pirate",
@@ -106714,9 +106714,6 @@
         "resolution": "SD",
         "year": 1948,
         "image": "https://img.fanflix.co/martwork/wb/0c587219-e50c-4bea-9388-0a5dd5a05307-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0040694",
           "rating": 6.8,
@@ -106738,7 +106735,10 @@
           "directors": [
             "Vincente Minnelli"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lady in the Lake",
@@ -106746,9 +106746,6 @@
         "resolution": "SD",
         "year": 1947,
         "image": "https://img.fanflix.co/martwork/wb/200e15cc-1eda-4fb1-86bb-5bcbfe62a258-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0039545",
           "rating": 6.5,
@@ -106770,7 +106767,10 @@
           "directors": [
             "Robert Montgomery"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Beast with Five Fingers",
@@ -106778,9 +106778,6 @@
         "resolution": "HD",
         "year": 1947,
         "image": "https://img.fanflix.co/martwork/3d98cbd45bfb7a65d7af84fe701fab1d3f68e867f5e2ff9366baf5787c6d994c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0038338",
           "rating": 6.5,
@@ -106802,7 +106799,10 @@
           "directors": [
             "Robert Florey"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Bud Abbott and Lou Costello in Hollywood",
@@ -106841,9 +106841,6 @@
         "resolution": "SD",
         "year": 1945,
         "image": "https://img.fanflix.co/martwork/wb/4dc89934-f0dc-4ab1-89e0-2e6104c48cbc-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0037954",
           "rating": 7.3,
@@ -106865,7 +106862,10 @@
           "directors": [
             "Raoul Walsh"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "National Velvet",
@@ -106873,9 +106873,6 @@
         "resolution": "SD",
         "year": 1944,
         "image": "https://img.fanflix.co/martwork/wb/b4938aee-4948-4d6c-8bad-9de8e0324a97-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0037120",
           "rating": 7.3,
@@ -106897,7 +106894,10 @@
           "directors": [
             "Clarence Brown"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Princess and the Pirate",
@@ -106905,9 +106905,6 @@
         "resolution": "HD",
         "year": 1944,
         "image": "https://img.fanflix.co/martwork/7e47c2b2545ae6c67aa29f534bcacd17c8c92beff71b7f37e3332a97bbc210e4",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0037193",
           "rating": 6.8,
@@ -106930,7 +106927,10 @@
             "David Butler",
             "Sidney Lanfield"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Bataan",
@@ -106938,9 +106938,6 @@
         "resolution": "SD",
         "year": 1943,
         "image": "https://img.fanflix.co/martwork/wb/caf1fb85-29d7-41e4-abcb-c37f88ce8c1d-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0035664",
           "rating": 7,
@@ -106962,7 +106959,10 @@
           "directors": [
             "Tay Garnett"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Dr. Jekyll and Mr. Hyde (1941)",
@@ -106971,9 +106971,6 @@
         "year": 1941,
         "runtime": 113,
         "image": "https://img.fanflix.co/WB/88597ad793ea7271e5c0adac00a9d13deb42c2b6ee7d935631af1d1ec5af25a2",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0033553",
           "rating": 6.8,
@@ -106995,7 +106992,10 @@
           "directors": [
             "Victor Fleming"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Mr. & Mrs. Smith",
@@ -107004,9 +107004,6 @@
         "year": 1941,
         "runtime": 95,
         "image": "https://img.fanflix.co/martwork/wb/ef1d30c9-08c8-4081-bf67-d8173bb96ef7-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0033922",
           "rating": 6.3,
@@ -107027,7 +107024,10 @@
           "directors": [
             "Alfred Hitchcock"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Knute Rockne: All American",
@@ -107035,9 +107035,6 @@
         "resolution": "HD",
         "year": 1940,
         "image": "https://img.fanflix.co/martwork/wb/053e1349-44a4-4414-94a5-18e4fd8e0aad-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0032676",
           "rating": 6.7,
@@ -107060,7 +107057,10 @@
             "Lloyd Bacon",
             "William K. Howard"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Black Legion",
@@ -107069,9 +107069,6 @@
         "year": 1937,
         "runtime": 83,
         "image": "https://img.fanflix.co/martwork/wb/0bbd7d93-1bbc-4ee7-a8fb-fdf56416aea6-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0027367",
           "rating": 7,
@@ -107094,7 +107091,10 @@
             "Archie Mayo",
             "Michael Curtiz"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Kid Galahad (1937)",
@@ -107102,9 +107102,6 @@
         "resolution": "HD",
         "year": 1937,
         "image": "https://img.fanflix.co/martwork/a60d3d90b6f6afe989c5a8ba98eca04fed5d5a4061b1cd9372f49fe5a8e888b1",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0029080",
           "rating": 7.2,
@@ -107126,7 +107123,10 @@
           "directors": [
             "Michael Curtiz"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lady Killer",
@@ -107135,9 +107135,6 @@
         "year": 1933,
         "runtime": 76,
         "image": "https://img.fanflix.co/martwork/wb/0b9fc0cf-f94e-4e7c-85ee-7874ee3cb5a5-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0024239",
           "rating": 7,
@@ -107159,7 +107156,10 @@
           "directors": [
             "Roy Del Ruth"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Son Of Kong",
@@ -107167,9 +107167,6 @@
         "resolution": "HD",
         "year": 1933,
         "image": "https://img.fanflix.co/martwork/wb/ba88ed49-6193-463d-a331-c15f94d1ba7f-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0024593",
           "rating": 5.6,
@@ -107191,7 +107188,10 @@
           "directors": [
             "Ernest B. Schoedsack"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Little Caesar",
@@ -107199,9 +107199,6 @@
         "resolution": "HD",
         "year": 1931,
         "image": "https://img.fanflix.co/martwork/60b8612c88d894fce7806ea988c09d2391a7f2fe92e3cfa9f9b1d3c524ef6250",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0021079",
           "rating": 7.1,
@@ -107223,7 +107220,10 @@
           "directors": [
             "Mervyn LeRoy"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Mata Hari",
@@ -107231,9 +107231,6 @@
         "resolution": "HD",
         "year": 1931,
         "image": "https://img.fanflix.co/martwork/wb/07f732ef-2576-435a-9367-d5555d6bcbb5-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0023196",
           "rating": 6.5,
@@ -107255,7 +107252,10 @@
           "directors": [
             "George Fitzmaurice"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Public Enemy",
@@ -107263,9 +107263,6 @@
         "resolution": "HD",
         "year": 1931,
         "image": "https://img.fanflix.co/martwork/wb/549762ee-a274-4e02-a68f-9e09f9f2bf4a-2x3.png",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0022286",
           "rating": 7.5,
@@ -107286,7 +107283,10 @@
           "directors": [
             "William A. Wellman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       }
     ]
   },
@@ -155456,9 +155456,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/e9c71b6d83800f054fbbcb53879ddcbf50b301214d74bff77b8c79c1e9144f3b",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt2281375",
           "rating": 7.7,
@@ -155481,7 +155478,10 @@
             "Callie Khouri",
             "Stephen Cragg"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Swedish Dicks: The Complete Series",
