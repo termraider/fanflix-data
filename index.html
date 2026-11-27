@@ -577,8 +577,8 @@ tr.gone{opacity:.25;transition:opacity .25s}
 <a href="#/library" data-nav="watch" class="ddlink">./my library <span class="libn" id="libcount"></span></a><button type="button" class="ddbtn" aria-expanded="false" aria-controls="m-lib" aria-label="My library menu">▾</button>
 <div class="ddmenu" id="m-lib">
 <a href="#/library" data-page="library">my library <span class="mcount" id="libcount2"></span></a>
-<a href="#/watch" data-page="watch">watchlist <span class="mcount gold" id="starcount">★ 0</span></a>
-<a href="#/watch?s=follow" data-page="follow">following <span class="mcount" id="followcount"></span></a>
+<a href="#/wishlist" data-page="wishlist">wishlist <span class="mcount gold" id="starcount">★ 0</span></a>
+<a href="#/wishlist?s=follow" data-page="follow">following <span class="mcount" id="followcount"></span></a>
 <a href="#/collections" data-page="collections">complete the collection</a>
 <a href="#/wait" data-page="wait">wait or buy?</a>
 <a href="#/upgrades" data-page="upgrades">4K upgrades</a>
@@ -1440,7 +1440,7 @@ function viewAbout() {
         ['Can I set up a split by DM?', 'No. Splits are arranged by commenting in the thread. That keeps it public and lets SplitsBot give everyone credit.'],
         ['Where do these prices come from?', 'SplitsBot checks FanFlix.co after the ~3 AM ET daily update and saves what it sees. “Lowest we’ve seen” means since tracking started on Nov 8, 2026.'],
         ['Is SplitsBot part of FanFlix or Reddit?', 'No. It’s a free community tool run by the r/fanflixco mods. No ads.'],
-        ['Where are my watchlist and library saved?', 'In your browser only, on that device. Nothing is uploaded and there’s no account. To use them on your phone and computer, use “move to another device” on your library page: a sync link for small lists, a sync file for big libraries.'],
+        ['Where are my wishlist and library saved?', 'In your browser only, on that device. Nothing is uploaded and there’s no account. To use them on your phone and computer, use “move to another device” on your library page: a sync link for small lists, a sync file for big libraries.'],
         ['How do I add my whole movie library?', 'Export it from CheapCharts as a CSV and upload it on your library page (★ → my library). Movies that haven’t been in a FanFlix deal yet are saved as “waiting” and added on their own when they show up.'],
         ['What does “reported as not porting” mean?', 'Members bought the title and it didn’t show up on that site (for example, a Movies Anywhere code that never reached iTunes). Report one from the title’s page: it opens a prefilled message to the mods, SplitsBot counts it once per person, and the count shows on the site.'],
         ['Can I hide deals I can’t redeem?', 'Yes. Tap ⚙ in the menu and untick the sites you can’t use. Deals and titles you can’t redeem are hidden, and prices only count the ones you can.']
@@ -1471,7 +1471,7 @@ function vbars(cols, opts = {}) {
     h('span', null, c.label))));
 }
 
-// ---------- watchlist (this browser only) ----------
+// ---------- wishlist (this browser only) ----------
 const WKEY = 'splitsbot-watch';
 const WL = {
   list() { try { const v = JSON.parse(localStorage.getItem(WKEY) || '[]'); return Array.isArray(v) ? v.filter(k => typeof k === 'string') : []; } catch { return []; } },
@@ -1493,7 +1493,7 @@ function sameKeys(k) {
   }
   return sameIx.of.get(k) || [k];
 }
-// Watchlist alert prices: { titleKey: 4.99 } — "tell me when it's this or less"
+// Wishlist alert prices: { titleKey: 4.99 } — "tell me when it's this or less"
 const AKEY = 'splitsbot-alert';
 const AP = {
   all() { try { const v = JSON.parse(localStorage.getItem(AKEY) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? Object.fromEntries(Object.entries(v).filter(([k, x]) => typeof k === 'string' && typeof x === 'number' && x > 0)) : {}; } catch { return {}; } },
@@ -1543,7 +1543,7 @@ function niBigBtn(key) {
   b.addEventListener('click', () => { const on = NI.toggle(key); b.textContent = lab(on); b.classList.toggle('nion', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
 }
-const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0;flex-wrap:wrap' }, h('a', { class: 'chip', href: '#/watch', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ watchlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/hidden', 'aria-pressed': cur === 'hidden' ? 'true' : 'false' }, `⊘ hidden (${NI.list().length})`), h('a', { class: 'chip', href: '#/backup', 'aria-pressed': cur === 'backup' ? 'true' : 'false' }, '⤓ backups'));
+const libTabs = cur => h('div', { class: 'chips', role: 'tablist', style: 'margin-top:0;flex-wrap:wrap' }, h('a', { class: 'chip', href: '#/wishlist', 'aria-pressed': cur === 'watch' ? 'true' : 'false' }, `★ wishlist (${WL.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/library', 'aria-pressed': cur === 'lib' ? 'true' : 'false' }, `✓ my library (${OW.list().filter(k => titles.has(k)).length})`), h('a', { class: 'chip', href: '#/hidden', 'aria-pressed': cur === 'hidden' ? 'true' : 'false' }, `⊘ hidden (${NI.list().length})`), h('a', { class: 'chip', href: '#/backup', 'aria-pressed': cur === 'backup' ? 'true' : 'false' }, '⤓ backups'));
 const FKEY = 'splitsbot-follow';
 const FL = {
   list() { try { const v = JSON.parse(localStorage.getItem(FKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.role === 'string' && typeof x.name === 'string') : []; } catch { return []; } },
@@ -1593,13 +1593,13 @@ document.querySelectorAll('.ddmenu a').forEach(a => a.addEventListener('click', 
   form.addEventListener('submit', () => setOpen(false)); }
 function starBtn(key, name) {
   const on = WL.has(key);
-  const b = h('button', { class: 'star' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' watchlist: ' + name, title: on ? 'on your watchlist' : 'add to watchlist' }, on ? '★' : '☆');
-  b.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); const now = WL.toggle(key); b.textContent = now ? '★' : '☆'; b.classList.toggle('on', now); b.setAttribute('aria-pressed', now ? 'true' : 'false'); b.title = now ? 'on your watchlist' : 'add to watchlist'; });
+  const b = h('button', { class: 'star' + (on ? ' on' : ''), type: 'button', 'aria-pressed': on ? 'true' : 'false', 'aria-label': (on ? 'Remove from' : 'Add to') + ' wishlist: ' + name, title: on ? 'on your wishlist' : 'add to wishlist' }, on ? '★' : '☆');
+  b.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); const now = WL.toggle(key); b.textContent = now ? '★' : '☆'; b.classList.toggle('on', now); b.setAttribute('aria-pressed', now ? 'true' : 'false'); b.title = now ? 'on your wishlist' : 'add to wishlist'; });
   return b;
 }
 
 function watchBtn(key, name) {
-  const lab = on => on ? '★ on your watchlist' : '☆ add to watchlist';
+  const lab = on => on ? '★ on your wishlist' : '☆ add to wishlist';
   const b = h('button', { class: 'btn' + (WL.has(key) ? ' won' : ''), type: 'button', 'aria-pressed': WL.has(key) ? 'true' : 'false' }, lab(WL.has(key)));
   b.addEventListener('click', () => { const on = WL.toggle(key); b.textContent = lab(on); b.classList.toggle('won', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
   return b;
@@ -1953,7 +1953,7 @@ function viewPeople(role, name, q) {
   app.replaceChildren(
     h('p', { class: 'crumb' }, h('a', { href: '#/titles' }, 'titles'), ` / ${roleWord} / `, label),
     ...pageHead(`splitsbot@splitsbot.com:~$ ${isF ? 'franchise' : role} "${label.toLowerCase()}"`, label, isF ? `Every ${label} title FanFlix has had in a deal, with today's price and the lowest we've seen.` : `Every title ${role === 'director' ? 'directed by' : 'with'} ${label} that FanFlix has had in a deal, with today's price and the lowest we've seen.`),
-    h('div', { class: 'followrow' }, followBtn(role, isF ? norm(name) : name), h('span', { class: 'sub' }, `Following puts ${label} on your watchlist page with what’s live and what’s new. Saved in this browser.`)),
+    h('div', { class: 'followrow' }, followBtn(role, isF ? norm(name) : name), h('span', { class: 'sub' }, `Following puts ${label} on your wishlist page with what’s live and what’s new. Saved in this browser.`)),
     h('div', { class: 'stats', style: 'margin-bottom:22px' },
       stat("titles we've seen", list.length, isF ? 'in this franchise' : role === 'director' ? 'directed' : 'with them in the cast'),
       stat('live right now', liveList.length, 'in at least one deal', 'green'),
@@ -2043,9 +2043,9 @@ function viewPlan(q) {
   render();
 }
 
-// ---------- watchlist ----------
+// ---------- wishlist ----------
 function viewWatch() {
-  document.title = 'Watchlist · SplitsBot';
+  document.title = 'Wishlist · SplitsBot';
   updateStarCount();
   const keys = WL.list().filter(k => titles.has(k));
   const ts = keys.map(k => titles.get(k));
@@ -2062,7 +2062,7 @@ function viewWatch() {
   const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.ownedPending)) pending.save([...pending.list(), ...v.ownedPending.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); AP.merge(v.alerts); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
   const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); AP.save({}); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list(), alerts: AP.all() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-watchlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list(), alerts: AP.all() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-wishlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   // alert prices: at/below = a live deal is at that price or less right now; everything else (higher, not live, no price set) is above
   const isBelow = t => { const a = AP.get(t.key), s = soloOf(t); return a != null && s != null && s.price <= a + 0.001; };
@@ -2079,7 +2079,7 @@ function viewWatch() {
     h('tbody', { class: 'cards' }, list.map(t => { const s = status(t), hit = isBelow(t); return h('tr', { class: hit ? 'ahit' : null }, h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))), h('td', null, s.now), h('td', { 'data-l': 'alert' }, alertFld(t)), h('td', null, s.where), h('td', null, hit ? h('span', { class: 'pill p-low' }, 'at your price') : s.pill), h('td', { class: 'stc' }, starBtn(t.key, t.title))); }))));
   app.replaceChildren(
     libTabs('watch'),
-    ...pageHead('splitsbot@splitsbot.com:~$ watch --list', 'Your watchlist.', 'Star titles (☆) and follow actors, directors or franchises. They light up here when they show up in a live deal.'),
+    ...pageHead('splitsbot@splitsbot.com:~$ wishlist --list', 'Your wishlist.', 'Star titles (☆) and follow actors, directors or franchises. They light up here when they show up in a live deal.'),
     ts.length ? h('div', { class: 'okbox' }, h('b', { class: 'green' }, `● ${liveN} of your ${ts.length}`), liveN === 1 ? ' is in a live deal right now.' : ' are in a live deal right now.', below.length ? [' ', h('b', { class: 'gold' }, `${below.length} at or below your alert price.`)] : '') : '',
     ...(ts.length ? [
       h('h2', { class: 'wsec', id: 'wb' }, `At or below your alert price (${below.length})`),
@@ -2156,7 +2156,7 @@ function syncCard() {
     h('p', { class: 'prompt' }, '$ sync --to another-device'), h('h2', { id: 'sy' }, 'Use your lists on another device'),
     h('p', { class: 'sub', style: 'margin:-6px 0 12px' }, 'Your lists live in this browser only, so your phone and computer each start empty. Copy them over with a link (quick) or a file (for big libraries).'),
     h('ol', { class: 'steps3' },
-      h('li', null, h('b', null, 'Make a link'), h('span', { class: 'sub' }, 'Your watchlist, library and follows get packed into one link. Nothing is uploaded anywhere: it’s all inside the link.')),
+      h('li', null, h('b', null, 'Make a link'), h('span', { class: 'sub' }, 'Your wishlist, library and follows get packed into one link. Nothing is uploaded anywhere: it’s all inside the link.')),
       h('li', null, h('b', null, 'Send it to yourself'), h('span', { class: 'sub' }, 'AirDrop it, text it, email it or paste it in Notes.')),
       h('li', null, h('b', null, 'Open it on the other device'), h('span', { class: 'sub' }, 'Your phone, laptop, another browser. Tap “add to this device” and you’re done.'))),
     h('p', { class: 'sub' }, 'It’s a copy, not a live sync: if you change your lists later, make a new link (or file) and open it again. “Add” never removes anything. No account, no sign-in.'),
@@ -2182,12 +2182,12 @@ function syncCard() {
       alertBox));
 }
 // ---------- backups: save everything to a file, undo the last sync, compare two backups and merge ----------
-const BLISTS = [['owned', 'owned (my library)'], ['ownedPending', 'waiting to show up in a deal'], ['watch', 'watchlist (★)'], ['follow', 'following'], ['hidden', 'not interested'], ['alerts', 'alert prices'], ['ownedMaybe', 'might own'], ['redeem', 'redeem sites']];
+const BLISTS = [['owned', 'owned (my library)'], ['ownedPending', 'waiting to show up in a deal'], ['watch', 'wishlist (★)'], ['follow', 'following'], ['hidden', 'not interested'], ['alerts', 'alert prices'], ['ownedMaybe', 'might own'], ['redeem', 'redeem sites']];
 const fKey = x => typeof x === 'string' ? x : x && x.role ? x.role + ':' + x.name : x && x.k ? x.k : JSON.stringify(x);
 function snapData() {
   return { app: 'splitsbot', v: 1, at: new Date().toISOString(), watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() };
 }
-// any of our files (backup, sync file, old watchlist export) → one shape
+// any of our files (backup, sync file, old wishlist export) → one shape
 function readBackup(v, allowEmpty) {
   if (Array.isArray(v)) v = { watch: v };
   if (!v || typeof v !== 'object') throw new Error('not a backup');
@@ -2290,7 +2290,7 @@ async function viewSync(q) {
   const code = q.get('d') || '';
   let data = null;
   try { if (code) data = await readSyncCode(code); } catch {}
-  if (!data) { app.replaceChildren(...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'That link didn’t work.', 'It may have been cut off when it was copied. Make a new one on the other device (★ in the menu, then “make my sync link”).'), h('a', { class: 'btn', href: '#/watch' }, 'go to my watchlist')); return; }
+  if (!data) { app.replaceChildren(...pageHead('splitsbot@splitsbot.com:~$ sync --from link', 'That link didn’t work.', 'It may have been cut off when it was copied. Make a new one on the other device (★ in the menu, then “make my sync link”).'), h('a', { class: 'btn', href: '#/wishlist' }, 'go to my wishlist')); return; }
   const fx = a => a.map(k => KEY_ALIAS.get(k) || k).filter(k => titles.has(k));
   const w = fx(data.watch), o = fx(data.owned), nn = fx(data.hidden), f = data.follow;
   const newW = w.filter(k => !WL.has(k)).length, newO = o.filter(k => !OW.has(k)).length, newF = f.filter(x => !FL.has(x.role, x.name)).length;
@@ -2301,8 +2301,8 @@ async function viewSync(q) {
     else { WL.save([...WL.list(), ...w]); OW.save([...OW.list(), ...o]); NI.save([...NI.list(), ...nn]); pending.save([...pending.list(), ...data.waiting]); const cur = FL.list(); for (const x of f) if (!cur.some(c => c.role === x.role && c.name === x.name)) cur.push(x); FL.save(cur); }
     checkPending();
     for (const t of titles.values()) recalcLive(t);
-    history.replaceState(null, '', '#/watch');
-    done.replaceChildren(h('div', { class: 'okbox', style: 'margin-top:18px' }, h('b', { class: 'green' }, '✓ Done.'), ' Your lists are on this device now. ', h('a', { href: '#/watch' }, 'open my watchlist'), ' · ', h('a', { href: '#/library' }, 'my library')));
+    history.replaceState(null, '', '#/wishlist');
+    done.replaceChildren(h('div', { class: 'okbox', style: 'margin-top:18px' }, h('b', { class: 'green' }, '✓ Done.'), ' Your lists are on this device now. ', h('a', { href: '#/wishlist' }, 'open my wishlist'), ' · ', h('a', { href: '#/library' }, 'my library')));
   };
   const stat = (l, n, s2) => h('div', { class: 'stat' }, h('div', { class: 'l' }, l), h('div', { class: 'n' }, n), h('div', { class: 's' }, s2));
   app.replaceChildren(
@@ -2466,7 +2466,7 @@ function viewCart(q) {
     const fromWatch = WL.list().filter(k => titles.has(k) && titles.get(k).live && !st.t.includes(k));
     left.replaceChildren(h('p', { class: 'prompt' }, '$ cart --add'), h('h2', null, picks.length ? `Your cart (${picks.length})` : 'Your cart'),
       h('div', { class: 'prompt-field', style: 'max-width:none;margin:14px 0 4px' }, h('span', { 'aria-hidden': 'true' }, '>'), input), sugg,
-      fromWatch.length ? h('p', { class: 'sub' }, h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.t.push(...fromWatch); render(); } }, `add ${fromWatch.length} live from your watchlist`)) : '',
+      fromWatch.length ? h('p', { class: 'sub' }, h('button', { class: 'linkbtn', type: 'button', onclick: () => { st.t.push(...fromWatch); render(); } }, `add ${fromWatch.length} live from your wishlist`)) : '',
       ...picks.map(t => h('div', { class: 'pick' }, t.image ? img(t.image, '', 'thumb') : h('div', { class: 'thumb' }), h('div', { style: 'flex:1;min-width:0' }, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year), OW.has(t.key) ? h('div', { class: 'sub warn' }, '✓ you already own this') : ''),
         h('button', { class: 'xbtn', type: 'button', 'aria-label': 'Remove ' + t.title, onclick: () => { st.t = st.t.filter(k => k !== t.key); render(); } }, '×'))),
       h('div', { class: 'qrow' }, h('span', { class: 'sub' }, 'quality:'), chipBtn('any', !st.k4, () => { st.k4 = false; render(); }), chipBtn('4K only', st.k4, () => { st.k4 = true; render(); })),
@@ -2558,9 +2558,9 @@ function viewWaitBuy() {
   };
   const rows = ts.map(t => ({ t, v: verdict(t) })).sort((a, b) => a.v.k - b.v.k || a.t.title.localeCompare(b.t.title));
   const buyN = rows.filter(r => r.v.k === 0).length;
-  app.replaceChildren(libTabs('wait'), ...pageHead('splitsbot@splitsbot.com:~$ watch --verdict', 'Wait or buy?', 'For every title on your watchlist: is today’s price a good one, or has it been cheaper? Compared at the same quality, across every FanFlix deal since Nov 8.'),
-    ...(!ts.length ? [h('p', { class: 'empty' }, 'Your watchlist is empty. Tap ☆ next to any title to watch it.')] : [
-      h('p', { class: 'count' }, `${ts.length} on your watchlist · `, h('b', { class: 'green' }, `${buyN} at a good price now`)),
+  app.replaceChildren(libTabs('wait'), ...pageHead('splitsbot@splitsbot.com:~$ wishlist --verdict', 'Wait or buy?', 'For every title on your wishlist: is today’s price a good one, or has it been cheaper? Compared at the same quality, across every FanFlix deal since Nov 8.'),
+    ...(!ts.length ? [h('p', { class: 'empty' }, 'Your wishlist is empty. Tap ☆ next to any title to add it.')] : [
+      h('p', { class: 'count' }, `${ts.length} on your wishlist · `, h('b', { class: 'green' }, `${buyN} at a good price now`)),
       xtable(['title', '#now', 'verdict', 'why', ''], rows.map(r => h('tr', null, titleCell(r.t), buyCell(r.v.x), h('td', { 'data-l': 'verdict' }, r.v.pill), h('td', { 'data-l': 'why' }, h('span', { class: 'sub' }, r.v.why)), h('td', { class: 'stc' }, starBtn(r.t.key, r.t.title)))))]));
 }
 
@@ -2797,7 +2797,7 @@ function viewSettings() {
     h('section', { class: 'card', style: 'margin-top:22px' }, h('p', { class: 'prompt' }, '$ man redeem'), h('h2', null, 'Which ones should I tick?'),
       h('p', { class: 'sub' }, 'Tick the sites where your movies end up. ', h('b', { style: 'color:var(--hi)' }, 'Movies Anywhere'), ' links Apple TV / iTunes, Fandango at Home, Google Play, Prime Video and more, so if your library lives in iTunes, Movies Anywhere is the one that gets movies there. Codes that only redeem at Fandango at Home or Google Play won’t reach iTunes unless the studio is on Movies Anywhere and you redeem through it.'),
       h('p', { class: 'sub' }, 'When it’s set, the deals page has a “my redeem sites” chip, so you can still peek at everything.')),
-    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Included in your sync link. ', h('a', { href: '#/watch' }, 'your lists')));
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Included in your sync link. ', h('a', { href: '#/wishlist' }, 'your lists')));
 }
 
 // ---------- my library ----------
@@ -2810,7 +2810,7 @@ function viewLibrary(q) {
   let armedLib = false;
   const clearLib = h('button', { class: 'linkbtn', type: 'button', onclick: () => {
     if (!armedLib) { armedLib = true; clearLib.textContent = `tap again to remove all ${OW.list().length.toLocaleString()} owned titles and ${pending.list().length.toLocaleString()} waiting`; setTimeout(() => { armedLib = false; clearLib.textContent = 'clear my library'; }, 6000); return; }
-    OW.save([]); pending.save([]); armedLib = false; clearLib.textContent = 'clear my library'; res.replaceChildren(h('p', { class: 'sub' }, 'Library cleared. Your watchlist, follows and not-interested list weren’t touched.')); render();
+    OW.save([]); pending.save([]); armedLib = false; clearLib.textContent = 'clear my library'; res.replaceChildren(h('p', { class: 'sub' }, 'Library cleared. Your wishlist, follows and not-interested list weren’t touched.')); render();
   } }, 'clear my library');
   const out = h('div'); const res = h('div'); const conv = h('p', { class: 'sub', 'aria-live': 'polite', style: 'margin:8px 0' });
   const box = h('textarea', { class: 'f ta', rows: 6, placeholder: 'The Matrix (1999)\nTop Gun: Maverick\nGremlins', 'aria-label': 'Titles you own, one per line' });
@@ -2879,7 +2879,7 @@ function viewLibrary(q) {
       conv,
       box, h('div', { class: 'btns', style: 'margin-top:12px;max-width:520px' }, add, h('button', { class: 'btn', type: 'button', onclick: () => { const r = convertList(box.value); box.value = r.lines.join('\n'); conv.textContent = `Cleaned up: ${r.lines.length.toLocaleString()} titles (${r.kind}).`; } }, 'clean up the list')), res),
     syncCard(),
-    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your watchlist. ', clearLib));
+    h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only, with your wishlist. ', clearLib));
   render();
 }
 
@@ -2956,12 +2956,17 @@ function patternSection(t) {
 function route() {
   clearInterval(carouselTimer);
   const { parts, q } = parseHash();
-  const view = parts[0] || '';
+  let view = parts[0] || '';
+  // The watchlist is now the wishlist (Nov 27): old #/watch links and bookmarks still work
+  if (view === 'watch') {
+    view = 'wishlist';
+    history.replaceState(null, '', location.hash.replace(/^#\/watch/, '#/wishlist'));
+  }
   document.title = 'SplitsBot · FanFlix deal history for r/fanflixco';
   closeMenus();
-  const page = view === 'watch' && q.get('s') === 'follow' ? 'follow' : view;
+  const page = view === 'wishlist' && q.get('s') === 'follow' ? 'follow' : view;
   document.querySelectorAll('.ddmenu a[data-page]').forEach(a => a.dataset.page === page ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
-  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'more', coupons: 'more', settings: 'more', today: 'tools', data: 'tools', timeline: 'tools', plan: 'tools', compare: 'tools', cart: 'tools', value: 'tools', ending: 'tools', roulette: 'tools', feed: 'more', collections: 'watch', wait: 'watch', upgrades: 'watch', watch: 'watch', library: 'watch', sync: 'watch', backup: 'watch', hidden: 'watch' }[view];
+  const nav = { '': 'deals', deal: 'deals', titles: 'titles', title: 'titles', people: 'titles', about: 'more', coupons: 'more', settings: 'more', today: 'tools', data: 'tools', timeline: 'tools', plan: 'tools', compare: 'tools', cart: 'tools', value: 'tools', ending: 'tools', roulette: 'tools', feed: 'more', collections: 'watch', wait: 'watch', upgrades: 'watch', watch: 'watch', wishlist: 'watch', library: 'watch', sync: 'watch', backup: 'watch', hidden: 'watch' }[view];
   document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === nav || (a.dataset.nav === 'menu' && (nav === 'tools' || nav === 'more')) ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   try { updateStarCount(); } catch {}
   if (view === 'deal') viewDeal(parts[1], q);
@@ -2973,7 +2978,7 @@ function route() {
   else if (view === 'timeline') viewTimeline(q);
   else if (view === 'people') viewPeople(parts[1], parts[2] || '', q);
   else if (view === 'plan') viewPlan(q);
-  else if (view === 'watch') viewWatch();
+  else if (view === 'wishlist') viewWatch();
   else if (view === 'library') viewLibrary(q);
   else if (view === 'sync') viewSync(q);
   else if (view === 'backup') viewBackup();
