@@ -1780,12 +1780,12 @@ function viewData(q) {
   const c4 = [...titles.values()].filter(t => keys.has(t.key) && t.lowByRes.UHD != null).sort((a, b) => a.lowByRes.UHD - b.lowByRes.UHD || (b.imdb?.rating ?? 0) - (a.imdb?.rating ?? 0)).slice(0, 5);
   const rec = (title, rows) => h('div', { class: 'rec' }, h('p', { class: 'sub' }, title), rows.length ? rows : h('p', { class: 'sub' }, 'nothing yet'));
   const recRow = (t, right) => h('div', { class: 'rrow' }, h('a', { href: titleHref(t) }, t.title, yr(t.title, t.year)), h('span', null, right));
-  const rangeChips = h('div', { class: 'chips', role: 'group', 'aria-label': 'Time range' }, [['7', '7 days'], ['14', '14 days'], ['30', '30 days'], ['all', 'all time']].map(([k, l]) => chipBtn(l, span === k, () => { location.hash = '#/data' + (k === 'all' ? '' : '?r=' + k); })));
+  const rangeChips = h('div', { class: 'chips', role: 'group', 'aria-label': 'Time range' }, [['1', 'today'], ['3', '3 days'], ['7', '7 days'], ['14', '14 days'], ['30', '30 days'], ['all', 'all time']].map(([k, l]) => chipBtn(l, span === k, () => { location.hash = '#/data' + (k === 'all' ? '' : '?r=' + k); })));
   app.replaceChildren(
     ...pageHead(`splitsbot@splitsbot.com:~$ stats --since ${from}`, 'The data.', `Everything SplitsBot has scraped from FanFlix since ${fmtDate(FIRST)}. Updated every morning after the ~3 AM ET refresh.`),
     rangeChips,
     h('div', { class: 'stats kpis' },
-      stat(span === 'all' ? 'deals tracked' : `deals in ${days.length} days`, inWin.length.toLocaleString(), `since ${shortDate(from)}`),
+      stat(span === 'all' ? 'deals tracked' : span === '1' ? 'deals today' : `deals in ${days.length} days`, inWin.length.toLocaleString(), `since ${shortDate(from)}`),
       stat('titles seen', keys.size.toLocaleString(), `${hits.length.toLocaleString()} price checks`),
       stat('live right now', liveNow, 'deals', 'green'),
       stat('avg per title', money(avg), 'across every deal'),
