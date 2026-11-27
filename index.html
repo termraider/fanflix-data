@@ -1502,6 +1502,23 @@ const AP = {
   save(a) { try { Object.keys(a).length ? localStorage.setItem(AKEY, JSON.stringify(a)) : localStorage.removeItem(AKEY); } catch {} },
   merge(o) { if (!o || typeof o !== 'object') return; const a = this.all(); for (const [k, x] of Object.entries(o)) if (typeof x === 'number' && x > 0) a[KEY_ALIAS.get(k) || k] = x; this.save(a); }
 };
+// Wishlist titles not seen on FanFlix yet: [{ l: "The Thing (1982)", a?: 4.99 }]. Re-checked on every visit and moved
+// onto the wishlist (with their alert price) the first time they show up in a deal (Nov 27)
+const WPKEY = 'splitsbot-watch-pending';
+const WP = {
+  list() { try { const v = JSON.parse(localStorage.getItem(WPKEY) || '[]'); return Array.isArray(v) ? v.filter(x => x && typeof x.l === 'string' && x.l.trim()).map(x => ({ l: x.l.trim(), ...(typeof x.a === 'number' && x.a > 0 ? { a: x.a } : {}) })) : []; } catch { return []; } },
+  save(v) { try { const seen = new Set(), out = v.filter(x => { const k = x.l.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }); out.length ? localStorage.setItem(WPKEY, JSON.stringify(out)) : localStorage.removeItem(WPKEY); } catch {} }
+};
+function checkWishPending() {
+  const p = WP.list(); if (!p.length) return 0;
+  const left = [], add = [];
+  for (const x of p) {
+    const r = matchInfo(x.l);
+    if (r && r.sure && titles.has(r.t.key)) { add.push(r.t.key); if (x.a) AP.set(r.t.key, x.a); } else left.push(x);
+  }
+  if (add.length) { WL.save([...add, ...WL.list()]); WP.save(left); }
+  return add.length;
+}
 const OKEY = 'splitsbot-owned';
 const OW = {
   list() { try { const v = JSON.parse(localStorage.getItem(OKEY) || '[]'); return Array.isArray(v) ? v.filter(k => typeof k === 'string') : []; } catch { return []; } },
@@ -2062,7 +2079,7 @@ function viewWatch() {
   const file = h('input', { type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const f = e.target.files[0]; if (!f) return; f.text().then(s => { try { const v = JSON.parse(s); const arr = Array.isArray(v) ? v : v.watch; if (Array.isArray(arr)) WL.save([...WL.list(), ...arr.filter(k => typeof k === 'string')]); if (Array.isArray(v.ownedPending)) pending.save([...pending.list(), ...v.ownedPending.filter(k => typeof k === 'string')]); if (Array.isArray(v.hidden)) NI.save([...NI.list(), ...v.hidden.filter(k => typeof k === 'string')]); if (Array.isArray(v.owned)) OW.save([...OW.list(), ...v.owned.filter(k => typeof k === 'string')]); AP.merge(v.alerts); if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); } viewWatch(); } catch {} }); } });
   let armed = false;
   const clear = h('button', { class: 'linkbtn', type: 'button', onclick: () => { if (!armed) { armed = true; clear.textContent = 'click again to clear'; return; } WL.save([]); FL.save([]); OW.save([]); NI.save([]); AP.save({}); viewWatch(); } }, 'clear');
-  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list(), alerts: AP.all() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-wishlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
+  const exp = h('button', { class: 'linkbtn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watchPending: WP.list(), watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), redeem: RP.list(), alerts: AP.all() }, null, 2)], { type: 'application/json' })), download: 'splitsbot-wishlist.json' }); document.body.append(a); a.click(); a.remove(); } }, 'export');
   const imp = h('button', { class: 'linkbtn', type: 'button', onclick: () => file.click() }, 'import');
   // alert prices: at/below = a live deal is at that price or less right now; everything else (higher, not live, no price set) is above
   const isBelow = t => { const a = AP.get(t.key), s = soloOf(t); return a != null && s != null && s.price <= a + 0.001; };
@@ -2077,9 +2094,29 @@ function viewWatch() {
   const table = list => h('div', { class: 'tablebox' }, h('table', null,
     h('thead', null, h('tr', null, h('th', { scope: 'col' }, 'title'), h('th', { scope: 'col' }, 'price now'), h('th', { scope: 'col' }, 'alert price'), h('th', { scope: 'col' }, 'where'), h('th', { scope: 'col' }, 'status'), h('th', { scope: 'col' }, h('span', { class: 'sr' }, 'watch')))),
     h('tbody', { class: 'cards' }, list.map(t => { const s = status(t), hit = isBelow(t); return h('tr', { class: hit ? 'ahit' : null }, h('td', null, h('div', { class: 'tcell' }, t.image ? img(t.image, '', 'thumb') : null, h('div', null, h('a', { href: titleHref(t) }, t.title), yr(t.title, t.year)))), h('td', null, s.now), h('td', { 'data-l': 'alert' }, alertFld(t)), h('td', null, s.where), h('td', null, hit ? h('span', { class: 'pill p-low' }, 'at your price') : s.pill), h('td', { class: 'stc' }, starBtn(t.key, t.title))); }))));
+  // + add a title: starred right away if SplitsBot has seen it, else it waits for its first FanFlix deal
+  const addInp = h('input', { class: 'f', type: 'text', placeholder: 'any title, e.g. The Thing (1982)', 'aria-label': 'Title to add to your wishlist', style: 'flex:1;min-width:220px' });
+  const addPr = h('input', { class: 'f apin', type: 'number', min: '0', step: '0.01', inputmode: 'decimal', placeholder: 'alert ≤ $', title: 'Optional: light up only at this price or lower', 'aria-label': 'Alert price (optional)', style: 'width:130px' });
+  const addGo = () => {
+    const l = addInp.value.trim(); if (!l) return;
+    const a = parseFloat(addPr.value), r = matchInfo(l);
+    if (r && r.sure && titles.has(r.t.key)) { WL.save([r.t.key, ...WL.list()]); if (a > 0) AP.set(r.t.key, a); }
+    else WP.save([...WP.list(), { l, ...(a > 0 ? { a } : {}) }]);
+    viewWatch();
+  };
+  addInp.onkeydown = e => { if (e.key === 'Enter') addGo(); };
+  const addBox = h('div', { class: 'card', style: 'margin:18px 0;padding:16px 18px' }, h('b', null, '+ add a title'), h('span', { class: 'sub' }, ' · even one that hasn’t been in a FanFlix deal yet'),
+    h('div', { style: 'display:flex;gap:10px;flex-wrap:wrap;margin-top:10px' }, addInp, addPr, h('button', { class: 'btn primary', type: 'button', onclick: addGo }, 'add')));
+  const wp = WP.list();
+  const waitSec = wp.length ? h('section', { class: 'sec', style: 'margin-top:32px', 'aria-labelledby': 'ww' },
+    h('h2', { class: 'wsec', id: 'ww' }, `Waiting to show up in a deal (${wp.length})`),
+    h('p', { class: 'sub' }, 'Not in any FanFlix deal SplitsBot has seen yet. Each one moves up to your wishlist on its own, alert price included, the day it shows up.'),
+    h('ul', { style: 'list-style:none;padding:0;margin:12px 0 0' }, wp.map(x => h('li', { style: 'padding:8px 0;border-bottom:1px solid var(--line)' }, '○ ', x.l, x.a ? h('span', { class: 'sub' }, ` · alert ≤ ${money(x.a)}`) : '', ' · ',
+      h('button', { class: 'linkbtn', type: 'button', 'aria-label': 'Remove ' + x.l, onclick: () => { WP.save(WP.list().filter(y => y.l !== x.l)); viewWatch(); } }, 'remove'))))) : '';
   app.replaceChildren(
     libTabs('watch'),
     ...pageHead('splitsbot@splitsbot.com:~$ wishlist --list', 'Your wishlist.', 'Star titles (☆) and follow actors, directors or franchises. They light up here when they show up in a live deal.'),
+    addBox,
     ts.length ? h('div', { class: 'okbox' }, h('b', { class: 'green' }, `● ${liveN} of your ${ts.length}`), liveN === 1 ? ' is in a live deal right now.' : ' are in a live deal right now.', below.length ? [' ', h('b', { class: 'gold' }, `${below.length} at or below your alert price.`)] : '') : '',
     ...(ts.length ? [
       h('h2', { class: 'wsec', id: 'wb' }, `At or below your alert price (${below.length})`),
@@ -2087,6 +2124,7 @@ function viewWatch() {
       h('h2', { class: 'wsec', id: 'wa' }, `Above your alert price (${above.length})`),
       above.length ? table(above) : h('p', { class: 'sub' }, 'Everything you starred is at or below your price right now.')] : [
       FL.list().length ? h('p', { class: 'sub' }, 'No starred titles yet. Tap ☆ next to any title to add one.') : h('div', { class: 'card', style: 'text-align:center;padding:40px 24px' }, h('p', { style: 'font-size:40px;margin:0;color:var(--gold)' }, '☆'), h('p', null, 'Nothing here yet.'), h('p', { class: 'sub' }, 'Tap the ☆ next to any title on a deal page, the Titles page or a title’s page.'), h('a', { class: 'btn', href: '#/titles' }, 'browse titles'))]),
+    waitSec,
     followSection(),
     syncCard(),
     h('p', { class: 'sub', style: 'margin-top:16px' }, 'Saved in this browser only. No account, nothing is sent anywhere. ', h('a', { href: '#/backup' }, 'Backups, undo a sync, compare & merge'), ' · quick file: ', exp, ' · ', imp, ' · ', clear, file));
@@ -2170,13 +2208,13 @@ function syncCard() {
         h('li', null, 'On the other device, open splitsbot.com → ★ → my library → ', h('b', null, '↓ move to another device'), ' → this section, and tap ', h('b', null, 'open sync file'), '. Pick the file.'),
         h('li', null, 'You’ll see “✓ Sync file opened” with your counts. Waiting titles keep getting added there as they show up in deals.')),
       h('div', { class: 'btns', style: 'margin-top:10px;max-width:520px' },
-        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
+        h('button', { class: 'btn', type: 'button', onclick: () => { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify({ watchPending: WP.list(), watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() })], { type: 'application/json' })), download: 'splitsbot-sync.json' }); document.body.append(a); a.click(); a.remove(); } }, 'save sync file'),
         h('label', { class: 'btn', for: 'syncfile', style: 'cursor:pointer' }, 'open sync file'),
         h('input', { id: 'syncfile', type: 'file', accept: 'application/json,.json', class: 'sr', onchange: e => { const fl = e.target.files[0]; if (!fl) return; fl.text().then(txt => { try { const v = JSON.parse(txt); snapBeforeSync(); const strs = a => Array.isArray(a) ? a.filter(k => typeof k === 'string') : [];
-          const fx = a => strs(a).map(k => KEY_ALIAS.get(k) || k); WL.save([...WL.list(), ...fx(v.watch)]); OW.save([...OW.list(), ...fx(v.owned)]); NI.save([...NI.list(), ...fx(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]); if (Array.isArray(v.ownedMaybe)) maybe.save([...maybe.list(), ...v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k }))]);
+          const fx = a => strs(a).map(k => KEY_ALIAS.get(k) || k); WL.save([...WL.list(), ...fx(v.watch)]); if (Array.isArray(v.watchPending)) WP.save([...WP.list(), ...v.watchPending.filter(x => x && typeof x.l === 'string')]); OW.save([...OW.list(), ...fx(v.owned)]); NI.save([...NI.list(), ...fx(v.hidden)]); pending.save([...pending.list(), ...strs(v.ownedPending)]); if (Array.isArray(v.ownedMaybe)) maybe.save([...maybe.list(), ...v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k }))]);
           if (strs(v.redeem).length) RP.save(strs(v.redeem)); AP.merge(v.alerts);
           if (Array.isArray(v.follow)) { const cur = FL.list(); for (const f of v.follow) if (f && typeof f.role === 'string' && typeof f.name === 'string' && !cur.some(x => x.role === f.role && x.name === f.name)) cur.push({ role: f.role, name: f.name }); FL.save(cur); }
-          const added = checkPending(); for (const t of titles.values()) recalcLive(t); route();
+          const added = checkPending(); checkWishPending(); for (const t of titles.values()) recalcLive(t); route();
           setTimeout(() => { const m = document.querySelector('#syncdone'); if (m) m.textContent = `✓ Sync file opened: ${OW.list().length.toLocaleString()} owned · ${pending.list().length.toLocaleString()} waiting to show up in a deal · ${WL.list().length} starred · ${FL.list().length} following.`; }, 50);
         } catch { alertBox.textContent = 'That file didn’t work. Save a new one on the other device.'; } }); e.target.value = ''; } })),
       alertBox));
@@ -2185,7 +2223,7 @@ function syncCard() {
 const BLISTS = [['owned', 'owned (my library)'], ['ownedPending', 'waiting to show up in a deal'], ['watch', 'wishlist (★)'], ['follow', 'following'], ['hidden', 'not interested'], ['alerts', 'alert prices'], ['ownedMaybe', 'might own'], ['redeem', 'redeem sites']];
 const fKey = x => typeof x === 'string' ? x : x && x.role ? x.role + ':' + x.name : x && x.k ? x.k : JSON.stringify(x);
 function snapData() {
-  return { app: 'splitsbot', v: 1, at: new Date().toISOString(), watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all() };
+  return { app: 'splitsbot', v: 1, at: new Date().toISOString(), watch: WL.list(), follow: FL.list(), owned: OW.list(), hidden: NI.list(), ownedPending: pending.list(), ownedMaybe: maybe.list(), redeem: RP.list(), alerts: AP.all(), watchPending: WP.list() };
 }
 // any of our files (backup, sync file, old wishlist export) → one shape
 function readBackup(v, allowEmpty) {
@@ -2196,9 +2234,10 @@ function readBackup(v, allowEmpty) {
     redeem: Array.isArray(v.redeem) ? v.redeem.filter(k => typeof k === 'string') : [],
     follow: Array.isArray(v.follow) ? v.follow.filter(f => f && typeof f.role === 'string' && typeof f.name === 'string').map(f => ({ role: f.role, name: f.name })) : [],
     ownedMaybe: Array.isArray(v.ownedMaybe) ? v.ownedMaybe.filter(x => x && typeof x.l === 'string' && typeof x.k === 'string').map(x => ({ l: x.l, k: KEY_ALIAS.get(x.k) || x.k })) : [],
-    alerts: {} };
+    alerts: {},
+    watchPending: Array.isArray(v.watchPending) ? v.watchPending.filter(x => x && typeof x.l === 'string' && x.l.trim()).map(x => ({ l: x.l.trim(), ...(typeof x.a === 'number' && x.a > 0 ? { a: x.a } : {}) })) : [] };
   if (v.alerts && typeof v.alerts === 'object') for (const [k, x] of Object.entries(v.alerts)) if (typeof x === 'number' && x > 0) out.alerts[KEY_ALIAS.get(k) || k] = x;
-  if (!allowEmpty && !['watch', 'owned', 'hidden', 'ownedPending', 'follow'].some(k => out[k].length) && !Object.keys(out.alerts).length) throw new Error('empty');
+  if (!allowEmpty && !['watch', 'owned', 'hidden', 'ownedPending', 'follow', 'watchPending'].some(k => out[k].length) && !Object.keys(out.alerts).length) throw new Error('empty');
   return out;
 }
 const asList = (d, k) => k === 'alerts' ? Object.entries(d.alerts).map(([key, p]) => ({ key, p })) : d[k];
@@ -2208,11 +2247,12 @@ function mergeData(a, b) {
   const owned = u(a.owned, b.owned, String);
   return { app: 'splitsbot', v: 1, at: new Date().toISOString(), watch: u(a.watch, b.watch, String), owned, hidden: u(a.hidden, b.hidden, String), ownedPending: u(a.ownedPending, b.ownedPending, String),
     follow: u(a.follow, b.follow, fKey), ownedMaybe: u(a.ownedMaybe, b.ownedMaybe, x => x.k).filter(x => !owned.includes(x.k)),
-    redeem: [...new Set([...a.redeem, ...b.redeem])], alerts: { ...b.alerts, ...a.alerts } };
+    redeem: [...new Set([...a.redeem, ...b.redeem])], alerts: { ...b.alerts, ...a.alerts }, watchPending: u(a.watchPending || [], b.watchPending || [], x => x.l.toLowerCase()) };
 }
 function applyData(d) {
   WL.save(d.watch); FL.save(d.follow); OW.save(d.owned); NI.save(d.hidden); pending.save(d.ownedPending); maybe.save(d.ownedMaybe); AP.save(d.alerts); if (d.redeem.length) RP.save(d.redeem);
-  checkPending(); for (const t of titles.values()) recalcLive(t); updateStarCount();
+  WP.save(d.watchPending || []);
+  checkPending(); checkWishPending(); for (const t of titles.values()) recalcLive(t); updateStarCount();
 }
 const SNAPKEY = 'splitsbot-before-sync';
 // called before a sync link or sync file changes anything, so it can be undone
@@ -3014,6 +3054,7 @@ load().then(() => {
   // Lists saved under an old title key move to the current one
   try { for (const L of [WL, OW, NI]) { const v = L.list(); if (v.some(k => KEY_ALIAS.has(k))) L.save(v.map(k => KEY_ALIAS.get(k) || k)); } } catch {}
   try { checkPending(); } catch {}
+  try { checkWishPending(); } catch {}
   loadPorts().then(() => { if (Object.keys(PORTS).length && /^#\/(title|deal|titles)/.test(location.hash)) route(); });
   updateStarCount();
   document.getElementById('hq').placeholder = `search ${titles.size.toLocaleString()} titles`;
