@@ -141033,9 +141033,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.fanflix.co/LG/bf5365172d872d2130c4d780e2219a108bc8803338cb14ebab711d3feec66bb2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt8946378",
           "rating": 7.9,
@@ -141057,7 +141054,10 @@
           "directors": [
             "Rian Johnson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Clerks III",
@@ -141065,9 +141065,6 @@
         "resolution": "UHD",
         "year": 2022,
         "image": "https://img.fanflix.co/LG/80def98849270fb15234ae24e0fd0bbbcabecd2aea31c296aa662ac80adebfa3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt11128440",
           "rating": 6.2,
@@ -141088,7 +141085,10 @@
           "directors": [
             "Kevin Smith"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Hateful Eight (2015)",
@@ -141096,9 +141096,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.mdeo.co/mh-e28fb0c3ce0b76f027761ac20b929511482548a3db514cbb9b3aea1deae874ce",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3460252",
           "rating": 7.8,
@@ -141120,7 +141117,10 @@
           "directors": [
             "Quentin Tarantino"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Descent (Theatrical)",
@@ -141128,9 +141128,6 @@
         "resolution": "UHD",
         "year": 2006,
         "image": "https://img.fanflix.co/LG/3d8150aedd590a8a023311fcb2f7f31bdb87845e3bfb92c55a39b402a8a412c4",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0435625",
           "rating": 7.2,
@@ -141152,7 +141149,10 @@
           "directors": [
             "Neil Marshall"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Django Unchained (2012)",
@@ -141160,9 +141160,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/fca03e7ca4b8cd5c2e98e2fb89b2fad1457cd067de031f2cdd5aa5bb112ca909",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1853728",
           "rating": 8.5,
@@ -141183,7 +141180,10 @@
           "directors": [
             "Quentin Tarantino"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sisu",
@@ -141191,9 +141191,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/24fcef3bb9090298c2637d1dd7a8c4149158e050bfb626962618e64164fb0f8a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt14846026",
           "rating": 6.9,
@@ -141215,7 +141212,10 @@
           "directors": [
             "Jalmari Helander"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Cobweb",
@@ -141255,9 +141255,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/049aca391aa9ac062a73d54542d9584fb2a5b9a1c1b949e817492d9b072941fd",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt5884796",
           "rating": 6.5,
@@ -141279,7 +141276,10 @@
           "directors": [
             "Jean-François Richet"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Radleys",
@@ -141287,9 +141287,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/ca997e432404615e794ebd7af5c04593528d1273da0b93c4c18874e1e1571bd4",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt22889928",
           "rating": 5.1,
@@ -141310,7 +141307,10 @@
           "directors": [
             "Euros Lyn"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Amber Alert",
@@ -141318,9 +141318,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/8371ba40cdd83f8fcc0f2e632b03812e3def0fa3ea9581e69b0f454fe8bc50b8",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt31450182",
           "rating": 6.1,
@@ -141340,7 +141337,10 @@
           "directors": [
             "Kerry Bellessa"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Greedy People",
@@ -141348,9 +141348,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/8cc4e6079f7718df8ea0174b221d7135ce207a460d748f64b442fcfcc139788c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt20201748",
           "rating": 6.2,
@@ -141372,7 +141369,10 @@
           "directors": [
             "Potsy Ponciroli"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "My Penguin Friend",
@@ -141412,9 +141412,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/21f22f0e8264360b565b7c51c2cc39cf3a81de1dfef428e45004bfcc556de1e0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt22050754",
           "rating": 4.7,
@@ -141434,7 +141431,10 @@
           "directors": [
             "Renny Harlin"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Boy Kills World",
@@ -141442,9 +141442,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/d5285481b916773d841b6cd3532b3e2a4349e11d077d47caf75c902460c7ed34",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt13923084",
           "rating": 6.4,
@@ -141466,7 +141463,10 @@
           "directors": [
             "Moritz Mohr"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Unsung Hero",
@@ -141474,9 +141474,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/65fe9b9b3764a15b44445f9d88a0168f1524a300a51d693b5d50d5227bd079bc",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt23638614",
           "rating": 7,
@@ -141499,7 +141496,10 @@
             "Richard L. Ramsey",
             "Joel David Smallbone"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Boneyard",
@@ -141507,9 +141507,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/abc825e55730cba42e5241a4e9abbf4ade90e588fcb9056ede134d0b121cd613",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt10993078",
           "rating": 4.2,
@@ -141531,7 +141528,10 @@
           "directors": [
             "Asif Akbar"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Arthur the King",
@@ -141539,9 +141539,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/a8e50c51e387d58a3d9bca073e31e5b2104f758802facceac7f2f7ff257c9fcf",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt10720352",
           "rating": 7,
@@ -141563,7 +141560,10 @@
           "directors": [
             "Simon Cellan Jones"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Knox Goes Away",
@@ -141571,9 +141571,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/e6391467ffc1481aa2e7d327bb0e89c18f3e005579b6c232be0bfc767deed60a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt20115766",
           "rating": 7,
@@ -141595,7 +141592,10 @@
           "directors": [
             "Michael Keaton"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Imaginary",
@@ -141603,9 +141603,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/a57be9a8b5fcf250a742c6430afa86b9a258e70d5f8e25113a9fa15119b8388f",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt26658104",
           "rating": 4.8,
@@ -141627,7 +141624,10 @@
           "directors": [
             "Jeff Wadlow"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Miller's Girl",
@@ -141635,9 +141635,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/067555c3c36a0f109d78360c06160e0d4b9af681541e07fcb72eee9b8c5ceeb2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt8310486",
           "rating": 5.2,
@@ -141659,7 +141656,10 @@
           "directors": [
             "Jade Halley Bartlett"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The 4:30 Movie",
@@ -141667,9 +141667,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/558107aa03bfddd50d8f2e8481c4d1037863877fc0c15f4c3f6857eb5b3fc8ee",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt28658276",
           "rating": 6,
@@ -141690,7 +141687,10 @@
           "directors": [
             "Kevin Smith"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Kill (2024)",
@@ -141698,9 +141698,6 @@
         "resolution": "UHD",
         "year": 2024,
         "image": "https://img.fanflix.co/LG/6e1aca18a0918e4ee648100e4f0749537c5b2f484c40c2fad4a64b8233b6f7c0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt28259207",
           "rating": 7.4,
@@ -141722,7 +141719,10 @@
           "directors": [
             "Nikhil Nagesh Bhat"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Marsh King's Daughter",
@@ -141730,9 +141730,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/ed7b711edd0913dc99bce37da03abaf52ce40daec33f22c224b512ca4e99cfdf",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt8002382",
           "rating": 5.9,
@@ -141754,7 +141751,10 @@
           "directors": [
             "Neil Burger"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Mob Land",
@@ -141762,9 +141762,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/3eee83923d79b433b9023043e1355f3a518c4ca783742fd802c44a8a0604fee2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt20424130",
           "rating": 5.4,
@@ -141786,7 +141783,10 @@
           "directors": [
             "Nicholas Maggio"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Joy Ride (2023)",
@@ -141794,9 +141794,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/7b8d143d8108203df7b3d0a2b5f833c6ba1a49106c6f4745467610df3b629ff8",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt15268244",
           "rating": 6.4,
@@ -141816,7 +141813,10 @@
           "directors": [
             "Adele Lim"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Blackening",
@@ -141824,9 +141824,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/7c157c17b337295f7b3de714f98a89c724a08627de19e9de435833dbf60f82e2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt11703244",
           "rating": 6,
@@ -141848,7 +141845,10 @@
           "directors": [
             "Tim Story"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Are You There, God? It's Me, Margaret",
@@ -141856,9 +141856,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/547d10017b819916051bd7371896d7efeae3149e61acd8d36917880671c4b858",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt9185206",
           "rating": 7.3,
@@ -141880,7 +141877,10 @@
           "directors": [
             "Kelly Fremon Craig"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "One Ranger",
@@ -141888,9 +141888,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/e8085c4470e0a5e6b5150a0090bf0c562786bfd49e3d386bc9c3b18fe50e2de0",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt23037488",
           "rating": 4.9,
@@ -141911,7 +141908,10 @@
           "directors": [
             "Jesse V. Johnson"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Jesus Revolution",
@@ -141919,9 +141919,6 @@
         "resolution": "UHD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/9da92b4e5dfe6d3c98d539faf1d7874406804447ce83e1769c60e2a8ae778c10",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt10098448",
           "rating": 7.1,
@@ -141944,7 +141941,10 @@
             "Jon Erwin",
             "Brent Mccorkle"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Old Way",
@@ -141984,9 +141984,6 @@
         "resolution": "UHD",
         "year": 2022,
         "image": "https://img.fanflix.co/LG/a7dcbd18958d00ea4fe79a091d7e6ea5252845730803e21948e760368064dfee",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt9271672",
           "rating": 5.4,
@@ -142008,7 +142005,10 @@
           "directors": [
             "Daniel Stamm"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Unbearable Weight of Massive Talent",
@@ -142048,9 +142048,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/LG/c65b5958897c1f8be353a058fbc6ef00962a9d5e1666d9d856badc605110eeee",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt11729298",
           "rating": 7.1,
@@ -142073,7 +142070,10 @@
             "Andrew Erwin",
             "Jon Erwin"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Dangerous (2021)",
@@ -142081,9 +142081,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/LG/630a9978c246724b41958681868a0253ae182d896fb0cacba6b4df32809b797c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3876910",
           "rating": 5.3,
@@ -142104,7 +142101,10 @@
           "directors": [
             "David Hackl"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Barb & Star Go to Vista Del Mar",
@@ -142112,9 +142112,6 @@
         "resolution": "UHD",
         "year": 2021,
         "image": "https://img.fanflix.co/LG/10393689198999b9598812dbc28375d2e55f6f5074d73cc68983810aa7108d34",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3797512",
           "rating": 6.4,
@@ -142135,7 +142132,10 @@
           "directors": [
             "Josh Greenbaum"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Scary Stories to Tell in the Dark",
@@ -142175,9 +142175,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.fanflix.co/LG/a3cbc30dc0b38defd11fcbab22bdb6c420fe5eda219b8afdb655bcb2eec7bc77",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt8688634",
           "rating": 6.7,
@@ -142199,7 +142196,10 @@
           "directors": [
             "Brian Kirk"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hustlers",
@@ -142239,9 +142239,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.fanflix.co/LG/31f50bb15d3be4edc815f5504aa379aeb09c57f453178afd857b28d4e1397f8b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt6394270",
           "rating": 6.8,
@@ -142262,7 +142259,10 @@
           "directors": [
             "Jay Roach"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Midway",
@@ -142303,9 +142303,6 @@
         "resolution": "HD",
         "year": 2019,
         "image": "https://img.fanflix.co/LG/764cd2a2962cfa657f157acc4d6745cb0320aed928233a1bf212e68f2f6a2735",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt6521876",
           "rating": 5.6,
@@ -142327,7 +142324,10 @@
           "directors": [
             "Kevin Smith"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Judy",
@@ -142335,9 +142335,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.fanflix.co/LG/d784dcbb3880d64557b3c0fcddb11e51bba899478bf0a692f12305e607d1e1ba",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt7549996",
           "rating": 6.8,
@@ -142359,7 +142356,10 @@
           "directors": [
             "Rupert Goold"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Angel Has Fallen",
@@ -142398,9 +142398,6 @@
         "resolution": "UHD",
         "year": 2019,
         "image": "https://img.mdeo.co/mh-c3438acb5a3dcf484ec99758470f4d0f71092a34cde174fe0b9ea7c44a0af323",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2139881",
           "rating": 6.8,
@@ -142421,7 +142418,10 @@
           "directors": [
             "Jonathan Levine"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hunter Killer",
@@ -142429,9 +142429,6 @@
         "resolution": "UHD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/d2f0e063de670b0171e29fe7dcfb336078716f37e7677c4179b4096b6abe66cb",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1846589",
           "rating": 6.6,
@@ -142452,7 +142449,10 @@
           "directors": [
             "Donovan Marsh"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "A Simple Favor",
@@ -142460,9 +142460,6 @@
         "resolution": "UHD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/138bbdc57190e2f51f7dd7bc03df8917d32d89aa2145778a060c2301cbe992e8",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt7040874",
           "rating": 6.7,
@@ -142484,7 +142481,10 @@
           "directors": [
             "Paul Feig"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Spy Who Dumped Me",
@@ -142492,9 +142492,6 @@
         "resolution": "UHD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/794923fa3eda5d21a4acd780d30c39eff5e553ed307f03c6c5907fdf7ec519bf",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt6663582",
           "rating": 6.1,
@@ -142516,7 +142513,10 @@
           "directors": [
             "Susanna Fogel"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Molly's Game",
@@ -142524,9 +142524,6 @@
         "resolution": "HD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/e322705a33e8a6185082477ae33890dac4cdd6c89021397134e26656755fa876",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4209788",
           "rating": 7.4,
@@ -142548,7 +142545,10 @@
           "directors": [
             "Aaron Sorkin"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "A Bad Moms Christmas",
@@ -142556,9 +142556,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/8d94e1aee59cd91322505339f2a71aaf7013011234ceac8d26df2740269ff8a0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt6359956",
           "rating": 5.6,
@@ -142579,7 +142576,10 @@
             "Jon Lucas",
             "Scott Moore"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Wonder",
@@ -142587,9 +142587,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/3da7fe92cc88f19582a2869d6037890418e833a66f552436f5d3a034382f7257",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2543472",
           "rating": 7.9,
@@ -142610,7 +142607,10 @@
           "directors": [
             "Stephen Chbosky"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Wind River",
@@ -142618,9 +142618,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.mdeo.co/mh-dcae7c230d7b78afeca0e5f9cb4430f3af254bdda9bc7cc82bd77b752edc3428",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt5362988",
           "rating": 7.7,
@@ -142642,7 +142639,10 @@
           "directors": [
             "Taylor Sheridan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Saban's Power Rangers",
@@ -142650,9 +142650,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/53d31f44309b8cb6f7c6b3083d2fdca344b8e0261dd003875ad9224ed31a2697",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3717490",
           "rating": 5.9,
@@ -142674,7 +142671,10 @@
           "directors": [
             "Dean Israelite"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sing Street",
@@ -142682,9 +142682,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/a18d836e71f5326a74c95bb3ecd70d204d0d33102e75e061ab94661be634e198",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3544112",
           "rating": 7.9,
@@ -142706,7 +142703,10 @@
           "directors": [
             "John Carney"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Bad Moms",
@@ -142714,9 +142714,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/497c883f42950d73d245cae2592c0a1541e4dfdebd970af9f28d8d13a8890ec7",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4651520",
           "rating": 6.2,
@@ -142737,7 +142734,10 @@
             "Jon Lucas",
             "Scott Moore"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Deepwater Horizon",
@@ -142809,9 +142809,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.mdeo.co/mh-441821a6eda273c6f823bbdd046a76bb89c23c61fbd5addffc1e51c1f9ae1748",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2582782",
           "rating": 7.6,
@@ -142833,7 +142830,10 @@
           "directors": [
             "David Mackenzie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lion (2016)",
@@ -142841,9 +142841,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/634d41fb924c5907ecdc5aad4ee7f6f952fccc83e915db70595046363294a306",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3741834",
           "rating": 8,
@@ -142864,7 +142861,10 @@
           "directors": [
             "Garth Davis"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Patriots' Day",
@@ -142872,9 +142872,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.mdeo.co/mh-e53a6de140af8d8f23fd151b729d9f07df8ca87b7d048ccc57bfaf249789bbce",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4572514",
           "rating": 7.3,
@@ -142896,7 +142893,10 @@
           "directors": [
             "Peter Berg"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "La La Land",
@@ -142904,9 +142904,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/8cab180ace6ae52288a802a7af72de9c7dc0122c4f6c7f900f45e4176b570960",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3783958",
           "rating": 8,
@@ -142928,7 +142925,10 @@
           "directors": [
             "Damien Chazelle"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hacksaw Ridge",
@@ -142936,9 +142936,6 @@
         "resolution": "UHD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/2ac71902ee18e8eb468d7effd8ab67f8632affd4a286f52f566697e2c5b1c0fe",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2119532",
           "rating": 8.1,
@@ -142960,7 +142957,10 @@
           "directors": [
             "Mel Gibson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Southpaw",
@@ -142968,9 +142968,6 @@
         "resolution": "UHD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/6d2c04bf597e7572df7545ce1d1444f63daf10586ba2a1f384f9e7f51370dad9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1798684",
           "rating": 7.3,
@@ -142992,7 +142989,10 @@
           "directors": [
             "Antoine Fuqua"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Knock Knock (2015)",
@@ -143000,9 +143000,6 @@
         "resolution": "UHD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/9aca10b617776eba56d417106b1ab9b71615a7aef620238c2e918542c87a42b9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3605418",
           "rating": 4.9,
@@ -143023,7 +143020,10 @@
           "directors": [
             "Eli Roth"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "It Follows",
@@ -143063,9 +143063,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/2debf77e58da9769fda0a017ed22959359bcf3938965faa9a6aef7bf03485df2",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt4178092",
           "rating": 7,
@@ -143087,7 +143084,10 @@
           "directors": [
             "Joel Edgerton"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sicario",
@@ -143095,9 +143095,6 @@
         "resolution": "UHD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/8cd170159d188530d45b307270b7c7781ec96ded36017706a32a16847935acf9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt3397884",
           "rating": 7.7,
@@ -143119,7 +143116,10 @@
           "directors": [
             "Denis Villeneuve"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Age of Adaline",
@@ -143127,9 +143127,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/79fe0f673110978b63e864f9d8fffe16067fec85e97003657838121c6e45fd7f",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1655441",
           "rating": 7.2,
@@ -143151,7 +143148,10 @@
           "directors": [
             "Lee Toland Krieger"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Wild Card",
@@ -143159,9 +143159,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.mdeo.co/mh-a8cc1d476cec44921ab8331e0ca6db21bd4a163da2360e657fb70ea6317899c0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2231253",
           "rating": 5.6,
@@ -143183,7 +143180,10 @@
           "directors": [
             "Simon West"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Burning Blue (Director's Cut)",
@@ -143191,9 +143191,6 @@
         "resolution": "HD",
         "year": 2014,
         "image": "https://img.fanflix.co/LG/c4781cd136cfe27e064991738708f52ec0d7f2a11fcbe4be97ac9787ed007adf",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1811307",
           "rating": 6.2,
@@ -143215,7 +143212,10 @@
           "directors": [
             "D.M.W. Greer"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Paddington",
@@ -143223,9 +143223,6 @@
         "resolution": "UHD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/c4f26b4f815676f7bcf2ee7366deaa9943b9b1fca58172ae341c9ad018535acf",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1109624",
           "rating": 7.3,
@@ -143247,7 +143244,10 @@
           "directors": [
             "Paul King"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Draft Day",
@@ -143255,9 +143255,6 @@
         "resolution": "HD",
         "year": 2014,
         "image": "https://img.fanflix.co/LG/9ee2358f8ffe28732403f5fd8d2a8af7193cc79a929c050e948baf0c592e78e9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2223990",
           "rating": 6.8,
@@ -143278,7 +143275,10 @@
           "directors": [
             "Ivan Reitman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Imitation Game",
@@ -143286,9 +143286,6 @@
         "resolution": "HD",
         "year": 2014,
         "image": "https://img.fanflix.co/LG/8f68d8b0401d333760217bdc7314658e552d94e37242f7bf5f3fc4c579e81fff",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2084970",
           "rating": 8,
@@ -143310,7 +143307,10 @@
           "directors": [
             "Morten Tyldum"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Warm Bodies",
@@ -143318,9 +143318,6 @@
         "resolution": "UHD",
         "year": 2013,
         "image": "https://img.mdeo.co/mh-884c69ddb015cee851cf4e7cebacc307eaa6a1c7b17172cbf2e85d99848346da",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1588173",
           "rating": 6.8,
@@ -143342,7 +143339,10 @@
           "directors": [
             "Jonathan Levine"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "You're Next",
@@ -143350,9 +143350,6 @@
         "resolution": "UHD",
         "year": 2013,
         "image": "https://img.fanflix.co/LG/65f50e4e02612ff3ba6a746c6b830bd878e732c1c1d0e0ceece367c9af6b4457",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1853739",
           "rating": 6.6,
@@ -143374,7 +143371,10 @@
           "directors": [
             "Adam Wingard"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Butler",
@@ -143382,9 +143382,6 @@
         "resolution": "HD",
         "year": 2013,
         "image": "https://img.fanflix.co/LG/7497b86aa13f142ec807a3ce6b00373f7beb16d5a01c376c656316e17f941f1a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1327773",
           "rating": 7.2,
@@ -143405,7 +143402,10 @@
           "directors": [
             "Lee Daniels"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Redemption (2013)",
@@ -143445,9 +143445,6 @@
         "resolution": "HD",
         "year": 2013,
         "image": "https://img.mdeo.co/mh-abd40c025c6aa2041e665608949d5d4ef1159c3512eca3f07a1771275da8ad48",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt2334649",
           "rating": 7.5,
@@ -143469,7 +143466,10 @@
           "directors": [
             "Ryan Coogler"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Intouchables (2011)",
@@ -143477,9 +143477,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/3ae06acd580686e95229869d7a74f3fb316d596306e2fec49923c5a8b71eb406",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1675434",
           "rating": 8.5,
@@ -143501,7 +143498,10 @@
             "Olivier Nakache",
             "Éric Toledano"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Master (2012)",
@@ -143509,9 +143509,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.mdeo.co/mh-537588e63f62be7dd595aac0962eee392d4141d7b8400919f620941bcecc28f3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1560747",
           "rating": 7.1,
@@ -143531,7 +143528,10 @@
           "directors": [
             "Paul Thomas Anderson"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Cabin in the Woods",
@@ -143539,9 +143539,6 @@
         "resolution": "UHD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/86cb57026bfa3b2cdc035d7b877311e54223cecc118f36e292f164018893e829",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1259521",
           "rating": 7,
@@ -143563,7 +143560,10 @@
           "directors": [
             "Drew Goddard"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Sinister",
@@ -143603,9 +143603,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/68f483105274e68b05181854d7597e3483b062a288ffa879bad015f621456658",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1212450",
           "rating": 7.2,
@@ -143627,7 +143624,10 @@
           "directors": [
             "John Hillcoat"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Impossible",
@@ -143635,9 +143635,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.mdeo.co/mh-989ea6549feb590acbdb7754a2a738e3ca5f00d338475ded488f466a76a28246",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1649419",
           "rating": 7.5,
@@ -143659,7 +143656,10 @@
           "directors": [
             "J.A. Bayona"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Safe (2012)",
@@ -143699,9 +143699,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.mdeo.co/mh-8c889a40237acd1d276ee3bc0b8b948b8eb741a1ad10e62c181b592ee57ae217",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1659337",
           "rating": 7.9,
@@ -143721,7 +143718,10 @@
           "directors": [
             "Stephen Chbosky"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "13",
@@ -143729,9 +143729,6 @@
         "resolution": "HD",
         "year": 2011,
         "image": "https://img.fanflix.co/LG/780859cf5b3d724c9a3fec9760ea254b7e97ef09ea7e9d71d9d977c13377ff11",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0798817",
           "rating": 6,
@@ -143753,7 +143750,10 @@
           "directors": [
             "Géla Babluani"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Lincoln Lawyer",
@@ -143761,9 +143761,6 @@
         "resolution": "UHD",
         "year": 2011,
         "image": "https://img.mdeo.co/mh-c7635978a860bd74edc1d07aed2b1ea68de22acfa835637095d35b0349123bcd",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1189340",
           "rating": 7.3,
@@ -143785,7 +143782,10 @@
           "directors": [
             "Brad Furman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "50/50",
@@ -143793,9 +143793,6 @@
         "resolution": "HD",
         "year": 2011,
         "image": "https://img.fanflix.co/LG/4b2c566fac227ff92b9ddbdc4e8c8de532d718a0f0e51175c7f33e84e4ac6008",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1306980",
           "rating": 7.6,
@@ -143817,7 +143814,10 @@
           "directors": [
             "Jonathan Levine"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Warrior",
@@ -143825,9 +143825,6 @@
         "resolution": "UHD",
         "year": 2011,
         "image": "https://img.fanflix.co/LG/d9a91e6add37c39e0b7103442b83d74c587824cbec568611756b10e6ed215a6f",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1291584",
           "rating": 8.1,
@@ -143849,7 +143846,10 @@
           "directors": [
             "Gavin O'Connor"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Descent 2",
@@ -143857,9 +143857,6 @@
         "resolution": "UHD",
         "year": 2010,
         "image": "https://img.fanflix.co/LG/78de225d1552b39f93d6584ae5e747630a8ec193cdbf848ddec2daa0f6eded46",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1073105",
           "rating": 5.7,
@@ -143882,7 +143879,10 @@
           "directors": [
             "Jon Harris"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Winters Bone",
@@ -143890,9 +143890,6 @@
         "resolution": "HD",
         "year": 2010,
         "image": "https://img.mdeo.co/mh-3a27cb3a99d39e84f2c31857c0846d8d557f35bde8f916d724d975429d27ccef",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1399683",
           "rating": 7.1,
@@ -143914,7 +143911,10 @@
           "directors": [
             "Debra Granik"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Crazies (2010)",
@@ -143922,9 +143922,6 @@
         "resolution": "UHD",
         "year": 2010,
         "image": "https://img.fanflix.co/LG/4333176fc507a88d7c72116c142100f16d4af9d3f75d5e4dc75f645cfd6670db",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0455407",
           "rating": 6.5,
@@ -143944,7 +143941,10 @@
           "directors": [
             "Breck Eisner"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Remember Me",
@@ -143952,9 +143952,6 @@
         "resolution": "HD",
         "year": 2010,
         "image": "https://img.fanflix.co/LG/d0cd909a714439f8c80a85ce599e1fb310cd0ce069faacd84299446bcd698066",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1403981",
           "rating": 7.1,
@@ -143975,7 +143972,10 @@
           "directors": [
             "Allen Coulter"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The King's Speech",
@@ -143983,9 +143983,6 @@
         "resolution": "HD",
         "year": 2010,
         "image": "https://img.mdeo.co/mh-228fe1da6e8026e185647f7b77fd25f6372cb10464bd5f0a147276b8f6183054",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1504320",
           "rating": 8,
@@ -144007,7 +144004,10 @@
           "directors": [
             "Tom Hooper"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Kick-Ass",
@@ -144047,9 +144047,6 @@
         "resolution": "UHD",
         "year": 2009,
         "image": "https://img.fanflix.co/LG/5cdb311c3c2abeb6f00403d7712518987bf04b4b1786b6dfced78666cdc209ac",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1232783",
           "rating": 5.2,
@@ -144070,7 +144067,10 @@
           "directors": [
             "Stewart Hendler"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Road",
@@ -144078,9 +144078,6 @@
         "resolution": "HD",
         "year": 2009,
         "image": "https://img.fanflix.co/LG/72fdc188bb8c2ac1e56680ef216df7d98b048a79fcde53ef2de51c7fef6c23a3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0898367",
           "rating": 7.2,
@@ -144101,7 +144098,10 @@
           "directors": [
             "John Hillcoat"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Hurt Locker",
@@ -144109,9 +144109,6 @@
         "resolution": "UHD",
         "year": 2009,
         "image": "https://img.fanflix.co/LG/8c8db859736e343bc9a11d4358e301531b6f0ec978d62fc1e30cff3cd47b087c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0887912",
           "rating": 7.5,
@@ -144133,7 +144130,10 @@
           "directors": [
             "Kathryn Bigelow"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Precious",
@@ -144141,9 +144141,6 @@
         "resolution": "HD",
         "year": 2009,
         "image": "https://img.fanflix.co/LG/da1c9bc40503cfc7525db9cefb55d54d462fdf05ac5b8afeb6af2504b7b15a7a",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0929632",
           "rating": 7.3,
@@ -144163,7 +144160,10 @@
           "directors": [
             "Lee Daniels"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Law Abiding Citizen",
@@ -144171,9 +144171,6 @@
         "resolution": "UHD",
         "year": 2009,
         "image": "https://img.mdeo.co/mh-d06a29d60459e706a35eb3aef25233c8a547d08caab07fd60de15c30f13c8539",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1197624",
           "rating": 7.4,
@@ -144195,7 +144192,10 @@
           "directors": [
             "F. Gary Gray"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Repo! The Genetic Opera",
@@ -144203,9 +144203,6 @@
         "resolution": "UHD",
         "year": 2008,
         "image": "https://img.fanflix.co/LG/3096b9377c947b1403aef8d927213fa3155f0271b27c20a6475e8d5a04b5bd58",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0963194",
           "rating": 6.4,
@@ -144227,7 +144224,10 @@
           "directors": [
             "Darren Lynn Bousman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Zack And Miri Make A Porno",
@@ -144235,9 +144235,6 @@
         "resolution": "HD",
         "year": 2008,
         "image": "https://img.fanflix.co/LG/b542a8566636903b327b75b74e5717b4ee67dc16c53437eeeb69d6a45dee1efc",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1007028",
           "rating": 6.5,
@@ -144258,7 +144255,10 @@
           "directors": [
             "Kevin Smith"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Reader",
@@ -144266,9 +144266,6 @@
         "resolution": "HD",
         "year": 2008,
         "image": "https://img.fanflix.co/LG/dfd94973aa6f19a720d0848a39d17a9123cae696b4f2f698a3ea97a789729025",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0976051",
           "rating": 7.6,
@@ -144290,7 +144287,10 @@
           "directors": [
             "Stephen Daldry"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Bank Job",
@@ -144329,9 +144329,6 @@
         "resolution": "UHD",
         "year": 2008,
         "image": "https://img.fanflix.co/LG/9395b737b9beeaeba024e7762488610c7ca06478a161bcadcd9a388a5c056021",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0865556",
           "rating": 6.5,
@@ -144353,7 +144350,10 @@
           "directors": [
             "Rob Minkoff"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Vicky Cristina Barcelona",
@@ -144393,9 +144393,6 @@
         "resolution": "UHD",
         "year": 2008,
         "image": "https://img.mdeo.co/mh-005cd65f18e567f28bf1f3fbffb763e70291def16800dfd4737e87dadc36d767",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt1129442",
           "rating": 6.1,
@@ -144416,7 +144413,10 @@
           "directors": [
             "Olivier Megaton"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "1408",
@@ -144424,9 +144424,6 @@
         "resolution": "UHD",
         "year": 2007,
         "image": "https://img.fanflix.co/LG/2a1e9426705b667e44230ff14cf3159368b76cc0c9a24a45d8b4d683cfd7fede",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0450385",
           "rating": 6.8,
@@ -144448,7 +144445,10 @@
           "directors": [
             "Mikael Håfström"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Mist",
@@ -144488,9 +144488,6 @@
         "resolution": "HD",
         "year": 2007,
         "image": "https://img.fanflix.co/LG/837e8d02e345d8faf5094b2b6579ad014df8c69c093315657a25fca7b0f6cd17",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0373883",
           "rating": 6.1,
@@ -144510,7 +144507,10 @@
           "directors": [
             "Rob Zombie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Great Debaters",
@@ -144581,9 +144581,6 @@
         "resolution": "UHD",
         "year": 2007,
         "image": "https://img.fanflix.co/LG/77e9501cec6d0a4c7422d1e1287d5e768bf5de2158005eff8663509f4d71f64c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0381849",
           "rating": 7.6,
@@ -144605,7 +144602,10 @@
           "directors": [
             "James Mangold"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Stranger Than Fiction",
@@ -144613,9 +144613,6 @@
         "resolution": "HD",
         "year": 2006,
         "image": "https://img.fanflix.co/LG/e26ad93ed6ced9a154f8ab3ce5c110bce60edff7ec62a40ebde3e4881862c5e3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0420223",
           "rating": 7.5,
@@ -144637,7 +144634,10 @@
           "directors": [
             "Marc Forster"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Clerks II",
@@ -144645,9 +144645,6 @@
         "resolution": "HD",
         "year": 2006,
         "image": "https://img.fanflix.co/LG/c5e75f0891b6f64ff8e3dd4e08cb87177760f343580287950f794b791b29fbdf",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0424345",
           "rating": 7.3,
@@ -144667,7 +144664,10 @@
           "directors": [
             "Kevin Smith"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Scary Movie 4",
@@ -144675,9 +144675,6 @@
         "resolution": "HD",
         "year": 2006,
         "image": "https://img.fanflix.co/LG/56e10c3a49f22efab8c8a2e9ec2c9816a2b6fa82f802b14fe2cb0e4c9b19509b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0362120",
           "rating": 5.1,
@@ -144697,7 +144694,10 @@
           "directors": [
             "David Zucker"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lucky Number Slevin",
@@ -144705,9 +144705,6 @@
         "resolution": "HD",
         "year": 2006,
         "image": "https://img.fanflix.co/LG/7ecd114667bf847bf1ad9efd12bd6f552b7967a88571d4d473d58fb0c60a132d",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0425210",
           "rating": 7.7,
@@ -144729,7 +144726,10 @@
           "directors": [
             "Paul McGuigan"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Crank",
@@ -144737,9 +144737,6 @@
         "resolution": "UHD",
         "year": 2006,
         "image": "https://img.fanflix.co/LG/cab53484a8bfcb48046904efaa269259f628e167c77266f4886c95c0aace23fa",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0479884",
           "rating": 6.9,
@@ -144762,7 +144759,10 @@
             "Mark Neveldine",
             "Brian Taylor"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "High Tension (Unrated)",
@@ -144770,9 +144770,6 @@
         "resolution": "UHD",
         "year": 2005,
         "image": "https://img.fanflix.co/LG/499572067e250a7bdbd371103b7564c7a487cdafae2463591271f9c1733b1dc9",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0338095",
           "rating": 6.7,
@@ -144792,7 +144789,10 @@
           "directors": [
             "Alexandre Aja"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Devil's Rejects (Theatrical)",
@@ -144800,9 +144800,6 @@
         "resolution": "UHD",
         "year": 2005,
         "image": "https://img.fanflix.co/LG/ef0800000bd99bf7e36f9e3811a29119c19d584c25f3e521e54ddeaebe3ea3b8",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0395584",
           "rating": 6.7,
@@ -144824,7 +144821,10 @@
           "directors": [
             "Rob Zombie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Chaos",
@@ -144832,9 +144832,6 @@
         "resolution": "HD",
         "year": 2008,
         "image": "https://img.fanflix.co/LG/b44243cd7f9863426b9fcf0682930a07bfb39cbc1df4368491194d42f0fa0aa4",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0402910",
           "rating": 6.4,
@@ -144856,7 +144853,10 @@
           "directors": [
             "Tony Giglio"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Crash (Director's Cut)",
@@ -144864,9 +144864,6 @@
         "resolution": "HD",
         "year": 2005,
         "image": "https://img.fanflix.co/LG/43060739f75e9aa7ddf653d450e29a4ee7f8d7efa7ac8b2c300f9df7dbbbba92",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0375679",
           "rating": 7.7,
@@ -144888,7 +144885,10 @@
           "directors": [
             "Paul Haggis"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Lord of War",
@@ -144927,9 +144927,6 @@
         "resolution": "UHD",
         "year": 2003,
         "image": "https://img.fanflix.co/LG/0ea8b6628550711e04d7c594e1d009d97688a908adf44dc4d8dee059545e329f",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0251736",
           "rating": 6,
@@ -144949,7 +144946,10 @@
           "directors": [
             "Rob Zombie"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Frailty",
@@ -144957,9 +144957,6 @@
         "resolution": "UHD",
         "year": 2002,
         "image": "https://img.fanflix.co/LG/112fdb662a024935755c3e0ecff13222e2014638e6b1cccfda51d46bf5569da3",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0264616",
           "rating": 7.2,
@@ -144981,7 +144978,10 @@
           "directors": [
             "Bill Paxton"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Street Fighter Alpha 1",
@@ -144989,9 +144989,6 @@
         "resolution": "HD",
         "year": 2001,
         "image": "https://img.fanflix.co/LG/b35890e2c0145659a60bb16ec0f49f2ce300125bb9cb3591b58459bc9cba1d43",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0185708",
           "rating": 5.8,
@@ -145014,7 +145011,10 @@
           "directors": [
             "Shigeyasu Yamauchi"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Made",
@@ -145022,9 +145022,6 @@
         "resolution": "UHD",
         "year": 2001,
         "image": "https://img.fanflix.co/LG/3b4d94b53cdd2e5c7faa0e205286ba92b38c706a5595bd561ce61020e9495ed4",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0227005",
           "rating": 6.3,
@@ -145046,7 +145043,10 @@
           "directors": [
             "Jon Favreau"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Battle Royale",
@@ -145054,9 +145054,6 @@
         "resolution": "UHD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/ec9f00dd923b294bf8e148ed56cc8b84f9ee6a27610ff5490feeb4949c60fe6d",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0266308",
           "rating": 7.5,
@@ -145078,7 +145075,10 @@
           "directors": [
             "Kinji Fukasaku"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "American Psycho (Uncut Version)",
@@ -145086,9 +145086,6 @@
         "resolution": "UHD",
         "year": 2000,
         "image": "https://img.fanflix.co/LG/368c8d6254783ed56c918cc92e642ffc2c3d4c45de3f367d6ea3cb1287787985",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0144084",
           "rating": 7.6,
@@ -145110,7 +145107,10 @@
           "directors": [
             "Mary Harron"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Requiem for a Dream (Director's Cut)",
@@ -145118,9 +145118,6 @@
         "resolution": "UHD",
         "year": 2000,
         "image": "https://img.fanflix.co/LG/7f1775b2e16d06e989da3ae8be22d7dff834dc2e1356888da13dcf86a4b4d824",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0180093",
           "rating": 8.3,
@@ -145140,7 +145137,10 @@
           "directors": [
             "Darren Aronofsky"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Way of the Gun",
@@ -145148,9 +145148,6 @@
         "resolution": "UHD",
         "year": 2000,
         "image": "https://img.fanflix.co/LG/4d07ac95bbdbe9005dac8856c38298c85d91e3f84a79a9066688fcbb58770c7c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0202677",
           "rating": 6.6,
@@ -145172,7 +145169,10 @@
           "directors": [
             "Christopher McQuarrie"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Blair Witch Project - Restored Theatrical Cut",
@@ -145180,9 +145180,6 @@
         "resolution": "HD",
         "year": 1999,
         "image": "https://img.fanflix.co/LG/897ef3f09adfa37c5c1335922d0b684ed77399f085d571b5c8ab7fb45fa87021",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0185937",
           "rating": 6.5,
@@ -145205,7 +145202,10 @@
             "Daniel Myrick",
             "Eduardo Sánchez"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Ninth Gate",
@@ -145213,9 +145213,6 @@
         "resolution": "UHD",
         "year": 1999,
         "image": "https://img.fanflix.co/LG/29a869dc66354b0dde2e385f67fd6a9cc4e35cc9a0cde2c122652afffe4d2ff5",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0142688",
           "rating": 6.7,
@@ -145236,7 +145233,10 @@
           "directors": [
             "Roman Polanski"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Cube",
@@ -145276,9 +145276,6 @@
         "resolution": "UHD",
         "year": 1997,
         "image": "https://img.fanflix.co/LG/1b8594ddc515d120e4e614169f94092ec0a78819112c0245c1f82ee87e5766af",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0119396",
           "rating": 7.5,
@@ -145300,7 +145297,10 @@
           "directors": [
             "Quentin Tarantino"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Cutthroat Island",
@@ -145308,9 +145308,6 @@
         "resolution": "UHD",
         "year": 1995,
         "image": "https://img.fanflix.co/LG/6a528758d1c77970851e5bcb2a17a6e833922a34de445a34838ed745eb99ff7a",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0112760",
           "rating": 5.7,
@@ -145332,7 +145329,10 @@
           "directors": [
             "Renny Harlin"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Basic Instinct (Unrated Director's Cut)",
@@ -145340,9 +145340,6 @@
         "resolution": "UHD",
         "year": 1992,
         "image": "https://img.fanflix.co/LG/8a4386a84fc656c96d2940eda64983e087710c4400f88da86c0fe4aaa202792b",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0103772",
           "rating": 7.1,
@@ -145364,7 +145361,10 @@
           "directors": [
             "Paul Verhoeven"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Reservoir Dogs",
@@ -145372,9 +145372,6 @@
         "resolution": "UHD",
         "year": 1992,
         "image": "https://img.fanflix.co/LG/20e4c5dc55cad54ddf65a1633244e1459296609ecf74a18dda3726a2d7a853c1",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0105236",
           "rating": 8.2,
@@ -145396,7 +145393,10 @@
           "directors": [
             "Quentin Tarantino"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Hearts of Darkness",
@@ -145436,9 +145436,6 @@
         "resolution": "UHD",
         "year": 1991,
         "image": "https://img.mdeo.co/mh-fa207ef8eb3a2d87c352095950fe7705a261cf40bf4357195bdf384b6fca31c6",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0103064",
           "rating": 8.6,
@@ -145460,7 +145457,10 @@
           "directors": [
             "James Cameron"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Jacob's Ladder",
@@ -145468,9 +145468,6 @@
         "resolution": "UHD",
         "year": 1990,
         "image": "https://img.fanflix.co/LG/23e9470f98ab1f49125f89edb2e9cd9e7c9a7e7ad89f3eaa761a0e2543888f86",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0099871",
           "rating": 7.4,
@@ -145492,7 +145489,10 @@
           "directors": [
             "Adrian Lyne"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "King of New York",
@@ -145500,9 +145500,6 @@
         "resolution": "UHD",
         "year": 1990,
         "image": "https://img.fanflix.co/LG/087228dcdec70063b05d312a02811eac8e9ffd969fcc4f6dba9c5f710542b614",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0099939",
           "rating": 6.9,
@@ -145523,7 +145520,10 @@
           "directors": [
             "Abel Ferrara"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Air America",
@@ -145531,9 +145531,6 @@
         "resolution": "UHD",
         "year": 1990,
         "image": "https://img.mdeo.co/mh-a4fbb57699d896aed024b0a9cd3090b8c6c3a662aadbe23f5e5a63d6452a30d9",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0099005",
           "rating": 5.8,
@@ -145555,7 +145552,10 @@
           "directors": [
             "Roger Spottiswoode"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Drugstore Cowboy",
@@ -145563,9 +145563,6 @@
         "resolution": "UHD",
         "year": 1989,
         "image": "https://img.fanflix.co/LG/e82b598e120e91e65ac9e61388e1641bdfd98e24abef153513d94029799da81f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0097240",
           "rating": 7.2,
@@ -145586,7 +145583,10 @@
           "directors": [
             "Gus Van Sant"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Young Guns",
@@ -145594,9 +145594,6 @@
         "resolution": "UHD",
         "year": 1988,
         "image": "https://img.fanflix.co/LG/903c54ebf6d32cdb6477e3563bab99e5c434fc86bc2f1c8a4ba3eb7f6df1bf6c",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0096487",
           "rating": 6.8,
@@ -145618,7 +145615,10 @@
           "directors": [
             "Christopher Cain"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Dirty Dancing",
@@ -145626,9 +145626,6 @@
         "resolution": "UHD",
         "year": 1987,
         "image": "https://img.fanflix.co/LG/469f473b16f40f029cce8a4f2a34b29df77f26c78a0300688e752d9c11aa3d38",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0092890",
           "rating": 7.1,
@@ -145650,7 +145647,10 @@
           "directors": [
             "Emile Ardolino"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Apocalypse Now",
@@ -145658,9 +145658,6 @@
         "resolution": "UHD",
         "year": 1979,
         "image": "https://img.fanflix.co/LG/cf0fa75fa449e3453be77fa0b26b64848345a69bf2dc9d6797d6ef2d4c01543e",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0078788",
           "rating": 8.4,
@@ -145682,7 +145679,10 @@
           "directors": [
             "Francis Ford Coppola"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "Meatballs",
@@ -145690,9 +145690,6 @@
         "resolution": "UHD",
         "year": 1979,
         "image": "https://img.fanflix.co/LG/7d88518c1741da341878f96ae3a4f042f365ba7a5d5dae9e542b2790aa15deed",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0079540",
           "rating": 6.2,
@@ -145712,7 +145709,10 @@
           "directors": [
             "Ivan Reitman"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "The Conversation",
@@ -145720,9 +145720,6 @@
         "resolution": "UHD",
         "year": 1974,
         "image": "https://img.fanflix.co/LG/c299998d8ecc8b4a15bd080ef31af5f064071aac40982d524963be63487c29e0",
-        "platforms": [
-          "Movies Anywhere"
-        ],
         "imdb": {
           "id": "tt0071360",
           "rating": 7.7,
@@ -145744,7 +145741,10 @@
           "directors": [
             "Francis Ford Coppola"
           ]
-        }
+        },
+        "platforms": [
+          "Movies Anywhere"
+        ]
       },
       {
         "title": "50-Film Spotlight Collection: Volume 1",
@@ -154542,9 +154542,6 @@
         "resolution": "HD",
         "year": 2012,
         "image": "https://img.fanflix.co/LG/b4939900afec5f0876fbd8f3195b683b23d8fc36dc90160e39c1f5da1f659424",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1986770",
           "rating": 6.6,
@@ -154566,7 +154563,10 @@
             "Bob Koherr",
             "Gerry Cohen"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Boss: The Complete Series",
@@ -154574,9 +154574,6 @@
         "resolution": "HD",
         "year": 2011,
         "image": "https://img.fanflix.co/LG/3618aefd316ef3072d7f8f1912c26a9c9579ba6b56592c013cbc38d8f33fe559",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1833285",
           "rating": 8.1,
@@ -154599,7 +154596,10 @@
             "Jean de Segonzac",
             "Mario Van Peebles"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Cardinal: The Complete Series",
@@ -154607,9 +154607,6 @@
         "resolution": "HD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/84b86bb86a716ba8044398908e4a73a6067bd6fd7fa77d40c1f2f1dfb31b99db",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt5583512",
           "rating": 7.8,
@@ -154632,7 +154629,10 @@
             "Daniel Grou",
             "Jeff Renfroe"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Casual: The Complete Series",
@@ -154640,9 +154640,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/94aa6c1c034668705c8fad8fdf7bcdafe6cbd4284507d045b703c3524c6c4ca7",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4577466",
           "rating": 7.5,
@@ -154664,7 +154661,10 @@
             "Michael Weaver",
             "Jason Reitman"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Con Man: The Complete Series",
@@ -154703,9 +154703,6 @@
         "resolution": "HD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/e69fd9812e15908e7f6146ac9c31ae33e9355fdaccc31bdc93ec06ae40d4bb86",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt5707802",
           "rating": 6.3,
@@ -154727,7 +154724,10 @@
             "Justin Simien",
             "Steven K. Tsuchida"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Earth Final Conflict: The Complete Series",
@@ -154735,9 +154735,6 @@
         "resolution": "SD",
         "year": 1997,
         "image": "https://img.fanflix.co/LG/765624e7fdf04a6f4526497c3893d506c5a129a2454508df6971be8bb1cc20aa",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0123816",
           "rating": 6.3,
@@ -154760,7 +154757,10 @@
             "Brenton Spencer",
             "Ross Clyde"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Graves: The Complete Series",
@@ -154768,9 +154768,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/8cc6dc8fc3ae4271c72213fc0749842ad68a9404eca54ae30e740bf78183476c",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4866982",
           "rating": 6.6,
@@ -154791,7 +154788,10 @@
             "Joshua Michael Stern",
             "Iain B. MacDonald"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Greenleaf: The Complete Series",
@@ -154863,9 +154863,6 @@
         "resolution": "HD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/2c38d4d0bc6e65a2c0f846beafddb177e2338fbeb5a23512bcba4cfa3043daeb",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt6006350",
           "rating": 8,
@@ -154886,7 +154883,10 @@
             "Juliet May",
             "Simon Hynd"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Nightman: The Complete Series",
@@ -154894,9 +154894,6 @@
         "resolution": "SD",
         "year": 1997,
         "image": "https://img.fanflix.co/LG/5be601329909a574b4e5a0f456a85273d7b23d50994735c9e5d3a059d47da968",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0128886",
           "rating": 5.5,
@@ -154919,7 +154916,10 @@
             "Robert Munic",
             "Nick Daniel"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Ransom: The Complete Series",
@@ -154927,9 +154927,6 @@
         "resolution": "HD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/d8d1b8cfcafa23ba2cbf178967b71bda3bc329ae90ea7b830a4ceee3a002f5fa",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt5809150",
           "rating": 6.7,
@@ -154952,7 +154949,10 @@
             "Eleanore Lindo",
             "James Genn"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Robin Hood: Season 1",
@@ -154962,9 +154962,6 @@
         "runtime": 1,
         "seasons": 1,
         "image": "https://img.fanflix.co/LG/020cb95cbd1664633877e4828a7b2ba11c188448d23b87b52c2e344fcbd93fda",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt33484460",
           "rating": 6.8,
@@ -154994,7 +154991,10 @@
             "Jonathan English",
             "Orsi Nagypal"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Step Up: High Water: The Complete Series",
@@ -155034,9 +155034,6 @@
         "resolution": "HD",
         "year": 2008,
         "image": "https://img.fanflix.co/LG/28e38431dd687d005c938e3e6e7d6d8722ccd561562dc322831b35d94c39b394",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt7563270",
           "rating": 7,
@@ -155058,7 +155055,10 @@
             "Stuart Zicherman",
             "Marta Cunningham"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Vida: The Complete Series",
@@ -155066,9 +155066,6 @@
         "resolution": "HD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/2c8b8271d179f597a1f8b2cb84c6e432d900ebef470b23e67ea88b2432bedd7d",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt7725422",
           "rating": 7.4,
@@ -155090,7 +155087,10 @@
             "Jenée LaMarque",
             "Tanya Saracho"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Wildfire: The Complete Series",
@@ -155098,9 +155098,6 @@
         "resolution": "HD",
         "year": 2005,
         "image": "https://img.fanflix.co/LG/33a4462b94a76e9ab5ea4c52a2d0fb23dadc8d89852af5ab2b4f1895aca487bf",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0439879",
           "rating": 7.5,
@@ -155123,7 +155120,10 @@
             "Bradford May",
             "Frank Perl"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Ash vs. Evil Dead: The Complete Series",
@@ -155131,9 +155131,6 @@
         "resolution": "HD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/be2ff9414a2f87d39862edb464ee8e24242a2b76f8b73252c25eef17a1734c11",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4189022",
           "rating": 8.4,
@@ -155156,7 +155153,10 @@
             "Mark Beesley",
             "Rick Jacobson"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Orange is the New Black: Complete Series",
@@ -155164,9 +155164,6 @@
         "resolution": "HD",
         "year": 2013,
         "image": "https://img.fanflix.co/LG/1c836176ad3ed5ecd618454c37d84b910059ec897b8eb5010a25b69924e37ca2",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt2372162",
           "rating": 8,
@@ -155190,7 +155187,10 @@
             "Andrew McCarthy",
             "Phil Abraham"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Party Down: The Complete Series",
@@ -155198,9 +155198,6 @@
         "resolution": "SD",
         "year": 2023,
         "image": "https://img.fanflix.co/LG/a098781ad2280027320cb0511fa5faeccafeaba9e9a253472d2f9c5eb4940140",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1073507",
           "rating": 8.2,
@@ -155222,7 +155219,10 @@
             "Bryan Gordon",
             "Fred Savage"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Minx: The Complete Series",
@@ -155230,9 +155230,6 @@
         "resolution": "HD",
         "year": 2022,
         "image": "https://img.fanflix.co/LG/c55c0fab7e3e6f0c7327aed67120098db087382b6e64e5afdcfa3a35399d1408",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt11947418",
           "rating": 7.6,
@@ -155253,7 +155250,10 @@
             "Rachel Lee Goldenberg",
             "Max Winkler"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Burden Of Truth: The Complete Series",
@@ -155261,9 +155261,6 @@
         "resolution": "HD",
         "year": 2018,
         "image": "https://img.fanflix.co/LG/9931c001c1189d7b4904a546dd76c3d118d06b2ddbd3312aad10c47a57af55c2",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt6987476",
           "rating": 7.3,
@@ -155284,7 +155281,10 @@
             "Douglas Mitchell",
             "James Genn"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Run The World: The Complete Series",
@@ -155292,9 +155292,6 @@
         "resolution": "HD",
         "year": 2021,
         "image": "https://img.fanflix.co/LG/4bdb890e09ebfbb19ce207f5e8de26b3112352f0d0f462db36cfd5202c18d67d",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt11737794",
           "rating": 6.5,
@@ -155316,7 +155313,10 @@
             "Nastaran Dibai",
             "Jenée LaMarque"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Pact: The Complete Series",
@@ -155324,9 +155324,6 @@
         "resolution": "HD",
         "year": 2021,
         "image": "https://img.fanflix.co/LG/34420a7b22c1138bfb43cfc27c7fd91e32e1ed9fcfb7742bcf0f1520e1b140e2",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt13107070",
           "rating": 6.9,
@@ -155350,7 +155347,10 @@
             "Rebecca Johnson",
             "Eric Styles"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Love Life: The Complete Series",
@@ -155358,9 +155358,6 @@
         "resolution": "HD",
         "year": 2020,
         "image": "https://img.fanflix.co/LG/5b33fc9b65cdf8ae62dbb2ab482b72ea96baea78bc1aa84ea68ebdcc85f7e38f",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt10380768",
           "rating": 7.4,
@@ -155382,7 +155379,10 @@
             "Sam Boyd",
             "Stephanie Laing"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Designated Survivor: The Complete Series",
@@ -155390,9 +155390,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/fc2dea93f71c163fcbb9883f8837a9b32892f3e4398233ea2672000664ea4f32",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt5296406",
           "rating": 7.4,
@@ -155415,7 +155412,10 @@
             "Chris Grismer",
             "Frederick E.O. Toye"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Mad Men: The Complete Series",
@@ -155423,9 +155423,6 @@
         "resolution": "UHD",
         "year": 2007,
         "image": "https://img.fanflix.co/LG/69a36d8fc94d4a273b66d4c6d4b69c51bfd2ca609fbaa570b149f38eb47b666e",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0804503",
           "rating": 8.7,
@@ -155446,7 +155443,10 @@
             "Phil Abraham",
             "Michael Uppendahl"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Nashville: The Complete Series",
@@ -155487,9 +155487,6 @@
         "resolution": "HD",
         "year": 2017,
         "image": "https://img.fanflix.co/LG/d824df1389e461e2c66b37fa96041d6673c1460245d4e7bd56686bcd98563412",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt5324116",
           "rating": 6.8,
@@ -155512,7 +155509,10 @@
             "Peter Settman",
             "Jon Holmberg"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Wolf Creek: The Complete Series",
@@ -155521,9 +155521,6 @@
         "year": 2025,
         "runtime": 1,
         "image": "https://img.fanflix.co/LG/43f674cf9ecf82ef658e73e9c907d2e19f315782f9cdca0af638c6cda7f99441",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt4460878",
           "rating": 7.1,
@@ -155546,7 +155543,10 @@
             "Tony Tilse",
             "Greg McLean"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Nightcap: The Complete Series",
@@ -155554,9 +155554,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/fe4e10fb3d7bc0a73deb1db952638cb5bfb8595588b311de093f11a3b8954227",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt5507340",
           "rating": 5.4,
@@ -155577,7 +155574,10 @@
           "directors": [
             "Johnny Milord"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Nurse Jackie: Complete Series (S1-7)",
@@ -155585,9 +155585,6 @@
         "resolution": "HD",
         "year": 2016,
         "image": "https://img.fanflix.co/LG/06973df317f5888584ff97cccbaf9b3de3f8ab138943997ba31cc3d5a46ddffd",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1190689",
           "rating": 7.9,
@@ -155610,7 +155607,10 @@
             "Paul Feig",
             "Jesse Peretz"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Hell On Wheels: The Complete Series",
@@ -155618,9 +155618,6 @@
         "resolution": "HD",
         "year": 2011,
         "image": "https://img.fanflix.co/LG/4b57c16d131fcfca06a4fe1c585a76c16bbec67bcdbddc9a32c844348cf8b110",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1699748",
           "rating": 8.3,
@@ -155642,7 +155639,10 @@
             "David Von Ancken",
             "Adam Davidson"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Into the Badlands: The Complete Series",
@@ -155650,9 +155650,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/615bda06c17e4b954d574690b265408902d0eca97c3b5f579e465dee4e4c1682",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt3865236",
           "rating": 7.9,
@@ -155675,7 +155672,10 @@
             "Paco Cabezas",
             "Toa Fraser"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Royals: Complete Series Bundle",
@@ -155683,9 +155683,6 @@
         "resolution": "HD",
         "year": 2015,
         "image": "https://img.fanflix.co/LG/f9162c7f67bdef84dac49d569157f5cbf5f2dab5da331161bee95a179321b8c7",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt3597912",
           "rating": 7.4,
@@ -155707,7 +155704,10 @@
             "Mark Schwahn",
             "James Lafferty"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Bitten: The Complete Series",
@@ -155715,9 +155715,6 @@
         "resolution": "HD",
         "year": 2014,
         "image": "https://img.fanflix.co/LG/80aa35e728e7c032eb5eb433f802e7cbfb17be792a1512cdbb027fc80fcfb6f2",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt2365946",
           "rating": 6.9,
@@ -155740,7 +155737,10 @@
             "James Dunnison",
             "Grant Harvey"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Deadbeat: The Complete Series",
@@ -155780,9 +155780,6 @@
         "resolution": "HD",
         "year": 2010,
         "image": "https://img.fanflix.co/LG/331c1e0637b7899acaf0ec6b4d0302b31d84558b2066b7a0c3586431222e8a74",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt1442065",
           "rating": 7.7,
@@ -155805,7 +155802,10 @@
             "David Wellington",
             "T.W. Peacocke"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Wicked Tuna: Outer Banks: The Complete Series",
@@ -155841,9 +155841,6 @@
         "resolution": "HD",
         "year": 2013,
         "image": "https://img.fanflix.co/LG/e396cba4d015cb81ef0b731ddfca83acfd281ef9c712440871a15b7ce37a0b87",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0439100",
           "rating": 7.9,
@@ -155866,7 +155863,10 @@
             "Craig Zisk",
             "Michael Trim"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "Wicked Tuna: The Complete Series",
@@ -155937,9 +155937,6 @@
         "resolution": "HD",
         "year": 1974,
         "image": "https://img.fanflix.co/LG/16a901b0c8ad90ac0877ad5b48c76e6971e59643065480cd5512443f70149671",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0071007",
           "rating": 7.6,
@@ -155963,7 +155960,10 @@
             "Michael Landon",
             "William F. Claxton"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       },
       {
         "title": "The Avengers: Emma Peel Collection",
@@ -155971,9 +155971,6 @@
         "resolution": "HD",
         "year": 1965,
         "image": "https://img.fanflix.co/LG/3ac42af02f464db4e86d4ab6a1c74367124741817f2c6bd2d9f82d2319c59e48",
-        "platforms": [
-          "Fandango at Home"
-        ],
         "imdb": {
           "id": "tt0054518",
           "rating": 8.3,
@@ -155997,7 +155994,10 @@
             "Don Leaver",
             "Peter Hammond"
           ]
-        }
+        },
+        "platforms": [
+          "Fandango at Home"
+        ]
       }
     ]
   },
